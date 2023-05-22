@@ -50,7 +50,10 @@
                 this.search.results = data.posts;
             },
             async authcheck() {
+                {# checking if profile cookie exists and then loads profile and realm #}
+                console.log('authcheck');
                 const profileCookieValue = getCookieValue('realm:profile');
+                console.log('profileCookieValue', profileCookieValue);
                 if (profileCookieValue) {
 
                     this.user = JSON.parse(profileCookieValue);
@@ -177,6 +180,15 @@
 
     return null;
     }
+
+    {# disable all logs in production #}
+    {% if metadata.NODE_ENV == "production" %}
+    if(!window.console) window.console = {};
+    var methods = ["log", "debug", "warn", "info"];
+    for(var i=0;i<methods.length;i++){
+        console[methods[i]] = function(){};
+    }
+    {% endif %}
 
 
 </script>
