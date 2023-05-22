@@ -6,7 +6,7 @@
     <title>{{ post.title }}</title>
     <meta name="author" content="{{ post.author }}">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="{{ post.title }}">
+    <meta property="og:title" content="{{ post.title or title }}">
     <meta property="og:description" content="{{ post.description or description }}">
     <meta property="og:url" content="{{ post.url }}">
     <meta property="og:site_name" content="{{ post.site_name }}">
