@@ -6,12 +6,12 @@ layout: layout/default.njk
 		<li class="m-2">
 			<h4><a href="allwomenstalk.com">Homepage</a> </h4>
 		</li>
-	{%- for cat in categories -%}
+	{# {%- for cat in categories -%}
 		<li class="m-2">
 			<h4><a href="{{cat._id}}.allwomenstalk.com">{{cat.name}}</a> </h4>
 		</li>
 	{%- endfor -%}
-	<ol>
+	<ol> #}
 
 	{%- for post in db -%}
 		<li class="m-2">
