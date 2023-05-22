@@ -1,0 +1,33 @@
+---
+layout: layout/archive.njk
+permalink: /allwomenstalk.com/index.html
+eleventyComputed:
+  title: Allwomenstalk {{ tag.title }}
+---
+
+
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 p-4 max-w-screen-xl mx-auto">
+{% set loopNumber = 0 %}
+{% for post in archives | slicearr(153) %}
+  {% if post.tags[0]%}
+    {% set loopNumber = loopNumber+1 %}
+
+    {% include "postslist.njk" %}
+    {% if loopNumber % 7 == 0 %}
+    </div> 
+    {% include "gptblocks.njk" %}
+
+      {% if loopNumber == 7 %}
+        {# <span class="slice"></span>  #}
+       {% include "quiz.njk" %}   
+      {% else %}
+        {# <span class="slice" style="height: 257px;"></span> #}
+      {% endif %}
+    
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 p-4 max-w-screen-xl mx-auto">
+    {% endif %}
+  {% endif %}
+{% endfor %}
+</div>
+{# {% include "popularblock.njk" %} #}
+{# {% include "explore.njk" %} #}

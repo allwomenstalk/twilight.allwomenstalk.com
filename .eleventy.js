@@ -1,5 +1,6 @@
 const fs = require("fs");
 const htmlmin = require("html-minifier");
+const CleanCSS = require("clean-css");
 
 module.exports = function(eleventyConfig) {
 
@@ -9,6 +10,16 @@ module.exports = function(eleventyConfig) {
 
   // Passthrough
   eleventyConfig.addPassthroughCopy({ "src/static": "." });
+  eleventyConfig.addPassthroughCopy({ "src/js/assets": "./js/" });
+
+  // Filters
+  eleventyConfig.addFilter("cssmin", function(code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
+  // slice first n elements of array
+  eleventyConfig.addFilter("slicearr", function(array, count) {
+    return array.slice(0, count);
+  });
 
   // Watch targets
   eleventyConfig.addWatchTarget("./src/styles/");

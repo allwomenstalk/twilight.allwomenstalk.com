@@ -1,7 +1,10 @@
 module.exports = {
-  content: ["./src/**/*.{html,njk}"],
+  content: ["./src/**/*.{html,njk,js}"],
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+  ],
 };

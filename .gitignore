@@ -1,2 +1,6 @@
 node_modules/
 _site/
+.DS_Store
+src/_data/cache.json
+_mongodb.json
+_marker.json
