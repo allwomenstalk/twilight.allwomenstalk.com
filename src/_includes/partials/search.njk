@@ -49,25 +49,24 @@
       
       <!-- Default state, show/hide based on command palette state. -->
       {# recent searches from localstorate #}
-      <ul x-show="search.recents&&!search.results" class="max-h-80 scroll-py-2 divide-y divide-gray-500 divide-opacity-10 overflow-y-auto">
+      <ul x-show="search.categories&&search.results.length==0" class="max-h-80 scroll-py-2 divide-y divide-gray-500 divide-opacity-10 overflow-y-auto">
         <li class="p-2">
           <h2 class="mb-2 mt-4 px-3 text-xs font-semibold text-gray-900">Recent searches</h2>
           <ul class="text-sm text-gray-700">
             <!-- Active: "bg-gray-900 bg-opacity-5 text-gray-900" -->
+            <template x-for="c in search.categories">
             <li class="group flex cursor-default select-none items-center rounded-md px-3 py-2">
-              <!-- Not Active: "text-opacity-40" -->
-            <svg class="w-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path>
-            </svg>
-              <span class="ml-3 flex-auto truncate">Workflow Inc. / Website Redesign</span>
-              <!-- Not Active: "hidden" -->
-              <span class="ml-3 hidden flex-none text-gray-500">Jump to...</span>
+              <svg class="h-6 w-6 flex-none text-gray-900 text-opacity-40" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5" />
+              </svg>
+              <a :href="'https://'+ c._id +'.allwomenstalk.com/'" x-text="c.name + ' - ' + c.count + ' articles'" class="ml-3 flex-auto truncate"></span>
             </li>
+            </template>
           </ul>
         </li>
       </ul>
       {# popular search on domain  #}
-      <ul x-show="search.popular&&!search.results" class="max-h-80 scroll-py-2 divide-y divide-gray-500 divide-opacity-10 overflow-y-auto">
+      {# <ul x-show="search.popular&&!search.results" class="max-h-80 scroll-py-2 divide-y divide-gray-500 divide-opacity-10 overflow-y-auto">
         <li class="p-2">
           <h2 class="mb-2 mt-4 px-3 text-xs font-semibold text-gray-900">Popular searches</h2>
           <ul class="text-sm text-gray-700">
@@ -83,7 +82,7 @@
             </li>
           </ul>
         </li>
-      </ul>
+      </ul> #}
 
         <!-- Active: "bg-gray-100" -->
 

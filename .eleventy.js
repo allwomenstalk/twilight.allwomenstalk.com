@@ -21,6 +21,10 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, count);
   });
 
+  eleventyConfig.addFilter('json', (value) => {
+    return JSON.stringify(value);
+  });
+
   // Watch targets
   eleventyConfig.addWatchTarget("./src/styles/");
 
