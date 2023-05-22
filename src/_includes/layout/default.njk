@@ -6,8 +6,8 @@
     <title>{{ post.title }}</title>
     <meta name="author" content="{{ post.author }}">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="{{ post.title }}">
-    <meta property="og:description" content="{{ post.description }}">
+    <meta property="og:title" content="{{ post.title or title }}">
+    <meta property="og:description" content="{{ post.description or description }}">
     <meta property="og:url" content="{{ post.url }}">
     <meta property="og:site_name" content="{{ post.site_name }}">
     <meta property="og:image" content="{{ post.image }}">
@@ -16,7 +16,7 @@
     <meta name="apple-itunes-app" content="{{ post.itunes_app }}">
     <meta name="robots" content="{{ post.robots }}">
     <meta name="generator" content="{{ post.generator }}">
-    <meta name="description" content="{{ post.description }}">
+    <meta name="description" content="{{ post.description or description }}">
     <link rel="canonical" href="{{ post.canonical_url }}">
     <link rel="amphtml" href="{{ post.amp_url }}">
     {# <script src="https://cdn.tailwindcss.com"></script> #}
