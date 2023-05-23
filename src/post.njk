@@ -35,7 +35,10 @@ eleventyComputed:
         {% if loop.index == 1 %}
             {% include 'partials/toc.njk' %}
         {% elif loop.index == 2 %}
-                {% include "partials/gpt.njk" %}
+            {% include "partials/gpt.njk" %}
+        {% elif loop.revindex == 2 %}
+
+            {% include 'quiz.njk' %}
         {% endif %}
         {% if not loop.last %}
             <hr class="hidden">
