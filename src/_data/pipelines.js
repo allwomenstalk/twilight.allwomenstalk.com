@@ -161,9 +161,11 @@ pipeline_category = [
     }
     
   },
-  {'$sample': {size:100}}
+  // {'$sample': {size:100}}
 ]
-
+if (!process.env.ELEVENTY_PRODUCTION) {
+  pipeline_category.push({'$sample': {size:100}})
+}
 
 pipeline_seo_noclicks = [
   // {
