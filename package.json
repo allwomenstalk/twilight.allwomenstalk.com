@@ -14,7 +14,7 @@
     "build:elaborate": "npx esbuild ./src/js/elaborate.js --outfile=./_site/js/elaborate.js  --bundle --target=es2018 --minify",
     "build:cookiecross": "npx esbuild ./src/js/cookiecross.js --outfile=./_site/js/cookiecross.js --target=es2018 --minify",
     "deploy": "run-s deploy:*",
-    "deploy:upload": "aws s3 cp _site/books.allwomenstalk.com s3://books.allwomenstalk.com/ --recursive",
+    "deploy:upload": "sh postupload.sh",
     "deploy:uploadjs": "aws s3 cp _site/js s3://books.allwomenstalk.com/js --recursive",
     "deploy:invalidate": "aws cloudfront create-invalidation --distribution-id EGUHTC863PR1X --paths '/*'",
     "test": "run-s test:*",

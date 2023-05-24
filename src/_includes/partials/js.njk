@@ -3,8 +3,9 @@
 
 
 {# <script src="https://account.allwomenstalk.com/js/cookiecross.js" defer></script> #}
-  {# {{!-- loadJs('https://account.allwomenstalk.com/js/cookiecross.js'); --}}
-  {{!-- loadJs('https://account.allwomenstalk.com/js/profile.js'); --}} #}
+{# {{!-- loadJs('https://account.allwomenstalk.com/js/cookiecross.js'); --}}
+{{!-- loadJs('https://account.allwomenstalk.com/js/profile.js'); --}} #}
+
 <script> 
     function data () {
         return {
@@ -125,28 +126,49 @@
 
     function keywords() {
         return {
-            keywords:[
-                "Bestselling fiction novels",
-                "Self-help books",
-                "Mystery and thriller authors",
-                "Fantasy book series",
-                "Classic literature",
-                "Children's picture books",
-                "Romance novels",
-                "Science fiction bestsellers",
-                "Biographies and memoirs",
-                "Cookbooks and recipes",
-                "Art and photography books",
-                "Business and finance books",
-                "Travel guides and maps",
-                "History books",
-                "Health and wellness titles",
-                "Educational textbooks",
-                "Poetry collections",
-                "Religious and spiritual books",
-                "Psychology and self-improvement",
-                "Graphic novels and comics"
-            ].sort(() => 0.5 - Math.random()).slice(0, 6)
+            keywords:[], 
+            init() {
+                console.log('keywords init')
+                // fetch keywords
+                this.loadKeywords();
+
+            },
+            loadKeywords() {
+                try {
+                const filePaths = [
+                    'keywords.json',
+                    '/keywords.json',
+                    'https://allwomenstalk.com/keywords.json'
+                ];
+
+                const fetchKeywords = (filePath) => {
+                    return fetch(filePath)
+                    .then(response => {
+                        if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                        }
+                        return response.json();
+                    });
+                };
+
+                const fetchKeywordsFromAvailablePath = async () => {
+                    for (const filePath of filePaths) {
+                    try {
+                        list = await fetchKeywords(filePath);
+                        this.keywords = list.sort(() => 0.5 - Math.random()).slice(0, 6);
+                        break;
+                    } catch (error) {
+                        console.log(`Failed to fetch keywords from ${filePath}`);
+                    }
+                    }
+                };
+
+                fetchKeywordsFromAvailablePath();
+                } catch (error) {
+                console.log('General error:', error);
+                }
+
+            }
         }
     }
 
@@ -192,8 +214,6 @@
 
 
 </script>
-
-
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17514583-34"></script>
