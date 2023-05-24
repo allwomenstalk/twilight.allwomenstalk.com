@@ -1,6 +1,7 @@
 const { MongoClient } = require('mongodb');
 const moment = require('moment');
 const fs = require('fs');
+const { group } = require('console');
 // Replace the uri string with your MongoDB deployment's connection string.
 const uri = 'mongodb+srv://admin:23tyHjwbnqp21@cluster0.jfcrg.gcp.mongodb.net/?retryWrites=true&w=majority';
 const client = new MongoClient(uri, { useUnifiedTopology: true });
@@ -12,11 +13,14 @@ const marr = [
 ];
 console.log('curent month:', marr);
 
+// settings 
 let path = './_mongodb.json'
+const postperpage = 53;
+
 try {
   var arr = JSON.parse(fs.readFileSync(path, 'utf8'));
   console.log("Local file",path)
-  // var arr = undefined; // comment to use local file
+  // var arr = undefined; // comment to use local file, uncomment to use mongodb
 } catch (err) {
   console.log("No local ",path)
   var arr = undefined;
@@ -70,7 +74,7 @@ module.exports = async () => {
             },
             // { $sample: { size: 49 } },
             { $sort: { post_date: -1 } },
-            { $limit: 153 },
+            { $limit: postperpage },
             {
               $project: {
                 _id: 1,
@@ -147,8 +151,11 @@ module.exports = async () => {
       temp.url = `https://${item.host}/${item.post_name}/`;
       arr.push(temp);
     });
-    SaveData(path,arr)
-    return arr;
+    const groupedPosts = groupPostsByCategory(arr);
+    // console.log(groupedPosts);
+    groupedPosts['all'] = arr.slice(0,postperpage)
+    SaveData(path,groupedPosts)
+    return groupedPosts;
   } finally {
     await client.close();
   }
@@ -159,4 +166,20 @@ function SaveData(name, arr) {
       if (err) throw err;
       console.log('The file has been saved!');
     });
+}
+
+function groupPostsByCategory(posts) {
+  const groupedPosts = {};
+
+  posts.forEach(post => {
+    const category = post.category;
+
+    if (!groupedPosts[category]) {
+      groupedPosts[category] = [];
+    }
+
+    groupedPosts[category].push(post);
+  });
+
+  return groupedPosts;
 }
