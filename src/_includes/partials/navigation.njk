@@ -58,28 +58,22 @@
           <div id="tabs-1-panel-1" class="space-y-12 px-4 pb-6 pt-10" aria-labelledby="tabs-1-tab-1" role="tabpanel" tabindex="0">
             <div class="grid grid-cols-1 items-start gap-x-6 gap-y-10">
               <div class="grid grid-cols-1 gap-x-6 gap-y-10">
-                {# 
+                
                 <div>
-                  <p id="mobile-featured-heading-0" class="font-medium text-gray-900">Featured</p>
+                  {# <p id="mobile-featured-heading-0" class="font-medium text-gray-900">Featured</p> #}
                   <ul role="list" aria-labelledby="mobile-featured-heading-0" class="mt-6 space-y-6">
                     <li class="flex">
-                      <a href="#" class="text-gray-500">Sleep</a>
-                    </li>
-                    <li class="flex">
-                      <a href="#" class="text-gray-500">Swimwear</a>
-                    </li>
-                    <li class="flex">
-                      <a href="#" class="text-gray-500">Underwear</a>
+                      <a href="https://allwomenstalk.com/" class="-m-2 block p-2 font-medium text-gray-900">Homepage</a>
                     </li>
                   </ul>
                 </div> 
-                #}
+               
                 <div>
                   <p id="mobile-categories-heading" class="font-medium text-gray-900">Categories</p>
                   <ul role="list" aria-labelledby="mobile-categories-heading" class="mt-6 space-y-6">
                     {% for category in categories %}
                     <li class="flex w-full">
-                      <a href="https://{{ category._id }}.allwomenstalk.com/" class="text-gray-500">{{ category.name }}</a>
+                      <a href="https://{{ category._id }}.allwomenstalk.com/" class="text-gray-500 w-full -ml-2 hover:bg-gray-200 p-2 rounded">{{ category.name }}</a>
                     </li>
                     {% endfor %}
 
