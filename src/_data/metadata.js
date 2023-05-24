@@ -1,7 +1,8 @@
 module.exports =
 {
-  "title": "windty 🌬️",
-  "description": "Windty is a basic template using 11ty and Tailwind, and deploys to github pages.",
+  "title": "Allwomenstalk",
+  "description": "Find Your Voice, Embrace Your Power",
+  "generator": "Eleventy",
   "NODE_ENV": process.env.ELEVENTY_PRODUCTION? "production" : "development",
   "version": "2.0.0",
   "pages": [
