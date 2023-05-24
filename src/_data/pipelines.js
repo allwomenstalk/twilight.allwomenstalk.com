@@ -157,7 +157,7 @@ pipeline_name = [
 pipeline_category = [
   {
     '$match': {
-      "super_categories":{$in:["books"]}
+      "super_categories":{$in:["travel"]}
     }
     
   },

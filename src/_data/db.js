@@ -43,7 +43,7 @@ module.exports = async () => {
     const database = client.db('aws');
     const collection = database.collection('posts');
     
-    const limitperbuild = process.env.NODE_ENV==="production"?1000:100;
+    const limitperbuild = process.env.NODE_ENV==="production"?10000:100;
     const filter = global[process.env.PIPE?process.env.PIPE:'pipeline_category']
     console.log('fitler pipeline name:',process.env.PIPE, filter)
     // console.log(JSON.stringify(pipeline_marker,null,2))
