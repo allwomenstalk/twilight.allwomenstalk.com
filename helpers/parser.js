@@ -333,7 +333,7 @@ module.exports = function (item) {
       // faq 
       // console.log('faq',item.faq, item.faq.length)
       if (item.faq.length > 0) temp.faq = item.faq.shift().list
-      if (item.seo && item.seo.clicks == 0 && item.seo.ga_visits == 0) temp.noads = true 
+      // if (item.seo && item.seo.clicks == 0 && item.seo.ga_visits == 0) temp.noads = true 
 
       return temp
 }    
