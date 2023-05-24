@@ -6,15 +6,19 @@ layout: layout/default.njk
 		<li class="m-2">
 			<h4><a href="allwomenstalk.com">Homepage</a> </h4>
 		</li>
+<<<<<<< HEAD
 		<li class="m-2">
 			<h4><a href="/gsearch">Google Search</a> </h4>
 		</li>
 	{%- for cat in categories -%}
+=======
+	{# {%- for cat in categories -%}
+>>>>>>> c69709090afdc76d5ae3c1e7d880220c02c13e86
 		<li class="m-2">
 			<h4><a href="{{cat._id}}.allwomenstalk.com">{{cat.name}}</a> </h4>
 		</li>
 	{%- endfor -%}
-	<ol>
+	<ol> #}
 
 	{%- for post in db -%}
 		<li class="m-2">
