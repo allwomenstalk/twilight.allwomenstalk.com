@@ -10,7 +10,13 @@ layout: layout/default.njk
 		<li class="m-2">
 			<h4><a href="/gsearch">Google Search</a> </h4>
 		</li>
+		// list categoreis 
 
+		{% for category in categories %}
+		<li class="m-2">
+			<h4><a href="/{{category._id}}.allwomenstalk.com">{{category.name}}</a> </h4>
+		</li>
+		{% endfor %}
 
 	{%- for post in db -%}
 		<li class="m-2">
