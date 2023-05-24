@@ -5,3 +5,4 @@ _site/
 src/_data/cache.json
 _mongodb.json
 _marker.json
+*config.ini
