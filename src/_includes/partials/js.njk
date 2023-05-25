@@ -1,4 +1,4 @@
-<script src="/js/alpine.js" defer></script>
+<script src="https://allwomenstalk.github.io/js/alpine.min.js" defer></script>
 {# delay alpinejs #}
 
 
@@ -37,12 +37,42 @@
                 this.getsearch(); #}
             },
             showsearch () {
-                this.search.show = true
+                this.search.show = true;
+                this.search.query = '';
+                this.search.results = [];
                 this.search.categories = this.search.categories.sort(() => 0.5 - Math.random());
+                this.$nextTick(() => {
+                    setTimeout(() => {
+                    this.$refs.searchInput.focus();
+                    }, 100);
+                });
             },
             async getsearch() {
                 console.log('search', this.search.query);
-                if (this.search.query.length<3) return;
+
+                // fitter categories
+
+                {# window.originalCategories = null; #}
+                if (!window.originalCategories) {
+                    console.log('originalCategories not set');
+                    originalCategories = [...this.search.categories]; // Make a copy of the original categories
+                }
+
+                console.log('originalCategories', originalCategories);
+
+                this.search.categories = originalCategories.filter((category) => {
+                    const categoryName = category.name.toLowerCase();
+                    const searchQuery = this.search.query.toLowerCase();
+
+                    if (searchQuery === '') {
+                        // If the search query is empty, keep all categories
+                        return true;
+                    }
+
+                    return categoryName.startsWith(searchQuery);
+                });
+                console.log('categories res/original', this.search.categories.length, originalCategories.length);
+                if (this.search.query.length<3) {this.search.results=[];return};
                 this.search.results = [];
                 const url = `https://kyrbdz2evj.execute-api.us-east-1.amazonaws.com/v1/search?q=${this.search.query}`;
                 const response = await fetch(url);

@@ -48,5 +48,5 @@ for folder in "${folders[@]}"; do
     aws s3 cp "_site/$folder" s3://"$folder" --recursive
     
     # Uplaod the folder js 
-    aws s3 cp "_site/js" s3://"$folder"/js --recursive
+    # aws s3 cp "_site/js" s3://"$folder"/js --recursive
 done
