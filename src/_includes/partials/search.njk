@@ -51,7 +51,7 @@
       {# recent searches from localstorate #}
       <ul x-show="search.categories&&search.results.length==0" class="max-h-80 scroll-py-2 divide-y divide-gray-500 divide-opacity-10 overflow-y-auto">
         <li class="p-2">
-          <h2 class="mb-2 mt-4 px-3 text-xs font-semibold text-gray-900">Categories</h2>
+          <h2 x-show="search.categories.length>0" class="mb-2 mt-4 px-3 text-xs font-semibold text-gray-900">Categories</h2>
           <ul class="text-sm text-gray-700">
             <!-- Active: "bg-gray-900 bg-opacity-5 text-gray-900" -->
             <template x-for="c in search.categories">
