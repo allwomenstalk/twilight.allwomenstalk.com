@@ -25,6 +25,7 @@ module.exports = function (item) {
       // temp.host = item.host
       
       temp.url = `https://${temp.host}/${item.post_name}`;
+      temp.amp_url = `https://${temp.host}/${item.post_name}/amp.html`;
       temp.title = item.post_title.replace(/[^a-zA-Z0-9_.-\s'"\?]*/g,''); //removeing all emoji
       temp.date = item.post_date.toISOString();
       temp.modified = new Date().toISOString();

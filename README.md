@@ -1,3 +1,12 @@
+# Monitor regulary. 
+
+- Lighthouse score after each feature 
+- Schema validity and relevancy 
+
+
+
+
+
 # windty 🌬️
 
 Windty is a basic template using 11ty and Tailwind, and deploys to github pages.
