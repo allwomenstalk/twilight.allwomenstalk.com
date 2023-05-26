@@ -14,13 +14,13 @@ const marr = [
 console.log('curent month:', marr);
 
 // settings 
-let path = './_mongodb.json'
+let path = './src/_data/cache.json'
 const postperpage = 53;
 
 try {
   var arr = JSON.parse(fs.readFileSync(path, 'utf8'));
   console.log("Local file",path)
-  // var arr = undefined; // comment to use local file, uncomment to use mongodb
+  var arr = undefined; // comment to use local file, uncomment to use mongodb
 } catch (err) {
   console.log("No local ",path)
   var arr = undefined;
@@ -67,7 +67,7 @@ module.exports = async () => {
                     },
                     { $eq: ['$super_categories', ['$$id']] },
                     { $gt: ['$post_date', new Date('2016-01-01')] },
-                    { $gt: ['$post_modified', new Date('2018-01-01')] },
+                    // { $gt: ['$post_modified', new Date('2018-01-01')] }, // temporary remove to get all posts 
                   ],
                 },
               },
