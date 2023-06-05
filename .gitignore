@@ -7,3 +7,4 @@ _mongodb.json
 _marker.json
 *config.ini
 src/_includes/partials/css/*
+.aws-sam

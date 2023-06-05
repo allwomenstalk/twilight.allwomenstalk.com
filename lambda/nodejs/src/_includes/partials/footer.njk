@@ -1,0 +1,14 @@
+    <footer class="footer relative pt-1 mb-32 text-center">
+        <div class="border-t border-gray-300 text-center py-8">
+            Made with 
+            <span role="img" aria-label="Love">♥</span>
+             since 2005
+        </div>
+        <ul class="space-y-4 text-center mb-8">
+            {% for page in metadata.pages %}
+            <li>
+                <a class="_noaff transition-colors duration-200" href="{{ page.url }}">{{ page.name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </footer>

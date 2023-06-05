@@ -1,7 +1,5 @@
 const { MongoClient } = require('mongodb');
 const fs = require('fs');
-const moment = require('moment');
-const cheerio = require('cheerio'); //cheerio to parse html 
 // Replace the uri string with your MongoDB deployment's connection string.
 const uri = 'mongodb+srv://11tyreadonly:HN0hLpLTZD2sAJNG@cluster0.jfcrg.gcp.mongodb.net/?retryWrites=true&w=majority';
 const client = new MongoClient(uri, { useUnifiedTopology: true });
