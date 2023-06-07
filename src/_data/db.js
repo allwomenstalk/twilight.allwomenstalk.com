@@ -20,14 +20,12 @@ const marr = [
 
 try {
   var arr = JSON.parse(fs.readFileSync('./src/_data/cache.json', 'utf8'));
+  console.log("Local file found")
 } catch (err) {
   console.log("No local file")
-  var arr = undefined; //uncomment to force data from db 
 }
 
-var arr = undefined;
-
-
+// var arr = undefined;
 
 
 module.exports = async () => {

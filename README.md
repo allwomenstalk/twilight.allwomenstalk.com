@@ -25,7 +25,9 @@ NODE_ENV=production npx postcss src/styles/*.css --dir src/_includes/partials
 
 # build alpine 
 npx esbuild ./src/js/alpine.js --outfile=./_site/js/alpine.js  --bundle --target=es2018 --minify
-npx esbuild ./src/js/elaborate.js --outfile=./_site/js/elaborate.js  --bundle --target=es2018 --minify
+npx esbuild ./src/js/assets/elaborate.js --outfile=./_site/js/elaborate.js  --bundle --target=es2018 --minify
+aws s3 cp _site/js/elaborate.js s3://allwomenstalk.com/js/
+aws cloudfront create-invalidation --distribution-id ELXAREN8U9B5R --paths "/js/*"     
 
 ## Lighthouse test 
 aws s3 cp _site s3://allwomenstalk.com/lighthousetest/ --recursive

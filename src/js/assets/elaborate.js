@@ -1,4 +1,6 @@
 async function fetchData(postid, page) {
+  console.log(JSON.stringify({ postid:postid, page:page }))
+
     try {
       const response = await fetch("https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/elaborate", {
         method: 'POST',
@@ -6,8 +8,8 @@ async function fetchData(postid, page) {
         body: JSON.stringify({ postid:postid, page:page }),
         redirect: 'follow'
       });
-  
       const result = await response.text();
+      console.log('result', JSON.parse(result))
       return result;
     } catch (error) {
       console.log('error', error);
@@ -39,7 +41,7 @@ async function fetchData(postid, page) {
   
             const resultBlock = document.createElement('p');
             resultBlock.classList.add('italic', 'opacity-70')
-            resultBlock.appendChild(resultTextNode);
+            resultBlock.innerHTML = obj.response;
   
             // Add the response text inside .post block as an extra <p> block
             p.insertBefore(resultBlock, p.querySelector('button.like'));
