@@ -11,7 +11,7 @@
     "build:postcss": "cross-env NODE_ENV=production postcss src/styles/*.css --dir src/_includes/partials/css",
     "build:eleventy": "cross-env NODE_ENV=production ELEVENTY_PRODUCTION=true eleventy",
     "build:alpine": "npx esbuild ./src/js/alpine.js --outfile=./_site/js/alpine.js  --bundle --target=es2018 --minify",
-    "build:elaborate": "npx esbuild ./src/js/elaborate.js --outfile=./_site/js/elaborate.js  --bundle --target=es2018 --minify",
+    "build:elaborate": "npx esbuild ./src/js/assets/elaborate.js --outfile=./_site/js/elaborate.min.js  --bundle --target=es2018 --minify",
     "build:cookiecross": "npx esbuild ./src/js/cookiecross.js --outfile=./_site/js/cookiecross.js --target=es2018 --minify",
     "deploy": "run-s deploy:*",
     "deploy:upload": "sh postupload.sh",
