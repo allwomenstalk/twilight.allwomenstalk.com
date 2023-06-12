@@ -40,7 +40,7 @@ module.exports = async () => {
     const collection = database.collection('posts');
     
     const limitperbuild = process.env.NODE_ENV==="production"?10000:100;
-    const filter = global[process.env.PIPE?process.env.PIPE:'pipeline_category']
+    const filter = global[process.env.PIPE?process.env.PIPE:'pipeline_iframe']
     console.log('fitler pipeline name:',process.env.PIPE, filter)
     // console.log(JSON.stringify(pipeline_marker,null,2))
     const pipeline = [

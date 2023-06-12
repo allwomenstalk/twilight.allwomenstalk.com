@@ -114,7 +114,7 @@ pipeline_noads = [
 pipeline_iframe = [
   {
     '$match': {
-      'post_content':new RegExp(' <iframe'),
+      'post_content':new RegExp('<iframe'),
     }
   }
 ]

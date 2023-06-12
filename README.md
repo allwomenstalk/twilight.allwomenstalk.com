@@ -35,3 +35,10 @@ aws s3 cp _site s3://allwomenstalk.com/lighthousetest/ --recursive
 ## Invalidate CloudFront
 aws cloudfront create-invalidation --distribution-id ELXAREN8U9B5R --paths "/lighthousetest/*"
 
+
+
+Post formats to check 
+- iframes 
+- youtube 
+- gifs 
+- instagram embed
