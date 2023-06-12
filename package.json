@@ -20,7 +20,7 @@
     "test": "run-s test:*",
     "test:upload": "aws s3 cp _site s3://allwomenstalk.com/lighthousetest/ --recursive",
     "test:invalidate": "aws cloudfront create-invalidation --distribution-id ELXAREN8U9B5R --paths /lighthousetest/*",
-    "clean": "rimraf _site && rm -f src/_data/cache.json"
+    "clean": "rimraf _site"
   },
   "repository": {
     "type": "git",
@@ -54,6 +54,7 @@
   "dependencies": {
     "@tailwindcss/typography": "^0.5.9",
     "alpinejs": "^3.12.1",
+    "amphtml-validator": "^1.0.35",
     "clean-css": "^5.3.2",
     "moment": "^2.29.4",
     "mongodb": "^5.5.0"

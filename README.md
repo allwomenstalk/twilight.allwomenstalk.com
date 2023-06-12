@@ -29,6 +29,8 @@ npx esbuild ./src/js/assets/elaborate.js --outfile=./_site/js/elaborate.js  --bu
 aws s3 cp _site/js/elaborate.js s3://allwomenstalk.com/js/
 aws cloudfront create-invalidation --distribution-id ELXAREN8U9B5R --paths "/js/*"     
 
+&& rm -f src/_data/cache.json to delete cache file on build. 
+
 ## Lighthouse test 
 aws s3 cp _site s3://allwomenstalk.com/lighthousetest/ --recursive
 
