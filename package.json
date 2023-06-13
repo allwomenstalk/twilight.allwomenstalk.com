@@ -20,7 +20,7 @@
     "test": "run-s test:*",
     "test:upload": "aws s3 cp _site s3://allwomenstalk.com/lighthousetest/ --recursive",
     "test:invalidate": "aws cloudfront create-invalidation --distribution-id ELXAREN8U9B5R --paths /lighthousetest/*",
-    "clean": "rimraf _site"
+    "clean": "rimraf _site && rm -f src/_data/cache.json"
   },
   "repository": {
     "type": "git",

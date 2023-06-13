@@ -13,7 +13,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/js/assets": "./js/" });
 
   // Filters
-  eleventyConfig.addFilter("cssminamp", function(code) {
+  eleventyConfig.addFilter("cssamp", function(code) {
     return code.replace(/!important/g, "")
               .replace(/@import.*?;/g, "");
     // return new CleanCSS({}).minify(code).styles;
