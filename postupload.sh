@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Start time
+start_time=$(date +%s)
+
 # List of folders
 folders=(
     "allwomenstalk.com"
@@ -43,10 +46,22 @@ folders=(
 
 # Iterate over each folder
 for folder in "${folders[@]}"; do
-    
-    # Upload the folder to S3 bucket
-    aws s3 cp "_site/$folder" s3://"$folder" --recursive
-    
-    # Uplaod the folder js 
-    # aws s3 cp "_site/js" s3://"$folder"/js --recursive
+    # Check if the directory is not empty
+    if [ "$(ls -A "_site/$folder" 2>/dev/null)" ]; then
+        # Upload the folder to S3 bucket
+        aws s3 cp "_site/$folder" s3://"$folder" --recursive
+        # Upload the folder js 
+        # aws s3 cp "_site/js" s3://"$folder"/js --recursive
+    else
+        echo "$folder is empty or does not exist. Skipping upload..."
+    fi
 done
+
+# End time
+end_time=$(date +%s)
+
+# Duration calculation
+duration=$((end_time - start_time))
+duration_minutes=$((duration / 60))
+
+echo "Script execution duration: $duration_minutes minutes"

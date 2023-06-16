@@ -1,8 +1,8 @@
 const { MongoClient } = require('mongodb');
 const Eleventy = require('@11ty/eleventy');
 const parser = require('./helpers/parser');
-const pipelinePost = require('./helpers/pipelinePost.js')
-
+const pipelinePost = require('./helpers/pipelinePost.js');
+const AWS = require('aws-sdk');
 
 exports.handler = async (event, context) => {
   try {
@@ -14,50 +14,79 @@ exports.handler = async (event, context) => {
     const collection = db.collection('posts');
 
     // Fetch data from MongoDB
-    pipeline = [
-      { '$match': { 
-          'host': new RegExp('allwomenstalk.com') ,
-          post_name:'tips-for-travelling-with-children' 
-          }
-      },
-    ]
-    pipeline  = [...pipeline,...pipelinePost]
-    const data = await collection.aggregate(pipeline).next()
+    console.log('event', event);
 
-    console.log('data',data._id, "\n\n\\")
-    // console.log('parser',parser)
-    let parsed = await parser(data)
-    // console.log('parsed',parsed)
-    // Instantiate Eleventy
-    const elev = new Eleventy( "src", "_site", {
-        // --quiet
-        quietMode: true,
-    
-        // --config
-        configPath: ".eleventy.js",
-    
-        config: function(eleventyConfig) {
-          // Do some custom Configuration API stuff
-          // Works great with eleventyConfig.addGlobalData
-          // Pass the MongoDB data to Eleventy
-          console.log('data info', data._id, data.post_name)
-          eleventyConfig.addGlobalData('db', [parsed]);
+    const postName = event.pathParameters ? event.pathParameters.proxy : event.rawPath.replace('/', '');
+    event.post_name = postName;
+    console.log('post_name', postName);
+
+    if (!postName) {
+      return {
+        statusCode: 200,
+        headers: {
+          'Content-Type': 'text/html',
         },
-      });
+        body: 'No post name',
+      };
+    }
+
+    const pipeline = [
+      {
+        $match: {
+          host: new RegExp('allwomenstalk.com'),
+          post_name: postName,
+        },
+      },
+    ];
+    pipeline.push(...pipelinePost);
+    const data = await collection.aggregate(pipeline).next();
+
+    console.log('data', data._id, '\n\n\\');
+    let parsed = await parser(data);
+
+    // Instantiate Eleventy
+    const elev = new Eleventy('src', '_site', {
+      quietMode: false,
+      configPath: '.eleventy.js',
+      config: function (eleventyConfig) {
+        console.log('data info', data._id, data.post_name);
+        eleventyConfig.addGlobalData('db', [parsed]);
+      },
+    });
+
+    // Set Eleventy production mode
+    process.env.ELEVENTY_PRODUCTION = 'true';
 
     // Generate the post
     const json = await elev.toJSON();
 
+    console.log('json', json);
 
     // Close the MongoDB connection
     await client.close();
+
+    // Save files to S3
+    const s3 = new AWS.S3();
+    // const bucketName = 'health.allwomenstalk.com';
+
+    // Save the first file
+    const inputPath1 = './src/post.njk';
+    // const outputPath1 = '_site/health.allwomenstalk.com/nutrition-tips-to-feel-better-look-better-and-live-your-best-life/index.html';
+    const html = json.filter((item) => item.inputPath === inputPath1)[0].content
+    // const url1 = await saveFileToS3AndGetUrl(data1, bucketName, inputPath1, outputPath1, s3);
+
+    // Save the second file
+    const inputPath2 = './src/amp.njk';
+    // const outputPath2 = '_site/health.allwomenstalk.com/nutrition-tips-to-feel-better-look-better-and-live-your-best-life/amp.html';
+    const amp = json.filter((item) => item.inputPath === inputPath2)[0].content
+    // const url2 = await saveFileToS3AndGetUrl(json, bucketName, inputPath2, outputPath2, s3);
 
     return {
       statusCode: 200,
       headers: {
         'Content-Type': 'text/html',
       },
-      body: json[0].content,
+      body: event.requestContext&&event.requestContext.stage==='amp' ? amp : html,
     };
   } catch (error) {
     console.error('Error generating post:', error);
@@ -68,3 +97,20 @@ exports.handler = async (event, context) => {
     };
   }
 };
+
+async function saveFileToS3AndGetUrl(data, bucketName, inputPath, outputPath, s3) {
+  const params = {
+    Bucket: bucketName,
+    Key: outputPath,
+    Body: JSON.stringify(data),
+    ContentType: 'application/json',
+  };
+
+  await s3.putObject(params).promise();
+  console.log(`File saved to S3: ${outputPath}`);
+
+  const url = `https://${bucketName}.s3.amazonaws.com/${outputPath}`;
+  console.log(`Public URL: ${url}`);
+
+  return url;
+}

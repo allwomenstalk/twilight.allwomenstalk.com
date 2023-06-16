@@ -10,8 +10,14 @@ const errorsarr = [];
 const validationReports = [];
 const reportTime = new Date().toISOString();
 
+let totalFiles = 0;
+let checkedFiles = 0;
+let failedFiles = 0;
+
 glob("_site" + '/**/amp.html', {}, (err, files) => {
-  console.log("Validating " + files.length + " AMP files");
+  totalFiles = files.length;
+  console.log("Validating " + totalFiles + " AMP files");
+
   fileslist.push(...files);
   Run();
 });
@@ -19,9 +25,17 @@ glob("_site" + '/**/amp.html', {}, (err, files) => {
 async function Run() {
   const file = fileslist.shift();
   if (file) {
+    checkedFiles++;
     await ValidateFile(file);
+    process.stdout.write(`Progress: ${checkedFiles}/${totalFiles} (${((checkedFiles / totalFiles) * 100).toFixed(2)}%)`);
+    process.stdout.clearLine();
+    process.stdout.cursorTo(0);
     Run();
   } else {
+    process.stdout.write("\n");
+    console.log("Validation complete:");
+    console.log("Checked Files: " + checkedFiles + " / " + totalFiles + " (" + ((checkedFiles / totalFiles) * 100).toFixed(2) + "%)");
+    console.log("Failed Files: " + failedFiles);
     console.log([...new Set(errorsarr)]);
     saveReportsToJson();
     saveReportsToMongoDB();
@@ -43,7 +57,10 @@ function ValidateFile(file) {
         }
         ((error.severity === 'ERROR') ? console.error : console.warn)(url, msg);
       }
-      if (result.status !== 'PASS') errorsarr.push(url);
+      if (result.status !== 'PASS') {
+        errorsarr.push(url);
+        failedFiles++;
+      }
       validationReports.push({
         url: url,
         status: result.status,

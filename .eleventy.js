@@ -5,7 +5,7 @@ const CleanCSS = require("clean-css");
 module.exports = function(eleventyConfig) {
 
   if (process.env.ELEVENTY_PRODUCTION) {
-    // eleventyConfig.addTransform("htmlmin", htmlminTransform);
+    eleventyConfig.addTransform("htmlmin", htmlminTransform);
   }
 
   // Passthrough
