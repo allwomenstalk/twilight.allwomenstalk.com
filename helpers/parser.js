@@ -1,4 +1,5 @@
 const tags = require('./tags.js')
+const { marked } = require('marked');
 
 module.exports = function (item) {
       //post process
@@ -110,6 +111,8 @@ module.exports = function (item) {
         }
       } 
 
+      
+
       temp.content = item.post_content 
         //.replace(/<div class=\"embed\" data-media-type=\"instagram\" data-media-url=\"https:\/\/www.instagram.com\/p\/(.*?)\/">(.*?)?<\/div>/g, 
         //  '<amp-instagram data-shortcode="$1" width="1" height="1" layout="responsive"></amp-instagram>')
@@ -149,7 +152,19 @@ module.exports = function (item) {
         //   'type="image\/webp" srcset="https://resize.img.allw.mn/fit-in/600x0/filters:format(webp)/filters:quality(70)/')
         .split(/(?=<h2)/g)
 
-      
+      // if(item.elaborate) console.log(item.elaborate)
+      temp.elaborate = {}
+      temp.content.forEach((page,index) => {
+        // console.log(page)
+        console.log(index,page)
+        //filter by pageNumber
+        extra = item.elaborate.filter(i=>i.pageNumber == index)?.[0]
+        console.log('extra:',extra);
+        html = extra?.response?.[0]?marked(extra?.response?.[0]):''
+        console.log('extra:',html);
+        if (html) temp.elaborate[index] = html
+      })
+
       // temp.url = `${
       //   (item.blog === 'aws'
       //     ? 'https://allwomenstalk.com/'

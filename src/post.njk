@@ -31,6 +31,18 @@ eleventyComputed:
             " id="{{loop.index}}">
         {{ page | safe }}
         </div>
+        
+        {% if loop.index > 1 and not loop.last %}
+            {% if post.elaborate[loop.index-1] %}
+                <div class="italic prose dark:prose-invert p-4 overflow-hidden mx-auto max-w-xl">
+                {{ post.elaborate[loop.index-1] | safe }}
+                </div>
+            {% else %}
+                <div class="elaborate italic prose dark:prose-invert p-4 overflow-hidden mx-auto max-w-xl"></div>
+            {% endif %}
+        {% endif %}
+
+
         {% if loop.index == 1 %}
             {% include 'partials/toc.njk' %}
         {% elif loop.index == 2 %}

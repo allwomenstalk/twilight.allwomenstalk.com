@@ -88,5 +88,18 @@ module.exports = [{
       'foreignField': 'post_id', 
       'as': 'faq'
     }
+  },
+  {
+    $addFields: {
+      postIdString: { $toString: "$_id" }
+    }
+  },
+  {
+    $lookup: {
+      from: "extensions",
+      localField: "postIdString",
+      foreignField: "postid",
+      as: "elaborate",
+    },
   }
 ]

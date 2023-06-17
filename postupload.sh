@@ -51,7 +51,7 @@ for folder in "${folders[@]}"; do
         # Upload the folder to S3 bucket
         aws s3 cp "_site/$folder" s3://"$folder" --recursive
         # Upload the folder js 
-        # aws s3 cp "_site/js" s3://"$folder"/js --recursive
+        aws s3 cp "_site/js" s3://"$folder"/js --recursive
     else
         echo "$folder is empty or does not exist. Skipping upload..."
     fi

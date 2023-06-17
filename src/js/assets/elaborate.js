@@ -17,41 +17,29 @@ async function fetchData(postid, page) {
     }
   }
 
+  console.log('elaborate.js started onload');
 
-    console.log('elaborate.js started onload')
-    setTimeout(() => {
-      const postBlocks = document.querySelectorAll('.post');
-      const postid = document.querySelector('head').getAttribute('data-postid');
-      console.log('adding buttons to postid', postid);
-      postBlocks.forEach((p, index) => {
-        if (index >= 1 && index<postBlocks.length-2) { 
-          const button = document.createElement('button');
-          button.innerText = 'Elaborate ...';
-          button.classList.add('_elaborate','relative', 'inline-flex', 'items-center', 'gap-x-1.5', 'rounded-md', 'px-3', 'py-2', 'text-sm', 'font-semibold', 'ring-1', 'ring-inset', 'ring-gray-300', 'hover:bg-gray-50', 'hover:text-gray-900', 'focus:z-10');
-  
-          button.addEventListener('click', async () => {
-            button.disabled = true;
-            button.innerText = 'Loading...';
-  
-            const page = index;
-            const result = await fetchData(postid, page);
-            const obj = JSON.parse(result);
-  
-            const resultTextNode = document.createTextNode(obj.response);
-  
-            const resultBlock = document.createElement('p');
-            resultBlock.classList.add('italic', 'opacity-70')
-            resultBlock.innerHTML = obj.response;
-  
-            // Add the response text inside .post block as an extra <p> block
-            p.insertBefore(resultBlock, p.querySelector('button.like'));
-  
-            button.parentNode.removeChild(button);
-          });
-  
-          // Attach the button to .post block before the Like button
-          p.insertBefore(button, p.querySelector('button.like'));
-        }
-      });
-    }, 2000); // Delay of 2 seconds
+const elaborateDivs = document.querySelectorAll('.elaborate');
 
+elaborateDivs.forEach((elaborateDiv, index) => {
+  const button = document.createElement('button');
+  button.innerText = 'Elaborate ...';
+  button.classList.add('_elaborate', 'relative', 'inline-flex', 'items-center', 'gap-x-1.5', 'rounded-md', 'px-3', 'py-2', 'text-sm', 'font-semibold', 'ring-1', 'ring-inset', 'ring-gray-300', 'hover:bg-gray-50', 'hover:text-gray-900', 'focus:z-10');
+  button.setAttribute('data-index', index); // Set custom attribute with the index value
+
+  button.addEventListener('click', async () => {
+    button.disabled = true;
+    button.innerText = 'Loading...';
+
+    const postid = document.querySelector('head').getAttribute('data-postid');
+    const page = button.getAttribute('data-index'); // Retrieve the index value from the button
+    const result = await fetchData(postid, page);
+    const obj = JSON.parse(result);
+
+    // Handle the response as needed for the 'elaborate' div
+    // Example: Update the innerHTML of the 'elaborate' div with the response
+    elaborateDiv.innerHTML = obj.response;
+  });
+
+  elaborateDiv.appendChild(button);
+});
