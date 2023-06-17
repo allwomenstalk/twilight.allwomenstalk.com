@@ -16,4 +16,7 @@ rm ./src/_data/db.js
 
 - sam build && sam deploy
 
+or 
+> sh build.sh 
+
 opitinal: remove src to avoid confustion with files
