@@ -8,3 +8,4 @@ _marker.json
 *config.ini
 src/_includes/partials/css/*.css
 lambda/*
+.env
