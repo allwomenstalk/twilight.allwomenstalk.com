@@ -155,13 +155,9 @@ module.exports = function (item) {
       // if(item.elaborate) console.log(item.elaborate)
       temp.elaborate = {}
       temp.content.forEach((page,index) => {
-        // console.log(page)
-        console.log(index,page)
         //filter by pageNumber
         extra = item.elaborate.filter(i=>i.pageNumber == index)?.[0]
-        console.log('extra:',extra);
         html = extra?.response?.[0]?marked(extra?.response?.[0]):''
-        console.log('extra:',html);
         if (html) temp.elaborate[index] = html
       })
 

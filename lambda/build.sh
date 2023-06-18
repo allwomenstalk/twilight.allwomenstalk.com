@@ -3,6 +3,7 @@
 # Update lambda
 echo "Updating lambda..."
 cp -r ../src/ ./nodejs/src
+cp -r ../helpers/ ./nodejs/helpers
 
 # Delete _data/db.js
 echo "Deleting _data/db.js..."
@@ -19,4 +20,4 @@ echo "Deploy completed successfully!"
 echo "Cleaning up..."
 cd ..
 rm -rf ./nodejs/src
-
+rm -rf ./nodejs/helpers
