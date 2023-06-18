@@ -8,6 +8,7 @@ cp -r ../helpers/ ./nodejs/helpers
 # Delete _data/db.js
 echo "Deleting _data/db.js..."
 rm ./nodejs/src/_data/db.js
+rm ./nodejs/src/_data/cache.json
 
 echo "Update completed successfully!"
 

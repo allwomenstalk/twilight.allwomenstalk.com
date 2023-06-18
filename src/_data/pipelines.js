@@ -57,6 +57,9 @@ pipeline_recent = [
     '$sort': {
       'post_date': -1 //recently updated posts
     }
+  },
+  {
+    '$limit': 100
   }
 ]
 

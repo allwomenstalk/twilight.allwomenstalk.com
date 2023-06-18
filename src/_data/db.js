@@ -7,7 +7,7 @@ const client = new MongoClient(uri, { useUnifiedTopology: true });
 
 const parser = require(fs.realpathSync('.') + "/helpers/parser.js");
 const mongopipelines = require('./pipelines.js');
-const pipelinePost = require('./pipelinePost.js');
+const pipelinePost = require('../../helpers/pipelinePost.js');
 
 const month = new Date().getMonth() + 1;
 const months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
@@ -35,7 +35,7 @@ module.exports = async () => {
     const collection = database.collection('posts');
 
     const limitperbuild = process.env.NODE_ENV === "production" ? 10000 : 100;
-    const filter = global[process.env.PIPE ? process.env.PIPE : 'pipeline_filter'];
+    const filter = global[process.env.PIPE ? process.env.PIPE : 'pipeline_recent'];
     console.log('fitler pipeline name:', process.env.PIPE, filter);
 
     const pipeline = [
