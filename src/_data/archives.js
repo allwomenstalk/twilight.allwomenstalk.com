@@ -3,7 +3,8 @@ const moment = require('moment');
 const fs = require('fs');
 const { group } = require('console');
 // Replace the uri string with your MongoDB deployment's connection string.
-const uri = 'mongodb+srv://admin:23tyHjwbnqp21@cluster0.jfcrg.gcp.mongodb.net/?retryWrites=true&w=majority';
+
+const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri, { useUnifiedTopology: true });
 const month = new Date().getMonth() + 1;
 const months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
@@ -15,7 +16,7 @@ console.log('curent month:', marr);
 
 // settings 
 let path = './src/_data/cache.json'
-const postperpage = 55;
+const postperpage = 258;
 
 try {
   var arr = JSON.parse(fs.readFileSync(path, 'utf8'));
