@@ -156,14 +156,15 @@ module.exports = function (item) {
         //   'type="image\/webp" srcset="https://resize.img.allw.mn/fit-in/600x0/filters:format(webp)/filters:quality(70)/')
         .split(/(?=<h2)/g)
 
-      // if(item.elaborate) console.log(item.elaborate)
+      // ellaorate parts 
       temp.elaborate = {}
-      temp.content.forEach((page,index) => {
-        //filter by pageNumber
-        extra = item.elaborate.filter(i=>i.pageNumber == index)?.[0]
-        html = extra?.response?.[0]?marked(extra?.response?.[0]):''
-        if (html) temp.elaborate[index] = html
-      })
+      // temp.content.forEach((page,index) => {
+      //   //filter by pageNumber
+      //   extra = item.elaborate.filter(i=>i.pageNumber == index)?.[0]
+      //   html = extra?.response?.[0]?marked(extra?.response?.[0]):''
+      //   if (html) temp.elaborate[index] = html
+      // })
+      
 
       // temp.url = `${
       //   (item.blog === 'aws'
