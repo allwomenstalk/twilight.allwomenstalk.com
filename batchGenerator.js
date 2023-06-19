@@ -5,7 +5,7 @@ const exec = util.promisify(require('child_process').exec);
 require('dotenv').config();
 
 const parser = require('./helpers/parser.js');
-const pipelinePost = require('./src/_data/pipelinePost.js');
+const pipelinePost = require('./helpers/pipelinePost.js');
 
 const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri, { useUnifiedTopology: true });
@@ -22,10 +22,11 @@ let filter = [
 ]; // Filter to be used in the aggregation pipeline
 
 const startTime = new Date();
-
+let run = 0;
 async function generateBatch() {
   
-
+  run++;
+  console.log(`Run ${run}`);
   if (!marker) {
     
     await exec('npm run clean'); // Clean the _site directory before the first batch

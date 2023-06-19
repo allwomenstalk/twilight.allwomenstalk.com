@@ -1,7 +1,6 @@
 const tags = require('./tags.js')
 const { marked } = require('marked');
 marked.use({
-  langPrefix: '',
   mangle: false,
   headerIds: false
 });
