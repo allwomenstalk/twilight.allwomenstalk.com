@@ -53,6 +53,10 @@ for folder in "${folders[@]}"; do
         aws s3 cp "_site/$folder" s3://"$folder" --recursive --quiet
         # Upload the folder js 
         aws s3 cp "_site/js" s3://"$folder"/js --recursive
+        
+        # Delete the folder after upload
+        echo "Deleting $folder..."
+        rm -rf "_site/$folder"
     else
         echo "$folder is empty or does not exist. Skipping upload..."
     fi

@@ -25,7 +25,7 @@ elaborateDivs.forEach((elaborateDiv, index) => {
   const button = document.createElement('button');
   button.innerText = 'Elaborate ...';
   button.classList.add('_elaborate', 'relative', 'inline-flex', 'items-center', 'gap-x-1.5', 'rounded-md', 'px-3', 'py-2', 'text-sm', 'font-semibold', 'ring-1', 'ring-inset', 'ring-gray-300', 'hover:bg-gray-50', 'hover:text-gray-900', 'focus:z-10');
-  button.setAttribute('data-index', index); // Set custom attribute with the index value
+  button.setAttribute('data-index', elaborateDiv.getAttribute('data-page')); // Set custom attribute with the index value
 
   button.addEventListener('click', async () => {
     button.disabled = true;

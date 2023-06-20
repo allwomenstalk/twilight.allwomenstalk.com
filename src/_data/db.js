@@ -35,7 +35,7 @@ module.exports = async () => {
     const collection = database.collection('posts');
 
     const limitperbuild = process.env.NODE_ENV === "production" ? 10000 : 100;
-    const filter = global[process.env.PIPE ? process.env.PIPE : 'pipeline_recent'];
+    const filter = global[process.env.PIPE ? process.env.PIPE : 'pipeline_filter'];
     console.log('fitler pipeline name:', process.env.PIPE, filter);
 
     const pipeline = [
