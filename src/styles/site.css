@@ -7,6 +7,11 @@
 
 @tailwind components;
 
+/* amp page styles */
+
+amp-list div[role=list]{
+    @apply flex justify-center overflow-hidden text-xs
+}
 
 
 

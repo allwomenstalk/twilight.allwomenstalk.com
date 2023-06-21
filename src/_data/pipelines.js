@@ -57,6 +57,9 @@ pipeline_recent = [
     '$sort': {
       'post_date': -1 //recently updated posts
     }
+  },
+  {
+    '$limit': 100
   }
 ]
 
@@ -64,7 +67,7 @@ pipeline_filter = [
    {
     '$match': {
       // '_id': ObjectId('604854b781118707f2732712')
-      '_id': {$in: [new ObjectId('54f146bf29ee86141a496042'),new ObjectId('604854b781118707f2732712')]}
+      '_id': {$in: [new ObjectId('500eef02745f08c762863db3'),new ObjectId('51f64ae637cf9c55c94a996b')]}
       // 'post_content': new RegExp('<li>')
     }
   }
@@ -114,7 +117,7 @@ pipeline_noads = [
 pipeline_iframe = [
   {
     '$match': {
-      'post_content':new RegExp(' <iframe'),
+      'post_content':new RegExp('<iframe'),
     }
   }
 ]
@@ -157,7 +160,7 @@ pipeline_name = [
 pipeline_category = [
   {
     '$match': {
-      "super_categories":{$in:["beauty"]}
+      "super_categories":{$in:["love"]}
     }
     
   },

@@ -236,6 +236,12 @@
     return null;
     }
 
+
+    setTimeout(function() {
+        loadJs("/js/elaborate.2.0.min.js")
+        {# loadJs('/js/elaborate.min.js') #}
+    }, 2500)
+
     {# disable all logs in production #}
     {% if metadata.NODE_ENV == "production" %}
     if(!window.console) window.console = {};
@@ -246,9 +252,19 @@
     {% endif %}
 
 
+
+
 </script>
 
-<!-- Google tag (gtag.js) -->
+<!-- Bonbon Web Tags -->
+<script>function bonbontag(){bonbonDataLayer.push(arguments);};(function(w,d,s,l,i,e){w[l]=w[l]||[];w[l].push({'bonbon.start':
+new Date().getTime(),event:'bonbon.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s);j.type="text/javascript";j.async=true;j.setAttribute('data-clientId',i);e&&j.setAttribute('data-environment',e);j.id='bonbon-js-sdk';j.src=
+'https://cdn.bonbon.tech/js/bonbon.js';f.parentNode.insertBefore(j,f);
+})(window,document,'script','bonbonDataLayer','yP0aRkN8jt7BBsMOPMoxIHUTWBIprOYf');</script>
+<!-- End Bonbon Web Tags -->
+
+{# <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17514583-34"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -256,4 +272,13 @@
   gtag('js', new Date());
   gtag('set', {'dimension1': '{{metadata.version}}'});
   gtag('config', 'UA-17514583-34');
-</script>
+</script> #}
+
+
+{% if post.amp %}
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+{% endif %}
+
+{% if post.ampyt %}
+<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+{% endif %}
