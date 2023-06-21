@@ -163,7 +163,7 @@ module.exports = function (item) {
         // if (item.elaborate.publish){ // only if it's published
           extra = item.elaborate.filter(i=>i.pageNumber == index)?.[0]
         if (extra && extra.publish) {
-          console.log(extra)
+          // console.log(extra)
           html = extra?.response?.[0]?marked(extra?.response?.[0]):''
           if (html) temp.elaborate[index] = html
         }
