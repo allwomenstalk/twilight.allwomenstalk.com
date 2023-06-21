@@ -3,7 +3,7 @@
 {% endif %}
 
 <a href="{{post.url}}"  
-  class="text-gray-900 dark:text-gray-100 rounded-lg hover:opacity-70 {% if bigcard %}col-span-full md:flex {% endif %} relative" 
+  class="text-gray-900 rounded-lg hover:opacity-70 {% if bigcard %}col-span-full md:flex {% endif %} relative" 
   title="{{post.keyword or post.title}}">
       <div class="{% if bigcard %}md:w-1/2 md:h-96 md:rounded-r-none md:rounded-l {% endif %}
                   text-center overflow-hidden bg-cover bg-center rounded-t">
@@ -23,9 +23,9 @@
             decoding="async"/>
       </div>
       <div class="{% if bigcard %}md:w-1/2 md:h-96 md:rounded-l-none sm:rounded-r md:border-t md:border-l-0{% endif %}
-                   border-r border-b border-l  border-gray-300 dark:border-gray-700 rounded-b  p-4 flex flex-col justify-between leading-normal h-56 cardtitle bg-white dark:bg-gray-900">
+                   border-r border-b border-l  border-gray-300 rounded-b  p-4 flex flex-col justify-between leading-normal h-56 cardtitle bg-white dark:bg-gray-900">
         <div>
-          <p class="text-xs text-gray-700 dark:text-gray-200 flex items-center uppercase">
+          <p class="text-xs text-gray-700 flex items-center uppercase">
               {{ post.tags }} 
               {%- for e in categories -%}
               {%- if e.name == post.tags -%}{{ e.icon }}{%- endif -%}
