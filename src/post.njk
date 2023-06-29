@@ -42,17 +42,19 @@ eleventyComputed:
         {% endif %}
 
 
-        {% if loop.index == 1 %}
-            {% include 'partials/toc.njk' %}
-        {% elif loop.index == 2 %}
-            {# {% include "partials/gpt.njk" %} #}
-            {% include 'partials/unibots.njk' %}
-        {% elif loop.revindex == 2 %}
-            {% include 'quiz.njk' %}
-        {% endif %}
+
 
         {% if not loop.last %}
-            <hr class="hidden hr{{loop.index}}">
+                {% if loop.index == 1 %}
+                    {% include 'partials/toc.njk' %}
+                {% elif loop.index == 2 %}
+                    {# {% include "partials/gpt.njk" %} #}
+                    {% include 'partials/unibots.njk' %}
+                {% elif loop.revindex == 2 %}
+                    {% include 'quiz.njk' %}
+                {% else %}
+                    <hr class="hidden hr{{loop.index}}">
+                {% endif %}
             {# {% include 'partials/cta.njk' %} #}
         {% else %}
             {% include 'partials/keywords.njk' %}
