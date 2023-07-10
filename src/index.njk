@@ -3,6 +3,13 @@ layout: layout/default.njk
 url: {{metadata.host}}
 ---
 <main class="">
+	posts : {{ posts | safe | dump }}
+	<ol class="">
+		{% for post in posts %}
+		<li><a href="{{post.host}}/{{post.slug}}/">{{post.title}}</a> </li> 
+		{% endfor %}
+	</ol>
+
 	<ol class="grid grid-flow">
 		<li class="m-2">
 			<h4><a href="allwomenstalk.com">Homepage</a> </h4>
