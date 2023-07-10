@@ -4,10 +4,11 @@ require('dotenv').config();
 
 const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri, { useUnifiedTopology: true });
+const filename = './src/_data/posts.json';
 
 const parser = require(fs.realpathSync('.') + "/helpers/parser.js");
-const mongopipelines = require('./pipelines.js');
-const pipelinePost = require('../../helpers/pipelinePost.js');
+const mongopipelines = require('./src/_data/pipelines.js');
+const pipelinePost = require('./helpers/pipelinePost.js');
 
 const month = new Date().getMonth() + 1;
 const months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
@@ -17,13 +18,13 @@ const marr = [
 ];
 
 try {
-  var arr = JSON.parse(fs.readFileSync('./src/_data/cache.json', 'utf8'));
+  var arr = JSON.parse(fs.readFileSync(filename, 'utf8'));
   console.log("Local file found");
 } catch (err) {
   console.log("No local file");
 }
 
-module.exports = async () => {
+main = async () => {
   if (arr) {
     console.log("Post Count: ", arr.length);
     return arr;
@@ -54,7 +55,7 @@ module.exports = async () => {
     await cursor.forEach((item) => {
       arr.push(parser(item));
     });
-    fs.writeFileSync('./src/_data/cache.json', JSON.stringify(arr, null, 4));
+    fs.writeFileSync(filename, JSON.stringify(arr, null, 4));
 
     console.log('process.env.NODE_ENV', process.env.NODE_ENV);
     console.log('arr length', arr.length);
@@ -70,3 +71,5 @@ module.exports = async () => {
     await client.close();
   }
 };
+
+main() // run the async function

@@ -13,7 +13,7 @@ layout: layout/default.njk
 	{%- endfor -%}
 	<ol> #}
 
-	{%- for post in db -%}
+	{%- for post in posts -%}
 		<li class="m-2">
 			<p>{{post.category}}</p>			
 			<h4><a href="{{post.host}}/{{post.slug}}" class="text-bold">{{post.title}}</a> </h4>

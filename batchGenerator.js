@@ -55,7 +55,7 @@ async function generateBatch() {
     const lastIndex = result.length - 1;
     const lastPostId = result[lastIndex]._id;
     parsed = result.map(parser);
-    fs.writeFileSync('./src/_data/cache.json', JSON.stringify(parsed, null, 2));
+    fs.writeFileSync('./src/_data/posts.json', JSON.stringify(parsed, null, 2));
     fs.writeFileSync('./_marker.json', JSON.stringify({ lastPostId }));
 
     console.log(`Generated batch. Last post ID: ${lastPostId}`);
