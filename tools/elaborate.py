@@ -1,7 +1,13 @@
 import re
 from pymongo import MongoClient
+import configparser
 
-client = MongoClient('mongodb+srv://admin:23tyHjwbnqp21@cluster0.jfcrg.gcp.mongodb.net/test?authSource=admin&replicaSet=Cluster0-shard-0&w=majority&readPreference=primary&retryWrites=true&ssl=true')
+config = configparser.ConfigParser()
+config.read("config.ini")
+
+uri = config.get("MONGODB", "MONGODB_URI")
+
+client = MongoClient(uri)
 filter={
     'response': re.compile(r"2022")
 }

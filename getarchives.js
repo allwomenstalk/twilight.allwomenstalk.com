@@ -3,10 +3,9 @@ const moment = require('moment');
 const fs = require('fs');
 const { group } = require('console');
 require('dotenv').config()
-// Replace the uri string with your MongoDB deployment's connection string.
-
 const uri = process.env.MONGODB_URI;
-console.log(uri)
+
+
 const client = new MongoClient(uri, { useUnifiedTopology: true });
 const month = new Date().getMonth() + 1;
 const months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
