@@ -1,8 +1,9 @@
 const { MongoClient } = require('mongodb');
 const fs = require('fs');
-require('dotenv').config();
 
+require('dotenv').config();
 const uri = process.env.MONGODB_URI;
+
 const client = new MongoClient(uri, { useUnifiedTopology: true });
 const filename = './src/_data/posts.json';
 
