@@ -3,11 +3,11 @@
 {% endif %}
 
 <a href="{{post.url}}"  
-  class="text-gray-900 dark:text-gray-100 rounded-lg hover:opacity-70 {% if bigcard %}col-span-full md:flex {% endif %} relative" 
+  class="text-gray-900 rounded-lg hover:opacity-70 {% if bigcard %}col-span-full md:flex {% endif %} relative" 
   title="{{post.keyword or post.title}}">
-      <div class="{% if bigcard %}md:w-1/2 md:h-96{% endif %}
+      <div class="{% if bigcard %}md:w-1/2 md:h-96 md:rounded-r-none md:rounded-l {% endif %}
                   text-center overflow-hidden bg-cover bg-center rounded-t">
-        <img class="w-full"
+        <img class="w-full "
         {% if bigcard %}
           width="800" height="800"
           src="{{ post.image }}"
@@ -22,10 +22,10 @@
             loading="lazy" 
             decoding="async"/>
       </div>
-      <div class="{% if bigcard %}md:w-1/2 md:h-96{% endif %}
-                   border-r border-b border-l border-gray-300 dark:border-gray-700 rounded-b p-4 flex flex-col justify-between leading-normal h-56 cardtitle bg-white dark:bg-gray-900">
+      <div class="{% if bigcard %}md:w-1/2 md:h-96 md:rounded-l-none sm:rounded-r md:border-t md:border-l-0{% endif %}
+                   border-r border-b border-l  border-gray-300 rounded-b  p-4 flex flex-col justify-between leading-normal h-56 cardtitle bg-white dark:bg-gray-900">
         <div>
-          <p class="text-xs text-gray-700 dark:text-gray-200 flex items-center uppercase">
+          <p class="text-xs text-gray-700 flex items-center uppercase">
               {{ post.tags }} 
               {%- for e in categories -%}
               {%- if e.name == post.tags -%}{{ e.icon }}{%- endif -%}
@@ -40,11 +40,11 @@
           <div class="text-xs">
             <p class="leading-none">{{ post.author.name }}</p>
             <p class="leading-none">{{ post.date }}</p>
-            <button class="rounded px-2 py-1 absolute right-3 bottom-4" aria-label="Read more">
+            {# <button class="rounded px-2 py-1 absolute right-3 bottom-4" aria-label="Read more">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                 <use xlink:href="#moreicon" />
               </svg>
-            </button>
+            </button> #}
           </div>
         </div>
       </div>

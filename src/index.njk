@@ -1,17 +1,23 @@
 ---
 layout: layout/default.njk
+url: {{metadata.host}}
 ---
 <main class="">
 	<ol class="grid grid-flow">
 		<li class="m-2">
 			<h4><a href="allwomenstalk.com">Homepage</a> </h4>
 		</li>
-	{# {%- for cat in categories -%}
+			
 		<li class="m-2">
-			<h4><a href="{{cat._id}}.allwomenstalk.com">{{cat.name}}</a> </h4>
+			<h4><a href="/gsearch">Google Search</a> </h4>
 		</li>
-	{%- endfor -%}
-	<ol> #}
+		// list categoreis 
+
+		{% for category in categories %}
+		<li class="m-2">
+			<h4><a href="/{{category._id}}.allwomenstalk.com">{{category.name}}</a> </h4>
+		</li>
+		{% endfor %}
 
 	{%- for post in posts -%}
 		<li class="m-2">

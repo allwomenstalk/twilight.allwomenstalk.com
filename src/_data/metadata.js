@@ -2,6 +2,7 @@ module.exports =
 {
   "title": "Allwomenstalk",
   "description": "Find Your Voice, Embrace Your Power",
+  "host": "https://allwomenstalk.com",
   "generator": "Eleventy",
   "NODE_ENV": process.env.ELEVENTY_PRODUCTION? "production" : "development",
   "version": "2.0.0",
