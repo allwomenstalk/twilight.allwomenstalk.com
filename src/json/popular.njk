@@ -1,0 +1,17 @@
+---
+permalink: allwomenstalk.com/popular.json
+---
+
+{
+  "items": [
+    {%- for post in popular | slicearr(5) -%}
+    {
+      "title": "{{ post.title }}",
+      "image": "{{ post.imageresize }}",
+      "url": "{{ post.url }}",
+      "category": "{{ post.category }}",
+      "keyword": "{{ post.keyword }}"
+    }{% if not loop.last %},{% endif %}
+    {%- endfor -%}
+  ]
+}

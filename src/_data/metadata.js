@@ -5,6 +5,7 @@ module.exports =
   "host": "https://allwomenstalk.com",
   "generator": "Eleventy",
   "NODE_ENV": process.env.ELEVENTY_PRODUCTION? "production" : "development",
+  "year": new Date().getFullYear(),
   "version": "2.0.0",
   "pages": [
       {

@@ -1,0 +1,16 @@
+---
+permalink: allwomenstalk.com/latest.json
+---
+
+{
+  "items": [
+    {%- for post in archives.all |slicearr (5) -%}
+    {
+      "title": "{{ post.title }}",
+      "image": "{{ post.imageresize }}",
+      "url": "{{ post.url }}",
+      "category": "{{ post.category }}"
+    }{% if not loop.last %},{% endif %}
+    {%- endfor -%}
+  ]
+}

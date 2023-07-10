@@ -66,6 +66,8 @@ async function generateBatch() {
 
     await generateBatch(); // Proceed to the next batch
   } else {
+    console.log('Generating archive...');
+    await generateArchive();
     const endTime = new Date();
     const duration = Math.round((endTime - startTime) / 1000 / 60); // Duration in minutes
 
@@ -87,6 +89,19 @@ async function runEleventyBuild() {
     console.error('Error running Eleventy build:', error);
   }
 }
+
+
+async function generateArchive() {
+  try {
+    console.log('Running Eleventy build...');
+    await exec('node getarchives.js');
+    await exec('npm run build');
+    console.log('Eleventy build completed.');
+  } catch (error) {
+    console.error('Error running Eleventy build:', error);
+  }
+}
+
 
 // Usage
 
