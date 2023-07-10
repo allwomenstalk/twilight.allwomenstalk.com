@@ -3,6 +3,8 @@ _site/
 *.DS_Store
 .DS_Store
 src/_data/cache.json
+src/_data/posts.json
+src/_data/db.json
 _mongodb.json
 _marker.json
 *config.ini
