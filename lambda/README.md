@@ -1,5 +1,7 @@
 test
 sam local invoke MyLambdaFunction --event event.json
+temp solution: 
+node lambdatest.js 
 
 
 sam build
