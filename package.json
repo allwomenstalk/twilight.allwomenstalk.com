@@ -21,7 +21,7 @@
     "test:upload": "aws s3 cp _site s3://allwomenstalk.com/lighthousetest/ --recursive",
     "test:invalidate": "aws cloudfront create-invalidation --distribution-id ELXAREN8U9B5R --paths /lighthousetest/*",
     "clean": "rm -rf _site",
-    "reset": "rm -f src/_data/cache.json"
+    "reset": "echo '[]' > src/_data/posts.json && echo '[]' > src/_data/archives.json && echo '[]' > src/_data/popular.json"
   },
   "repository": {
     "type": "git",
