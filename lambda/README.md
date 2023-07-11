@@ -1,3 +1,4 @@
+test
 sam local invoke MyLambdaFunction --event event.json
 
 

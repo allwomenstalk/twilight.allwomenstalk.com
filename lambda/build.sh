@@ -3,12 +3,16 @@
 # Update lambda
 echo "Updating lambda..."
 cp -r ../src/ ./nodejs/src
+# Clean up 
+rm ./nodejs/src/_data/posts.json
+rm ./nodejs/src/_data/archives.json
+rm ./nodejs/src/_data/popular.json
+# Clean up unused templates 
+rm -rf ./nodejs/src/json/
+rm -rf ./nodejs/src/archives/
+
 cp -r ../helpers/ ./nodejs/helpers
 
-# Delete _data/db.js
-echo "Deleting _data/db.js..."
-rm ./nodejs/src/_data/db.js
-rm ./nodejs/src/_data/cache.json
 
 echo "Update completed successfully!"
 
@@ -19,6 +23,6 @@ sam deploy
 
 echo "Deploy completed successfully!"
 echo "Cleaning up..."
-cd ..
-rm -rf ./nodejs/src
-rm -rf ./nodejs/helpers
+
+rm -rf ../nodejs/src
+rm -rf ../nodejs/helpers
