@@ -3,7 +3,7 @@ layout: layout/default.njk
 url: {{metadata.host}}
 ---
 <main class="">
-	posts : {{ posts | safe | dump }}
+
 	<ol class="">
 		{% for post in posts %}
 		<li><a href="{{post.host}}/{{post.slug}}/">{{post.title}}</a> </li> 

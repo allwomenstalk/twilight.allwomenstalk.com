@@ -169,14 +169,15 @@
             loadKeywords() {
                 try {
                 const filePaths = [
-                    'keywords.json',
-                    '/keywords.json',
-                    'https://allwomenstalk.com/keywords.json'
+                    'list.json',
+                    '/list.json',
+                    'https://allwomenstalk.com/list.json'
                 ];
 
                 const fetchKeywords = (filePath) => {
                     return fetch(filePath)
                     .then(response => {
+                        console.log('keywords', response);
                         if (!response.ok) {
                         throw new Error('Network response was not ok');
                         }
