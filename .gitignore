@@ -13,3 +13,4 @@ _marker.json
 .env
 src/_includes/partials/css/*.css
 lambda/*
+validation_reports.json
