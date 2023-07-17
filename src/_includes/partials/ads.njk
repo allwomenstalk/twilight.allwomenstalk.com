@@ -10,6 +10,11 @@
             googletag.pubads().enableSingleRequest();
             googletag.enableServices();
           });
+          googletag.cmd.push(function() {
+              // Display the ad in the specified slot
+              googletag.display('stickyunit');
+          });
+
       }
 
     {# hiding anchor ads for now  #}
