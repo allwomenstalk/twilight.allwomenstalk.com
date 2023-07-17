@@ -3,8 +3,11 @@
 - Lighthouse score after each feature 
 - Schema validity and relevancy 
 
+# Ads 
 
-
+https://developers.google.com/doubleclick-gpt/samples/display-test-ad
+https://developers.google.com/publisher-tag/samples/infinite-content?hl=en
+https://developers.google.com/publisher-tag/samples/control-sra-batching?hl=en
 
 
 # windty 🌬️
