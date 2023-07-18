@@ -16,7 +16,7 @@ eleventyComputed:
 ---
 
     
-    {# {% include 'partials/leaderboard.njk' %} #}
+    {% include 'partials/leaderboard.njk' %}
     
     {# {% include 'partials/adsense.njk' %} #}
     {% include 'partials/hero.njk' %}
@@ -33,7 +33,8 @@ eleventyComputed:
             " id="{{loop.index}}">
         {{ page | safe }}
         </div>
-        <div class="ad-slot" id="slot-{{loop.index}}"></div>
+
+
 
         {% if loop.index > 1 and not loop.last %}
             {% if post.elaborate[loop.index-1] %}
@@ -63,6 +64,9 @@ eleventyComputed:
         {% else %}
             {% include 'partials/keywordsgallery.njk' %}
         {% endif %}
+
+        <div class="ad-slot mx-auto" id="slot-{{loop.index}}"></div>
+
     {% endfor %}
 
 
@@ -76,6 +80,7 @@ eleventyComputed:
     
     {% include "partials/comments.njk" %}
 
+
     {# {% include 'partials/popular.njk' %} #}
 
     {% include 'partials/schema.njk' %}
@@ -84,4 +89,7 @@ eleventyComputed:
     {% include 'partials/icons.njk' %}
 
     {% include 'partials/related.njk' %}
+    
+    <div class="ad-slot mx-auto" id="slot-final"></div>
+
 
