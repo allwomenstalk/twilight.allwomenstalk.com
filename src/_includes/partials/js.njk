@@ -240,22 +240,22 @@
 
     setTimeout(function() {
         loadJs("/js/elaborate.2.0.min.js", () => {
-            console.log('elaborate loaded');
+            {# console.log('elaborate loaded'); #}
             window.elaborate.init();
         });
         loadJs('https://cdn.unibotscdn.com/ubplayer/player.js', () => {
-            console.log('ubplayer loaded');
+            {# console.log('ubplayer loaded'); #}
         });
         {# loadJs('/js/elaborate.min.js') #}
     }, 2500)
 
     {# disable all logs in production #}
     {% if metadata.NODE_ENV == "production" %}
-    if(!window.console) window.console = {};
+    {# if(!window.console) window.console = {};
     var methods = ["log", "debug", "warn", "info"];
     for(var i=0;i<methods.length;i++){
         console[methods[i]] = function(){};
-    }
+    } #}
     {% endif %}
 
 

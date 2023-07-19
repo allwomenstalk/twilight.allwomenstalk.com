@@ -50,22 +50,24 @@ eleventyComputed:
 
         {% if not loop.last %}
                 {% if loop.index == 1 %}
+                    <div class="ad-slot mx-auto" id="slot-{{loop.index}}"></div>
                     {% include 'partials/toc.njk' %}
                 {% elif loop.index == 2 %}
                     {# {% include "partials/gpt.njk" %} #}
                     {% include 'partials/unibots.njk' %}
                 {% elif loop.revindex == 2 %}
                     {% include 'quiz.njk' %}
+                    <div class="ad-slot mx-auto" id="slot-{{loop.index}}"></div>
                 {% else %}
                     {# <hr class="ad-slot hidden hr{{loop.index}}"> #}
-                    
+                    <div class="ad-slot mx-auto" id="slot-{{loop.index}}"></div>
+
                 {% endif %}
             {# {% include 'partials/cta.njk' %} #}
         {% else %}
             {% include 'partials/keywordsgallery.njk' %}
         {% endif %}
 
-        <div class="ad-slot mx-auto" id="slot-{{loop.index}}"></div>
 
     {% endfor %}
 
@@ -85,7 +87,8 @@ eleventyComputed:
 
     {% include 'partials/schema.njk' %}
 
-    <hr class="hidden">
+    <div class="ad-slot mx-auto" id="slot-related"></div>
+
     {% include 'partials/icons.njk' %}
 
     {% include 'partials/related.njk' %}
