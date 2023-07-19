@@ -15,7 +15,9 @@ eleventyComputed:
   content: "{{post.content}}"
 ---
 
+    
     {% include 'partials/leaderboard.njk' %}
+    
     {# {% include 'partials/adsense.njk' %} #}
     {% include 'partials/hero.njk' %}
 
@@ -31,7 +33,9 @@ eleventyComputed:
             " id="{{loop.index}}">
         {{ page | safe }}
         </div>
-        
+
+
+
         {% if loop.index > 1 and not loop.last %}
             {% if post.elaborate[loop.index-1] %}
                 {% include 'partials/elaborate.njk' %}
@@ -46,25 +50,32 @@ eleventyComputed:
 
         {% if not loop.last %}
                 {% if loop.index == 1 %}
+                    <div class="ad-slot mx-auto" id="slot-{{loop.index}}"></div>
                     {% include 'partials/toc.njk' %}
                 {% elif loop.index == 2 %}
                     {# {% include "partials/gpt.njk" %} #}
                     {% include 'partials/unibots.njk' %}
                 {% elif loop.revindex == 2 %}
-                    {# {% include 'quiz.njk' %} #}
-                    <hr class="hidden hr{{loop.index}}">
+                    {% include 'quiz.njk' %}
+                    <div class="ad-slot mx-auto" id="slot-{{loop.index}}"></div>
                 {% else %}
-                    <hr class="hidden hr{{loop.index}}">
+                    {# <hr class="ad-slot hidden hr{{loop.index}}"> #}
+                    <div class="ad-slot mx-auto" id="slot-{{loop.index}}"></div>
+
                 {% endif %}
             {# {% include 'partials/cta.njk' %} #}
         {% else %}
             <hr class="hidden hr{{loop.index}}">
             {% include 'partials/keywordsgallery.njk' %}
         {% endif %}
+
+
     {% endfor %}
 
 
-    {% include 'partials/ads.njk' %}
+    {# {% include 'partials/adsnew.njk' %} #}
+        {% include 'partials/adsnew.njk' %}
+
 
     {% include 'partials/collections.njk' %}
  
@@ -72,17 +83,21 @@ eleventyComputed:
     
     {% include "partials/comments.njk" %}
 
+
     {# {% include 'partials/popular.njk' %} #}
 
     {% include 'partials/schema.njk' %}
 
-    <hr class="hidden">
+    <div class="ad-slot mx-auto" id="slot-related"></div>
 
     {% include 'partials/icons.njk' %}
 
     <hr class="hidden">
 
     {% include 'partials/related.njk' %}
+    
+    <div class="ad-slot mx-auto" id="slot-final"></div>
+
 
     <hr class="hidden">
 

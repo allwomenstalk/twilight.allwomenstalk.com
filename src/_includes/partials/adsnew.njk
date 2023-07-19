@@ -1,0 +1,44 @@
+<script>
+    window.googletag = window.googletag || {cmd: []};
+
+      googletag.cmd.push(function() {
+        try {
+            // Define ad slots.
+            let adElements = document.querySelectorAll('.ad-slot');
+            {# console.log(adElements) #}
+            network = "/5445743/AWS-Universal"
+            {# network = "/5445743/demo" #}
+            {# network = "/6355419/Travel/Europe" #}
+
+            let slots = Array.from(adElements).map((element, i) => 
+                googletag.defineSlot(network, [300, 250], element.id)
+                    .setTargeting('postID', '{{post.id}}')
+                    .setTargeting('category', '{{post.category}}')
+                    .setTargeting('position', 'SeparatorAd')
+                    .setTargeting('section',i)
+                    .addService(googletag.pubads())
+            );
+
+            // Disable initial load to precisely control when ads are requested.
+            googletag.pubads().disableInitialLoad();
+
+            // Enable SRA and services.
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+
+            // Issue first SRA request (slots 1 and 2) immediately.
+            googletag.pubads().refresh(slots);
+        } catch (e) {
+            console.log(e)
+        }
+
+    });
+</script>
+<style> 
+    .ad-slot {
+        width: 300px;
+        height: 250px;
+        background-color: #eee;
+        margin: 0 auto;
+    }
+</style>
