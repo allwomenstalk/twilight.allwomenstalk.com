@@ -51,12 +51,14 @@ eleventyComputed:
                     {# {% include "partials/gpt.njk" %} #}
                     {% include 'partials/unibots.njk' %}
                 {% elif loop.revindex == 2 %}
-                    {% include 'quiz.njk' %}
+                    {# {% include 'quiz.njk' %} #}
+                    <hr class="hidden hr{{loop.index}}">
                 {% else %}
                     <hr class="hidden hr{{loop.index}}">
                 {% endif %}
             {# {% include 'partials/cta.njk' %} #}
         {% else %}
+            <hr class="hidden hr{{loop.index}}">
             {% include 'partials/keywordsgallery.njk' %}
         {% endif %}
     {% endfor %}
@@ -77,6 +79,8 @@ eleventyComputed:
     <hr class="hidden">
 
     {% include 'partials/icons.njk' %}
+
+    <hr class="hidden">
 
     {% include 'partials/related.njk' %}
 
