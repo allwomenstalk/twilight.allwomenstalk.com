@@ -22,21 +22,28 @@
     <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
     <script>
       window.googletag = window.googletag || {cmd: []};
-
+      var anchorSlot;
       googletag.cmd.push(function() {
         // Define ad slots.
         let adElements = document.querySelectorAll('.ad-slot');
-        network = "/5445743/AWS-Universal"
-        // network = "/5445743/demo"
-        // network = "/6355419/Travel/Europe"
+        let network = "/5445743/AWS-Universal" //declared network variable
         let slots = Array.from(adElements).map((element, i) => 
-        googletag.defineSlot(network, [300, 250], element.id)
-            .setTargeting('postID', '{{post.id}}')
-            .setTargeting('category', '{{post.category}}')
+          googletag.defineSlot(network, [300, 250], element.id)
+            .setTargeting('postID', '1')  // assuming static values
+            .setTargeting('category', 'blog') // assuming static values
             .setTargeting('position', 'SeparatorAd')
             .setTargeting('section',i)
             .addService(googletag.pubads())
         );
+
+        anchorSlot = googletag.defineOutOfPageSlot(
+            network, googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR);
+
+        if (anchorSlot) {
+          anchorSlot
+              .setTargeting('test', 'anchor')
+              .addService(googletag.pubads());
+        }
 
         // Disable initial load to precisely control when ads are requested.
         googletag.pubads().disableInitialLoad();
@@ -47,7 +54,11 @@
 
         // Issue first SRA request (slots 1 and 2) immediately.
         googletag.pubads().refresh(slots);
-
+        
+        // This is the right place to display anchorSlot
+        if (anchorSlot) {
+            googletag.display(anchorSlot.getSlotElementId());
+        }
       });
     </script>
     <style>
@@ -65,6 +76,8 @@
     </style>
   </head>
   <body>
+    <div id="static-ad-1" style="width: 100px; height: 100px;"></div>
+
     <div class="row">
       <p>SRA request #1</p>
     </div>
@@ -83,5 +96,13 @@
       <div id="slot-4" class="ad-slot" ></div>
       <div id="slot-5" class="ad-slot" ></div>
     </div>
+    <script>
+      googletag.cmd.push(function() {
+        // Ensure the first call to display comes after static ad slot
+        // divs are defined. If you do not have any static ad slots, this
+        // call can be made immediately after services are enabled.
+        googletag.display(anchorSlot);
+      });
+    </script>
   </body>
 </html>
