@@ -18,7 +18,6 @@ eleventyComputed:
     
     {% include 'partials/leaderboard.njk' %}
     
-    {# {% include 'partials/adsense.njk' %} #}
     {% include 'partials/hero.njk' %}
 
     {% include 'partials/share.njk' %}    
@@ -73,8 +72,8 @@ eleventyComputed:
     {% endfor %}
 
 
-    {# {% include 'partials/adsnew.njk' %} #}
-        {% include 'partials/adsnew.njk' %}
+    {% include 'partials/adsnew.njk' %}
+    {# {% include 'partials/ads.njk' %} #}
 
 
     {% include 'partials/collections.njk' %}
@@ -83,21 +82,13 @@ eleventyComputed:
     
     {% include "partials/comments.njk" %}
 
-
     {# {% include 'partials/popular.njk' %} #}
 
     {% include 'partials/schema.njk' %}
 
     <div class="ad-slot mx-auto" id="slot-related"></div>
 
-    {% include 'partials/icons.njk' %}
-
-    <hr class="hidden">
-
     {% include 'partials/related.njk' %}
     
     <div class="ad-slot mx-auto" id="slot-final"></div>
-
-
-    <hr class="hidden">
 
