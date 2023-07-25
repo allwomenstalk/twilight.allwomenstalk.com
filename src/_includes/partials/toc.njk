@@ -1,6 +1,6 @@
-<nav id="toc" class="m-4 mx-auto max-w-md border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
+<nav id="toc" class="m-4 mx-auto max-w-md border border-gray-200 rounded-lg overflow-hidden">
   <p class="p-2 text-center opacity-70">Table of contents:</p>
-  <ol class="w-full list-decimal divide-y divide-gray-200 dark:divide-gray-700 list-inside">
+  <ol class="w-full list-decimal divide-y divide-gray-200 list-inside">
     {% for item in post.toc %}
       <li class="p-2 text-xs whitespace-nowrap overflow-ellipsis overflow-hidden">
         <a href="#{{ loop.index }}" class="uppercase">{{ item }}</a>

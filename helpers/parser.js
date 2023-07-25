@@ -1,4 +1,9 @@
 const tags = require('./tags.js')
+const { marked } = require('marked');
+marked.use({
+  mangle: false,
+  headerIds: false
+});
 
 module.exports = function (item) {
       //post process
@@ -25,6 +30,7 @@ module.exports = function (item) {
       // temp.host = item.host
       
       temp.url = `https://${temp.host}/${item.post_name}`;
+      temp.amp_url = `https://${temp.host}/${item.post_name}/amp.html`;
       temp.title = item.post_title.replace(/[^a-zA-Z0-9_.-\s'"\?]*/g,''); //removeing all emoji
       temp.date = item.post_date.toISOString();
       temp.modified = new Date().toISOString();
@@ -109,6 +115,8 @@ module.exports = function (item) {
         }
       } 
 
+      
+
       temp.content = item.post_content 
         //.replace(/<div class=\"embed\" data-media-type=\"instagram\" data-media-url=\"https:\/\/www.instagram.com\/p\/(.*?)\/">(.*?)?<\/div>/g, 
         //  '<amp-instagram data-shortcode="$1" width="1" height="1" layout="responsive"></amp-instagram>')
@@ -148,7 +156,20 @@ module.exports = function (item) {
         //   'type="image\/webp" srcset="https://resize.img.allw.mn/fit-in/600x0/filters:format(webp)/filters:quality(70)/')
         .split(/(?=<h2)/g)
 
+      // ellaorate parts 
+      temp.elaborate = {}
+      temp.content.forEach((page,index) => {
+        //filter by pageNumber
+        // if (item.elaborate.publish){ // only if it's published
+          extra = item.elaborate.filter(i=>i.pageNumber == index)?.[0]
+        if (extra && extra.publish) {
+          // console.log(extra)
+          html = extra?.response?.[0]?marked(extra?.response?.[0]):''
+          if (html) temp.elaborate[index] = html
+        }
+      })
       
+
       // temp.url = `${
       //   (item.blog === 'aws'
       //     ? 'https://allwomenstalk.com/'
@@ -272,6 +293,8 @@ module.exports = function (item) {
           //.slice(0,5)
           .map(item => {
             obj = {}
+            // console.log('related',item._id, item.post_title)
+
             obj.title = item.post_title.replace(/[^a-zA-Z0-9_.-\s]*/g,'');
 
             if (item.keywords && item.keywords.length>0) {
@@ -333,7 +356,7 @@ module.exports = function (item) {
       // faq 
       // console.log('faq',item.faq, item.faq.length)
       if (item.faq.length > 0) temp.faq = item.faq.shift().list
-      if (item.seo && item.seo.clicks == 0 && item.seo.ga_visits == 0) temp.noads = true 
+      // if (item.seo && item.seo.clicks == 0 && item.seo.ga_visits == 0) temp.noads = true 
 
       return temp
 }    

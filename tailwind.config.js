@@ -1,5 +1,6 @@
 module.exports = {
   content: ["./src/**/*.{html,njk,js}"],
+  darkMode: 'class',
   theme: {
     extend: {},
   },
