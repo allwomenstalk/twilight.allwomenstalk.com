@@ -1,3 +1,6 @@
+   {# unused now #}
+
+   
    <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <script>
@@ -35,15 +38,16 @@
         document.documentElement.firstChild.appendChild(t)
     }
     setTimeout(function() {
-        loadJs("https://allwomenstalk.com/assets/js/autoComplete.min.js"),
+        {# loadJs("https://allwomenstalk.com/assets/js/autoComplete.min.js"), #}
         loadJs("https://allwomenstalk.com/assets/js/index.js"),
         loadJs("https://allwomenstalk.com/assets/js/search.js"),
         loadJs("https://unpkg.com/realm-web/dist/bundle.iife.js"),
         loadJs("https://account.allwomenstalk.com/js/cookiecross.js"),
         loadJs("https://account.allwomenstalk.com/js/profile.js"),
-        loadJs("//unpkg.com/alpinejs"),
-        loadJs("/assets/js/azo.js"),
-        loadJs("/assets/js/comments.js"),
+        loadJs("https://allwomenstalk.github.io/js/elaborate.min.js"),
+        {# loadJs("//unpkg.com/alpinejs"), #}
+        loadJs("https://allwoemnstalk.github.io/js/azo.min.js"),
+        {# loadJs("/assets/js/comments.js"), #}
         loadJs("https://allwomenstalk.com/widget/app.js"),
         showCommentForm(),
         showCredit()

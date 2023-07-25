@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  MyLambdaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: .
+      Handler: app.handler
+      Runtime: nodejs14.x
+      FunctionName: NJKPostLambda
+      Timeout: 15
+      Layers:
+        - arn:aws:lambda:us-east-1:487610858442:layer:MongoDB:7
+      VpcConfig:
+        SecurityGroupIds:
+          - sg-081840d6bfba66d7d    # Replace with your security group ID
+        SubnetIds:
+          - subnet-04d781208924e5d79 # Replace with your first subnet ID
+          - subnet-03960a441fac4efe6  # Replace with your second subnet ID
+      Environment:                    # Add the Environment property
+        Variables:
+          ELEVENTY_PRODUCTION: true 

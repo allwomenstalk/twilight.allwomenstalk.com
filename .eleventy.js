@@ -13,8 +13,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/js/assets": "./js/" });
 
   // Filters
-  eleventyConfig.addFilter("cssmin", function(code) {
-    return new CleanCSS({}).minify(code).styles;
+  eleventyConfig.addFilter("cssamp", function(code) {
+    return code.replace(/!important/g, "")
+              .replace(/@import.*?;/g, "");
+    // return new CleanCSS({}).minify(code).styles;
   });
   // slice first n elements of array
   eleventyConfig.addFilter("slicearr", function(array, count) {
