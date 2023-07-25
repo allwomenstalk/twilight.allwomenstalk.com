@@ -4,15 +4,19 @@
 
 <script> 
 
-window.googletag = window.googletag || {cmd: []};
+{# window.googletag = window.googletag || {cmd: []}; #}
+const post = {
+  id: "{{ post.id }}",
+  category: "{{ post.category }}"
+};
 
 googletag.cmd.push(function() {
   try {
     // Define ad slots.
     const adElements = document.querySelectorAll('.ad-slot');
-    {# network = "/5445743/AWS-Universal" #}
+    network = "/5445743/AWS-Universal"
     {# network = "/5445743/demo" #}
-    network = "/6355419/Travel/Europe"
+    {# network = "/6355419/Travel/Europe" #}
 
     const slots = Array.from(adElements).map((element, i) => 
       googletag.defineSlot(network, [300, 250], element.id)
