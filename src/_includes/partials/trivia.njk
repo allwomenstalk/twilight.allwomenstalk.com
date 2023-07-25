@@ -1,15 +1,15 @@
-<div x-data="trivia()" x-init="loadQuestions" class="p-8 col-span-full">
+<div x-data="trivia()" x-init="loadQuestions" class="p-8 col-span-full mx-auto">
   <p class="text-base text-center font-semibold leading-7 text-gray-400">Trivia</p>
 
   <template x-for="(question, i) in answered">
-    <a href="https://quiz.allwomenstalk.com/trivia/food/" class="mx-auto max-w-2xl text-center px-0 py-6">
+    <button @click="open()" class="mx-auto max-w-2xl text-center px-0 py-6">
       <h2 class="text-3xl my-2 font-bold tracking-tight text-gray-900 sm:text-4xl" x-text="question.question"></h2>
-      <div class="my-2 space-y-2 grid grid-cols-2 gap-4">
+      <div class="my-2 space-y-2 grid grid-cols-2 gap-4 max-w-md mx-auto">
         <template x-for="(option, index) in question.options" :key="index">
           <div class="bg-pink-600 text-white px-4 py-2 rounded" x-text="option" disabled="disabled"></div>
         </template>
       </div>
-    </a>
+    </button>
   </template>
 </div>
 
@@ -33,7 +33,21 @@
           return [];
         }
       },
-
+      // open and record click
+      open() {
+        console.log(this.answered[0]._id)
+        try {
+          // record click 
+          fetch(apiUrl+"?action=click&questionId="+this.answered[0]._id)
+            .then(response => response.json())
+            .then(
+              window.location.href = "https://quiz.allwomenstalk.com/trivia/food/"
+            );
+        } catch (error) {
+          console.error('Error fetching questions:', error);
+          return [];
+        }
+      },
       // Function to load and display the questions on the page
       async loadQuestions() {
         const questions = await this.fetchQuestions();

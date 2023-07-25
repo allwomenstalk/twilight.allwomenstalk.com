@@ -4,7 +4,7 @@ echo posts.json > []
 # get popular posts
 node getpopular.js
 # get archive posts
-node getarchive.js
+node getarchives.js
 
 # build
 npm run build
