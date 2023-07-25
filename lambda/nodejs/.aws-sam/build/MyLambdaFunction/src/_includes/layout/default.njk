@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head data-postid="{{ post.id }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+    <title>{{ post.title or title or metadata.title }}</title>
+    <meta property="og:title" content="{{ post.title or title }}">
+    <meta property="og:description" content="{{ post.description or description }}">
+    <meta property="og:url" content="{{ post.url or url }}">
+    <meta property="og:site_name" content="{{ post.site_name or metadata.title}}">
+    <meta name="description" content="{{ post.description or description }}">
+    <link rel="canonical" href="{{ post.url or url }}">
+
+    <meta name="generator" content="{{ metadata.generator }}">
+    {% if post %}
+    {% include 'partials/postmeta.njk' %}
+    {% endif %}
+    {# <script src="https://cdn.tailwindcss.com"></script> #}
+    {# add alpine #}
+    {# <script src="https://account.allwomenstalk.com/js/cookiecross.js" defer></script> #}
+    {# <script src="https://account.allwomenstalk.com/js/profile.js" defer></script> #}
+
+    {# <script src="https://unpkg.com/realm-web/dist/bundle.iife.js" defer></script> #}
+    {# <script src="/assets/js/azo.js" defer></script> #}
+   
+    {% if metadata.NODE_ENV == "production" %}
+            {% set css %}
+            {% include 'partials/css/base.css' %}
+            {% endset %}
+            <style>
+            {{ css  | safe }}
+            </style>
+    {% else %}
+        <link rel="stylesheet" href="/base.css">
+    {% endif %}
+    
+
+        {% if metadata.NODE_ENV == "production" %}
+            {% set css %}
+            {% include 'partials/css/site.css' %}
+            {% endset %}
+            <style>
+            {{ css  | safe }}
+            </style>
+    {% else %}
+        <link rel="stylesheet" href="/site.css">
+    {% endif %}
+    <style>[x-cloak] { display: none !important; }</style>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5NR9WTN');</script>
+<!-- End Google Tag Manager -->
+</head> 
+
+<body x-data="data()" 
+      @scroll.window.throttle="check"  
+      @keydown.cmd.k="showsearch()"  
+      class="bg-gray-50 relative">
+    
+    {% include 'partials/navigation.njk' %}
+    {% include 'partials/search.njk' %}
+    {{ content | safe }}
+
+
+
+    {% include "partials/footer.njk" %}
+
+    {% include "partials/js.njk" %}
+
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NR9WTN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+</body>
+
+</html>
+
+
+<style>
+
+    {# animation for loading  #}
+#leaderboard {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMOSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCiAgdmlld0JveD0iMCAwIDEwMCAxMDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDAgMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CiAgICA8cGF0aCBmaWxsPSIjY2NjIiBkPSJNNzMsNTBjMC0xMi43LTEwLjMtMjMtMjMtMjNTMjcsMzcuMywyNyw1MCBNMzAuOSw1MGMwLTEwLjUsOC41LTE5LjEsMTkuMS0xOS4xUzY5LjEsMzkuNSw2OS4xLDUwIj4KICAgICAgPGFuaW1hdGVUcmFuc2Zvcm0gCiAgICAgICAgIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIgCiAgICAgICAgIGF0dHJpYnV0ZVR5cGU9IlhNTCIgCiAgICAgICAgIHR5cGU9InJvdGF0ZSIKICAgICAgICAgZHVyPSIxcyIgCiAgICAgICAgIGZyb209IjAgNTAgNTAiCiAgICAgICAgIHRvPSIzNjAgNTAgNTAiIAogICAgICAgICByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICA8L3BhdGg+Cjwvc3ZnPg==);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:50px
+}
+
+.flag::after {
+    content: 'Report'
+}
+</style>

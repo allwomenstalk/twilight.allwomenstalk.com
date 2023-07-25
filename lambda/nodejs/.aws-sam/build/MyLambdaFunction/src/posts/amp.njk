@@ -1,0 +1,94 @@
+---
+layout: layout/amp.njk
+pagination:
+  data: posts
+  size: 1
+  alias: post
+permalink: /{{post.host}}/{{post.slug}}/amp.html
+url: https://allwomenstalk.com/index.html
+amptitle: "{{title}}"
+ampurl: "{{url}}"
+ampimage: "{{image}}"
+ampcategory: "{{category}}"
+eleventyComputed: 
+  title: "{{post.title}} - {{metadata.title}}"
+  content: "{{post.content}}"
+---
+
+    {# {% include 'partials/leaderboard.njk' %} #}
+    {# {% include 'partials/adsense.njk' %} #}
+    {% include 'partials/hero.njk' %}
+
+    {# {% include 'partials/share.njk' %}     #}
+    
+    {# {% include 'partials/widget.njk' %} #}
+
+    {% for page in post.contentamp %}
+
+        <div class="post prose dark:prose-invert p-4 overflow-hidden mx-auto max-w-xl
+            {%- if loop.first -%} 
+             first-line:uppercase first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left 
+            {%- endif -%}
+            " id="{{loop.index}}">
+        {{ page | safe }}
+        </div>
+
+        {% if post.elaborate[loop.index-1] %}
+            <div class="italic prose dark:prose-invert p-4 overflow-hidden mx-auto max-w-xl">
+            {{ post.elaborate[loop.index-1] | safe }}
+            </div>
+        {% else %}
+            <div class="elaborate italic prose dark:prose-invert p-4 overflow-hidden mx-auto max-w-xl"></div>
+        {% endif %}
+        
+        {% if loop.index == 1 %}
+            {% include 'partials/toc.njk' %}
+        {% endif %}
+
+        {% if not loop.last %}
+            <hr class="hidden hr{{loop.index}}">
+
+            {% if not post.noads %}
+            <div class="mx-auto text-center">
+                <amp-ad width=300 height=250
+                    class="mx-auto"
+                    type="doubleclick"
+                    data-slot="/5445743/AMPBanner"
+                    data-multi-size="300x250,250x250" 
+                    json='{
+                        "targeting": {
+                            "postID": ["{{ post.id }}"],
+                            "category": ["{{ post.category }}"],
+                            "position": ["SeperatorAd"],
+                            "section": [1]
+                        }
+                    }'>
+                </amp-ad>
+            </div> 
+            {% endif %}
+
+            {# {% include 'partials/cta.njk' %} #}
+        {% else %}
+            {# {% include 'partials/keywords.njk' %} #}
+        {% endif %}
+    {% endfor %}
+
+
+    {# {% include 'partials/ads.njk' %}
+
+    {% include 'partials/collections.njk' %}
+ 
+    {% include 'partials/rating.njk' %}
+    
+    {% include "partials/comments.njk" %} #}
+
+    {# {% include 'partials/popular.njk' %} #}
+
+    {% include 'partials/amp/popular.njk' %}
+
+    {% include 'partials/schema.njk' %}
+
+    <hr class="hidden">
+    {# {% include 'partials/icons.njk' %} #}
+
+

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'); */
+
+
+@tailwind utilities;
+
+
+@tailwind components;
+
+/* amp page styles */
+
+amp-list div[role=list]{
+    @apply flex justify-center overflow-hidden text-xs
+}
+
+
+
+.post h2, .hero h1 {
+    font-family: 'Prata', serif;
+    font-display: optional;
+}
+.post h2 {
+    @apply text-2xl font-bold mb-2 text-center uppercase;
+}
+.post .pointnum {
+    @apply block text-[6em] leading-[1.15em] font-thin text-center font-sans;
+}
+.post img {
+    @apply mx-auto rounded-md w-full
+}
+
