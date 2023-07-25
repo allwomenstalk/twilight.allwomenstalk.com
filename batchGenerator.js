@@ -12,7 +12,7 @@ const client = new MongoClient(uri, { useUnifiedTopology: true });
 
 const batchSize = 1000; // Number of documents per batch
 
-let marker = null; // Marker to keep track of the last processed document
+let marker = null ; // Marker to keep track of the last processed document
 let filter = [
   {
     '$match': {
@@ -61,6 +61,10 @@ async function generateBatch() {
     console.log(`Generated batch. Last post ID: ${lastPostId}`);
 
     await runEleventyBuild(); // Initiate 11ty build
+
+    // console.log('Uploading to S3...');
+    // await exec('sh postupload.sh');
+    // console.log('Upload completed.');
 
     marker = lastPostId;
 
