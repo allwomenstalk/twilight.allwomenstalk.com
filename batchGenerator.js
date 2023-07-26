@@ -86,9 +86,13 @@ async function generateBatch() {
 
 async function runEleventyBuild() {
   try {
+    const buildStartTime = new Date(); // Record the start time of the build
     console.log('Running Eleventy build...');
     await exec('npm run build');
     console.log('Eleventy build completed.');
+    const buildEndTime = new Date(); // Record the end time of the build
+    const buildDuration = Math.round((buildEndTime - buildStartTime) / 1000); // Duration in seconds
+    console.log('Build Time (seconds):', buildDuration); // Output the build time
   } catch (error) {
     console.error('Error running Eleventy build:', error);
   }
