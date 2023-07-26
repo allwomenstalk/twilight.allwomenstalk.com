@@ -37,8 +37,8 @@ main = async () => {
     const database = client.db('aws');
     const collection = database.collection('posts');
 
-    const limitperbuild = process.env.NODE_ENV === "production" ? 10000 : 100;
-    const filter = global[process.env.PIPE ? process.env.PIPE : 'pipeline_recent'];
+    const limitperbuild = process.env.NODE_ENV === "production" ? 10000 : 1000;
+    const filter = global[process.env.PIPE ? process.env.PIPE : 'pipeline_seo_top'];
     console.log('fitler pipeline name:', process.env.PIPE, filter);
 
     const pipeline = [

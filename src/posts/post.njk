@@ -58,6 +58,9 @@ eleventyComputed:
                 {% elif loop.revindex == 2 %}
                     {% include 'quiz.njk' %}
                     <div class="ad-slot mx-auto" id="slot-{{loop.index}}"></div>
+                {% elif (loop.index == 10) and (loop.length > 12) %}
+                    {# adding shopping at the middle on the long posts #}
+                    {% include 'partials/shopping.njk' %}
                 {% else %}
                     {# <hr class="ad-slot hidden hr{{loop.index}}"> #}
                     <div class="ad-slot mx-auto" id="slot-{{loop.index}}"></div>
@@ -65,19 +68,25 @@ eleventyComputed:
                 {% endif %}
             {# {% include 'partials/cta.njk' %} #}
         {% else %}
-            <hr class="hidden hr{{loop.index}}">
+            {% include 'partials/collections.njk' %}
+            <div class="ad-slot mx-auto" id="slot-{{loop.index}}"></div>
             {% include 'partials/keywordsgallery.njk' %}
+
+            {# adding shopping on the end for short posts #}
+            {% if (loop.length < 12) %}
+                {% include 'partials/shopping.njk' %}
+            {% endif %}
+            
         {% endif %}
 
+        
 
     {% endfor %}
 
+    
 
     {% include 'partials/adsnew.njk' %}
     {# {% include 'partials/ads.njk' %} #}
-
-
-    {% include 'partials/collections.njk' %}
  
     {% include 'partials/rating.njk' %}
     
