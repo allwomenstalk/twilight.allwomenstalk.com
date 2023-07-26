@@ -1,5 +1,5 @@
 # remove any posts
-echo posts.json > []
+echo "[]" > src/_data/posts.json
 
 # get popular posts
 node getpopular.js

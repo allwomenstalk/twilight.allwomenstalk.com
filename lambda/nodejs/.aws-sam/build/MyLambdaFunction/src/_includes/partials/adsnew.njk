@@ -4,15 +4,20 @@
 
 <script> 
 
-window.googletag = window.googletag || {cmd: []};
+{# window.googletag = window.googletag || {cmd: []}; #}
+const post = {
+  id: "{{ post.id }}",
+  category: "{{ post.category }}"
+};
 
 googletag.cmd.push(function() {
   try {
     // Define ad slots.
     const adElements = document.querySelectorAll('.ad-slot');
-    {# network = "/5445743/AWS-Universal" #}
+    network = "/5445743/AWS-Universal"
     {# network = "/5445743/demo" #}
-    network = "/6355419/Travel/Europe"
+    {# network = "/6355419/Travel/Europe" #}
+    {# adElements.forEach((element, i) => console.log('element' , element.id ) ); #}
 
     const slots = Array.from(adElements).map((element, i) => 
       googletag.defineSlot(network, [300, 250], element.id)
@@ -43,9 +48,10 @@ googletag.cmd.push(function() {
     .ad-slot {
         width: 300px;
         height: 250px;
-        background-color: #eee;
         margin: 0 auto;
     }
 </style>
 
 {% endif %}
+
+{% include 'partials/ads/nm.njk' %}
