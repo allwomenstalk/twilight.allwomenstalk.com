@@ -2,6 +2,8 @@
 layout: layout/default.njk
 url: {{metadata.host}}
 ---
+
+
 <main class="">
 
 	<ol class="">
@@ -9,6 +11,9 @@ url: {{metadata.host}}
 		<li><a href="{{post.host}}/{{post.slug}}/">{{post.title}}</a> </li> 
 		{% endfor %}
 	</ol>
+
+	{% include 'partials/shopping.njk' %}
+
 
 	<ol class="grid grid-flow">
 		<li class="m-2">
