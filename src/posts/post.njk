@@ -68,22 +68,18 @@ eleventyComputed:
                 {% endif %}
             {# {% include 'partials/cta.njk' %} #}
         {% else %}
-            {% include 'partials/collections.njk' %}
-            <div class="ad-slot mx-auto" id="slot-{{loop.index}}"></div>
-            {% include 'partials/keywordsgallery.njk' %}
-
             {# adding shopping on the end for short posts #}
             {% if (loop.length < 12) %}
                 {% include 'partials/shopping.njk' %}
             {% endif %}
-            
+
+            {% include 'partials/collections.njk' %}
+            <div class="ad-slot mx-auto" id="slot-{{loop.index}}"></div>
+            {% include 'partials/keywordsgallery.njk' %}
+        
         {% endif %}
 
-        
-
     {% endfor %}
-
-    
 
     {% include 'partials/adsnew.njk' %}
     {# {% include 'partials/ads.njk' %} #}
