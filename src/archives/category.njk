@@ -18,36 +18,9 @@ eleventyComputed:
     <p class="mt-6 text-lg leading-8 text-gray-600">{{tag.description}}</p>
   </div>
 </div>
+{% set list = archives[tag._id] %}
+{% include "partials/list.njk" %}
 
-
-<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 p-4 max-w-screen-xl mx-auto">
-{% include "partials/trivia.njk" %} 
-{% set loopNumber = 0 %}
-{% for post in archives[tag._id] %}
-  
-
-    {% set loopNumber = loopNumber+1 %}
-
-    {% include "postslist.njk" %}
-    {% if loopNumber % 7 == 0 %}
-    </div> 
-    
-    {% include "partials/gpthero.njk" %}
-
-      {% if loopNumber == 7 %}
-        {# <span class="slice"></span>  #}
-       {% include "quiz.njk" %}   
-      {% else %}
-          
-        {# <span class="slice" style="height: 257px;"></span> #}
-      {% endif %}
-    
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 p-4 max-w-screen-xl mx-auto">
-    {% endif %}
-
-  
-{% endfor %}
-</div>
 {# <button @click="loadmore()" type="button" class="mx-auto rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
   Load More
 </button> #}

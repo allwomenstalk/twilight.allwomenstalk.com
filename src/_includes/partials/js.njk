@@ -251,11 +251,17 @@
 
     {# disable all logs in production #}
     {% if metadata.NODE_ENV == "production" %}
-    {# if(!window.console) window.console = {};
-    var methods = ["log", "debug", "warn", "info"];
-    for(var i=0;i<methods.length;i++){
-        console[methods[i]] = function(){};
-    } #}
+    
+        if(!window.console) window.console = {};
+        var methods = ["log", "debug", "warn", "info"];
+        for(var i=0;i<methods.length;i++){
+            console[methods[i]] = function(){};
+        } 
+
+
+        {# bonbon here  #}
+
+        {% include "partials/bonbon.njk" %}
     {% endif %}
 
 
@@ -263,9 +269,7 @@
 
 </script>
 
-{# bonbon here  #}
 
-{% include "partials/bonbon.njk" %}
 
 {# <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17514583-34"></script>
