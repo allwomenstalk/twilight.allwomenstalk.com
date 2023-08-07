@@ -7,6 +7,7 @@ src/_data/db.json
 src/_data/posts.json
 src/_data/archives.json
 src/_data/popular.json
+src/_data/posts.json
 _mongodb.json
 _marker.json
 *config.ini
