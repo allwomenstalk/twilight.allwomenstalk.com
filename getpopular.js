@@ -141,7 +141,7 @@ async function run () {
       temp.date = moment(item.post_date).format('MMM DD');
       temp.author = { name: item.author.first_name.replace('_', ''), id: item.author._id };
       temp.image = item.image_url;
-      temp.imageresize = item.image_url.replace('img.', 'resize.img.');
+      temp.imageresize = item.image_url.replace('img.', 'resize.');
       //console.log(item.keywords)
       temp.keyword = item.keywords[Math.floor(Math.random() * 5)]
       // temp.content = item.post_content;
