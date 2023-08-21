@@ -48,3 +48,10 @@ Post formats to check
 - youtube 
 - gifs 
 - instagram embed
+
+
+
+To update archivces 
+> node getarchives.js 
+> npm run build 
+> sh postupload.sh
