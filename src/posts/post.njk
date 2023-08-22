@@ -55,7 +55,7 @@ eleventyComputed:
                 {% elif loop.index == 2 %}
                     {# {% include "partials/gpt.njk" %} #}
                     {% include 'partials/unibots.njk' %}
-                {% elif loop.revindex == 2 %}
+                {% elif loop.index == 4 %}
                     {% include 'quiz.njk' %}
                     <div class="ad-slot mx-auto" id="slot-{{loop.index}}"></div>
                 {% elif (loop.index == 10) and (loop.length > 12) %}
