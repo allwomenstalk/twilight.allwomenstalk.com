@@ -33,7 +33,7 @@ function SaveData(name, arr) {
 }
 
 async function run () {
-  if (arr) return arr 
+  // if (arr) return arr 
 
   try {
     await client.connect();
@@ -56,7 +56,7 @@ async function run () {
       'clicks': -1
     }
   }, {
-    '$limit': 63
+    '$limit': 62
   }, {
     '$lookup': {
       'from': 'posts', 
@@ -128,6 +128,7 @@ async function run () {
     const cursor = await collection.aggregate(pipeline);
     arr = [];
     await cursor.forEach((item) => {
+      console.log(item.post_name)
      //console.log(item.super_categories)
      if(!item.super_categories) {console.log(item)}
       const temp = {};
@@ -141,7 +142,7 @@ async function run () {
       temp.date = moment(item.post_date).format('MMM DD');
       temp.author = { name: item.author.first_name.replace('_', ''), id: item.author._id };
       temp.image = item.image_url;
-      temp.imageresize = item.image_url.replace('img.', 'resize.');
+      temp.imageresize = item.image_url.replace('img.', 'resize.img.');
       //console.log(item.keywords)
       temp.keyword = item.keywords[Math.floor(Math.random() * 5)]
       // temp.content = item.post_content;
@@ -153,6 +154,8 @@ async function run () {
       }/`;
       arr.push(temp);
     });
+    // shuffle
+    arr.sort(() => Math.random() - 0.5);
     SaveData(path,arr)
     return arr;
   } finally {
@@ -163,7 +166,8 @@ async function run () {
 
 
 if (require.main === module) {
+  console.log("Running getpopular.js")
   run().catch(console.dir);
 }
 
-module.exports = run 
+// module.exports = run 

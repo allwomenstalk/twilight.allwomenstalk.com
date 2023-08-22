@@ -88,7 +88,9 @@ eleventyComputed:
     
     {% include "partials/comments.njk" %}
 
-    {# {% include 'partials/popular.njk' %} #}
+    {% include 'partials/popular.njk' %}
+
+    
 
     {% include 'partials/schema.njk' %}
 
@@ -96,5 +98,24 @@ eleventyComputed:
 
     {% include 'partials/related.njk' %}
     
+    <div class="ad-slot mx-auto" id="slot-related"></div>
+
+
+    {% include 'partials/reviews.njk' %}
+
+
     <div class="ad-slot mx-auto" id="slot-final"></div>
 
+
+
+{# Posts scripts only  #}
+
+
+<script type='text/javascript'>
+    (function(){
+    var loc = window.location.href;
+    var dd = document.createElement('script');
+    dd.type = 'text/javascript'; dd.src = '//static.digidip.net/allwomenstalk.js?loc=' + loc;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(dd, s);
+    })();
+</script>

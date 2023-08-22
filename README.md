@@ -54,4 +54,4 @@ Post formats to check
 To update archivces 
 > node getarchives.js 
 > npm run build 
-> sh postupload.sh
+> sh archiveupload.sh

@@ -15,8 +15,6 @@ popular = {
         </div>
         <div class="flex items-center opacity-70">
           <div class="text-xs">
-            <p class="leading-none">Holly</p>
-            <p class="leading-none">May 12</p>
             <button class="rounded px-2 py-1 absolute right-3 bottom-4" aria-label="Read more">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                 <use xlink:href="#moreicon"></use>
