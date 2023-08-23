@@ -51,6 +51,9 @@ for folder in "${folders[@]}"; do
         
         # Remove index.html from the folder
         rm -f "_site/$folder/index.html"
+        rm -f "_site/$folder/latest.json"
+        rm -f "_site/$folder/popular/list.json"
+    
         
         # Upload the folder to S3 bucket
         echo "Uploading $folder to S3 bucket..."
@@ -62,7 +65,7 @@ for folder in "${folders[@]}"; do
         # Delete the folder after upload
         echo "Deleting $folder..."
         rm -rf "_site/$folder"
-        
+
     else
         echo "$folder is empty or does not exist. Skipping upload..."
     fi
