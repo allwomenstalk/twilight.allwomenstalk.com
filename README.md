@@ -56,3 +56,19 @@ To update archivces
 > node getarchives.js 
 > npm run build 
 > sh archiveupload.sh
+
+
+Batch build spec
+
+    version: 0.2
+
+    phases:
+    build:
+        commands:
+        - echo $batch
+        - aws s3 cp $batch ./src/_data/posts.json
+        - npm install
+        - echo '[]' > ./src/_data/archives.json
+        - export NODE_OPTIONS=--max_old_space_size=4096
+        - npm run build 
+        - sh postupload.sh
