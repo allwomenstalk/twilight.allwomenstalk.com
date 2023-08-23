@@ -15,3 +15,4 @@ _marker.json
 src/_includes/partials/css/*.css
 lambda/*
 validation_reports.json
+batches/*

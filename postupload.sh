@@ -48,17 +48,21 @@ folders=(
 for folder in "${folders[@]}"; do
     # Check if the directory is not empty
     if [ "$(ls -A "_site/$folder" 2>/dev/null)" ]; then
+        
         # Remove index.html from the folder
         rm -f "_site/$folder/index.html"
+        
         # Upload the folder to S3 bucket
         echo "Uploading $folder to S3 bucket..."
         aws s3 cp "_site/$folder" s3://"$folder" --recursive --quiet
+        
         # Upload the folder js 
         aws s3 cp "_site/js" s3://"$folder"/js --recursive
         
         # Delete the folder after upload
         echo "Deleting $folder..."
         rm -rf "_site/$folder"
+        
     else
         echo "$folder is empty or does not exist. Skipping upload..."
     fi
