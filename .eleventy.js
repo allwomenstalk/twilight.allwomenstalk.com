@@ -20,6 +20,9 @@ module.exports = function(eleventyConfig) {
   });
   // slice first n elements of array
   eleventyConfig.addFilter("slicearr", function(array, count) {
+    if (!Array.isArray(array)) {
+      return [];
+    }
     return array.slice(0, count);
   });
 
