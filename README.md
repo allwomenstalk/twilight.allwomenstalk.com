@@ -58,6 +58,10 @@ To update archivces
 > sh archiveupload.sh
 
 
+Batch update: 
+node batchS3generator.js {creates batch files in folder /batch }
+sh batchbuild.sh (uploads to s3 and starts builds)
+
 Batch build spec
 
     version: 0.2

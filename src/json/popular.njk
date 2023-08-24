@@ -4,7 +4,7 @@ permalink: allwomenstalk.com/popular/list.json
 
 {
   "items": [
-    {%- for post in popular | slicearr(5) -%}
+    {%- for post in popular | shuffle | slicearr(5) -%}
     {
       "title": "{{ post.title }}",
       "image": "{{ post.imageresize }}",

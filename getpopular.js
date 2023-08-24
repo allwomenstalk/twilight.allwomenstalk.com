@@ -56,7 +56,7 @@ async function run () {
       'clicks': -1
     }
   }, {
-    '$limit': 62
+    '$limit': 124
   }, {
     '$lookup': {
       'from': 'posts', 
@@ -144,7 +144,7 @@ async function run () {
       temp.image = item.image_url;
       temp.imageresize = item.image_url.replace('img.', 'resize.img.');
       //console.log(item.keywords)
-      temp.keyword = item.keywords[Math.floor(Math.random() * 5)]
+      temp.keyword = capitalize( item.keywords[Math.floor(Math.random() * 5)] );
       // temp.content = item.post_content;
       temp.host = item.host
       temp.url = `${
@@ -163,6 +163,9 @@ async function run () {
   }
 };
 
+function capitalize(word) {
+  return word[0].toUpperCase() + word.substring(1).toLowerCase();
+}
 
 
 if (require.main === module) {

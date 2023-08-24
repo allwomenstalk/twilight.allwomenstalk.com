@@ -18,6 +18,13 @@ module.exports = function(eleventyConfig) {
               .replace(/@import.*?;/g, "");
     // return new CleanCSS({}).minify(code).styles;
   });
+  // shuffle array
+  eleventyConfig.addFilter("shuffle", function(array) {
+    if (!Array.isArray(array)) {
+      return [];
+    }
+    return array.sort(() => Math.random() - 0.5);
+  });
   // slice first n elements of array
   eleventyConfig.addFilter("slicearr", function(array, count) {
     if (!Array.isArray(array)) {
