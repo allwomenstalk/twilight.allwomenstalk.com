@@ -67,6 +67,7 @@ Batch build spec
         commands:
         - echo $batch
         - aws s3 cp $batch ./src/_data/posts.json
+        - aws s3 rm $batch
         - npm install
         - echo '[]' > ./src/_data/archives.json
         - export NODE_OPTIONS=--max_old_space_size=4096

@@ -10,7 +10,7 @@ popular = {
       <div class="border-r border-b border-l border-gray-300 rounded-b p-4 flex flex-col justify-between leading-normal h-56 cardtitle bg-white dark:bg-gray-900">
         <div>
           <p class="text-xs text-gray-700 flex items-center uppercase" x-text="item.category"></p>
-          <h2 class="uppercase my-2 text-xs sm:text-base lg:text-xs" x-text="item.title"></h2>
+          <h2 class="uppercase my-2 text-xs" x-text="item.title"></h2>
           <p class="text-gray-700 text-base"></p>
         </div>
         <div class="flex items-center opacity-70">
