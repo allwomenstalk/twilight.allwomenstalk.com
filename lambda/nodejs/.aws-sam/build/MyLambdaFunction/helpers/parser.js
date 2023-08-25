@@ -64,7 +64,7 @@ module.exports = function (item) {
       temp.rating = 5-Math.round(Math.random())
       temp.ratingstars = "★".repeat(temp.rating)+"☆".repeat(5-temp.rating)
       temp.imagesource = item.image_url.replace('.jpg','.json')
-      temp.imageresize = item.image_url.replace('img.', 'resize.');
+      temp.imageresize = item.image_url.replace('img.', 'resize.img.');
       temp.imagewebp400  = item.image_url.replace('//img.allw.mn/', '//resize.allw.mn/filters:format(webp)/filters:quality(70)/400x400/');
       temp.imagewebp800  = item.image_url.replace('//img.allw.mn/', '//resize.allw.mn/filters:format(webp)/filters:quality(70)/800x800/');
       temp.imagewebp1200 = item.image_url.replace('//img.allw.mn/', '//resize.allw.mn/filters:format(webp)/filters:quality(70)/1200x1200/');
@@ -301,7 +301,7 @@ module.exports = function (item) {
               obj.title = capitalize(item.keywords[0].query)
             }
             if (item.image_url) {
-              obj.image = item.image_url.replace('img.allw.mn','resize.allw.mn')+"?width=100&height=100";  
+              obj.image = item.image_url.replace('img.allw.mn','resize.img.allw.mn')+"?width=100&height=100";  
               obj.webp = item.image_url.replace('img.allw.mn/','resize.allw.mn/filters:format(webp)/filters:quality(70)/')+"?width=100&height=100";  
             }
             obj.url   = item.url;
