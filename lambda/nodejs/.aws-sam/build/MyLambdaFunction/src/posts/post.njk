@@ -50,20 +50,20 @@ eleventyComputed:
 
         {% if not loop.last %}
                 {% if loop.index == 1 %}
-                    <div class="ad-slot mx-auto" id="slot-{{loop.index}}"></div>
+                    <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
                     {% include 'partials/toc.njk' %}
                 {% elif loop.index == 2 %}
                     {# {% include "partials/gpt.njk" %} #}
                     {% include 'partials/unibots.njk' %}
                 {% elif loop.index == 4 %}
                     {% include 'quiz.njk' %}
-                    <div class="ad-slot mx-auto" id="slot-{{loop.index}}"></div>
+                    <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
                 {% elif (loop.index == 10) and (loop.length > 12) %}
                     {# adding shopping at the middle on the long posts #}
                     {% include 'partials/shopping.njk' %}
                 {% else %}
                     {# <hr class="ad-slot hidden hr{{loop.index}}"> #}
-                    <div class="ad-slot mx-auto" id="slot-{{loop.index}}"></div>
+                    <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
 
                 {% endif %}
             {# {% include 'partials/cta.njk' %} #}
@@ -74,7 +74,7 @@ eleventyComputed:
             {% endif %}
 
             {% include 'partials/collections.njk' %}
-            <div class="ad-slot mx-auto" id="slot-{{loop.index}}"></div>
+            <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
             {% include 'partials/keywordsgallery.njk' %}
         
         {% endif %}
@@ -94,17 +94,17 @@ eleventyComputed:
 
     {% include 'partials/schema.njk' %}
 
-    <div class="ad-slot mx-auto" id="slot-related"></div>
+    <div class="ad-slot mx-auto overflow-hidden" id="slot-related"></div>
 
     {% include 'partials/related.njk' %}
     
-    <div class="ad-slot mx-auto" id="slot-review"></div>
+    <div class="ad-slot mx-auto overflow-hidden" id="slot-review"></div>
 
 
     {% include 'partials/reviews.njk' %}
 
 
-    <div class="ad-slot mx-auto" id="slot-final"></div>
+    <div class="ad-slot mx-auto overflow-hidden" id="slot-final"></div>
 
 
 
