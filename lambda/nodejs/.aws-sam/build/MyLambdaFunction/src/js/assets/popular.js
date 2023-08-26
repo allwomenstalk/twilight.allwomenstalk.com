@@ -5,7 +5,7 @@ popular = {
   
     <a x-bind:href="item.url" class="w-40 text-gray-900 rounded-lg hover:opacity-70 relative" x-bind:title="item.title">
       <div class="text-center overflow-hidden bg-cover bg-center rounded-t cardimage">
-        <img class="w-full lazyload" width="200" height="200" x-bind:src="item.image" alt="How Engagement Rings Have Changed over the Years ..." loading="lazy" decoding="async">
+        <img class="w-full lazyload" width="200" height="200" x-bind:src="item.image+'?width=400&height=400'" alt="How Engagement Rings Have Changed over the Years ..." loading="lazy" decoding="async">
       </div>
       <div class="border-r border-b border-l border-gray-300 rounded-b p-4 flex flex-col justify-between leading-normal h-56 cardtitle bg-white dark:bg-gray-900">
         <div>
