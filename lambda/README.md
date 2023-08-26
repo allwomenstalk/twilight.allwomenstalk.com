@@ -23,3 +23,10 @@ or
 > sh build.sh 
 
 opitinal: remove src to avoid confustion with files
+
+to add new module 
+> cd nodejs 
+> npm i [module]
+
+
+if any change in eleventy (filter or similr)
