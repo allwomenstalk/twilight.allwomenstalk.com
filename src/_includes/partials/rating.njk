@@ -1,11 +1,11 @@
 <div class="my-12">
         <p class="uppercase tracking-wide text-sm opacity-70 font-bold text-center" id="ratingtitle">Please rate this article</p>
         <div class="rating mx-auto text-pink-600 text-2xl tracking-wide" id="rating">
-            <span onclick="SR(5)">☆</span>
-            <span onclick="SR(4)">☆</span>
-            <span onclick="SR(3)">☆</span>
-            <span onclick="SR(2)">☆</span>
-            <span onclick="SR(1)">☆</span>
+            <span @click="rate(5)">☆</span>
+            <span @click="rate(4)">☆</span>
+            <span @click="rate(3)">☆</span>
+            <span @click="rate(2)">☆</span>
+            <span @click="rate(1)">☆</span>
         </div>
     </div>
     
@@ -32,6 +32,7 @@
     function SR(e) {
         document.getElementById("rating").innerHTML = "☆".repeat(5 - e) + "★".repeat(e),
         document.getElementById("ratingtitle").innerHTML = "Thanks!"
+        console.log(e)
     }
     </script>
     

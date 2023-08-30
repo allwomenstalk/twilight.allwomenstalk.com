@@ -132,6 +132,20 @@
                 }
 
             },
+            rate(rating){
+                console.log('rating', rating);
+                // api call
+                // https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/rate?postid=000&rating=5
+                api = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/rate?postid={{post.id}}&rating=${rating}`;
+                fetch(api)
+                .then(response => response.json())
+                .then(data => {
+                    console.log('data', data);
+                    e = rating
+                    document.getElementById("rating").innerHTML = "☆".repeat(5 - e) + "★".repeat(e),
+                    document.getElementById("ratingtitle").innerHTML = "Thanks!"
+                });
+            },
             async share () {
                   if (navigator.canShare) { 
                         var obj = {

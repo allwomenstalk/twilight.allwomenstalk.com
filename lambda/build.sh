@@ -3,6 +3,9 @@
 # Update lambda
 echo "Updating lambda..."
 cp -r ../src/ ./nodejs/src
+echo "Copying node modules..."
+cp -r ../node_modules/ ./nodejs/node_modules
+
 # Clean up 
 rm ./nodejs/src/_data/posts.json
 rm ./nodejs/src/_data/archives.json

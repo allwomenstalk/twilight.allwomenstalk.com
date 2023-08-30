@@ -56,7 +56,7 @@ for folder in "${folders[@]}"; do
     
         
         # Upload the folder to S3 bucket
-        echo "Uploading $folder to S3 bucket..."
+        echo "Uploading $folder files to S3 bucket..."
         aws s3 cp "_site/$folder" s3://"$folder" --recursive --quiet
         
         # Upload the folder js 

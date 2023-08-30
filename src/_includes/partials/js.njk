@@ -1,4 +1,3 @@
-<script src="https://allwomenstalk.github.io/js/alpine.min.js" defer></script>
 {# delay alpinejs #}
 
 
@@ -132,6 +131,43 @@
                 }
 
             },
+            rate(rating){
+                console.log('rating', rating);
+                // api call
+                // https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/rate?postid=000&rating=5
+                api = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/rate?postid={{post.id}}&rating=${rating}`;
+                fetch(api)
+                .then(response => response.json())
+                .then(data => {
+                    console.log('data', data);
+                    e = rating;
+                    document.getElementById("rating").innerHTML = "☆".repeat(5 - e) + "★".repeat(e),
+                    document.getElementById("ratingtitle").innerHTML = "Thanks!"
+                });
+            },
+            reportElaborate(page) {
+                reportapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/report?postid={{post.id}}&page=${page}&type=elaborate`;
+                // Your function logic here
+                const thankYouMessages = [
+                    "Thank you for helping us improve!",
+                    "Your feedback has been recorded. Thanks!",
+                    "Appreciate your input! We'll look into it.",
+                    "Thanks for pointing it out!",
+                    "Your feedback matters. Thank you!",
+                    "Report received! Thanks for letting us know.",
+                    "Thanks for being our second set of eyes!",
+                    "Acknowledged! We appreciate your vigilance.",
+                    "Your input makes us better. Thank you!",
+                    "Report logged! Thanks for the heads up."
+                ];
+                console.log(page,reportapi);
+                fetch(reportapi)
+                .then(response => response.json())
+                .then(data => {
+                    console.log('data', data);
+                });
+                return thankYouMessages[Math.floor(Math.random() * thankYouMessages.length)];
+            },
             async share () {
                   if (navigator.canShare) { 
                         var obj = {
@@ -167,40 +203,40 @@
 
             },
             loadKeywords() {
-                try {
+                
                 const filePaths = [
                     'list.json',
                     '/list.json',
                     'https://allwomenstalk.com/list.json'
                 ];
 
-                const fetchKeywords = (filePath) => {
-                    return fetch(filePath)
-                    .then(response => {
-                        console.log('keywords', response);
-                        if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                        }
-                        return response.json();
-                    });
+                const fetchKeywords = async (filePath) => {
+                    try {
+                        data = await fetch(filePath)
+                        .then(response => {
+                            console.log('keywords', response);
+                            if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                            }
+                            return response.json();
+                        });
+                        return data;
+                    } catch (error) {
+                        console.log(`Failed to fetch keywords from ${filePath}`);
+                    }
                 };
 
                 const fetchKeywordsFromAvailablePath = async () => {
                     for (const filePath of filePaths) {
-                    try {
+                    
                         list = await fetchKeywords(filePath);
                         this.keywords = list.sort(() => 0.5 - Math.random()).slice(0, 6);
                         break;
-                    } catch (error) {
-                        console.log(`Failed to fetch keywords from ${filePath}`);
-                    }
+
                     }
                 };
 
                 fetchKeywordsFromAvailablePath();
-                } catch (error) {
-                console.log('General error:', error);
-                }
 
             }
         }
@@ -244,10 +280,14 @@
             {# window.elaborate.init(); #}
         });
         loadJs('https://cdn.unibotscdn.com/ubplayer/player.js', () => {
-            {# console.log('ubplayer loaded'); #}
+            console.log('ubplayer loaded');
         });
         {# loadJs('/js/elaborate.min.js') #}
-    }, 500)
+        loadJs("https://allwomenstalk.github.io/js/alpine.min.js", () => {
+            console.log('alpine loaded');
+            
+        });
+    }, 1000)
 
     {# disable all logs in production #}
     {% if metadata.NODE_ENV == "production" %}
@@ -265,19 +305,9 @@
 {% if metadata.NODE_ENV == "production" %}
 
     {# bonbon here  #}
-    {% include "partials/bonbon.njk" %}
+    {# {% include "partials/bonbon.njk" %} #}
 
 {% endif %}
-
-{# <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-17514583-34"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('set', {'dimension1': '{{metadata.version}}'});
-  gtag('config', 'UA-17514583-34');
-</script> #}
 
 
 {% if post.amp %}
