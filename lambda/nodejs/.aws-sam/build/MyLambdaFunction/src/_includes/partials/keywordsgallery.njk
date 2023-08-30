@@ -4,7 +4,7 @@
     <template x-for="item in keywords">
       <a :href="'https://allwomenstalk.com/gsearch/?q='+item.keyword" class="col-span-1 flex rounded-md shadow-sm">
         <div class="flex w-16 flex-shrink-0 items-center justify-center">
-          <img x-bind:src="item.image" :alt="item.keyword" class="object-cover h-16 w-16 rounded-l-md">
+          <img x-bind:src="item.image" :alt="item.keyword" class="object-cover h-16 w-16 rounded-l-md" loading="lazy">
         </div>
         <div class="flex flex-1 items-center justify-between truncate rounded-r-md border-b border-r border-t border-gray-200 bg-white">
           <div class="flex-1 truncate px-4 py-2 text-sm">
