@@ -184,7 +184,7 @@ module.exports = function (item) {
       temp.content.forEach((page,index) => {
         
         if (page.includes('amp-youtube')) {
-          console.log('includes youtube')
+          
           temp.ampyt = true
           subtitle = page.match(/span>(.*?)</)
           videoid = page.match(/videoid=\"(.*?)\"/)[1]
@@ -210,7 +210,6 @@ module.exports = function (item) {
         temp.videos.forEach(video => {
           video.items = video.items.slice(0,2)
         })
-      console.log('videos:',temp.videos.length)
 
       if (temp.videos.length > 0) {
         temp.ampyt = true
@@ -362,7 +361,6 @@ module.exports = function (item) {
       // console.log('faq',item.faq, item.faq.length)
       if (item.faq.length > 0) temp.faq = item.faq.shift().list
       // if (item.seo && item.seo.clicks == 0 && item.seo.ga_visits == 0) temp.noads = true 
-      console.log('amp:',temp.amp)
       return temp
 }    
 

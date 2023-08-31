@@ -184,7 +184,7 @@ module.exports = function (item) {
       temp.content.forEach((page,index) => {
         
         if (page.includes('amp-youtube')) {
-          console.log('includes youtube')
+          
           temp.ampyt = true
           subtitle = page.match(/span>(.*?)</)
           videoid = page.match(/videoid=\"(.*?)\"/)[1]
