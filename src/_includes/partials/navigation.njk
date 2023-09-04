@@ -55,7 +55,7 @@
         <!-- Links -->
         <div class="mt-2">
 
-          <div id="tabs-1-panel-1" class="space-y-12 px-4 pb-6 pt-10" aria-labelledby="tabs-1-tab-1" role="tabpanel" tabindex="0">
+          <div id="tabs-1-panel-1" class="space-y-12 px-4 pb-6 pt-2" aria-labelledby="tabs-1-tab-1" role="tabpanel" tabindex="0">
             <div class="grid grid-cols-1 items-start gap-x-6 gap-y-10">
               <div class="grid grid-cols-1 gap-x-6 gap-y-10">
                 
@@ -63,29 +63,29 @@
                   {# <p id="mobile-featured-heading-0" class="font-medium text-gray-900">Featured</p> #}
                   <ul role="list" aria-labelledby="mobile-featured-heading-0" class="mt-6 space-y-6">
                     <li class="flex">
-                      <a href="https://allwomenstalk.com/" class="-m-2 block p-2 font-medium text-gray-900">Homepage</a>
+                    🌐  <a href="https://allwomenstalk.com/" class="-m-2 block p-2 font-medium text-gray-900">Homepage</a>
                     </li>
                     <li class="flex">
-                      <a href="https://allwomenstalk.com/popular/" class="-m-2 block p-2 font-medium text-gray-900">Popular</a>
+                    🔥  <a href="https://allwomenstalk.com/popular/" class="-m-2 block p-2 font-medium text-gray-900">Popular</a>
                     </li>
                     <li class="flex">
-                      <a href="https://allwomenstalk.com/trending/" class="-m-2 block p-2 font-medium text-gray-900">Trending</a>
+                    🚀  <a href="https://allwomenstalk.com/trending/" class="-m-2 block p-2 font-medium text-gray-900">Trending</a>
                     </li>
                     <li class="flex">
-                      <a href="https://shop.allwomenstalk.com/" class="-m-2 block p-2 font-medium text-gray-900">Shop</a>
+                    🛍️  <a href="https://shop.allwomenstalk.com/" class="-m-2 block p-2 font-medium text-gray-900">Shop</a>
                     </li>
                     <li class="flex">
-                      <a href="https://quiz.allwomenstalk.com/" class="-m-2 block p-2 font-medium text-gray-900">Quizzes</a>
+                    🤔  <a href="https://quiz.allwomenstalk.com/" class="-m-2 block p-2 font-medium text-gray-900">Quizzes</a>
                     </li>
                     <li class="flex">
-                      <a href="https://reviews.allwomenstalk.com/" class="-m-2 block p-2 font-medium text-gray-900">Reviews</a>
+                    🌟  <a href="https://reviews.allwomenstalk.com/" class="-m-2 block p-2 font-medium text-gray-900">Reviews</a>
                     </li>
                   </ul>
                 </div> 
                 
                 <div>
                   <p id="mobile-categories-heading" class="font-medium text-gray-900">Categories</p>
-                  <ul role="list" aria-labelledby="mobile-categories-heading" class="mt-6 space-y-6">
+                  <ul role="list" aria-labelledby="mobile-categories-heading" class="mt-6">
                     {% for category in categories %}
                     <li class="flex w-full">
                       <a href="https://{{ category._id }}.allwomenstalk.com/" class="text-gray-500 w-full -ml-2 hover:bg-gray-200 p-2 rounded">{{ category.name }}</a>
