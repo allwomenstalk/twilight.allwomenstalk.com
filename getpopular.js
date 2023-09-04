@@ -4,26 +4,12 @@ const fs = require('fs');
 require('dotenv').config()
 const uri = process.env.MONGODB_URI;
 
+const parser = require(fs.realpathSync('.') + "/helpers/parserarchive.js");
+
 const client = new MongoClient(uri, { useUnifiedTopology: true });
-const month = new Date().getMonth() + 1;
-const months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-const marr = [
-  ...months.slice(month >= 3 ? 12 : month - 3),
-  ...months.slice(month - 3 < 0 ? 0 : month - 3, month),
-];
-console.log('curent month:', marr);
 
 let path = './src/_data/popular.json'
 let arr = []
-// return arr;
-
-try {
-  arr = JSON.parse(fs.readFileSync(path, 'utf8'));
-  console.log("Local file",path)
-} catch (err) {
-  console.log("No local ",path)
-  arr = undefined;
-}
 
 function SaveData(name, arr) {
   fs.writeFile(name,JSON.stringify(arr,null,2), (err) => {
@@ -33,7 +19,6 @@ function SaveData(name, arr) {
 }
 
 async function run () {
-  // if (arr) return arr 
 
   try {
     await client.connect();
@@ -128,30 +113,9 @@ async function run () {
     const cursor = await collection.aggregate(pipeline);
     arr = [];
     await cursor.forEach((item) => {
-      console.log(item.post_name)
-     //console.log(item.super_categories)
-     if(!item.super_categories) {console.log(item)}
-      const temp = {};
-      temp.id = item._id;
-      temp.slug = item.post_name;
-      temp.tags = [item.super_categories[0]];
-      temp.category = item.super_categories[0]
-      temp.url = `https://allwomenstalk.com/${item.post_name}`;
-      temp.title = item.post_title.replace(/[^a-zA-Z0-9_.-\s'"]*/g,''); //removeing all emoji;
-      temp.fulldate = item.post_date;
-      temp.date = moment(item.post_date).format('MMM DD');
-      temp.author = { name: item.author.first_name.replace('_', ''), id: item.author._id };
-      temp.image = item.image_url;
-      temp.imageresize = item.image_url.replace('img.', 'resize.img.');
-      //console.log(item.keywords)
-      temp.keyword = capitalize( item.keywords[Math.floor(Math.random() * 5)] );
-      // temp.content = item.post_content;
-      temp.host = item.host
-      temp.url = `${
-        (item.blog === 'aws'
-          ? 'https://allwomenstalk.com/'
-          : `https://${item.blog}.allwomenstalk.com/`) + item.post_name
-      }/`;
+      
+      temp = parser(item)
+
       arr.push(temp);
     });
     // shuffle
@@ -163,9 +127,6 @@ async function run () {
   }
 };
 
-function capitalize(word) {
-  return word[0].toUpperCase() + word.substring(1).toLowerCase();
-}
 
 
 if (require.main === module) {
