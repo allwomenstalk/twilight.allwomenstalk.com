@@ -19,7 +19,6 @@
     "deploy:invalidate": "aws cloudfront create-invalidation --distribution-id EGUHTC863PR1X --paths '/*'",
     "test": "run-s test:*",
     "test:upload": "aws s3 cp _site s3://allwomenstalk.com/lighthousetest/ --recursive",
-    "test:invalidate": "aws cloudfront create-invalidation --distribution-id ELXAREN8U9B5R --paths /lighthousetest/*",
     "clean": "rm -rf _site",
     "reset": "echo '[]' > src/_data/posts.json && echo '[]' > src/_data/archives.json && echo '[]' > src/_data/popular.json"
   },
