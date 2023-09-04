@@ -40,7 +40,7 @@ aws s3 cp _site s3://allwomenstalk.com/lighthousetest/ --recursive
 
 ## Invalidate CloudFront
 aws cloudfront create-invalidation --distribution-id ELXAREN8U9B5R --paths "/lighthousetest/*"
-aws cloudfront create-invalidation --distribution-id ELXAREN8U9B5R --paths "/popular/*"
+aws cloudfront create-invalidation --distribution-id ELXAREN8U9B5R --paths "/product-insight-eurikas-groundbreakin-innovations-ifa-2023/*"
 
 
 
