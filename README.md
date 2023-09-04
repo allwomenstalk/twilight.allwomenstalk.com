@@ -57,6 +57,8 @@ To update archivces
 > npm run build 
 > sh archiveupload.sh
 
+node getarchives.js && npm run build && sh archiveupload.sh
+
 
 Batch update: 
 node batchS3generator.js {creates batch files in folder /batch }
