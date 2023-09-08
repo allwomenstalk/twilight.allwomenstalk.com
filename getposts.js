@@ -18,6 +18,8 @@ const marr = [
   ...months.slice(month - 3 < 0 ? 0 : month - 3, month),
 ];
 
+default_pipeline = 'pipeline_comments1000plus' // 'pipeline_seo_top'
+
 arr = undefined;
 try {
   // var arr = JSON.parse(fs.readFileSync(filename, 'utf8'));
@@ -38,7 +40,7 @@ main = async () => {
     const collection = database.collection('posts');
 
     const limitperbuild = process.env.NODE_ENV === "production" ? 10000 : 1000;
-    const filter = global[process.env.PIPE ? process.env.PIPE : 'pipeline_seo_top'];
+    const filter = global[process.env.PIPE ? process.env.PIPE : default_pipeline];
     console.log('fitler pipeline name:', process.env.PIPE, filter);
 
     const pipeline = [
