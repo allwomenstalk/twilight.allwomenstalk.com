@@ -51,7 +51,8 @@ module.exports = [{
           }
         },
         {$sort:{comment_date:-1}},
-        {$limit:10}
+        // {$limit:10}
+        {$sample:{size:10}}
       ], 
       'as': 'comments'
     },

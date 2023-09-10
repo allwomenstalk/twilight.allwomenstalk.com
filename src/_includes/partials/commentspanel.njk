@@ -1,9 +1,16 @@
-{# {% include 'partials/comments.njk' %} #}
+{% include 'partials/comments.njk' %}
 
-<div class="text-center">
+<div class="text-center my-10 ">
 <button @click="commentspanel=true;getComments()" type="button" class="mx-auto rounded-md bg-pink-600 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-pink-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600">
     {# Show {{post.comment_count}} Comments #}
-    Show latest comments
+    {% if post.comment_count == 1 %}
+        Show {{post.comment_count}} Comment
+    {% elif post.comment_count == 0 %}
+        Leave Your Comment
+    {% elif post.comment_count > 1 %}
+        Show {{post.comment_count}} Comments
+    {% endif %}
+
 </button>
 </div>
 
@@ -33,8 +40,8 @@
             From: "translate-x-0"
             To: "translate-x-full"
         -->
-        <div @click.away="commentspanel=false" class="pointer-events-auto w-screen max-w-md">
-          <div class="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
+        <div @click.away="commentspanel=false" class="pointer-events-auto w-screen max-w-xl">
+          <div class="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl" x-ref="commentList">
             <div class="px-4 sm:px-6">
               <div class="flex items-start justify-between">
                 <h2 class="text-base font-semibold leading-6 text-gray-900" id="slide-over-title">Comments</h2>

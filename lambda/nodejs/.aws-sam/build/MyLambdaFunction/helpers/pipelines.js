@@ -136,7 +136,7 @@ pipeline_comments100 = [
 pipeline_comments1000plus = [
   {
     $match: {
-      comment_count: {$gt: 1000},
+      comment_count: {$gt: 500},
       post_content:{$not: /iframe/},
     }
   },

@@ -29,23 +29,24 @@
     <div class="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
       <div class="-mt-8 sm:-mx-4 columns-1 sm:columns-2 sm:text-[0] lg:columns-3">
         {% for comment in post.comments %}
-          <div class="pt-8 sm:inline-block sm:w-full sm:px-4 col-span-2">
-            <figure class="rounded-2xl bg-white/10 p-4 text-sm leading-6">
-              <blockquote class="">
-                <p>{{ comment.comment_content | safe }}</p>
-              </blockquote>
-              <figcaption class="mt-2 flex items-center gap-x-4">
-                <div>
-                  <div class="font-semibold">{{ comment.comment_author}}</div>
-                  <div class="opacity-70 text-xs">@{{ comment.comment_author }}</div>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
+        <div class="pt-4 sm:inline-block sm:w-full sm:px-4">
+          <figure class="rounded-2xl bg-gray-100 p-4 text-sm leading-6">
+            <blockquote class="text-gray-900">
+              <p>{{ comment.comment_content | safe }}</p>
+            </blockquote>
+            {# <figcaption class="mt-6 flex items-center gap-x-4">
+              <img class="h-10 w-10 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <div>
+                <div class="font-semibold text-gray-900">Leslie Alexander</div>
+                <div class="text-gray-600">@lesliealexander</div>
+              </div>
+            </figcaption> #}
+          </figure>
+        </div>
         {% endfor %}
 
         {# fresh comments go here #}
-        <template x-for="(comment, index) in comments">
+        {# <template x-for="(comment, index) in comments">
           <div x-bind:class="'pt-8 sm:inline-block sm:w-full sm:px-4 col-span-2'">
             <figure class="rounded-2xl bg-white/10 p-4 text-sm leading-6">
               <blockquote>
@@ -59,7 +60,7 @@
               </figcaption>
             </figure>
           </div>
-        </template>
+        </template> #}
 
       </div>
     </div>
@@ -68,7 +69,7 @@
 </div>
 {% endif %}
 
-<div class="">
+{# <div class="">
   <div class="px-6 py-6 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
       <h2 class="text-3xl font-bold tracking-tightsm:text-4xl">Share your thoughts instantly by tweeting us your comment.</h2>
@@ -87,7 +88,7 @@
 
     </div>
   </div>
-</div>
+</div> #}
 
 
 {# {% include 'partials/commentadd.njk' %} #}

@@ -14,6 +14,7 @@
             partials: ["azo","popular","recent"],
             comment: {
                 disable: false,
+                loadall: true,
             },
             comments: [],
             commentspanel: false,
@@ -35,8 +36,6 @@
                     console.log('search obj', this.search);
                     this.getsearch();
                 });
-
-                this.getComment();
 
                 // test
                 {# this.search.query = 'red shoes';
@@ -104,8 +103,11 @@
                     });
                 }
             },
-            async getComment(){
+            async getComments(all){
                 api = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/comments?postid={{post.id}}`;
+                if (all) {
+                    api = api + '&all=true';
+                }
                 fetch(api)
                 .then(response => response.json())
                 .then(data => {
@@ -113,9 +115,14 @@
                     data.forEach((item, i) => {
                         data[i].comment_date = new Date(item.comment_date).getTime();
                     });
-                    console.log('data', data);
                     this.comments = data.sort((b, a) => b.comment_date - a.comment_date);
                     this.commentstatic = false;
+                    (this.comments.length < 100) ? this.comment.loadall = false : this.comment.loadall = true;
+                    if (all) this.comment.loadall = false;
+                    setTimeout(() => {
+                        if(!all) this.$refs.commentList.scrollTop = this.$refs.commentList.scrollHeight;
+                    }, 100); // Adjust the delay as necessary.
+                                        
                 });
             },
             async commentSubmit () {

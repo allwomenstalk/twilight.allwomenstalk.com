@@ -68,6 +68,9 @@ eleventyComputed:
             {# adding shopping on the end for short posts #}
             {% include 'partials/rating.njk' %}
 
+            {% include "partials/commentspanel.njk" %}
+
+
             {% if (loop.length < 12) %}
                 {# {% include 'partials/shopping.njk' %} #}
             {% endif %}
@@ -82,9 +85,6 @@ eleventyComputed:
     {% include 'partials/adsnew.njk' %}
     {# {% include 'partials/ads.njk' %} #}
  
-    
-    {% include "partials/comments.njk" %}
-
     {% include 'partials/popular.njk' %}
 
     

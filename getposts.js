@@ -18,7 +18,8 @@ const marr = [
   ...months.slice(month - 3 < 0 ? 0 : month - 3, month),
 ];
 
-default_pipeline = 'pipeline_comments1000plus' // 'pipeline_seo_top'
+// default_pipeline = 'pipeline_comments1000plus'
+default_pipeline = 'pipeline_seo_top'
 
 arr = undefined;
 try {

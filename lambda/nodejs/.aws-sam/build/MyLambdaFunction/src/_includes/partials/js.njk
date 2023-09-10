@@ -12,8 +12,13 @@
             list:{},
             user: false,
             partials: ["azo","popular","recent"],
-            comment: {},
+            comment: {
+                disable: false,
+                loadall: true,
+            },
             comments: [],
+            commentspanel: false,
+            commentstatic: true,
             menu: false,
             search: {
                 show: false,
@@ -31,9 +36,11 @@
                     console.log('search obj', this.search);
                     this.getsearch();
                 });
+
                 // test
                 {# this.search.query = 'red shoes';
                 this.getsearch(); #}
+
             },
             showsearch () {
                 this.search.show = true;
@@ -96,14 +103,73 @@
                     });
                 }
             },
-            commentSubmit () {
+            async getComments(all){
+                api = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/comments?postid={{post.id}}`;
+                if (all) {
+                    api = api + '&all=true';
+                }
+                fetch(api)
+                .then(response => response.json())
+                .then(data => {
+                    // convert date to timestamp
+                    data.forEach((item, i) => {
+                        data[i].comment_date = new Date(item.comment_date).getTime();
+                    });
+                    this.comments = data.sort((b, a) => b.comment_date - a.comment_date);
+                    this.commentstatic = false;
+                    (this.comments.length < 100) ? this.comment.loadall = false : this.comment.loadall = true;
+                    if (all) this.comment.loadall = false;
+                    setTimeout(() => {
+                        if(!all) this.$refs.commentList.scrollTop = this.$refs.commentList.scrollHeight;
+                    }, 100); // Adjust the delay as necessary.
+                                        
+                });
+            },
+            async commentSubmit () {
+                if (this.comment.comment_content.length < 3) {
+                    alert('Comment too short');
+                    return;
+                }
+                this.comment.disable = true;
+                this.comment.postid = '{{post.id}}';
                 console.log('comment', this.comment);
-                this.comments.push(this.comment);
-                console.log('comments', this.comments);
+
+                const functionName = "comment";
+                const args = [2, 3]
+                    {# const result = await user.callFunction(functionName, ...args);
+                    console.log(`Called ${functionName}(${args.join(', ')})`, result); #}
+
+                apiurl = 'https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/comment';
+                fetch(apiurl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(this.comment),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Success:', data);
+                    if (data.error) {
+                        try {
+                            msg = JSON.parse(data.error)
+                        } catch (e) {
+                            msg = data.error
+                        }
+                        this.comment.disable = false;
+                        alert(msg.message || msg )
+                    } else {
+                        this.comments.push({...this.comment});
+                        this.comment.comment_content = '';
+                        this.comment.disable = false;
+                    }
+                })
+                
+
                 // cache name email localy in localstorage 
                 window.localStorage.setItem('comment_author', this.comment.comment_author);
                 window.localStorage.setItem('comment_author_email', this.comment.comment_author_email);
-                this.comment.comment_content = '';
+               
 
             },
             async check(){
