@@ -37,12 +37,38 @@ eleventyComputed:
 
 
         {% if loop.index > 1 and not loop.last %}
-            {% if post.elaborate[loop.index-1] %}
-                {% include 'partials/elaborate.njk' %}
-                
-            {% else %}
-                <div data-page="{{loop.index-1}}" class="elaborate italic prose dark:prose-invert p-4 overflow-hidden mx-auto max-w-xl"></div>
-            {% endif %}
+
+        {% if post.elaborate[loop.index-1] %}
+            {% include 'partials/elaborate.njk' %}     
+        {% endif %}
+
+        <div class="flex justify-between mx-auto max-w-xl">
+
+            <div class="flex-1">
+                <!-- Left Column Content Goes Here -->
+                {% if post.elaborate[loop.index-1] %}
+                        <button 
+                            x-data="{ title: 'Report', page: {{ loop.index-1 }}, btnClicked: false }"
+                            x-text="title" 
+                            :disabled="btnClicked"
+                            @click=" 
+                                title = reportElaborate(page);
+                                btnClicked = true;
+                            " 
+                            class="opacity-80 rounded bg-white px-2 py-1 text-xs font-semibold text-gray-900 shadow-sm hover:bg-gray-50 hover:opacity-100"
+                            :class="{'ring-1 ring-inset ring-gray-300 bg-node shadow-none ': !btnClicked}">
+                            Report
+                        </button>            
+                {% else %}
+                    <div data-page="{{loop.index-1}}" class="elaborate italic prose dark:prose-invert p-2 overflow-hidden mx-auto max-w-xl"></div>
+                {% endif %} 
+            </div>
+            <div class="flex-1">
+                <!-- Right Column Content Goes Here -->
+                {% include 'partials/reactions.njk' %}
+            </div>
+        </div>
+
         {% endif %}
 
         {% if not loop.last %}

@@ -1,16 +1,5 @@
-<div x-data="{ title: 'Report', page: {{ loop.index-1 }}, btnClicked: false }" class="italic prose p-4 overflow-hidden mx-auto max-w-xl">
+<div class="italic prose p-4 overflow-hidden mx-auto max-w-xl">
     {{ post.elaborate[loop.index-1] | safe }}
-    <button 
-        x-text="title" 
-        :disabled="btnClicked"
-        @click=" 
-            title = reportElaborate(page);
-            btnClicked = true;
-        " 
-        class="opacity-80 rounded bg-white px-2 py-1 text-xs font-semibold text-gray-900 shadow-sm hover:bg-gray-50 hover:opacity-100"
-        :class="{'ring-1 ring-inset ring-gray-300 bg-node shadow-none ': !btnClicked}">
-        Report
-    </button>
 </div>
 
 
