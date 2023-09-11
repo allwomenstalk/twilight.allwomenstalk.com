@@ -1,6 +1,9 @@
 const fs = require('fs');
 var ObjectId = require('mongodb').ObjectId;
 
+const realtime = require('./aws.realtime.json').map(item=>item.slug);
+
+console.log('realtime:', realtime);
 
 try {
   var filter = JSON.parse(fs.readFileSync('./_filter.json','utf8'))
@@ -19,6 +22,14 @@ if (!marker[0]) {
 
 // console.log("filter pipe:",filter);
 // console.log("marker:",marker);
+
+pipeline_realtime = [
+  {
+    '$match': {
+      'post_name': {$in: realtime}
+    }
+  }
+]
 
 pipeline_marker = [
   {

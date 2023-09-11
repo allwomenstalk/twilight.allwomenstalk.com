@@ -278,11 +278,11 @@
                     this.reactions[index].selected = true;
                     this.selectedEmoji = this.reactions[index].emoji;
                     this.showReactions = false;
-                    this.sendReaction("{{post.id}}", this.reactions[index].emoji);
+                    this.sendReaction("{{post.id}}", index, this.reactions[index].emoji);
                 {# } #}
             },
-            sendReaction(postId, label) {
-                const url = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/reaction?postid=${postId}&label=${label}`;
+            sendReaction(postId, index, label) {
+                const url = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/reaction?postid=${postId}&page=${index}&label=${label}`;
                 fetch(url)
                 .then(response => response.json())
                 .then(data => {

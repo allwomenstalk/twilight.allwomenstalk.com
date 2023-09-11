@@ -11,6 +11,7 @@ const parser = require(fs.realpathSync('.') + "/helpers/parser.js");
 const mongopipelines = require('./helpers/pipelines.js');
 const pipelinePost = require('./helpers/pipelinePost.js');
 
+
 const month = new Date().getMonth() + 1;
 const months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 const marr = [
@@ -20,6 +21,7 @@ const marr = [
 
 // default_pipeline = 'pipeline_comments1000plus'
 default_pipeline = 'pipeline_seo_top'
+// default_pipeline = 'pipeline_realtime'
 
 arr = undefined;
 try {
