@@ -20,8 +20,8 @@ const marr = [
 ];
 
 // default_pipeline = 'pipeline_comments1000plus'
-default_pipeline = 'pipeline_seo_top'
-// default_pipeline = 'pipeline_realtime'
+// default_pipeline = 'pipeline_seo_top'
+default_pipeline = 'pipeline_realtime'
 
 arr = undefined;
 try {

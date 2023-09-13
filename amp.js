@@ -1,8 +1,11 @@
 'use strict';
+
 const amphtmlValidator = require('amphtml-validator');
 const fs = require('fs');
 const glob = require('glob');
 const { MongoClient } = require('mongodb');
+const path = require('path');
+
 require('dotenv').config();
 
 const fileslist = [];
@@ -14,13 +17,44 @@ let totalFiles = 0;
 let checkedFiles = 0;
 let failedFiles = 0;
 
-glob("_site" + '/**/amp.html', {}, (err, files) => {
-  totalFiles = files.length;
-  console.log("Validating " + totalFiles + " AMP files");
+const getAllFiles = (dirPath, filename, arrayOfFiles) => {
+    const files = fs.readdirSync(dirPath);
 
-  fileslist.push(...files);
-  Run();
-});
+    arrayOfFiles = arrayOfFiles || [];
+
+    files.forEach(file => {
+        if (fs.statSync(path.join(dirPath, file)).isDirectory()) {
+            arrayOfFiles = getAllFiles(path.join(dirPath, file), filename, arrayOfFiles);
+        } else if (file === filename) {
+            arrayOfFiles.push(path.join(dirPath, file));
+        }
+    });
+
+    return arrayOfFiles;
+};
+
+const ampFiles = getAllFiles('_site', 'amp.html');
+
+// console.log(ampFiles);
+console.log('Validating ' + ampFiles.length + ' AMP files');
+fileslist.push(...ampFiles)
+
+Run();
+
+
+// glob("_site/**/*.amp.html", {}, (err, files) => {
+//     if (err) {
+//         console.error('Error occurred while trying to glob:', err);
+//         return;
+//     }
+
+//     totalFiles = files.length;
+//     console.log("Validating " + totalFiles + " AMP files");
+
+//     fileslist.push(...files);
+//     Run();
+// });
+
 
 async function Run() {
   const file = fileslist.shift();
@@ -38,7 +72,7 @@ async function Run() {
     console.log("Failed Files: " + failedFiles);
     console.log([...new Set(errorsarr)]);
     saveReportsToJson();
-    saveReportsToMongoDB();
+    // saveReportsToMongoDB();
   }
 }
 

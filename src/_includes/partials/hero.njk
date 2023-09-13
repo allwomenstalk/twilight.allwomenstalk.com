@@ -9,6 +9,35 @@
     <p class="mt-2 text-sm text-white opacity-70">
       By
       <a href="https://allwomenstalk.com/profile/{{ post.author.id }}/" class="text-white">{{ post.author.name }}</a>
+
+      {# comments button or comments link #}
+      {% if (post.comment_count > 1) %}
+      
+          {% if amp %}
+          • <a href="{{post.url}}#comments" class=" px-2.5 py-1.5 text-sm font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600">
+            {{ post.comment_count }} Comments
+          </a>
+          {% else %}
+          • <button @click="commentspanel=true;getComments()" type="button" class=" px-2.5 py-1.5 text-sm font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600">
+            {{ post.comment_count }} Comments
+          </button>
+          {% endif %}
+
+      {% endif %}
+
+      {# native share #}
+      {% if amp %}
+      {# <amp-social-share type="system" aria-label="Share">Share</amp-social-share> #}
+      {% else %}
+      • <button @click="share()" type="button" class=" px-2.5 py-1.5 text-sm font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600">
+        <svg class="w-5 inline-block " fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5"></path>
+        </svg> 
+        <span class="hidden md:inline-block">Share</span>
+      </button>
+      {% endif %}
+
+
     </p>
     <svg class="text-pink-800 z-10 hidden md:block absolute right-0 inset-y-0 h-full w-48 transform translate-x-1/2 " fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
       <polygon points="50,0 100,0 50,100 0,100"></polygon>

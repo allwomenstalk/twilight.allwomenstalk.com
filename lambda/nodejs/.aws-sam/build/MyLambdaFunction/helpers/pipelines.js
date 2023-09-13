@@ -1,9 +1,8 @@
 const fs = require('fs');
 var ObjectId = require('mongodb').ObjectId;
 
+// export RealtimePosts view from db to json file
 const realtime = require('./aws.realtime.json').map(item=>item.slug);
-
-console.log('realtime:', realtime);
 
 try {
   var filter = JSON.parse(fs.readFileSync('./_filter.json','utf8'))

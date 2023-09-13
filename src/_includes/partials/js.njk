@@ -104,6 +104,7 @@
                 }
             },
             async getComments(all){
+                console.log('getComments', this.user);
                 api = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/comments?postid={{post.id}}`;
                 if (all) {
                     api = api + '&all=true';
@@ -264,6 +265,7 @@
         return {
             showReactions: false,
             selectedEmoji: null,
+            previewEmoji: null,
             reactions: [
                 { emoji: '👍', count: getRandomCount(), selected: false },
                 { emoji: '❤️', count: getRandomCount(), selected: false },
@@ -272,6 +274,10 @@
                 { emoji: '😢', count: getRandomCount(), selected: false },
                 { emoji: '😠', count: getRandomCount(), selected: false }
             ],
+            init() {
+                // random 
+                this.previewEmoji = this.reactions[Math.floor(Math.random() * this.reactions.length)].emoji;
+            },
             incrementCount(index) {
                 {# if (!this.reactions[index].selected) { #}
                     this.reactions[index].count++;
