@@ -45,7 +45,7 @@
             fetchData() {
                 this.headline = this.headlines[Math.floor(Math.random() * this.headlines.length)] + ':';
                 console.log('Fetching data...');
-                fetch('https://allwomenstalk.com/explore/list.json')
+                fetch('https://allwomenstalk.github.io/explore/list.json')
                     .then(response => response.json())
                     .then(data => {
                         console.log(data);
