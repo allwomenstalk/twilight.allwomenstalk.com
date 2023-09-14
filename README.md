@@ -65,7 +65,7 @@ node batchS3generator.js {creates batch files in folder /batch }
 sh batchbuild.sh (uploads to s3 and starts builds)
 
 to clean current files 
-aws s3 rm s3://11tyonly/batch/ --recursive
+aws s3 rm s3://11tycode/batch/ --recursive
 
 Batch build spec
 
