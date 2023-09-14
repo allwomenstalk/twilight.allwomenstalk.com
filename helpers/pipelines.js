@@ -174,8 +174,17 @@ pipeline_category = [
     }
     
   },
-  // {'$sample': {size:100}}
 ]
+
+pipeline_host = [
+  {
+    '$match': {
+      "host":{$in:["beauty.allwomenstalk.com"]}
+    }
+    
+  },
+]
+
 if (!process.env.ELEVENTY_PRODUCTION) {
   // pipeline_category.push({'$sample': {size:100}})
 }
