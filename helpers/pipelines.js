@@ -170,14 +170,14 @@ pipeline_name = [
 pipeline_category = [
   {
     '$match': {
-      "super_categories":{$in:["love"]}
+      "super_categories":{$in:["beauty"]}
     }
     
   },
   // {'$sample': {size:100}}
 ]
 if (!process.env.ELEVENTY_PRODUCTION) {
-  pipeline_category.push({'$sample': {size:100}})
+  // pipeline_category.push({'$sample': {size:100}})
 }
 
 pipeline_seo_noclicks = [

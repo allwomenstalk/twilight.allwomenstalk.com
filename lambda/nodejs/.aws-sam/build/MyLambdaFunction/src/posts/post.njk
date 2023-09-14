@@ -25,6 +25,8 @@ eleventyComputed:
     {# {% include 'partials/widget.njk' %} #}
     {# {% include 'partials/shopping.njk' %} #}
 
+
+
     {% for page in post.content %}
         <div class="post prose dark:prose-invert p-4 overflow-hidden mx-auto max-w-xl
             {%- if loop.first -%} 
@@ -42,7 +44,7 @@ eleventyComputed:
             {% include 'partials/elaborate.njk' %}     
         {% endif %}
 
-        <div class="flex justify-between mx-auto max-w-xl">
+        <div class="flex justify-between mx-auto max-w-2xl px-2 sm:px-8">
 
             <div class="flex-1">
                 <!-- Left Column Content Goes Here -->
@@ -55,8 +57,7 @@ eleventyComputed:
                                 title = reportElaborate(page);
                                 btnClicked = true;
                             " 
-                            class="opacity-80 rounded bg-white px-2 py-1 text-xs font-semibold text-gray-900 shadow-sm hover:bg-gray-50 hover:opacity-100"
-                            :class="{'ring-1 ring-inset ring-gray-300 bg-node shadow-none ': !btnClicked}">
+                            class="opacity-80 text-xs">
                             Report
                         </button>            
                 {% else %}
@@ -76,10 +77,12 @@ eleventyComputed:
                     <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
                     {% include 'partials/toc.njk' %}
                 {% elif loop.index == 2 %}
-                    {# {% include "partials/gpt.njk" %} #}
                     {% include 'partials/unibots.njk' %}
                 {% elif loop.index == 4 %}
                     {% include 'quiz.njk' %}
+                    <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
+                {% elif (loop.index == 5) or (loop.index == 10 ) or (loop.index == 15 )  %}
+                    {% include "partials/explore.njk" %}
                     <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
                 {% elif (loop.index == 10) and (loop.length > 12) %}
                     {# adding shopping at the middle on the long posts #}

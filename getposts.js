@@ -21,7 +21,8 @@ const marr = [
 
 // default_pipeline = 'pipeline_comments1000plus'
 // default_pipeline = 'pipeline_seo_top'
-default_pipeline = 'pipeline_realtime'
+default_pipeline = 'pipeline_category'
+// default_pipeline = 'pipeline_realtime'
 
 arr = undefined;
 try {
@@ -42,7 +43,7 @@ main = async () => {
     const database = client.db('aws');
     const collection = database.collection('posts');
 
-    const limitperbuild = process.env.NODE_ENV === "production" ? 10000 : 1000;
+    const limitperbuild = process.env.NODE_ENV === "production" ? 10000 : 10000;
     const filter = global[process.env.PIPE ? process.env.PIPE : default_pipeline];
     console.log('fitler pipeline name:', process.env.PIPE, filter);
 
