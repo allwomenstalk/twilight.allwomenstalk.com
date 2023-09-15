@@ -76,6 +76,17 @@ eleventyComputed:
         {% endif %}
     {% endfor %}
 
+    <div class="text-center">
+    <a href="{{post.url}}#comments">
+    {% if post.comment_count == 1 %}
+        Show {{post.comment_count}} Comment
+    {% elif post.comment_count == 0 %}
+        Leave Your Comment
+    {% elif post.comment_count > 1 %}
+        Show {{post.comment_count}} Comments
+    {% endif %}
+    </a>
+    </a>
 
     {# {% include 'partials/ads.njk' %}
 

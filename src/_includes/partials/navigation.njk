@@ -63,22 +63,22 @@
                   {# <p id="mobile-featured-heading-0" class="font-medium text-gray-900">Featured</p> #}
                   <ul role="list" aria-labelledby="mobile-featured-heading-0" class="mt-6 space-y-6">
                     <li class="flex">
-                    🌐  <a href="https://allwomenstalk.com/" class="-m-2 block p-2 font-medium text-gray-900">Homepage</a>
+                    🌐  <a href="https://allwomenstalk.com/" class="_noaff -m-2 block p-2 font-medium text-gray-900">Homepage</a>
                     </li>
                     <li class="flex">
-                    🔥  <a href="https://allwomenstalk.com/popular/" class="-m-2 block p-2 font-medium text-gray-900">Popular</a>
+                    🔥  <a href="https://allwomenstalk.com/popular/" class="_noaff -m-2 block p-2 font-medium text-gray-900">Popular</a>
                     </li>
                     <li class="flex">
-                    🚀  <a href="https://allwomenstalk.com/trending/" class="-m-2 block p-2 font-medium text-gray-900">Trending</a>
+                    🚀  <a href="https://allwomenstalk.com/trending/" class="_noaff -m-2 block p-2 font-medium text-gray-900">Trending</a>
                     </li>
                     <li class="flex">
-                    🛍️  <a href="https://shop.allwomenstalk.com/" class="-m-2 block p-2 font-medium text-gray-900">Shop</a>
+                    🛍️  <a href="https://shop.allwomenstalk.com/" class="_noaff -m-2 block p-2 font-medium text-gray-900">Shop</a>
                     </li>
                     <li class="flex">
-                    🤔  <a href="https://quiz.allwomenstalk.com/" class="-m-2 block p-2 font-medium text-gray-900">Quizzes</a>
+                    🤔  <a href="https://quiz.allwomenstalk.com/" class="_noaff -m-2 block p-2 font-medium text-gray-900">Quizzes</a>
                     </li>
                     <li class="flex">
-                    🌟  <a href="https://reviews.allwomenstalk.com/" class="-m-2 block p-2 font-medium text-gray-900">Reviews</a>
+                    🌟  <a href="https://reviews.allwomenstalk.com/" class="_noaff -m-2 block p-2 font-medium text-gray-900">Reviews</a>
                     </li>
                   </ul>
                 </div> 
@@ -88,7 +88,7 @@
                   <ul role="list" aria-labelledby="mobile-categories-heading" class="mt-6">
                     {% for category in categories %}
                     <li class="flex w-full">
-                      <a href="https://{{ category._id }}.allwomenstalk.com/" class="text-gray-500 w-full -ml-2 hover:bg-gray-200 p-2 rounded">{{ category.name }}</a>
+                      <a href="https://{{ category._id }}.allwomenstalk.com/" class="_noaff text-gray-500 w-full -ml-2 hover:bg-gray-200 p-2 rounded">{{ category.name }}</a>
                     </li>
                     {% endfor %}
 
@@ -147,17 +147,17 @@
         <div class="space-y-6 border-t border-gray-200 px-4 py-6">
           {% for page in metadata.pages %}
           <div class="flow-root">
-            <a href="{{page.url}}" class="-m-2 block p-2 font-medium text-gray-900">{{page.name}}</a>
+            <a href="{{page.url}}" class="_noaff -m-2 block p-2 font-medium text-gray-900">{{page.name}}</a>
           </div>
           {% endfor %}
         </div>
 
         <div class="space-y-6 border-t border-gray-200 px-4 py-6">
           <div class="flow-root">
-            <a href="https://account.allwomenstalk.com" class="-m-2 block p-2 font-medium text-gray-900">Create an account</a>
+            <a href="https://account.allwomenstalk.com" class="_noaff -m-2 block p-2 font-medium text-gray-900">Create an account</a>
           </div>
           <div class="flow-root">
-            <a href="https://account.allwomenstalk.com" class="-m-2 block p-2 font-medium text-gray-900">Sign in</a>
+            <a href="https://account.allwomenstalk.com" class="_noaff -m-2 block p-2 font-medium text-gray-900">Sign in</a>
           </div>
         </div>
 
@@ -214,7 +214,7 @@
                           <path clip-rule="evenodd" fill-rule="evenodd" d="M9.25 3H3.5A1.5 1.5 0 002 4.5v4.75h3.365A2.75 2.75 0 019.25 5.362V3zM2 10.75v4.75A1.5 1.5 0 003.5 17h5.75v-4.876A4.75 4.75 0 015 14.75a.75.75 0 010-1.5 3.251 3.251 0 003.163-2.5H2zM10.75 17h5.75a1.5 1.5 0 001.5-1.5v-4.75h-6.163A3.251 3.251 0 0015 13.25a.75.75 0 010 1.5 4.75 4.75 0 01-4.25-2.626V17zM18 9.25V4.5A1.5 1.5 0 0016.5 3h-5.75v2.362a2.75 2.75 0 013.885 3.888H18zm-4.496-2.755a1.25 1.25 0 00-1.768 0c-.36.359-.526.999-.559 1.697-.01.228-.006.443.004.626.183.01.398.014.626.003.698-.033 1.338-.2 1.697-.559a1.25 1.25 0 000-1.767zm-5.24 0a1.25 1.25 0 00-1.768 1.767c.36.36 1 .526 1.697.56.228.01.443.006.626-.004.01-.183.015-.398.004-.626-.033-.698-.2-1.338-.56-1.697z"></path>
                         </svg> #}
                       </div>
-                      <a href="https://account.allwomenstalk.com/" class="-m-2 p-2 text-gray-400 hover:text-gray-500">
+                      <a href="https://account.allwomenstalk.com/" class="_noaff -m-2 p-2 text-gray-400 hover:text-gray-500">
                         <span class="sr-only">Account</span>
                         <svg x-show="!user" class="w-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"></path>

@@ -82,3 +82,9 @@ Batch build spec
         - export NODE_OPTIONS=--max_old_space_size=4096
         - npm run build 
         - sh postupload.sh
+
+
+
+## Digidip ignore tag 
+_noaff - add this class to avoid dynamic ads 
+switching to id 'content' for activation only
