@@ -159,8 +159,7 @@ pipeline_name = [
     '$match': {
       'post_name': {$in:
         [
-          "sexy-things-you-can-do-to-him-in-the-bedroom",
-          "middle-eastern-recipes-that-are-big-on-flavor-but-easy-to-make"
+          "christmas-crafts-for-adults",
         ]
       }
     }

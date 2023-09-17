@@ -21,14 +21,13 @@ eleventyComputed:
     {% include 'partials/hero.njk' %}
 
     {# {% include 'partials/share.njk' %}     #}
-    
     {# {% include 'partials/widget.njk' %} #}
     {# {% include 'partials/shopping.njk' %} #}
 
 
-
+    <main id="content">
     {% for page in post.content %}
-        <div class="post prose dark:prose-invert p-4 overflow-hidden mx-auto max-w-xl
+        <div class="post prose p-4 overflow-hidden mx-auto max-w-xl
             {%- if loop.first -%} 
              first-line:uppercase first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left 
             {%- endif -%}
@@ -110,6 +109,7 @@ eleventyComputed:
         {% endif %}
 
     {% endfor %}
+    </main>
 
     {% include 'partials/adsnew.njk' %}
     {# {% include 'partials/ads.njk' %} #}
@@ -126,9 +126,7 @@ eleventyComputed:
     
     <div class="ad-slot mx-auto overflow-hidden" id="slot-review"></div>
 
-
     {% include 'partials/reviews.njk' %}
-
 
     <div class="ad-slot mx-auto overflow-hidden" id="slot-final"></div>
 

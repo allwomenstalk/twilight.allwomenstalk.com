@@ -16,7 +16,8 @@ let marker = null ; // Marker to keep track of the last processed document
 let filter = [
   {
     '$match': {
-      'host': new RegExp('allwomenstalk.com')
+      'host': new RegExp('allwomenstalk.com'), 
+      'host': {$ne: 'beauty.allwomenstalk.com'},
     }
   }
 ]; // Filter to be used in the aggregation pipeline
