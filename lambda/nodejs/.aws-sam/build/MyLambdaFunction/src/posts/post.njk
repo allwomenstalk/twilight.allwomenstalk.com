@@ -26,6 +26,7 @@ eleventyComputed:
 
 
     <main id="content">
+
     {% for page in post.content %}
         <div class="post prose p-4 overflow-hidden mx-auto max-w-xl
             {%- if loop.first -%} 
@@ -77,6 +78,11 @@ eleventyComputed:
                     {% include 'partials/toc.njk' %}
                 {% elif loop.index == 2 %}
                     {% include 'partials/unibots.njk' %}
+                    {% if post.related.inline %}
+                        <div class="post prose italic mx-auto max-w-xl text-center font-semibold p-8 px-12 border-t border-b">
+                        {{ post.related.inline | safe }}
+                        </div>
+                    {% endif %}
                 {% elif loop.index == 4 %}
                     {% include 'quiz.njk' %}
                     <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>

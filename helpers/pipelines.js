@@ -3,6 +3,7 @@ var ObjectId = require('mongodb').ObjectId;
 
 // export RealtimePosts view from db to json file
 const realtime = require('./aws.realtime.json').map(item=>item.slug);
+const interlinks = require('./interlinks.json');
 
 try {
   var filter = JSON.parse(fs.readFileSync('./_filter.json','utf8'))
@@ -73,15 +74,17 @@ pipeline_recent = [
   }
 ]
 
+ids = interlinks
 pipeline_filter = [
    {
     '$match': {
       // '_id': ObjectId('604854b781118707f2732712')
-      '_id': {$in: [new ObjectId('532a5e61a46845ecf50a33ea'),new ObjectId('5c759431841bf71c4b21d712')]}
-      // 'post_content': new RegExp('<li>')
+      '_id': { $in:  ids.map(id=>new ObjectId(id)) },
     }
   }
 ]
+
+
 
 pipeline_related_classify =[
   {
@@ -160,6 +163,7 @@ pipeline_name = [
       'post_name': {$in:
         [
           "christmas-crafts-for-adults",
+          "ultimate-travel-bucket-list-ideas"
         ]
       }
     }

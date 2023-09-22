@@ -24,7 +24,8 @@ module.exports = [{
     }
   }, {
     '$set': {
-      'related': '$related.posts'
+      'related': '$related.posts', 
+      'interlink': '$related.interlink'
     }
   },{
     '$lookup': {

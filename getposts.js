@@ -25,6 +25,7 @@ const marr = [
 // default_pipeline = 'pipeline_host'
 // default_pipeline = 'pipeline_realtime'
 default_pipeline = 'pipeline_name'
+// default_pipeline = 'pipeline_filter'
 
 arr = undefined;
 try {

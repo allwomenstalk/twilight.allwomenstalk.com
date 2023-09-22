@@ -1,5 +1,6 @@
 const tags = require('./tags.js')
 const { marked } = require('marked');
+
 marked.use({
   mangle: false,
   headerIds: false
@@ -287,7 +288,8 @@ module.exports = function (item) {
       if (temp.content.join('').includes('amp-instagram')) temp.ampig = true
       if (temp.content.join('').includes('amp-iframe')) temp.ampif = true
       if (temp.content.join('').includes('<amp-')) temp.amp = true 
-
+      
+      // related posts
       temp.related = {}
       temp.related.posts = []
       
@@ -313,6 +315,12 @@ module.exports = function (item) {
             if (item.super_categories) obj.category = item.super_categories[0]
             return obj
           }).sort( () => .5 - Math.random() ) //shuffle order of related posts by
+      }
+
+      // related inline
+      temp.related.inline = false
+      if (item.interlink) {
+        temp.related.inline = marked(item.interlink)
       }
 
       // split to 2 section 

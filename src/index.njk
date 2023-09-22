@@ -8,7 +8,11 @@ url: {{metadata.host}}
 
 	<ol class="">
 		{% for post in posts %}
-		<li><a href="{{post.host}}/{{post.slug}}/">{{post.title}}</a> {{post.comment_count}} comments</li> 
+		<li>
+			<a href="{{post.host}}/{{post.slug}}/">{{post.title}}</a> 
+			<a href="https://{{post.host}}/{{post.slug}}/">[public]</a>
+			{{post.comment_count}} comments
+		</li> 
 		{% endfor %}
 	</ol>
 
