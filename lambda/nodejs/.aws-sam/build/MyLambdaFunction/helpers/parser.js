@@ -317,11 +317,19 @@ module.exports = function (item) {
           }).sort( () => .5 - Math.random() ) //shuffle order of related posts by
       }
 
-      // related inline
+      // interlinks first 
+      if (item.interlinks.length > 0 ) {
+        random_link = item.interlinks[0]
+        // temp.interlink = marked(random_link.content)
+        temp.related.inline = marked(random_link.content)
+      }
+
+      // related inline repalce interlink if exits 
       temp.related.inline = false
       if (item.interlink) {
         temp.related.inline = marked(item.interlink)
       }
+      
 
       // split to 2 section 
       // temp.related.inline = temp.related.posts.slice(0,2)
