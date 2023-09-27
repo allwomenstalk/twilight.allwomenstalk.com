@@ -78,8 +78,10 @@ eleventyComputed:
                     {% include 'partials/toc.njk' %}
                 {% elif loop.index == 2 %}
                     {% include 'partials/unibots.njk' %}
+                    
+                {% elif loop.index == 3 %}
                     {% if post.related.inline %}
-                        <div class="post prose italic mx-auto max-w-xl text-center font-semibold p-8 px-12 border-t border-b">
+                        <div class="post prose italic mx-auto max-w-xl text-left font-normal p-8 my-8 border-t border-b">
                         {{ post.related.inline | safe }}
                         </div>
                     {% endif %}
@@ -110,7 +112,7 @@ eleventyComputed:
             {% endif %}
             {% include 'partials/collections.njk' %}
             <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
-            {% include 'partials/keywordsgallery.njk' %}
+            {# {% include 'partials/keywordsgallery.njk' %} #}
         
         {% endif %}
 
