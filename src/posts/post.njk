@@ -36,13 +36,13 @@ eleventyComputed:
         {{ page | safe }}
         </div>
 
-
-
-        {% if loop.index > 1 and not loop.last %}
-
         {% if post.elaborate[loop.index-1] %}
             {% include 'partials/elaborate.njk' %}     
         {% endif %}
+
+        {% if loop.index > 1 and not loop.last %}
+
+        
 
         <div class="flex justify-between mx-auto max-w-2xl px-2 sm:px-8">
 
