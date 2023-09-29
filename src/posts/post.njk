@@ -14,7 +14,7 @@ eleventyComputed:
   title: "{{post.title}} - {{metadata.title}}"
   content: "{{post.content}}"
 ---
-
+    
     
     {% include 'partials/leaderboard.njk' %}
     
@@ -88,7 +88,9 @@ eleventyComputed:
                 {% elif loop.index == 4 %}
                     {% include 'quiz.njk' %}
                     <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
-                {% elif (loop.index == 5) or (loop.index == 10 ) or (loop.index == 15 )  %}
+                {% elif (loop.index == 5) %}    
+                    {% include "partials/poll.njk" %}
+                {% elif (loop.index == 10 ) or (loop.index == 15 )  %}
                     {% include "partials/explore.njk" %}
                     <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
                 {% elif (loop.index == 10) and (loop.length > 12) %}
