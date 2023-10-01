@@ -23,92 +23,34 @@ async function run () {
   try {
     await client.connect();
     const database = client.db('aws');
-    const collection = database.collection('keywords');
+    const collection = database.collection('posts');
 
-    const pipeline = [
-  {
-    '$group': {
-      '_id': '$name', 
-      'query': {
-        '$addToSet': '$query'
-      }, 
-      'clicks': {
-        '$sum': '$clicks'
-      }
-    }
-  }, {
-    '$sort': {
-      'clicks': -1
-    }
-  }, {
-    '$limit': 124
-  }, {
-    '$lookup': {
-      'from': 'posts', 
-      'localField': '_id', 
-      'foreignField': 'post_name', 
-      'as': 'post'
-    }
-  }, {
-    '$match': {
-      'post.0': {
-        '$exists': true
-      }
-    }
-  }, {
-    '$lookup': {
-      'from': 'users', 
-      'localField': 'post.author', 
-      'foreignField': '_id', 
-      'as': 'author'
-    }
-  }, {
-    '$project': {
-      '_id': {
-        '$arrayElemAt': [
-          '$post._id', 0
-        ]
-      }, 
-      'post_title': {
-        '$arrayElemAt': [
-          '$post.post_title', 0
-        ]
-      }, 
-      'post_date': {
-        '$arrayElemAt': [
-          '$post.post_date', 0
-        ]
-      }, 
-      'author': {
-        '$arrayElemAt': [
-          '$author', 0
-        ]
-      }, 
-      'post_name': {
-        '$arrayElemAt': [
-          '$post.post_name', 0
-        ]
-      }, 
-      'super_categories': {
-        '$arrayElemAt': [
-          '$post.super_categories', 0
-        ]
-      }, 
-      'blog': {
-        '$arrayElemAt': [
-          '$post.blog', 0
-        ]
-      }, 
-      'image_url': {
-        '$arrayElemAt': [
-          '$post.image_url', 0
-        ]
+    pipeline = [
+      {
+         "$sort":{
+            "seo.impressions":-1
+         }
       },
-      'keywords': '$query'
-    }
-  }
-];
-
+      {
+        '$lookup': {
+          'from': 'users',
+          'localField': 'author',
+          'foreignField': '_id',
+          'as': 'author'
+        }
+      },
+      {
+        '$addFields': {
+          'author': {
+            '$arrayElemAt': ['$author', 0]
+          }
+        }
+      },
+      {
+         "$limit":124
+      }
+   ]
+  //  potetntially can add keyowrds as well to use as ALT tags
 
     const cursor = await collection.aggregate(pipeline);
     arr = [];

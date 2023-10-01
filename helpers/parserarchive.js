@@ -1,7 +1,7 @@
 const moment = require('moment');
 
 module.exports = function (item) {
-    console.log(item)
+    console.log(item.post_title)
      //console.log(item.super_categories)
      if(!item.super_categories) {console.log(item)}
       const temp = {};
@@ -16,22 +16,23 @@ module.exports = function (item) {
       temp.author = { name: item.author.first_name.replace('_', ''), id: item.author._id };
       temp.image = item.image_url;
       temp.imageresize = item.image_url.replace('img.', 'resize.img.');
-      //console.log(item.keywords)
+      console.log(item.keywords)
       if (item.keywords) temp.keyword = capitalize( item.keywords[Math.floor(Math.random() * 5)] );
       if (item.RPM) temp.RPM = item.RPM;
       // temp.content = item.post_content;
       temp.host = item.host
-      temp.url = `${
-        (item.blog === 'aws'
-          ? 'https://allwomenstalk.com/'
-          : `https://${item.blog}.allwomenstalk.com/`) + item.post_name
-      }/`;
+      if (item.url) {
+        temp.url = item.url;
+      } else {
+        temp.url = `https://${item.host}/${item.post_name}/`;
+      }
 
     return temp;
 }
 
 
 function capitalize(word) {
+    console.log('word',word)
     return word[0].toUpperCase() + word.substring(1).toLowerCase();
   }
   
