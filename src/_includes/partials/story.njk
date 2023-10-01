@@ -5,10 +5,10 @@
     custom-element="amp-story-player"
     src="https://cdn.ampproject.org/v0/amp-story-player-0.1.js"
   ></script>
-<div x-data="popularstories" class="w-full text-center max-w-sm mx-auto">
+<div x-data="popularstories" class="w-full text-center max-w-sm mx-auto my-4">
   <div class="flex items-center justify-between px-4">
       <h2 x-text="title" class="text-2xl font-bold tracking-tight">Trending</h2>
-      <a href="https://allwomenstalk.com/stories" class="hidden text-sm font-semibold sm:block">
+      <a href="https://allwomenstalk.com/stories" class="block text-sm font-semibold sm:block">
         All stories
         <span aria-hidden="true"> &rarr;</span>
       </a>
@@ -18,7 +18,7 @@
      <script type="application/json">
         {
             "behavior": {
-            "autoplay": false,
+            "autoplay": true,
             "on": "end",
             "action": "circular-wrapping"
             }
