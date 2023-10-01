@@ -1,0 +1,779 @@
+[{
+  "_id": "makeup",
+  "list": [
+    {
+      "_id": {
+        "$oid": "65173d3137fa47c9eb217e76"
+      },
+      "question": "Which makeup product can you not live without?",
+      "options": [
+        "Mascara",
+        "Lipstick",
+        "Foundation",
+        "Eyeshadow palette"
+      ],
+      "category": "makeup"
+    },
+    {
+      "_id": {
+        "$oid": "65173d3137fa47c9eb217e7a"
+      },
+      "question": "Which makeup brand do you trust the most?",
+      "options": [
+        "MAC Cosmetics",
+        "Sephora Collection",
+        "NARS",
+        "Urban Decay"
+      ],
+      "category": "makeup"
+    },
+    {
+      "_id": {
+        "$oid": "65173d3137fa47c9eb217e7e"
+      },
+      "question": "What's your signature makeup look?",
+      "options": [
+        "Natural and minimal",
+        "Smokey eyes",
+        "Bold lips",
+        "Glamorous and glowing"
+      ],
+      "category": "makeup"
+    },
+    {
+      "_id": {
+        "$oid": "65173d3d37fa47c9eb217e83"
+      },
+      "question": "What's your favorite makeup trend of the year?",
+      "options": [
+        "Dewy skin",
+        "Graphic eyeliner",
+        "Bold eyebrows",
+        "Metallic eyeshadow"
+      ],
+      "category": "makeup"
+    },
+    {
+      "_id": {
+        "$oid": "65173d3d37fa47c9eb217e87"
+      },
+      "question": "What's your go-to lip color for a night out?",
+      "options": [
+        "Classic red",
+        "Burgundy",
+        "Nude",
+        "Plum"
+      ],
+      "category": "makeup"
+    },
+    {
+      "_id": {
+        "$oid": "65173d3d37fa47c9eb217e8b"
+      },
+      "question": "What's your essential makeup product for a quick fix?",
+      "options": [
+        "Concealer",
+        "Lip gloss",
+        "Mascara",
+        "Blush"
+      ],
+      "category": "makeup"
+    },
+    {
+      "_id": {
+        "$oid": "65173d5837fa47c9eb217e90"
+      },
+      "question": "Which makeup look suits you best for a job interview?",
+      "options": [
+        "Natural makeup",
+        "Subtle smoky eye",
+        "Fresh and dewy look",
+        "No makeup, au naturel"
+      ],
+      "category": "makeup"
+    },
+    {
+      "_id": {
+        "$oid": "65173d5837fa47c9eb217e94"
+      },
+      "question": "What's your must-have makeup product for a no-makeup makeup look?",
+      "options": [
+        "Tinted moisturizer",
+        "Lip balm",
+        "Brow gel",
+        "Natural-toned eyeshadow"
+      ],
+      "category": "makeup"
+    },
+    {
+      "_id": {
+        "$oid": "65173d5837fa47c9eb217e98"
+      },
+      "question": "What's your signature lipstick shade?",
+      "options": [
+        "Classic red",
+        "Rosy pink",
+        "Nude",
+        "Bold berry"
+      ],
+      "category": "makeup"
+    },
+    {
+      "_id": {
+        "$oid": "65173d7d37fa47c9eb217e9d"
+      },
+      "question": "What's your go-to makeup look for a night out with friends?",
+      "options": [
+        "Smokey eyes and bold lips",
+        "Glowing and bronzed",
+        "Soft and natural",
+        "Dramatic eyeliner"
+      ],
+      "category": "makeup"
+    },
+    {
+      "_id": {
+        "$oid": "65173d7d37fa47c9eb217ea1"
+      },
+      "question": "What's your go-to makeup product for a natural look?",
+      "options": [
+        "BB cream",
+        "Tinted lip balm",
+        "Bronzer",
+        "Neutral eyeshadow palette"
+      ],
+      "category": "makeup"
+    },
+    {
+      "_id": {
+        "$oid": "65173d7d37fa47c9eb217ea5"
+      },
+      "question": "What's your go-to makeup look for a formal event?",
+      "options": [
+        "Classic red lips and winged eyeliner",
+        "Smokey eyes with nude lips",
+        "Soft and elegant with false lashes",
+        "Bold and colorful makeup"
+      ],
+      "category": "makeup"
+    }
+  ]
+},
+{
+  "_id": "love",
+  "list": [
+    {
+      "_id": {
+        "$oid": "65173d3137fa47c9eb217e73"
+      },
+      "question": "What's your favorite way to express love?",
+      "options": [
+        "Sending handwritten notes",
+        "Cooking a special meal",
+        "Giving thoughtful gifts",
+        "Quality time together"
+      ],
+      "category": "love"
+    },
+    {
+      "_id": {
+        "$oid": "65173d3137fa47c9eb217e77"
+      },
+      "question": "What's the sweetest way to show your love?",
+      "options": [
+        "Writing love letters",
+        "Surprising with flowers",
+        "Cooking a romantic dinner",
+        "Giving a warm hug"
+      ],
+      "category": "love"
+    },
+    {
+      "_id": {
+        "$oid": "65173d3137fa47c9eb217e7b"
+      },
+      "question": "What's the most romantic date idea?",
+      "options": [
+        "Stargazing picnic",
+        "Candlelit dinner",
+        "Beach walk at sunset",
+        "Movie night at home"
+      ],
+      "category": "love"
+    },
+    {
+      "_id": {
+        "$oid": "65173d3d37fa47c9eb217e80"
+      },
+      "question": "What's your ideal date night activity?",
+      "options": [
+        "Dinner and a movie",
+        "Outdoor adventure",
+        "Art gallery visit",
+        "Cooking together at home"
+      ],
+      "category": "love"
+    },
+    {
+      "_id": {
+        "$oid": "65173d3d37fa47c9eb217e84"
+      },
+      "question": "How do you celebrate anniversaries?",
+      "options": [
+        "Romantic getaway",
+        "Exchange heartfelt letters",
+        "Cook a special meal together",
+        "Exchange thoughtful gifts"
+      ],
+      "category": "love"
+    },
+    {
+      "_id": {
+        "$oid": "65173d3d37fa47c9eb217e88"
+      },
+      "question": "What's the most romantic love song?",
+      "options": [
+        "Unchained Melody by The Righteous Brothers",
+        "Amazed by Lonestar",
+        "At Last by Etta James",
+        "Perfect by Ed Sheeran"
+      ],
+      "category": "love"
+    },
+    {
+      "_id": {
+        "$oid": "65173d5837fa47c9eb217e8d"
+      },
+      "question": "What's the most romantic season for love?",
+      "options": [
+        "Spring",
+        "Summer",
+        "Fall",
+        "Winter"
+      ],
+      "category": "love"
+    },
+    {
+      "_id": {
+        "$oid": "65173d5837fa47c9eb217e91"
+      },
+      "question": "What's the most thoughtful way to show love on Valentine's Day?",
+      "options": [
+        "Handmade gifts",
+        "Cooking a special meal",
+        "Writing a heartfelt letter",
+        "Surprising with flowers"
+      ],
+      "category": "love"
+    },
+    {
+      "_id": {
+        "$oid": "65173d5837fa47c9eb217e95"
+      },
+      "question": "How do you celebrate your partner's achievements?",
+      "options": [
+        "Surprise party",
+        "Special dinner",
+        "Sending flowers to their workplace",
+        "Creating a scrapbook"
+      ],
+      "category": "love"
+    },
+    {
+      "_id": {
+        "$oid": "65173d7d37fa47c9eb217e9a"
+      },
+      "question": "What's your favorite way to spend quality time with your partner?",
+      "options": [
+        "Taking a long walk together",
+        "Cooking a meal as a team",
+        "Watching a movie at home",
+        "Playing board games"
+      ],
+      "category": "love"
+    },
+    {
+      "_id": {
+        "$oid": "65173d7d37fa47c9eb217e9e"
+      },
+      "question": "What's the most romantic way to propose?",
+      "options": [
+        "Under the stars",
+        "On a beach at sunset",
+        "In a hot air balloon",
+        "In a cozy cabin"
+      ],
+      "category": "love"
+    },
+    {
+      "_id": {
+        "$oid": "65173d7d37fa47c9eb217ea2"
+      },
+      "question": "What's the most romantic destination for a honeymoon?",
+      "options": [
+        "Paris, France",
+        "Bora Bora, French Polynesia",
+        "Santorini, Greece",
+        "Venice, Italy"
+      ],
+      "category": "love"
+    }
+  ]
+},
+{
+  "_id": "food",
+  "list": [
+    {
+      "_id": {
+        "$oid": "6516dac337fa47c9eb217e68"
+      },
+      "question": "What's your go-to cooking method?",
+      "options": [
+        "Grilling",
+        "Baking",
+        "Sauteing",
+        "Boiling"
+      ],
+      "category": "food"
+    },
+    {
+      "_id": {
+        "$oid": "6516dac337fa47c9eb217e69"
+      },
+      "question": "What's your favorite cuisine to cook at home?",
+      "options": [
+        "Italian",
+        "Mexican",
+        "Chinese",
+        "Indian"
+      ],
+      "category": "food"
+    },
+    {
+      "_id": {
+        "$oid": "6516dac337fa47c9eb217e6a"
+      },
+      "question": "What's your favorite ingredient to use in cooking?",
+      "options": [
+        "Garlic",
+        "Cheese",
+        "Tomatoes",
+        "Spices"
+      ],
+      "category": "food"
+    },
+    {
+      "_id": {
+        "$oid": "6516dac337fa47c9eb217e6b"
+      },
+      "question": "What's your essential kitchen tool?",
+      "options": [
+        "Chef's knife",
+        "Cutting board",
+        "Skillet",
+        "Food processor"
+      ],
+      "category": "food"
+    },
+    {
+      "_id": {
+        "$oid": "6516dac337fa47c9eb217e6c"
+      },
+      "question": "What's your favorite meal of the day to cook?",
+      "options": [
+        "Breakfast",
+        "Lunch",
+        "Dinner",
+        "Dessert"
+      ],
+      "category": "food"
+    },
+    {
+      "_id": {
+        "$oid": "6516dac337fa47c9eb217e6d"
+      },
+      "question": "What herb do you use the most in your cooking?",
+      "options": [
+        "Basil",
+        "Rosemary",
+        "Thyme",
+        "Oregano"
+      ],
+      "category": "food"
+    },
+    {
+      "_id": {
+        "$oid": "6516dac337fa47c9eb217e6e"
+      },
+      "question": "What's your quick and easy recipe when short on time?",
+      "options": [
+        "Spaghetti",
+        "Stir-fry",
+        "Grilled cheese",
+        "Instant noodles"
+      ],
+      "category": "food"
+    },
+    {
+      "_id": {
+        "$oid": "6516dac337fa47c9eb217e6f"
+      },
+      "question": "What cooking challenge would you like to try?",
+      "options": [
+        "Complex dessert",
+        "Homemade pasta",
+        "Multi-course meal",
+        "Unusual ingredients"
+      ],
+      "category": "food"
+    },
+    {
+      "_id": {
+        "$oid": "6516dac337fa47c9eb217e70"
+      },
+      "question": "Who's your favorite celebrity chef?",
+      "options": [
+        "G. Ramsay",
+        "J. Oliver",
+        "N. Lawson",
+        "I. Garten"
+      ],
+      "category": "food"
+    },
+    {
+      "_id": {
+        "$oid": "6516dac337fa47c9eb217e71"
+      },
+      "question": "What's your favorite kitchen hack?",
+      "options": [
+        "Peel ginger w/ spoon",
+        "Reduce tomato acidity",
+        "Test cake w/ toothpick",
+        "Preheat skillet"
+      ],
+      "category": "food"
+    }
+  ]
+},
+{
+  "_id": "nails",
+  "list": [
+    {
+      "_id": {
+        "$oid": "65173d3137fa47c9eb217e75"
+      },
+      "question": "What's your preferred nail polish color for summer?",
+      "options": [
+        "Coral",
+        "Turquoise",
+        "Hot pink",
+        "Sunset orange"
+      ],
+      "category": "nails"
+    },
+    {
+      "_id": {
+        "$oid": "65173d3137fa47c9eb217e79"
+      },
+      "question": "What nail shape do you prefer?",
+      "options": [
+        "Round",
+        "Square",
+        "Oval",
+        "Almond"
+      ],
+      "category": "nails"
+    },
+    {
+      "_id": {
+        "$oid": "65173d3137fa47c9eb217e7d"
+      },
+      "question": "How do you accessorize your nails?",
+      "options": [
+        "Nail art",
+        "Glitter polish",
+        "Stickers",
+        "Jewels and gems"
+      ],
+      "category": "nails"
+    },
+    {
+      "_id": {
+        "$oid": "65173d3d37fa47c9eb217e82"
+      },
+      "question": "Which nail shape do you find most trendy?",
+      "options": [
+        "Coffin",
+        "Stiletto",
+        "Squoval",
+        "Lipstick"
+      ],
+      "category": "nails"
+    },
+    {
+      "_id": {
+        "$oid": "65173d3d37fa47c9eb217e86"
+      },
+      "question": "How often do you get a professional manicure?",
+      "options": [
+        "Regularly, every 2 weeks",
+        "Occasionally, for special occasions",
+        "Rarely, I prefer DIY",
+        "Never, I don't like manicures"
+      ],
+      "category": "nails"
+    },
+    {
+      "_id": {
+        "$oid": "65173d3d37fa47c9eb217e8a"
+      },
+      "question": "What's your favorite nail art theme?",
+      "options": [
+        "Floral designs",
+        "Geometric patterns",
+        "Marble effect",
+        "French manicure"
+      ],
+      "category": "nails"
+    },
+    {
+      "_id": {
+        "$oid": "65173d5837fa47c9eb217e8f"
+      },
+      "question": "What's your preferred nail length?",
+      "options": [
+        "Short and natural",
+        "Medium, just past the fingertip",
+        "Long and glamorous",
+        "Extra-long, dramatic nails"
+      ],
+      "category": "nails"
+    },
+    {
+      "_id": {
+        "$oid": "65173d5837fa47c9eb217e93"
+      },
+      "question": "What's your go-to nail color for the holidays?",
+      "options": [
+        "Classic red",
+        "Glittery gold",
+        "Emerald green",
+        "Deep burgundy"
+      ],
+      "category": "nails"
+    },
+    {
+      "_id": {
+        "$oid": "65173d5837fa47c9eb217e97"
+      },
+      "question": "How often do you change your nail shape?",
+      "options": [
+        "Never, I stick to one shape",
+        "Occasionally, when I want a change",
+        "Every few months",
+        "I experiment with various shapes"
+      ],
+      "category": "nails"
+    },
+    {
+      "_id": {
+        "$oid": "65173d7d37fa47c9eb217e9c"
+      },
+      "question": "How do you like to decorate your nails for a special occasion?",
+      "options": [
+        "Glittery nail art",
+        "Elegant French manicure",
+        "Intricate floral designs",
+        "Classic red polish"
+      ],
+      "category": "nails"
+    },
+    {
+      "_id": {
+        "$oid": "65173d7d37fa47c9eb217ea0"
+      },
+      "question": "What's your favorite nail shape for everyday wear?",
+      "options": [
+        "Round",
+        "Square",
+        "Oval",
+        "Coffin"
+      ],
+      "category": "nails"
+    },
+    {
+      "_id": {
+        "$oid": "65173d7d37fa47c9eb217ea4"
+      },
+      "question": "Which nail trend are you most excited about?",
+      "options": [
+        "Negative space nail art",
+        "Chrome nails",
+        "Matte nail polish",
+        "Gel nail extensions"
+      ],
+      "category": "nails"
+    }
+  ]
+},
+{
+  "_id": "hair",
+  "list": [
+    {
+      "_id": {
+        "$oid": "65173d3137fa47c9eb217e74"
+      },
+      "question": "What's your go-to hairstyle for a casual day?",
+      "options": [
+        "Ponytail",
+        "Messy bun",
+        "Beach waves",
+        "Top knot"
+      ],
+      "category": "hair"
+    },
+    {
+      "_id": {
+        "$oid": "65173d3137fa47c9eb217e78"
+      },
+      "question": "How often do you change your hairstyle?",
+      "options": [
+        "Every few months",
+        "Once a year",
+        "Rarely, I stick to one style",
+        "Frequently, I love experimenting"
+      ],
+      "category": "hair"
+    },
+    {
+      "_id": {
+        "$oid": "65173d3137fa47c9eb217e7c"
+      },
+      "question": "What's your favorite hair care product?",
+      "options": [
+        "Shampoo",
+        "Conditioner",
+        "Hair serum",
+        "Hair mask"
+      ],
+      "category": "hair"
+    },
+    {
+      "_id": {
+        "$oid": "65173d3d37fa47c9eb217e81"
+      },
+      "question": "How often do you change your hair color?",
+      "options": [
+        "Never, I love my natural color",
+        "Once in a while for fun",
+        "Frequently, I love experimenting",
+        "I change it with the seasons"
+      ],
+      "category": "hair"
+    },
+    {
+      "_id": {
+        "$oid": "65173d3d37fa47c9eb217e85"
+      },
+      "question": "What's your must-have hair accessory?",
+      "options": [
+        "Headband",
+        "Hairpins",
+        "Scarves",
+        "Hair combs"
+      ],
+      "category": "hair"
+    },
+    {
+      "_id": {
+        "$oid": "65173d3d37fa47c9eb217e89"
+      },
+      "question": "Which hair care tip do you swear by?",
+      "options": [
+        "Deep conditioning once a week",
+        "Air-drying instead of heat styling",
+        "Regular trims to prevent split ends",
+        "Using a silk pillowcase"
+      ],
+      "category": "hair"
+    },
+    {
+      "_id": {
+        "$oid": "65173d5837fa47c9eb217e8e"
+      },
+      "question": "How do you like to style your hair for a special occasion?",
+      "options": [
+        "Elegant updo",
+        "Sleek straight hair",
+        "Loose curls",
+        "Braided hairstyle"
+      ],
+      "category": "hair"
+    },
+    {
+      "_id": {
+        "$oid": "65173d5837fa47c9eb217e92"
+      },
+      "question": "What's your favorite type of hair accessory for a casual day out?",
+      "options": [
+        "Baseball cap",
+        "Headscarf",
+        "Hairpins",
+        "Beanie"
+      ],
+      "category": "hair"
+    },
+    {
+      "_id": {
+        "$oid": "65173d5837fa47c9eb217e96"
+      },
+      "question": "What's your go-to hairstyle for a lazy day at home?",
+      "options": [
+        "Messy bun",
+        "Pigtails",
+        "Bedhead waves",
+        "No styling, just a ponytail"
+      ],
+      "category": "hair"
+    },
+    {
+      "_id": {
+        "$oid": "65173d7d37fa47c9eb217e9b"
+      },
+      "question": "Which hair color trend would you like to try?",
+      "options": [
+        "Pastel shades",
+        "Balayage highlights",
+        "Ombre",
+        "Bold, bright colors"
+      ],
+      "category": "hair"
+    },
+    {
+      "_id": {
+        "$oid": "65173d7d37fa47c9eb217e9f"
+      },
+      "question": "What's your secret for achieving voluminous hair?",
+      "options": [
+        "Teasing or backcombing",
+        "Using volumizing products",
+        "Blow-drying upside down",
+        "Curling with a large barrel iron"
+      ],
+      "category": "hair"
+    },
+    {
+      "_id": {
+        "$oid": "65173d7d37fa47c9eb217ea3"
+      },
+      "question": "What's your favorite hairstyle for a summer day at the beach?",
+      "options": [
+        "Beach waves",
+        "High ponytail",
+        "Braided crown",
+        "Top knot with a sun hat"
+      ],
+      "category": "hair"
+    }
+  ]
+}]

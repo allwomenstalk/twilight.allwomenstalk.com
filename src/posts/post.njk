@@ -15,7 +15,6 @@ eleventyComputed:
   content: "{{post.content}}"
 ---
     
-    
     {% include 'partials/leaderboard.njk' %}
     
     {% include 'partials/hero.njk' %}
@@ -90,7 +89,11 @@ eleventyComputed:
                     <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
                 {% elif (loop.index == 5) %}    
                     {% include "partials/poll.njk" %}
-                {% elif (loop.index == 10 ) or (loop.index == 15 )  %}
+                    <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
+                {% elif (loop.index == 10) %}
+                    {% include 'partials/story.njk' %}
+                    <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
+                {% elif (loop.index == 15 )  %}
                     {% include "partials/explore.njk" %}
                     <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
                 {% elif (loop.index == 10) and (loop.length > 12) %}
@@ -123,10 +126,8 @@ eleventyComputed:
 
     {% include 'partials/adsnew.njk' %}
     {# {% include 'partials/ads.njk' %} #}
- 
-    {% include 'partials/popular.njk' %}
-
     
+    {% include 'partials/popular.njk' %}
 
     {% include 'partials/schema.njk' %}
 

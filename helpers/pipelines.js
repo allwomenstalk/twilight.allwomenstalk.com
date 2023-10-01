@@ -172,10 +172,15 @@ pipeline_name = [
 pipeline_category = [
   {
     '$match': {
-      "super_categories":{$in:["beauty"]}
+      "super_categories":{$in:["food","love","nails","hair","makeup"]}
     }
-    
   },
+  {
+    $sort: {
+      "seo.clicks": -1
+    }
+  },
+  {$limit: 1000}
 ]
 
 pipeline_host = [
