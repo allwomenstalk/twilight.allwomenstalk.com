@@ -14,7 +14,6 @@ eleventyComputed:
   title: "{{post.title}} - {{metadata.title}}"
   content: "{{post.content}}"
 ---
-
     
     {% include 'partials/leaderboard.njk' %}
     
@@ -36,13 +35,13 @@ eleventyComputed:
         {{ page | safe }}
         </div>
 
-
-
-        {% if loop.index > 1 and not loop.last %}
-
         {% if post.elaborate[loop.index-1] %}
             {% include 'partials/elaborate.njk' %}     
         {% endif %}
+
+        {% if loop.index > 1 and not loop.last %}
+
+        
 
         <div class="flex justify-between mx-auto max-w-2xl px-2 sm:px-8">
 
@@ -88,7 +87,13 @@ eleventyComputed:
                 {% elif loop.index == 4 %}
                     {% include 'quiz.njk' %}
                     <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
-                {% elif (loop.index == 5) or (loop.index == 10 ) or (loop.index == 15 )  %}
+                {% elif (loop.index == 5) %}    
+                    {% include "partials/poll.njk" %}
+                    <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
+                {% elif (loop.index == 10) %}
+                    {% include 'partials/story.njk' %}
+                    <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
+                {% elif (loop.index == 15 )  %}
                     {% include "partials/explore.njk" %}
                     <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
                 {% elif (loop.index == 10) and (loop.length > 12) %}
@@ -112,7 +117,7 @@ eleventyComputed:
             {% endif %}
             {% include 'partials/collections.njk' %}
             <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
-            {# {% include 'partials/keywordsgallery.njk' %} #}
+            {% include 'partials/keywordsgallery.njk' %}
         
         {% endif %}
 
@@ -121,10 +126,8 @@ eleventyComputed:
 
     {% include 'partials/adsnew.njk' %}
     {# {% include 'partials/ads.njk' %} #}
- 
-    {% include 'partials/popular.njk' %}
-
     
+    {% include 'partials/popular.njk' %}
 
     {% include 'partials/schema.njk' %}
 

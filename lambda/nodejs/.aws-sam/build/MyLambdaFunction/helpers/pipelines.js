@@ -3,7 +3,7 @@ var ObjectId = require('mongodb').ObjectId;
 
 // export RealtimePosts view from db to json file
 const realtime = require('./aws.realtime.json').map(item=>item.slug);
-const interlinks = require('./interlinks.json');
+const ids = require('./filter.json');
 
 try {
   var filter = JSON.parse(fs.readFileSync('./_filter.json','utf8'))
@@ -74,7 +74,6 @@ pipeline_recent = [
   }
 ]
 
-ids = interlinks
 pipeline_filter = [
    {
     '$match': {
@@ -173,10 +172,15 @@ pipeline_name = [
 pipeline_category = [
   {
     '$match': {
-      "super_categories":{$in:["beauty"]}
+      "super_categories":{$in:["food","love","nails","hair","makeup"]}
     }
-    
   },
+  {
+    $sort: {
+      "seo.clicks": -1
+    }
+  },
+  {$limit: 1000}
 ]
 
 pipeline_host = [

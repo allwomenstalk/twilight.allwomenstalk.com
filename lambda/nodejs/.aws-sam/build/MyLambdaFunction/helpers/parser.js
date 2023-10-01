@@ -27,7 +27,9 @@ module.exports = function (item) {
           .filter(tag=>tags.includes(tag))
           .map(tag=> tag = {name:tag.replace(/-/g," "), tag:tag});
 
+      
       temp.host = item.host?item.host:(item.blog=="aws"?"allwomenstalk.com":item.blog+".allwomenstalk.com")
+      console.log('host:',temp.host)
       // temp.host = item.host
       
       temp.url = `https://${temp.host}/${item.post_name}`;
