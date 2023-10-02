@@ -6,6 +6,7 @@ module.exports =
   "generator": "Eleventy",
   "NODE_ENV": process.env.ELEVENTY_PRODUCTION? "production" : "development",
   "year": new Date().getFullYear(),
+  "date":  new Date().toLocaleDateString(),
   "version": "2.0.0",
   "pages": [
       {
