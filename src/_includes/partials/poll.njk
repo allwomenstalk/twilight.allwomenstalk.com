@@ -1,4 +1,4 @@
-<div x-data="poll" class="mx-auto max-w-2xl p-4" >
+<div x-data="poll" class="mx-auto max-w-md p-4" >
   <template x-for="(item,i) in poll">
   <div x-show="index==i" class="w-full">
     
@@ -44,9 +44,9 @@
             // shuffle the poll
             console.log('data init')
             this.poll = this.poll.sort(() => Math.random() - 0.5)
-            this.poll.forEach((item) => {
+            {# this.poll.forEach((item) => {
                 item.question = splitText(item.question).join('<br>')
-            })
+            }) #}
             // get randob lengths subarray but no less than 3
             this.poll = this.poll.slice(0, 3)
         })
