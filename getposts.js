@@ -21,11 +21,14 @@ const marr = [
 
 // default_pipeline = 'pipeline_comments1000plus'
 // default_pipeline = 'pipeline_seo_top'
-default_pipeline = 'pipeline_category'
+// default_pipeline = 'pipeline_category'
+default_pipeline = 'pipeline_noseo'
 // default_pipeline = 'pipeline_host'
 // default_pipeline = 'pipeline_realtime'
 // default_pipeline = 'pipeline_name'
 // default_pipeline = 'pipeline_filter'
+
+console.log('default_pipeline', default_pipeline);
 
 arr = undefined;
 try {

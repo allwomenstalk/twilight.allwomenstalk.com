@@ -197,20 +197,35 @@ if (!process.env.ELEVENTY_PRODUCTION) {
 }
 
 pipeline_seo_noclicks = [
-  // {
-  //   '$match': {
-  //     'seo.clicks': 0, 
-  //     'seo.ga_visits': 0,
-  //     'seo.impressions': {
-  //       '$ne': 0
-  //     }
-  //   }
-  // }, 
-  {
+    // {
+    //   '$match': {
+    //     'seo.clicks': 0, 
+    //     'seo.ga_visits': 0,
+    //     'seo.impressions': {
+    //       '$ne': 0
+    //     }
+    //   }
+    // }, 
+    {
     '$sort': {
       'seo.impressions': -1
     }
   }
+]
+
+pipeline_noseo = [
+  {
+    '$match': {
+      '$or': [
+        // {'seo.impressions': {
+        //   '$exists': false
+        // }},
+        // {'seo.impressions': 0},
+        {'host':'mindfulness.allwomenstalk.com'}
+      ]
+    }
+  }, 
+  {'$sample': {size:100} }
 ]
 
 pipeline_seo_top = [

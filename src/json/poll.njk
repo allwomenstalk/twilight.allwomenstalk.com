@@ -4,7 +4,7 @@ pagination:
   size: 1
   alias: poll
 eleventyComputed:
-  permalink: "{{poll._id}}.allwomenstalk.com/poll.json"
+  permalink: "{{poll.host}}/poll.json"
 ---
 {{ poll.list | dump | safe }}
 

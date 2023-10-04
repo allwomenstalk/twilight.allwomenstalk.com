@@ -178,4 +178,11 @@
   "count": 1602,
   "name": "Makeup",
   "description": "Enhance your beauty routine with makeup tutorials, product reviews, and tips for flawless looks"
-}]
+},
+{
+  "_id": "mindfulness",
+  "count": 1602,
+  "name": "Mindfulness",
+  "description": "Explore the world of mindfulness through guided practices, insights, and techniques to cultivate presence, awareness, and inner peace."
+}
+]

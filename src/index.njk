@@ -11,7 +11,14 @@ url: {{metadata.host}}
 		<li>
 			<a href="{{post.host}}/{{post.slug}}/">{{post.title}}</a> 
 			<a href="https://{{post.host}}/{{post.slug}}/">[public]</a>
+			- {{post.host}} -
+			
 			{{post.comment_count}} comments
+			{% if post.elaborate["1"] %}
+			[elaborated]
+			{% endif %}
+
+			
 		</li> 
 		{% endfor %}
 	</ol>

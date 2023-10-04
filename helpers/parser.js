@@ -167,7 +167,10 @@ module.exports = function (item) {
         if (extra && extra.publish) {
           // console.log(extra)
           html = extra?.response?.[0]?marked(extra?.response?.[0]):''
-          if (html) temp.elaborate[index] = html
+          if (html) temp.elaborate[index] = {
+            html: html,
+            date: extra.date.toLocaleDateString(),
+          }
         }
       })
       

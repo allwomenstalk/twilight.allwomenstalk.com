@@ -27,6 +27,7 @@ async function run() {
     const cursor = await collection.aggregate(pipeline);
 
     await cursor.forEach((item) => {
+      item.host = item._id=="general"?'allwomenstalk.com':item._id+'.allwomenstalk.com';
       arr.push(item);
     });
 

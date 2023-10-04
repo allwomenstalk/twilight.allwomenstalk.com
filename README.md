@@ -88,3 +88,7 @@ Batch build spec
 ## Digidip ignore tag 
 _noaff - add this class to avoid dynamic ads 
 switching to id 'content' for activation only
+
+
+## Deploy to cloudflare 
+npx wrangler pages deploy _site/mindfulness.allwomenstalk.com

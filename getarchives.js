@@ -135,6 +135,7 @@ main = async () => {
     const cursor = await collection.aggregate(pipeline);
     const arr = [];
     await cursor.forEach((item) => {
+      console.log(item)
       const temp = {};
       temp.id = item._id;
       temp.slug = item.post_name;
