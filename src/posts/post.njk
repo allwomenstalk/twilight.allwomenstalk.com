@@ -75,7 +75,7 @@ eleventyComputed:
                 {% if loop.index == 1 %}
                     {% include "partials/poll.njk" %}
 
-                    <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
+                    {% include 'partials/seperator.njk' %}
                     
                     {% include 'partials/toc.njk' %}                   
 
@@ -90,21 +90,21 @@ eleventyComputed:
                     {% endif %}
                 {% elif loop.index == 4 %}
                     {% include 'quiz.njk' %}
-                    <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
+                    {% include 'partials/seperator.njk' %}
                 {% elif (loop.index == 5) %}    
-                    <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
+                    {% include 'partials/seperator.njk' %}
                 {% elif (loop.index == 10) %}
                     {% include 'partials/story.njk' %}
-                    <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
+                    {% include 'partials/seperator.njk' %}
                 {% elif (loop.index == 15 )  %}
                     {% include "partials/explore.njk" %}
-                    <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
+                    {% include 'partials/seperator.njk' %}
                 {% elif (loop.index == 10) and (loop.length > 12) %}
                     {# adding shopping at the middle on the long posts #}
                     {% include 'partials/shopping.njk' %}
                 {% else %}
                     {# <hr class="ad-slot hidden hr{{loop.index}}"> #}
-                    <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
+                    {% include 'partials/seperator.njk' %}
 
                 {% endif %}
             {# {% include 'partials/cta.njk' %} #}
@@ -119,7 +119,7 @@ eleventyComputed:
                 {# {% include 'partials/shopping.njk' %} #}
             {% endif %}
             {% include 'partials/collections.njk' %}
-            <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
+            {% include 'partials/seperator.njk' %}
             {% include 'partials/keywordsgallery.njk' %}
         
         {% endif %}
