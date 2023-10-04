@@ -73,8 +73,12 @@ eleventyComputed:
 
         {% if not loop.last %}
                 {% if loop.index == 1 %}
+                    {% include "partials/poll.njk" %}
+
                     <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
-                    {% include 'partials/toc.njk' %}
+                    
+                    {% include 'partials/toc.njk' %}                   
+
                 {% elif loop.index == 2 %}
                     {% include 'partials/unibots.njk' %}
                     

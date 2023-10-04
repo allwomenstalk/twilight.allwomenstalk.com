@@ -1,10 +1,16 @@
 ---
 pagination:
-  data: polls
+  data: categories
   size: 1
-  alias: poll
+  alias: category
 eleventyComputed:
-  permalink: "{{poll._id}}.allwomenstalk.com/poll.json"
+  permalink: "{{category._id}}.allwomenstalk.com/poll.json"
 ---
-{{ poll.list | dump | safe }}
+{% if polls[category._id] %}
+{% set poll = polls[category._id] %}
+{% else %}
+{% set poll = polls['general'] %}
+{% endif %}
+
+{{ poll | dump | safe }}
 
