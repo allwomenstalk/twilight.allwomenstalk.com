@@ -23,7 +23,7 @@ async function getPostsForCategory(categoryId) {
     const pipeline = [
         {
             $match: {
-                super_categories: categoryId,
+                super_categories: categoryId==="all"?{$exists:true}:categoryId,
                 'host': /allwomenstalk.com/,
                 // 'post_date': { $gt: new Date('2016-01-01') }
             }
@@ -70,7 +70,9 @@ async function main() {
         const categories = await getCategories();
         SaveData(categoriespath, categories);
         const groupedPosts = {};
-
+        // adding all category
+        categories.unshift({_id:"all",name:"All"});
+        
         for (const category of categories) {
             console.log(`Processing category: ${category.name} (ID: ${category._id})`);
             const posts = await getPostsForCategory(category._id);
