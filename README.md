@@ -92,3 +92,4 @@ switching to id 'content' for activation only
 
 ## Deploy to cloudflare 
 npx wrangler pages deploy _site/mindfulness.allwomenstalk.com
+npx wrangler pages deploy _site/mindfulness.allwomenstalk.com --branch main

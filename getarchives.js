@@ -1,85 +1,51 @@
 const { MongoClient } = require('mongodb');
-const moment = require('moment');
 const fs = require('fs');
-const { group } = require('console');
-require('dotenv').config()
+const moment = require('moment');
+require('dotenv').config();
+
+
 const uri = process.env.MONGODB_URI;
-
-
 const client = new MongoClient(uri, { useUnifiedTopology: true });
-const month = new Date().getMonth() + 1;
-const months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-const marr = [
-  ...months.slice(month >= 3 ? 12 : month - 3),
-  ...months.slice(month - 3 < 0 ? 0 : month - 3, month),
-];
-console.log('curent month:', marr);
-
-// settings 
-let path = './src/_data/archives.json'
 const postperpage = 258;
-arr = undefined; // object with all categories
-try {
-  // var arr = JSON.parse(fs.readFileSync(path, 'utf8'));
-  console.log("Local file",path)
-} catch (err) {
-  console.log("No local ",path)
-  var arr = undefined;
-}
+const path = './src/_data/archives.json'
 
-try {
-  var categories = JSON.parse(fs.readFileSync("./src/_data/categories.json", 'utf8'));
-} catch (err) {
-  console.log("Can't load categories")
-}
-
-// module.exports = async () => {
-main = async () => {
-  
-  if (arr) return arr 
-  console.log('Getting Posts from MongoDB')
-  try {
-    await client.connect();
+async function getCategories() {
     const database = client.db('aws');
     const collection = database.collection('categories');
+    return collection.find({}).toArray();
+}
+
+async function getPostsForCategory(categoryId) {
+    const database = client.db('aws');
+    const collection = database.collection('posts');
 
     const pipeline = [
-      {
-        $sort: {
-          followers_count: -1,
+        {
+            $match: {
+                super_categories: categoryId,
+                'host': /allwomenstalk.com/,
+                // 'post_date': { $gt: new Date('2016-01-01') }
+            }
         },
-      },
-      {
-        $lookup: {
-          from: 'posts',
-          as: 'post',
-          let: {
-            id: '$_id',
-          },
-          pipeline: [
-            {
-              $match: {
-                $expr: {
-                  $and: [
-                    {
-                      '$regexMatch': {
-                        'input': '$host', 
-                        'regex': 'allwomenstalk.com'
-                      }
-                    },
-                    { $eq: ['$super_categories', ['$$id']] },
-                    { $gt: ['$post_date', new Date('2016-01-01')] },
-                    // { $gt: ['$post_modified', new Date('2018-01-01')] }, // temporary remove to get all posts 
-                  ],
-                },
-              },
-            },
-            // { $sample: { size: 49 } },
-            { $sort: { post_date: -1 } },
-            { $limit: postperpage },
-            {
-              $project: {
-                _id: 1,
+        {
+            $sort: { post_date: -1 }
+        },
+        {
+            $limit: postperpage
+        },
+        {
+            $lookup: {
+                from: 'users',  // Assuming the collection containing authors' data is named 'users'
+                localField: 'author',
+                foreignField: '_id',
+                as: 'author'
+            }
+        },
+        {
+            $unwind: '$author'
+        },
+        {
+            $project: {
                 post_title: 1,
                 post_date: 1,
                 author: 1,
@@ -87,56 +53,40 @@ main = async () => {
                 super_categories: 1,
                 blog: 1,
                 image_url: 1,
-                host:1,
-              },
-            },
-          ],
-        },
-      },
-      {
-        $unwind: {
-          path: '$post',
-        },
-      },
-      {
-        $replaceRoot: {
-          newRoot: '$post',
-        },
-      },
-      {
-        $sort: {
-          post_date: -1,
-        },
-      },
-      {
-        $lookup: {
-          from: 'users',
-          localField: 'author',
-          foreignField: '_id',
-          as: 'author',
-        },
-      },
-      {
-        $unwind: {
-          path: '$author',
-        },
-      },
+                host: 1
+            }
+        }
     ];
 
-    /* simple list from posts collection
-    const cursor = await collection.find(query, options);
+    return collection.aggregate(pipeline).toArray();
+}
 
-    // print a message if no documents were found
-    if ((await cursor.count()) === 0) {
-      console.log("No documents found!");
+
+async function main() {
+    try {
+        await client.connect();
+
+        const categories = await getCategories();
+        const groupedPosts = {};
+
+        for (const category of categories) {
+            console.log(`Processing category: ${category.name} (ID: ${category._id})`);
+            const posts = await getPostsForCategory(category._id);
+            console.log(`.... Found ${posts.length} posts`);
+            const transformedPosts = posts.map(post => transformPost(post));
+            groupedPosts[category._id] = transformedPosts;
+        }
+
+        groupedPosts['all'] = Object.values(groupedPosts).flat().slice(0, postperpage);
+        SaveData(path, groupedPosts);
+
+    } finally {
+        await client.close();
     }
-    */
+}
 
-    const cursor = await collection.aggregate(pipeline);
-    const arr = [];
-    await cursor.forEach((item) => {
-      console.log(item)
-      const temp = {};
+function transformPost(item) {
+      var temp = {};
       temp.id = item._id;
       temp.slug = item.post_name;
       temp.tags = [item.super_categories[0]]; 
@@ -152,43 +102,12 @@ main = async () => {
       // temp.content = item.post_content;
       temp.host = item.host
       temp.url = `https://${item.host}/${item.post_name}/`;
-      arr.push(temp);
-    });
-    const groupedPosts = groupPostsByCategory(arr);
-    // console.log(groupedPosts);
-    groupedPosts['all'] = arr.slice(0,postperpage)
-    SaveData(path,groupedPosts)
-    return groupedPosts;
-  } finally {
-    await client.close();
-  }
-};
+    return temp;
+}
 
 function SaveData(name, arr) {
-  // count each key's array length 
-  for (const [key, value] of Object.entries(arr)) {
-    console.log(key, value.length);
-  }
-  fs.writeFile(name,JSON.stringify(arr,null,2), (err) => {
-      if (err) throw err;
-      console.log('The file has been saved!');
-    });
+    fs.writeFileSync(name, JSON.stringify(arr, null, 2));
+    console.log('Data saved to', name);
 }
 
-function groupPostsByCategory(posts) {
-  const groupedPosts = {};
-
-  posts.forEach(post => {
-    const category = post.category;
-
-    if (!groupedPosts[category]) {
-      groupedPosts[category] = [];
-    }
-
-    groupedPosts[category].push(post);
-  });
-
-  return groupedPosts;
-}
-
-main()
+main();
