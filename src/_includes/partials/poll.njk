@@ -1,7 +1,9 @@
-<div x-data="poll" class="mx-auto max-w-2xl p-4" >
+<div x-data="poll" class="mx-auto max-w-md p-0" >
   <template x-for="(item,i) in poll">
   <div x-show="index==i" class="w-full">
-    <div class="mx-auto max-w-7xl px-6 py-6">
+    
+    <div class="p-4 sm:p-0">
+      <h4 class="text-base font-semibold leading-7 text-pink-600">Snapshot Survey</h4>
       <question x-html="item.question" class="text-2xl font-bold tracking-tight  sm:text-4xl"></question>
       <div class="grid grid-cols-2 gap-4 mt-5 items-center">
         <template x-for = "(option, x) in item.options">
@@ -35,16 +37,16 @@
     poll: [],
     init() {
         console.log('init poll')
-        fetch('/poll.json')
+        fetch('../poll.json')
         .then(response => response.json())
         .then(data => {
             this.poll = data
             // shuffle the poll
             console.log('data init')
             this.poll = this.poll.sort(() => Math.random() - 0.5)
-            this.poll.forEach((item) => {
+            {# this.poll.forEach((item) => {
                 item.question = splitText(item.question).join('<br>')
-            })
+            }) #}
             // get randob lengths subarray but no less than 3
             this.poll = this.poll.slice(0, Math.floor(Math.random() * (this.poll.length - 3) + 3))
         })
