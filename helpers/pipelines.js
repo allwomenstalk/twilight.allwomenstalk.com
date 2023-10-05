@@ -186,7 +186,7 @@ pipeline_category = [
 pipeline_host = [
   {
     '$match': {
-      "host":{$in:["beauty.allwomenstalk.com"]}
+      "host":{$in:["mindfulness.allwomenstalk.com"]}
     }
     
   },
@@ -231,6 +231,9 @@ pipeline_noseo = [
 pipeline_seo_top = [
   {
     '$sort': {"seo.clicks":-1}
+  },
+  {
+    '$limit': 1000
   }
 ]
 

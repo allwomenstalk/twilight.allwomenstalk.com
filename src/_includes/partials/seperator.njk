@@ -1,0 +1,7 @@
+{% if post.noads  %}
+    <div class="sm:px-6">
+    {% include 'partials/keywordsgallery.njk' %}
+    </div>
+{% else %}
+    <div class="ad-slot mx-auto overflow-hidden" id="slot-{{loop.index}}"></div>
+{% endif %}

@@ -26,13 +26,14 @@ async function run() {
 
     const cursor = await collection.aggregate(pipeline);
 
+    obj = {}
     await cursor.forEach((item) => {
-      item.host = item._id=="general"?'allwomenstalk.com':item._id+'.allwomenstalk.com';
-      arr.push(item);
+      obj[item._id] = item.list;
+      // arr.push(item);
     });
 
     // Save the result as 'polls.json'
-    fs.writeFileSync(path, JSON.stringify(arr, null, 2));
+    fs.writeFileSync(path, JSON.stringify(obj, null, 2));
     console.log('The file has been saved as "polls.json"');
   } finally {
     await client.close();

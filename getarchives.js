@@ -18,7 +18,7 @@ console.log('curent month:', marr);
 // settings 
 let path = './src/_data/archives.json'
 const postperpage = 258;
-arr = undefined;
+arr = undefined; // object with all categories
 try {
   // var arr = JSON.parse(fs.readFileSync(path, 'utf8'));
   console.log("Local file",path)
@@ -165,6 +165,10 @@ main = async () => {
 };
 
 function SaveData(name, arr) {
+  // count each key's array length 
+  for (const [key, value] of Object.entries(arr)) {
+    console.log(key, value.length);
+  }
   fs.writeFile(name,JSON.stringify(arr,null,2), (err) => {
       if (err) throw err;
       console.log('The file has been saved!');
