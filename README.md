@@ -91,5 +91,11 @@ switching to id 'content' for activation only
 
 
 ## Deploy to cloudflare 
-npx wrangler pages deploy _site/mindfulness.allwomenstalk.com
-npx wrangler pages deploy _site/mindfulness.allwomenstalk.com --branch main
+Panel for pages 
+https://dash.cloudflare.com/cbe44b125e21f7aada0eefba2df8fc30/workers-and-pages
+
+
+npx wrangler pages deploy _site/mindfulness.allwomenstalk.com --branch main --project-name mindfulness
+npx wrangler pages deploy _site/gifts.allwomenstalk.com --branch main --project-name presents
+npx wrangler pages deploy _site/desserts.allwomenstalk.com --branch main --project-name dessert
+

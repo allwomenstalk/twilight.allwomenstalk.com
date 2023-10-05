@@ -8,6 +8,7 @@ const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri, { useUnifiedTopology: true });
 const postperpage = 258;
 const path = './src/_data/archives.json'
+const categoriespath = './src/_data/categories.json'
 
 async function getCategories() {
     const database = client.db('aws');
@@ -67,6 +68,7 @@ async function main() {
         await client.connect();
 
         const categories = await getCategories();
+        SaveData(categoriespath, categories);
         const groupedPosts = {};
 
         for (const category of categories) {

@@ -186,7 +186,7 @@ pipeline_category = [
 pipeline_host = [
   {
     '$match': {
-      "host":{$in:["mindfulness.allwomenstalk.com"]}
+      "host":{$in:["mindfulness.allwomenstalk.com", 'gifts.allwomenstalk.com', 'desserts.allwomenstalk.com']}
     }
     
   },
