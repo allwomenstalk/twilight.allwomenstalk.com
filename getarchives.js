@@ -70,9 +70,10 @@ async function main() {
         const categories = await getCategories();
         SaveData(categoriespath, categories);
         const groupedPosts = {};
-        // adding all category
+
+        // adding all category to create homapage list 
         categories.unshift({_id:"all",name:"All"});
-        
+
         for (const category of categories) {
             console.log(`Processing category: ${category.name} (ID: ${category._id})`);
             const posts = await getPostsForCategory(category._id);
