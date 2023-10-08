@@ -62,6 +62,12 @@ async function run () {
             post_title: {
               $arrayElemAt: ["$post.post_title", 0],
             },
+            url: {
+              $arrayElemAt: ["$post.url", 0],
+            },
+            host: {
+              $arrayElemAt: ["$post.host", 0],
+            },
             post_date: {
               $arrayElemAt: ["$post.post_date", 0],
             },
