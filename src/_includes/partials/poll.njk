@@ -48,7 +48,7 @@
                 item.question = splitText(item.question).join('<br>')
             }) #}
             // get randob lengths subarray but no less than 3
-            this.poll = this.poll.slice(0, Math.floor(Math.random() * (this.poll.length - 3) + 3))
+            this.poll = this.poll.slice(0,3)
         })
 
     },

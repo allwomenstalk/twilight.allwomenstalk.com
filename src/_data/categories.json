@@ -306,5 +306,11 @@
     "count": 2103,
     "name": "Desserts",
     "description": "Indulge in the sweet world of desserts with delectable recipes, baking tips, and mouth-watering treats perfect for any occasion."
+  },
+  {
+    "_id": "interior",
+    "count": 1789,
+    "name": "Interior",
+    "description": "Dive deep into the world of interior design, exploring trends, tips, and inspiration to transform spaces and bring aesthetic visions to life."
   }
 ]

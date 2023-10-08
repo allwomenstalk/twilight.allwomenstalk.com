@@ -98,4 +98,5 @@ https://dash.cloudflare.com/cbe44b125e21f7aada0eefba2df8fc30/workers-and-pages
 npx wrangler pages deploy _site/mindfulness.allwomenstalk.com --branch main --project-name mindfulness
 npx wrangler pages deploy _site/gifts.allwomenstalk.com --branch main --project-name presents
 npx wrangler pages deploy _site/desserts.allwomenstalk.com --branch main --project-name dessert
+npx wrangler pages deploy _site/interior.allwomenstalk.com --branch main --project-name interiors
 

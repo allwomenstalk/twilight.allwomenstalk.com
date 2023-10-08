@@ -73,11 +73,12 @@ eleventyComputed:
 
         {% if not loop.last %}
                 {% if loop.index == 1 %}
-                    {% include "partials/poll.njk" %}
 
                     {% include 'partials/seperator.njk' %}
                     
-                    {% include 'partials/toc.njk' %}                   
+                    {% include 'partials/toc.njk' %} 
+                    
+                    {% include "partials/poll.njk" %}
 
                 {% elif loop.index == 2 %}
                     {% include 'partials/unibots.njk' %}
