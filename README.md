@@ -95,8 +95,34 @@ Panel for pages
 https://dash.cloudflare.com/cbe44b125e21f7aada0eefba2df8fc30/workers-and-pages
 
 
+
 npx wrangler pages deploy _site/mindfulness.allwomenstalk.com --branch main --project-name mindfulness
 npx wrangler pages deploy _site/gifts.allwomenstalk.com --branch main --project-name presents
 npx wrangler pages deploy _site/desserts.allwomenstalk.com --branch main --project-name dessert
 npx wrangler pages deploy _site/interior.allwomenstalk.com --branch main --project-name interiors
+
+Script to run this all 
+> node batchpagesdeploy.js 
+
+Prompt https://chat.openai.com/c/d50ccd98-4cc4-4673-bbe0-d24722ddb120
+
+# Zone upate command 
+
+aws route53 change-resource-record-sets --hosted-zone-id Z13EFBU9E7X2EZ --change-batch '{
+    "Changes": [
+        {
+            "Action": "CREATE",
+            "ResourceRecordSet": {
+                "Name": "sleep.allwomenstalk.com.",
+                "Type": "CNAME",
+                "TTL": 300,
+                "ResourceRecords": [
+                    {
+                        "Value": "doze.pages.dev."
+                    }
+                ]
+            }
+        }
+    ]
+}'
 

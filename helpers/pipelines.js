@@ -202,7 +202,12 @@ pipeline_host = [
       "host":{$in:["mindfulness.allwomenstalk.com",
        'gifts.allwomenstalk.com', 
        'interior.allwomenstalk.com',
-       'desserts.allwomenstalk.com'
+       'desserts.allwomenstalk.com',
+       'accessories.allwomenstalk.com',
+       'baking.allwomenstalk.com',
+       'sleep.allwomenstalk.com',
+       'swimwear.allwomenstalk.com',
+       'gadgets.allwomenstalk.com',
       ]}
     }
     

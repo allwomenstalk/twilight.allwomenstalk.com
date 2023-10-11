@@ -1,7 +1,7 @@
 [
   {
     "_id": "cooking",
-    "count": 553,
+    "count": 552,
     "name": "Cooking",
     "modified": "2023-05-26T14:20:58.843Z",
     "public": true,
@@ -33,7 +33,7 @@
   },
   {
     "_id": "love",
-    "count": 5926,
+    "count": 5925,
     "name": "Love",
     "modified": "2023-05-26T14:20:58.843Z",
     "public": true,
@@ -105,7 +105,7 @@
   },
   {
     "_id": "health",
-    "count": 3446,
+    "count": 3445,
     "name": "Health",
     "modified": "2023-05-26T14:20:58.843Z",
     "public": true,
@@ -137,7 +137,7 @@
   },
   {
     "_id": "parenting",
-    "count": 1286,
+    "count": 1285,
     "name": "Parenting",
     "modified": "2023-05-26T14:20:58.843Z",
     "public": true,
@@ -289,7 +289,7 @@
   },
   {
     "_id": "mindfulness",
-    "count": 1,
+    "count": 1602,
     "name": "Mindfulness",
     "modified": "2000-01-01T05:00:00.000Z",
     "public": false,
@@ -303,7 +303,7 @@
   },
   {
     "_id": "desserts",
-    "count": 2103,
+    "count": 10,
     "name": "Desserts",
     "description": "Indulge in the sweet world of desserts with delectable recipes, baking tips, and mouth-watering treats perfect for any occasion."
   },
@@ -312,5 +312,35 @@
     "count": 1789,
     "name": "Interior",
     "description": "Dive deep into the world of interior design, exploring trends, tips, and inspiration to transform spaces and bring aesthetic visions to life."
+  },
+  {
+    "_id": "sleep",
+    "description": "Discover the secrets to restful nights with insights on sleep patterns, relaxation techniques, and bedroom essentials.",
+    "count": 1420,
+    "name": "Sleep"
+  },
+  {
+    "_id": "accessories",
+    "description": "Elevate your style quotient with the latest trends, timeless classics, and essential pieces from the world of accessories.",
+    "count": 1698,
+    "name": "Accessories"
+  },
+  {
+    "_id": "gadgets",
+    "description": "Stay updated with the evolving world of technology through the latest gadgets, reviews, and innovations.",
+    "count": 1923,
+    "name": "Gadgets"
+  },
+  {
+    "_id": "baking",
+    "description": "Unearth the joy of baking with scrumptious recipes, techniques, and tips for both beginners and seasoned bakers.",
+    "count": 2056,
+    "name": "Baking"
+  },
+  {
+    "_id": "swimwear",
+    "description": "Dive into the vibrant realm of swimwear, exploring the latest trends, designs, and tips for the perfect beach day ensemble.",
+    "count": 1547,
+    "name": "Swimwear"
   }
 ]
