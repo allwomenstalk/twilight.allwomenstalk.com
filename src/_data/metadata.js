@@ -1,7 +1,7 @@
 module.exports =
 {
   "title": "Allwomenstalk",
-  "description": "Find Your Voice, Embrace Your Power",
+  "description": "Stay ahead, stay chic. Trusted guides on beauty, wellness, fashion, and everything that defines today's empowered woman.",
   "host": "https://allwomenstalk.com",
   "generator": "Eleventy",
   "NODE_ENV": process.env.ELEVENTY_PRODUCTION? "production" : "development",

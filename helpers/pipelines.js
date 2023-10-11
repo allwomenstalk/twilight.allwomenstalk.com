@@ -173,7 +173,9 @@ pipeline_name = [
       'post_name': {$in:
         [
           "christmas-crafts-for-adults",
-          "ultimate-travel-bucket-list-ideas"
+          "ultimate-travel-bucket-list-ideas",
+          "new-christmas-traditions-to-consider-starting-this-year",
+          "never-buy-candy-again-here-are-diy-versions-you-can-make-at-home"
         ]
       }
     }

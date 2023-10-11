@@ -37,9 +37,7 @@ eleventyComputed:
         </div>
 
         {% if post.elaborate[loop.index-1] %}
-            <div class="italic prose dark:prose-invert p-4 overflow-hidden mx-auto max-w-xl">
-            {{ post.elaborate[loop.index-1] | safe }}
-            </div>
+            {% include 'partials/elaborate.njk' %}   
         {% else %}
             <div class="elaborate italic prose dark:prose-invert p-4 overflow-hidden mx-auto max-w-xl"></div>
         {% endif %}
