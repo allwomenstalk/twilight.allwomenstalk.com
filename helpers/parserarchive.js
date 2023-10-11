@@ -1,7 +1,7 @@
 const moment = require('moment');
 
 module.exports = function (item) {
-    console.log(item.post_title)
+    // console.log(item.post_title)
      //console.log(item.super_categories)
      if(!item.super_categories) {console.log(item)}
       const temp = {};
@@ -15,7 +15,6 @@ module.exports = function (item) {
       temp.author = { name: item.author.first_name.replace('_', ''), id: item.author._id };
       temp.image = item.image_url;
       temp.imageresize = item.image_url.replace('img.', 'resize.img.');
-      console.log(item)
       if (item.keywords) temp.keyword = capitalize( item.keywords[Math.floor(Math.random() * 5)] );
       if (item.RPM) temp.RPM = item.RPM;
       // temp.content = item.post_content;

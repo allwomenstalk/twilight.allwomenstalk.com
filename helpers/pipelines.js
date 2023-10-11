@@ -74,6 +74,17 @@ pipeline_recent = [
   }
 ]
 
+pipeline_recent_updated = [
+  {
+    '$sort': {
+      'post_modified': -1 //recently updated posts
+    }
+  },
+  {
+    '$limit': 1000
+  }
+]
+
 pipeline_filter = [
    {
     '$match': {

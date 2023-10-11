@@ -3,13 +3,13 @@
 <head data-postid="{{ post.id }}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
-    <title>{{ post.title or title or metadata.title }}</title>
-    <meta property="og:title" content="{{ post.title or title }}">
-    <meta property="og:description" content="{{ post.description or description }}">
-    <meta property="og:url" content="{{ post.url or url }}">
-    <meta property="og:site_name" content="{{ post.site_name or metadata.title}}">
-    <meta name="description" content="{{ post.description or description }}">
-    <link rel="canonical" href="{{ post.url or url }}">
+    <title>{{ post.title | default(title) }}</title>
+    <meta property="og:title" content="{{ post.title |  default(title) }}">
+    <meta property="og:description" content="{{ post.description | default(description) }}">
+    <meta property="og:url" content="{{ post.url | default (url) }}">
+    <meta property="og:site_name" content="{{ post.site_name | default(metadata.title) }}">
+    <meta name="description" content="{{ post.description | default(metadata.description) }}">
+    <link rel="canonical" href="{{ post.url | default(url) }}">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <meta name="generator" content="{{ metadata.generator }}">
