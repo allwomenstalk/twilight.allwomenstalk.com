@@ -61,7 +61,7 @@ async function run () {
       arr.push(temp);
     });
     // shuffle
-    arr.sort(() => Math.random() - 0.5);
+    // arr.sort(() => Math.random() - 0.5);
     SaveData(path,arr)
     return arr;
   } finally {
