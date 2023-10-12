@@ -2,9 +2,9 @@
 {% set loopNumber = 0 %}
 {% for post in list %}
   
-
     {% set loopNumber = loopNumber+1 %}
-
+    {# {{post.title}} - {{post.stats.clicks}} #}
+    
     {% include "postslist.njk" %}
     {% if loopNumber % 7 == 0 %}
     </div> 

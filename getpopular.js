@@ -28,7 +28,7 @@ async function run () {
     pipeline = [
       {
          "$sort":{
-            "seo.impressions":-1
+            "seo.clicks":-1
          }
       },
       {
@@ -57,6 +57,7 @@ async function run () {
     await cursor.forEach((item) => {
       
       temp = parser(item)
+      temp.stats = item.seo
 
       arr.push(temp);
     });
