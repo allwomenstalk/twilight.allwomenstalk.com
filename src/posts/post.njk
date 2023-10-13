@@ -121,7 +121,10 @@ eleventyComputed:
             {% endif %}
             {% include 'partials/collections.njk' %}
             {% include 'partials/seperator.njk' %}
+
+            {% if not post.noads %}
             {% include 'partials/keywordsgallery.njk' %}
+            {% endif %}
         
         {% endif %}
 
