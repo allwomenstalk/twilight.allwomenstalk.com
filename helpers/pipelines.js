@@ -199,18 +199,16 @@ pipeline_category = [
 pipeline_host = [
   {
     '$match': {
-      // "host":{$in:["mindfulness.allwomenstalk.com",
-      //  'gifts.allwomenstalk.com', 
-      //  'interior.allwomenstalk.com',
-      //  'desserts.allwomenstalk.com',
-      //  'accessories.allwomenstalk.com',
-      //  'baking.allwomenstalk.com',
-      //  'sleep.allwomenstalk.com',
-      //  'swimwear.allwomenstalk.com',
-      //  'gadgets.allwomenstalk.com',
-      // ]},
-      'post_name':'100-dollars-fall-home-decor-giveaway-efavormart'
-    }
+      "host":{$in:["mindfulness.allwomenstalk.com",
+       'gifts.allwomenstalk.com', 
+       'interior.allwomenstalk.com',
+       'desserts.allwomenstalk.com',
+       'accessories.allwomenstalk.com',
+       'baking.allwomenstalk.com',
+       'sleep.allwomenstalk.com',
+       'swimwear.allwomenstalk.com',
+       'gadgets.allwomenstalk.com',
+      ]}    }
     
   },
 ]
