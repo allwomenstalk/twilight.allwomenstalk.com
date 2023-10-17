@@ -1,5 +1,5 @@
 <div x-data="trivia()" x-init="loadQuestions" class="p-8 col-span-full mx-auto text-center">
-  <p class="text-base text-center font-semibold leading-7 text-gray-400">Trivia</p>
+  <p x-text="title" class="text-base text-center font-semibold leading-7 text-gray-400">Trivia</p>
 
   <template x-for="(question, i) in answered">
     <button @click="open()" class="mx-auto max-w-2xl text-center px-0 py-6">
@@ -20,6 +20,8 @@
 
     return {
       answered: [],
+      title: '',
+      slug: '',
 
       // Function to fetch the questions from the API
       async fetchQuestions() {
@@ -43,7 +45,7 @@
             .then(
               result => {
                 {# console.log(result) #}
-                window.location.href = "https://quiz.allwomenstalk.com/trivia/food/"
+                window.location.href = "https://quiz.allwomenstalk.com/trivia/"+this.slug;
               }
             )
         } catch (error) {
@@ -54,7 +56,9 @@
       // Function to load and display the questions on the page
       async loadQuestions() {
         const questions = await this.fetchQuestions();
+        this.title = questions[0].title + ' Trivia';
         this.answered = questions;
+        this.slug = questions[0].category;
       }
     };
   }

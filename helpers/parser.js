@@ -299,13 +299,14 @@ module.exports = function (item) {
       temp.related.posts = []
       
       if (item.related && item.related.length > 0) {
+        // console.log('related',item._id)
         temp.related.posts = item.related
           //.sort( () => .5 - Math.random() )
           //.slice(0,5)
           .map(item => {
             obj = {}
             // console.log('related',item._id, item.post_title)
-
+            // console.log(item)
             obj.title = item.post_title.replace(/[^a-zA-Z0-9_.-\s]*/g,'');
 
             if (item.keywords && item.keywords.length>0) {
