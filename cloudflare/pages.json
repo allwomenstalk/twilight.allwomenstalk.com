@@ -34,6 +34,10 @@
     {
         "host": "sleep.allwomenstalk.com",
         "project": "doze"
-    }
+    },
+    {
+      "host": "bodyart.allwomenstalk.com",
+      "project": "bodyart"
+  }
   ]
   

@@ -89,7 +89,8 @@ pipeline_filter = [
    {
     '$match': {
       // '_id': ObjectId('604854b781118707f2732712')
-      '_id': { $in:  ids.map(id=>new ObjectId(id)) },
+      // '_id': { $in:  ids.map(id=>new ObjectId(id)) },
+      'post_name': 'amazing-exercises-for-girls-struggling-with-armpit-fat'
     }
   }
 ]
@@ -196,22 +197,50 @@ pipeline_category = [
   {$limit: 1000}
 ]
 
+
 pipeline_host = [
   {
-    '$match': {
-      "host":{$in:["mindfulness.allwomenstalk.com",
-       'gifts.allwomenstalk.com', 
-       'interior.allwomenstalk.com',
-       'desserts.allwomenstalk.com',
-       'accessories.allwomenstalk.com',
-       'baking.allwomenstalk.com',
-       'sleep.allwomenstalk.com',
-       'swimwear.allwomenstalk.com',
-       'gadgets.allwomenstalk.com',
-      ]}    }
-    
-  },
+      '$match': {
+          '$or': [
+              {
+                  "host": {
+                      $in: [
+                          'mindfulness.allwomenstalk.com',
+                          'gifts.allwomenstalk.com',
+                          'interior.allwomenstalk.com',
+                          'desserts.allwomenstalk.com',
+                          'accessories.allwomenstalk.com',
+                          'baking.allwomenstalk.com',
+                          'sleep.allwomenstalk.com',
+                          'swimwear.allwomenstalk.com',
+                          'gadgets.allwomenstalk.com',
+                          'bodyart.allwomenstalk.com'
+                      ]
+                  }
+              },
+              {
+                  'super_categories': {
+                      $in: [
+                          'mindfulness',
+                          'gifts',
+                          'interior',
+                          'desserts',
+                          'accessories',
+                          'baking',
+                          'sleep',
+                          'swimwear',
+                          'gadgets',
+                          'bodyart'
+                      ]
+                  }
+              }
+          ]
+      }
+  }
 ]
+
+
+
 
 if (!process.env.ELEVENTY_PRODUCTION) {
   // pipeline_category.push({'$sample': {size:100}})

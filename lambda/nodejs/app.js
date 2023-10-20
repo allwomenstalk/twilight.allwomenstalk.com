@@ -39,10 +39,12 @@ exports.handler = async (event, context) => {
       },
     ];
     pipeline.push(...pipelinePost);
+    console.log('pipeline', pipeline);
+    console.log('Fetching data from MongoDB');
     const data = await collection.aggregate(pipeline).next();
-
     console.log('data', data._id, '\n\n\\');
     let parsed = await parser(data);
+    console.log('parsed');
 
     // Instantiate Eleventy
     console.log('Instantiating Eleventy')
@@ -52,6 +54,7 @@ exports.handler = async (event, context) => {
       config: function (eleventyConfig) {
         
         eleventyConfig.addGlobalData('posts', [parsed]);
+        // making empty arrays for archives and popular
         eleventyConfig.addGlobalData('archives', []);
         eleventyConfig.addGlobalData('popular', []);
       },

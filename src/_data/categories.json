@@ -342,5 +342,11 @@
     "description": "Dive into the vibrant realm of swimwear, exploring the latest trends, designs, and tips for the perfect beach day ensemble.",
     "count": 1547,
     "name": "Swimwear"
+  },
+  {
+    "_id": "bodyart",
+    "count": 1378,
+    "description": "Embark on a journey through the expressive world of body art, discovering intricate designs, cultural significance, and the artistry behind tattoos and piercings.",
+    "name": "Bodyart"
   }
 ]

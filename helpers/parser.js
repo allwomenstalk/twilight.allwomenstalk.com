@@ -307,6 +307,7 @@ module.exports = function (item) {
             obj = {}
             // console.log('related',item._id, item.post_title)
             // console.log(item)
+            
             obj.title = item.post_title.replace(/[^a-zA-Z0-9_.-\s]*/g,'');
 
             if (item.keywords && item.keywords.length>0) {
