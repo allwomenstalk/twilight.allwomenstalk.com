@@ -70,7 +70,7 @@ pipeline_recent = [
     }
   },
   {
-    '$limit': 100
+    '$limit': 500
   }
 ]
 

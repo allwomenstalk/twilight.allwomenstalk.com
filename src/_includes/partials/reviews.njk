@@ -1,18 +1,19 @@
 <section class="py-12">
-  <p class="uppercase tracking-wide text-sm opacity-70 font-bold text-center mt-8">Allwomenstalk Reviews</p>
+  <p class="mb-8 uppercase tracking-wide text-sm opacity-70 font-bold text-center mt-8">Allwomenstalk Reviews</p>
 
   {% for review in reviews | shuffle | slicearr(5) %}
-  <div class="my-8">
-    <div class="px-6">
+  <div class="border-t-2">
+    <a href="https://reviews.allwomenstalk.com/{{review.slug}}/"  class="block p-6 hover:bg-slate-100">
       <div class="mx-auto text-center">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl md:text-5xl lg:text-6xl">
+        <h4 class="text-xl whitespace-nowrap overflow-hidden overflow-ellipsis font-bold tracking-tight text-gray-900 sm:text-4xl md:text-5xl lg:text-6xl">
           {{review.title}}
-        </h2>
+        </h4>
       </div>
-    </div>
+    </a>
 
 
-        <div class="py-4 lg:mx-auto">
+      {# 
+      <div class="py-4 lg:mx-auto">
         <div class="relative mt-8">
           <div class="relative -mb-6 w-full overflow-x-auto pb-6 text-center">
             <ul role="list" class="mx-4 inline-flex space-x-8 sm:mx-6">
@@ -56,14 +57,16 @@
             </ul>
           </div>
         </div>
-      </div>
+      </div> 
+      #}
 
 
-    <div class="mt-10 flex items-center justify-center gap-x-6">
+    {# <div class="mt-10 flex items-center justify-center gap-x-6">
       <a href="https://reviews.allwomenstalk.com/{{review.slug}}/" target="_blank" class="rounded-md bg-pink-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-pink-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
       <span class="sr-only">{{item.title}}</span> Full Review
       </a>
     </div>
+     #}
   </div>
   {% endfor %}
 

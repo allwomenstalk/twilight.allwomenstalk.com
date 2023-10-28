@@ -23,6 +23,7 @@ let filter = [
 ]; // Filter to be used in the aggregation pipeline
 
 const startTime = new Date();
+console.log('Start Time:', startTime);
 let run = 0;
 async function generateBatch() {
   

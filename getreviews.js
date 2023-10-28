@@ -30,6 +30,12 @@ main = async () => {
 
     const pipeline = [
       { '$match': filter },
+      {
+        $sort:
+          {
+            "gsc.impressions": -1,
+          },
+      },
       { '$sample': { 'size': 55 } } // get a sample of 25 documents
     ];
 

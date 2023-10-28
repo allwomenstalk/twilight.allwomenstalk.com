@@ -27,8 +27,10 @@ default_pipeline = 'pipeline_host'
 // default_pipeline = 'pipeline_name'
 // default_pipeline = 'pipeline_filter'
 // default_pipeline = "pipeline_recent_updated"
+// default_pipeline = "pipeline_recent"
 
-console.log('default_pipeline', default_pipeline);
+console.log('process.env.PIPE', process.env.PIPE);
+console.log('Default pipeline', default_pipeline);
 
 arr = undefined;
 try {

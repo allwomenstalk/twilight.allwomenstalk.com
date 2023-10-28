@@ -1,4 +1,6 @@
-aws s3 cp ./batch s3://11tycode/batch/ --recursive  
+echo "Copying batch files to S3"
+aws s3 cp ./batch s3://11tycode/batch/ --recursive --exclude "*" --include "*.json"
+
 # Get the list of all batch files from the S3 bucket
 files=$(aws s3 ls s3://11tycode/batch/ | awk '{print $4}')
 
