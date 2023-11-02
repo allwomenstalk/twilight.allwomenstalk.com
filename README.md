@@ -105,6 +105,7 @@ Script to run this all
 > node batchpagesdeploy.js 
 
 # Build and deploy all cloudflare domains.
+! endsure proper pipeline here 
 > node getposts.js && node getarchives.js && npm run build && node cloudflarepagesdeploy.js
 
 Prompt https://chat.openai.com/c/d50ccd98-4cc4-4673-bbe0-d24722ddb120

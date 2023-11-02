@@ -26,6 +26,7 @@ eleventyComputed:
     
     {# {% include 'partials/widget.njk' %} #}
 
+
     {% for page in post.contentamp %}
 
         <div class="post prose dark:prose-invert p-4 overflow-hidden mx-auto max-w-xl
@@ -44,6 +45,8 @@ eleventyComputed:
         
         {% if loop.index == 1 %}
             {% include 'partials/toc.njk' %}
+        {% elif loop.index == 2 %}
+            {% include 'partials/faq-amp.njk' %}
         {% endif %}
 
         {% if not loop.last %}

@@ -23,7 +23,6 @@ eleventyComputed:
     {# {% include 'partials/widget.njk' %} #}
     {# {% include 'partials/shopping.njk' %} #}
 
-
     <main id="content">
 
     {% for page in post.content %}
@@ -84,10 +83,16 @@ eleventyComputed:
                     {% include 'partials/unibots.njk' %}
                     
                 {% elif loop.index == 3 %}
-                    {% if post.related.inline %}
+                    {% if post.faq %}
+                        {% include 'partials/faq.njk' %}
+                        {% include 'partials/seperator.njk' %}
+                    {% elif post.related.inline %}
                         <div class="post prose italic mx-auto max-w-xl text-left font-normal p-8 my-8 border-t border-b">
                         {{ post.related.inline | safe }}
                         </div>
+                        {% include 'partials/seperator.njk' %}
+                    {% else %}
+                        {% include 'partials/seperator.njk' %}
                     {% endif %}
                 {% elif loop.index == 4 %}
                     {% include 'quiz.njk' %}

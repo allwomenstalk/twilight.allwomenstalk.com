@@ -3,6 +3,7 @@ var ObjectId = require('mongodb').ObjectId;
 
 // export RealtimePosts view from db to json file
 const realtime = require('./aws.realtime.json').map(item=>item.slug);
+const faqpost = require('./aws.faq.json').map(item=>new ObjectId(item.post_id["$oid"]));
 const ids = require('./filter.json');
 
 try {
@@ -95,6 +96,13 @@ pipeline_filter = [
   }
 ]
 
+pipeline_faq = [
+  {
+    '$match': {
+      "_id": {$in: faqpost} 
+    }
+  }
+]
 
 
 pipeline_related_classify =[

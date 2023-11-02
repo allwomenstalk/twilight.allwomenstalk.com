@@ -1,7 +1,6 @@
 <div x-data="poll" class="mx-auto max-w-md py-4" >
   <template x-for="(item,i) in poll">
   <div x-show="index==i" class="w-full">
-    
     <div class="p-4 sm:p-0">
       <h4 class="text-base font-semibold leading-7 text-pink-600">Snapshot Survey</h4>
       <question x-html="item.question" class="text-2xl font-bold tracking-tight  sm:text-4xl"></question>

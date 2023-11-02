@@ -1,0 +1,45 @@
+---
+layout: layout/archive.njk
+permalink: /allwomenstalk.com/polls/index.html
+---
+
+<div class="bg-white px-6 py-24 sm:py-32 lg:px-8">
+  <div class="mx-auto max-w-2xl text-center">
+    <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Polls Results</h2>
+    <p class="mt-6 text-lg leading-8 text-gray-600">Visit our site and participate in the exciting polls on our articles. Your opinion matters to us!</p>
+  </div>
+</div>
+
+
+{% for item in polldata %}
+
+<div class="">
+    <div class="p-4 sm:p-0">
+      <h4 class="text-2xl font-bold tracking-tight sm:text-4xl">{{ item.question | safe }}</h4>
+      {% if metadata.NODE_ENV == "development" %}
+      <p> {{item.total}} </p>
+      {% endif %}
+      <div class="grid grid-cols-1 gap-4 mt-5 items-center">
+        {% set top_answer_count = item.answers[0].count %} {# Assuming the answers are sorted in descending order #}
+        {% for answer in item.answers %}
+          {% set percentage = (answer.count / top_answer_count) * 100 %}
+          <div class="relative rounded-md overflow-hidden bg-gray-500 px-3.5 py-2.5">
+            <div class="absolute left-0 top-0 h-full bg-pink-600" style="width: {{ percentage }}%;">
+            </div>
+            <div class="relative z-10 flex justify-between items-center text-white">
+              <span>{{ answer.answer }}</span>
+              <span>
+                {% if metadata.NODE_ENV == "development" %}
+                {{ answer.count }} / 
+                {% endif %}
+                {{ percentage | round(0) }}%</span>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+</div>
+
+
+{% endfor %}
+
