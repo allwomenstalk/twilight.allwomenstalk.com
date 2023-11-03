@@ -13,7 +13,7 @@ permalink: /allwomenstalk.com/polls/index.html
 
 {% for item in polldata %}
 
-<div class="">
+<div class="max-w-md mx-auto my-8">
     <div class="p-4 sm:p-0">
       <h4 class="text-2xl font-bold tracking-tight sm:text-4xl">{{ item.question | safe }}</h4>
       {% if metadata.NODE_ENV == "development" %}
