@@ -116,8 +116,10 @@ eleventyComputed:
             {# {% include 'partials/cta.njk' %} #}
         {% else %}
             {# adding shopping on the end for short posts #}
+            {% include 'partials/subscribe.njk' %}
+            
             {% include 'partials/rating.njk' %}
-
+            
             {% include "partials/commentspanel.njk" %}
 
 
@@ -135,6 +137,7 @@ eleventyComputed:
 
     {% endfor %}
     </main>
+
 
     {% include 'partials/adsnew.njk' %}
     {# {% include 'partials/ads.njk' %} #}
