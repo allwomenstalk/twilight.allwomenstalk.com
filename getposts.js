@@ -20,10 +20,10 @@ const marr = [
 ];
 
 // default_pipeline = 'pipeline_comments1000plus'
-default_pipeline = 'pipeline_seo_top'
+// default_pipeline = 'pipeline_seo_top'
 // default_pipeline = 'pipeline_category'
 // default_pipeline = 'pipeline_host'
-// default_pipeline = 'pipeline_faq'
+default_pipeline = 'pipeline_faq'
 // default_pipeline = 'pipeline_realtime'
 // default_pipeline = 'pipeline_name'
 // default_pipeline = 'pipeline_filter'
