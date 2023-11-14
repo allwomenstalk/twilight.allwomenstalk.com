@@ -55,4 +55,8 @@ googletag.cmd.push(function() {
 
 {% endif %}
 
-{% include 'partials/ads/nm.njk' %}
+{% if post.category == "love" %}
+  {% include 'partials/ads/gumgum.njk' %}
+{% else %}
+  {% include 'partials/ads/nm.njk' %}
+{% endif %}
