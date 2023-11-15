@@ -87,13 +87,12 @@ eleventyComputed:
                         {% include 'partials/faq.njk' %}
                         {% include 'partials/seperator.njk' %}
                     {% elif post.related.inline %}
-                        <div class="post prose italic mx-auto max-w-xl text-left font-normal p-8 my-8 border-t border-b">
-                        {{ post.related.inline | safe }}
-                        </div>
+                        {% include "partials/relatedinline.njk" %}
                         {% include 'partials/seperator.njk' %}
-                    {% else %}
+                    {% else %}    
                         {% include 'partials/seperator.njk' %}
                     {% endif %}
+
                 {% elif loop.index == 4 %}
                     {% include 'quiz.njk' %}
                     {% include 'partials/seperator.njk' %}
@@ -152,10 +151,12 @@ eleventyComputed:
     
     <div class="ad-slot mx-auto overflow-hidden" id="slot-review"></div>
 
-    {% include 'partials/reviews.njk' %}
+    {# {% include 'partials/reviews.njk' %} #}
+    
+    {% include "partials/giftguide.njk" %}
+
 
     <div class="ad-slot mx-auto overflow-hidden" id="slot-final"></div>
-
 
 
 {# Posts scripts only  #}

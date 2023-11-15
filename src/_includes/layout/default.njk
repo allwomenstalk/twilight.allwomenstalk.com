@@ -34,9 +34,10 @@
     {% else %}
         <link rel="stylesheet" href="/base.css">
     {% endif %}
-    
 
-        {% if metadata.NODE_ENV == "production" %}
+    <style>[x-cloak] { display: none !important; }</style>
+
+    {% if metadata.NODE_ENV == "production" %}
             {% set css %}
             {% include 'partials/css/site.css' %}
             {% endset %}
@@ -46,7 +47,6 @@
     {% else %}
         <link rel="stylesheet" href="/site.css">
     {% endif %}
-    <style>[x-cloak] { display: none !important; }</style>
 
 
 <!-- Google Tag Manager -->
