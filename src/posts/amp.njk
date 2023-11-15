@@ -76,8 +76,8 @@ eleventyComputed:
             {# {% include 'partials/keywords.njk' %} #}
         {% endif %}
     {% endfor %}
-
-    <div class="text-center">
+    {% include "partials/giftguide.njk" %}
+    <div class="text-center my-8">
     <a href="{{post.url}}#comments">
     {% if post.comment_count == 1 %}
         Show {{post.comment_count}} Comment
