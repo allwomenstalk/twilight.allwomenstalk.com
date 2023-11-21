@@ -42,7 +42,7 @@
     email: "",
     choices: [],
     poll: [],
-    buttons: false,
+    buttons: true,
     init() {
         console.log('init poll')
         fetch('../poll.json')
@@ -58,6 +58,7 @@
             this.poll = this.poll.slice(0,3)
         })
 
+        {# 
         this.observer = new IntersectionObserver(entries => {
               entries.forEach(entry => {
                   if (entry.isIntersecting) {
@@ -67,7 +68,8 @@
               });
           });
 
-          this.observer.observe(this.$refs.pollblock);
+          this.observer.observe(this.$refs.pollblock); 
+          #}
     },
     typein() {
         typeWriter(this.poll[0].question, 100, 
@@ -142,7 +144,7 @@
         return [words.slice(0, halfIndex).join(' '), words.slice(halfIndex).join(' ')];
     }
 
-function typeWriter(text, speed, updateCallback, completionCallback) {
+{# function typeWriter(text, speed, updateCallback, completionCallback) {
     let i = 0;
     let currentText = '';
 
@@ -159,5 +161,5 @@ function typeWriter(text, speed, updateCallback, completionCallback) {
     }
 
     typing();
-}
+} #}
 </script>

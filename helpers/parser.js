@@ -290,6 +290,25 @@ module.exports = function (item) {
         temp.SchemaObjects.push(JSON.stringify(listSchemaObj))
       }
 
+      // faq schema
+      if (item.faq.length > 0) {
+        faqSchemaObj = {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": item.faq[0].list.map((item,index)=>{
+            return {
+              "@type": "Question",
+              "name": item.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer
+              }
+            }
+          })
+        }
+        temp.SchemaObjects.push(JSON.stringify(faqSchemaObj))
+      }
+
       if (temp.content.join('').includes('amp-instagram')) temp.ampig = true
       if (temp.content.join('').includes('amp-iframe')) temp.ampif = true
       if (temp.content.join('').includes('<amp-')) temp.amp = true 
