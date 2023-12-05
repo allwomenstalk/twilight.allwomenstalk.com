@@ -48,11 +48,7 @@
                 this.search.query = '';
                 this.search.results = [];
                 this.search.categories = this.search.categories.sort(() => 0.5 - Math.random());
-                this.$nextTick(() => {
-                    setTimeout(() => {
-                    this.$refs.searchInput.focus();
-                    }, 100);
-                });
+
             },
             async getsearch() {
                 this.search.loading = true;
