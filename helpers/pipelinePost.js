@@ -12,7 +12,7 @@ module.exports = [{
   }
 }, {
   '$lookup': {
-        'from': 'related_classify', 
+        'from': 'related_annoy', 
         'localField': '_id', 
         'foreignField': '_id', 
         'as': 'related'

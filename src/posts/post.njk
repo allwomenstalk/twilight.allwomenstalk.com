@@ -55,7 +55,7 @@ eleventyComputed:
                                 title = reportElaborate(page);
                                 btnClicked = true;
                             " 
-                            class="opacity-80 text-xs">
+                            class="opacity-70 text-xs">
                             Report
                         </button>            
                 {% else %}
@@ -71,6 +71,13 @@ eleventyComputed:
         {% endif %}
 
         {% if not loop.last %}
+
+                {# inline related #}
+                {% if loop.index > 1 %}
+                {% set inline = post.related.posts[loop.index-2] %}
+                {% include "partials/relatedinline.njk" %}
+                {% endif %}
+
                 {% if loop.index == 1 %}
 
                     {% include 'partials/seperator.njk' %}
@@ -87,8 +94,8 @@ eleventyComputed:
                         {% include 'partials/faq.njk' %}
                         {% include 'partials/seperator.njk' %}
                     {% elif post.related.inline %}
-                        {% include "partials/relatedinline.njk" %}
-                        {% include 'partials/seperator.njk' %}
+                        {# {% include "partials/relatedinline.njk" %}
+                        {% include 'partials/seperator.njk' %} #}
                     {% else %}    
                         {% include 'partials/seperator.njk' %}
                     {% endif %}

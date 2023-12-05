@@ -29,6 +29,7 @@ default_pipeline = 'pipeline_seo_top'
 // default_pipeline = 'pipeline_filter'
 // default_pipeline = "pipeline_recent_updated"
 // default_pipeline = "pipeline_recent"
+// default_pipeline = "pipeline_related_embeddings"
 
 console.log('process.env.PIPE', process.env.PIPE);
 console.log('Default pipeline', default_pipeline);

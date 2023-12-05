@@ -326,7 +326,8 @@ module.exports = function (item) {
             obj = {}
             // console.log('related',item._id, item.post_title)
             // console.log(item)
-            
+            obj.post_date = item.post_date
+            obj.post_modified = item.post_modified
             obj.title = item.post_title.replace(/[^a-zA-Z0-9_.-\s]*/g,'');
 
             if (item.keywords && item.keywords.length>0) {
@@ -334,25 +335,33 @@ module.exports = function (item) {
             }
             if (item.image_url) {
               obj.image = item.image_url.replace('img.allw.mn','resize.img.allw.mn')+"?width=100&height=100";  
-              obj.webp = item.image_url.replace('img.allw.mn/','resize.allw.mn/filters:format(webp)/filters:quality(70)/')+"?width=100&height=100";  
+              obj.webp = item.image_url.replace('img.allw.mn/','resize.allw.mn/100x100/filters:format(webp)/filters:quality(70)/');  
             }
             obj.url   = item.url;
 
             if (item.super_categories) obj.category = item.super_categories[0]
+            
             return obj
-          }).sort( () => .5 - Math.random() ) //shuffle order of related posts by
+          })
+          // sort by post date 
+          .sort((a,b)=>b.post_date-a.post_date)
+          // .sort( () => .5 - Math.random() ) //shuffle order of related posts by
       }
-
+      // filter out older then 2018
+      // temp.related.posts = temp.related.posts.filter(el=>el.post_date.getFullYear()>2018)
+      temp.related.pagescount = temp.content.length
+      temp.related.afterposts = temp.related.posts.slice(temp.content.length)
       temp.related.inline = false
+      
       // interlinks first 
-      if (item.interlinks.length > 0 ) {
-        // filter out link to current post 
-        item.interlinks = item.interlinks.filter(el=>el.postid!=item._id)
-        if (item.interlinks.length !== 0 )  {
-          random_link = item.interlinks[0]
-          temp.related.inline = marked(random_link.content)
-        }
-      }
+      // if (item.interlinks.length > 0 ) {
+      //   // filter out link to current post 
+      //   item.interlinks = item.interlinks.filter(el=>el.postid!=item._id)
+      //   if (item.interlinks.length !== 0 )  {
+      //     random_link = item.interlinks[0]
+      //     temp.related.inline = marked(random_link.content)
+      //   }
+      // }
 
       // related inline repalce interlink if exits 
       if (item.interlink) {

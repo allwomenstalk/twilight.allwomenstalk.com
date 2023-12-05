@@ -1,3 +1,11 @@
-<div class="post prose italic mx-auto max-w-xl text-left font-normal p-8 my-8 border-t border-b">
-{{ post.related.inline | safe }}
+{% if inline %}
+<div class="max-w-2xl mx-auto px-2 sm:px-8">
+  <div class="flex w-ful sm:max-w-xs bg-white border border-gray-300 dark:border-gray-700 rounded-md overflow-hidden m-2">
+      <img src="{{ inline.webp }}" class="h-12 w-12 flex-shrink-0 object-cover" alt="{{ inline.title }}" loading="lazy"/>
+      <div class="flex flex-col justify-center ml-2 overflow-ellipsis overflow-hidden">
+          <span class="font-semibold text-xs opacity-70">Related:</span>
+          <a href="{{ inline.url }}" class="text-sm text-pink-600 truncate "> {{ inline.title }} </a>
+      </div>
+  </div>
 </div>
+{% endif %}
