@@ -6,27 +6,7 @@ url: {{metadata.host}}
 
 <main class="">
 
-	<ol class="">
-		{% for post in posts %}
-		<li>
-			<a href="{{post.host}}/{{post.slug}}/">{{post.title}}</a> 
-			<a href="https://{{post.host}}/{{post.slug}}/">[public]</a>
-			- {{post.host}} -
-			
-			{{post.comment_count}} comments
-			{% if post.elaborate["1"] %}
-			[elaborated]
-			{% endif %}
-
-			
-		</li> 
-		{% endfor %}
-	</ol>
-
-	{% include 'partials/shopping.njk' %}
-
-
-	<ol class="grid grid-flow">
+	<ol> 
 		<li class="m-2">
 			<h4><a href="allwomenstalk.com">Homepage</a> </h4>
 		</li>
@@ -41,6 +21,32 @@ url: {{metadata.host}}
 			<h4><a href="/{{category._id}}.allwomenstalk.com">{{category.name}}</a> </h4>
 		</li>
 		{% endfor %}
+	</ol>
+
+	<ol class="">
+		{% for post in posts %}
+		<li class="m-2">
+			<a href="{{post.host}}/{{post.slug}}/">{{post.title}}</a> 
+			<a href="https://{{post.host}}/{{post.slug}}/">[public]</a>
+			- {{post.host}} -
+			
+			{{post.comment_count}} comments
+			{% if post.elaborate["1"] %}
+			[elaborated]
+			{% endif %}
+			<p>
+				{{post.image}}
+			</p>
+			
+		</li> 
+		{% endfor %}
+	</ol>
+
+	{% include 'partials/shopping.njk' %}
+
+
+	<ol class="grid grid-flow">
+
 
 	{%- for post in posts -%}
 		<li class="m-2">

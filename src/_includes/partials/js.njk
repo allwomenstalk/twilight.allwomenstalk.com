@@ -24,6 +24,7 @@
                 show: false,
                 query: '',
                 results: [],
+                loading: false,
                 categories: {{categories|json|safe}},
             },
             init () {
@@ -32,10 +33,10 @@
                 this.comment.comment_author_email = window.localStorage.getItem('comment_author_email') || '';
                 this.authcheck();
                 // watch query 
-                this.$watch('search.query', () => {
+                {# this.$watch('search.query', () => {
                     console.log('search obj', this.search);
                     this.getsearch();
-                });
+                }); #}
 
                 // test
                 {# this.search.query = 'red shoes';
@@ -54,9 +55,9 @@
                 });
             },
             async getsearch() {
-                console.log('search', this.search.query);
-
+                this.search.loading = true;
                 // fitter categories
+
 
                 {# window.originalCategories = null; #}
                 if (!window.originalCategories) {
@@ -77,14 +78,16 @@
 
                     return categoryName.startsWith(searchQuery);
                 });
-                console.log('categories res/original', this.search.categories.length, originalCategories.length);
                 if (this.search.query.length<3) {this.search.results=[];return};
                 this.search.results = [];
-                const url = `https://kyrbdz2evj.execute-api.us-east-1.amazonaws.com/v1/search?q=${this.search.query}`;
+                apiurl = "https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/search"
+                {# apiurl = "https://kyrbdz2evj.execute-api.us-east-1.amazonaws.com/v1/search" #}
+                const url = `${apiurl}?q=${this.search.query}`;
                 const response = await fetch(url);
                 const data = await response.json();
-                console.log('data', data);
+                
                 this.search.results = data.posts;
+                this.search.loading = false;
             },
             async authcheck() {
                 {# checking if profile cookie exists and then loads profile and realm #}
