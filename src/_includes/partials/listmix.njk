@@ -1,0 +1,11 @@
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 p-4 max-w-screen-xl mx-auto">
+{% set loopNumber = 0 %}
+{% for post in list | shuffle %}
+  
+    {% set loopNumber = loopNumber+1 %}
+    
+    {% include "postslist.njk" %}
+
+  
+{% endfor %}
+</div>

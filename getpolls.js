@@ -11,9 +11,10 @@ async function run() {
   let arr = [];
 
   try {
+    console.log('Connecting to MongoDB');
     await client.connect();
     const database = client.db('aws'); // Replace with your database name
-    const collection = database.collection('poll'); // Use the 'poll' collection
+    const collection = database.collection('polls'); // Use the 'poll' collection
 
     const pipeline = [
       {
@@ -24,8 +25,8 @@ async function run() {
       }
     ];
 
-    const cursor = await collection.aggregate(pipeline);
-
+    const cursor = await collection.aggregate(pipeline).toArray();
+    
     obj = {}
     await cursor.forEach((item) => {
       obj[item._id] = item.list;
