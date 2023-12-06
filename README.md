@@ -60,7 +60,8 @@ To update archivces
 node getarchives.js && npm run build && sh archiveupload.sh
 
 
-Batch update: 
+# Batch update: 
+
 node batchS3generator.js {creates batch files in folder /batch }
 sh batchbuild.sh (uploads to s3 and starts builds)
 
@@ -101,8 +102,6 @@ npx wrangler pages deploy _site/gifts.allwomenstalk.com --branch main --project-
 npx wrangler pages deploy _site/desserts.allwomenstalk.com --branch main --project-name dessert
 npx wrangler pages deploy _site/interior.allwomenstalk.com --branch main --project-name interiors
 
-Script to run this all 
-> node batchpagesdeploy.js 
 
 # Build and deploy all cloudflare domains.
 ! endsure proper pipeline here 
