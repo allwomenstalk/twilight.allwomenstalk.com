@@ -4,6 +4,7 @@ _site/
 .DS_Store
 src/_data/cache.json
 src/_data/db.json
+src/_data/mix.json
 src/_data/posts.json
 src/_data/polls.json
 src/_data/archives.json
