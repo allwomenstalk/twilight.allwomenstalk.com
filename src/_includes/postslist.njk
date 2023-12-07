@@ -38,14 +38,14 @@
         </div>
         <div class="flex items-center opacity-70">
           <div class="text-xs">
-            {% if post.seo and metadata.NODE_ENV != "production" %}
+            {% if metadata.NODE_ENV != "production" %}
             <p class="leading-none">{{ post.fulldate }}</p>
             <p class="leading-none">{{ post.post_date }}</p>
             <p class="leading-none">{{ post.seo.clicks }} clk</p>
             <p class="leading-none">{{ post.seo.impressions }} imp</p>
             <p class="leading-none">{{ post.seo.keywords }} kws</p>
             <p class="leading-none">{{ post.author.name }}</p>
-
+            <p class="leading-none">{{ post.parent.title }}</p>
             {% endif %}
             {% if post.stats.clicks %}
             <p class="leading-none">{{ post.stats.clicks }} likes</p>
