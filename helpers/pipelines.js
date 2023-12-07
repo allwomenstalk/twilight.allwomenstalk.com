@@ -6,6 +6,7 @@ const realtime = require('./aws.realtime.json').map(item=>item.slug);
 const faqpost = require('./aws.faq.json').map(item=>new ObjectId(item.post_id["$oid"]));
 const related_embeddings = require('./aws.related_annoy.json').map(item=> new ObjectId(item._id));
 const ids = require('./filter.json');
+const { pipeline } = require('stream');
 
 try {
   var filter = JSON.parse(fs.readFileSync('./_filter.json','utf8'))
@@ -117,6 +118,14 @@ pipeline_related_embeddings =[
     '$match': {
       "_id": {$in: related_embeddings} 
     }
+  }
+]
+
+pipeline_without_h2 = [
+  {
+    "$match": {
+      'post_content': new RegExp('<h2>#5<\/h2>')
+    }    
   }
 ]
   

@@ -101,13 +101,16 @@ module.exports = function (item) {
           .replace(/<[^>]*>/g,'') // removing anything else like A tag
           .trim())];
         
-        // slice long tolc 
+        // slice long toc 
         if (temp.toc.length > 10) {
           temp.toc = temp.toc.slice(0,10)
           temp.toc.push("More ...")
         }
         // item.post_content = item.post_content.replace(/<h2>/,tochtml+"<h2>")
-        
+
+        // disable toc if it's just list of numbers
+        if (temp.toc[0].match(/^#[0-9]+$/)) delete temp.toc // disable toc if it matches "#[anynumber]"
+
         // use table fo content for meta description if it's not set before
         if (!temp.description) {
           temp.description = toc
@@ -116,6 +119,7 @@ module.exports = function (item) {
             .join(" • ") + " • More ... "
         }
       } 
+
 
       
 

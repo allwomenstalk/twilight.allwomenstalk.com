@@ -20,7 +20,7 @@ const marr = [
 ];
 
 // default_pipeline = 'pipeline_comments1000plus'
-default_pipeline = 'pipeline_seo_top'
+// default_pipeline = 'pipeline_seo_top'
 // default_pipeline = 'pipeline_category'
 // default_pipeline = 'pipeline_host'
 // default_pipeline = 'pipeline_faq'
@@ -30,6 +30,7 @@ default_pipeline = 'pipeline_seo_top'
 // default_pipeline = "pipeline_recent_updated"
 // default_pipeline = "pipeline_recent"
 // default_pipeline = "pipeline_related_embeddings"
+default_pipeline = "pipeline_without_h2"
 
 console.log('process.env.PIPE', process.env.PIPE);
 console.log('Default pipeline', default_pipeline);
