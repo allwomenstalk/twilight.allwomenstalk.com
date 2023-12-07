@@ -44,13 +44,14 @@
             <p class="leading-none">{{ post.seo.clicks }} clk</p>
             <p class="leading-none">{{ post.seo.impressions }} imp</p>
             <p class="leading-none">{{ post.seo.keywords }} kws</p>
+            <p class="leading-none">{{ post.author.name }}</p>
+
             {% endif %}
             {% if post.stats.clicks %}
             <p class="leading-none">{{ post.stats.clicks }} likes</p>
             {% else %}
             <p class="leading-none">{{ post.date }}</p>
             {% endif %}
-            <p class="leading-none">{{ post.author.name }}</p>
             
             {# <button class="rounded px-2 py-1 absolute right-3 bottom-4" aria-label="Read more">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
