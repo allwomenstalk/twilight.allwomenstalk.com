@@ -136,7 +136,7 @@ eleventyComputed:
             {% include 'partials/seperator.njk' %}
 
             {% if not post.noads %}
-            {% include 'partials/keywordsgallery.njk' %}
+            {# {% include 'partials/keywordsgallery.njk' %} #}
             {% endif %}
         
         {% endif %}
@@ -148,7 +148,10 @@ eleventyComputed:
     {% include 'partials/adsnew.njk' %}
     {# {% include 'partials/ads.njk' %} #}
     
-    {% include 'partials/popular.njk' %}
+    {% set list = mix | shuffle | slicearr(21) %}
+    {% include "partials/listmix.njk" %}
+
+    {# {% include 'partials/popular.njk' %} #}
 
     {% include 'partials/schema.njk' %}
 
@@ -160,7 +163,9 @@ eleventyComputed:
 
     {# {% include 'partials/reviews.njk' %} #}
     
+    <div class="my-2">
     {% include "partials/giftguide.njk" %}
+    </div>
 
 
     <div class="ad-slot mx-auto overflow-hidden" id="slot-final"></div>

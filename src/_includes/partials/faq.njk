@@ -29,7 +29,7 @@
                   Item expanded: "", Item collapsed: "hidden"
                 -->
                 <svg class=" h-6 w-6" :class="{hidden:!show}" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                  <path stroke-linecapn="round" stroke-linejoin="round" d="M18 12H6" />
                 </svg>
               </span>
             </button>
@@ -48,14 +48,14 @@
 <script> 
 function faqData() {
   return {
-    shown: 2, 
+    shown: 3  , 
     report(item) {
-        {# console.log(item) #}
+        console.log(item)
         this.shown++
         trackapi = 'https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track'
         // fetch get trackapi
         fetch(trackapi)
-        .then(response => response.json())
+        //.then(response => response.json())
         
     },
   };

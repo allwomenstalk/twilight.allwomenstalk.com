@@ -27,10 +27,10 @@ const marr = [
 // default_pipeline = 'pipeline_realtime'
 // default_pipeline = 'pipeline_name'
 // default_pipeline = 'pipeline_filter'
-// default_pipeline = "pipeline_recent_updated"
+default_pipeline = "pipeline_recent_updated"
 // default_pipeline = "pipeline_recent"
 // default_pipeline = "pipeline_related_embeddings"
-default_pipeline = "pipeline_without_h2"
+// default_pipeline = "pipeline_without_h2"
 
 console.log('process.env.PIPE', process.env.PIPE);
 console.log('Default pipeline', default_pipeline);
