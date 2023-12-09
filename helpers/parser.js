@@ -71,6 +71,14 @@ module.exports = function (item) {
       temp.imagewebp800  = item.image_url.replace('//img.allw.mn/', '//resize.allw.mn/filters:format(webp)/filters:quality(70)/800x800/');
       temp.imagewebp1200 = item.image_url.replace('//img.allw.mn/', '//resize.allw.mn/filters:format(webp)/filters:quality(70)/1200x1200/');
 
+      // remove imgage if it's contain {image_url:/_400x400.jpg|_400x300.jpg/}
+      if (item.image_url.match(/_400x400.jpg|_400x300.jpg/)) {
+        temp.image = false
+        temp.imagewebp400 = false
+        temp.imagewebp800 = false
+        temp.imagewebp1200 = false
+        temp.imagesize = false
+      }
       // converting contet to string for processing 
       item.post_content = item.post_content.join('')
 
