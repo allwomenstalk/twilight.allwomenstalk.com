@@ -148,7 +148,10 @@ eleventyComputed:
     {% include 'partials/adsnew.njk' %}
     {# {% include 'partials/ads.njk' %} #}
     
-    {% set list = mix | shuffle | slicearr(21) %}
+    <div class="my-2">
+    {% include "partials/giftguide.njk" %}
+    </div>
+        
     {% include "partials/listmix.njk" %}
 
     {# {% include 'partials/popular.njk' %} #}
@@ -163,9 +166,6 @@ eleventyComputed:
 
     {# {% include 'partials/reviews.njk' %} #}
     
-    <div class="my-2">
-    {% include "partials/giftguide.njk" %}
-    </div>
 
 
     <div class="ad-slot mx-auto overflow-hidden" id="slot-final"></div>

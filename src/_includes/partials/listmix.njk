@@ -1,11 +1,47 @@
-<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-8 lg:grid-cols-6 lg:gap-4 xl:gap-8 p-4 max-w-screen-xl mx-auto">
-{% set loopNumber = 0 %}
-{% for post in list | shuffle %}
-  
-    {% set loopNumber = loopNumber+1 %}
+<div x-data="mix" class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-8 lg:grid-cols-6 lg:gap-4 xl:gap-8 p-4 max-w-screen-xl mx-auto">
     
-    {% include "postslist.njk" %}
+<template x-for="(item, index) in list">
+    <a :href="item.url" 
+       class="text-gray-900 rounded-lg hover:opacity-70 relative" 
+       :class="{'col-span-full md:flex': (index % 7 === 6), 'col-span-1': (index % 7 !== 6)}"
+       :title="item.title">
+        <div class="text-center overflow-hidden bg-cover bg-center rounded-t">
+            <img :src="item.image" class="w-full" width="200" height="200" :alt="item.title" loading="lazy" decoding="async">
+        </div>
+        <div class="border-r border-b border-l border-gray-300 rounded-b p-4 flex flex-col justify-between leading-normal h-56 cardtitle bg-white dark:bg-gray-900"
+            :class="{'h-auto flex-grow': (index % 7 === 6), 'col-span-1': (index % 7 !== 6)}">
+            <div class="flex flex-col h-full"
+                 :class="{'justify-center': (index % 7 === 6)}">
+                <p class="text-xs text-gray-700 flex items-center" x-text="item.category"></p>
+                <h2 class="uppercase my-2" x-text="item.title"
+                    :class="{'font-bold text-2xl md:text-3xl lg:text-4xl max-w-sm md:ml-10 xl:ml-20': (index % 7 === 6), 'text-xs sm:text-base lg:text-xs uppercase': (index % 7 !== 6)}">
+                </h2>
+                <p class="text-gray-700 text-base" x-text="item.description"></p>
+            </div>
+            <div class="flex items-center opacity-70">
+                <div class="text-xs">
+                    <p class="leading-none" x-text="item.date"></p>
+                </div>
+            </div>
+        </div>
+    </a>
+</template>
 
-  
-{% endfor %}
+
 </div>
+
+<script>
+    function mix() {
+        return {
+            list : [],
+            async init() {
+                fetch("/allwomenstalk.com/mix.json")
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log(data)
+                        this.list = data.items
+                    })
+            }
+        }
+    }
+</script>

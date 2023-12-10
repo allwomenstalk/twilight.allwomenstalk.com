@@ -1,0 +1,17 @@
+---
+permalink: allwomenstalk.com/mix.json
+---
+{% set sublist = mix %}
+{
+  "items": [
+    {%- for post in sublist | shuffle | slicearr(55) -%}
+    {
+      "title": "{{ post.title | safe }}",
+      "image": "{{ post.imageresize }}",
+      "url": "{{ post.url }}",
+      "category": "{{ post.category }}",
+      "keyword": "{{ post.keyword }}"
+    }{% if not loop.last %},{% endif %}
+    {%- endfor -%}
+  ]
+}
