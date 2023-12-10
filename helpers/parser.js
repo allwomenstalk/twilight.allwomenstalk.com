@@ -72,7 +72,7 @@ module.exports = function (item) {
       temp.imagewebp1200 = item.image_url.replace('//img.allw.mn/', '//resize.allw.mn/filters:format(webp)/filters:quality(70)/1200x1200/');
 
       // remove imgage if it's contain {image_url:/_400x400.jpg|_400x300.jpg/}
-      if (item.image_url.match(/_400x400.jpg|_400x300.jpg/)) {
+      if (item.image_url.match(/_400x400.jpg|_400x300.jpg|720x720.jpg/)) {
         temp.image = false
         temp.imagewebp400 = false
         temp.imagewebp800 = false
