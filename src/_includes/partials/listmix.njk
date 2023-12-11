@@ -1,4 +1,4 @@
-<div x-data="mix" class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-8 lg:grid-cols-6 lg:gap-4 xl:gap-8 p-4 max-w-screen-xl mx-auto">
+<div x-data="mix" id="mix" class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-8 lg:grid-cols-6 lg:gap-4 xl:gap-8 p-4 max-w-screen-xl mx-auto">
     
 <template x-for="(item, index) in list">
     <a :href="item.url" 
@@ -31,17 +31,36 @@
 </div>
 
 <script>
-    function mix() {
-        return {
-            list : [],
-            async init() {
-                fetch("/allwomenstalk.com/mix.json")
-                    .then(response => response.json())
-                    .then(data => {
-                        console.log(data)
-                        this.list = data.items
-                    })
+function mix() {
+    return {
+        list: [],
+        observer: null,
+        init() {
+            this.observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        this.fetchData();
+                        observer.disconnect(); // Remove observer after fetching data
+                    }
+                });
+            });
+
+            const mixElement = document.getElementById('mix');
+            if (mixElement) {
+                this.observer.observe(mixElement);
+            }
+        },
+        async fetchData() {
+            try {
+                const response = await fetch("https://allwomenstalk.com/mix.json");
+                const data = await response.json();
+                console.log(data);
+                this.list = data.items;
+            } catch (error) {
+                console.error('Error fetching data:', error);
             }
         }
     }
+}
+
 </script>

@@ -5,7 +5,7 @@ aws s3 cp ./batch s3://11tycode/batch/ --recursive --exclude "*" --include "*.js
 files=$(aws s3 ls s3://11tycode/batch/ | awk '{print $4}')
 
 for file in $files; do
-  echo "Starting build for s3://11tycode/batch/$file"
+  echo "Starting build for s3://11tycode/batch/$file
 
   # Trigger AWS CodeBuild. This assumes you have a buildspec.yml that knows how to handle the file.
   # Also, you need to pass the file name or S3 path to the build environment, possibly using environment variables.
