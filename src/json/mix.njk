@@ -6,7 +6,7 @@ permalink: allwomenstalk.com/mix.json
   "items": [
     {%- for post in sublist | shuffle | slicearr(55) -%}
     {
-      "title": "{{ post.title | safe }}",
+      "title": "{{ post.title }}",
       "image": "{{ post.imageresize }}",
       "url": "{{ post.url }}",
       "category": "{{ post.category }}",
