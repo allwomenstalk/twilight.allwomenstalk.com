@@ -54,8 +54,8 @@ function mix() {
         async fetchData() {
             try {
                 const response = await fetch("https://allwomenstalk.com/mix.json");
-                const data = await response.json();
-                data.forEach(item => {
+                data = await response.json();
+                data.items.forEach(item => {
                     item.title = decodeHtmlEntities(item.title);
                 });
                 this.list = data.items.sort(() => Math.random() - 0.5);
