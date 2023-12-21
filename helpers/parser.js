@@ -329,31 +329,15 @@ module.exports = function (item) {
       temp.related = {}
       temp.related.posts = []
       
+      if (item.clusterlinks && item.clusterlinks.length>0) temp.related.clusterlinks = item.clusterlinks[0].posts.map(item=>mapRelatedPosts(item))
+      
       if (item.related && item.related.length > 0) {
         // console.log('related',item._id)
         temp.related.posts = item.related
           //.sort( () => .5 - Math.random() )
           //.slice(0,5)
           .map(item => {
-            obj = {}
-            // console.log('related',item._id, item.post_title)
-            // console.log(item)
-            obj.post_date = item.post_date
-            obj.post_modified = item.post_modified
-            obj.title = item.post_title.replace(/[^a-zA-Z0-9_.-\s]*/g,'');
-
-            if (item.keywords && item.keywords.length>0) {
-              obj.title = capitalize(item.keywords[0].query)
-            }
-            if (item.image_url) {
-              obj.image = item.image_url.replace('img.allw.mn','resize.img.allw.mn')+"?width=100&height=100";  
-              obj.webp = item.image_url.replace('img.allw.mn/','resize.allw.mn/100x100/filters:format(webp)/filters:quality(70)/');  
-            }
-            obj.url   = item.url;
-
-            if (item.super_categories) obj.category = item.super_categories[0]
-            
-            return obj
+            return mapRelatedPosts(item)
           })
           // sort by post date 
           .sort((a,b)=>b.post_date-a.post_date)
@@ -429,6 +413,28 @@ module.exports = function (item) {
       // if (item.seo && item.seo.clicks == 0 && item.seo.ga_visits == 0) temp.noads = true 
       return temp
 }    
+
+function mapRelatedPosts(item) {
+  obj = {}
+  // console.log('related',item._id, item.post_title)
+  // console.log(item)
+  obj.post_date = item.post_date
+  obj.post_modified = item.post_modified
+  obj.title = item.post_title.replace(/[^a-zA-Z0-9_.-\s]*/g,'');
+
+  if (item.keywords && item.keywords.length>0) {
+    obj.title = capitalize(item.keywords[0].query)
+  }
+  if (item.image_url) {
+    obj.image = item.image_url.replace('img.allw.mn','resize.img.allw.mn')+"?width=100&height=100";  
+    obj.webp = item.image_url.replace('img.allw.mn/','resize.allw.mn/100x100/filters:format(webp)/filters:quality(70)/');  
+  }
+  obj.url   = item.url;
+
+  if (item.super_categories) obj.category = item.super_categories[0]
+  
+  return obj
+}
 
 function GetImageSize(imgurl) {
   var imagename = imgurl.split("/").pop().split(".")[0]

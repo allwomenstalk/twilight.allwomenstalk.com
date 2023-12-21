@@ -12,6 +12,13 @@ module.exports = [{
   }
 }, {
   '$lookup': {
+        'from': 'related_cluster', 
+        'localField': '_id', 
+        'foreignField': '_id', 
+        'as': 'clusterlinks'
+    }
+},{
+  '$lookup': {
         'from': 'related_annoy', 
         'localField': '_id', 
         'foreignField': '_id', 
