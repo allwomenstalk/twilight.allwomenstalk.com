@@ -32,7 +32,7 @@
               {%- endfor -%}
           </p>
           {% set emoji = ['🎄','🎅', '❄️', '🎉'] | shuffle %}
-          <h2 class="uppercase my-2 {% if bigcard %}text-base capitalize font-bold md:text-3xl lg:text-5xl {% else %}text-xs sm:text-base lg:text-xs {% endif %}">
+          <h2 class="uppercase my-2 {% if bigcard %}text-base capitalize font-bold md:text-3xl lg:text-5xl {% else %}text-xs {% endif %}">
             {{ post.title }} 
           </h2>
           <p class="text-gray-700 text-base">{{ emoji[0] }}</p>
