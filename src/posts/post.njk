@@ -26,9 +26,12 @@ eleventyComputed:
     <main id="content">
 
     {% for page in post.content %}
-        <div class="post prose p-4 overflow-hidden mx-auto max-w-xl
+        <div class=" post prose p-4 overflow-hidden mx-auto max-w-xl
             {%- if loop.first -%} 
              first-line:uppercase first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left 
+            {%- endif -%}
+            {%- if post.noaff -%} 
+             _noaff
             {%- endif -%}
             " id="{{loop.index}}">
         {{ page | safe }}

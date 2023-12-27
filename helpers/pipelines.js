@@ -94,9 +94,9 @@ pipeline_filter = [
     '$match': {
       // '_id': ObjectId('604854b781118707f2732712')
       // '_id': { $in:  ids.map(id=>new ObjectId(id)) },
-      // 'post_name': 'amazing-exercises-for-girls-struggling-with-armpit-fat'
+      'post_name': 'learn-read-guitar-tab',
       
-      'image_url': new RegExp('_400x400.jpg|_400x300.jpg|720x720.jpg')
+      // 'image_url': new RegExp('_400x400.jpg|_400x300.jpg|720x720.jpg')
       
     },
     
