@@ -1,7 +1,7 @@
 ---
 permalink: allwomenstalk.com/mix.json
 ---
-{% set sublist = mix %}
+{% set sublist = mixlist %}
 {
   "items": [
     {%- for post in sublist | shuffle | slicearr(55) -%}

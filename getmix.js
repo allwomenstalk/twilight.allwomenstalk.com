@@ -18,5 +18,5 @@ async function saveCollectionData(collectionName, filePath) {
 }
 
 if (require.main === module) {
-  saveCollectionData('mix', './src/_data/mix.json').catch(console.error);
+  saveCollectionData('mix', './src/_data/mixlist.json').catch(console.error);
 }

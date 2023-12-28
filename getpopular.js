@@ -8,7 +8,7 @@ const parser = require(fs.realpathSync('.') + "/helpers/parserarchive.js");
 
 const client = new MongoClient(uri, { useUnifiedTopology: true });
 
-let path = './src/_data/popular.json'
+let path = './src/_data/popularlist.json'
 let arr = []
 
 function SaveData(name, arr) {
