@@ -136,3 +136,7 @@ aws route53 change-resource-record-sets --hosted-zone-id Z13EFBU9E7X2EZ --change
 
 ## Update filterd posts 
 node getposts.js && npm run clean && npm run build && sh postupload.sh
+
+
+# start cloud build from cli 
+aws codebuild start-build --project-name AllwomenstalkArchives
