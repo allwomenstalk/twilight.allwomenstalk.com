@@ -26,13 +26,12 @@ eleventyComputed:
     <main id="content">
 
     {% for page in post.content %}
-        <div class=" post prose p-4 overflow-hidden mx-auto max-w-xl
+        <div class="{%- if post.noaff -%} _noaff {% endif %}
+            post prose p-4 overflow-hidden mx-auto max-w-xl
             {%- if loop.first -%} 
              first-line:uppercase first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left 
             {%- endif -%}
-            {%- if post.noaff -%} 
-             _noaff
-            {%- endif -%}
+            
             " id="{{loop.index}}">
         {{ page | safe }}
         </div>
@@ -169,6 +168,12 @@ eleventyComputed:
 
 
 {# Posts scripts only  #}
+
+{% if post.amp%}
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+{% endif %}
+
+{% if post.ampig %}<script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>{% endif %}
 
 
 <script type='text/javascript'>

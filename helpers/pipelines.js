@@ -85,7 +85,7 @@ pipeline_recent_updated = [
     }
   },
   {
-    '$limit': 1000
+    '$limit': 15000
   }
 ]
 
@@ -94,7 +94,7 @@ pipeline_filter = [
     '$match': {
       // '_id': ObjectId('604854b781118707f2732712')
       // '_id': { $in:  ids.map(id=>new ObjectId(id)) },
-      'post_name': 'learn-read-guitar-tab',
+      'post_name': 'classic-french-desserts-and-puddings-and-sweets-and-cakes-yum-yum',
       
       // 'image_url': new RegExp('_400x400.jpg|_400x300.jpg|720x720.jpg')
       
@@ -328,7 +328,13 @@ pipeline_seo_top = [
   }
 ]
 
-
+pipeline_instagram = [
+  {
+    '$match': {
+      'post_content': new RegExp('<amp-instagram')
+    }
+  }
+]
 //notes 
 
 /*  
