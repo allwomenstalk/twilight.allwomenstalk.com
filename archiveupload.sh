@@ -1,5 +1,8 @@
 #!/bin/bash
 
+aws s3 cp "_site/allwomenstalk.com/images/" "s3://allwomenstalk.com/images/" --recursive
+
+
 # List of folders
 folders=(
     "allwomenstalk.com"
@@ -46,7 +49,6 @@ for folder in "${folders[@]}"; do
     
     # Upload the folder to S3 bucket
     aws s3 cp "_site/$folder" s3://"$folder" --recursive
-    aws s3 cp "_site/$folder/images/" s3://"$folder/images/" --recursive
     
     # Uplaod the folder js 
     # aws s3 cp "_site/js" s3://"$folder"/js --recursive
