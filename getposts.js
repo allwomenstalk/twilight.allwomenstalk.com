@@ -28,22 +28,22 @@ const marr = [
 // default_pipeline = 'pipeline_name'
 // default_pipeline = 'pipeline_filter'
 // default_pipeline = 'pipeline_instagram'
-default_pipeline = "pipeline_recent_updated"
+// default_pipeline = "pipeline_recent_updated"
 // default_pipeline = "pipeline_recent"
 // default_pipeline = "pipeline_related_embeddings"
 // default_pipeline = "pipeline_related_cluster"
 // default_pipeline = "pipeline_without_h2"
 
-console.log('process.env.PIPE', process.env.PIPE);
-console.log('Default pipeline', default_pipeline);
+
+if (process.argv[2]) {
+  default_pipeline = process.argv[2];
+  console.log(default_pipeline)
+} else {
+  default_pipeline = process.env.PIPELINE
+}
 
 arr = undefined;
-try {
-  // var arr = JSON.parse(fs.readFileSync(filename, 'utf8'));
-  console.log("Local file found");
-} catch (err) {
-  console.log("No local file");
-}
+
 
 main = async () => {
   if (arr) {
@@ -57,7 +57,7 @@ main = async () => {
     const collection = database.collection('posts');
 
     const limitperbuild = process.env.NODE_ENV === "production" ? 10000 : 10000;
-    const filter = global[process.env.PIPE ? process.env.PIPE : default_pipeline];
+    const filter = global[default_pipeline];
     console.log('fitler pipeline name:', process.env.PIPE, filter);
 
     const pipeline = [
