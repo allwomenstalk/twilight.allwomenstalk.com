@@ -1,0 +1,10 @@
+{% for quote in post.quotes %}
+    <div class="quote">
+        <div class="quote__text">
+            {{ quote.content }}
+        </div>
+        <div class="quote__author">
+            {{ quote.author }}
+        </div>
+    </div>
+{% endfor %}

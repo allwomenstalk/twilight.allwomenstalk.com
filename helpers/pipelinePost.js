@@ -127,5 +127,13 @@ module.exports = [{
           ],
           "as": "interlinks"
       }
+  },
+  {
+    '$lookup': {
+      'from': 'quotestopost', 
+      'localField': '_id', 
+      'foreignField': '_id', 
+      'as': 'quotes'
+    }
   }
 ]

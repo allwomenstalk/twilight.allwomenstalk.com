@@ -365,6 +365,8 @@ module.exports = function (item) {
         temp.related.inline = marked(item.interlink)
       }
       
+      // quotes 
+      if (item.quotes) temp.quotes = item.quotes[0].list
 
       // split to 2 section 
       // temp.related.inline = temp.related.posts.slice(0,2)

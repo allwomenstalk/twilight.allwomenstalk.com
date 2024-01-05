@@ -24,6 +24,8 @@ eleventyComputed:
     {# {% include 'partials/shopping.njk' %} #}
 
     <main id="content">
+    
+    {% include 'partials/quotes.njk' %}
 
     {% for page in post.content %}
         <div class="{%- if post.noaff -%} _noaff {% endif %}
