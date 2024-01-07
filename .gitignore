@@ -15,6 +15,7 @@ _mongodb.json
 _marker.json
 *config.ini
 .env
+src/.env
 src/_includes/partials/css/*.css
 lambda/*
 validation_reports.json
