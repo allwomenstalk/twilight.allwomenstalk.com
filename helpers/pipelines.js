@@ -246,17 +246,17 @@ pipeline_host = [
               {
                   "host": {
                       $in: [
-                          "inspiration.allwomenstalk.com",
-                          // 'mindfulness.allwomenstalk.com',
-                          // 'gifts.allwomenstalk.com',
-                          // 'interior.allwomenstalk.com',
-                          // 'desserts.allwomenstalk.com',
-                          // 'accessories.allwomenstalk.com',
-                          // 'baking.allwomenstalk.com',
-                          // 'sleep.allwomenstalk.com',
-                          // 'swimwear.allwomenstalk.com',
-                          // 'gadgets.allwomenstalk.com',
-                          // 'bodyart.allwomenstalk.com'
+                          // "inspiration.allwomenstalk.com",
+                          'mindfulness.allwomenstalk.com',
+                          'gifts.allwomenstalk.com',
+                          'interior.allwomenstalk.com',
+                          'desserts.allwomenstalk.com',
+                          'accessories.allwomenstalk.com',
+                          'baking.allwomenstalk.com',
+                          'sleep.allwomenstalk.com',
+                          'swimwear.allwomenstalk.com',
+                          'gadgets.allwomenstalk.com',
+                          'bodyart.allwomenstalk.com'
                       ]
                   }
               },

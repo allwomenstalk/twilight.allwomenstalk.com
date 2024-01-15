@@ -42,11 +42,8 @@ eleventyComputed:
 
         {% if loop.index > 1 and not loop.last %}
 
-        
+        <div class="j mx-auto max-w-2xl px-2 sm:px-8">
 
-        <div class="flex justify-between mx-auto max-w-2xl px-2 sm:px-8">
-
-            <div class="flex-1">
                 <!-- Left Column Content Goes Here -->
                 {% if post.elaborate[loop.index-1] %}
                         <button 
@@ -63,11 +60,13 @@ eleventyComputed:
                 {% else %}
                     <div data-page="{{loop.index-1}}" class="elaborate italic prose dark:prose-invert p-2 overflow-hidden mx-auto max-w-xl"></div>
                 {% endif %} 
-            </div>
-            <div class="flex-1">
+            
+
+            {# <div class="flex-1">
                 <!-- Right Column Content Goes Here -->
                 {% include 'partials/reactions.njk' %}
             </div>
+             #}
         </div>
 
         {% endif %}
