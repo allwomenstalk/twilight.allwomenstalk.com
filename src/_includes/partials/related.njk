@@ -7,9 +7,9 @@
     
     {% for post in post.related.clusterlinks %}
     
-    <p alt="{{ post.title }}" class="flex items-center rounded overflow-hidden overflow-ellipsis whitespace-nowrap m-2 border bg-white dark:border-gray-700">
+    <p alt="{{ post.title }}" class="flex items-center overflow-hidden overflow-ellipsis whitespace-nowrap m-2 border bg-white dark:border-gray-700">
       {# <img src="{{ post.webp }}" style="width:3.5rem;height:3.5rem;background:#fff" alt="{{ post.title }}" loading="lazy"> #}
-      <a href="{{ post.url }}" class=" px-2 text-sm h-12 py-3">{{ post.title }}</a>
+      <a href="{{ post.url }}" class="capitalize px-2 text-sm h-12 py-3">{{ post.title }}</a>
     </p>
 
     {% endfor %}

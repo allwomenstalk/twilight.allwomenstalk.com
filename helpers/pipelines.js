@@ -367,3 +367,11 @@ pipeline_instagram = [
     }
   }, 
   */
+
+pipeline_ids = [
+  {
+    '$match': {
+      '_id': {$in: ids.map(id=>new ObjectId(id))},
+    }
+  }
+]

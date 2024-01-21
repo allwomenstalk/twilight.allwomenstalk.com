@@ -421,7 +421,7 @@ function mapRelatedPosts(item) {
   // console.log(item)
   obj.post_date = item.post_date
   obj.post_modified = item.post_modified
-  obj.title = item.post_title.replace(/[^a-zA-Z0-9_.-\s]*/g,'');
+  obj.title = item.post_title.replace(/[^a-zA-Z0-9_.-:\s]*/g,'');
 
   if (item.keywords && item.keywords.length>0) {
     obj.title = capitalize(item.keywords[0].query)

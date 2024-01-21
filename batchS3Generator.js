@@ -17,12 +17,12 @@ let filter = [
   {
     '$match': {
       'host': new RegExp('allwomenstalk.com'), 
-      'host': {$ne: 'beauty.allwomenstalk.com'},
     }
   }
 ]; // Filter to be used in the aggregation pipeline
 
 const startTime = new Date();
+exec('rm -rf ./batch/*'); // Clean the batch directory before starting
 console.log('Start Time:', startTime);
 let run = 0;
 async function generateBatch() {
@@ -30,7 +30,6 @@ async function generateBatch() {
   run++;
   console.log(`Run ${run}`);
   if (!marker) {
-    
     await exec('npm run clean'); // Clean the _site directory before the first batch
   }
 
