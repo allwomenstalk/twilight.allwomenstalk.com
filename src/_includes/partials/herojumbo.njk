@@ -45,7 +45,7 @@
   </div>
 
 
-    <div class=" bg-black border-red-500 max-w-2xl mx-auto md:my-2 md:rounded-md overflow-hidden">
+  <div class="relative bg-black border-red-500 max-w-2xl mx-auto md:my-2 md:rounded-md overflow-hidden">
     
     {% if post.image %}
     <img class="object-cover w-full h-full " id="coverimage" src="{{ post.image }}" alt="{{ post.title }}" width="{{ post.imagesize.width }}" height="{{ post.imagesize.height }}" 
@@ -53,6 +53,10 @@
             {{ post.imagewebp800 }} 800w, 
             {{ post.imagewebp1200 }} 1200w, 
             {{ post.image }} 1x" decoding="async">
+
+    <button x-cloak x-show="source" @click="window.open(source.source_url, '_blank')" class="absolute text-black text-2xl bottom-2 right-2 z-20 opacity-70 hover:opacity-100">
+      <span x-text="source.source_name" class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"></span>
+    </button>
 
     {# <picture class="object-cover h-48 w-96" id="coverimage" alt="{{ post.title }}" width="{{ post.imagesize.width }}" height="{{ post.imagesize.height }}" >
       <source type="image/webp" srcset="{{ post.imagewebp1200 }}" media="(max-width: 1200px)">

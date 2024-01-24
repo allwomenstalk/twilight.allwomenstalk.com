@@ -6,7 +6,7 @@
 {{!-- loadJs('https://account.allwomenstalk.com/js/profile.js'); --}} #}
 
 <script> 
-    function data () {
+    function data() {
         return {
             title:"Other",
             list:{},
@@ -27,6 +27,7 @@
                 loading: false,
                 categories: {{categories|json|safe}},
             },
+            source: false,
             init () {
                 console.log('init alpine');
                 this.comment.comment_author = window.localStorage.getItem('comment_author') || '';
@@ -42,6 +43,26 @@
                 {# this.search.query = 'red shoes';
                 this.getsearch(); #}
 
+                this.showsource();
+
+            },
+
+            showsource() {
+                img = "{{post.image}}";
+                json = img.replace('.jpg', '.json');
+                try {
+                    fetch(json)
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log('data', data);
+                        this.source = data;
+                    });
+                } catch (e) {
+                    {# console.log('error', e); #}
+
+                }
+                
+                console.log('img', img);
             },
             showsearch () {
                 this.search.show = true;
@@ -85,6 +106,7 @@
                 this.search.results = data.posts;
                 this.search.loading = false;
             },
+
             async authcheck() {
                 {# checking if profile cookie exists and then loads profile and realm #}
                 console.log('authcheck');
