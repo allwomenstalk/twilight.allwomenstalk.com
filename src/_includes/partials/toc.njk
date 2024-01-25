@@ -5,7 +5,7 @@
   <ol class="w-full list-decimal divide-y divide-gray-200 list-inside">
     {% for item in post.toc %}
       <li class="p-2 px-4 text-xs whitespace-nowrap overflow-ellipsis overflow-hidden">
-        <a href="#{{ loop.index }}" class="_noaf uppercase">{{ item }}</a>
+        <a href="#{{ loop.index }}" class="_noaf uppercase">{{ item | safe }}</a>
       </li>
     {% endfor %}
   </ol>

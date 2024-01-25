@@ -35,6 +35,8 @@ const marr = [
 // default_pipeline = "pipeline_without_h2"
 
 
+// passing pipeline name as argument or env variable
+
 if (process.argv[2]) {
   default_pipeline = process.argv[2];
   console.log(default_pipeline)
