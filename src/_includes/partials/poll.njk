@@ -150,6 +150,8 @@
       })
       .then(data => {
         console.log(data);
+        this.message = 'Done! Thank you for subscribing!'; // Set a success message
+
       })
       .catch(error => {
         console.error('There was a problem with the fetch operation:', error);

@@ -52,7 +52,7 @@ function faqData() {
     report(item) {
         console.log(item)
         this.shown++
-        trackapi = 'https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track'
+        trackapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track?type=faq&post_id={{post.id}}&item=${item}`
         // fetch get trackapi
         fetch(trackapi)
         //.then(response => response.json())

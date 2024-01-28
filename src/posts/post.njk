@@ -70,6 +70,7 @@ eleventyComputed:
         </div>
 
         {% endif %}
+        
 
         {% if not loop.last %}
 
@@ -126,6 +127,8 @@ eleventyComputed:
             {% include 'partials/subscribe.njk' %}
             
             {% include 'partials/rating.njk' %}
+
+            {% include 'partials/pinterestcard.njk' %}
             
             {% include "partials/commentspanel.njk" %}
 
@@ -143,6 +146,8 @@ eleventyComputed:
         {% endif %}
 
     {% endfor %}
+
+
     </main>
 
 
