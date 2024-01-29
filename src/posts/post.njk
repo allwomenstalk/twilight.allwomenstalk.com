@@ -25,8 +25,6 @@ eleventyComputed:
 
     <main id="content">
     
-    {% include 'partials/quotes.njk' %}
-
     {% for page in post.content %}
         <div class="{%- if post.noaff -%} _noaff {% endif %}
             post prose p-4 overflow-hidden mx-auto max-w-xl
@@ -107,7 +105,8 @@ eleventyComputed:
                 {% elif loop.index == 4 %}
                     {% include 'quiz.njk' %}
                     {% include 'partials/seperator.njk' %}
-                {% elif (loop.index == 5) %}    
+                {% elif (loop.index == 6) %}    
+                    {% include 'partials/quotes.njk' %}
                     {% include 'partials/seperator.njk' %}
                 {% elif (loop.index == 10) %}
                     {% include 'partials/story.njk' %}

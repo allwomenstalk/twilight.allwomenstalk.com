@@ -37,6 +37,9 @@
 <script>
   function shareComponent() {
     return {
+      postId: '{{ post.id }}',
+      postUrl: '{{ post.url }}',
+      quote: false,
       showshare: true, // 'share' in navigator, // true if the Web Share API is supported, otherwise false
       init() {
         console.log(this.showshare);
@@ -45,14 +48,18 @@
         }
       },
       async shareContent(text, author, url) {
+        this.quote = text;
         const shareData = {
           title: text + ' - ' + author,
           text: text,
           url: url
         };
-        
-        await navigator.share(shareData);
 
+        await navigator.share(shareData);
+        // Construct the trackapi URL with the passed-in parameters
+        let trackapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track?type=quote&post_id=${encodeURIComponent(this.postId)}&quote=${encodeURIComponent(this.quote)}&post_url=${encodeURIComponent(this.postUrl)}`;
+    
+        await fetch(trackapi)
 
       }
     }

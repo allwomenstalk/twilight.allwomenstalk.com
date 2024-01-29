@@ -6,12 +6,9 @@ const realtime = require('./aws.realtime.json').map(item=>item.slug);
 const faqpost = require('./aws.faq.json').map(item=>new ObjectId(item.post_id["$oid"]));
 const related_embeddings = require('./aws.related_annoy.json').map(item=> new ObjectId(item._id));
 const related_cluster = require('./aws.related_cluster.json').map(item=> new ObjectId(item._id));
-<<<<<<< HEAD
+
+// const quotestopost = require('./aws.quotestopost.json').map(item=>new ObjectId(item._id));
 const ids = require('./ids.json');
-=======
-const quotestopost = require('./aws.quotestopost.json').map(item=>new ObjectId(item._id));
-const ids = require('./filter.json');
->>>>>>> c4a4afaccf79f7953e1fb6b7dd08c912893f18e5
 const { pipeline } = require('stream');
 
 try {
@@ -132,13 +129,7 @@ pipeline_related_embeddings =[
   }
 ]
 
-pipeline_quotestopost =[
-  {
-    '$match': {
-      "_id": {$in: quotestopost} 
-    }
-  }
-]
+
 
 pipeline_related_cluster =[
   {
