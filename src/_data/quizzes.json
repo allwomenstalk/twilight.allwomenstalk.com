@@ -7775,5 +7775,6930 @@
     },
     "model": "gpt-3.5-turbo",
     "post_id": "545c462844835a24a210be95"
+  },
+  "4f3d84f59d2f6889de3e2f89": {
+    "_id": "65bbf8584ff251433ffff84d",
+    "title": "Discover Your Favorite Celebrity Type",
+    "description": "Take this quiz to find out which type of celebrity you are most drawn to and why they are famous.",
+    "questions": [
+      {
+        "question": "What kind of career do you admire most?",
+        "options": {
+          "A": {
+            "text": "Actor/Actress",
+            "points": 1
+          },
+          "B": {
+            "text": "Musician",
+            "points": 2
+          },
+          "C": {
+            "text": "Athlete",
+            "points": 3
+          },
+          "D": {
+            "text": "Business mogul",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which attribute appeals to you most?",
+        "options": {
+          "A": {
+            "text": "Talent",
+            "points": 1
+          },
+          "B": {
+            "text": "Charisma",
+            "points": 2
+          },
+          "C": {
+            "text": "Dedication",
+            "points": 3
+          },
+          "D": {
+            "text": "Innovation",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What do you value in a celebrity's behavior?",
+        "options": {
+          "A": {
+            "text": "Humility",
+            "points": 1
+          },
+          "B": {
+            "text": "Authenticity",
+            "points": 2
+          },
+          "C": {
+            "text": "Perseverance",
+            "points": 3
+          },
+          "D": {
+            "text": "Leadership",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which genre of entertainment interests you the most?",
+        "options": {
+          "A": {
+            "text": "Drama/Movies",
+            "points": 1
+          },
+          "B": {
+            "text": "Pop/Rock",
+            "points": 2
+          },
+          "C": {
+            "text": "Sports",
+            "points": 3
+          },
+          "D": {
+            "text": "Technology/Innovation",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What do you find most fascinating about celebrities?",
+        "options": {
+          "A": {
+            "text": "Their ability to transform into different characters",
+            "points": 1
+          },
+          "B": {
+            "text": "Their ability to captivate and inspire through music",
+            "points": 2
+          },
+          "C": {
+            "text": "Their ability to push their physical limits",
+            "points": 3
+          },
+          "D": {
+            "text": "Their ability to create groundbreaking products/services",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Leading Role Icon": {
+        "description": "You admire actors/actresses who can immerse themselves in various roles and transform into different characters.",
+        "range": [
+          5,
+          6
+        ]
+      },
+      "The Melody Maestro": {
+        "description": "You are attracted to musicians who have the ability to captivate and inspire through their music.",
+        "range": [
+          7,
+          8
+        ]
+      },
+      "The Sporting Superstar": {
+        "description": "You idolize athletes who push their physical limits and achieve greatness in their respective sports.",
+        "range": [
+          9,
+          10
+        ]
+      },
+      "The Innovator Extraordinaire": {
+        "description": "You are inspired by business moguls who create groundbreaking products or services through their innovative thinking.",
+        "range": [
+          11,
+          12
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "4f3d84f59d2f6889de3e2f89"
+  },
+  "4f3d84cc9d2f6889de3e2d22": {
+    "_id": "65bbf8674ff251433f00091d",
+    "title": "Discover Your Perfect Shower Product",
+    "description": "Take this quiz to find out which shower product suits your preferences and needs.",
+    "questions": [
+      {
+        "question": "How would you describe your skin type?",
+        "options": {
+          "A": {
+            "text": "Dry",
+            "points": 1
+          },
+          "B": {
+            "text": "Normal",
+            "points": 2
+          },
+          "C": {
+            "text": "Oily",
+            "points": 3
+          },
+          "D": {
+            "text": "Sensitive",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What scent do you prefer in your shower products?",
+        "options": {
+          "A": {
+            "text": "Floral",
+            "points": 1
+          },
+          "B": {
+            "text": "Citrus",
+            "points": 2
+          },
+          "C": {
+            "text": "Herbal",
+            "points": 3
+          },
+          "D": {
+            "text": "Unscented",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How much time do you typically spend in the shower?",
+        "options": {
+          "A": {
+            "text": "Less than 5 minutes",
+            "points": 1
+          },
+          "B": {
+            "text": "5-10 minutes",
+            "points": 2
+          },
+          "C": {
+            "text": "10-20 minutes",
+            "points": 3
+          },
+          "D": {
+            "text": "More than 20 minutes",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What is your main objective when using shower products?",
+        "options": {
+          "A": {
+            "text": "Moisturizing",
+            "points": 1
+          },
+          "B": {
+            "text": "Cleansing",
+            "points": 2
+          },
+          "C": {
+            "text": "Exfoliating",
+            "points": 3
+          },
+          "D": {
+            "text": "Relaxing",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What price range are you willing to spend on shower products?",
+        "options": {
+          "A": {
+            "text": "Budget-friendly",
+            "points": 1
+          },
+          "B": {
+            "text": "Mid-range",
+            "points": 2
+          },
+          "C": {
+            "text": "High-end",
+            "points": 3
+          },
+          "D": {
+            "text": "Splurge-worthy",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Ultimate Hydrator": {
+        "description": "You deserve a shower product that will deeply moisturize your skin and leave it feeling hydrated and soft.",
+        "range": [
+          5,
+          8
+        ]
+      },
+      "The Refreshing Energizer": {
+        "description": "You love invigorating scents that awaken your senses and leave you feeling refreshed and rejuvenated.",
+        "range": [
+          9,
+          12
+        ]
+      },
+      "The Luxurious Spa Enthusiast": {
+        "description": "Your showers are a time for relaxation and self-care. Indulge in high-end shower products to create a spa-like experience at home.",
+        "range": [
+          13,
+          16
+        ]
+      },
+      "The Gentle and Mild": {
+        "description": "Your sensitive skin requires gentle and mild shower products that won't cause irritation or dryness.",
+        "range": [
+          17,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "4f3d84cc9d2f6889de3e2d22"
+  },
+  "507265efe0d71b0e3b4c1c2e": {
+    "_id": "65bbf8774ff251433f000ae6",
+    "title": "Discover Your DIY Hoodie Makeover Style",
+    "description": "Take this quiz to find out which crafty DIY hoodie makeover suits your style and personality best. Choose the options that resonate with you the most, and let's get creative!",
+    "questions": [
+      {
+        "question": "What is your favorite hoodie color?",
+        "options": {
+          "A": {
+            "text": "Black",
+            "points": 1
+          },
+          "B": {
+            "text": "Gray",
+            "points": 2
+          },
+          "C": {
+            "text": "Navy blue",
+            "points": 3
+          },
+          "D": {
+            "text": "Pastel shades",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which pattern appeals to you the most?",
+        "options": {
+          "A": {
+            "text": "Floral",
+            "points": 1
+          },
+          "B": {
+            "text": "Stripes",
+            "points": 2
+          },
+          "C": {
+            "text": "Polka dots",
+            "points": 3
+          },
+          "D": {
+            "text": "Tie-dye",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What type of embellishment would you prefer?",
+        "options": {
+          "A": {
+            "text": "Embroidery",
+            "points": 1
+          },
+          "B": {
+            "text": "Sequins",
+            "points": 2
+          },
+          "C": {
+            "text": "Patches",
+            "points": 3
+          },
+          "D": {
+            "text": "Stencils",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which style describes you best?",
+        "options": {
+          "A": {
+            "text": "Casual and laid-back",
+            "points": 1
+          },
+          "B": {
+            "text": "Classy and elegant",
+            "points": 2
+          },
+          "C": {
+            "text": "Playful and vibrant",
+            "points": 3
+          },
+          "D": {
+            "text": "Boho and free-spirited",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What fabric would you choose for a hoodie makeover?",
+        "options": {
+          "A": {
+            "text": "Cotton",
+            "points": 1
+          },
+          "B": {
+            "text": "Fleece",
+            "points": 2
+          },
+          "C": {
+            "text": "Denim",
+            "points": 3
+          },
+          "D": {
+            "text": "Velvet",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Classic Chic": {
+        "description": "You prefer timeless elegance and clean lines. A simple monochrome makeover with subtle embellishments would be perfect for you.",
+        "range": [
+          5,
+          7
+        ]
+      },
+      "The Boho Babe": {
+        "description": "You have a free-spirited nature and love vibrant patterns. A boho-inspired hoodie makeover with bold colors and whimsical designs will reflect your style.",
+        "range": [
+          8,
+          11
+        ]
+      },
+      "The Playful Trendsetter": {
+        "description": "You like to stand out from the crowd with unique and playful fashion choices. Experiment with eye-catching patterns, unconventional embellishments, and unexpected color combinations for your hoodie makeover.",
+        "range": [
+          12,
+          15
+        ]
+      },
+      "The DIY Minimalist": {
+        "description": "You appreciate simplicity and understated style. Opt for a minimalist hoodie makeover with clean lines, subtle colors, and no-fuss embellishments.",
+        "range": [
+          16,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "507265efe0d71b0e3b4c1c2e"
+  },
+  "50ddfc9a14364dca6f1b2625": {
+    "_id": "65bbf8854ff251433f000cc7",
+    "title": "Discover Your Ideal UK Destination",
+    "description": "Take this quiz to find out which UK destination matches your preferences and interests.",
+    "questions": [
+      {
+        "question": "What type of weather do you prefer?",
+        "options": {
+          "A": {
+            "text": "Mild and moderate",
+            "points": 2
+          },
+          "B": {
+            "text": "Warm and sunny",
+            "points": 1
+          },
+          "C": {
+            "text": "Cool and misty",
+            "points": 3
+          },
+          "D": {
+            "text": "Cold and snowy",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which activity appeals to you the most?",
+        "options": {
+          "A": {
+            "text": "Exploring historical sites",
+            "points": 3
+          },
+          "B": {
+            "text": "Relaxing on the beach",
+            "points": 1
+          },
+          "C": {
+            "text": "Hiking in nature",
+            "points": 2
+          },
+          "D": {
+            "text": "Skiing or snowboarding",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What kind of scenery do you prefer?",
+        "options": {
+          "A": {
+            "text": "Rolling hills and green landscapes",
+            "points": 2
+          },
+          "B": {
+            "text": "Dramatic cliffs and breathtaking coastlines",
+            "points": 3
+          },
+          "C": {
+            "text": "Misty mountains and enchanted forests",
+            "points": 4
+          },
+          "D": {
+            "text": "Quaint villages and picturesque countryside",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "Which cuisine appeals to you the most?",
+        "options": {
+          "A": {
+            "text": "Fish and chips",
+            "points": 1
+          },
+          "B": {
+            "text": "Traditional English roast",
+            "points": 2
+          },
+          "C": {
+            "text": "Indian curry",
+            "points": 3
+          },
+          "D": {
+            "text": "Scottish haggis",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What type of activity would you like to try?",
+        "options": {
+          "A": {
+            "text": "Punting on the River Cam",
+            "points": 1
+          },
+          "B": {
+            "text": "Attending a royal event",
+            "points": 3
+          },
+          "C": {
+            "text": "Visiting a whisky distillery",
+            "points": 4
+          },
+          "D": {
+            "text": "Exploring a haunted castle",
+            "points": 2
+          }
+        }
+      }
+    ],
+    "results": {
+      "London Lover": {
+        "description": "You enjoy the vibrant city life and rich history. London is your ideal destination.",
+        "range": [
+          5,
+          8
+        ]
+      },
+      "Beach Wanderer": {
+        "description": "You love sunny beaches and relaxation. Cornwall is the perfect place for you.",
+        "range": [
+          4
+        ]
+      },
+      "Nature Explorer": {
+        "description": "You seek adventure in the great outdoors. The Scottish Highlands are calling your name.",
+        "range": [
+          9,
+          10
+        ]
+      },
+      "Countryside Dreamer": {
+        "description": "You appreciate the charm and tranquility of the countryside. The Cotswolds is where you belong.",
+        "range": [
+          2,
+          3
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "50ddfc9a14364dca6f1b2625"
+  },
+  "50c8e8944b94207a1fe39ab7": {
+    "_id": "65bbf8924ff251433f00156d",
+    "title": "The Ultimate Harry Potter Fan Quiz",
+    "description": "Are you a true Harry Potter fan? Take this quiz to discover your personality traits based on your preferences in the Wizarding World.",
+    "questions": [
+      {
+        "question": "Which Hogwarts house would you want to be in?",
+        "options": {
+          "A": {
+            "text": "Gryffindor",
+            "points": 2
+          },
+          "B": {
+            "text": "Slytherin",
+            "points": 1
+          },
+          "C": {
+            "text": "Hufflepuff",
+            "points": 3
+          },
+          "D": {
+            "text": "Ravenclaw",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which magical creature would you love to have as a pet?",
+        "options": {
+          "A": {
+            "text": "Phoenix",
+            "points": 4
+          },
+          "B": {
+            "text": "Dragon",
+            "points": 2
+          },
+          "C": {
+            "text": "Hippogriff",
+            "points": 1
+          },
+          "D": {
+            "text": "Thestral",
+            "points": 3
+          }
+        }
+      },
+      {
+        "question": "Which spell would you use most frequently?",
+        "options": {
+          "A": {
+            "text": "Expelliarmus",
+            "points": 2
+          },
+          "B": {
+            "text": "Lumos",
+            "points": 3
+          },
+          "C": {
+            "text": "Accio",
+            "points": 4
+          },
+          "D": {
+            "text": "Avada Kedavra",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "Which magical object would you choose to own?",
+        "options": {
+          "A": {
+            "text": "Invisibility Cloak",
+            "points": 4
+          },
+          "B": {
+            "text": "Time-Turner",
+            "points": 3
+          },
+          "C": {
+            "text": "Marauder's Map",
+            "points": 2
+          },
+          "D": {
+            "text": "Philosopher's Stone",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "Which character do you relate to the most?",
+        "options": {
+          "A": {
+            "text": "Harry Potter",
+            "points": 2
+          },
+          "B": {
+            "text": "Hermione Granger",
+            "points": 4
+          },
+          "C": {
+            "text": "Ron Weasley",
+            "points": 3
+          },
+          "D": {
+            "text": "Luna Lovegood",
+            "points": 1
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Brave Gryffindor": {
+        "description": "You are bold, courageous, and have a strong sense of justice.",
+        "range": [
+          8,
+          10
+        ]
+      },
+      "The Intelligent Ravenclaw": {
+        "description": "You are a creative thinker, wise, and have a thirst for knowledge.",
+        "range": [
+          5,
+          7
+        ]
+      },
+      "The Loyal Hufflepuff": {
+        "description": "You are kind-hearted, hardworking, and value loyalty above all.",
+        "range": [
+          3,
+          4
+        ]
+      },
+      "The Ambitious Slytherin": {
+        "description": "You are ambitious, resourceful, and willing to do whatever it takes to achieve your goals.",
+        "range": [
+          1,
+          2
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "50c8e8944b94207a1fe39ab7"
+  },
+  "659ea7a1baf6ff9261e25f95": {
+    "_id": "65bbf8a44ff251433f002edc",
+    "title": "Discover Your Perfect Tech Game",
+    "description": "Take this quiz to find out which revolutionary feature of the Apple Vision Pro suits your tech game the best.",
+    "questions": [
+      {
+        "question": "What is your primary use for a smartphone?",
+        "options": {
+          "A": {
+            "text": "Taking high-quality photos and videos",
+            "points": 2
+          },
+          "B": {
+            "text": "Playing mobile games",
+            "points": 1
+          },
+          "C": {
+            "text": "Staying connected with friends and family",
+            "points": 3
+          },
+          "D": {
+            "text": "Productivity and work-related tasks",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which feature do you value the most in a smartphone?",
+        "options": {
+          "A": {
+            "text": "Large and vibrant display",
+            "points": 4
+          },
+          "B": {
+            "text": "Long battery life",
+            "points": 3
+          },
+          "C": {
+            "text": "Fast and powerful performance",
+            "points": 2
+          },
+          "D": {
+            "text": "Advanced camera capabilities",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "How important is privacy and security in a smartphone to you?",
+        "options": {
+          "A": {
+            "text": "Extremely important",
+            "points": 4
+          },
+          "B": {
+            "text": "Quite important",
+            "points": 3
+          },
+          "C": {
+            "text": "Somewhat important",
+            "points": 2
+          },
+          "D": {
+            "text": "Not very important",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "Which description best matches your tech style?",
+        "options": {
+          "A": {
+            "text": "Sleek and minimalist",
+            "points": 3
+          },
+          "B": {
+            "text": "Bold and expressive",
+            "points": 1
+          },
+          "C": {
+            "text": "Elegant and sophisticated",
+            "points": 4
+          },
+          "D": {
+            "text": "Functional and practical",
+            "points": 2
+          }
+        }
+      },
+      {
+        "question": "What is your budget range for a smartphone?",
+        "options": {
+          "A": {
+            "text": "High-end luxury",
+            "points": 4
+          },
+          "B": {
+            "text": "Mid-range affordability",
+            "points": 3
+          },
+          "C": {
+            "text": "Budget-friendly",
+            "points": 2
+          },
+          "D": {
+            "text": "Money is not a concern",
+            "points": 1
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Creative Visionary": {
+        "description": "You are all about capturing artistic moments and expressing your creativity through photography and videos. The advanced camera capabilities of the Apple Vision Pro will revolutionize your creative game.",
+        "range": [
+          7,
+          10
+        ]
+      },
+      "The Power Player": {
+        "description": "You demand high-performance and long-lasting battery life to fuel your mobile gaming and productivity. The powerful features and long battery life of the Apple Vision Pro will enhance your tech game.",
+        "range": [
+          5,
+          6
+        ]
+      },
+      "The Social Connector": {
+        "description": "Staying connected with your loved ones is your top priority. The Apple Vision Pro's seamless connectivity and communication features will keep you connected in style.",
+        "range": [
+          3,
+          4
+        ]
+      },
+      "The Tech Connoisseur": {
+        "description": "You appreciate the sleek and sophisticated design of the Apple Vision Pro, combined with its advanced features. It perfectly complements your tech style and elevates your overall experience.",
+        "range": [
+          10,
+          10
+        ]
+      },
+      "The Value Seeker": {
+        "description": "You are looking for a smartphone that offers great value for your budget. The Apple Vision Pro provides a perfect balance of affordability and functionality, meeting all your tech needs.",
+        "range": [
+          1,
+          2
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "659ea7a1baf6ff9261e25f95"
+  },
+  "4f3bc7659d2f6889de3d897c": {
+    "_id": "65bbf8b44ff251433f0047cd",
+    "title": "Discover Your Personal Style",
+    "description": "Take this quiz to find out what your personal style says about you! Choose the options that best represent your preferences and personality.",
+    "questions": [
+      {
+        "question": "What is your go-to outfit?",
+        "options": {
+          "A": {
+            "text": "Jeans and a t-shirt",
+            "points": 1
+          },
+          "B": {
+            "text": "Sundress with flats",
+            "points": 2
+          },
+          "C": {
+            "text": "Blazer and tailored pants",
+            "points": 3
+          },
+          "D": {
+            "text": "Edgy leather jacket and ripped jeans",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How do you accessorize?",
+        "options": {
+          "A": {
+            "text": "Minimalist - just a watch or simple necklace",
+            "points": 1
+          },
+          "B": {
+            "text": "Statement earrings or bold necklace",
+            "points": 2
+          },
+          "C": {
+            "text": "Classic - pearls or gold jewelry",
+            "points": 3
+          },
+          "D": {
+            "text": "Stacked bracelets and rings",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which colors do you gravitate towards?",
+        "options": {
+          "A": {
+            "text": "Neutral tones - black, white, gray",
+            "points": 1
+          },
+          "B": {
+            "text": "Pastels - light pink, baby blue, mint green",
+            "points": 2
+          },
+          "C": {
+            "text": "Earth tones - brown, olive green, rust",
+            "points": 3
+          },
+          "D": {
+            "text": "Bold colors - red, royal blue, emerald green",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What type of shoes do you prefer?",
+        "options": {
+          "A": {
+            "text": "Sneakers or running shoes",
+            "points": 1
+          },
+          "B": {
+            "text": "Ballet flats or sandals",
+            "points": 2
+          },
+          "C": {
+            "text": "Classic pumps or loafers",
+            "points": 3
+          },
+          "D": {
+            "text": "Ankle boots or chunky heels",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How would you describe your makeup style?",
+        "options": {
+          "A": {
+            "text": "Minimal - just a little mascara and lip balm",
+            "points": 1
+          },
+          "B": {
+            "text": "Fresh and glowing - natural look with light foundation",
+            "points": 2
+          },
+          "C": {
+            "text": "Polished - winged eyeliner and red lipstick",
+            "points": 3
+          },
+          "D": {
+            "text": "Bold - smoky eyes and bold lip color",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Casual Chic": {
+        "description": "You have a laid-back and effortless style that is always on-trend.",
+        "range": [
+          5,
+          7
+        ]
+      },
+      "The Elegant Sophisticate": {
+        "description": "Your style is classic and refined, with a touch of glamour.",
+        "range": [
+          8,
+          10
+        ]
+      },
+      "The Edgy Trendsetter": {
+        "description": "You love to experiment with fashion and aren't afraid to take risks.",
+        "range": [
+          11,
+          13
+        ]
+      },
+      "The Colorful Eclectic": {
+        "description": "Your style is vibrant and eclectic, with a mix of patterns and colors.",
+        "range": [
+          14,
+          16
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "4f3bc7659d2f6889de3d897c"
+  },
+  "56a519560c4fe717458b49cb": {
+    "_id": "65bbf8c24ff251433f005f30",
+    "title": "What's Your Big Butt Struggle?",
+    "description": "Discover the common challenges women with big butts face and find out which struggle resonates with you the most!",
+    "questions": [
+      {
+        "question": "What type of pants do you find the most challenging to fit into?",
+        "options": {
+          "A": {
+            "text": "Jeans",
+            "points": 1
+          },
+          "B": {
+            "text": "Leggings",
+            "points": 2
+          },
+          "C": {
+            "text": "Shorts",
+            "points": 3
+          },
+          "D": {
+            "text": "Skirts",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How often do you have to deal with people staring at your butt?",
+        "options": {
+          "A": {
+            "text": "Rarely",
+            "points": 1
+          },
+          "B": {
+            "text": "Occasionally",
+            "points": 2
+          },
+          "C": {
+            "text": "Frequently",
+            "points": 3
+          },
+          "D": {
+            "text": "Constantly",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How do you feel about the attention your big butt receives?",
+        "options": {
+          "A": {
+            "text": "I love it!",
+            "points": 4
+          },
+          "B": {
+            "text": "I don't mind it.",
+            "points": 3
+          },
+          "C": {
+            "text": "It bothers me sometimes.",
+            "points": 2
+          },
+          "D": {
+            "text": "I hate it.",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "Do you feel self-conscious about wearing certain types of clothing?",
+        "options": {
+          "A": {
+            "text": "Not at all",
+            "points": 1
+          },
+          "B": {
+            "text": "Sometimes",
+            "points": 2
+          },
+          "C": {
+            "text": "Often",
+            "points": 3
+          },
+          "D": {
+            "text": "Always",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How do you handle unsolicited comments about your butt?",
+        "options": {
+          "A": {
+            "text": "Brush it off and ignore it",
+            "points": 1
+          },
+          "B": {
+            "text": "Politely respond and move on",
+            "points": 2
+          },
+          "C": {
+            "text": "Get defensive and confront the person",
+            "points": 3
+          },
+          "D": {
+            "text": "Get extremely upset and angry",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Fashion Struggler": {
+        "description": "You find it challenging to fit into certain types of clothes, especially skirts.",
+        "range": [
+          5,
+          9
+        ]
+      },
+      "The Attention Seeker": {
+        "description": "You enjoy the attention your big butt receives and embrace it.",
+        "range": [
+          10,
+          14
+        ]
+      },
+      "The Body Image Battler": {
+        "description": "You sometimes feel self-conscious about your big butt and struggle with wearing certain types of clothing.",
+        "range": [
+          15,
+          19
+        ]
+      },
+      "The Comment Crusher": {
+        "description": "Unsolicited comments about your butt often bother you, and you may get defensive or upset.",
+        "range": [
+          20,
+          24
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "56a519560c4fe717458b49cb"
+  },
+  "54d7ffa029ee86141a4685d3": {
+    "_id": "65bbf8d34ff251433f0076cb",
+    "title": "How Do Men Tease the Women They Like?",
+    "description": "Discover how men often tease and flirt with women they are interested in. Take this quiz to find out the different ways men show their affection through teasing.",
+    "questions": [
+      {
+        "question": "How does he playfully tease you?",
+        "options": {
+          "A": {
+            "text": "He makes fun of your hobbies or interests",
+            "points": 1
+          },
+          "B": {
+            "text": "He playfully teases you about something specific",
+            "points": 3
+          },
+          "C": {
+            "text": "He uses inside jokes or pokes fun at you in a lighthearted way",
+            "points": 2
+          },
+          "D": {
+            "text": "He rarely teases you, if ever",
+            "points": 0
+          }
+        }
+      },
+      {
+        "question": "How does he react when you tease him back?",
+        "options": {
+          "A": {
+            "text": "He gets defensive or uncomfortable",
+            "points": 0
+          },
+          "B": {
+            "text": "He laughs and playfully teases you even more",
+            "points": 3
+          },
+          "C": {
+            "text": "He blushes or becomes flustered",
+            "points": 2
+          },
+          "D": {
+            "text": "He ignores or dismisses your teasing",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "How does he communicate with you when he teases?",
+        "options": {
+          "A": {
+            "text": "He uses flirtatious or playful body language",
+            "points": 3
+          },
+          "B": {
+            "text": "He uses sarcastic or witty remarks",
+            "points": 2
+          },
+          "C": {
+            "text": "He uses gentle teasing without crossing any boundaries",
+            "points": 1
+          },
+          "D": {
+            "text": "He is not comfortable teasing and avoids it",
+            "points": 0
+          }
+        }
+      },
+      {
+        "question": "How often does he tease you?",
+        "options": {
+          "A": {
+            "text": "Almost every time you interact",
+            "points": 3
+          },
+          "B": {
+            "text": "Occasionally, when the mood strikes",
+            "points": 2
+          },
+          "C": {
+            "text": "Rarely, only in certain situations",
+            "points": 1
+          },
+          "D": {
+            "text": "Never, he doesn't tease you at all",
+            "points": 0
+          }
+        }
+      },
+      {
+        "question": "How does he make you feel when he teases you?",
+        "options": {
+          "A": {
+            "text": "Happy and flattered",
+            "points": 3
+          },
+          "B": {
+            "text": "Nervous or uncertain",
+            "points": 1
+          },
+          "C": {
+            "text": "Challenged but interested",
+            "points": 2
+          },
+          "D": {
+            "text": "Uncomfortable or annoyed",
+            "points": 0
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Confident Charmer": {
+        "description": "He enjoys playfully teasing you and uses it as a way to flirt and show his interest.",
+        "range": [
+          10,
+          13
+        ]
+      },
+      "The Shy Teaser": {
+        "description": "He may be a bit shy, but he can't resist playfully teasing you to get your attention.",
+        "range": [
+          7,
+          9
+        ]
+      },
+      "The Reserved Admirer": {
+        "description": "He prefers to express his interest in more subtle ways and doesn't tease much.",
+        "range": [
+          4,
+          6
+        ]
+      },
+      "The Serious Observer": {
+        "description": "He rarely teases or flirts, preferring a more serious approach to expressing his interest.",
+        "range": [
+          0,
+          3
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "54d7ffa029ee86141a4685d3"
+  },
+  "4f4be9c69d2f6889de3e4706": {
+    "_id": "65bbf8e04ff251433f0084e7",
+    "title": "Discover Your Easter Food Preference",
+    "description": "Take this quiz to find out which traditional Easter food from around the world suits your taste best!",
+    "questions": [
+      {
+        "question": "What is your favorite way to eat eggs?",
+        "options": {
+          "A": {
+            "text": "Scrambled",
+            "points": 1
+          },
+          "B": {
+            "text": "Fried",
+            "points": 2
+          },
+          "C": {
+            "text": "Poached",
+            "points": 3
+          },
+          "D": {
+            "text": "Deviled",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which type of bread do you prefer?",
+        "options": {
+          "A": {
+            "text": "Baguette",
+            "points": 1
+          },
+          "B": {
+            "text": "Sourdough",
+            "points": 2
+          },
+          "C": {
+            "text": "Brioche",
+            "points": 3
+          },
+          "D": {
+            "text": "Rye",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What is your go-to meat for a festive meal?",
+        "options": {
+          "A": {
+            "text": "Roast Lamb",
+            "points": 1
+          },
+          "B": {
+            "text": "Baked Ham",
+            "points": 2
+          },
+          "C": {
+            "text": "Roast Turkey",
+            "points": 3
+          },
+          "D": {
+            "text": "Grilled Fish",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which dessert tempts you the most?",
+        "options": {
+          "A": {
+            "text": "Hot Cross Buns",
+            "points": 1
+          },
+          "B": {
+            "text": "Easter Bunny Cake",
+            "points": 2
+          },
+          "C": {
+            "text": "Pastiera Napoletana",
+            "points": 3
+          },
+          "D": {
+            "text": "Simnel Cake",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How do you like your potatoes prepared?",
+        "options": {
+          "A": {
+            "text": "Mashed",
+            "points": 1
+          },
+          "B": {
+            "text": "Roasted",
+            "points": 2
+          },
+          "C": {
+            "text": "Potato Salad",
+            "points": 3
+          },
+          "D": {
+            "text": "Fried",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Classic Traditionalist": {
+        "description": "You appreciate the timeless flavors of classic Easter dishes.",
+        "range": [
+          5,
+          7
+        ]
+      },
+      "The Adventurous Foodie": {
+        "description": "You love exploring new flavors and trying exotic Easter dishes.",
+        "range": [
+          8,
+          10
+        ]
+      },
+      "The Comfort Seeker": {
+        "description": "You enjoy comforting and indulgent Easter foods that bring you joy.",
+        "range": [
+          11,
+          13
+        ]
+      },
+      "The Health Conscious": {
+        "description": "You prefer lighter and healthier Easter food options.",
+        "range": [
+          14,
+          16
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "4f4be9c69d2f6889de3e4706"
+  },
+  "54a0013129ee86141a40bc70": {
+    "_id": "65bbf8ef4ff251433f009ce9",
+    "title": "Discover Your Motivational Style",
+    "description": "This quiz will help you uncover your motivational style and provide insights into what drives and inspires you to reach the finish line.",
+    "questions": [
+      {
+        "question": "What motivates you to take action?",
+        "options": {
+          "A": {
+            "text": "Achieving personal goals",
+            "points": 3
+          },
+          "B": {
+            "text": "Competition with others",
+            "points": 2
+          },
+          "C": {
+            "text": "Making a positive impact",
+            "points": 4
+          },
+          "D": {
+            "text": "Being recognized and rewarded",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "How do you handle setbacks and obstacles?",
+        "options": {
+          "A": {
+            "text": "Persist and find alternative solutions",
+            "points": 3
+          },
+          "B": {
+            "text": "Analyze the situation and strategize",
+            "points": 2
+          },
+          "C": {
+            "text": "Seek support and advice from others",
+            "points": 4
+          },
+          "D": {
+            "text": "Take a break and recharge",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What approach do you prefer when working on tasks?",
+        "options": {
+          "A": {
+            "text": "Structured and organized",
+            "points": 2
+          },
+          "B": {
+            "text": "Collaborative and team-oriented",
+            "points": 4
+          },
+          "C": {
+            "text": "Flexible and adaptive",
+            "points": 3
+          },
+          "D": {
+            "text": "Independent and self-directed",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What sparks your creativity and inspiration?",
+        "options": {
+          "A": {
+            "text": "New experiences and adventures",
+            "points": 4
+          },
+          "B": {
+            "text": "Learning and acquiring knowledge",
+            "points": 3
+          },
+          "C": {
+            "text": "Interacting with diverse people",
+            "points": 2
+          },
+          "D": {
+            "text": "Quiet reflection and introspection",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "How do you celebrate your achievements?",
+        "options": {
+          "A": {
+            "text": "Throw a party and celebrate with friends",
+            "points": 4
+          },
+          "B": {
+            "text": "Give yourself a pat on the back",
+            "points": 2
+          },
+          "C": {
+            "text": "Share your success and inspire others",
+            "points": 3
+          },
+          "D": {
+            "text": "Set new goals and keep moving forward",
+            "points": 1
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Visionary Trailblazer": {
+        "description": "You are driven by a vision to create a better future and inspire others. Your motivation stems from making a positive impact and leaving a lasting legacy.",
+        "range": [
+          18,
+          20
+        ]
+      },
+      "The Competitive Achiever": {
+        "description": "You thrive on competition and constantly push yourself to achieve personal goals. Winning and being recognized for your accomplishments fuels your motivation.",
+        "range": [
+          14,
+          17
+        ]
+      },
+      "The Collaborative Enthusiast": {
+        "description": "You excel in team settings and find motivation through collaboration and working towards a common goal. Building relationships and supporting others drive your passion.",
+        "range": [
+          11,
+          13
+        ]
+      },
+      "The Adaptable Innovator": {
+        "description": "You embrace change and are motivated by new experiences and opportunities for growth. Your creativity and adaptability allow you to overcome obstacles and find innovative solutions.",
+        "range": [
+          7,
+          10
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "54a0013129ee86141a40bc70"
+  },
+  "519172909cc0031ea1900a3f": {
+    "_id": "65bbf9004ff251433f00a75d",
+    "title": "Discover Your Ideal Piercing",
+    "description": "Take this quiz to find out which body piercing matches your personality and style the best. Choose the option that resonates with you the most for each question.",
+    "questions": [
+      {
+        "question": "How would you describe your style?",
+        "options": {
+          "A": {
+            "text": "Edgy and rebellious",
+            "points": 2
+          },
+          "B": {
+            "text": "Classic and refined",
+            "points": 1
+          },
+          "C": {
+            "text": "Bohemian and free-spirited",
+            "points": 3
+          },
+          "D": {
+            "text": "Minimal and sleek",
+            "points": 0
+          }
+        }
+      },
+      {
+        "question": "What is your favorite type of jewelry?",
+        "options": {
+          "A": {
+            "text": "Bold statement pieces",
+            "points": 2
+          },
+          "B": {
+            "text": "Diamonds and pearls",
+            "points": 1
+          },
+          "C": {
+            "text": "Natural materials like wood and stone",
+            "points": 3
+          },
+          "D": {
+            "text": "Simple and delicate designs",
+            "points": 0
+          }
+        }
+      },
+      {
+        "question": "How adventurous are you?",
+        "options": {
+          "A": {
+            "text": "I'm always up for new experiences",
+            "points": 3
+          },
+          "B": {
+            "text": "I prefer sticking to what I know",
+            "points": 0
+          },
+          "C": {
+            "text": "I like to push boundaries in a subtle way",
+            "points": 1
+          },
+          "D": {
+            "text": "I enjoy a balance of stability and excitement",
+            "points": 2
+          }
+        }
+      },
+      {
+        "question": "What is your attitude towards pain?",
+        "options": {
+          "A": {
+            "text": "Bring it on, I can handle anything",
+            "points": 3
+          },
+          "B": {
+            "text": "I prefer to avoid unnecessary pain",
+            "points": 0
+          },
+          "C": {
+            "text": "I'm willing to endure some discomfort for the sake of beauty",
+            "points": 2
+          },
+          "D": {
+            "text": "I don't mind a little pain if it's worth it",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What message do you want to convey with your piercing?",
+        "options": {
+          "A": {
+            "text": "I'm unique and fearless",
+            "points": 2
+          },
+          "B": {
+            "text": "I appreciate elegance and sophistication",
+            "points": 1
+          },
+          "C": {
+            "text": "I value individuality and self-expression",
+            "points": 3
+          },
+          "D": {
+            "text": "I prefer a more understated and subtle look",
+            "points": 0
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Bold Rebel": {
+        "description": "You are fearless and love to make a statement. A daring piercing like a nose ring or septum piercing would suit you perfectly.",
+        "range": [
+          9,
+          12
+        ]
+      },
+      "The Classic Beauty": {
+        "description": "You appreciate timeless elegance and prefer to keep things simple. A traditional earlobe piercing or a delicate nose stud would complement your style.",
+        "range": [
+          4,
+          8
+        ]
+      },
+      "The Free Spirit": {
+        "description": "You embrace individuality and are drawn to natural beauty. Consider a belly button piercing or a helix piercing to express your bohemian spirit.",
+        "range": [
+          13,
+          15
+        ]
+      },
+      "The Minimalist": {
+        "description": "You have a refined taste and prefer a clean and sleek look. Stick with a subtle ear cartilage piercing or a discreet lip piercing for an understated touch.",
+        "range": [
+          0,
+          3
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "519172909cc0031ea1900a3f"
+  },
+  "535dc1d96dc92c1e5850fb50": {
+    "_id": "65bbf90e4ff251433f00b4b9",
+    "title": "Discover Your Perfect Mug Treat",
+    "description": "Take this quiz to find out which tasty mug treat you should make in the microwave!",
+    "questions": [
+      {
+        "question": "What is your favorite flavor?",
+        "options": {
+          "A": {
+            "text": "Chocolate",
+            "points": 1
+          },
+          "B": {
+            "text": "Vanilla",
+            "points": 2
+          },
+          "C": {
+            "text": "Strawberry",
+            "points": 3
+          },
+          "D": {
+            "text": "Caramel",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which texture do you prefer in a dessert?",
+        "options": {
+          "A": {
+            "text": "Creamy",
+            "points": 1
+          },
+          "B": {
+            "text": "Crunchy",
+            "points": 2
+          },
+          "C": {
+            "text": "Soft",
+            "points": 3
+          },
+          "D": {
+            "text": "Chewy",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What is your go-to comfort food?",
+        "options": {
+          "A": {
+            "text": "Ice cream",
+            "points": 1
+          },
+          "B": {
+            "text": "Cake",
+            "points": 2
+          },
+          "C": {
+            "text": "Cookies",
+            "points": 3
+          },
+          "D": {
+            "text": "Brownies",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which ingredient do you love the most?",
+        "options": {
+          "A": {
+            "text": "Peanut butter",
+            "points": 1
+          },
+          "B": {
+            "text": "Nutella",
+            "points": 2
+          },
+          "C": {
+            "text": "Oreo cookies",
+            "points": 3
+          },
+          "D": {
+            "text": "Cinnamon",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What is your ideal mug treat size?",
+        "options": {
+          "A": {
+            "text": "Small and bite-sized",
+            "points": 1
+          },
+          "B": {
+            "text": "Medium and satisfying",
+            "points": 2
+          },
+          "C": {
+            "text": "Large and indulgent",
+            "points": 3
+          },
+          "D": {
+            "text": "Extra-large, I like to share",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "Chocolate Lava Cake": {
+        "description": "You love rich and indulgent desserts. The molten chocolate center of a lava cake is just what you crave.",
+        "range": [
+          5,
+          8
+        ]
+      },
+      "Vanilla Mug Cake": {
+        "description": "You enjoy classic flavors and simple pleasures. A fluffy vanilla mug cake is perfect for your taste.",
+        "range": [
+          9,
+          12
+        ]
+      },
+      "Strawberry Shortcake Mug": {
+        "description": "You have a sweet and refreshing side. A strawberry shortcake mug treat will satisfy that craving.",
+        "range": [
+          13,
+          16
+        ]
+      },
+      "Caramel Pecan Mug Brownie": {
+        "description": "You enjoy the combination of sweet and nutty flavors. A caramel pecan mug brownie is right up your alley.",
+        "range": [
+          17,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "535dc1d96dc92c1e5850fb50"
+  },
+  "52e2977c7d124b5bdaa79971": {
+    "_id": "65bbf91f4ff251433f00c823",
+    "title": "Discover Your Unconventional Side",
+    "description": "Welcome to the quiz that will help you uncover your unique and unconventional preferences. Get ready to explore the quirkiest aspects of your personality!",
+    "questions": [
+      {
+        "question": "Which of these unconventional pets would you choose?",
+        "options": {
+          "A": {
+            "text": "A pet squirrel who can do tricks",
+            "points": 1
+          },
+          "B": {
+            "text": "A pet tarantula who wears tiny hats",
+            "points": 2
+          },
+          "C": {
+            "text": "A pet skunk who loves cuddling",
+            "points": 3
+          },
+          "D": {
+            "text": "A pet octopus who can teleport",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "You stumble upon an abandoned house with a mysterious reputation. What do you do?",
+        "options": {
+          "A": {
+            "text": "Enter and explore every room, hoping to find hidden treasures",
+            "points": 1
+          },
+          "B": {
+            "text": "Organize a neighborhood ghost hunting party at the house",
+            "points": 2
+          },
+          "C": {
+            "text": "Avoid the house at all costs, superstitions scare you",
+            "points": 3
+          },
+          "D": {
+            "text": "Buy the house and turn it into an eccentric museum",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which unusual mode of transportation would you choose for your daily commute?",
+        "options": {
+          "A": {
+            "text": "A unicycle with flames painted on it",
+            "points": 1
+          },
+          "B": {
+            "text": "A motorized recliner chair with cup holders",
+            "points": 2
+          },
+          "C": {
+            "text": "A pogo stick that allows you to effortlessly leap over cars",
+            "points": 3
+          },
+          "D": {
+            "text": "A hoverboard that plays your favorite tunes",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "You receive an invitation to a themed costume party. Which theme would you choose?",
+        "options": {
+          "A": {
+            "text": "Time-travelers from the 1800s",
+            "points": 1
+          },
+          "B": {
+            "text": "Aliens from a distant galaxy",
+            "points": 2
+          },
+          "C": {
+            "text": "Characters from fairy tales gone wrong",
+            "points": 3
+          },
+          "D": {
+            "text": "Mythical creatures from ancient folklore",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "If you could have a superpower, which unconventional power would you choose?",
+        "options": {
+          "A": {
+            "text": "The ability to speak every language fluently, even ones from different planets",
+            "points": 1
+          },
+          "B": {
+            "text": "The power to manipulate objects using only your mind",
+            "points": 2
+          },
+          "C": {
+            "text": "The ability to control time and relive your favorite moments",
+            "points": 3
+          },
+          "D": {
+            "text": "The power to turn any object into chocolate",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Eccentric Adventurer": {
+        "description": "You have a taste for the unconventional, always seeking out new and bizarre experiences. Your friends admire your ability to think outside the box and embrace the weirdness of life.",
+        "range": [
+          5,
+          7
+        ]
+      },
+      "The Quirky Dreamer": {
+        "description": "Your imagination knows no bounds, and your love for the unconventional shines through in everything you do. You have a knack for turning mundane situations into whimsical adventures.",
+        "range": [
+          8,
+          10
+        ]
+      },
+      "The Unconventional Mastermind": {
+        "description": "You march to the beat of your own drum, unafraid to challenge societal norms and embrace your unique quirks. Your unconventional thinking often leads to groundbreaking ideas and innovations.",
+        "range": [
+          11,
+          13
+        ]
+      },
+      "The Bizarre Enthusiast": {
+        "description": "You find beauty and fascination in the strangest of things. Your passion for the unconventional drives you to explore the unknown and appreciate the unconventional aspects of life.",
+        "range": [
+          14,
+          16
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "52e2977c7d124b5bdaa79971"
+  },
+  "4f3d84bd9d2f6889de3e2be1": {
+    "_id": "65bbf92f4ff251433f00d95b",
+    "title": "Confidence Boosting Quiz",
+    "description": "Discover ways to remain confident and boost your self-esteem in spite of pimples.",
+    "questions": [
+      {
+        "question": "How do you usually react when you get a pimple on your face?",
+        "options": {
+          "A": {
+            "text": "I panic and feel embarrassed",
+            "points": 1
+          },
+          "B": {
+            "text": "I try to cover it up with makeup",
+            "points": 2
+          },
+          "C": {
+            "text": "I accept it as a part of life and move on",
+            "points": 3
+          },
+          "D": {
+            "text": "I feel self-conscious and avoid social situations",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What is your attitude towards skincare?",
+        "options": {
+          "A": {
+            "text": "I have a strict skincare routine",
+            "points": 3
+          },
+          "B": {
+            "text": "I only use basic products",
+            "points": 2
+          },
+          "C": {
+            "text": "I don't pay much attention to skincare",
+            "points": 1
+          },
+          "D": {
+            "text": "I have tried various products but nothing seems to work",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How often do you compare your skin to others?",
+        "options": {
+          "A": {
+            "text": "Very often, and it affects my self-esteem",
+            "points": 4
+          },
+          "B": {
+            "text": "Sometimes, but I try not to let it bother me",
+            "points": 3
+          },
+          "C": {
+            "text": "Rarely, I focus on my own journey",
+            "points": 2
+          },
+          "D": {
+            "text": "Constantly, and it makes me feel inadequate",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What do you believe contributes to skin problems the most?",
+        "options": {
+          "A": {
+            "text": "Poor diet and lifestyle choices",
+            "points": 3
+          },
+          "B": {
+            "text": "Hormonal imbalances",
+            "points": 2
+          },
+          "C": {
+            "text": "Genetic factors",
+            "points": 1
+          },
+          "D": {
+            "text": "I'm not sure, it feels random",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How do you deal with negative comments or judgments about your skin?",
+        "options": {
+          "A": {
+            "text": "I let it affect my self-esteem and feel down",
+            "points": 1
+          },
+          "B": {
+            "text": "I ignore them and focus on self-acceptance",
+            "points": 3
+          },
+          "C": {
+            "text": "I try to educate people about acne and its causes",
+            "points": 2
+          },
+          "D": {
+            "text": "I avoid situations where I might face such comments",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Resilient Rockstar": {
+        "description": "You face pimples with confidence and resilience. You don't let them define your self-worth and know how to stay positive.",
+        "range": [
+          12,
+          15
+        ]
+      },
+      "The Self-Acceptance Superstar": {
+        "description": "You embrace your imperfections and have learned to love yourself unconditionally. Pimples don't affect your self-esteem.",
+        "range": [
+          9,
+          11
+        ]
+      },
+      "The Skincare Enthusiast": {
+        "description": "You understand the importance of a good skincare routine and take care of your skin. Pimples may bother you, but you know how to manage them.",
+        "range": [
+          6,
+          8
+        ]
+      },
+      "The Insecure Individual": {
+        "description": "Pimples have a significant impact on your self-esteem. You struggle to remain confident despite them.",
+        "range": [
+          5,
+          3
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "4f3d84bd9d2f6889de3e2be1"
+  },
+  "5a0d5b11841bf74867602403": {
+    "_id": "65bbf93e4ff251433f00ea78",
+    "title": "Winter Hair Color Personality Quiz",
+    "description": "Discover your perfect winter hair color based on your preferences and personality!",
+    "questions": [
+      {
+        "question": "Which season do you enjoy the most?",
+        "options": {
+          "A": {
+            "text": "Winter Wonderland",
+            "points": 1
+          },
+          "B": {
+            "text": "Spring Awakening",
+            "points": 2
+          },
+          "C": {
+            "text": "Summer Fun",
+            "points": 3
+          },
+          "D": {
+            "text": "Autumn Bliss",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How would you describe your fashion style?",
+        "options": {
+          "A": {
+            "text": "Classic and Timeless",
+            "points": 4
+          },
+          "B": {
+            "text": "Boho and Free-spirited",
+            "points": 2
+          },
+          "C": {
+            "text": "Edgy and Trendy",
+            "points": 3
+          },
+          "D": {
+            "text": "Casual and Relaxed",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What is your favorite winter activity?",
+        "options": {
+          "A": {
+            "text": "Skiing/Snowboarding",
+            "points": 4
+          },
+          "B": {
+            "text": "Building Snowmen",
+            "points": 2
+          },
+          "C": {
+            "text": "Drinking Hot Cocoa by the Fireplace",
+            "points": 1
+          },
+          "D": {
+            "text": "Curling up with a Book",
+            "points": 3
+          }
+        }
+      },
+      {
+        "question": "Which color family do you prefer?",
+        "options": {
+          "A": {
+            "text": "Cool Tones (Blues, Purples, Greens)",
+            "points": 4
+          },
+          "B": {
+            "text": "Warm Tones (Reds, Oranges, Yellows)",
+            "points": 3
+          },
+          "C": {
+            "text": "Neutral Tones (Browns, Beiges, Creams)",
+            "points": 2
+          },
+          "D": {
+            "text": "Pastel Tones (Pinks, Lilacs, Mints)",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What is your hair length?",
+        "options": {
+          "A": {
+            "text": "Short",
+            "points": 3
+          },
+          "B": {
+            "text": "Medium",
+            "points": 2
+          },
+          "C": {
+            "text": "Long",
+            "points": 4
+          },
+          "D": {
+            "text": "I like to switch it up!",
+            "points": 1
+          }
+        }
+      }
+    ],
+    "results": {
+      "Winter Ice Queen": {
+        "description": "Your cool and sophisticated personality shines through with icy blonde or silver hair.",
+        "range": [
+          5,
+          8
+        ]
+      },
+      "Cozy Cinnamon Spice": {
+        "description": "You love embracing warmth and comfort, making a fiery red or warm brown your perfect winter hair color.",
+        "range": [
+          9,
+          12
+        ]
+      },
+      "Ethereal Frost": {
+        "description": "Your dreamy and whimsical nature matches perfectly with soft pastel shades like lilac or mint.",
+        "range": [
+          13,
+          16
+        ]
+      },
+      "Timeless Elegance": {
+        "description": "Classic and always in style, a rich chocolate brown or deep burgundy complements your sophisticated personality.",
+        "range": [
+          17,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "5a0d5b11841bf74867602403"
+  },
+  "4f3d848f9d2f6889de3e28e0": {
+    "_id": "65bbf94c4ff251433f00ed97",
+    "title": "Discover Your Chocolate Preference",
+    "description": "Take this quiz to uncover your chocolate preferences and find out which type of chocolate dessert suits you best.",
+    "questions": [
+      {
+        "question": "How do you prefer your chocolate?",
+        "options": {
+          "A": {
+            "text": "Dark and intense",
+            "points": 3
+          },
+          "B": {
+            "text": "Milk chocolate",
+            "points": 1
+          },
+          "C": {
+            "text": "White chocolate",
+            "points": 2
+          },
+          "D": {
+            "text": "I like all kinds!",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How often do you indulge in chocolate desserts?",
+        "options": {
+          "A": {
+            "text": "Every day",
+            "points": 4
+          },
+          "B": {
+            "text": "A few times a week",
+            "points": 3
+          },
+          "C": {
+            "text": "Occasionally",
+            "points": 2
+          },
+          "D": {
+            "text": "Rarely",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What texture do you prefer in a chocolate dessert?",
+        "options": {
+          "A": {
+            "text": "Smooth and creamy",
+            "points": 4
+          },
+          "B": {
+            "text": "Crunchy",
+            "points": 2
+          },
+          "C": {
+            "text": "Soft and gooey",
+            "points": 3
+          },
+          "D": {
+            "text": "I love them all!",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What's your favorite chocolate dessert?",
+        "options": {
+          "A": {
+            "text": "Chocolate cake",
+            "points": 3
+          },
+          "B": {
+            "text": "Chocolate mousse",
+            "points": 4
+          },
+          "C": {
+            "text": "Chocolate cookies",
+            "points": 2
+          },
+          "D": {
+            "text": "Chocolate brownies",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "How adventurous are you when it comes to trying new chocolate flavors?",
+        "options": {
+          "A": {
+            "text": "I love trying exotic flavors",
+            "points": 4
+          },
+          "B": {
+            "text": "I prefer sticking to classic flavors",
+            "points": 1
+          },
+          "C": {
+            "text": "I'm open to trying new flavors occasionally",
+            "points": 3
+          },
+          "D": {
+            "text": "I'm not really adventurous with chocolate",
+            "points": 2
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Chocoholic Enthusiast": {
+        "description": "You're a true chocolate lover who enjoys indulging in rich and intense chocolate desserts. Dark chocolate is your go-to choice. Keep exploring different flavors to satisfy your chocolate cravings.",
+        "range": [
+          16,
+          20
+        ]
+      },
+      "The Sweet Tooth": {
+        "description": "You have a soft spot for all things sweet, especially milk chocolate. Your ideal chocolate dessert is smooth, creamy, and comforting. Don't be afraid to treat yourself to a chocolate delight.",
+        "range": [
+          11,
+          15
+        ]
+      },
+      "The White Chocolate Lover": {
+        "description": "You prefer the delicate and creamy taste of white chocolate. Your chocolate desserts are light and elegant with a touch of sweetness. Embrace your love for white chocolate and enjoy its unique flavors.",
+        "range": [
+          6,
+          10
+        ]
+      },
+      "The Chocolate Explorer": {
+        "description": "You have an adventurous palate and are not afraid to try new and exotic flavors. From dark to milk to white chocolate, you appreciate them all. Keep exploring and discovering new chocolate delights.",
+        "range": [
+          1,
+          5
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "4f3d848f9d2f6889de3e28e0"
+  },
+  "51e045ea37cf9c55c94a88af": {
+    "_id": "65bbf95a4ff251433f010752",
+    "title": "Discover Your Inner Fashionista",
+    "description": "Answer these questions to find out your fashion personality and discover if you have a flair for style like Victoria Beckham.",
+    "questions": [
+      {
+        "question": "What is your go-to outfit for a night out?",
+        "options": {
+          "A": {
+            "text": "A little black dress with killer heels",
+            "points": 1
+          },
+          "B": {
+            "text": "Leather jacket, jeans, and ankle boots",
+            "points": 2
+          },
+          "C": {
+            "text": "A chic jumpsuit with statement accessories",
+            "points": 3
+          },
+          "D": {
+            "text": "A trendy crop top and high-waisted skirt",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which fashion trend would you be most likely to try?",
+        "options": {
+          "A": {
+            "text": "Animal print",
+            "points": 2
+          },
+          "B": {
+            "text": "Neon colors",
+            "points": 3
+          },
+          "C": {
+            "text": "Oversized blazers",
+            "points": 1
+          },
+          "D": {
+            "text": "Athleisure",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How would you describe your everyday style?",
+        "options": {
+          "A": {
+            "text": "Classic and timeless",
+            "points": 1
+          },
+          "B": {
+            "text": "Edgy and experimental",
+            "points": 4
+          },
+          "C": {
+            "text": "Effortlessly chic",
+            "points": 2
+          },
+          "D": {
+            "text": "Casual and comfortable",
+            "points": 3
+          }
+        }
+      },
+      {
+        "question": "What do you prioritize when choosing an outfit?",
+        "options": {
+          "A": {
+            "text": "Comfort",
+            "points": 3
+          },
+          "B": {
+            "text": "Style",
+            "points": 1
+          },
+          "C": {
+            "text": "Versatility",
+            "points": 2
+          },
+          "D": {
+            "text": "Trendiness",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which celebrity's style do you admire the most?",
+        "options": {
+          "A": {
+            "text": "Audrey Hepburn",
+            "points": 1
+          },
+          "B": {
+            "text": "Rihanna",
+            "points": 4
+          },
+          "C": {
+            "text": "Kate Middleton",
+            "points": 2
+          },
+          "D": {
+            "text": "Zendaya",
+            "points": 3
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Classic Chic": {
+        "description": "You appreciate timeless elegance and prefer to stick to classic pieces that never go out of style.",
+        "range": [
+          5,
+          7
+        ]
+      },
+      "The Trendsetter": {
+        "description": "You have a bold and adventurous fashion sense. You're not afraid to experiment with the latest trends and make a statement.",
+        "range": [
+          8,
+          10
+        ]
+      },
+      "The Effortlessly Chic": {
+        "description": "Your style is effortlessly cool and laid-back. You have a knack for putting together simple yet stylish outfits.",
+        "range": [
+          11,
+          13
+        ]
+      },
+      "The Fashion Chameleon": {
+        "description": "You love to switch up your style and stay ahead of the fashion game. You're constantly inspired by different celebrity looks.",
+        "range": [
+          14,
+          16
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "51e045ea37cf9c55c94a88af"
+  },
+  "51b84f31d6fef90fc5a69b7e": {
+    "_id": "65bbf9914ff251433f01566f",
+    "title": "Discover Your Perfect Nursery Color Scheme",
+    "description": "Take this quiz to find out which trendy nursery color scheme suits your style and preferences best. Choose the option that resonates most with you for each question, and we'll reveal your perfect color scheme at the end.",
+    "questions": [
+      {
+        "question": "What is your favorite color?",
+        "options": {
+          "A": {
+            "text": "Soft Pastels",
+            "points": 1
+          },
+          "B": {
+            "text": "Bold and Bright",
+            "points": 2
+          },
+          "C": {
+            "text": "Neutral Tones",
+            "points": 3
+          },
+          "D": {
+            "text": "Earthy Hues",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What kind of atmosphere do you want to create in the nursery?",
+        "options": {
+          "A": {
+            "text": "Calm and Serene",
+            "points": 1
+          },
+          "B": {
+            "text": "Energetic and Fun",
+            "points": 2
+          },
+          "C": {
+            "text": "Sophisticated and Elegant",
+            "points": 3
+          },
+          "D": {
+            "text": "Cozy and Warm",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which pattern do you prefer?",
+        "options": {
+          "A": {
+            "text": "Polka Dots",
+            "points": 1
+          },
+          "B": {
+            "text": "Chevron",
+            "points": 2
+          },
+          "C": {
+            "text": "Stripes",
+            "points": 3
+          },
+          "D": {
+            "text": "Floral",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What is your favorite theme for the nursery?",
+        "options": {
+          "A": {
+            "text": "Whimsical Animals",
+            "points": 1
+          },
+          "B": {
+            "text": "Outer Space",
+            "points": 2
+          },
+          "C": {
+            "text": "Vintage",
+            "points": 3
+          },
+          "D": {
+            "text": "Nature-Inspired",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How do you want the nursery to feel?",
+        "options": {
+          "A": {
+            "text": "Airy and Light",
+            "points": 1
+          },
+          "B": {
+            "text": "Vibrant and Playful",
+            "points": 2
+          },
+          "C": {
+            "text": "Chic and Modern",
+            "points": 3
+          },
+          "D": {
+            "text": "Relaxing and Cozy",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "Soft Pastels Dream": {
+        "description": "Your nursery will be a dreamy haven with soft pastel shades and a serene atmosphere.",
+        "range": [
+          5,
+          7
+        ]
+      },
+      "Bold and Bright Burst": {
+        "description": "Your nursery will be vibrant and energetic with bold and bright colors that create a playful environment.",
+        "range": [
+          8,
+          10
+        ]
+      },
+      "Neutral Tones Oasis": {
+        "description": "Your nursery will exude elegance and sophistication with neutral tones and a modern touch.",
+        "range": [
+          11,
+          13
+        ]
+      },
+      "Earthy Hues Retreat": {
+        "description": "Your nursery will feel warm and cozy with earthy hues that bring a touch of nature indoors.",
+        "range": [
+          14,
+          16
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "51b84f31d6fef90fc5a69b7e"
+  },
+  "53268d09a46845ecf50a335a": {
+    "_id": "65bbf99f4ff251433f015cf5",
+    "title": "Which App is Perfect for You?",
+    "description": "Discover the perfect app for your interests and needs with this fun quiz! Answer the following questions to find out which app you should have on your phone.",
+    "questions": [
+      {
+        "question": "What is your favorite type of social media platform?",
+        "options": {
+          "A": {
+            "text": "Instagram",
+            "points": 1
+          },
+          "B": {
+            "text": "Snapchat",
+            "points": 2
+          },
+          "C": {
+            "text": "TikTok",
+            "points": 3
+          },
+          "D": {
+            "text": "Twitter",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Choose an activity you enjoy the most:",
+        "options": {
+          "A": {
+            "text": "Taking photos",
+            "points": 1
+          },
+          "B": {
+            "text": "Creating funny videos",
+            "points": 2
+          },
+          "C": {
+            "text": "Dancing and lip-syncing",
+            "points": 3
+          },
+          "D": {
+            "text": "Sharing thoughts and opinions",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What type of content do you like to consume the most?",
+        "options": {
+          "A": {
+            "text": "Fashion and lifestyle",
+            "points": 1
+          },
+          "B": {
+            "text": "Entertainment and gossip",
+            "points": 2
+          },
+          "C": {
+            "text": "Comedy and challenges",
+            "points": 3
+          },
+          "D": {
+            "text": "News and current events",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How often do you like to interact with others online?",
+        "options": {
+          "A": {
+            "text": "Occasionally",
+            "points": 1
+          },
+          "B": {
+            "text": "Frequently",
+            "points": 2
+          },
+          "C": {
+            "text": "Constantly",
+            "points": 3
+          },
+          "D": {
+            "text": "Rarely",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What is the most important feature in an app for you?",
+        "options": {
+          "A": {
+            "text": "Stunning visuals",
+            "points": 1
+          },
+          "B": {
+            "text": "Fun and interactive features",
+            "points": 2
+          },
+          "C": {
+            "text": "Easy to navigate",
+            "points": 3
+          },
+          "D": {
+            "text": "Informative and educational",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Social Butterfly": {
+        "description": "You love staying connected with friends and sharing moments of your life. Instagram is the perfect app for you!",
+        "range": [
+          5,
+          8
+        ]
+      },
+      "The Entertainer": {
+        "description": "You enjoy creating and watching entertaining content. Snapchat is the perfect app for you!",
+        "range": [
+          9,
+          12
+        ]
+      },
+      "The TikTok Star": {
+        "description": "You love being creative and expressing yourself through dancing and lip-syncing. TikTok is the perfect app for you!",
+        "range": [
+          13,
+          16
+        ]
+      },
+      "The Opinionated News Junkie": {
+        "description": "You are interested in staying informed and sharing your thoughts and opinions. Twitter is the perfect app for you!",
+        "range": [
+          17,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "53268d09a46845ecf50a335a"
+  },
+  "519984099cc0031ea190125d": {
+    "_id": "65bbf9ae4ff251433f0172af",
+    "title": "Celebrity Parentage Quiz",
+    "description": "Find out which famous parent you would inherit your celebrity status from with this fun quiz! Answer these questions to unlock your hidden celebrity pedigree.",
+    "questions": [
+      {
+        "question": "Which parent would you choose to inherit your talent from?",
+        "options": {
+          "A": {
+            "text": "My mother",
+            "points": 1
+          },
+          "B": {
+            "text": "My father",
+            "points": 2
+          },
+          "C": {
+            "text": "Both",
+            "points": 3
+          },
+          "D": {
+            "text": "Neither",
+            "points": 0
+          }
+        }
+      },
+      {
+        "question": "What type of celebrity would you like to be known as?",
+        "options": {
+          "A": {
+            "text": "Actor/Actress",
+            "points": 2
+          },
+          "B": {
+            "text": "Musician",
+            "points": 3
+          },
+          "C": {
+            "text": "Model",
+            "points": 1
+          },
+          "D": {
+            "text": "Social media influencer",
+            "points": 0
+          }
+        }
+      },
+      {
+        "question": "Which celebrity parent would you most like to have?",
+        "options": {
+          "A": {
+            "text": "Will Smith",
+            "points": 3
+          },
+          "B": {
+            "text": "Beyoncé",
+            "points": 2
+          },
+          "C": {
+            "text": "Tom Hanks",
+            "points": 1
+          },
+          "D": {
+            "text": "Angelina Jolie",
+            "points": 0
+          }
+        }
+      },
+      {
+        "question": "What's your favorite activity to do in your free time?",
+        "options": {
+          "A": {
+            "text": "Go to parties and events",
+            "points": 3
+          },
+          "B": {
+            "text": "Read books or watch movies",
+            "points": 1
+          },
+          "C": {
+            "text": "Create content for social media",
+            "points": 0
+          },
+          "D": {
+            "text": "Spend time with family and friends",
+            "points": 2
+          }
+        }
+      },
+      {
+        "question": "What kind of career would you like to have?",
+        "options": {
+          "A": {
+            "text": "A-list actor/actress",
+            "points": 2
+          },
+          "B": {
+            "text": "International pop star",
+            "points": 3
+          },
+          "C": {
+            "text": "Fashion icon",
+            "points": 1
+          },
+          "D": {
+            "text": "Entrepreneur",
+            "points": 0
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Superstar Heir": {
+        "description": "You have inherited your parent's incredible talent and charisma. Get ready to dazzle the world with your star power!",
+        "range": [
+          9,
+          12
+        ]
+      },
+      "The Rising Star": {
+        "description": "You have a great potential to become a famous celebrity. With the right opportunities and hard work, you'll make it to the top!",
+        "range": [
+          6,
+          8
+        ]
+      },
+      "The Celebrity Enthusiast": {
+        "description": "While you may not have been born into celebrity status, you have a deep admiration for the world of fame. Keep up with your pop culture knowledge!",
+        "range": [
+          3,
+          5
+        ]
+      },
+      "The Independent Spirit": {
+        "description": "You march to the beat of your own drum and value your independence. Fame may not be your ultimate goal, but you'll always stay true to yourself.",
+        "range": [
+          0,
+          2
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "519984099cc0031ea190125d"
+  },
+  "5263f67cd65908c77cf3ee5c": {
+    "_id": "65bbfa974ff251433f0239a4",
+    "title": "Discover Your Romantic Connection",
+    "description": "Discover if someone likes you romantically with this quiz. Choose the options that align with your experiences, and find out if there's a potential love connection.",
+    "questions": [
+      {
+        "question": "How often does this person initiate conversations with you?",
+        "options": {
+          "A": {
+            "text": "Rarely",
+            "points": 1
+          },
+          "B": {
+            "text": "Occasionally",
+            "points": 2
+          },
+          "C": {
+            "text": "Regularly",
+            "points": 3
+          },
+          "D": {
+            "text": "Frequently",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Do they make an effort to spend time with you?",
+        "options": {
+          "A": {
+            "text": "Never",
+            "points": 1
+          },
+          "B": {
+            "text": "Sometimes",
+            "points": 2
+          },
+          "C": {
+            "text": "Often",
+            "points": 3
+          },
+          "D": {
+            "text": "Always",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "When you're talking, do they maintain eye contact?",
+        "options": {
+          "A": {
+            "text": "Never",
+            "points": 1
+          },
+          "B": {
+            "text": "Sometimes",
+            "points": 2
+          },
+          "C": {
+            "text": "Often",
+            "points": 3
+          },
+          "D": {
+            "text": "Always",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Have they expressed romantic or flirty intentions?",
+        "options": {
+          "A": {
+            "text": "No",
+            "points": 1
+          },
+          "B": {
+            "text": "Maybe",
+            "points": 2
+          },
+          "C": {
+            "text": "A few times",
+            "points": 3
+          },
+          "D": {
+            "text": "Yes, frequently",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Do they remember small details about you?",
+        "options": {
+          "A": {
+            "text": "No",
+            "points": 1
+          },
+          "B": {
+            "text": "Some",
+            "points": 2
+          },
+          "C": {
+            "text": "A few",
+            "points": 3
+          },
+          "D": {
+            "text": "Many",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "Friend Zone": {
+        "description": "It seems like this person sees you more as a friend than a romantic interest. Don't lose hope, as friendships can sometimes evolve into something more.",
+        "range": [
+          5,
+          7
+        ]
+      },
+      "Potential Crush": {
+        "description": "There are signs that this person might be interested in you romantically. Keep an eye out for more clues and make a move when the timing feels right.",
+        "range": [
+          8,
+          12
+        ]
+      },
+      "Love Connection": {
+        "description": "Congratulations! It appears that there's a strong romantic connection between you and this person. Explore this bond and see where it leads.",
+        "range": [
+          13,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "5263f67cd65908c77cf3ee5c"
+  },
+  "4f3d84809d2f6889de3e27aa": {
+    "_id": "65bbfaa54ff251433f024b51",
+    "title": "Find Your Perfect Gift for Him",
+    "description": "Discover your preferences for gift ideas for the special men in your life with this quiz. Choose the options that best match your style and personality.",
+    "questions": [
+      {
+        "question": "What is his favorite hobby?",
+        "options": {
+          "A": {
+            "text": "Playing sports",
+            "points": 1
+          },
+          "B": {
+            "text": "Reading books",
+            "points": 2
+          },
+          "C": {
+            "text": "Cooking and grilling",
+            "points": 3
+          },
+          "D": {
+            "text": "Playing video games",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What kind of accessories does he like?",
+        "options": {
+          "A": {
+            "text": "Watches and bracelets",
+            "points": 1
+          },
+          "B": {
+            "text": "Ties and bowties",
+            "points": 2
+          },
+          "C": {
+            "text": "Wallets and bags",
+            "points": 3
+          },
+          "D": {
+            "text": "Hats and caps",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How would you describe his style?",
+        "options": {
+          "A": {
+            "text": "Classic and formal",
+            "points": 1
+          },
+          "B": {
+            "text": "Casual and laid-back",
+            "points": 2
+          },
+          "C": {
+            "text": "Trendy and fashionable",
+            "points": 3
+          },
+          "D": {
+            "text": "Sporty and athletic",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What is his favorite type of music?",
+        "options": {
+          "A": {
+            "text": "Rock and metal",
+            "points": 1
+          },
+          "B": {
+            "text": "Pop and hip-hop",
+            "points": 2
+          },
+          "C": {
+            "text": "Country and folk",
+            "points": 3
+          },
+          "D": {
+            "text": "Electronic and EDM",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How does he like to spend his weekends?",
+        "options": {
+          "A": {
+            "text": "Watching sports",
+            "points": 1
+          },
+          "B": {
+            "text": "Exploring nature",
+            "points": 2
+          },
+          "C": {
+            "text": "Trying new restaurants",
+            "points": 3
+          },
+          "D": {
+            "text": "Gaming or binge-watching shows",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Adventurous Explorer": {
+        "description": "You enjoy the great outdoors and seek thrilling experiences. Consider gift ideas like camping gear, hiking boots, or adventure travel packages.",
+        "range": [
+          5,
+          8
+        ]
+      },
+      "The Fashionable Trendsetter": {
+        "description": "You have an eye for style and love to stay on top of the latest fashion trends. Consider gift ideas like designer clothing, trendy accessories, or fashion magazine subscriptions.",
+        "range": [
+          9,
+          12
+        ]
+      },
+      "The Tech Enthusiast": {
+        "description": "You are always up to date with the latest technology and gadgets. Consider gift ideas like smartphones, smart home devices, or gaming consoles.",
+        "range": [
+          13,
+          16
+        ]
+      },
+      "The Bookworm": {
+        "description": "You have a passion for reading and enjoy immersing yourself in books. Consider gift ideas like best-selling novels, book club memberships, or e-book readers.",
+        "range": [
+          17,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "4f3d84809d2f6889de3e27aa"
+  },
+  "5145d970c7b4767655e1b33f": {
+    "_id": "65bbfab54ff251433f025ac7",
+    "title": "Discover Your Ideal 30th Birthday Celebration",
+    "description": "Are you struggling to decide how to celebrate your 30th birthday? Take this quiz to discover your ideal way to ring in the milestone!",
+    "questions": [
+      {
+        "question": "How would you prefer to celebrate your birthday?",
+        "options": {
+          "A": {
+            "text": "Throw a big party with all my friends and family",
+            "points": 1
+          },
+          "B": {
+            "text": "Have a small, intimate gathering with just a few close friends",
+            "points": 2
+          },
+          "C": {
+            "text": "Go on a solo adventure and explore a new destination",
+            "points": 3
+          },
+          "D": {
+            "text": "Take a relaxing spa day and pamper myself",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What type of theme appeals to you?",
+        "options": {
+          "A": {
+            "text": "Decades party (80s, 90s, etc.)",
+            "points": 4
+          },
+          "B": {
+            "text": "Formal black-tie affair",
+            "points": 3
+          },
+          "C": {
+            "text": "Casual backyard BBQ",
+            "points": 2
+          },
+          "D": {
+            "text": "Costume party",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "Do you prefer a laid-back or adventurous celebration?",
+        "options": {
+          "A": {
+            "text": "Laid-back and relaxed",
+            "points": 2
+          },
+          "B": {
+            "text": "Adventurous and exciting",
+            "points": 4
+          },
+          "C": {
+            "text": "A mix of both",
+            "points": 3
+          },
+          "D": {
+            "text": "I'm open to anything",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "Which of these activities sounds the most appealing?",
+        "options": {
+          "A": {
+            "text": "Dancing the night away at a club",
+            "points": 4
+          },
+          "B": {
+            "text": "Having a gourmet dinner at a fancy restaurant",
+            "points": 3
+          },
+          "C": {
+            "text": "Going on a road trip with friends",
+            "points": 2
+          },
+          "D": {
+            "text": "Having a movie night with popcorn and snacks",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What is your budget for your birthday celebration?",
+        "options": {
+          "A": {
+            "text": "Sky's the limit, money is no object",
+            "points": 4
+          },
+          "B": {
+            "text": "I'm willing to splurge a little",
+            "points": 3
+          },
+          "C": {
+            "text": "I have a moderate budget",
+            "points": 2
+          },
+          "D": {
+            "text": "I'm on a tight budget",
+            "points": 1
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Party Animal": {
+        "description": "You thrive in social settings and love being surrounded by friends and family. Your ideal celebration involves throwing a big party and dancing the night away!",
+        "range": [
+          5,
+          9
+        ]
+      },
+      "The Intimate Gatherer": {
+        "description": "You prefer a smaller, more intimate celebration with just a few close friends. Quality time and meaningful connections are your focus.",
+        "range": [
+          10,
+          13
+        ]
+      },
+      "The Adventurous Explorer": {
+        "description": "You have a thirst for adventure and enjoy exploring new destinations. Your ideal celebration involves going on a solo adventure and stepping out of your comfort zone.",
+        "range": [
+          14,
+          16
+        ]
+      },
+      "The Pampered Princess": {
+        "description": "You value self-care and relaxation. A peaceful spa day or pampering session is your idea of the perfect birthday celebration.",
+        "range": [
+          17,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "5145d970c7b4767655e1b33f"
+  },
+  "54e5c6fc29ee86141a4813f5": {
+    "_id": "65bbfd204ff251433f04b43f",
+    "title": "Discover Your Mardi Gras Personality",
+    "description": "Uncover your unique Mardi Gras personality by answering the following questions about your preferences and experiences during this festive celebration.",
+    "questions": [
+      {
+        "question": "What is your favorite part of Mardi Gras?",
+        "options": {
+          "A": {
+            "text": "Parades and floats",
+            "points": 2
+          },
+          "B": {
+            "text": "Collecting and wearing beads",
+            "points": 1
+          },
+          "C": {
+            "text": "Trying King Cake",
+            "points": 3
+          },
+          "D": {
+            "text": "Dancing and partying",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What is your go-to Mardi Gras outfit?",
+        "options": {
+          "A": {
+            "text": "Elaborate costume with feathers and sequins",
+            "points": 4
+          },
+          "B": {
+            "text": "Simple t-shirt with Mardi Gras logo",
+            "points": 2
+          },
+          "C": {
+            "text": "Mask and stylish clothing",
+            "points": 3
+          },
+          "D": {
+            "text": "Anything comfortable for walking and celebrating",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "How do you usually celebrate Mardi Gras?",
+        "options": {
+          "A": {
+            "text": "Attending multiple parties and events",
+            "points": 4
+          },
+          "B": {
+            "text": "Joining a parade and throwing beads",
+            "points": 3
+          },
+          "C": {
+            "text": "Hosting a small gathering with friends",
+            "points": 2
+          },
+          "D": {
+            "text": "Enjoying a quiet night at home",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What is your favorite Mardi Gras tradition?",
+        "options": {
+          "A": {
+            "text": "Mardi Gras parades with elaborate floats",
+            "points": 3
+          },
+          "B": {
+            "text": "Collecting as many beads as possible",
+            "points": 2
+          },
+          "C": {
+            "text": "Eating King Cake and finding the hidden baby",
+            "points": 4
+          },
+          "D": {
+            "text": "Dancing to live music in the streets",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "How would you describe your Mardi Gras spirit?",
+        "options": {
+          "A": {
+            "text": "Passionate and energetic",
+            "points": 4
+          },
+          "B": {
+            "text": "Fun-loving and playful",
+            "points": 3
+          },
+          "C": {
+            "text": "Adventurous and curious",
+            "points": 2
+          },
+          "D": {
+            "text": "Relaxed and laid-back",
+            "points": 1
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Mardi Gras Enthusiast": {
+        "description": "You live for Mardi Gras and embrace every aspect of this festive celebration. Your love for parades, beads, and King Cake knows no bounds.",
+        "range": [
+          12,
+          15
+        ]
+      },
+      "The Fun-loving Reveler": {
+        "description": "You enjoy the playful and lively atmosphere of Mardi Gras. Collecting beads and dancing to live music are some of your favorite activities during this festive time.",
+        "range": [
+          9,
+          11
+        ]
+      },
+      "The Curious Adventurer": {
+        "description": "You approach Mardi Gras with a sense of curiosity and adventure. You enjoy exploring the traditions and trying new experiences during this festive celebration.",
+        "range": [
+          6,
+          8
+        ]
+      },
+      "The Laid-back Observer": {
+        "description": "You appreciate the relaxed and laid-back nature of Mardi Gras. While you may not actively participate in all the festivities, you enjoy observing and taking in the spirit of the celebration.",
+        "range": [
+          4,
+          5
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "54e5c6fc29ee86141a4813f5"
+  },
+  "576c46ca0c4fe7921d8b45b1": {
+    "_id": "65bbfd2e4ff251433f04c653",
+    "title": "Which Viral Food Are You?",
+    "description": "Discover which viral food best represents your personality with this fun quiz! Choose your favorite options and find out which food broke the internet just like you.",
+    "questions": [
+      {
+        "question": "What is your go-to comfort food?",
+        "options": {
+          "A": {
+            "text": "Pizza",
+            "points": 1
+          },
+          "B": {
+            "text": "Ice Cream",
+            "points": 2
+          },
+          "C": {
+            "text": "Macaroni and Cheese",
+            "points": 3
+          },
+          "D": {
+            "text": "Sushi",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which cuisine do you enjoy the most?",
+        "options": {
+          "A": {
+            "text": "Italian",
+            "points": 1
+          },
+          "B": {
+            "text": "Mexican",
+            "points": 2
+          },
+          "C": {
+            "text": "Asian",
+            "points": 3
+          },
+          "D": {
+            "text": "Mediterranean",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What is your favorite food trend?",
+        "options": {
+          "A": {
+            "text": "Avocado Toast",
+            "points": 1
+          },
+          "B": {
+            "text": "Acai Bowls",
+            "points": 2
+          },
+          "C": {
+            "text": "Rainbow Bagels",
+            "points": 3
+          },
+          "D": {
+            "text": "Charcoal Ice Cream",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which food photo would you most likely double-tap on Instagram?",
+        "options": {
+          "A": {
+            "text": "Burger with a perfectly melted cheese slice",
+            "points": 1
+          },
+          "B": {
+            "text": "Colorful smoothie bowl topped with fresh fruits and granola",
+            "points": 2
+          },
+          "C": {
+            "text": "Giant cookie skillet with melting ice cream on top",
+            "points": 3
+          },
+          "D": {
+            "text": "Sushi roll with a beautiful presentation and vibrant colors",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What is your go-to guilty pleasure snack?",
+        "options": {
+          "A": {
+            "text": "Chips and dip",
+            "points": 1
+          },
+          "B": {
+            "text": "Chocolate bars",
+            "points": 2
+          },
+          "C": {
+            "text": "Cheese and crackers",
+            "points": 3
+          },
+          "D": {
+            "text": "Freshly baked pastries",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Pizza Perfectionist": {
+        "description": "You are a classic and reliable option, just like pizza. You bring comfort and satisfaction wherever you go.",
+        "range": [
+          5,
+          7
+        ]
+      },
+      "The Ice Cream Dreamer": {
+        "description": "You have a sweet and refreshing personality that melts hearts. People can't resist your charm.",
+        "range": [
+          8,
+          11
+        ]
+      },
+      "The Mac and Cheese Master": {
+        "description": "You are a cheesy and comforting presence in people's lives. Your warm and inviting personality draws others towards you.",
+        "range": [
+          12,
+          14
+        ]
+      },
+      "The Sushi Sensation": {
+        "description": "You have a sophisticated and elegant personality. Your attention to detail and refined taste make you stand out from the crowd.",
+        "range": [
+          15,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "576c46ca0c4fe7921d8b45b1"
+  },
+  "56d3b37d0c4fe7bb078b458d": {
+    "_id": "65bbfd404ff251433f04de6f",
+    "title": "Quiz: Discover Your Response Style",
+    "description": "This quiz will help you understand your preferred style of responding when someone asks for nudes. Choose the option that best resonates with you for each question, and discover your unique response style!",
+    "questions": [
+      {
+        "question": "How do you usually react when someone asks you for nudes?",
+        "options": {
+          "A": {
+            "text": "I immediately shut them down and firmly say no.",
+            "points": 4
+          },
+          "B": {
+            "text": "I try to change the subject or deflect their request.",
+            "points": 3
+          },
+          "C": {
+            "text": "I jokingly respond with a witty comeback to lighten the mood.",
+            "points": 2
+          },
+          "D": {
+            "text": "I simply ignore their request and move on.",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "Which response tactic feels most natural to you?",
+        "options": {
+          "A": {
+            "text": "Being straightforward and assertive.",
+            "points": 4
+          },
+          "B": {
+            "text": "Using humor and sarcasm to defuse the situation.",
+            "points": 3
+          },
+          "C": {
+            "text": "Avoiding the topic and changing the conversation.",
+            "points": 2
+          },
+          "D": {
+            "text": "Being indifferent and not engaging with their request.",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What is your preferred way of setting boundaries?",
+        "options": {
+          "A": {
+            "text": "Explicitly stating your boundaries without hesitation.",
+            "points": 4
+          },
+          "B": {
+            "text": "Using wit and humor to subtly communicate your boundaries.",
+            "points": 3
+          },
+          "C": {
+            "text": "Avoiding the topic and redirecting the conversation towards other interests.",
+            "points": 2
+          },
+          "D": {
+            "text": "Not feeling the need to explicitly set boundaries.",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "How do you handle persistent requests for nudes?",
+        "options": {
+          "A": {
+            "text": "Continuously assert your boundaries and firmly say no.",
+            "points": 4
+          },
+          "B": {
+            "text": "Playfully deflect their requests with clever comebacks.",
+            "points": 3
+          },
+          "C": {
+            "text": "Try to ignore or avoid their persistent requests.",
+            "points": 2
+          },
+          "D": {
+            "text": "Let their persistence slide and not give it much attention.",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What is your general attitude towards people who ask for nudes?",
+        "options": {
+          "A": {
+            "text": "They immediately lose respect and credibility.",
+            "points": 4
+          },
+          "B": {
+            "text": "They are met with humor and not taken seriously.",
+            "points": 3
+          },
+          "C": {
+            "text": "Their requests are dismissed, and the focus shifts to other topics.",
+            "points": 2
+          },
+          "D": {
+            "text": "Their requests are simply ignored, as if they were never made.",
+            "points": 1
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Assertive Defender": {
+        "description": "You are assertive and uncompromising when it comes to setting boundaries and saying no to requests for nudes. You make your position clear and firmly shut down any inappropriate advances.",
+        "range": [
+          18,
+          20
+        ]
+      },
+      "The Witty Diplomat": {
+        "description": "You use humor and wit to skillfully navigate away from requests for nudes. Your comebacks lighten the mood while effectively setting boundaries and deflecting unwanted advances.",
+        "range": [
+          13,
+          17
+        ]
+      },
+      "The Subtle Redirector": {
+        "description": "You avoid direct confrontation by subtly redirecting the conversation away from requests for nudes. You gracefully guide the interaction towards other topics of interest without explicitly setting boundaries.",
+        "range": [
+          8,
+          12
+        ]
+      },
+      "The Nonchalant Ignorer": {
+        "description": "You treat requests for nudes with indifference and nonchalance. You simply ignore the requests, not feeling the need to engage or set explicit boundaries.",
+        "range": [
+          5,
+          7
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "56d3b37d0c4fe7bb078b458d"
+  },
+  "565d41f70c4fe79b178b4e47": {
+    "_id": "65bbfd514ff251433f04f5f5",
+    "title": "Discover Your Ideal Date Night",
+    "description": "This quiz will help you discover your ideal date night based on your preferences and personality. Choose the option that resonates with you the most for each question!",
+    "questions": [
+      {
+        "question": "What type of activity do you enjoy the most?",
+        "options": {
+          "A": {
+            "text": "Going to a concert or live event",
+            "points": 1
+          },
+          "B": {
+            "text": "Having a cozy movie night at home",
+            "points": 2
+          },
+          "C": {
+            "text": "Exploring a new hiking trail or outdoor adventure",
+            "points": 3
+          },
+          "D": {
+            "text": "Trying out a new restaurant or cuisine",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What is your favorite movie genre?",
+        "options": {
+          "A": {
+            "text": "Action and adventure",
+            "points": 2
+          },
+          "B": {
+            "text": "Romantic comedy",
+            "points": 1
+          },
+          "C": {
+            "text": "Documentary or educational",
+            "points": 3
+          },
+          "D": {
+            "text": "Drama or suspense",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How do you typically spend your weekends?",
+        "options": {
+          "A": {
+            "text": "Meeting up with friends and socializing",
+            "points": 1
+          },
+          "B": {
+            "text": "Relaxing at home and enjoying some alone time",
+            "points": 2
+          },
+          "C": {
+            "text": "Engaging in outdoor activities or sports",
+            "points": 3
+          },
+          "D": {
+            "text": "Exploring new places or trying out new hobbies",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What type of cuisine do you enjoy the most?",
+        "options": {
+          "A": {
+            "text": "Italian or Mediterranean",
+            "points": 1
+          },
+          "B": {
+            "text": "Comfort food like burgers or pizza",
+            "points": 2
+          },
+          "C": {
+            "text": "Asian or sushi",
+            "points": 3
+          },
+          "D": {
+            "text": "Fine dining or gourmet",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How important is it for you to have intellectual conversations?",
+        "options": {
+          "A": {
+            "text": "Not important at all",
+            "points": 1
+          },
+          "B": {
+            "text": "Somewhat important",
+            "points": 2
+          },
+          "C": {
+            "text": "Very important",
+            "points": 3
+          },
+          "D": {
+            "text": "Crucial for a meaningful connection",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Adventurous Explorer": {
+        "description": "You enjoy the thrill of outdoor activities and exploring new places. Your ideal date night would involve an adventurous hike or trying out an exciting outdoor activity.",
+        "range": [
+          5,
+          7
+        ]
+      },
+      "The Cozy Homebody": {
+        "description": "You prefer spending quality time at home with your partner. A cozy movie night or cooking a nice meal together would be your ideal date night.",
+        "range": [
+          8,
+          10
+        ]
+      },
+      "The Social Butterfly": {
+        "description": "You love meeting new people and socializing. Going to a concert or a lively event where you can connect with others would be your ideal date night.",
+        "range": [
+          11,
+          13
+        ]
+      },
+      "The Culinary Enthusiast": {
+        "description": "You appreciate good food and enjoy trying out new cuisines. Going to a fancy restaurant or cooking an elaborate meal together would be your ideal date night.",
+        "range": [
+          14,
+          16
+        ]
+      },
+      "The Intellectual Conversationalist": {
+        "description": "You thrive on intellectual stimulation and meaningful conversations. A date night involving deep discussions or attending a thought-provoking event would be your ideal choice.",
+        "range": [
+          17,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "565d41f70c4fe79b178b4e47"
+  },
+  "537036c9aab5a3eb796dcd49": {
+    "_id": "65bbfd614ff251433f050dd3",
+    "title": "Discover Your Musical Mood",
+    "description": "Take this quiz to find out which piece of music suits your current mood best!",
+    "questions": [
+      {
+        "question": "How are you feeling right now?",
+        "options": {
+          "A": {
+            "text": "Energized and motivated",
+            "points": 1
+          },
+          "B": {
+            "text": "Relaxed and calm",
+            "points": 2
+          },
+          "C": {
+            "text": "Sad and melancholic",
+            "points": 3
+          },
+          "D": {
+            "text": "Excited and adventurous",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What type of music do you usually listen to?",
+        "options": {
+          "A": {
+            "text": "Pop and upbeat songs",
+            "points": 4
+          },
+          "B": {
+            "text": "Classical and instrumental",
+            "points": 2
+          },
+          "C": {
+            "text": "Slow and emotional ballads",
+            "points": 3
+          },
+          "D": {
+            "text": "Rock and alternative",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "How do you want to feel after listening to a piece of music?",
+        "options": {
+          "A": {
+            "text": "Motivated and inspired",
+            "points": 1
+          },
+          "B": {
+            "text": "Peaceful and serene",
+            "points": 2
+          },
+          "C": {
+            "text": "Moved and reflective",
+            "points": 3
+          },
+          "D": {
+            "text": "Energetic and pumped up",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What kind of lyrics do you prefer in a song?",
+        "options": {
+          "A": {
+            "text": "Uplifting and positive",
+            "points": 1
+          },
+          "B": {
+            "text": "None or minimal lyrics",
+            "points": 2
+          },
+          "C": {
+            "text": "Heartfelt and emotional",
+            "points": 3
+          },
+          "D": {
+            "text": "Edgy and rebellious",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which instrument do you find most appealing?",
+        "options": {
+          "A": {
+            "text": "Electric guitar",
+            "points": 4
+          },
+          "B": {
+            "text": "Piano",
+            "points": 2
+          },
+          "C": {
+            "text": "Violin",
+            "points": 3
+          },
+          "D": {
+            "text": "Drums",
+            "points": 1
+          }
+        }
+      }
+    ],
+    "results": {
+      "Relaxed and Calm": {
+        "description": "You prefer soothing and tranquil music that helps you unwind and de-stress.",
+        "range": [
+          5,
+          7
+        ]
+      },
+      "Energized and Motivated": {
+        "description": "You enjoy energetic and upbeat music that pumps you up and keeps you motivated.",
+        "range": [
+          8,
+          10
+        ]
+      },
+      "Sad and Melancholic": {
+        "description": "You connect with emotional and introspective music that reflects your inner feelings.",
+        "range": [
+          11,
+          13
+        ]
+      },
+      "Excited and Adventurous": {
+        "description": "You thrive on adventurous and high-energy music that fills you with excitement and adrenaline.",
+        "range": [
+          14,
+          16
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "537036c9aab5a3eb796dcd49"
+  },
+  "4f3d84f79d2f6889de3e2faf": {
+    "_id": "65bbfd6e4ff251433f051eef",
+    "title": "Celebrity STD Quiz",
+    "description": "Discover which celebrity you have the most in common with when it comes to their reported STD status. Answer the following questions to find out!",
+    "questions": [
+      {
+        "question": "What is your ideal celebrity crush?",
+        "options": {
+          "A": {
+            "text": "Leonardo DiCaprio",
+            "points": 1
+          },
+          "B": {
+            "text": "Jennifer Aniston",
+            "points": 2
+          },
+          "C": {
+            "text": "Chris Hemsworth",
+            "points": 3
+          },
+          "D": {
+            "text": "Scarlett Johansson",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What is your preferred vacation destination?",
+        "options": {
+          "A": {
+            "text": "Tropical beach",
+            "points": 2
+          },
+          "B": {
+            "text": "Mountain retreat",
+            "points": 1
+          },
+          "C": {
+            "text": "City exploration",
+            "points": 3
+          },
+          "D": {
+            "text": "European countryside",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What is your favorite type of music?",
+        "options": {
+          "A": {
+            "text": "Pop",
+            "points": 1
+          },
+          "B": {
+            "text": "Rock",
+            "points": 2
+          },
+          "C": {
+            "text": "Hip Hop",
+            "points": 3
+          },
+          "D": {
+            "text": "Classical",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What is your go-to workout routine?",
+        "options": {
+          "A": {
+            "text": "Yoga",
+            "points": 1
+          },
+          "B": {
+            "text": "Weightlifting",
+            "points": 2
+          },
+          "C": {
+            "text": "Running",
+            "points": 3
+          },
+          "D": {
+            "text": "Pilates",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What is your favorite type of food?",
+        "options": {
+          "A": {
+            "text": "Pizza",
+            "points": 1
+          },
+          "B": {
+            "text": "Sushi",
+            "points": 2
+          },
+          "C": {
+            "text": "Mexican",
+            "points": 3
+          },
+          "D": {
+            "text": "Italian",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Adventure Seeker": {
+        "description": "You love living life on the edge and trying new things. Just like these celebrities, you're not afraid to take risks.",
+        "range": [
+          5,
+          7
+        ]
+      },
+      "The Health Enthusiast": {
+        "description": "You prioritize your health and fitness and strive to maintain a clean lifestyle.",
+        "range": [
+          8,
+          10
+        ]
+      },
+      "The Culture Connoisseur": {
+        "description": "You have a deep appreciation for the arts, music, and world travel.",
+        "range": [
+          11,
+          13
+        ]
+      },
+      "The Epicurean": {
+        "description": "You have a refined taste in food, seeking out the best flavors and dining experiences.",
+        "range": [
+          14,
+          15
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "4f3d84f79d2f6889de3e2faf"
+  },
+  "5384d72caab5a3eb7970201e": {
+    "_id": "65bbfd7d4ff251433f053914",
+    "title": "Discover Your Forest Personality",
+    "description": "Take this quiz to discover which type of forest personality you have based on your preferences and knowledge about forests.",
+    "questions": [
+      {
+        "question": "What is your favorite outdoor activity?",
+        "options": {
+          "A": {
+            "text": "Hiking",
+            "points": 2
+          },
+          "B": {
+            "text": "Camping",
+            "points": 3
+          },
+          "C": {
+            "text": "Bird-watching",
+            "points": 1
+          },
+          "D": {
+            "text": "Picnicking",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which season do you enjoy the most?",
+        "options": {
+          "A": {
+            "text": "Spring",
+            "points": 3
+          },
+          "B": {
+            "text": "Summer",
+            "points": 4
+          },
+          "C": {
+            "text": "Autumn",
+            "points": 1
+          },
+          "D": {
+            "text": "Winter",
+            "points": 2
+          }
+        }
+      },
+      {
+        "question": "What is your favorite type of tree?",
+        "options": {
+          "A": {
+            "text": "Oak",
+            "points": 2
+          },
+          "B": {
+            "text": "Pine",
+            "points": 3
+          },
+          "C": {
+            "text": "Redwood",
+            "points": 4
+          },
+          "D": {
+            "text": "Birch",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "How do you feel when you are in a forest?",
+        "options": {
+          "A": {
+            "text": "Relaxed",
+            "points": 4
+          },
+          "B": {
+            "text": "Energized",
+            "points": 3
+          },
+          "C": {
+            "text": "Connected to nature",
+            "points": 2
+          },
+          "D": {
+            "text": "Peaceful",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What is your favorite forest animal?",
+        "options": {
+          "A": {
+            "text": "Deer",
+            "points": 2
+          },
+          "B": {
+            "text": "Wolf",
+            "points": 3
+          },
+          "C": {
+            "text": "Owl",
+            "points": 1
+          },
+          "D": {
+            "text": "Squirrel",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Adventurous Explorer": {
+        "description": "You love to explore new trails and discover hidden gems in the forest. Your sense of adventure is always high!",
+        "range": [
+          5,
+          8
+        ]
+      },
+      "The Nature Lover": {
+        "description": "You have a deep appreciation for the beauty of nature and enjoy spending time in forests to connect with the wilderness.",
+        "range": [
+          9,
+          12
+        ]
+      },
+      "The Tranquil Seeker": {
+        "description": "You find solace in the peacefulness of the forest and enjoy the calming effect it has on your mind. It's your sanctuary.",
+        "range": [
+          13,
+          16
+        ]
+      },
+      "The Forest Enthusiast": {
+        "description": "Forests are your passion! You know all about different trees, animals, and the importance of forests to the planet.",
+        "range": [
+          17,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "5384d72caab5a3eb7970201e"
+  },
+  "52ef84c1a46845ecf50a2c39": {
+    "_id": "65bbfd8e4ff251433f054f22",
+    "title": "Discover Your Ideal Valentine's Day Celebration",
+    "description": "This quiz will help you discover your ideal way to celebrate Valentine's Day without spending money. Choose the option that resonates with you the most for each question and find out your perfect Valentine's Day celebration!",
+    "questions": [
+      {
+        "question": "What is your ideal way of spending time with your partner?",
+        "options": {
+          "A": {
+            "text": "Cooking a romantic dinner together",
+            "points": 1
+          },
+          "B": {
+            "text": "Cuddling on the couch and watching a movie",
+            "points": 2
+          },
+          "C": {
+            "text": "Going for a long walk and enjoying nature",
+            "points": 3
+          },
+          "D": {
+            "text": "Having a deep conversation about life and dreams",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What type of activities do you enjoy the most?",
+        "options": {
+          "A": {
+            "text": "Creative activities like painting or crafting",
+            "points": 2
+          },
+          "B": {
+            "text": "Gaming or playing board games",
+            "points": 3
+          },
+          "C": {
+            "text": "Outdoor activities like hiking or gardening",
+            "points": 4
+          },
+          "D": {
+            "text": "Intellectual activities like reading or solving puzzles",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What is your favorite way to show love and affection?",
+        "options": {
+          "A": {
+            "text": "Giving small gifts or surprises",
+            "points": 3
+          },
+          "B": {
+            "text": "Physical touch and hugs",
+            "points": 2
+          },
+          "C": {
+            "text": "Acts of service and helping out",
+            "points": 4
+          },
+          "D": {
+            "text": "Words of affirmation and compliments",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "How do you like to relax and unwind?",
+        "options": {
+          "A": {
+            "text": "Taking a bubble bath and pampering myself",
+            "points": 2
+          },
+          "B": {
+            "text": "Listening to music and dancing around",
+            "points": 3
+          },
+          "C": {
+            "text": "Practicing mindfulness and meditation",
+            "points": 4
+          },
+          "D": {
+            "text": "Curling up with a good book or watching a movie",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What is your idea of a perfect date?",
+        "options": {
+          "A": {
+            "text": "Having a romantic picnic in the park",
+            "points": 4
+          },
+          "B": {
+            "text": "Going on a spontaneous adventure",
+            "points": 3
+          },
+          "C": {
+            "text": "Exploring a new museum or art gallery",
+            "points": 1
+          },
+          "D": {
+            "text": "Having a cozy candlelit dinner at home",
+            "points": 2
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Adventurous Soul": {
+        "description": "You love spontaneity and enjoy trying new things. Your ideal Valentine's Day celebration involves going on a spontaneous adventure and creating unforgettable memories together.",
+        "range": [
+          15,
+          19
+        ]
+      },
+      "The Creative Genius": {
+        "description": "You have a knack for creativity and enjoy expressing yourself through art. Your perfect Valentine's Day celebration involves engaging in creative activities like painting or crafting with your partner.",
+        "range": [
+          10,
+          14
+        ]
+      },
+      "The Nature Lover": {
+        "description": "You find solace and joy in nature. Your ideal Valentine's Day celebration involves going for a long walk and enjoying the beauty of the natural world with your partner.",
+        "range": [
+          7,
+          9
+        ]
+      },
+      "The Romantic at Heart": {
+        "description": "You appreciate romance and love traditional gestures of affection. Your perfect Valentine's Day celebration involves a romantic picnic in the park or a cozy candlelit dinner at home.",
+        "range": [
+          4,
+          6
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "52ef84c1a46845ecf50a2c39"
+  },
+  "5132107bf5115acf79118ed3": {
+    "_id": "65bbfd9e4ff251433f05676c",
+    "title": "Tattoo Styles Quiz",
+    "description": "Discover your ideal tattoo style based on your preferences and personality. Choose the option that resonates with you the most for each question!",
+    "questions": [
+      {
+        "question": "Which of these words best describes you?",
+        "options": {
+          "A": {
+            "text": "Adventurous",
+            "points": 1
+          },
+          "B": {
+            "text": "Creative",
+            "points": 2
+          },
+          "C": {
+            "text": "Spiritual",
+            "points": 3
+          },
+          "D": {
+            "text": "Elegant",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What type of art do you appreciate the most?",
+        "options": {
+          "A": {
+            "text": "Street art",
+            "points": 1
+          },
+          "B": {
+            "text": "Abstract art",
+            "points": 2
+          },
+          "C": {
+            "text": "Mandalas and symbols",
+            "points": 3
+          },
+          "D": {
+            "text": "Classic paintings",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which animal do you feel the most connected to?",
+        "options": {
+          "A": {
+            "text": "Lion",
+            "points": 1
+          },
+          "B": {
+            "text": "Butterfly",
+            "points": 2
+          },
+          "C": {
+            "text": "Wolf",
+            "points": 3
+          },
+          "D": {
+            "text": "Peacock",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What is your favorite color?",
+        "options": {
+          "A": {
+            "text": "Red",
+            "points": 1
+          },
+          "B": {
+            "text": "Blue",
+            "points": 2
+          },
+          "C": {
+            "text": "Purple",
+            "points": 3
+          },
+          "D": {
+            "text": "Gold",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What is your preferred tattoo size?",
+        "options": {
+          "A": {
+            "text": "Small and discreet",
+            "points": 1
+          },
+          "B": {
+            "text": "Medium-sized",
+            "points": 2
+          },
+          "C": {
+            "text": "Large and intricate",
+            "points": 3
+          },
+          "D": {
+            "text": "I prefer multiple small tattoos",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Adventurous Explorer": {
+        "description": "You crave new experiences and seek adventure in everything you do. Your tattoo style should reflect your bold and daring spirit!",
+        "range": [
+          5,
+          7
+        ]
+      },
+      "The Creative Dreamer": {
+        "description": "You have a vibrant imagination and a passion for self-expression. Your tattoo style should be artistic and unique, just like you!",
+        "range": [
+          8,
+          11
+        ]
+      },
+      "The Spiritual Seeker": {
+        "description": "You have a deep connection to the spiritual realm and seek meaning in your life. Your tattoo style should incorporate mystical symbols and sacred patterns.",
+        "range": [
+          12,
+          15
+        ]
+      },
+      "The Elegant Enthusiast": {
+        "description": "You have a refined taste and appreciate beauty in all its forms. Your tattoo style should be elegant, sophisticated, and timeless.",
+        "range": [
+          16,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "5132107bf5115acf79118ed3"
+  },
+  "5608f3808ebea80ad973e75d": {
+    "_id": "65bbfdac4ff251433f057b17",
+    "title": "Discover Your Bulletin Board Style",
+    "description": "Take this quiz to discover your personal bulletin board style and get ideas for your next DIY project!",
+    "questions": [
+      {
+        "question": "What is your preferred color scheme?",
+        "options": {
+          "A": {
+            "text": "Bold and vibrant",
+            "points": 4
+          },
+          "B": {
+            "text": "Neutral and calming",
+            "points": 2
+          },
+          "C": {
+            "text": "Pastel and whimsical",
+            "points": 3
+          },
+          "D": {
+            "text": "Monochrome and sleek",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What type of materials do you prefer to use?",
+        "options": {
+          "A": {
+            "text": "Fabric and ribbons",
+            "points": 3
+          },
+          "B": {
+            "text": "Natural elements like flowers and leaves",
+            "points": 4
+          },
+          "C": {
+            "text": "Paper and stickers",
+            "points": 2
+          },
+          "D": {
+            "text": "Metal and magnets",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What is your organizational style?",
+        "options": {
+          "A": {
+            "text": "Minimalistic and clutter-free",
+            "points": 1
+          },
+          "B": {
+            "text": "Categorize and label everything",
+            "points": 3
+          },
+          "C": {
+            "text": "Functional and easy to access",
+            "points": 2
+          },
+          "D": {
+            "text": "Whimsical and artistic",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How often do you change the design of your bulletin board?",
+        "options": {
+          "A": {
+            "text": "Rarely, I like consistency",
+            "points": 1
+          },
+          "B": {
+            "text": "Occasionally, when inspiration strikes",
+            "points": 2
+          },
+          "C": {
+            "text": "Seasonally, to reflect the time of year",
+            "points": 4
+          },
+          "D": {
+            "text": "Frequently, I love trying new ideas",
+            "points": 3
+          }
+        }
+      },
+      {
+        "question": "What is your main goal for your bulletin board?",
+        "options": {
+          "A": {
+            "text": "To inspire and motivate",
+            "points": 4
+          },
+          "B": {
+            "text": "To stay organized and keep track of tasks",
+            "points": 3
+          },
+          "C": {
+            "text": "To showcase memories and personal achievements",
+            "points": 2
+          },
+          "D": {
+            "text": "To add a decorative touch to my space",
+            "points": 1
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Colorful Creator": {
+        "description": "Your bulletin boards are colorful and vibrant, reflecting your dynamic personality.",
+        "range": [
+          15,
+          20
+        ]
+      },
+      "The Nature Lover": {
+        "description": "Your bulletin boards incorporate elements from nature, bringing a sense of calm and serenity to your space.",
+        "range": [
+          11,
+          14
+        ]
+      },
+      "The Whimsical Dreamer": {
+        "description": "Your bulletin boards are a whimsical display of creativity and imagination.",
+        "range": [
+          8,
+          10
+        ]
+      },
+      "The Sleek Organizer": {
+        "description": "Your bulletin boards are sleek and minimalistic, keeping you organized without sacrificing style.",
+        "range": [
+          5,
+          7
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "5608f3808ebea80ad973e75d"
+  },
+  "5476c04f44835a24a212e22c": {
+    "_id": "65bbfdbc4ff251433f0590b2",
+    "title": "The Perfect Veggie Tray Quiz",
+    "description": "Are you a fan of veggie trays? Take this quiz to discover your perfect veggie tray based on your preferences and personality.",
+    "questions": [
+      {
+        "question": "Which vegetables do you prefer?",
+        "options": {
+          "A": {
+            "text": "Carrots",
+            "points": 1
+          },
+          "B": {
+            "text": "Broccoli",
+            "points": 2
+          },
+          "C": {
+            "text": "Cucumbers",
+            "points": 3
+          },
+          "D": {
+            "text": "Tomatoes",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How do you like your dip?",
+        "options": {
+          "A": {
+            "text": "Ranch",
+            "points": 3
+          },
+          "B": {
+            "text": "Hummus",
+            "points": 2
+          },
+          "C": {
+            "text": "Spinach and artichoke",
+            "points": 4
+          },
+          "D": {
+            "text": "Guacamole",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "Which additional toppings do you prefer?",
+        "options": {
+          "A": {
+            "text": "Cheese",
+            "points": 4
+          },
+          "B": {
+            "text": "Olives",
+            "points": 2
+          },
+          "C": {
+            "text": "Crackers",
+            "points": 3
+          },
+          "D": {
+            "text": "Nuts",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "How important is presentation to you?",
+        "options": {
+          "A": {
+            "text": "Extremely important",
+            "points": 4
+          },
+          "B": {
+            "text": "Somewhat important",
+            "points": 3
+          },
+          "C": {
+            "text": "Not important",
+            "points": 2
+          },
+          "D": {
+            "text": "I don't care",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What is your favorite color?",
+        "options": {
+          "A": {
+            "text": "Green",
+            "points": 3
+          },
+          "B": {
+            "text": "Orange",
+            "points": 2
+          },
+          "C": {
+            "text": "Red",
+            "points": 4
+          },
+          "D": {
+            "text": "Yellow",
+            "points": 1
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Classic Veggie Lover": {
+        "description": "You love the classic combination of carrots, broccoli, and ranch dip. Your veggie tray will be a hit at any occasion.",
+        "range": [
+          5,
+          8
+        ]
+      },
+      "The Adventurous Dip Master": {
+        "description": "You like to spice things up with unique dips like hummus and artichoke dip. Your veggie tray will be the talk of the party.",
+        "range": [
+          9,
+          12
+        ]
+      },
+      "The Gourmet Garnish Guru": {
+        "description": "You believe that presentation is everything. Your veggie tray will be a work of art with colorful toppings and creative display.",
+        "range": [
+          13,
+          16
+        ]
+      },
+      "The Simple Snacker": {
+        "description": "You prefer a no-frills veggie tray with minimal toppings. Your veggie tray will be simple yet satisfying.",
+        "range": [
+          17,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "5476c04f44835a24a212e22c"
+  },
+  "570da49c0c4fe7a67d8b459f": {
+    "_id": "65bbfdca4ff251433f05a2ee",
+    "title": "Discover Your Perfect Coming of Age Ceremony",
+    "description": "Find out which coming of age ceremony from around the world best suits your personality and desires with this fun quiz!",
+    "questions": [
+      {
+        "question": "What type of environment do you feel most connected to?",
+        "options": {
+          "A": {
+            "text": "Nature",
+            "points": 2
+          },
+          "B": {
+            "text": "City",
+            "points": 1
+          },
+          "C": {
+            "text": "Ocean",
+            "points": 3
+          },
+          "D": {
+            "text": "Mountains",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What kind of celebration excites you the most?",
+        "options": {
+          "A": {
+            "text": "Vibrant dancing and music",
+            "points": 3
+          },
+          "B": {
+            "text": "Intimate gathering with close family and friends",
+            "points": 2
+          },
+          "C": {
+            "text": "Colorful decorations and costumes",
+            "points": 4
+          },
+          "D": {
+            "text": "Grand ceremonial rituals",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "Which of the following virtues do you value the most?",
+        "options": {
+          "A": {
+            "text": "Wisdom",
+            "points": 2
+          },
+          "B": {
+            "text": "Courage",
+            "points": 4
+          },
+          "C": {
+            "text": "Connection",
+            "points": 1
+          },
+          "D": {
+            "text": "Balance",
+            "points": 3
+          }
+        }
+      },
+      {
+        "question": "How do you prefer to spend your free time?",
+        "options": {
+          "A": {
+            "text": "Exploring new places",
+            "points": 4
+          },
+          "B": {
+            "text": "Learning new skills",
+            "points": 2
+          },
+          "C": {
+            "text": "Engaging in artistic activities",
+            "points": 3
+          },
+          "D": {
+            "text": "Meditating and reflecting",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What does success mean to you?",
+        "options": {
+          "A": {
+            "text": "Making a positive impact on the world",
+            "points": 3
+          },
+          "B": {
+            "text": "Achieving personal goals and ambitions",
+            "points": 4
+          },
+          "C": {
+            "text": "Being surrounded by loved ones",
+            "points": 2
+          },
+          "D": {
+            "text": "Finding inner peace and contentment",
+            "points": 1
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Nature Lover": {
+        "description": "You are deeply connected to nature and prefer a serene coming of age ceremony surrounded by natural beauty.",
+        "range": [
+          5,
+          9
+        ]
+      },
+      "The Party Enthusiast": {
+        "description": "You thrive in vibrant social gatherings and would enjoy a coming of age ceremony filled with dancing, music, and joyful celebrations.",
+        "range": [
+          10,
+          13
+        ]
+      },
+      "The Culture Aficionado": {
+        "description": "You appreciate art, colors, and diversity. A coming of age ceremony with rich cultural rituals and costumes would be perfect for you.",
+        "range": [
+          14,
+          17
+        ]
+      },
+      "The Seeker of Wisdom": {
+        "description": "You value knowledge and spiritual growth. A contemplative coming of age ceremony focused on meditation and reflection would resonate with you.",
+        "range": [
+          18,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "570da49c0c4fe7a67d8b459f"
+  },
+  "4f3d86479d2f6889de3e4675": {
+    "_id": "65bbfdd74ff251433f05bca9",
+    "title": "Discover Your Teen Celebrity Persona",
+    "description": "Are you curious to know which teen celebrity you closely resemble? Take this quiz to find out your teen celebrity persona and discover if you have what it takes to be the next hottest teen star!",
+    "questions": [
+      {
+        "question": "Which activity would you enjoy most on a free day?",
+        "options": {
+          "A": {
+            "text": "Playing video games",
+            "points": 1
+          },
+          "B": {
+            "text": "Watching movies or TV shows",
+            "points": 2
+          },
+          "C": {
+            "text": "Going shopping",
+            "points": 3
+          },
+          "D": {
+            "text": "Hanging out with friends",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What is your favorite genre of music?",
+        "options": {
+          "A": {
+            "text": "Pop",
+            "points": 4
+          },
+          "B": {
+            "text": "Rock",
+            "points": 3
+          },
+          "C": {
+            "text": "Hip-hop/Rap",
+            "points": 2
+          },
+          "D": {
+            "text": "Indie/Alternative",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "Which social media platform do you use the most?",
+        "options": {
+          "A": {
+            "text": "Instagram",
+            "points": 3
+          },
+          "B": {
+            "text": "TikTok",
+            "points": 4
+          },
+          "C": {
+            "text": "Snapchat",
+            "points": 2
+          },
+          "D": {
+            "text": "Twitter",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What is your favorite fashion trend?",
+        "options": {
+          "A": {
+            "text": "Athleisure",
+            "points": 2
+          },
+          "B": {
+            "text": "Vintage",
+            "points": 1
+          },
+          "C": {
+            "text": "Streetwear",
+            "points": 3
+          },
+          "D": {
+            "text": "Boho/Bohemian",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which celebrity do you admire most?",
+        "options": {
+          "A": {
+            "text": "Zendaya",
+            "points": 4
+          },
+          "B": {
+            "text": "Billie Eilish",
+            "points": 3
+          },
+          "C": {
+            "text": "Timothée Chalamet",
+            "points": 2
+          },
+          "D": {
+            "text": "Marsai Martin",
+            "points": 1
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Social Media Sensation": {
+        "description": "You're always up to date with the latest trends and have a massive following on social media. Keep slaying the game!",
+        "range": [
+          8,
+          10
+        ]
+      },
+      "The Fashionista Star": {
+        "description": "You have an impeccable sense of style and can pull off any fashion trend. The red carpet is your catwalk!",
+        "range": [
+          6,
+          7
+        ]
+      },
+      "The Cool Rocker": {
+        "description": "You march to the beat of your own drum and have a rebellious streak. Keep rocking it out!",
+        "range": [
+          4,
+          5
+        ]
+      },
+      "The Rising Star": {
+        "description": "You have a natural talent and charisma that captivates everyone around you. The world is ready for your stardom!",
+        "range": [
+          2,
+          3
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "4f3d86479d2f6889de3e4675"
+  },
+  "4f3bb6859d2f6889de3d851f": {
+    "_id": "65bbfde64ff251433f05cf14",
+    "title": "Discover Your Hair Care Personality",
+    "description": "Find out your hair care personality and get tips on how to control oily hair with this fun quiz!",
+    "questions": [
+      {
+        "question": "How often do you wash your hair?",
+        "options": {
+          "A": {
+            "text": "Every day",
+            "points": 1
+          },
+          "B": {
+            "text": "Every 2-3 days",
+            "points": 2
+          },
+          "C": {
+            "text": "Once a week or less",
+            "points": 3
+          },
+          "D": {
+            "text": "I rarely wash my hair",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What type of shampoo do you usually use?",
+        "options": {
+          "A": {
+            "text": "Clarifying shampoo",
+            "points": 3
+          },
+          "B": {
+            "text": "Volumizing shampoo",
+            "points": 2
+          },
+          "C": {
+            "text": "Nourishing shampoo",
+            "points": 1
+          },
+          "D": {
+            "text": "Dry shampoo",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Do you use conditioner after shampooing?",
+        "options": {
+          "A": {
+            "text": "Yes, always",
+            "points": 1
+          },
+          "B": {
+            "text": "Sometimes",
+            "points": 2
+          },
+          "C": {
+            "text": "Rarely",
+            "points": 3
+          },
+          "D": {
+            "text": "Never",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How do you style your hair?",
+        "options": {
+          "A": {
+            "text": "Straighten or curl with heat tools",
+            "points": 3
+          },
+          "B": {
+            "text": "Air dry or towel dry",
+            "points": 2
+          },
+          "C": {
+            "text": "Use styling products like mousse or gel",
+            "points": 1
+          },
+          "D": {
+            "text": "I don't style my hair",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How often do you touch your hair?",
+        "options": {
+          "A": {
+            "text": "Constantly, I can't help it",
+            "points": 4
+          },
+          "B": {
+            "text": "Frequently",
+            "points": 3
+          },
+          "C": {
+            "text": "Occasionally",
+            "points": 2
+          },
+          "D": {
+            "text": "Rarely",
+            "points": 1
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Clean and Balanced Beaut": {
+        "description": "You have a good balance in your hair care routine and know how to control the oiliness.",
+        "range": [
+          5,
+          8
+        ]
+      },
+      "The Low Maintenance Legend": {
+        "description": "You prefer a simple hair care routine and don't let oily hair bother you.",
+        "range": [
+          9,
+          12
+        ]
+      },
+      "The Product Prodigy": {
+        "description": "You love trying new hair care products and enjoy experimenting with different styles.",
+        "range": [
+          13,
+          16
+        ]
+      },
+      "The Hands-Off Hero": {
+        "description": "You prefer to keep your hair natural and avoid excessive styling or touching.",
+        "range": [
+          17,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "4f3bb6859d2f6889de3d851f"
+  },
+  "53135582a46845ecf50a3098": {
+    "_id": "65bbfdf64ff251433f05e027",
+    "title": "Impress Your English Teacher",
+    "description": "Discover your ability to impress your English teacher with your choice of words in your essays.",
+    "questions": [
+      {
+        "question": "Which word would you use to describe a painting that depicts natural scenery?",
+        "options": {
+          "A": {
+            "text": "Bucolic",
+            "points": 2
+          },
+          "B": {
+            "text": "Gaudy",
+            "points": 0
+          },
+          "C": {
+            "text": "Melancholic",
+            "points": 1
+          },
+          "D": {
+            "text": "Ethereal",
+            "points": 3
+          }
+        }
+      },
+      {
+        "question": "What word would you use to describe a classic piece of literature that is known for its complexity?",
+        "options": {
+          "A": {
+            "text": "Simple",
+            "points": 0
+          },
+          "B": {
+            "text": "Profound",
+            "points": 2
+          },
+          "C": {
+            "text": "Trivial",
+            "points": 0
+          },
+          "D": {
+            "text": "Elaborate",
+            "points": 3
+          }
+        }
+      },
+      {
+        "question": "Which term would you use to describe someone who is extremely knowledgeable in a particular field?",
+        "options": {
+          "A": {
+            "text": "Ignorant",
+            "points": 0
+          },
+          "B": {
+            "text": "Naive",
+            "points": 0
+          },
+          "C": {
+            "text": "Erudite",
+            "points": 3
+          },
+          "D": {
+            "text": "Incompetent",
+            "points": 0
+          }
+        }
+      },
+      {
+        "question": "What word would you use to describe a scientific experiment that involves careful observation and analysis?",
+        "options": {
+          "A": {
+            "text": "Imprudent",
+            "points": 0
+          },
+          "B": {
+            "text": "Rigorous",
+            "points": 3
+          },
+          "C": {
+            "text": "Superficial",
+            "points": 0
+          },
+          "D": {
+            "text": "Inconsistent",
+            "points": 0
+          }
+        }
+      },
+      {
+        "question": "Which term would you use to describe someone who is able to express their thoughts and ideas effectively?",
+        "options": {
+          "A": {
+            "text": "Eloquent",
+            "points": 3
+          },
+          "B": {
+            "text": "Incoherent",
+            "points": 0
+          },
+          "C": {
+            "text": "Verbose",
+            "points": 1
+          },
+          "D": {
+            "text": "Mute",
+            "points": 0
+          }
+        }
+      }
+    ],
+    "results": {
+      "Vocabulary Virtuoso": {
+        "description": "Your essays are a linguistic delight, showcasing an extensive vocabulary and precise word choices.",
+        "range": [
+          9,
+          10
+        ]
+      },
+      "Literary Luminary": {
+        "description": "Your essays delve into the depths of literature, utilizing words that capture the intricacies and themes of great works.",
+        "range": [
+          7,
+          8
+        ]
+      },
+      "Language Connoisseur": {
+        "description": "Your essays demonstrate an appreciation for language as you skillfully weave words to convey your ideas.",
+        "range": [
+          5,
+          6
+        ]
+      },
+      "Word Explorer": {
+        "description": "Your essays show glimpses of your ability to experiment and explore different words, but there is room for growth.",
+        "range": [
+          2,
+          4
+        ]
+      },
+      "Word Novice": {
+        "description": "Your essays would benefit from expanding your vocabulary and utilizing more varied and sophisticated words.",
+        "range": [
+          0,
+          1
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "53135582a46845ecf50a3098"
+  },
+  "52fe4b92a46845ecf50a2dff": {
+    "_id": "65bbfe054ff251433f05f09e",
+    "title": "Discover Your Love Language",
+    "description": "Take this quiz to uncover your love language and gain insights into your preferred ways of expressing and receiving love.",
+    "questions": [
+      {
+        "question": "What is your preferred way of receiving love?",
+        "options": {
+          "A": {
+            "text": "Words of affirmation",
+            "points": 1
+          },
+          "B": {
+            "text": "Quality time",
+            "points": 2
+          },
+          "C": {
+            "text": "Gifts",
+            "points": 3
+          },
+          "D": {
+            "text": "Physical touch",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How do you usually express love?",
+        "options": {
+          "A": {
+            "text": "Compliments and encouraging words",
+            "points": 1
+          },
+          "B": {
+            "text": "Spending quality time together",
+            "points": 2
+          },
+          "C": {
+            "text": "Giving thoughtful gifts",
+            "points": 3
+          },
+          "D": {
+            "text": "Physical affection",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What makes you feel most loved?",
+        "options": {
+          "A": {
+            "text": "Hearing kind words and affirmation",
+            "points": 1
+          },
+          "B": {
+            "text": "Having undivided attention and meaningful conversations",
+            "points": 2
+          },
+          "C": {
+            "text": "Receiving thoughtful presents",
+            "points": 3
+          },
+          "D": {
+            "text": "Being touched and held",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which gesture would make you feel loved in a relationship?",
+        "options": {
+          "A": {
+            "text": "Receiving heartfelt compliments",
+            "points": 1
+          },
+          "B": {
+            "text": "Spending quality time together without distractions",
+            "points": 2
+          },
+          "C": {
+            "text": "Receiving surprise gifts or gestures",
+            "points": 3
+          },
+          "D": {
+            "text": "Physical intimacy and affection",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What do you value most in a romantic relationship?",
+        "options": {
+          "A": {
+            "text": "Encouragement and verbal affirmation",
+            "points": 1
+          },
+          "B": {
+            "text": "Emotional connection and shared experiences",
+            "points": 2
+          },
+          "C": {
+            "text": "Thoughtfulness and surprises",
+            "points": 3
+          },
+          "D": {
+            "text": "Physical closeness and intimacy",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "Words of Affirmation Lover": {
+        "description": "You feel loved and appreciated when you receive compliments and kind words.",
+        "range": [
+          5,
+          7
+        ]
+      },
+      "Quality Time Enthusiast": {
+        "description": "You crave meaningful connections and undivided attention in your relationships.",
+        "range": [
+          8,
+          10
+        ]
+      },
+      "Gifts Admirer": {
+        "description": "The act of receiving thoughtful presents makes you feel truly loved.",
+        "range": [
+          11,
+          13
+        ]
+      },
+      "Physical Touch Romantic": {
+        "description": "Physical affection and intimate contact are essential to making you feel loved.",
+        "range": [
+          14,
+          16
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "52fe4b92a46845ecf50a2dff"
+  },
+  "5c7361b1841bf7167747a9a2": {
+    "_id": "65bbfe144ff251433f05ffc9",
+    "title": "Discover Your Me Time Preferences",
+    "description": "Take this quiz to discover your preferences for maximizing your me time.",
+    "questions": [
+      {
+        "question": "How do you prefer to spend your me time?",
+        "options": {
+          "A": {
+            "text": "Reading a book",
+            "points": 1
+          },
+          "B": {
+            "text": "Taking a long bath",
+            "points": 2
+          },
+          "C": {
+            "text": "Going for a walk in nature",
+            "points": 3
+          },
+          "D": {
+            "text": "Watching a movie or TV show",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What type of activity energizes you the most?",
+        "options": {
+          "A": {
+            "text": "Yoga or meditation",
+            "points": 4
+          },
+          "B": {
+            "text": "Trying out a new hobby",
+            "points": 3
+          },
+          "C": {
+            "text": "Listening to music",
+            "points": 2
+          },
+          "D": {
+            "text": "Having quiet time for reflection",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What is your ideal me time location?",
+        "options": {
+          "A": {
+            "text": "In a cozy coffee shop",
+            "points": 2
+          },
+          "B": {
+            "text": "At a park surrounded by nature",
+            "points": 3
+          },
+          "C": {
+            "text": "In the comfort of my own home",
+            "points": 1
+          },
+          "D": {
+            "text": "In a luxurious spa",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How important is social interaction during your me time?",
+        "options": {
+          "A": {
+            "text": "Not important at all",
+            "points": 1
+          },
+          "B": {
+            "text": "It's nice to have some interaction",
+            "points": 2
+          },
+          "C": {
+            "text": "I enjoy spending time with a close friend",
+            "points": 3
+          },
+          "D": {
+            "text": "I prefer to be completely alone",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What do you enjoy doing to pamper yourself?",
+        "options": {
+          "A": {
+            "text": "Getting a massage or spa treatment",
+            "points": 4
+          },
+          "B": {
+            "text": "Indulging in a delicious treat",
+            "points": 3
+          },
+          "C": {
+            "text": "Taking time to do a skincare routine",
+            "points": 2
+          },
+          "D": {
+            "text": "Curling up with a cozy blanket and a good movie",
+            "points": 1
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Serene Soul": {
+        "description": "Your me time is all about finding peace and tranquility. You prefer quiet activities that help you relax and recharge.",
+        "range": [
+          5,
+          10
+        ]
+      },
+      "The Adventurous Spirit": {
+        "description": "You love trying new things and exploring different hobbies during your me time. Adventure is your middle name!",
+        "range": [
+          11,
+          14
+        ]
+      },
+      "The Nature Enthusiast": {
+        "description": "Nature is where you find solace and rejuvenation. Spending time outdoors is a must for you during your me time.",
+        "range": [
+          15,
+          18
+        ]
+      },
+      "The Luxe Lover": {
+        "description": "You enjoy indulging in luxury and pampering yourself during your me time. Treat yourself like royalty!",
+        "range": [
+          19,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "5c7361b1841bf7167747a9a2"
+  },
+  "59a05f12ef250a9c4f8b4567": {
+    "_id": "65bbfe264ff251433f061ae1",
+    "title": "Discover Your Only Child Traits",
+    "description": "Find out your personality traits and experiences based on being an only child.",
+    "questions": [
+      {
+        "question": "How do you feel about being the center of attention?",
+        "options": {
+          "A": {
+            "text": "I love it, the more attention the better!",
+            "points": 3
+          },
+          "B": {
+            "text": "I enjoy it sometimes, but also appreciate my alone time.",
+            "points": 2
+          },
+          "C": {
+            "text": "I am uncomfortable with too much attention.",
+            "points": 1
+          },
+          "D": {
+            "text": "I prefer to avoid attention altogether.",
+            "points": 0
+          }
+        }
+      },
+      {
+        "question": "How do you handle conflict in relationships?",
+        "options": {
+          "A": {
+            "text": "I am assertive and confront conflicts head-on.",
+            "points": 3
+          },
+          "B": {
+            "text": "I try to find a compromise and avoid conflict if possible.",
+            "points": 2
+          },
+          "C": {
+            "text": "I tend to avoid conflicts and let things go.",
+            "points": 1
+          },
+          "D": {
+            "text": "I get overwhelmed by conflict and prefer to withdraw.",
+            "points": 0
+          }
+        }
+      },
+      {
+        "question": "How independent are you?",
+        "options": {
+          "A": {
+            "text": "I am very independent and enjoy doing things on my own.",
+            "points": 3
+          },
+          "B": {
+            "text": "I am independent but also value collaboration and support.",
+            "points": 2
+          },
+          "C": {
+            "text": "I can be independent but prefer to rely on others.",
+            "points": 1
+          },
+          "D": {
+            "text": "I rely on others for most things and struggle with independence.",
+            "points": 0
+          }
+        }
+      },
+      {
+        "question": "How do you handle alone time?",
+        "options": {
+          "A": {
+            "text": "I love having alone time and find it rejuvenating.",
+            "points": 3
+          },
+          "B": {
+            "text": "I enjoy alone time but also value social interactions.",
+            "points": 2
+          },
+          "C": {
+            "text": "I don't mind alone time but also feel lonely at times.",
+            "points": 1
+          },
+          "D": {
+            "text": "I dislike being alone and find it uncomfortable.",
+            "points": 0
+          }
+        }
+      },
+      {
+        "question": "How do you feel about sharing your belongings?",
+        "options": {
+          "A": {
+            "text": "I am very possessive of my belongings and prefer not to share.",
+            "points": 0
+          },
+          "B": {
+            "text": "I am selective about what I share, but open to occasional sharing.",
+            "points": 1
+          },
+          "C": {
+            "text": "I don't mind sharing most of my belongings.",
+            "points": 2
+          },
+          "D": {
+            "text": "I am generous and enjoy sharing with others.",
+            "points": 3
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Independent Explorer": {
+        "description": "You have a strong sense of independence and enjoy exploring the world on your own terms.",
+        "range": [
+          11,
+          15
+        ]
+      },
+      "The Balanced Connoisseur": {
+        "description": "You value a balance between independence and social connections.",
+        "range": [
+          7,
+          10
+        ]
+      },
+      "The Peacekeeper": {
+        "description": "You tend to avoid conflict and prioritize maintaining harmony in relationships.",
+        "range": [
+          4,
+          6
+        ]
+      },
+      "The Social Butterfly": {
+        "description": "You thrive on attention and enjoy being the center of social interactions.",
+        "range": [
+          0,
+          3
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "59a05f12ef250a9c4f8b4567"
+  },
+  "54930f1d29ee86141a3fda8a": {
+    "_id": "65bbfe354ff251433f062b61",
+    "title": "Find Your Perfect Christmas Tree Skirt",
+    "description": "Discover your ideal Christmas tree skirt style with this fun quiz. Answer the following questions to find out which tree skirt will brighten up your holidays!",
+    "questions": [
+      {
+        "question": "What is your favorite color scheme for Christmas decorations?",
+        "options": {
+          "A": {
+            "text": "Traditional red and green",
+            "points": 1
+          },
+          "B": {
+            "text": "Elegant gold and silver",
+            "points": 2
+          },
+          "C": {
+            "text": "Whimsical rainbow colors",
+            "points": 3
+          },
+          "D": {
+            "text": "Cozy neutral tones",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How would you describe your holiday decorating style?",
+        "options": {
+          "A": {
+            "text": "Classic and timeless",
+            "points": 4
+          },
+          "B": {
+            "text": "Luxurious and glamorous",
+            "points": 3
+          },
+          "C": {
+            "text": "Playful and colorful",
+            "points": 2
+          },
+          "D": {
+            "text": "Rustic and cozy",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What material do you prefer for your Christmas tree skirt?",
+        "options": {
+          "A": {
+            "text": "Velvet",
+            "points": 3
+          },
+          "B": {
+            "text": "Satin",
+            "points": 2
+          },
+          "C": {
+            "text": "Felt",
+            "points": 1
+          },
+          "D": {
+            "text": "Burlap",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which pattern appeals to you the most?",
+        "options": {
+          "A": {
+            "text": "Plaid",
+            "points": 4
+          },
+          "B": {
+            "text": "Damask",
+            "points": 3
+          },
+          "C": {
+            "text": "Polka dots",
+            "points": 2
+          },
+          "D": {
+            "text": "Stripes",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "How important is it for your Christmas tree skirt to have decorative elements like embroidery or beading?",
+        "options": {
+          "A": {
+            "text": "Not important at all",
+            "points": 1
+          },
+          "B": {
+            "text": "Somewhat important",
+            "points": 2
+          },
+          "C": {
+            "text": "Moderately important",
+            "points": 3
+          },
+          "D": {
+            "text": "Very important",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "Classic Elegance": {
+        "description": "You prefer a traditional and timeless Christmas tree skirt. Opt for red and green colors with classic patterns.",
+        "range": [
+          5,
+          7
+        ]
+      },
+      "Luxurious Glamour": {
+        "description": "You love a touch of luxury and glamour in your holiday decor. Choose a tree skirt in gold and silver colors with elegant finishes.",
+        "range": [
+          8,
+          11
+        ]
+      },
+      "Whimsical Wonder": {
+        "description": "Your holiday decorating style is playful and full of color. Embrace a tree skirt with rainbow colors and cheerful patterns.",
+        "range": [
+          12,
+          14
+        ]
+      },
+      "Cozy Rustic Charm": {
+        "description": "You enjoy a cozy and rustic ambiance during the holidays. Select a tree skirt in neutral tones with natural textures.",
+        "range": [
+          15,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "54930f1d29ee86141a3fda8a"
+  },
+  "4f3bc7659d2f6889de3d897a": {
+    "_id": "65bbfe454ff251433f063e40",
+    "title": "What's Your Flirting Style?",
+    "description": "Discover your unique flirting style and get ready to send flirty text messages on Valentine's Day!",
+    "questions": [
+      {
+        "question": "How would you describe your ideal date?",
+        "options": {
+          "A": {
+            "text": "Dinner at a fancy restaurant",
+            "points": 3
+          },
+          "B": {
+            "text": "A romantic picnic in the park",
+            "points": 2
+          },
+          "C": {
+            "text": "A fun night out at a concert or club",
+            "points": 1
+          },
+          "D": {
+            "text": "A cozy movie night at home",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What's your go-to flirting move?",
+        "options": {
+          "A": {
+            "text": "Complimenting their looks",
+            "points": 1
+          },
+          "B": {
+            "text": "Making playful jokes",
+            "points": 2
+          },
+          "C": {
+            "text": "Flirting through teasing",
+            "points": 3
+          },
+          "D": {
+            "text": "Being subtly mysterious",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How do you usually start a conversation with someone you're interested in?",
+        "options": {
+          "A": {
+            "text": "Ask them about their interests or hobbies",
+            "points": 2
+          },
+          "B": {
+            "text": "Make a witty comment or observation",
+            "points": 3
+          },
+          "C": {
+            "text": "Compliment their appearance",
+            "points": 1
+          },
+          "D": {
+            "text": "Casually introduce yourself and ask their name",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What's your preferred method of communication for flirting?",
+        "options": {
+          "A": {
+            "text": "Texting",
+            "points": 3
+          },
+          "B": {
+            "text": "Face-to-face conversations",
+            "points": 2
+          },
+          "C": {
+            "text": "Flirty DMs on social media",
+            "points": 1
+          },
+          "D": {
+            "text": "Phone calls",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How important is humor in your flirting strategy?",
+        "options": {
+          "A": {
+            "text": "Very important, I love making people laugh",
+            "points": 4
+          },
+          "B": {
+            "text": "Somewhat important, humor adds fun to flirting",
+            "points": 3
+          },
+          "C": {
+            "text": "Not very important, I prefer a more serious approach",
+            "points": 1
+          },
+          "D": {
+            "text": "Not important at all, I keep things straightforward",
+            "points": 2
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Charming Teaser": {
+        "description": "You're a master of playful banter and teasing. Your flirty texts are always full of wit and charm.",
+        "range": [
+          5,
+          8
+        ]
+      },
+      "The Romantic Picnicker": {
+        "description": "You have a sweet and romantic style of flirting. Your flirty texts are filled with affection and thoughtfulness.",
+        "range": [
+          9,
+          12
+        ]
+      },
+      "The Mysterious Enigma": {
+        "description": "You prefer a subtle and mysterious approach to flirting. Your flirty texts often leave the other person wanting more.",
+        "range": [
+          13,
+          16
+        ]
+      },
+      "The Smooth Talker": {
+        "description": "You excel at smooth and suave flirting. Your flirty texts are charming, confident, and always leave a lasting impression.",
+        "range": [
+          17,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "4f3bc7659d2f6889de3d897a"
+  },
+  "604854b781118707f2732712": {
+    "_id": "65bbfe554ff251433f064eca",
+    "title": "The Seduction Quiz",
+    "description": "Discover your seduction style with this quiz! Answer the following questions to find out how you woo and seduce the object of your affection.",
+    "questions": [
+      {
+        "question": "How would you describe your flirting style?",
+        "options": {
+          "A": {
+            "text": "Playfully teasing",
+            "points": 1
+          },
+          "B": {
+            "text": "Charming and charismatic",
+            "points": 2
+          },
+          "C": {
+            "text": "Sensual and mysterious",
+            "points": 3
+          },
+          "D": {
+            "text": "Direct and confident",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What type of text messages do you send to arouse interest?",
+        "options": {
+          "A": {
+            "text": "Subtle and suggestive",
+            "points": 1
+          },
+          "B": {
+            "text": "Romantic and poetic",
+            "points": 2
+          },
+          "C": {
+            "text": "Bold and explicit",
+            "points": 3
+          },
+          "D": {
+            "text": "Confident and playful",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What is your go-to move for setting a romantic atmosphere?",
+        "options": {
+          "A": {
+            "text": "Candlelit dinner",
+            "points": 1
+          },
+          "B": {
+            "text": "Slow dance in dim lighting",
+            "points": 2
+          },
+          "C": {
+            "text": "Soft music and massage",
+            "points": 3
+          },
+          "D": {
+            "text": "Whispering sweet nothings in her ear",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How do you initiate physical contact with someone you're interested in?",
+        "options": {
+          "A": {
+            "text": "Lightly touch their arm or shoulder",
+            "points": 1
+          },
+          "B": {
+            "text": "Hold their hand or gently hug them",
+            "points": 2
+          },
+          "C": {
+            "text": "Kiss them passionately",
+            "points": 3
+          },
+          "D": {
+            "text": "Embrace them tightly and make your intentions clear",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "When it comes to seducing someone, what is your greatest strength?",
+        "options": {
+          "A": {
+            "text": "My wit and charm",
+            "points": 1
+          },
+          "B": {
+            "text": "My ability to make them feel desired",
+            "points": 2
+          },
+          "C": {
+            "text": "My confidence and boldness",
+            "points": 3
+          },
+          "D": {
+            "text": "My ability to create a sensual atmosphere",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Smooth Talker": {
+        "description": "Your flirting style is playful and teasing. You know how to keep things light and fun, making your crush intrigued and captivated.",
+        "range": [
+          5,
+          8
+        ]
+      },
+      "The Romantic Poet": {
+        "description": "You have a way with words that melts hearts. Your text messages are filled with romance and poetic expressions, making your beloved feel loved and cherished.",
+        "range": [
+          9,
+          12
+        ]
+      },
+      "The Bold Sensation": {
+        "description": "You're not afraid to push the boundaries and explore the realm of the sexual. Your explicit and bold messages leave no doubt about your desires and intentions.",
+        "range": [
+          13,
+          16
+        ]
+      },
+      "The Confident Charmer": {
+        "description": "Confidence is your superpower. Your direct approach and playful nature make you irresistible to others. You know what you want and go after it.",
+        "range": [
+          17,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "604854b781118707f2732712"
+  },
+  "53d542e5c6a8a1ef0f0d41f9": {
+    "_id": "65bbfe624ff251433f065e6f",
+    "title": "Discover Your Smokey Eye Style",
+    "description": "Take this quiz to discover your preferred style for creating gorgeous smokey eyes!",
+    "questions": [
+      {
+        "question": "What is your eye color?",
+        "options": {
+          "A": {
+            "text": "Brown",
+            "points": 1
+          },
+          "B": {
+            "text": "Blue",
+            "points": 2
+          },
+          "C": {
+            "text": "Green",
+            "points": 3
+          },
+          "D": {
+            "text": "Hazel",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which eyeshadow finish do you prefer?",
+        "options": {
+          "A": {
+            "text": "Matte",
+            "points": 4
+          },
+          "B": {
+            "text": "Shimmer",
+            "points": 3
+          },
+          "C": {
+            "text": "Metallic",
+            "points": 2
+          },
+          "D": {
+            "text": "Glitter",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "How bold do you like your smokey eye?",
+        "options": {
+          "A": {
+            "text": "Soft and Subtle",
+            "points": 1
+          },
+          "B": {
+            "text": "Naturally Smoky",
+            "points": 2
+          },
+          "C": {
+            "text": "Dramatic and Intense",
+            "points": 3
+          },
+          "D": {
+            "text": "Bold and Statement-making",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which eyeliner style do you prefer?",
+        "options": {
+          "A": {
+            "text": "Classic Winged Liner",
+            "points": 4
+          },
+          "B": {
+            "text": "Smudged Kohl Liner",
+            "points": 3
+          },
+          "C": {
+            "text": "Graphic Liner",
+            "points": 2
+          },
+          "D": {
+            "text": "No Eyeliner",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "How often do you wear smokey eye makeup?",
+        "options": {
+          "A": {
+            "text": "Rarely",
+            "points": 1
+          },
+          "B": {
+            "text": "Occasionally",
+            "points": 2
+          },
+          "C": {
+            "text": "Frequently",
+            "points": 3
+          },
+          "D": {
+            "text": "Everyday",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "Sultry Seductress": {
+        "description": "Your smokey eye style is all about being sexy and captivating.",
+        "range": [
+          5,
+          8
+        ]
+      },
+      "Effortlessly Chic": {
+        "description": "You prefer a natural and effortless smokey eye that enhances your features.",
+        "range": [
+          9,
+          12
+        ]
+      },
+      "Daring Diva": {
+        "description": "Your bold and dramatic smokey eye style turns heads wherever you go.",
+        "range": [
+          13,
+          16
+        ]
+      },
+      "Subtle Enchantress": {
+        "description": "You create a soft and subtle smokey eye that adds a touch of mystery.",
+        "range": [
+          17,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "53d542e5c6a8a1ef0f0d41f9"
+  },
+  "54a1f21129ee86141a40f142": {
+    "_id": "65bbfe724ff251433f0673ee",
+    "title": "Discover Your Bird Cage Personality",
+    "description": "This quiz will help you uncover your unique personality based on your choices related to bird cages. Choose the options that resonate with you the most and discover your bird cage personality!",
+    "questions": [
+      {
+        "question": "What do you find most intriguing about bird cages?",
+        "options": {
+          "A": {
+            "text": "The intricate design and craftsmanship",
+            "points": 1
+          },
+          "B": {
+            "text": "The symbolism of freedom and restraint",
+            "points": 2
+          },
+          "C": {
+            "text": "The nostalgia and vintage appeal",
+            "points": 3
+          },
+          "D": {
+            "text": "The versatility for creative DIY projects",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which bird cage purpose resonates with you the most?",
+        "options": {
+          "A": {
+            "text": "Showcasing a beautiful feathered friend",
+            "points": 1
+          },
+          "B": {
+            "text": "Creating a unique home decor piece",
+            "points": 2
+          },
+          "C": {
+            "text": "Providing a rescue bird with a safe haven",
+            "points": 3
+          },
+          "D": {
+            "text": "Repurposing it into something completely different",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which style of bird cage design attracts you the most?",
+        "options": {
+          "A": {
+            "text": "Victorian-inspired with intricate details",
+            "points": 1
+          },
+          "B": {
+            "text": "Minimalistic and modern with clean lines",
+            "points": 2
+          },
+          "C": {
+            "text": "Rustic and vintage with distressed finishes",
+            "points": 3
+          },
+          "D": {
+            "text": "Whimsical and creative with playful elements",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How would you prefer to use a bird cage in your space?",
+        "options": {
+          "A": {
+            "text": "As a centerpiece or focal point",
+            "points": 1
+          },
+          "B": {
+            "text": "As a functional and practical item",
+            "points": 2
+          },
+          "C": {
+            "text": "As an accent piece to add charm",
+            "points": 3
+          },
+          "D": {
+            "text": "As a statement piece for artistic expression",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What do you value most in a bird cage?",
+        "options": {
+          "A": {
+            "text": "Elegance and sophistication",
+            "points": 1
+          },
+          "B": {
+            "text": "Durability and practicality",
+            "points": 2
+          },
+          "C": {
+            "text": "Authenticity and character",
+            "points": 3
+          },
+          "D": {
+            "text": "Creativity and uniqueness",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Vintage Charm Enthusiast": {
+        "description": "You appreciate the nostalgia and vintage appeal of bird cages. You love incorporating them into your space to add a touch of old-world charm and character.",
+        "range": [
+          5,
+          8
+        ]
+      },
+      "The Free Spirit": {
+        "description": "You resonate with the symbolism of freedom and restraint that bird cages represent. You see them as a beautiful contradiction and enjoy their significance in your life.",
+        "range": [
+          9,
+          12
+        ]
+      },
+      "The Artistic Innovator": {
+        "description": "You have a knack for repurposing and transforming bird cages into something completely different. You love exploring their versatility for artistic expression and unique DIY projects.",
+        "range": [
+          13,
+          16
+        ]
+      },
+      "The Elegant Decorator": {
+        "description": "You appreciate the intricate design and craftsmanship of bird cages. You prefer showcasing them as a centerpiece or focal point in your space, adding an elegant and sophisticated touch.",
+        "range": [
+          17,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "54a1f21129ee86141a40f142"
+  },
+  "5135235965b75dca57054b3e": {
+    "_id": "65bbfe804ff251433f0684c3",
+    "title": "Discover Your Ideal Luxury Store in NYC",
+    "description": "Take this quiz to find out which luxury store in NYC perfectly matches your style and preferences. Choose the options that resonate with you the most and discover your ultimate shopping destination in the city.",
+    "questions": [
+      {
+        "question": "What is your preferred shopping environment?",
+        "options": {
+          "A": {
+            "text": "Modern and sleek",
+            "points": 3
+          },
+          "B": {
+            "text": "Classically elegant",
+            "points": 1
+          },
+          "C": {
+            "text": "Eclectic and artistic",
+            "points": 2
+          },
+          "D": {
+            "text": "Luxurious and opulent",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which fashion brand resonates with you the most?",
+        "options": {
+          "A": {
+            "text": "Gucci",
+            "points": 4
+          },
+          "B": {
+            "text": "Chanel",
+            "points": 2
+          },
+          "C": {
+            "text": "Balenciaga",
+            "points": 3
+          },
+          "D": {
+            "text": "Saint Laurent",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What is your budget for luxury shopping?",
+        "options": {
+          "A": {
+            "text": "$$$$ (Sky is the limit)",
+            "points": 4
+          },
+          "B": {
+            "text": "$$$ (Willing to splurge)",
+            "points": 3
+          },
+          "C": {
+            "text": "$$ (Moderate spender)",
+            "points": 2
+          },
+          "D": {
+            "text": "$ (Looking for deals)",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "Which type of luxury goods do you prefer?",
+        "options": {
+          "A": {
+            "text": "Clothing and accessories",
+            "points": 2
+          },
+          "B": {
+            "text": "Fine jewelry and watches",
+            "points": 4
+          },
+          "C": {
+            "text": "Beauty and skincare",
+            "points": 3
+          },
+          "D": {
+            "text": "Home decor and furnishings",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What kind of service do you expect from a luxury store?",
+        "options": {
+          "A": {
+            "text": "Attentive and personalized",
+            "points": 4
+          },
+          "B": {
+            "text": "Efficient and professional",
+            "points": 2
+          },
+          "C": {
+            "text": "Interactive and engaging",
+            "points": 3
+          },
+          "D": {
+            "text": "Discreet and private",
+            "points": 1
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Classic Elegance Enthusiast": {
+        "description": "You appreciate timeless sophistication and prefer luxury stores that exude refined elegance.",
+        "range": [
+          5,
+          7
+        ]
+      },
+      "The Artistic Admirer": {
+        "description": "You love exploring unique and avant-garde stores that showcase artistic creations and unconventional fashion.",
+        "range": [
+          8,
+          10
+        ]
+      },
+      "The Luxurious Diva": {
+        "description": "You have a taste for the finest things in life and gravitate towards luxury stores that offer opulence and exclusivity.",
+        "range": [
+          11,
+          13
+        ]
+      },
+      "The Modern Chic Shopper": {
+        "description": "Your style is contemporary and trendy, and you enjoy shopping in stores that embrace modern aesthetics.",
+        "range": [
+          14,
+          15
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "5135235965b75dca57054b3e"
   }
 }
