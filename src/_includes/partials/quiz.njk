@@ -1,0 +1,393 @@
+<div x-data="quizComponent()" x-ref="quizblock" class="mx-auto max-w-md py-4">
+    <template x-if="currentQuestionIndex < questions.length">
+        <div x-show="currentQuestionIndex < questions.length" x-transition.300 class="w-full">
+            <div class="p-4 sm:p-0">
+                <h4 class="text-base font-semibold leading-7 text-pink-600" x-text="title"></h4>
+                <p x-html="questions[currentQuestionIndex].question" class="text-2xl font-bold tracking-tight sm:text-4xl"></p>
+                <form class="mt-5">
+                    <div class="grid grid-cols-1 gap-4 mt-5 items-center">
+                        <template x-for="(option, key) in questions[currentQuestionIndex].options"  :key="`question-${currentQuestionIndex}-option-${key}`">
+                            <label class="block rounded-md bg-pink-100 px-3.5 py-2.5 text-sm font-semibold text-pink-600 shadow-sm hover:bg-pink-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600">
+                                <input type="radio" :name="'question' + currentQuestionIndex" :value="option.points" class="mr-2" x-model="answers[currentQuestionIndex]" @change="nextQuestion">
+                                <span x-text="option.text"></span>
+                            </label>
+                        </template>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </template>
+
+    <template x-if="currentQuestionIndex === questions.length">
+        <div x-show="currentQuestionIndex === questions.length" x-transition.300 class="w-full">
+            <div class="p-4 sm:p-0">
+                <h4 class="text-base font-semibold leading-7 text-pink-600">Quiz Complete!</h4>
+                {# <p class="text-2xl font-bold tracking-tight sm:text-4xl">See your result below:</p> #}
+            </div>
+        </div>
+    </template>
+
+    <div x-show="result" x-cloak x-transition.300 class="mx-auto py-16 px-4">
+        <div class="mx-auto max-w-7xl">
+            <div class="max-w-2xl text-base font-bold tracking-tight text-gray-900">
+                <h3 class="block text-2xl sm:text-4xl font-bold tracking-tight" x-text="result"></h3>
+                <p class="block text-lg tracking-normal" x-text="resultDescription"></p>
+            </div>
+            
+            <button @click="restart" class="mt-5 rounded-md bg-pink-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm md:hover:bg-pink-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600">
+                Start Over
+            </button>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+{# <div x-data="quizComponent()" x-ref="quizblock" class="mx-auto max-w-md py-4">
+    <template x-if="currentQuestionIndex < questions.length">
+        <div x-show="currentQuestionIndex < questions.length" x-transition.300 class="w-full">
+            <div class="p-4 sm:p-0">
+                <h4 class="text-base font-semibold leading-7 text-pink-600" x-text="title"></h4>
+                <p x-html="questions[currentQuestionIndex].question" class="text-2xl font-bold tracking-tight sm:text-4xl"></p>
+                <div class="grid grid-cols-2 gap-4 mt-5 items-center">
+                    <template x-for="(option, key) in questions[currentQuestionIndex].options" :key="key">
+                        <button @click="selectOption(option.points)" x-transition.300 x-text="key + '. ' + option.text" class="rounded-md bg-pink-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-pink-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600"></button>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template x-if="currentQuestionIndex === questions.length">
+        <div x-show="currentQuestionIndex === questions.length" x-transition.300 class="w-full">
+            <div class="p-4 sm:p-0">
+                <h4 class="text-base font-semibold leading-7 text-pink-600">Quiz Complete!</h4>
+                <p class="text-2xl font-bold tracking-tight sm:text-4xl">See your result below:</p>
+                <button @click="calculateResult" class="mt-5 rounded-md bg-pink-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-pink-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600">See Result</button>
+            </div>
+        </div>
+    </template>
+
+    <div x-show="result" x-transition.300 class="mx-auto py-16">
+        <div class="mx-auto max-w-7xl">
+            <div class="max-w-2xl text-base font-bold tracking-tight text-gray-900">
+                <h3 class="block text-2xl sm:text-4xl font-bold tracking-tight" x-text="result"></h3>
+                <p class="block text-lg tracking-normal" x-text="resultDescription"></p>
+            </div>
+        </div>
+    </div>
+</div> #}
+
+
+<script> 
+    quizobj = {
+  "title": "What Your Appetizer Choices Say About You.",
+  "description": "Choose your favorite toothpick appetizers and uncover your ultimate party hosting personality! Tally your points to find out whether you're a Sophisticated Soiree Star, a Casual Gathering Guru, or something in between!",
+  "questions": [
+    {
+      "question": "What's your go-to toothpick appetizer for a touch of sophistication?",
+      "options": {
+        "A": {
+          "text": "Caprese Salad Bites",
+          "points": 1
+        },
+        "B": {
+          "text": "Smoked Salmon and Cream Cheese Cucumbers",
+          "points": 2
+        },
+        "C": {
+          "text": "Prosciutto-Wrapped Melon",
+          "points": 3
+        },
+        "D": {
+          "text": "Bacon-Wrapped Dates",
+          "points": 4
+        }
+      }
+    },
+    {
+      "question": "Choose a toothpick appetizer that screams fun and flavorful.",
+      "options": {
+        "A": {
+          "text": "Mini Cheeseburgers",
+          "points": 1
+        },
+        "B": {
+          "text": "Spicy Shrimp Cocktails",
+          "points": 2
+        },
+        "C": {
+          "text": "Taco Tortilla Bites",
+          "points": 3
+        },
+        "D": {
+          "text": "Buffalo Chicken Meatballs",
+          "points": 4
+        }
+      }
+    },
+    {
+      "question": "Select a toothpick appetizer that's perfect for a casual get-together.",
+      "options": {
+        "A": {
+          "text": "Fruit Skewers",
+          "points": 1
+        },
+        "B": {
+          "text": "Vegetable and Dip Bites",
+          "points": 2
+        },
+        "C": {
+          "text": "Cheese and Olive Skewers",
+          "points": 3
+        },
+        "D": {
+          "text": "Mini Quiches",
+          "points": 4
+        }
+      }
+    },
+    {
+      "question": "Pick an appetizer that's ideal for a theme party.",
+      "options": {
+        "A": {
+          "text": "Sushi Rolls on a Stick",
+          "points": 1
+        },
+        "B": {
+          "text": "Greek Salad Skewers",
+          "points": 2
+        },
+        "C": {
+          "text": "Mini Tacos on a Stick",
+          "points": 3
+        },
+        "D": {
+          "text": "Mediterranean Meatball Skewers",
+          "points": 4
+        }
+      }
+    },
+    {
+      "question": "What's your preferred toothpick appetizer for a cozy, intimate gathering?",
+      "options": {
+        "A": {
+          "text": "Stuffed Mushrooms",
+          "points": 1
+        },
+        "B": {
+          "text": "Bruschetta Bites",
+          "points": 2
+        },
+        "C": {
+          "text": "Spinach and Artichoke Dip Bites",
+          "points": 3
+        },
+        "D": {
+          "text": "Mini Chicken and Waffles",
+          "points": 4
+        }
+      }
+    }
+  ],
+  "results": {
+    "The Sophisticated Soiree Star": {
+      "description": "Your parties are elegant and graceful, with a touch of gourmet flair.",
+      "range": [
+        4,
+        7
+      ]
+    },
+    "The Casual Gathering Guru": {
+      "description": "You prefer laid-back, friendly vibes with a focus on comfort and fun.",
+      "range": [
+        8,
+        11
+      ]
+    },
+    "The Theme Party Pro": {
+      "description": "You love a party with a concept, bringing creativity and fun to the table.",
+      "range": [
+        12,
+        15
+      ]
+    },
+    "The Cozy Get-Together Creator": {
+      "description": "Intimate and warm gatherings are where you shine, with a focus on closeness and comfort.",
+      "range": [
+        16,
+        20
+      ]
+    }
+  }
+}
+
+
+
+</script>
+
+<script>
+    function quizComponent() {
+        return {
+            postId: '{{post.id}}',  // Assuming you have a postId
+            postUrl: '{{post.url}}', // Assuming you have a postUrl
+            title: '',
+            description: '',
+            questions: [
+                //... (your questions)
+            ],
+            results: {
+                //... (your results)
+            },
+            answers: [],
+            currentQuestionIndex: 0,
+            result: '',
+            resultDescription: '',
+            trackProbability: 0.1, // 10% chance to track the impression
+            observer: null, // To hold the reference to the Intersection Observer
+
+            init() {
+                this.questions = quizobj.questions;
+                this.results = quizobj.results;
+                this.title = quizobj.title;
+                this.description = quizobj.description;
+
+                if (Math.random() < this.trackProbability) {
+                    const weight = 1 / this.trackProbability;
+                    this.initIntersectionObserver();
+                }
+                
+            },
+
+            nextQuestion() {
+                // Wait for the next event loop to ensure the model is updated
+                
+                this.$nextTick(() => {
+                    if (this.answers[this.currentQuestionIndex] !== undefined && this.answers[this.currentQuestionIndex] !== '') {
+                        setTimeout(() => {
+                            this.currentQuestionIndex++;
+                            this.trackEvent(); // Track the answer
+                            console.log(this.answers)
+                            // show result if last question
+                            if (this.currentQuestionIndex === this.questions.length) {
+                                this.calculateResult();
+                            }
+                        }, 500); // Delay of 500 milliseconds
+                    } else {
+                        alert("Please select an option before proceeding.");
+                    }
+                });
+            },
+
+            calculateResult() {
+                const totalPoints = this.answers.reduce((total, current) => parseInt(total) + parseInt(current), 0);
+                this.result = '';
+                this.resultDescription = '';
+                
+                for (const [key, value] of Object.entries(this.results)) {
+                    if (totalPoints >= value.range[0] && totalPoints <= value.range[1]) {
+                        this.result = key;
+                        this.resultDescription = value.description;
+                        break;
+                    }
+                }
+            },
+
+            selectOption(points) {
+                if (this.answers[this.currentQuestionIndex] === undefined) {
+                    this.answers[this.currentQuestionIndex] = points;
+                    if (this.currentQuestionIndex < this.questions.length - 1) {
+                        this.currentQuestionIndex++;
+                    }
+                } else {
+                    alert("You've already selected an option for this question.");
+                }
+            },
+
+            restart(){
+                trackEvent()
+                this.currentQuestionIndex = 0;
+                this.result = '';
+                this.resultDescription = '';
+                this.answers = [];
+            },
+
+            async trackEvent() {
+                //const question = encodeURIComponent(this.questions[this.currentQuestionIndex].question);
+                //const answer = encodeURIComponent(selectedOption.text);
+                const queryParams = new URLSearchParams({
+                    type: 'quiz',
+                    post_id: this.postId,
+                    questionindex: this.currentQuestionIndex,
+                    //question: question,
+                    //answer: answer,
+                    post_url: this.postUrl,
+                });
+                
+                const trackapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track?${queryParams.toString()}`;
+                console.log('trackapi:', trackapi);
+                try {
+                    await fetch(trackapi);
+                    console.log('Event tracked:');
+                } catch (error) {
+                    console.error('Error tracking event:', error);
+                }
+            },
+
+            async trackImpression(weight) {
+                const queryParams = new URLSearchParams({
+                    type: 'quiz',
+                    post_id: this.postId,
+                    post_url: this.postUrl,
+                    impression: weight, // Send the weight of the tracked impression
+                });
+
+                const trackapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track?${queryParams.toString()}`;
+                console.log('Impression trackapi:', trackapi);
+
+                try {
+                    await fetch(trackapi);
+                    console.log('Impression tracked with weight:', weight);
+                } catch (error) {
+                    console.error('Error tracking impression:', error);
+                }
+            },
+
+            initIntersectionObserver() {
+                const options = {
+                    root: null, // relative to the viewport
+                    threshold: 0.1 // Percentage of visibility, adjust as needed
+                };
+
+                this.observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            // The element is visible, track the impression
+                            const weight = 1 / this.trackProbability;
+                            this.trackImpression(weight);
+                            // Optional: Stop observing after the first impression is tracked
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, options);
+
+                // Start observing the quiz block
+                this.observer.observe(this.$refs.quizblock);
+            },
+
+        };
+    }
+</script>
+
+
+{# 
+[Log] trackapi: – "https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track?type=quiz&post_id=54f146bf29ee86141a496042&post_url=http…" (tea-sandwiches-that-are-tiny-but-delicious, line 948, x2)
+"https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track?type=quiz&post_id=54f146bf29ee86141a496042&post_url=https%3A%2F%2Ffood.allwomenstalk.com%2Ftea-sandwiches-that-are-tiny-but-delicious%2F"
+ 
+ [Log] Impression trackapi: (tiny-toothpick-appetizers-thatll-fit-any-occasion, line 1062)
+"https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track?type=quiz&post_id=56809b250c4fe7ed488b4736&post_url=https%3A%2F%2Ffood.allwomenstalk.com%2Ftiny-toothpick-appetizers-thatll-fit-any-occasion%2F&impression=10"
+ 
+ 
+ #}
