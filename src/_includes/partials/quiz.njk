@@ -1,0 +1,259 @@
+<div x-data="quizComponent()" x-ref="quizblock" class="mx-auto max-w-md py-4">
+    <template x-if="currentQuestionIndex < questions.length">
+        <div x-show="currentQuestionIndex < questions.length" x-transition.300 class="w-full">
+            <div class="p-4 sm:p-0">
+                <h4 class="text-base font-semibold leading-7 text-pink-600" x-text="title"></h4>
+                <p x-html="questions[currentQuestionIndex].question" class="text-2xl font-bold tracking-tight sm:text-4xl"></p>
+                <form class="mt-5">
+                    <div class="grid grid-cols-1 gap-4 mt-5 items-center">
+                        <template x-for="(option, key) in questions[currentQuestionIndex].options"  :key="`question-${currentQuestionIndex}-option-${key}`">
+                            <label class="block rounded-md bg-pink-100 px-3.5 py-2.5 text-sm font-semibold text-pink-600 shadow-sm hover:bg-pink-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600">
+                                <input type="radio" :name="'question' + currentQuestionIndex" :value="key" class="mr-2 accent-pink-500" x-model="answers[currentQuestionIndex]" @change="nextQuestion">
+                                <span x-text="option.text"></span>
+                            </label>
+                        </template>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </template>
+
+    <template x-if="currentQuestionIndex === questions.length">
+        <div x-show="currentQuestionIndex === questions.length" x-transition.300 class="w-full">
+            <div class="p-4 sm:p-0">
+                <h4 class="text-base font-semibold leading-7 text-pink-600">Quiz Complete!</h4>
+                {# <p class="text-2xl font-bold tracking-tight sm:text-4xl">See your result below:</p> #}
+            </div>
+        </div>
+    </template>
+
+    <div x-show="result" x-cloak x-transition.300 class="mx-auto p-4 sm:p-0">
+        <div class="mx-auto max-w-7xl">
+            <div class="max-w-2xl text-base font-bold tracking-tight text-gray-900">
+                <h3 class="block text-2xl sm:text-4xl font-bold tracking-tight" x-text="result"></h3>
+                <p class="block text-lg tracking-normal" x-text="resultDescription"></p>
+            </div>
+            
+            <button @click="restart" class="mt-5 rounded-md bg-pink-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm md:hover:bg-pink-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600">
+                Start Over
+            </button>
+
+        </div>
+    </div>
+</div>
+
+
+<script> 
+    quizobj = {{quizzes[post.id] | dump | safe }};
+</script>
+
+<script>
+    function quizComponent() {
+        return {
+            postId: '{{post.id}}',  // Assuming you have a postId
+            postUrl: '{{post.url}}', // Assuming you have a postUrl
+            title: '',
+            description: '',
+            questions: [
+                //... (your questions)
+            ],
+            results: {
+                //... (your results)
+            },
+            answers: [],
+            currentQuestionIndex: 0,
+            result: '',
+            resultDescription: '',
+            trackProbability: 0.1, // 10% chance to track the impression
+            observer: null, // To hold the reference to the Intersection Observer
+            trackapi: `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/stats`,
+
+            init() {
+                this.questions = quizobj.questions;
+                this.results = quizobj.results;
+                this.title = quizobj.title;
+                this.description = quizobj.description;
+
+                if (Math.random() < this.trackProbability) {
+                    const weight = 1 / this.trackProbability;
+                    this.initIntersectionObserver();
+                }
+                
+            },
+
+            nextQuestion() {
+                if (this.answers[this.currentQuestionIndex] !== undefined && this.answers[this.currentQuestionIndex] !== '') {
+                    // Track the event immediately after answer selection
+                    this.trackEvent();
+
+                    // Delay the transition to the next question
+                    setTimeout(() => {
+                        this.currentQuestionIndex++;
+                        if (this.currentQuestionIndex === this.questions.length) {
+                            this.calculateResult();
+                        }
+                    }, 500); // Delay of 500 milliseconds (0.5 seconds)
+                } else {
+                    alert("Please select an option before proceeding.");
+                }
+            },
+
+
+            calculateResult() {
+                // Assuming the points are stored in the questions data and each answer corresponds to a specific question
+                const totalPoints = this.answers.reduce((total, answer, index) => {
+                    const questionPoints = this.questions[index].options[answer].points || 0;
+                    return total + questionPoints;
+                }, 0);
+
+                this.result = '';
+                this.resultDescription = '';
+                
+                for (const [key, value] of Object.entries(this.results)) {
+                    if (totalPoints >= value.range[0] && totalPoints <= value.range[1]) {
+                        this.result = key;
+                        this.resultDescription = value.description;
+                        break;
+                    }
+                }
+            },
+
+            restart() {
+                this.trackEvent('restart');
+                this.currentQuestionIndex = 0;
+                this.result = '';
+                this.resultDescription = '';
+                this.answers = [];
+            },
+
+            selectOption(key) {
+                console.log('key:',key)
+                const points = this.questions[this.currentQuestionIndex-1].options[key].points;
+                console.log('points:', points)
+                if (this.answers[this.currentQuestionIndex] === undefined) {
+                    this.answers[this.currentQuestionIndex] = points;
+                    if (this.currentQuestionIndex < this.questions.length - 1) {
+                        this.currentQuestionIndex++;
+                    }
+                } else {
+                    alert("You've already selected an option for this question.");
+                }
+            },
+
+            restart(){
+                trackEvent()
+                this.currentQuestionIndex = 0;
+                this.result = '';
+                this.resultDescription = '';
+                this.answers = [];
+            },
+
+            async trackEvent() {
+                const trackIndex = this.currentQuestionIndex - 1;
+                const questionText = this.questions[trackIndex].question;
+                const answerIndex = this.answers[trackIndex];
+                const answerText = this.questions[trackIndex].options[answerIndex].text;
+
+                {# console.log('questionText:', questionText);
+                console.log('answerIndex:', answerIndex);
+                console.log('answerText:', answerText); #}
+
+                const bodyContent = {
+                    keys: {
+                        post_id: this.postId,
+                        type: 'quiz',  // Any other key-value pairs
+                        post_url: this.postUrl, 
+                    },
+                    inc: {
+                        track_count: 1,  // Increment total track count
+                        [`answers.${questionText}.${answerText}`]: 1  // Increment specific answer count (e.g., 'A', 'B', 'C')
+                    },
+                    {# push: {
+                        items: {  // Push question_index and answer_index
+                            quiestion: questionText,
+                            answer: answerText
+                            // timestamp will be added on the server-side
+                        }
+                    } #}
+                };
+
+                try {
+                    const response = await fetch(this.trackapi, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(bodyContent)
+                    });
+                    {# console.log('Event tracked:', await response.json()); #}
+                } catch (error) {
+                    console.error('Error tracking event:', error);
+                }
+            },
+
+            async trackImpression(weight) {
+                const bodyContent = {
+                    keys: {
+                        post_id: this.postId,
+                        type: 'quiz',
+                        post_url: this.postUrl,
+                    },
+                    inc: {
+                        impressions: weight  // Increment impression by the weight
+                    }
+                };
+
+                try {
+                    const response = await fetch(this.trackapi, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(bodyContent)
+                    });
+                    console.log('Impression tracked with weight:', weight);
+                } catch (error) {
+                    console.error('Error tracking impression:', error);
+                }
+            },
+
+
+            initIntersectionObserver() {
+                const options = {
+                    root: null, // relative to the viewport
+                    threshold: 0.1 // Percentage of visibility, adjust as needed
+                };
+
+                this.observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            // The element is visible, track the impression
+                            const weight = 1 / this.trackProbability;
+                            this.trackImpression(weight);
+                            // Optional: Stop observing after the first impression is tracked
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, options);
+
+                // Start observing the quiz block
+                this.observer.observe(this.$refs.quizblock);
+            },
+
+        };
+    }
+</script>
+
+
+{# 
+[Log] trackapi: – "https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track?type=quiz&post_id=54f146bf29ee86141a496042&post_url=http…" (tea-sandwiches-that-are-tiny-but-delicious, line 948, x2)
+"https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track?type=quiz&post_id=54f146bf29ee86141a496042&post_url=https%3A%2F%2Ffood.allwomenstalk.com%2Ftea-sandwiches-that-are-tiny-but-delicious%2F"
+ 
+ [Log] Impression trackapi: (tiny-toothpick-appetizers-thatll-fit-any-occasion, line 1062)
+"https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track?type=quiz&post_id=56809b250c4fe7ed488b4736&post_url=https%3A%2F%2Ffood.allwomenstalk.com%2Ftiny-toothpick-appetizers-thatll-fit-any-occasion%2F&impression=10"
+ 
+
+ [Log] queryParams: – "type=quiz&post_id=4f32a6fd9d2f6889de3c8aae&questionindex=1&question=What+wind+speed+must+be+reached+or+frequently+exceeded+to+classify+a+sno…" (7-facts-on-blizzards, line 879)
+"type=quiz&post_id=4f32a6fd9d2f6889de3c8aae&questionindex=1&question=What+wind+speed+must+be+reached+or+frequently+exceeded+to+classify+a+snowstorm+as+a+blizzard%3F&answer=undefined&post_url=https%3A%2F%2Ftravel.allwomenstalk.com%2F7-facts-on-blizzards%2F"
+ 
+ #}
