@@ -13,7 +13,7 @@ sam deploy // after
 to udapte lamba: 
 - copy ./src to lambda/nodejs/src
 > nodejs % cp -r ../../src/ ./src
-
+cd
 - delete _data/db.js
 rm ./src/_data/db.js 
 

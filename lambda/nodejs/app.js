@@ -11,7 +11,8 @@ exports.handler = async (event, context) => {
     const client = new MongoClient(uri);
     await client.connect();
     const db = client.db('aws');
-    const collection = db.collection('posts');
+    // const collection = db.collection('posts');
+    const collection = db.collection('MaterializedPosts');
 
     // Fetch data from MongoDB
     console.log('event', event);
@@ -38,7 +39,7 @@ exports.handler = async (event, context) => {
         },
       },
     ];
-    pipeline.push(...pipelinePost);
+    // pipeline.push(...pipelinePost);
     console.log('pipeline', pipeline);
     console.log('Fetching data from MongoDB');
     const data = await collection.aggregate(pipeline).next();

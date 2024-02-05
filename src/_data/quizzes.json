@@ -1006,145 +1006,149 @@
   },
   "57688e0d0c4fe7c1078b45b9": {
     "_id": "65bbb9ca4ff251433ff1c16c",
-    "title": "Discover Your Date Night Movie Preferences",
-    "description": "Planning a movie night with your partner can be both exciting and daunting. Take this quiz to discover what kind of movies will set the stage for your ideal hot and steamy quality time. Remember, there are no right or wrong answers. Just go with your gut feeling.",
+    "title": "Find Your Ideal Romance Movie for Date Night",
+    "description": "Looking to spice up your date night with a movie that gets both you and your partner in the mood? Take this quiz to uncover the perfect romance film that aligns with your shared preferences. Choose the options that best describe your mood and interests.",
     "questions": [
       {
-        "question": "What's your ideal way to start a romantic evening?",
+        "question": "What's your ideal date night atmosphere?",
         "options": {
           "A": {
-            "text": "With a gourmet dinner and fine wine.",
+            "text": "Cozy and intimate, snuggled under a blanket",
             "points": 2
           },
           "B": {
-            "text": "Watching the sunset together.",
-            "points": 3
-          },
-          "C": {
-            "text": "Dancing to our favorite music.",
+            "text": "Adventurous, exploring new worlds together",
             "points": 4
           },
+          "C": {
+            "text": "Sophisticated, with a touch of class and elegance",
+            "points": 3
+          },
           "D": {
-            "text": "A relaxing massage.",
-            "points": 5
+            "text": "Lighthearted and fun, full of laughter",
+            "points": 1
           }
         }
       },
       {
-        "question": "What kind of movie genres do you and your partner usually enjoy?",
+        "question": "Which genre do you prefer for a romantic evening?",
         "options": {
           "A": {
-            "text": "Thriller and Mystery",
+            "text": "Classic love stories that stand the test of time",
             "points": 3
           },
           "B": {
-            "text": "Comedy and Rom-Com",
-            "points": 2
-          },
-          "C": {
-            "text": "Drama and Biographies",
+            "text": "Steamy and passionate tales of love",
             "points": 4
           },
+          "C": {
+            "text": "Romantic comedies that keep the mood light",
+            "points": 1
+          },
           "D": {
-            "text": "Fantasy and Sci-Fi",
-            "points": 5
+            "text": "Fantasy romance that takes you to another world",
+            "points": 2
           }
         }
       },
       {
-        "question": "What's the most important element of a movie for both of you?",
+        "question": "What theme do you find most appealing in a romance movie?",
         "options": {
           "A": {
-            "text": "An intricate plot.",
+            "text": "Forbidden love that defies the odds",
             "points": 4
           },
           "B": {
-            "text": "Hilarious scenes that make us laugh together.",
+            "text": "First loves and the innocence of discovering affection",
+            "points": 1
+          },
+          "C": {
+            "text": "A historical romance that takes you back in time",
+            "points": 3
+          },
+          "D": {
+            "text": "A futuristic love story, blending romance with sci-fi elements",
+            "points": 2
+          }
+        }
+      },
+      {
+        "question": "How do you feel about love scenes in movies?",
+        "options": {
+          "A": {
+            "text": "The steamier, the better",
+            "points": 4
+          },
+          "B": {
+            "text": "Subtle and suggestive is more my style",
             "points": 2
           },
           "C": {
-            "text": "Romantic scenes that set the mood.",
-            "points": 5
+            "text": "Prefer them to be implied rather than shown",
+            "points": 1
           },
           "D": {
-            "text": "Eye-catching special effects.",
+            "text": "I like a balance between passionate and tasteful",
             "points": 3
           }
         }
       },
       {
-        "question": "How do you prefer the movie night setting?",
+        "question": "What's the ultimate goal of your movie night?",
         "options": {
           "A": {
-            "text": "Cozy and comfortable in bed.",
-            "points": 5
-          },
-          "B": {
-            "text": "A structured setup in the living room with popcorn.",
-            "points": 2
-          },
-          "C": {
-            "text": "Outdoors under the stars.",
+            "text": "To ignite passion",
             "points": 4
           },
-          "D": {
-            "text": "Anywhere, as long as we're together.",
-            "points": 3
-          }
-        }
-      },
-      {
-        "question": "What do you hope for after the movie?",
-        "options": {
-          "A": {
-            "text": "A deep, meaningful conversation.",
-            "points": 3
-          },
           "B": {
-            "text": "Laughing together at the funny moments we just watched.",
-            "points": 2
+            "text": "To bond and enjoy shared laughs",
+            "points": 1
           },
           "C": {
-            "text": "A romantic and passionate end to the evening.",
-            "points": 5
+            "text": "To feel the magic of love",
+            "points": 3
           },
           "D": {
-            "text": "Planning our next movie night.",
-            "points": 4
+            "text": "To escape into a captivating story",
+            "points": 2
           }
         }
       }
     ],
-    "results": {
-      "The Romantic Revelers": {
-        "description": "Movies that deeply engage you emotionally and set a romantic atmosphere are your go-to. You both enjoy stories of love and passion, which often mirror your relationship's intensity.",
-        "range": [
-          20,
-          25
-        ]
-      },
-      "The Adventurous Amateurs": {
-        "description": "You both thrive on adrenaline and suspense, preferring movies that keep you on the edge of your seat. These movies excite and invigorate your relationship, leading to an electrifying rest of the evening.",
-        "range": [
-          15,
-          19
-        ]
-      },
-      "The Comedic Couple": {
-        "description": "Laughter is an essential part of your relationship. You both enjoy lighthearted films that make you laugh and bring you closer through humor. This joyful bonding sets the stage for a fun and flirty night.",
-        "range": [
-          8,
-          14
-        ]
-      },
-      "The Eclectic Enthusiasts": {
-        "description": "Your tastes are varied, and you love mixing genres for a unique movie night experience. Whether it's drama, sci-fi, or something entirely different, the diversity reflects your dynamic as a couple.",
+    "results": [
+      {
+        "type": "Light and Flirty",
+        "description": "You and your partner enjoy keeping things lighthearted and fun. A romantic comedy is your go-to for a delightful evening that will have you both laughing and enjoying each other's company.",
         "range": [
           5,
           7
         ]
+      },
+      {
+        "type": "Fantastical Love",
+        "description": "Your shared love for the fantastical means a movie night filled with magic and otherworldly romance is sure to set the mood. Look for films that combine elements of fantasy with love stories.",
+        "range": [
+          8,
+          12
+        ]
+      },
+      {
+        "type": "Elegantly Romantic",
+        "description": "Class and sophistication define your style, making historical romances or films with a touch of elegance the perfect choice for your romantic evening.",
+        "range": [
+          13,
+          16
+        ]
+      },
+      {
+        "type": "Passionate and Intense",
+        "description": "For those who prefer their romance with an edge, opt for movies that don't shy away from passion. Your ideal film is one that's as steamy as your relationship.",
+        "range": [
+          17,
+          20
+        ]
       }
-    },
+    ],
     "post_id": "57688e0d0c4fe7c1078b45b9"
   },
   "511768ecf55da6baf4f8446c": {
@@ -24657,153 +24661,149 @@
   },
   "51d3862d37cf9c55c94a7fa2": {
     "_id": "65bcb84d4ff251433f5cc0a0",
-    "title": "Discover Your Favorite Cuisine",
-    "description": "Take this quiz to discover your favorite cuisine from around the world!",
+    "title": "Discover Your World Cuisine Personality",
+    "description": "Ever wonder which global cuisine best matches your personality and taste preferences? Take this flavorful quiz to uncover the world cuisine that tickles your taste buds and mirrors your personality. Simply choose the options that best describe your preferences and inclinations.",
     "questions": [
       {
-        "question": "What is your favorite type of meat?",
+        "question": "How do you prefer your flavors?",
         "options": {
           "A": {
-            "text": "Beef",
+            "text": "Rich and comforting",
             "points": 1
           },
           "B": {
-            "text": "Chicken",
+            "text": "Spicy and bold",
             "points": 2
           },
           "C": {
-            "text": "Pork",
+            "text": "Fresh and herbal",
             "points": 3
           },
           "D": {
-            "text": "Seafood",
+            "text": "Light and subtle",
             "points": 4
           }
         }
       },
       {
-        "question": "Which flavor profile do you prefer?",
+        "question": "What's your preferred meal setting?",
         "options": {
           "A": {
-            "text": "Spicy",
-            "points": 3
+            "text": "A cozy, family-style gathering",
+            "points": 1
           },
           "B": {
-            "text": "Sweet",
+            "text": "A vibrant street food scene",
             "points": 2
           },
           "C": {
-            "text": "Savory",
-            "points": 4
-          },
-          "D": {
-            "text": "Sour",
-            "points": 1
-          }
-        }
-      },
-      {
-        "question": "What is your favorite type of cuisine?",
-        "options": {
-          "A": {
-            "text": "Italian",
-            "points": 2
-          },
-          "B": {
-            "text": "Mexican",
+            "text": "Al fresco dining with a view",
             "points": 3
           },
-          "C": {
-            "text": "Chinese",
-            "points": 1
-          },
           "D": {
-            "text": "Indian",
+            "text": "A sophisticated, fine dining experience",
             "points": 4
           }
         }
       },
       {
-        "question": "Which type of bread do you prefer?",
+        "question": "Choose a type of staple you enjoy the most.",
         "options": {
           "A": {
-            "text": "Baguette",
-            "points": 2
-          },
-          "B": {
-            "text": "Tortilla",
+            "text": "Rice",
             "points": 3
           },
+          "B": {
+            "text": "Bread",
+            "points": 1
+          },
           "C": {
-            "text": "Naan",
-            "points": 4
+            "text": "Noodles",
+            "points": 2
           },
           "D": {
-            "text": "Sourdough",
+            "text": "Potatoes",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What's your preferred type of beverage?",
+        "options": {
+          "A": {
+            "text": "Wine",
+            "points": 4
+          },
+          "B": {
+            "text": "Beer",
+            "points": 2
+          },
+          "C": {
+            "text": "Fresh juices",
+            "points": 3
+          },
+          "D": {
+            "text": "Tea or coffee",
             "points": 1
           }
         }
       },
       {
-        "question": "What is your favorite dessert?",
+        "question": "What best describes your adventurousness with food?",
         "options": {
           "A": {
-            "text": "Tiramisu",
-            "points": 2
-          },
-          "B": {
-            "text": "Churros",
+            "text": "I stick to familiar favorites",
             "points": 1
           },
+          "B": {
+            "text": "Always up for a bit of a kick",
+            "points": 2
+          },
           "C": {
-            "text": "Baklava",
-            "points": 4
+            "text": "Love to try new and fresh flavors",
+            "points": 3
           },
           "D": {
-            "text": "Cheesecake",
-            "points": 3
+            "text": "The rarer, the better",
+            "points": 4
           }
         }
       }
     ],
-    "results": {
-      "The Italian Enthusiast": {
-        "description": "You love the flavors of Italy, from rich pasta dishes to creamy desserts.",
+    "results": [
+      {
+        "type": "Comforting Classic",
+        "description": "Just like the hearty and rich flavors of Italian cuisine, you find joy in the comfort of familiar favorites. Your food is your comfort zone, and you appreciate dishes that taste like home.",
         "range": [
           5,
-          7
+          8
         ]
       },
-      "The Mexican Food Lover": {
-        "description": "You enjoy the bold and spicy flavors of Mexican cuisine, including tacos, enchiladas, and guacamole.",
+      {
+        "type": "Spicy Soul",
+        "description": "Your personality spices up the room, much like the bold flavors of Indian or Thai cuisine. You're adventurous and always looking for that extra kick in both food and life.",
         "range": [
-          8,
-          10
+          9,
+          12
         ]
       },
-      "The Chinese Cuisine Connoisseur": {
-        "description": "You appreciate the diverse and balanced flavors of Chinese cuisine, from stir-fries to dumplings.",
+      {
+        "type": "Fresh Explorer",
+        "description": "Fresh, herbal, and full of life! You're like the vibrant flavors of Mediterranean or Vietnamese food; always on the hunt for something that tantalizes your taste buds with freshness and simplicity.",
         "range": [
-          11,
-          13
-        ]
-      },
-      "The Indian Spice Voyageur": {
-        "description": "You crave the aromatic spices and vibrant flavors of Indian cuisine, from curries to biryanis.",
-        "range": [
-          14,
+          13,
           16
         ]
       },
-      "The Global Gastronomist": {
-        "description": "You have a diverse palate and enjoy a variety of cuisines from around the world.",
+      {
+        "type": "Sophisticated Gourmet",
+        "description": "Your preferences lean towards the exquisite and rare, echoing the complexities of French or Japanese cuisine. Sophistication and a love for fine dining define your culinary personality.",
         "range": [
           17,
           20
         ]
       }
-    },
-    "model": "gpt-3.5-turbo",
+    ],
     "post_id": "51d3862d37cf9c55c94a7fa2"
   },
   "5c96b50d841bf771f64eac91": {
@@ -104144,5 +104144,437 @@
     },
     "model": "gpt-3.5-turbo",
     "post_id": "550a451677f1343dc3130ed2"
+  },
+  "505c8d669bb9bc8c496d8ff8": {
+    "_id": "65c112da4ff251433fdc8931",
+    "title": "Discover Your Baking Style",
+    "description": "This quiz will help you uncover your baking style based on your preferences and choices. Answer each question by selecting the option that best represents your preferences.",
+    "questions": [
+      {
+        "question": "What is your favorite cake flavor?",
+        "options": {
+          "A": {
+            "text": "Chocolate",
+            "points": 1
+          },
+          "B": {
+            "text": "Vanilla",
+            "points": 2
+          },
+          "C": {
+            "text": "Red Velvet",
+            "points": 3
+          },
+          "D": {
+            "text": "Carrot",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which frosting do you prefer?",
+        "options": {
+          "A": {
+            "text": "Buttercream",
+            "points": 2
+          },
+          "B": {
+            "text": "Cream Cheese",
+            "points": 3
+          },
+          "C": {
+            "text": "Ganache",
+            "points": 4
+          },
+          "D": {
+            "text": "Whipped Cream",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What is your preferred cake shape?",
+        "options": {
+          "A": {
+            "text": "Round",
+            "points": 3
+          },
+          "B": {
+            "text": "Square",
+            "points": 4
+          },
+          "C": {
+            "text": "Heart",
+            "points": 1
+          },
+          "D": {
+            "text": "Cupcakes",
+            "points": 2
+          }
+        }
+      },
+      {
+        "question": "Which cake decoration appeals to you the most?",
+        "options": {
+          "A": {
+            "text": "Floral designs",
+            "points": 2
+          },
+          "B": {
+            "text": "Fondant sculptures",
+            "points": 4
+          },
+          "C": {
+            "text": "Drips and drizzles",
+            "points": 3
+          },
+          "D": {
+            "text": "Sprinkles and colorful confetti",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "What type of filling do you prefer in a cake?",
+        "options": {
+          "A": {
+            "text": "Strawberry",
+            "points": 3
+          },
+          "B": {
+            "text": "Salted Caramel",
+            "points": 4
+          },
+          "C": {
+            "text": "Lemon",
+            "points": 1
+          },
+          "D": {
+            "text": "Nutella",
+            "points": 2
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Classic Baker": {
+        "description": "You love traditional flavors and elegant designs. Your cakes are timeless and always a crowd-pleaser.",
+        "range": [
+          5,
+          8
+        ]
+      },
+      "The Adventurous Baker": {
+        "description": "You enjoy exploring unique flavors and experimenting with new techniques. Your cakes are a delicious surprise!",
+        "range": [
+          9,
+          12
+        ]
+      },
+      "The Artistic Baker": {
+        "description": "You have a creative flair and love turning your cakes into edible masterpieces. Your cakes are true works of art!",
+        "range": [
+          13,
+          16
+        ]
+      },
+      "The Fun Baker": {
+        "description": "You believe baking should be fun and playful. Your cakes are colorful, whimsical, and bring a smile to everyone's face.",
+        "range": [
+          17,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "505c8d669bb9bc8c496d8ff8"
+  },
+  "4f9661e70b48f775f5ab51e5": {
+    "_id": "65c112e74ff251433fdc8a9d",
+    "title": "Discover Your Food Preferences",
+    "description": "Unravel your food preferences and discover your taste buds with this quiz. Choose the option that best suits your taste and let's get started!",
+    "questions": [
+      {
+        "question": "What is your favorite type of cuisine?",
+        "options": {
+          "A": {
+            "text": "Italian",
+            "points": 1
+          },
+          "B": {
+            "text": "Mexican",
+            "points": 2
+          },
+          "C": {
+            "text": "Chinese",
+            "points": 3
+          },
+          "D": {
+            "text": "Indian",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which protein do you prefer?",
+        "options": {
+          "A": {
+            "text": "Chicken",
+            "points": 1
+          },
+          "B": {
+            "text": "Beef",
+            "points": 2
+          },
+          "C": {
+            "text": "Fish",
+            "points": 3
+          },
+          "D": {
+            "text": "Tofu",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What is your go-to comfort food?",
+        "options": {
+          "A": {
+            "text": "Pizza",
+            "points": 1
+          },
+          "B": {
+            "text": "Burger",
+            "points": 2
+          },
+          "C": {
+            "text": "Mac and Cheese",
+            "points": 3
+          },
+          "D": {
+            "text": "Ice Cream",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which vegetable would you choose as a side dish?",
+        "options": {
+          "A": {
+            "text": "Broccoli",
+            "points": 1
+          },
+          "B": {
+            "text": "Carrots",
+            "points": 2
+          },
+          "C": {
+            "text": "Spinach",
+            "points": 3
+          },
+          "D": {
+            "text": "Sweet Potato",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "What is your favorite dessert?",
+        "options": {
+          "A": {
+            "text": "Chocolate Cake",
+            "points": 1
+          },
+          "B": {
+            "text": "Cheesecake",
+            "points": 2
+          },
+          "C": {
+            "text": "Fruit Salad",
+            "points": 3
+          },
+          "D": {
+            "text": "Creme Brulee",
+            "points": 4
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Adventurous Foodie": {
+        "description": "You have a bold and adventurous palate. You love trying new foods and exploring different cuisines.",
+        "range": [
+          5,
+          8
+        ]
+      },
+      "The Comfort Food Lover": {
+        "description": "You appreciate the warmth and familiarity of comfort food. Your go-to dishes bring you comfort and happiness.",
+        "range": [
+          9,
+          12
+        ]
+      },
+      "The Health Nut": {
+        "description": "You prioritize nutritious and wholesome foods. Your choices reflect your commitment to a healthy lifestyle.",
+        "range": [
+          13,
+          16
+        ]
+      },
+      "The Sweet Tooth": {
+        "description": "You have a weakness for desserts, and you enjoy indulging in sweet treats.",
+        "range": [
+          17,
+          20
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "4f9661e70b48f775f5ab51e5"
+  },
+  "502bab9dda62d4fff88a1331": {
+    "_id": "65c112f64ff251433fdc8c8a",
+    "title": "Discover Your Veggie Confidence",
+    "description": "Unveil your vegetable preferences and discover your veggie confidence with this quiz! Choose the options that best match your taste and preferences to reveal your veggie personality.",
+    "questions": [
+      {
+        "question": "Which vegetable do you like the most?",
+        "options": {
+          "A": {
+            "text": "Carrots",
+            "points": 1
+          },
+          "B": {
+            "text": "Broccoli",
+            "points": 2
+          },
+          "C": {
+            "text": "Spinach",
+            "points": 3
+          },
+          "D": {
+            "text": "Peas",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "How do you prefer your vegetables to be cooked?",
+        "options": {
+          "A": {
+            "text": "Steamed",
+            "points": 3
+          },
+          "B": {
+            "text": "Roasted",
+            "points": 2
+          },
+          "C": {
+            "text": "Grilled",
+            "points": 4
+          },
+          "D": {
+            "text": "Stir-fried",
+            "points": 1
+          }
+        }
+      },
+      {
+        "question": "Which vegetable do you dislike the most?",
+        "options": {
+          "A": {
+            "text": "Tomatoes",
+            "points": 2
+          },
+          "B": {
+            "text": "Cauliflower",
+            "points": 4
+          },
+          "C": {
+            "text": "Mushrooms",
+            "points": 1
+          },
+          "D": {
+            "text": "Brussels sprouts",
+            "points": 3
+          }
+        }
+      },
+      {
+        "question": "How adventurous are you when it comes to trying new vegetables?",
+        "options": {
+          "A": {
+            "text": "Not adventurous at all",
+            "points": 1
+          },
+          "B": {
+            "text": "Somewhat adventurous",
+            "points": 2
+          },
+          "C": {
+            "text": "Quite adventurous",
+            "points": 3
+          },
+          "D": {
+            "text": "Extremely adventurous",
+            "points": 4
+          }
+        }
+      },
+      {
+        "question": "Which vegetable do you find the most appealing visually?",
+        "options": {
+          "A": {
+            "text": "Bell pepper",
+            "points": 4
+          },
+          "B": {
+            "text": "Eggplant",
+            "points": 3
+          },
+          "C": {
+            "text": "Radish",
+            "points": 1
+          },
+          "D": {
+            "text": "Zucchini",
+            "points": 2
+          }
+        }
+      }
+    ],
+    "results": {
+      "The Veggie Enthusiast": {
+        "description": "You love vegetables and embrace their flavors in all forms. You are a true veggie enthusiast! Keep exploring and enjoying the wonders of the plant kingdom.",
+        "range": [
+          16,
+          20
+        ]
+      },
+      "The Vegetable Adventurer": {
+        "description": "You have an adventurous palate and love trying new vegetables. Your willingness to explore different tastes and textures makes you a vegetable adventurer.",
+        "range": [
+          11,
+          15
+        ]
+      },
+      "The Veggie Explorer": {
+        "description": "You enjoy vegetables but also have specific preferences. You're still willing to explore new options. Keep exploring and expanding your veggie horizons!",
+        "range": [
+          6,
+          10
+        ]
+      },
+      "The Veggie Skeptic": {
+        "description": "You're not a big fan of vegetables and tend to be skeptical about their taste. But don't worry, there are many delicious veggie recipes out there waiting for you to try!",
+        "range": [
+          1,
+          5
+        ]
+      }
+    },
+    "model": "gpt-3.5-turbo",
+    "post_id": "502bab9dda62d4fff88a1331"
   }
 }
