@@ -22,30 +22,103 @@
 </div>
 
 <script>
+
     function makepin(props) {
         return {
             postId: props.postId,
             mediaUrl: props.mediaUrl,
             postTitle: props.postTitle,
             postUrl: props.postUrl,
+            pinurl: null, 
             init() {
                 {# console.log('init pin'); #}
+                this 
             },
             async pinit() {
-                {# console.log('pinit'); #}
+                console.log('pinit');
+
+                // Open a blank window immediately on user action to avoid popup blockers
+                let newWindow = window.open('about:blank', '_blank');
 
                 // Construct the trackapi URL with the passed-in parameters
                 let trackapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track?type=pinterest&post_id=${encodeURIComponent(this.postId)}&post_title=${encodeURIComponent(this.postTitle)}&post_url=${encodeURIComponent(this.postUrl)}&post_image=${encodeURIComponent(this.mediaUrl)}`;
                 console.log(trackapi);
 
-                await fetch(trackapi)
-                    {# .then(response => response.json())
-                    .then(data => {
-                        console.log(data);
-                    }); #}
-
-                window.open('https://www.pinterest.com/pin/create/button/?url={{ page_url | urlencode }}&media={{ media_url | urlencode }}&description={{ description | urlencode }}', '_blank');
+                // Perform the tracking request
+                await fetch(trackapi);
+                // Assuming the fetch is for tracking and doesn't need a response processed here
+                // Update the new window location after tracking succeeds
+                if (newWindow) {
+                    newWindow.location.href = 'https://www.pinterest.com/pin/create/button/?url=' + encodeURIComponent(this.pageUrl) + '&media=' + encodeURIComponent(this.mediaUrl) + '&description=' + encodeURIComponent(this.description);
+                } else {
+                    console.error('Popup was blocked or closed by the user.');
+                }
             }
+
         }
     }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to create and return a Pinterest "Pin It" button
+    function createPinItButton(imageSrc, imageAlt, postId, postTitle, postUrl, mediaUrl) {
+        const pinUrl = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(postUrl)}&media=${encodeURIComponent(imageSrc)}&description=${encodeURIComponent(imageAlt)}`;
+        const button = document.createElement('a');
+        button.href = '#'; // Prevent default navigation
+        button.innerText = 'Pin It';
+        button.style.display = 'inline-block';
+        button.style.width = '100%'; // Full width
+        button.style.backgroundColor = '#e60023';
+        button.style.color = 'white';
+        button.style.textAlign = 'center';
+        button.style.padding = '10px 0';
+        button.style.margin = '10px 0'
+        button.style.textDecoration = 'none';
+        button.style.borderRadius = '5px';
+
+        // Event listener for tracking and redirecting
+        button.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent default link behavior
+
+            // Construct the tracking API URL
+            let trackapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track?type=pinterest&post_id=${encodeURIComponent(postId)}&post_title=${encodeURIComponent(postTitle)}&post_url=${encodeURIComponent(postUrl)}&post_image=${encodeURIComponent(mediaUrl)}`;
+            console.log(trackapi); // For debugging
+
+            // Perform the tracking request
+            fetch(trackapi)
+                .then(response => {
+                    if(response.ok) {
+                        // If tracking succeeded, redirect to Pinterest
+                        window.open(pinUrl, '_blank');
+                    } else {
+                        // Handle tracking failure (optional)
+                        console.error('Tracking failed');
+                    }
+                })
+                .catch(error => {
+                    // Handle errors (e.g., network issues)
+                    console.error('Error tracking the click:', error);
+                });
+        });
+
+        return button;
+    }
+
+    // Example: Setting these values for demonstration. Replace with your actual data.
+    const postId = '{{post.id}}'; // Your post ID
+    const postTitle = '{{post.post_title}}'; // Your post title
+    const postUrl = window.location.href; // Current URL as the post URL
+    // Find all images inside .post divs
+    const images = document.querySelectorAll('.post img');
+    images.forEach(image => {
+        const mediaUrl = image.src; // Assuming the image src as media URL for tracking
+        const pinItButton = createPinItButton(image.src, image.alt || 'An interesting image', postId, postTitle, postUrl, mediaUrl);
+        // Insert the Pin It button right after the image
+        image.parentNode.insertBefore(pinItButton, image.nextSibling);
+    });
+});
+
+
+
 </script>
+
