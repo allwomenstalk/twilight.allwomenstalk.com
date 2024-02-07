@@ -86,7 +86,12 @@ eleventyComputed:
                     
                     {% include 'partials/toc.njk' %} 
                     
-                    {% include "partials/quiz.njk" %}
+                    {% if quizzes[post.id] %}
+                    {% include "partials/quiz.njk" %}  
+                    {% else %} 
+                    {% include 'partials/poll.njk' %}
+                    {% endif %}
+
 
                 {% elif loop.index == 2 %}
                     {% include 'partials/unibots.njk' %}
