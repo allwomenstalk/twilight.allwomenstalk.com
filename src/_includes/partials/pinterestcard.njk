@@ -58,65 +58,179 @@
         }
     }
 
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Function to create and return a Pinterest "Pin It" button
-    function createPinItButton(imageSrc, imageAlt, postId, postTitle, postUrl, mediaUrl) {
-        const pinUrl = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(postUrl)}&media=${encodeURIComponent(imageSrc)}&description=${encodeURIComponent(imageAlt)}`;
-        const button = document.createElement('a');
-        button.href = '#'; // Prevent default navigation
-        button.innerText = 'Pin It';
-        button.style.display = 'inline-block';
-        button.style.width = '100%'; // Full width
-        button.style.backgroundColor = '#e60023';
-        button.style.color = 'white';
-        button.style.textAlign = 'center';
-        button.style.padding = '10px 0';
-        button.style.margin = '10px 0'
-        button.style.textDecoration = 'none';
-        button.style.borderRadius = '5px';
-
-        // Event listener for tracking and redirecting
-        button.addEventListener('click', function(e) {
-            e.preventDefault(); // Prevent default link behavior
-
-            // Construct the tracking API URL
-            let trackapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track?type=pinterest&post_id=${encodeURIComponent(postId)}&post_title=${encodeURIComponent(postTitle)}&post_url=${encodeURIComponent(postUrl)}&post_image=${encodeURIComponent(mediaUrl)}`;
-            console.log(trackapi); // For debugging
-
-            // Perform the tracking request
-            fetch(trackapi)
-                .then(response => {
-                    if(response.ok) {
-                        // If tracking succeeded, redirect to Pinterest
-                        window.open(pinUrl, '_blank');
-                    } else {
-                        // Handle tracking failure (optional)
-                        console.error('Tracking failed');
-                    }
-                })
-                .catch(error => {
-                    // Handle errors (e.g., network issues)
-                    console.error('Error tracking the click:', error);
-                });
-        });
-
-        return button;
-    }
-
-    // Example: Setting these values for demonstration. Replace with your actual data.
-    const postId = '{{post.id}}'; // Your post ID
-    const postTitle = '{{post.post_title}}'; // Your post title
-    const postUrl = window.location.href; // Current URL as the post URL
-    // Find all images inside .post divs
+{# 
+// Function to add Pinterest "Pin It" buttons
+function addPinItButtons() {
+    // Find all images inside .post divs and append created Pin It buttons
     const images = document.querySelectorAll('.post img');
     images.forEach(image => {
-        const mediaUrl = image.src; // Assuming the image src as media URL for tracking
-        const pinItButton = createPinItButton(image.src, image.alt || 'An interesting image', postId, postTitle, postUrl, mediaUrl);
-        // Insert the Pin It button right after the image
-        image.parentNode.insertBefore(pinItButton, image.nextSibling);
+        // Assuming these values are available or you fetch them as needed
+        const postId = '{{ post.id }}'; // You should replace placeholders with actual JS variables
+        const postTitle = '{{ post.title | escape }}'; // Ditto
+        const postUrl = '{{ page_url | escape }}'; // Ditto
+        const mediaUrl = image.src; // Directly using image src here
+
+        // Check if the button has already been added to avoid duplicates
+        if (!image.nextElementSibling || image.nextElementSibling.className.indexOf('pin-it-button') === -1) {
+            const pinItButton = createPinItButton(image.src, image.alt || 'An interesting image', postId, postTitle, postUrl, mediaUrl);
+            // Insert the Pin It button right after the image in the DOM
+            image.parentNode.insertBefore(pinItButton, image.nextSibling);
+        }
     });
+}
+
+// Throttle function to limit the execution of our scroll handler for performance
+function throttle(func, limit) {
+    let lastFunc;
+    let lastRan;
+    return function() {
+        const context = this;
+        const args = arguments;
+        if (!lastRan) {
+            func.apply(context, args);
+            lastRan = Date.now();
+        } else {
+            clearTimeout(lastFunc);
+            lastFunc = setTimeout(function() {
+                if ((Date.now() - lastRan) >= limit) {
+                    func.apply(context, args);
+                    lastRan = Date.now();
+                }
+            }, limit - (Date.now() - lastRan));
+        }
+    };
+}
+
+// Define a separate function for the scroll event logic
+function handleScroll() {
+    const scrollPosition = window.scrollY + window.innerHeight;
+    console.log('Scroll position:', scrollPosition);
+    // Adjust 1200 to whatever pixel value you consider as the threshold before adding the buttons
+    if (scrollPosition > 1200) {
+        console.log('Adding Pin It buttons');
+        addPinItButtons();
+        // Remove the event listener
+        window.removeEventListener('scroll', handleScrollThrottled);
+    }
+}
+
+// Create a throttled version of the handleScroll function
+const handleScrollThrottled = throttle(handleScroll, 1000);
+
+// Add the throttled scroll event listener
+window.addEventListener('scroll', handleScrollThrottled);
+
+
+function createPinItButton(imageSrc, imageAlt, postId, postTitle, postUrl, mediaUrl) {
+    const pinUrl = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(postUrl)}&media=${encodeURIComponent(imageSrc)}&description=${encodeURIComponent(imageAlt)}`;
+    const button = document.createElement('button');
+    button.className = "w-full rounded-md bg-red-600 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 flex items-center justify-center space-x-2 pin-it-button";
+    button.setAttribute('type', 'button'); // Specify button type to be 'button'
+    
+    // Add SVG to the button
+    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute('class', 'w-8 text-white');
+    svg.setAttribute('viewBox', '0 0 24 24');
+    svg.innerHTML = '            <path fill="currentColor" d="M11.935 2.375a9.625 9.625 0 0 0-3.507 18.563a9.102 9.102 0 0 1 0-2.75l1.135-4.813A3.472 3.472 0 0 1 9.3 12c0-1.334.777-2.338 1.74-2.338a1.21 1.21 0 0 1 1.217 1.375c0 .532-.218 1.236-.446 1.974c-.125.407-.254.825-.352 1.23a1.375 1.375 0 0 0 1.43 1.74c1.705 0 3.025-1.809 3.025-4.407a3.804 3.804 0 0 0-4.022-3.919a4.166 4.166 0 0 0-4.345 4.18a3.726 3.726 0 0 0 .688 2.193a.303.303 0 0 1 .068.275c-.075.303-.24.963-.268 1.093c-.027.13-.144.213-.323.13c-1.203-.563-1.952-2.316-1.952-3.732c0-3.032 2.207-5.823 6.36-5.823c3.333 0 5.932 2.378 5.932 5.562c0 3.313-2.062 5.98-4.998 5.98a2.586 2.586 0 0 1-2.207-1.1l-.598 2.29a10.69 10.69 0 0 1-1.196 2.523a9.74 9.74 0 0 0 2.88.399a9.625 9.625 0 0 0 0-19.25"/>';
+
+    // Add SVG and text to the button
+    button.appendChild(svg);
+    const span = document.createElement('span');
+    span.innerText = 'Pin it';
+    button.appendChild(span);
+
+    // Event listener for click, incorporating tracking and redirection
+    button.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent default link behavior
+
+        // Tracking API URL construction
+        let trackapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track?type=pinterest&post_id=${encodeURIComponent(postId)}&post_title=${encodeURIComponent(postTitle)}&post_url=${encodeURIComponent(postUrl)}&post_image=${encodeURIComponent(mediaUrl)}`;
+        console.log(trackapi); // For debugging
+
+        // Perform the tracking request
+        fetch(trackapi)
+            .then(response => {
+                if(response.ok) {
+                    // Redirect to Pinterest after successful tracking
+                    window.open(pinUrl, '_blank');
+                } else {
+                    console.error('Tracking failed');
+                }
+            })
+            .catch(error => {
+                console.error('Error tracking the click:', error);
+            });
+    });
+
+    return button;
+} #}
+
+
+let buttonsAdded = false; // Flag to ensure buttons are added only once
+
+window.addEventListener('scroll', function() {
+    // Check if buttons have already been added or if the page hasn't been scrolled enough
+    if (buttonsAdded || window.scrollY + window.innerHeight < 1200) {
+        return;
+    }
+    
+    // Scroll position has exceeded 1200px and buttons haven't been added yet
+    console.log('Adding Pin It buttons');
+    addPinItButtons();
+    buttonsAdded = true; // Update flag to prevent adding buttons again
 });
+
+function addPinItButtons() {
+    // Find all images inside .post divs and append created Pin It buttons
+    const postId = '{{ post.id }}'; // You should replace placeholders with actual JS variables
+    const postTitle = '{{ post.title | escape }}'; // Ditto
+    const postUrl = '{{ page_url | escape }}'; // Ditto
+    
+    const images = document.querySelectorAll('.post img');
+    images.forEach(image => {
+        if (!image.nextElementSibling || !image.nextElementSibling.classList.contains('pin-it-button')) {
+            // Assume postId, postTitle, postUrl, and mediaUrl are correctly fetched or defined
+            const pinItButton = createPinItButton(image.src, image.alt || postTitle, postId, postTitle, postUrl);
+            image.parentNode.insertBefore(pinItButton, image.nextSibling);
+        }
+    });
+}
+
+function createPinItButton(imageSrc, imageAlt, postId, postTitle, postUrl) {
+    // Create the button element with classes and set its type
+    mediaUrl = imageSrc;
+    const button = document.createElement('button');
+    button.className = "w-full rounded-md bg-red-600 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 flex items-center justify-center space-x-2 pin-it-button";
+    button.type = 'button';
+
+    // Add inner content (e.g., SVG, text) to the button
+    button.innerHTML = `<path fill="currentColor" d="M11.935 2.375a9.625 9.625 0 0 0-3.507 18.563a9.102 9.102 0 0 1 0-2.75l1.135-4.813A3.472 3.472 0 0 1 9.3 12c0-1.334.777-2.338 1.74-2.338a1.21 1.21 0 0 1 1.217 1.375c0 .532-.218 1.236-.446 1.974c-.125.407-.254.825-.352 1.23a1.375 1.375 0 0 0 1.43 1.74c1.705 0 3.025-1.809 3.025-4.407a3.804 3.804 0 0 0-4.022-3.919a4.166 4.166 0 0 0-4.345 4.18a3.726 3.726 0 0 0 .688 2.193a.303.303 0 0 1 .068.275c-.075.303-.24.963-.268 1.093c-.027.13-.144.213-.323.13c-1.203-.563-1.952-2.316-1.952-3.732c0-3.032 2.207-5.823 6.36-5.823c3.333 0 5.932 2.378 5.932 5.562c0 3.313-2.062 5.98-4.998 5.98a2.586 2.586 0 0 1-2.207-1.1l-.598 2.29a10.69 10.69 0 0 1-1.196 2.523a9.74 9.74 0 0 0 2.88.399a9.625 9.625 0 0 0 0-19.25"/><span>Pin it</span>`;
+
+    // Set up the button's click event for tracking and redirection
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+        // Construct and log the tracking API URL
+        let trackapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track?type=pinterest&post_id=${encodeURIComponent(postId)}&post_title=${encodeURIComponent(postTitle)}&post_url=${encodeURIComponent(postUrl)}&post_image=${encodeURIComponent(mediaUrl)}`;
+        const pinUrl = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(postUrl)}&media=${encodeURIComponent(imageSrc)}&description=${encodeURIComponent(imageAlt)}`;
+
+        console.log(trackapi);
+
+        // Perform the tracking request and handle the response
+        fetch(trackapi).then(response => {
+            if (response.ok) {
+                window.open(pinUrl, '_blank');
+            } else {
+                console.error('Tracking failed');
+            }
+        }).catch(error => {
+            console.error('Error tracking the click:', error);
+        });
+    });
+
+    return button;
+}
+
+// Variables like postId, postTitle, postUrl, and mediaUrl need to be defined or fetched appropriately
 
 
 
