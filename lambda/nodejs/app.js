@@ -11,6 +11,7 @@ exports.handler = async (event, context) => {
     const client = new MongoClient(uri);
     await client.connect();
     const db = client.db('aws');
+    // const collection = db.collection('posts');
     const collection = db.collection('posts');
 
     // Fetch data from MongoDB

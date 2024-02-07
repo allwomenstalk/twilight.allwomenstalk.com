@@ -36,13 +36,13 @@ async function generateBatch() {
   console.log('Connecting to MongoDB');
   await client.connect();
   const database = client.db('aws');
-  const collection = database.collection('posts');
+  const collection = database.collection('MaterializedPosts');
 
   const pipeline = [
     ...filter,
     { $sort: { _id: 1 } },
     { $limit: batchSize },
-    ...pipelinePost
+    // ...pipelinePost 
     // Add additional pipeline stages if needed
   ];
 
