@@ -160,7 +160,7 @@ module.exports = function (item) {
         .replace(/src="(.*?)(\d*)x(\d*)\.(jpg|gif|png)"/g, 'src="$1$2x$3.$4" width="$2" height="$3" loading="lazy"')
         // adding wepb for images
         .replace(/(<img src=")https:\/\/img\.allw\.mn\/content\/([^"]+)(\.jpg")/g, 
-                  '$1https://resize.allw.mn/filters:format(webp)/filters:quality(70)/content/$2$3');
+                  '$1https://resize.allw.mn/1028x0/filters:format(webp)/filters:quality(70)/content/$2$3');
 
       // breaking into pages
       temp.content = temp.content
