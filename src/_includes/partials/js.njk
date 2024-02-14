@@ -30,12 +30,14 @@
             source: false,
             banner: {
                 show: true,
-                strong: "NEW", 
-                text: "Checkout our New Quizzes!", 
-                link: "https://quiz.allwomenstalk.com/?utm_source=aws&utm_medium=article&utm_campaign=quiz&utm_content=article"
+                strong: "Hello!", 
+                text: "", 
+                link: "",
+                cta: false,
             },
             init () {
                 console.log('init alpine');
+                this.bannerinit ()
                 this.comment.comment_author = window.localStorage.getItem('comment_author') || '';
                 this.comment.comment_author_email = window.localStorage.getItem('comment_author_email') || '';
                 this.authcheck();
@@ -51,6 +53,16 @@
 
                 this.showsource();
 
+            },
+
+            bannerinit () {
+                console.log('banner init');
+                fetch('https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/banner')
+                .then(response => response.json())
+                .then(data => {
+                    this.banner = data;
+                    this.banner.show = true;
+                });
             },
 
             showsource() {
@@ -442,6 +454,44 @@
 
         
     {% endif %}
+
+
+    document.addEventListener('alpine:init', () => {
+
+
+    const bannerHtml = `
+<div class="flex items-center gap-x-6 bg-gray-900 px-3.5 py-2.5 sm:px-3.5 before:flex-1">
+  <p class="text-sm leading-6 text-white opacity-0"
+     :class="{ 'opacity-100': banner.text }"
+     x-transition x-transition.duration.2500ms
+     >
+    <a :href="banner.link" target="_blank">
+      <strong x-text="banner.strong" class="font-semibold"></strong>
+      <svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>
+      <span x-text="banner.text"></span>
+      <svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>
+      <span class="flex-none rounded-full whitespace-nowrap bg-gray-50 px-3.5 py-1 text-sm font-semibold text-black shadow-sm hover:bg-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">
+        <span x-text="banner.cta" class="hidden sm:inline-block"></span>
+        <span aria-hidden="true">&rarr;</span>
+      </span>
+    </a>
+  </p>
+  <div class="flex flex-1 justify-end">
+    <a href="https://allwomenstalk.com/banner/" target="_blank" class="text-white">
+      <span class="opacity-20 hover:opacity-80 inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
+      Ad
+      </span>
+    </a>
+  </div>
+</div>
+    `;
+
+    // Assuming you have a div with id="text-banner"
+    const targetDiv = document.getElementById('txtad');
+    if(targetDiv) {
+        targetDiv.innerHTML = bannerHtml;
+    }
+});
 </script>
 
 {% if metadata.NODE_ENV == "production" %}
