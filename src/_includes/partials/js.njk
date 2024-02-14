@@ -28,6 +28,12 @@
                 categories: {{categories|json|safe}},
             },
             source: false,
+            banner: {
+                show: true,
+                strong: "NEW", 
+                text: "Checkout our New Quizzes!", 
+                link: "https://quiz.allwomenstalk.com/?utm_source=aws&utm_medium=article&utm_campaign=quiz&utm_content=article"
+            },
             init () {
                 console.log('init alpine');
                 this.comment.comment_author = window.localStorage.getItem('comment_author') || '';
