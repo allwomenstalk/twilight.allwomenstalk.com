@@ -9,6 +9,7 @@ const related_cluster = require('./aws.related_cluster.json').map(item=> new Obj
 
 // const quotestopost = require('./aws.quotestopost.json').map(item=>new ObjectId(item._id));
 const ids = require('./ids.json');
+const slugs = require('./slugs.json');
 const { pipeline } = require('stream');
 
 try {
@@ -376,6 +377,14 @@ pipeline_ids = [
   {
     '$match': {
       '_id': {$in: ids.map(id=>new ObjectId(id))},
+    }
+  }
+]
+
+pipeline_slugs = [
+  {
+    '$match': {
+      'post_name': {$in: slugs}
     }
   }
 ]

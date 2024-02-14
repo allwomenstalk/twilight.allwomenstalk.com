@@ -27,5 +27,5 @@ sam deploy
 echo "Deploy completed successfully!"
 echo "Cleaning up..."
 
-rm -rf ../nodejs/src
-rm -rf ../nodejs/helpers
+# rm -rf ../nodejs/src
+# rm -rf ../nodejs/helpers

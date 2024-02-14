@@ -86,7 +86,12 @@ eleventyComputed:
                     
                     {% include 'partials/toc.njk' %} 
                     
-                    {% include "partials/poll.njk" %}
+                    {% if quizzes[post.id] %}
+                    {% include "partials/quiz.njk" %}  
+                    {% else %} 
+                    {% include 'partials/poll.njk' %}
+                    {% endif %}
+
 
                 {% elif loop.index == 2 %}
                     {% include 'partials/unibots.njk' %}
@@ -129,7 +134,7 @@ eleventyComputed:
             
             {% include 'partials/rating.njk' %}
 
-            {# {% include 'partials/pinterestcard.njk' %} #}
+            {% include 'partials/pinterestcard.njk' %}
             
             {% include "partials/commentspanel.njk" %}
 
