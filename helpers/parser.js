@@ -200,6 +200,7 @@ module.exports = function (item) {
       temp.SchemaObjects = [] //additional schemas
 
       // video objects 
+      temp.pages = [] // array of pages for structured pages
       temp.content.forEach((page,index) => {
         
         if (page.includes('amp-youtube')) {
@@ -219,6 +220,26 @@ module.exports = function (item) {
           }
           temp.SchemaObjects.push(JSON.stringify(VideoObject,null,4))
         }
+
+        // convert to object 
+        temp.pages.push({
+          content: page
+        })
+        title = page.match(/<h2>(.*?)<\/h2>/)
+        // remove <span> from title
+        if (title) {
+          // extrac span text from title 
+          number = title[1].match(/<span.*?span>/g)
+          if (number) {
+            number = number[0].replace(/<span.*?>(.*?)<\/span>/g,'$1')
+            temp.pages[index].number = number
+          }
+          title = title[1].replace(/<span.*?span>/g,'')
+          // remove title from content
+          temp.pages[index].content = temp.pages[index].content.replace(/<h2>.*?<\/h2>/,'')
+          temp.pages[index].title = title
+        }
+
       })
       //console.log(temp.SchemaObjects)
 
@@ -277,6 +298,7 @@ module.exports = function (item) {
               }
          }
         temp.SchemaObjects.push(JSON.stringify(recipeSchemaObj,null,4))
+
       }
 
 

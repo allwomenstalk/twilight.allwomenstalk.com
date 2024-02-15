@@ -330,7 +330,7 @@ pipeline_seo_top = [
     '$sort': {"seo.clicks":-1}
   },
   {
-    '$limit': 2000
+    '$limit': 1000
   }
 ]
 

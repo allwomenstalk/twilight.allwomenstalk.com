@@ -25,7 +25,10 @@ eleventyComputed:
 
     <main id="content">
     
-    {% for page in post.content %}
+    {% for page in post.pages %}
+        {% if page.title %}
+            {% include 'partials/postH2.njk' %}     
+        {% endif %}
         <div class="{%- if post.noaff -%} _noaff {% endif %}
             post prose p-4 overflow-hidden mx-auto max-w-xl
             {%- if loop.first -%} 
@@ -33,7 +36,9 @@ eleventyComputed:
             {%- endif -%}
             
             " id="{{loop.index0}}">
-        {{ page | safe }}
+
+            
+            {{ page.content | safe }}
         </div>
 
         {% if post.elaborate[loop.index-1] %}

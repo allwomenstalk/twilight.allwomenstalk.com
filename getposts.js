@@ -56,7 +56,7 @@ main = async () => {
     console.log("Connecting to MongoDB");
     await client.connect();
     const database = client.db('aws');
-    const collection = database.collection('MaterializedPosts');
+    const collection = database.collection('posts');
 
     const limitperbuild = process.env.NODE_ENV === "production" ? 10000 : 10000;
     const filter = global[default_pipeline];
@@ -70,7 +70,7 @@ main = async () => {
       },
       ...filter,
       { '$limit': limitperbuild },
-      // ...pipelinePost
+      ...pipelinePost
     ];
 
     const cursor = await collection.aggregate(pipeline);
