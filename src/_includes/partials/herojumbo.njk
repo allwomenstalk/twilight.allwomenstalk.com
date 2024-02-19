@@ -1,11 +1,13 @@
 <div class="hero mb-6 overflow-hidden">
-  <div class="text-center mx-auto max-w-2xl sm:rounded-t-lg md:rounded-t-2xl  mt-2 p-6 align-middle relative bg-gradient-to-r to-80% from-pink-600 to-pink-800 text-gray-100">
+  <div class="grid gap-y-8 md:gap-y-16 mx-auto max-w-2xl sm:rounded-t-lg md:rounded-t-2xl  mt-2 p-6 align-middle relative bg-gradient-to-r to-80% from-pink-600 to-pink-800 text-gray-100">
     <div class="uppercase tracking-wide text-sm font-bold text-white opacity-70">
       <a href="https://{{ post.category[0] }}.allwomenstalk.com/" class="">{{ post.category[0] }}</a>
       •
       <a href="#rating" class="">{{ post.ratingstars }}</a>
     </div>
-    <h1 class=" mx-auto  text-4xl md:text-6xl 2xl:text-9xl p-8 md:p-16 xl:p-32 overflow-hidden">{{ post.title }}</h1>
+    <h1 class="mx-auto text-4xl leading-normal py-2 md:text-6xl md:pr-16 overflow-hidden">
+      {{ post.viral or post.title }}
+    </h1>
     <p class="mt-2 text-sm text-white opacity-70 ">
       By
       <a href="https://allwomenstalk.com/profile/{{ post.author.id }}/" class="text-white">{{ post.author.name }}</a>
@@ -39,6 +41,7 @@
 
 
     </p>
+
     {# <svg class="text-pink-800 z-10 hidden md:block absolute right-0 inset-y-0 h-full w-48 transform translate-x-1/2 " fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
       <polygon points="50,0 100,0 50,100 0,100"></polygon>
     </svg> #}
