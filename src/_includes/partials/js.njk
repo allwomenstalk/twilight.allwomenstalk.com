@@ -300,7 +300,7 @@
     }
 
 
-        function reactionsData() {
+    function reactionsData() {
         return {
             showReactions: false,
             selectedEmoji: null,
@@ -343,7 +343,6 @@
     function getRandomCount() {
         return Math.floor(Math.random() * 1000); // Random number between 0 and 999
     }
-
 
     function keywords() {
         return {
@@ -414,19 +413,132 @@
     }
 
     function getCookieValue(cookieName) {
-    const cookies = document.cookie.split(';');
+        const cookies = document.cookie.split(';');
 
-    for (let i = 0; i < cookies.length; i++) {
-        const cookie = cookies[i].trim();
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
 
-        if (cookie.startsWith(`${cookieName}=`)) {
-        return cookie.split('=')[1];
+            if (cookie.startsWith(`${cookieName}=`)) {
+            return cookie.split('=')[1];
+            }
+        }
+
+        return null;
+    }
+
+    function newsletterComponent() {
+        return {
+            postId: '{{post.id}}',  // Assuming you have a postId
+            postUrl: '{{post.url}}', // Assuming you have a postUrl
+            email: '',
+            message: '',
+            titles: [
+            { title: "Empower Your Inbox", subtitle: "Join Our Women's Circle Newsletter!" },
+            { title: "Unlock Your Feminine Power", subtitle: "Subscribe to Our Newsletter!" },
+            { title: "Inspire Your Journey", subtitle: "Sign Up for Our Women's Wisdom Newsletter!" },
+            { title: "Stay Radiant and Informed", subtitle: "Get Our Women's Insight Newsletter!" },
+            { title: "Elevate Your Life", subtitle: "Join Our Empowering Women's Newsletter!" },
+            { title: "Be Bold, Be Beautiful", subtitle: "Subscribe to Our Women's Empowerment Newsletter!" },
+            { title: "Discover Your Strength", subtitle: "Sign Up for Our Inspirational Women's Newsletter!" },
+            { title: "Celebrate Womanhood", subtitle: "Receive Our Enlightening Women's Newsletter!" },
+            { title: "Nurture Your Spirit", subtitle: "Get Our Nourishing Women's Newsletter!" },
+            { title: "Unleash Your Potential", subtitle: "Join Our Dynamic Women's Newsletter!" }
+            ],
+            title: '',
+            subtitle: '',
+            init() {
+            this.setTitle();
+            this.setupObserver();
+            },
+            setTitle() {
+            const randomIndex = Math.floor(Math.random() * this.titles.length);
+            this.title = this.titles[randomIndex].title;
+            this.subtitle = this.titles[randomIndex].subtitle;
+            },
+            async sub() {
+            try {
+                params = {
+                title: this.title,
+                subtitle: this.subtitle
+                }
+                console.log(params, this.email);
+                const url = 'https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/newsletter';
+                const payload = {
+                params: params,
+                email: this.email,
+                postTitle: this.postTitle,
+                postId: this.postId
+                };
+
+                const response = await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) throw new Error('Network response was not ok');
+                
+                const data = await response.json();
+                console.log(data);
+                this.message = 'Done! Thank you for subscribing!'; // Set a success message
+                localStorage.setItem('email', this.email); // Save the email to localStorage
+                this.track('action');
+            } catch (error) {
+                console.error('There was a problem with the fetch operation:', error);
+                this.message = 'There was an error with your subscription.'; // Set an error message
+            }
+            },
+            async sendFormVisibleEvent() {
+            // Add your API call logic here
+            console.log('Form is visible on the screen');
+            this.track('impression');
+            },
+            setupObserver() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    this.sendFormVisibleEvent();
+                }
+                });
+            }, { threshold: 0.5 });
+
+            observer.observe(this.$el);
+            }, 
+            async track(event) {
+            {# event = "action" || "impression" #}
+            trackapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/stats`
+            const bodyContent = {
+                    keys: {
+                        post_id: this.postId,
+                        type: 'newsletter',  // Any other key-value pairs
+                        post_url: this.postUrl, 
+                    },
+                    inc: {
+                        [`${event}.${this.title}`]: 1  // Increment specific answer count (e.g., 'A', 'B', 'C')
+                    }
+                };
+                // add global track and imp to match the report
+                if (event == "action"){
+                    bodyContent.inc.track_count = 1
+                } else {
+                    bodyContent.inc.impressions = 1
+                }
+
+                try {
+                    const response = await fetch(trackapi, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(bodyContent)
+                    });
+                    {# console.log('Event tracked:', await response.json()); #}
+                } catch (error) {
+                    console.error('Error tracking event:', error);
+                }
+            }
         }
     }
-
-    return null;
-    }
-
 
     setTimeout(function() {
         loadJs("https://allwomenstalk.github.io/js/elaborate.2.0.min.js", () => {

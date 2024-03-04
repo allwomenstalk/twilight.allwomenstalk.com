@@ -135,11 +135,11 @@ eleventyComputed:
             {# {% include 'partials/cta.njk' %} #}
         {% else %}
             {# adding shopping on the end for short posts #}
-            {% include 'partials/subscribe.njk' %}
+            {# {% include 'partials/subscribe.njk' %} #}
             
-            {% include 'partials/rating.njk' %}
+            {# {% include 'partials/rating.njk' %} #}
 
-            {% include 'partials/pinterestcard.njk' %}
+            {# {% include 'partials/pinterestcard.njk' %} #}
             
             {% include "partials/commentspanel.njk" %}
 
@@ -147,8 +147,8 @@ eleventyComputed:
             {% if (loop.length < 12) %}
                 {# {% include 'partials/shopping.njk' %} #}
             {% endif %}
-            {% include 'partials/collections.njk' %}
-            {% include 'partials/seperator.njk' %}
+            {# {% include 'partials/collections.njk' %} #}
+            {# {% include 'partials/seperator.njk' %} #}
 
             {% if not post.noads %}
             {# {% include 'partials/keywordsgallery.njk' %} #}
@@ -161,10 +161,12 @@ eleventyComputed:
 
     </main>
 
+    {% include 'partials/newsletter.njk' %}
+
     {% include 'partials/adsnew.njk' %}
     {# {% include 'partials/ads.njk' %} #}
 
-    {% include "partials/listmix.njk" %}
+    {# {% include "partials/listmix.njk" %} #}
 
     {# {% include 'partials/popular.njk' %} #}
 
@@ -172,7 +174,7 @@ eleventyComputed:
 
     <div class="ad-slot mx-auto overflow-hidden" id="slot-related"></div>
 
-    {% include 'partials/relatedlight.njk' %}
+    {% include 'partials/relatedbadges.njk' %}
     
     {# <div class="ad-slot mx-auto overflow-hidden" id="slot-review"></div> #}
 

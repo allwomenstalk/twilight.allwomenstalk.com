@@ -15,7 +15,7 @@ async function fetchAndSaveUniquePostIds() {
     // Fetch the latest 2000 documents by "date"
     const documents = await collection.find({})
                                        .sort({date: -1})
-                                       .limit(2000)
+                                       .limit(3000)
                                        .project({postid: 1, _id: 0})
                                        .toArray();
 
