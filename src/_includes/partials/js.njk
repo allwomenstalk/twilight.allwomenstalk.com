@@ -433,19 +433,20 @@
             email: '',
             message: '',
             titles: [
-            { title: "Empower Your Inbox", subtitle: "Join Our Women's Circle Newsletter!" },
-            { title: "Unlock Your Feminine Power", subtitle: "Subscribe to Our Newsletter!" },
-            { title: "Inspire Your Journey", subtitle: "Sign Up for Our Women's Wisdom Newsletter!" },
-            { title: "Stay Radiant and Informed", subtitle: "Get Our Women's Insight Newsletter!" },
-            { title: "Elevate Your Life", subtitle: "Join Our Empowering Women's Newsletter!" },
-            { title: "Be Bold, Be Beautiful", subtitle: "Subscribe to Our Women's Empowerment Newsletter!" },
-            { title: "Discover Your Strength", subtitle: "Sign Up for Our Inspirational Women's Newsletter!" },
-            { title: "Celebrate Womanhood", subtitle: "Receive Our Enlightening Women's Newsletter!" },
-            { title: "Nurture Your Spirit", subtitle: "Get Our Nourishing Women's Newsletter!" },
-            { title: "Unleash Your Potential", subtitle: "Join Our Dynamic Women's Newsletter!" }
+                { "title": "Weekly Recipe Roundup", "subtitle": "Discover New Recipes Every Week!" },
+                { "title": "Cooking Tips and Tricks", "subtitle": "Enhance Your Culinary Skills!" },
+                { "title": "Food Trends and News", "subtitle": "Stay Updated on the Latest in Food!" },
+                { "title": "Ingredient Spotlight", "subtitle": "Learn About the Benefits of Different Ingredients!" },
+                { "title": "Kitchen Gadgets and Tools", "subtitle": "Explore Must-Have Kitchen Essentials!" },
+                { "title": "Cultural Cuisine Exploration", "subtitle": "Travel the World Through Your Taste Buds!" },
+                { "title": "Seasonal Eating", "subtitle": "Enjoy the Best of Each Season!" },
+                { "title": "Food and Health", "subtitle": "Eat Your Way to Wellness!" },
+                { "title": "Entertaining and Hosting", "subtitle": "Master the Art of Hosting!" },
+                { "title": "Food Sustainability", "subtitle": "Learn How to Eat Responsibly!" }
             ],
             title: '',
             subtitle: '',
+            offer: "Subscriber Specials",
             init() {
             this.setTitle();
             this.setupObserver();
@@ -459,7 +460,8 @@
             try {
                 params = {
                 title: this.title,
-                subtitle: this.subtitle
+                subtitle: this.subtitle,
+                offer: this.offer
                 }
                 console.log(params, this.email);
                 const url = 'https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/newsletter';
@@ -510,7 +512,7 @@
             const bodyContent = {
                     keys: {
                         post_id: this.postId,
-                        type: 'newsletter',  // Any other key-value pairs
+                        type: 'foodnewsletter',  // Any other key-value pairs
                         post_url: this.postUrl, 
                     },
                     inc: {

@@ -334,6 +334,20 @@ pipeline_seo_top = [
   }
 ]
 
+pipeline_seo_top_food = [
+  {
+    '$match': {
+      "super_categories":{$in:["food"]}
+    }
+  },
+  {
+    '$sort': {"seo.clicks":-1}
+  },
+  {
+    '$limit': 1000
+  }
+]
+
 
 pipeline_instagram = [
   {
