@@ -151,3 +151,18 @@ aws codebuild start-build --project-name AllwomenstalkArchives
 
 quizzes backup 
 
+
+# Newsletter focus : 
+Food toipsc backup 
+            titles: [
+                { "title": "Weekly Recipe Roundup", "subtitle": "Discover New Recipes Every Week!" },
+                { "title": "Cooking Tips and Tricks", "subtitle": "Enhance Your Culinary Skills!" },
+                { "title": "Food Trends and News", "subtitle": "Stay Updated on the Latest in Food!" },
+                { "title": "Ingredient Spotlight", "subtitle": "Learn About the Benefits of Different Ingredients!" },
+                { "title": "Kitchen Gadgets and Tools", "subtitle": "Explore Must-Have Kitchen Essentials!" },
+                { "title": "Cultural Cuisine Exploration", "subtitle": "Travel the World Through Your Taste Buds!" },
+                { "title": "Seasonal Eating", "subtitle": "Enjoy the Best of Each Season!" },
+                { "title": "Food and Health", "subtitle": "Eat Your Way to Wellness!" },
+                { "title": "Entertaining and Hosting", "subtitle": "Master the Art of Hosting!" },
+                { "title": "Food Sustainability", "subtitle": "Learn How to Eat Responsibly!" }
+            ],

@@ -164,19 +164,22 @@ eleventyComputed:
 
     </main>
 
+    {% include 'partials/relatedbadges.njk' %}
+
 
     {% include 'partials/adsnew.njk' %}
+    <div class="ad-slot mx-auto overflow-hidden" id="slot-related"></div>
+
+
     {# {% include 'partials/ads.njk' %} #}
 
     {# {% include "partials/listmix.njk" %} #}
 
-    {# {% include 'partials/popular.njk' %} #}
+    {% include 'partials/popular.njk' %}
 
     {% include 'partials/schema.njk' %}
 
-    <div class="ad-slot mx-auto overflow-hidden" id="slot-related"></div>
 
-    {% include 'partials/relatedbadges.njk' %}
     
     {# <div class="ad-slot mx-auto overflow-hidden" id="slot-review"></div> #}
 
