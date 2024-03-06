@@ -13,7 +13,7 @@ const createMaterializedView = async (client, lastId) => {
     const pipeline = [
         {
             '$match': {
-                '_id': {'$lt': lastId}
+                '_id': {'$lt': lastId},
             }
         },
         {
@@ -209,16 +209,73 @@ const createMaterializedView = async (client, lastId) => {
     return lastDocument.length > 0 ? lastDocument[0]._id : null;
 };
 
+
+const deleteAllDataFromMaterializedView = async (client) => {
+  const db = client.db(DB_NAME);
+  try {
+      const result = await db.collection('MaterializedPosts').deleteMany({});
+      console.log(`${result.deletedCount} documents were deleted from the materialized view collection.`);
+  } catch (err) {
+      console.error('Error occurred while deleting data from the materialized view collection:', err);
+  }
+};
+
+
+const recreateIndexesAndDropCollection = async (client) => {
+  const db = client.db(DB_NAME);
+  const collection = db.collection('MaterializedPosts');
+
+  try {
+      // Retrieve the current indexes
+      const indexes = await collection.listIndexes().toArray();
+      const indexSpecs = indexes
+          .filter(index => index.name !== '_id_')  // Exclude the default _id index
+          .map(index => ({
+              key: index.key,
+              name: index.name,
+              unique: index.unique || false,
+              sparse: index.sparse || false,
+          }));
+
+      // Drop the collection
+      await collection.drop();
+      console.log('Materialized view collection dropped successfully.');
+
+      // Recreate the indexes on the new collection
+      if (indexSpecs.length > 0) {
+          await db.collection('MaterializedPosts').createIndexes(indexSpecs);
+          console.log('Indexes recreated successfully.');
+      }
+  } catch (err) {
+      if (err.codeName === 'NamespaceNotFound') {
+          console.log('Materialized view collection does not exist, no need to drop.');
+      } else {
+          console.error('Error occurred while dropping and recreating indexes:', err);
+      }
+  }
+};
+
+
 const main = async () => {
     const client = new MongoClient(MONGODB_URI, { useUnifiedTopology: true });
     try {
         await client.connect();
+        
+        // Delete all data from the existing materialized view collection
+        await deleteAllDataFromMaterializedView(client);
+
+        // Drop the collection and recreate indexes
+        // await recreateIndexesAndDropCollection(client);
+
         let lastId = new ObjectId('ffffffffffffffffffffffff');
+
 
         while (true) {
             console.log(`Processing documents with _id less than ${lastId}`);
             const db = client.db(DB_NAME);
-            const remainingDocs = await db.collection(COLLECTION_NAME).countDocuments({'_id': {'$lt': lastId}});
+            const remainingDocs = await db.collection(COLLECTION_NAME).countDocuments({
+              '_id': {'$lt': lastId},
+            });
             console.log(`Remaining documents: ${remainingDocs}`);
             if (remainingDocs === 0) {
                 break;

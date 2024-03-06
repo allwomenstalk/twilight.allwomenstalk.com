@@ -66,7 +66,7 @@ node batchS3generator.js {creates batch files in folder /batch }
 sh batchbuild.sh (uploads to s3 and starts builds)
 
 new version: 
-batchmaterialize.js to merge all data
+batchMaterialize.js to merge all data
 batchS3generator.js to create files 
 batchbuild.sh to upload as tart builds 
 
