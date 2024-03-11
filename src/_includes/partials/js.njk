@@ -432,29 +432,27 @@
             postUrl: '{{post.url}}', // Assuming you have a postUrl
             email: '',
             message: '',
-            titles: [
-            { title: "Empower Your Inbox", subtitle: "Join Our Women's Circle Newsletter!" },
-            { title: "Unlock Your Feminine Power", subtitle: "Subscribe to Our Newsletter!" },
-            { title: "Inspire Your Journey", subtitle: "Sign Up for Our Women's Wisdom Newsletter!" },
-            { title: "Stay Radiant and Informed", subtitle: "Get Our Women's Insight Newsletter!" },
-            { title: "Elevate Your Life", subtitle: "Join Our Empowering Women's Newsletter!" },
-            { title: "Be Bold, Be Beautiful", subtitle: "Subscribe to Our Women's Empowerment Newsletter!" },
-            { title: "Discover Your Strength", subtitle: "Sign Up for Our Inspirational Women's Newsletter!" },
-            { title: "Celebrate Womanhood", subtitle: "Receive Our Enlightening Women's Newsletter!" },
-            { title: "Nurture Your Spirit", subtitle: "Get Our Nourishing Women's Newsletter!" },
-            { title: "Unleash Your Potential", subtitle: "Join Our Dynamic Women's Newsletter!" }
-            ],
+            titles: [],
             title: '',
             subtitle: '',
             offer: "Subscriber Specials",
             init() {
-            this.setTitle();
-            this.setupObserver();
+            
+                this.setupObserver();
+
             },
             setTitle() {
-            const randomIndex = Math.floor(Math.random() * this.titles.length);
-            this.title = this.titles[randomIndex].title;
-            this.subtitle = this.titles[randomIndex].subtitle;
+                jsonurl = 'https://allwomenstalk.github.io/data/newsletter.json'
+                fetch(jsonurl)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data)
+                    this.titles = data;
+                    
+                });
+                const randomIndex = Math.floor(Math.random() * this.titles.length);
+                this.title = this.titles[randomIndex].title;
+                this.subtitle = this.titles[randomIndex].subtitle;
             },
             async sub() {
             try {
@@ -491,9 +489,10 @@
             }
             },
             async sendFormVisibleEvent() {
-            // Add your API call logic here
-            console.log('Form is visible on the screen');
-            this.track('impression');
+                // Add your API call logic here
+                console.log('Form is visible on the screen');
+                this.setTitle();
+                this.track('impression');
             },
             setupObserver() {
             const observer = new IntersectionObserver((entries) => {
