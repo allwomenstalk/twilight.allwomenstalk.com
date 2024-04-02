@@ -2,6 +2,7 @@
 
 {% set page_url = post.url %}
 {% set media_url = 'https://pub-18d6387089a74708bbaea195784cb0ec.r2.dev/slide-'+post.id+'.png' %}
+{% set cover_url = post.image %}
 {% set description = post.title %}
 
 <div x-data="makepin({
@@ -36,8 +37,20 @@
             postUrl: props.postUrl,
             pinurl: null, 
             init() {
-                {# console.log('init pin'); #}
-                this 
+                console.log('init pin');
+                
+                fetch(this.mediaUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    // Process the response if needed
+                })
+                .catch(error => {
+                    console.error('Error fetching media:', error);
+                    this.mediaUrl = '{{ cover_url }}';
+                });
+
             },
             async pinit() {
                 console.log('pinit');
@@ -89,6 +102,7 @@ function addPinItButtons() {
     images.forEach(image => {
         if (!image.nextElementSibling || !image.nextElementSibling.classList.contains('pin-it-button')) {
             // Assume postId, postTitle, postUrl, and mediaUrl are correctly fetched or defined
+            console.log('Adding Pin It button for image:', image.src)
             const pinItButton = createPinItButton(image.src, image.alt || postTitle, postId, postTitle, postUrl);
             image.parentNode.insertBefore(pinItButton, image.nextSibling);
         }
@@ -96,19 +110,20 @@ function addPinItButtons() {
 }
 
 
-function createPinItButton(imageSrc, imageAlt, postId, postTitle, postUrl, mediaUrl) {
+function createPinItButton(imageSrc, imageAlt, postId, postTitle, postUrl) {
     // Construct the Pinterest URL
     const pinterestUrl = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(postUrl)}&media=${encodeURIComponent(imageSrc)}&description=${encodeURIComponent(imageAlt)}`;
 
     // Construct the tracking API URL (assuming you have these variables available)
-    const trackapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track?type=pinterestinpost&post_id=${encodeURIComponent(postId)}&post_title=${encodeURIComponent(postTitle)}&post_url=${encodeURIComponent(postUrl)}&post_image=${encodeURIComponent(mediaUrl)}`;
+    const trackapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track?type=pinterestinpost&post_id=${encodeURIComponent(postId)}&post_title=${encodeURIComponent(postTitle)}&post_url=${encodeURIComponent(postUrl)}&post_image=${encodeURIComponent(imageSrc)}`;
 
     // Create an <a> element instead of a button
     const link = document.createElement('a');
-    link.className = "w-full text-white rounded-md bg-red-600 px-2.5 py-1.5 text-sm font-semibold shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 flex items-center justify-center space-x-2 pin-it-button";
+    link.className = "-mt-6 mb-4 w-full text-white rounded-md bg-red-600 px-2.5 py-1.5 text-sm font-semibold shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 flex items-center justify-center space-x-2 pin-it-button";
     link.href = pinterestUrl;
+    link.style.textDecoration = 'none';
     link.target = '_blank'; // Ensure it opens in a new tab/window
-    link.innerHTML = `<span class="text-white no-underline">Pin it</span>`;
+    link.innerHTML = `<span class="text-white">Pin it</span>`;
     link.setAttribute('data-tracking-url', trackapi); // Store the tracking URL as a data attribute
 
     // Attach a click event listener for tracking
