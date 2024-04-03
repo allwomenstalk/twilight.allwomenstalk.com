@@ -112,22 +112,21 @@
     {% include "partials/footer.njk" %}
 </body>
 
-<amp-analytics type="googleanalytics" config="https://allwomenstalk.github.io/ga4/config.json" data-credentials="include">
-<script type="application/json">
-{
-    "vars": {
-                "GA4_MEASUREMENT_ID": "G-0BG099QVRK",
-                "GA4_ENDPOINT_HOSTNAME": "www.google-analytics.com",
-                "DEFAULT_PAGEVIEW_ENABLED": true,    
-                "GOOGLE_CONSENT_ENABLED": true,
-                "WEBVITALS_TRACKING": true,
-                "PERFORMANCE_TIMING_TRACKING": true,
-                "SEND_DOUBLECLICK_BEACON": true,
-                'ampHost': '${ampdocHost}'
-    }
-}
 
-</script>
-</amp-analytics> 
+<amp-analytics type="gtag" data-credentials="include">
+   <script type="application/json"> 
+      {
+      "vars" : { 
+          "gtag_id": "G-0BG099QVRK", 
+          "config": { 
+              "G-0BG099QVRK": { 
+                    "groups": "default" 
+                    }
+                                    }
+            }
+        } 
+   </script> 
+</amp-analytics>
+
 
 </html>
