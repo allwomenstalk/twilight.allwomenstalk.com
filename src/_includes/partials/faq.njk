@@ -50,14 +50,22 @@ function faqData() {
   return {
     shown: 3  , 
     report(item) {
-        console.log(item)
-        this.shown++
-        trackapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track?type=faq&post_id={{post.id}}&item=${item}`
-        // fetch get trackapi
-        fetch(trackapi)
-        //.then(response => response.json())
-        
+        console.log(item);
+        this.shown++;
+        const trackapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/beacon`;
+        console.log(trackapi);
+
+        // Use sendBeacon for sending the tracking data
+        const beaconData = new Blob([JSON.stringify({ type: 'faq', post_id: '{{post.id}}', item: item })], { type: 'application/json' });
+        const success = navigator.sendBeacon(trackapi, beaconData);
+
+        if (success) {
+            console.log('Beacon sent successfully');
+        } else {
+            console.log('Beacon failed to send');
+        }
     },
+
   };
 }
 </script>
