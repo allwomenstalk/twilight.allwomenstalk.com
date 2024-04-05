@@ -541,6 +541,16 @@
         }
     }
 
+
+    function beacontrack(obj) {
+        const trackapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/beacon`;
+
+        // Use sendBeacon for sending the tracking data
+        const beaconData = new Blob([JSON.stringify(obj)], { type: 'application/json' });
+        const success = navigator.sendBeacon(trackapi, beaconData);
+
+    }
+
     setTimeout(function() {
         loadJs("https://allwomenstalk.github.io/js/elaborate.2.0.min.js", () => {
             {# console.log('elaborate loaded'); #}

@@ -52,20 +52,8 @@ function faqData() {
     report(item) {
         console.log(item);
         this.shown++;
-        const trackapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/beacon`;
-        console.log(trackapi);
-
-        // Use sendBeacon for sending the tracking data
-        const beaconData = new Blob([JSON.stringify({ type: 'faq', post_id: '{{post.id}}', item: item })], { type: 'application/json' });
-        const success = navigator.sendBeacon(trackapi, beaconData);
-
-        if (success) {
-            console.log('Beacon sent successfully');
-        } else {
-            console.log('Beacon failed to send');
-        }
+        beacontrack({ type: 'faq', post_id: '{{post.id}}', item: item })        
     },
-
   };
 }
 </script>

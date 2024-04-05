@@ -67,25 +67,22 @@
 <script>
     function quizComponent() {
         return {
-            postId: '{{post.id}}',  // Assuming you have a postId
-            postUrl: '{{post.url}}', // Assuming you have a postUrl
+            postId: '{{post.id}}',  
+            postUrl: '{{post.url}}', 
             email:'',
             message: '',
             title: '',
             description: '',
             questions: [
-                //... (your questions)
             ],
             results: {
-                //... (your results)
             },
             answers: [],
             currentQuestionIndex: 0,
             result: '',
             resultDescription: '',
-            trackProbability: 0.1, // 10% chance to track the impression
-            observer: null, // To hold the reference to the Intersection Observer
-            trackapi: `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/stats`,
+            trackProbability: 0.1, 
+            observer: null, 
 
             init() {
                 this.questions = quizobj.questions;
@@ -168,76 +165,34 @@
             },
 
             async trackEvent() {
-                const trackIndex = this.currentQuestionIndex;
-                console.log('trackIndex:', trackIndex);
-                const questionText = this.questions[trackIndex].question;
-                const answerIndex = this.answers[trackIndex];
-                const answerText = this.questions[trackIndex].options[answerIndex].text;
-
-                {# console.log('questionText:', questionText);
-                console.log('answerIndex:', answerIndex);
-                console.log('answerText:', answerText); #}
-
-                const bodyContent = {
-                    keys: {
-                        post_id: this.postId,
-                        type: 'quiz',  // Any other key-value pairs
-                        post_url: this.postUrl, 
-                    },
-                    inc: {
-                        track_count: 1,  // Increment total track count
-                        [`answers.${questionText}.${answerText}`]: 1  // Increment specific answer count (e.g., 'A', 'B', 'C')
-                    },
-                    {# push: {
-                        items: {  // Push question_index and answer_index
-                            quiestion: questionText,
-                            answer: answerText
-                            // timestamp will be added on the server-side
-                        }
-                    } #}
-                };
-
-                try {
-                    const response = await fetch(this.trackapi, {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify(bodyContent)
-                    });
-                    {# console.log('Event tracked:', await response.json()); #}
-                } catch (error) {
-                    console.error('Error tracking event:', error);
+                const obj = {
+                    type : 'quiz',
+                    action: 1,
+                    post_id: this.postId,
+                    item: {
+                        title: this.title,
+                        question: this.questions[trackIndex].question;,
+                        answer: this.questions[trackIndex].options[answerIndex].text;, 
+                        index: this.currentQuestionIndex
+                    }
                 }
+                beacontrack(obj)        
             },
 
             async trackImpression(weight) {
-                const bodyContent = {
-                    keys: {
-                        post_id: this.postId,
-                        type: 'quiz',
-                        post_url: this.postUrl,
-                    },
-                    inc: {
-                        impressions: weight  // Increment impression by the weight
+                const obj = {
+                    type : 'quiz',
+                    impression: weight,
+                    post_id: this.postId, 
+                    item: {
+                       title: this.title,
                     }
-                };
-
-                try {
-                    const response = await fetch(this.trackapi, {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify(bodyContent)
-                    });
-                    console.log('Impression tracked with weight:', weight);
-                } catch (error) {
-                    console.error('Error tracking impression:', error);
                 }
+                beacontrack(obj)  
             },
 
             async sub() {
+
                 try {
                     params = {
                         title: this.title,
