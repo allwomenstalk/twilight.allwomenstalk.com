@@ -52,7 +52,7 @@ function faqData() {
     report(item) {
         console.log(item);
         this.shown++;
-        beacontrack({ type: 'faq', post_id: '{{post.id}}', item: item })        
+        beacontrack({ type: 'faq', action:1,  post_id: '{{post.id}}', item: item })        
     },
   };
 }

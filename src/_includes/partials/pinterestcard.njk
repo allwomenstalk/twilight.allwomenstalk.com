@@ -60,12 +60,18 @@
                 // Open a blank window immediately on user action to avoid popup blockers
                 let newWindow = window.open('about:blank', '_blank');
 
-                // Construct the trackapi URL with the passed-in parameters
-                let trackapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track?type=pinterest&post_id=${encodeURIComponent(this.postId)}&post_title=${encodeURIComponent(this.postTitle)}&post_url=${encodeURIComponent(this.postUrl)}&post_image=${encodeURIComponent(this.mediaUrl)}`;
-                console.log(trackapi);
+                obj= {
+                    type: 'pinterest',
+                    action:1,
+                    post_id: this.postId,
+                    item: {
+                        post_title: this.postTitle,
+                        post_url: this.postUrl,
+                        post_image: this.mediaUrl
+                    }
+                }
+                beacontrack(obj)
 
-                // Perform the tracking request
-                await fetch(trackapi);
                 // Assuming the fetch is for tracking and doesn't need a response processed here
                 // Update the new window location after tracking succeeds
                 if (newWindow) {
@@ -117,7 +123,7 @@ function createPinItButton(imageSrc, imageAlt, postId, postTitle, postUrl) {
     const pinterestUrl = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(postUrl)}&media=${encodeURIComponent(imageSrc)}&description=${encodeURIComponent(imageAlt)}`;
 
     // Construct the tracking API URL (assuming you have these variables available)
-    const trackapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track?type=pinterestinpost&post_id=${encodeURIComponent(postId)}&post_title=${encodeURIComponent(postTitle)}&post_url=${encodeURIComponent(postUrl)}&post_image=${encodeURIComponent(imageSrc)}`;
+    {# const trackapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/track?type=pinterestinpost&post_id=${encodeURIComponent(postId)}&post_title=${encodeURIComponent(postTitle)}&post_url=${encodeURIComponent(postUrl)}&post_image=${encodeURIComponent(imageSrc)}`; #}
 
     // Create an <a> element instead of a button
     const link = document.createElement('a');
@@ -126,30 +132,27 @@ function createPinItButton(imageSrc, imageAlt, postId, postTitle, postUrl) {
     link.style.textDecoration = 'none';
     link.target = '_blank'; // Ensure it opens in a new tab/window
     link.innerHTML = `<span class="text-white">Pin it</span>`;
-    link.setAttribute('data-tracking-url', trackapi); // Store the tracking URL as a data attribute
 
     // Attach a click event listener for tracking
     link.addEventListener('click', function(e) {
+
+        obj= {
+            type: 'pinterest',
+            action:1, 
+            post_id: postId,
+            item: {
+                post_title: postTitle,
+                post_url: postUrl,
+                post_image: imageSrc
+            }
+        }
+        beacontrack(obj)
+
         // Optionally prevent the default action if you want to ensure tracking happens before navigating
         // e.preventDefault();
 
-        const trackingUrl = this.getAttribute('data-tracking-url');
-        console.log(`Tracking URL: ${trackingUrl}`);
 
-        // Perform the tracking request
-        fetch(trackingUrl).then(response => {
-            if (response.ok) {
-                console.log('Tracking successful');
-                // If you've prevented default, manually navigate after successful tracking
-                // window.location.href = this.href;
-            } else {
-                console.error('Tracking failed');
-            }
-        }).catch(error => {
-            console.error('Error tracking the click:', error);
-        });
 
-        // If not preventing default, the browser will proceed to navigate to the link's href
     });
 
     return link;
