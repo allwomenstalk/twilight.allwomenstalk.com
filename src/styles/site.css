@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
 
 
 @tailwind utilities;
@@ -16,8 +18,9 @@ amp-list div[role=list]{
 
 
 .post h2, .hero h1 {
-    font-family: 'Prata', serif;
+    font-family: 'Bodoni Moda', serif;
     font-display: optional;
+    
 }
 .post h2 {
     @apply text-2xl font-bold mb-2 text-center uppercase;
