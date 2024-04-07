@@ -39,7 +39,7 @@ eleventyComputed:
         </div>
       </div>
     </div>
-    <p class="ml-36 p-1 max-w-md">{{profile.description}}</p>
+    <p class="ml-36 p-1 max-w-md">{{profile.description | safe }}</p>
     <div class="mt-6 hidden min-w-0 flex-1 sm:block md:hidden">
       <h1 class="truncate text-2xl font-bold text-gray-900">{{profile.display_name}}</h1>
     </div>
