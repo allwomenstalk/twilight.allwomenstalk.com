@@ -7,6 +7,14 @@ url: {{metadata.host}}
 <main class="">
 
 	<ol class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5"> 
+		{% for profile in profiles %}
+		<li class="m-2">
+			<a href="allwomenstalk.com/profile/{{profile._id}}/">{{profile.display_name}}</a>
+		</li>
+		{% endfor %}
+	</ol>
+
+	<ol class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5"> 
 		<li class="m-2">
 			<h4><a href="allwomenstalk.com">Homepage</a> </h4>
 			{# {# trending  #}

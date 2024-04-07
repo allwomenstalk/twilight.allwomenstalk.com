@@ -29,6 +29,6 @@ module.exports =
           "name": "Terms of Service",
           "url": "https://allwomenstalk.com/tos.html"
       }
-  ]
-
+  ],
+  profilebg: "https://images.unsplash.com/photo-1549248264-3cc5e6fc43e0"
 }
