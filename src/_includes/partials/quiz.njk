@@ -85,6 +85,7 @@
             observer: null, 
 
             init() {
+                console.log('quizobj:', quizobj)
                 this.questions = quizobj.questions;
                 this.results = quizobj.results;
                 this.title = quizobj.title;
@@ -171,8 +172,8 @@
                     post_id: this.postId,
                     item: {
                         title: this.title,
-                        question: this.questions[trackIndex].question;,
-                        answer: this.questions[trackIndex].options[answerIndex].text;, 
+                        question: this.questions[trackIndex].question,
+                        answer: this.questions[trackIndex].options[answerIndex].text, 
                         index: this.currentQuestionIndex
                     }
                 }
