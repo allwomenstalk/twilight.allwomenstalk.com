@@ -10,7 +10,7 @@
         <div x-show="shown>={{loop.index}}" x-data="{show:false, index:{{loop.index}} }" class="pt-6" >
           <dt>
             <!-- Expand/collapse question button -->
-            <button @click="show=!show;report('{{item.question}}')" type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+            <button @click="show=!show;report({{loop.index0}})" type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
               <span class="text-base font-semibold leading-7">
                 {{item.question}}
               </span>
@@ -48,9 +48,11 @@
 <script> 
 function faqData() {
   return {
+    items: {{post.faq | dump | safe}},
     shown: 3  , 
-    report(item) {
-        console.log(item);
+    report(index) {
+        item = this.items[index];
+        console.log(index,item);
         this.shown++;
         beacontrack({ type: 'faq', action:1,  post_id: '{{post.id}}', item: item })        
     },
