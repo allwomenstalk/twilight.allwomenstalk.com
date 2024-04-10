@@ -35,6 +35,7 @@
                 link: "",
                 cta: false,
             },
+            bookmarked: false,
             init () {
                 console.log('init alpine');
                 this.bannerinit ()
@@ -126,22 +127,62 @@
             },
 
             async authcheck() {
-                {# checking if profile cookie exists and then loads profile and realm #}
                 console.log('authcheck');
                 const profileCookieValue = getCookieValue('realm:profile');
                 console.log('profileCookieValue', profileCookieValue);
                 if (profileCookieValue) {
-
+                    getRealmCookies();
                     this.user = JSON.parse(profileCookieValue);
                     console.log('user', this.user);
-                    await loadJs('https://account.allwomenstalk.com/js/profile.js', () => {
-                        console.log('profile.js loaded');
-                    });
-                    await loadJs('https://unpkg.com/realm-web/dist/bundle.iife.js', () => {
-                        console.log('realm-web loaded');
-                    });
+                    await this.loadRealmSDK();
+                    this.initRealmApp();
                 }
             },
+
+            async loadRealmSDK() {
+                // Load the Realm Web SDK dynamically
+                await loadJs('https://unpkg.com/realm-web/dist/bundle.iife.js');
+                // Wait for the Realm object to be available on the global scope
+                await new Promise((resolve) => {
+                    const checkRealm = setInterval(() => {
+                        if (window.Realm) {
+                            clearInterval(checkRealm);
+                            console.log('realm-web loaded');
+                            resolve();
+                        }
+                    }, 100);
+                });
+            },
+
+            async initRealmApp() {
+                // Initialize the Realm app and define the bookmark function
+                console.log('initRealmApp');
+                window.app = new Realm.App({ id: 'allwomenstalk-ebogu' });
+                console.log('app', window.app);
+            },
+
+            bookmark(postId) {
+                console.log('Bookmark function called', postId || 'none');
+                if (!postId) return;
+                if (!this.user) {
+                    window.location.href = 'https://auth.allwomenstalk.com/signin?redirect=' + window.location.href;
+                }
+                // Bookmark function logic using the Realm app
+                console.log('user', app);
+                console.log('currentUser', app.currentUser);
+                const mongo = app.currentUser.mongoClient('mongodb-atlas');
+                bookmarks = mongo.db('aws').collection('bookmarks');
+                // insert id 
+                bookmarks.updateOne(
+                    { post_id: postId, account_id: app.currentUser.id },
+                    { $set: { post_id: postId, account_id: app.currentUser.id } },
+                    { upsert: true }
+                );
+                console.log('bookmarked', postId);
+                this.bookmarked = true;
+
+            }, 
+
             async getComments(all){
                 console.log('getComments', this.user);
                 api = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/comments?postid={{post.id}}`;
@@ -229,9 +270,7 @@
                         console.log(`HTML for ${partial} added to ${partial}`);
 
                         this.list[partial] = await window[partial].load(2);
-                        console.log(`Data for ${partial} loaded:`, this.list[partial]);
-
-                        
+                        console.log(`Data for ${partial} loaded:`, this.list[partial]);                        
                     });
 
                 }
@@ -337,7 +376,7 @@
                     {# console.error('Error:', error); #}
                 });
             }
-        };
+        }
     }
 
     function getRandomCount() {
@@ -401,7 +440,7 @@
         t.setAttribute("defer", "true"),
         document.documentElement.firstChild.appendChild(t)
         t.onload = function () {
-            callback()
+            if (callback) callback()
         };
     }
 
@@ -562,7 +601,6 @@
         {# loadJs('/js/elaborate.min.js') #}
         loadJs("https://allwomenstalk.github.io/js/alpine.min.js", () => {
             console.log('alpine loaded');
-            
         });
     }, 1000)
 
@@ -614,6 +652,55 @@
         targetDiv.innerHTML = bannerHtml;
     }
 });
+
+
+
+
+
+function getRealmCookies () {
+    // Get the values from the cookies
+    var userId = getCookie('realm:userId');
+    var deviceId = getCookie('realm:deviceId');
+    var accessToken = getCookie('realm:accessToken');
+    var profile = getCookie('realm:profile');
+    var providerType = getCookie('realm:providerType');
+    var refreshToken = getCookie('realm:refreshToken');
+    var logout = getCookie('realm:logout');
+    console.log("logout cookie: " + logout)
+    // Set the values in localStorage and return logout status
+    if (userId !== undefined) {
+        var userIds = JSON.stringify([userId]);
+        localStorage.setItem('realm-web:app(allwomenstalk-ebogu):userIds', userIds);
+    } else {
+        return logout? true: false;
+    }
+
+    if (deviceId !== undefined) {
+        localStorage.setItem('realm-web:app(allwomenstalk-ebogu):deviceId', deviceId);
+      }
+      if (accessToken !== undefined) {
+        localStorage.setItem('realm-web:app(allwomenstalk-ebogu):user(' + userId + '):accessToken', accessToken);
+      }
+      if (profile !== undefined) {
+        localStorage.setItem('realm-web:app(allwomenstalk-ebogu):user(' + userId + '):profile', profile);
+      }
+      if (providerType !== undefined) {
+        localStorage.setItem('realm-web:app(allwomenstalk-ebogu):user(' + userId + '):providerType', providerType);
+      }
+      if (refreshToken !== undefined) {
+        localStorage.setItem('realm-web:app(allwomenstalk-ebogu):user(' + userId + '):refreshToken', refreshToken);
+      }
+      
+    // Function to get a cookie by name
+    function getCookie(name) {
+        var value = "; " + document.cookie;
+        var parts = value.split("; " + name + "=");
+        if (parts.length == 2) return parts.pop().split(";").shift();
+    }
+
+   
+}
+
 </script>
 
 {% if metadata.NODE_ENV == "production" %}

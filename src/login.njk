@@ -3,18 +3,20 @@ layout: layout/default.njk
 url: {{metadata.host}}
 ---
 
-{% include 'partials/keywordsgallery.njk' %}
 
-<main > 
+<main x-data="logindata"> 
     <h2> Login page </h2>
     <template x-if="user">
-        <p x-text="user.data.email"></p>
+        <p x-text="user._profile.data.email"></p>
     </template>
+    <button @click="login()">Login</button>
+    <button @click="logout()">Logout</button>
 </main>
 
 <script src="//unpkg.com/alpinejs" defer></script>
 <script src="https://unpkg.com/realm-web/dist/bundle.iife.js"></script>
 <script>
+const app = new Realm.App({ id: 'allwomenstalk-ebogu' });
 
 function logindata() {
     return {
@@ -24,8 +26,6 @@ function logindata() {
 
         init() {
             console.log('login init')
-            return;
-            this.login();
         },
 
         login: async function() {
@@ -40,6 +40,11 @@ function logindata() {
                 console.error("Failed to log in", err);
             }
         }, 
+        async logout() {
+            await app.currentUser.logOut();
+            this.user = null;
+            deleteRealmCookies();
+        }
     }
 }
     
@@ -48,6 +53,7 @@ function logindata() {
 
 
 <script> 
+
 function setCookies() {
     console.log("setCookies")
     // Get the values from localStorage
@@ -60,7 +66,8 @@ function setCookies() {
     var refreshToken = localStorage.getItem('realm-web:app(allwomenstalk-ebogu):user(' + userId + '):refreshToken');
 
     // Set the cookies for all subdomains of allwomenstalk.com
-    var cookieOptions = { domain: '.allwomenstalk.com' };
+    {# var cookieOptions = { domain: '.allwomenstalk.com' }; #}
+    var cookieOptions = 'path=/';
     document.cookie = 'realm:userId=' + userId + '; ' + cookieOptions;
     document.cookie = 'realm:deviceId=' + deviceId + '; ' + cookieOptions;
     document.cookie = 'realm:accessToken=' + accessToken + '; ' + cookieOptions;
@@ -114,7 +121,8 @@ function getCookies () {
 
 function deleteRealmCookies() {
     // Set the cookies to expire in the past
-    var cookieOptions = { domain: '.allwomenstalk.com', expires: new Date(0) };
+    {# var cookieOptions = { domain: '.allwomenstalk.com', expires: new Date(0) }; #}
+    var cookieOptions = 'path=/';
     document.cookie = 'realm:userId=; ' + cookieOptions;
     document.cookie = 'realm:deviceId=; ' + cookieOptions;
     document.cookie = 'realm:accessToken=; ' + cookieOptions;

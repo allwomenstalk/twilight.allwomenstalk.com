@@ -31,7 +31,7 @@ elaborateDivs.forEach((elaborateDiv, index) => {
     button.disabled = true;
     button.innerText = 'Loading...';
 
-    const postid = document.querySelector('head').getAttribute('data-postid');
+    const postid = document.querySelector('meta[name="postid"]').content
     const page = button.getAttribute('data-index'); // Retrieve the index value from the button
     const result = await fetchData(postid, page);
     const obj = JSON.parse(result);

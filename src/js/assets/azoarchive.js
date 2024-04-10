@@ -22,7 +22,7 @@ function azo(blog, length) {
 
     },
     loadlist(length) {
-      const postId = document.querySelector("head").getAttribute("data-postid");
+      const postId = document.querySelector('meta[name="postid"]').content
       url = `https://us-east-1.aws.data.mongodb-api.com/app/azoio-evvkb/endpoint/list?size=${
         length || 1
       }`;

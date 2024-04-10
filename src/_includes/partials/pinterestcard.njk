@@ -9,7 +9,7 @@
     <div x-data="makepin({
             postId: '{{ post.id }}',
             mediaUrl: '{{ media_url }}',
-            postTitle: '{{ post.title | escape }}', // Escape to prevent breaking the JS with special characters
+            postTitle: '{{ post.title | escape }}', 
             postUrl: '{{ page_url | escape }}'
         })" class="w-full grid overflow-hidden rounded-md ring-4 ring-red-600"> 
         <button @click="pinit()" 

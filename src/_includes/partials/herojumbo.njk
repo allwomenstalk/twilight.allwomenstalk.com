@@ -3,6 +3,11 @@
     
     <div class="flex justify-between uppercase tracking-wide text-sm font-bold text-white opacity-70">
       <a href="https://{{ post.category[0] }}.allwomenstalk.com/" class="">{{ post.category[0] }}</a>
+
+
+
+
+
       <a href="#rating" class="">{{ post.ratingstars }}</a>
     </div>
 
@@ -13,7 +18,6 @@
       <span class="flex items-center">
         <a href="https://allwomenstalk.com/profile/{{ post.author.id }}/" class="text-white">{{ post.author.name }}</a>
       </span>
-
       <span>
       {# comments button or comments link #}
       {% if (post.comment_count > 1) %}
@@ -31,10 +35,10 @@
       {% endif %}
       </span>
       
-      <span>
       {# native share #}
+      {# <span>
       {% if amp %}
-      {# <amp-social-share type="system" aria-label="Share">Share</amp-social-share> #}
+      <amp-social-share type="system" aria-label="Share">Share</amp-social-share>
       {% else %}
       <button @click="share()" type="button" class=" px-2.5 py-1.5 text-sm font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600">
         <svg class="w-5 inline-block " fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -43,7 +47,7 @@
         <span class="hidden md:inline-block">Share</span>
       </button>
       {% endif %}
-      </span>
+      </span> #}
 
 
     </p>

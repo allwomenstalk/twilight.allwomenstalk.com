@@ -27,7 +27,7 @@ popular = {
   </template>
     `, 
       load: async function () {
-          const postId = document.querySelector('head')?.getAttribute('data-postid');
+          const postId = document.querySelector('meta[name="postid"]').content
           const url = `https://allwomenstalk.com/popular/list.json`;
           const response = await fetch(url);
           const list = (await response.json())

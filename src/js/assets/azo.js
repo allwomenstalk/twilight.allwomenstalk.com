@@ -17,7 +17,7 @@ azo = {
   </template>
     `, 
       load: async function (length = 1, blog = 'food') {
-          const postId = document.querySelector('head')?.getAttribute('data-postid');
+          const postId = document.querySelector('meta[name="postid"]').content
           const url = `https://us-east-1.aws.data.mongodb-api.com/app/azoio-evvkb/endpoint/list?size=${length}&blog=${blog}${postId ? `&post=${postId}` : ''}`;
           const response = await fetch(url);
           const list = (await response.json())
