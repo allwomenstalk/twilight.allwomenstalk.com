@@ -5,7 +5,7 @@
 {% set cover_url = post.image %}
 {% set description = post.title %}
 
-<div class="max-w-2xl mx-auto my-8 px-4 lg:px-8">
+{# <div class="max-w-2xl mx-auto my-8 px-4 lg:px-8">
     <div x-data="makepin({
             postId: '{{ post.id }}',
             mediaUrl: '{{ media_url }}',
@@ -13,7 +13,6 @@
             postUrl: '{{ page_url | escape }}'
         })" class="w-full grid overflow-hidden rounded-md ring-4 ring-red-600"> 
         <button @click="pinit()" 
-            {# href="https://www.pinterest.com/pin/create/button/?url={{ page_url | urlencode }}&media={{ media_url | urlencode }}&description={{ description | urlencode }}" #}
             class="grid w-full rounded-b-md bg-red-600text-sm font-semibold text-white shadow-sm bg-red-600 hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 ">
             
             <img class="mx-auto -mt-20 overflow-hidden" src="{{ media_url }}" alt="Image">
@@ -26,7 +25,7 @@
             </div>
         </button>
     </div>
-</div>
+</div> #}
 
 
 <script>

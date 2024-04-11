@@ -4,10 +4,6 @@
     <div class="flex justify-between uppercase tracking-wide text-sm font-bold text-white opacity-70">
       <a href="https://{{ post.category[0] }}.allwomenstalk.com/" class="">{{ post.category[0] }}</a>
 
-
-
-
-
       <a href="#rating" class="">{{ post.ratingstars }}</a>
     </div>
 
@@ -69,7 +65,7 @@
 
     <!-- Foreground content -->
     <div class="relative z-10">
-        <img class="object-cover max-w-2xl mx-auto h-full" id="coverimage" src="{{ post.image }}" alt="{{ post.title }}" width="{{ post.imagesize.width }}" height="{{ post.imagesize.height }}" 
+        <img class="w-full object-cover max-w-2xl mx-auto h-full" id="coverimage" src="{{ post.image }}" alt="{{ post.title }}" width="{{ post.imagesize.width }}" height="{{ post.imagesize.height }}" 
         srcset="{{ post.imagewebp400 }} 400w, 
                 {{ post.imagewebp800 }} 800w, 
                 {{ post.imagewebp1200 }} 1200w, 
