@@ -174,7 +174,7 @@
 
       <!-- Secondary navigation -->
       <div class="bg-white">
-        <div class="mx-auto px-4 sm:px-6 lg:px-8 border-b border-gray-200">
+        <div class="mx-auto px-4 border-b border-gray-200">
           <div class="">
             <div class="flex h-16 items-center justify-between">
 
@@ -217,15 +217,7 @@
                           <path clip-rule="evenodd" fill-rule="evenodd" d="M9.25 3H3.5A1.5 1.5 0 002 4.5v4.75h3.365A2.75 2.75 0 019.25 5.362V3zM2 10.75v4.75A1.5 1.5 0 003.5 17h5.75v-4.876A4.75 4.75 0 015 14.75a.75.75 0 010-1.5 3.251 3.251 0 003.163-2.5H2zM10.75 17h5.75a1.5 1.5 0 001.5-1.5v-4.75h-6.163A3.251 3.251 0 0015 13.25a.75.75 0 010 1.5 4.75 4.75 0 01-4.25-2.626V17zM18 9.25V4.5A1.5 1.5 0 0016.5 3h-5.75v2.362a2.75 2.75 0 013.885 3.888H18zm-4.496-2.755a1.25 1.25 0 00-1.768 0c-.36.359-.526.999-.559 1.697-.01.228-.006.443.004.626.183.01.398.014.626.003.698-.033 1.338-.2 1.697-.559a1.25 1.25 0 000-1.767zm-5.24 0a1.25 1.25 0 00-1.768 1.767c.36.36 1 .526 1.697.56.228.01.443.006.626-.004.01-.183.015-.398.004-.626-.033-.698-.2-1.338-.56-1.697z"></path>
                         </svg> #}
                       </div>
-                      <a href="https://account.allwomenstalk.com/" class="_noaff -m-2 p-2 text-gray-400 hover:text-gray-500">
-                        <span class="sr-only">Account</span>
-                        <svg x-show="!user" class="w-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                        </svg>
-                        <svg x-show="user" x-cloak class="w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                          <path clip-rule="evenodd" fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"></path>
-                        </svg>
-                      </a>
+                      {% include 'partials/badge.njk' %}
                     </div>
                   </div>
                   {# <!-- Shopping cart --> 
