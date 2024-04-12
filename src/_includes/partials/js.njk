@@ -591,10 +591,10 @@
     }
 
     setTimeout(function() {
+        {% if not post.noelaborate %}
         loadJs("https://allwomenstalk.github.io/js/elaborate.2.0.min.js", () => {
-            {# console.log('elaborate loaded'); #}
-            {# window.elaborate.init(); #}
         });
+        {% endif %}
         loadJs('https://cdn.unibotscdn.com/player/mvp/player.js', () => {
             console.log('ubplayer loaded');
         });

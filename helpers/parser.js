@@ -22,6 +22,7 @@ module.exports = function (item) {
       //special tags check 
       if (item.tags.includes('_noads')) { temp.noads = true }
       if (item.tags.includes('_noaff')) { temp.noaff = true }
+      if (item.tags.includes('_noelaborate')) { temp.noelaborate = true }
       //tags filter and formating 
       temp.tags = item.tags
           .filter(tag=>tag.slice(0,1)!=="_")

@@ -1,8 +1,43 @@
+{% if not post.noelaborate %}
 <div class="prose p-4 overflow-hidden mx-auto max-w-xl">
     {# <small><i>Updated on {{ post.elaborate[loop.index-1].date }}</i></small> #}
     <small><i>UPD:</i></small>
     {{ post.elaborate[loop.index-1].html | safe }}
 </div>
+
+
+    {% if loop.index > 1 and not loop.last %}
+
+        <div class="mx-auto max-w-2xl px-2 sm:px-8">
+
+                <!-- Left Column Content Goes Here -->
+                {% if post.elaborate[loop.index-1] %}
+                        <button 
+                            x-data="{ title: 'Report', page: {{ loop.index-1 }}, btnClicked: false }"
+                            x-text="title" 
+                            :disabled="btnClicked"
+                            @click=" 
+                                title = reportElaborate(page);
+                                btnClicked = true;
+                            " 
+                            class="opacity-70 text-xs">
+                            Report
+                        </button>            
+                {% else %}
+                    <div data-page="{{loop.index-1}}" class="elaborate italic prose dark:prose-invert p-2 overflow-hidden mx-auto max-w-xl"></div>
+                {% endif %} 
+            
+
+            {# <div class="flex-1">
+                <!-- Right Column Content Goes Here -->
+                {% include 'partials/reactions.njk' %}
+            </div>
+             #}
+        </div>
+
+    {% endif %}
+
+{% endif %}
 
 
 {# <figure class="rounded-2xl bg-gray-50 p-8 text-sm mx-auto max-w-xl">
