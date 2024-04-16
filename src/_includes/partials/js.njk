@@ -161,27 +161,51 @@
                 console.log('app', window.app);
             },
 
-            bookmark(postId) {
+            bookmark(postId, saved) {
                 console.log('Bookmark function called', postId || 'none');
                 if (!postId) return;
                 if (!this.user) {
                     window.location.href = 'https://auth.allwomenstalk.com/signin?redirect=' + window.location.href;
                 }
+                if (this.bookmarked) window.location.href = 'https://account.allwomenstalk.com/signin/saved/';
+
                 // Bookmark function logic using the Realm app
-                console.log('user', app);
-                console.log('currentUser', app.currentUser);
+                // console.log('user', app);
+                // console.log('currentUser', app.currentUser);
                 const mongo = app.currentUser.mongoClient('mongodb-atlas');
                 bookmarks = mongo.db('aws').collection('bookmarks');
                 // insert id 
                 bookmarks.updateOne(
                     { post_id: postId, account_id: app.currentUser.id },
-                    { $set: { post_id: postId, account_id: app.currentUser.id } },
+                    { $set: { 
+                        post_id: postId, 
+                        type: 'post',
+                        account_id: app.currentUser.id } },
                     { upsert: true }
                 );
                 console.log('bookmarked', postId);
                 this.bookmarked = true;
 
             }, 
+            savepoint(postId, title, index, saved) {
+                console.log('savepoint', postId, title, index, saved);
+                if (!this.user) window.location.href = 'https://auth.allwomenstalk.com/signin?redirect=' + window.location.href;
+                if (saved) window.location.href = 'https://account.allwomenstalk.com/signin/saved/';
+                const mongo = app.currentUser.mongoClient('mongodb-atlas');
+                bookmarks = mongo.db('aws').collection('bookmarks');
+                // insert id 
+                bookmarks.updateOne(
+                    { post_id: postId, account_id: app.currentUser.id, index: index},
+                    { $set: { 
+                        post_id: postId, 
+                        title: title.trim(), 
+                        index: index,
+                        type: 'point',
+                        account_id: app.currentUser.id } },
+                    { upsert: true }
+                );
+                console.log('saved point', title);
+            },
 
             async getComments(all){
                 console.log('getComments', this.user);
