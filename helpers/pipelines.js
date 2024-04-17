@@ -3,12 +3,13 @@ var ObjectId = require('mongodb').ObjectId;
 
 // export RealtimePosts view from db to json file
 const realtime = require('./aws.realtime.json').map(item=>item.slug);
-const faqpost = require('./aws.faq.json').map(item=>new ObjectId(item.post_id["$oid"]));
+const faqpost = require('./aws.faq.json').map(item=>new ObjectId(item));
 const related_embeddings = require('./aws.related_annoy.json').map(item=> new ObjectId(item._id));
 const related_cluster = require('./aws.related_cluster.json').map(item=> new ObjectId(item._id));
 
 // const quotestopost = require('./aws.quotestopost.json').map(item=>new ObjectId(item._id));
-const ids = require('./ids.json');
+// const ids = require('./ids.json');
+const ids = [];
 const slugs = require('./slugs.json');
 const { pipeline } = require('stream');
 

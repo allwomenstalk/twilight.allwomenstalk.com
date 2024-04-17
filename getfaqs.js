@@ -3,7 +3,7 @@ const fs = require('fs');
 require('dotenv').config();
 
 const uri = process.env.MONGODB_URI;
-const path = './src/_data/faqs.json'; // Specify the file path for the output JSON file
+// const path = './src/_data/faqs.json'; // Specify the file path for the output JSON file
 
 const client = new MongoClient(uri, { useUnifiedTopology: true });
 
@@ -25,12 +25,12 @@ async function run() {
     });
 
     // Save the result as 'polls.json'
-    fs.writeFileSync(path, JSON.stringify(obj, null, 2));
     console.log("Total Faqs: ", Object.keys(obj).length);
-    console.log('The file has been saved as "faqs.json"');
+    
 
     // save post_ids to file _ids.json
-    fs.writeFileSync('./helpers/ids.json', JSON.stringify(Object.keys(obj), null, 2));
+    fs.writeFileSync('./helpers/aws.faq.json', JSON.stringify(Object.keys(obj), null, 2));
+    console.log('The file has been saved');
 
   } finally {
     await client.close();
@@ -38,6 +38,5 @@ async function run() {
 }
 
 if (require.main === module) {
-  console.log('Running getquizzes.js');
   run().catch(console.dir);
 }
