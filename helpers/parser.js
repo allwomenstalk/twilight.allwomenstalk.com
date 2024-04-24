@@ -249,9 +249,9 @@ module.exports = function (item) {
 
       if (item.videos) {
         temp.videos = item.videos
-        temp.videos.forEach(video => {
-          video.items = video.items.slice(0,2)
-        })
+        // temp.videos.forEach(video => {
+        //   video.items = video.items.slice(0,2)
+        // })
 
       if (temp.videos.length > 0) {
         temp.ampyt = true

@@ -6,6 +6,7 @@ const realtime = require('./aws.realtime.json').map(item=>item.slug);
 const faqpost = require('./aws.faq.json').map(item=>new ObjectId(item));
 const related_embeddings = require('./aws.related_annoy.json').map(item=> new ObjectId(item._id));
 const related_cluster = require('./aws.related_cluster.json').map(item=> new ObjectId(item._id));
+const videoposts = require('./aws.videos.json').map(item=>new ObjectId(item));
 
 // const quotestopost = require('./aws.quotestopost.json').map(item=>new ObjectId(item._id));
 // const ids = require('./ids.json');
@@ -98,7 +99,8 @@ pipeline_filter = [
     '$match': {
       // '_id': ObjectId('604854b781118707f2732712')
       // '_id': { $in:  ids.map(id=>new ObjectId(id)) },
-      'post_name': 'tiny-toothpick-appetizers-thatll-fit-any-occasion',
+      'post_name': 'tea-sandwiches-that-are-tiny-but-delicious',
+      
       
       // 'image_url': new RegExp('_400x400.jpg|_400x300.jpg|720x720.jpg')
       
@@ -220,15 +222,16 @@ pipeline_name = [
     '$match': {
       'post_name': {$in:
         [
-          "top-busiest-airports-in-the-world",
-          "ultimate-travel-bucket-list-ideas",
-          "new-christmas-traditions-to-consider-starting-this-year",
-          "never-buy-candy-again-here-are-diy-versions-you-can-make-at-home"
+          "benefits-of-hobbies-to-give-you-food-for-thought",
+          "tea-sandwiches-that-are-tiny-but-delicious",
+          'seductive-text-messages-for-her',
+          'flirty-spring-nail-art-ideas-for-nail-polish-addicts'
         ]
       }
     }
   }
 ]
+
 
 pipeline_category = [
   {
@@ -393,6 +396,14 @@ pipeline_ids = [
   {
     '$match': {
       '_id': {$in: ids.map(id=>new ObjectId(id))},
+    }
+  }
+]
+
+pipeline_videos = [
+  {
+    '$match': {
+      '_id': {$in: videoposts.map(id=>new ObjectId(id))},
     }
   }
 ]

@@ -16,7 +16,6 @@ eleventyComputed:
 ---
     
     {% include 'partials/leaderboard.njk' %}
-    
     {% include 'partials/herojumbo.njk' %}
 
     <div class="max-w-2xl mx-auto px-4 md:px-10">
@@ -89,10 +88,9 @@ eleventyComputed:
                     {% endif %}
 
                 {% elif loop.index == 4 %}
-                    {% include 'quiz.njk' %}
                     {% include 'partials/seperator.njk' %}
                 {% elif (loop.index == 6) %}    
-                    {% include 'partials/quotes.njk' %}
+                    {% include "partials/videos.njk" %}
                     {% include 'partials/seperator.njk' %}
                 {% elif (loop.index == 10) %}
                     {# {% include 'partials/story.njk' %} #}
@@ -114,6 +112,11 @@ eleventyComputed:
             {% include 'partials/pinterestcard.njk' %}
 
             {% include 'partials/newsletter.njk' %}
+
+            {% from "partials/videosgrid.njk" import videosGrid %}
+
+            {{ videosGrid(true) }}
+
 
             {# adding shopping on the end for short posts #}
             {# {% include 'partials/subscribe.njk' %} #}

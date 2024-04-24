@@ -1,11 +1,11 @@
 <section class="py-12">
-  <p class="mb-8 uppercase tracking-wide text-sm opacity-70 font-bold text-center mt-8">Allwomenstalk Reviews</p>
+  <p class="mb-8 uppercase tracking-wide opacity-70 font-bold text-center mt-8">Allwomenstalk Reviews</p>
 
   {% for review in reviews | shuffle | slicearr(5) %}
   <div class="border-t-2">
     <a href="https://reviews.allwomenstalk.com/{{review.slug}}/"  class="block p-6 hover:bg-slate-100">
       <div class="mx-auto text-center">
-        <h4 class="text-xl whitespace-nowrap overflow-hidden overflow-ellipsis font-bold tracking-tight text-gray-900 sm:text-4xl md:text-5xl lg:text-6xl">
+        <h4 class="whitespace-nowrap overflow-hidden overflow-ellipsis font-bold tracking-tight text-gray-900">
           {{review.title}}
         </h4>
       </div>

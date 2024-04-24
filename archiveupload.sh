@@ -45,7 +45,9 @@ folders=(
 for folder in "${folders[@]}"; do
     
     # Upload the folder to S3 bucket
-    aws s3 cp "_site/$folder" s3://"$folder" --recursive
+    # aws s3 cp "_site/$folder" s3://"$folder" --recursive
+    # index.html 
+    aws s3 cp "_site/$folder/index.html" s3://"$folder/index.html"
     aws s3 cp "_site/images/" s3://"$folder/images/" --recursive
     
     # Uplaod the folder js 

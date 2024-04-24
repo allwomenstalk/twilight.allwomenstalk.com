@@ -83,19 +83,29 @@ module.exports = [{
     foreignField: 'post_id',
     as: 'crosslinks'
   }
-},{
-  '$lookup': {
-    from: 'tv',
-    localField:"_id",
-    foreignField: 'post_id',
-    as: 'videos'
-  }
-},{
+},
+// {
+//   '$lookup': {
+//     from: 'tv',
+//     localField:"_id",
+//     foreignField: 'post_id',
+//     as: 'videos'
+//   }
+// },
+{
   '$lookup': {
     'from': 'faq', 
     'localField': '_id', 
     'foreignField': 'post_id', 
     'as': 'faq'
+  }
+},
+{
+  '$lookup': {
+    'from': 'videos', 
+    'localField': '_id', 
+    'foreignField': 'post_id', 
+    'as': 'videos'
   }
 },
 {
