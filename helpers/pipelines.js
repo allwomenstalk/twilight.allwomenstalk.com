@@ -1,5 +1,10 @@
 const fs = require('fs');
 var ObjectId = require('mongodb').ObjectId;
+// .env 
+require('dotenv').config();
+
+host = process.env.HOST;
+console.log('host:',host);
 
 // export RealtimePosts view from db to json file
 const realtime = require('./aws.realtime.json').map(item=>item.slug);
@@ -251,11 +256,18 @@ pipeline_category = [
 pipeline_host = [
   {
       '$match': {
+          'host': host
+      }
+  }
+]
+
+pipeline_cf = [
+  {
+      '$match': {
           '$or': [
               {
                   "host": {
                       $in: [
-                          // "inspiration.allwomenstalk.com",
                           'mindfulness.allwomenstalk.com',
                           'gifts.allwomenstalk.com',
                           'interior.allwomenstalk.com',
@@ -289,8 +301,6 @@ pipeline_host = [
       }
   }
 ]
-
-
 
 
 if (!process.env.ELEVENTY_PRODUCTION) {

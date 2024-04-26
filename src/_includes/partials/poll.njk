@@ -56,109 +56,122 @@
 <script>
     function poll() {
         return {
-    // random number between 0 and and poll length
-    index: 0,
-    email: "",
-    choices: [],
-    poll: [],
-    buttons: true,
-    message: "",
-    init() {
-        console.log('init poll')
-        fetch('../poll.json')
-        .then(response => response.json())
-        .then(data => {
-          console.log(data)
-            this.poll = data
-            // shuffle the poll
-            console.log('data init')
-            this.poll = this.poll.sort(() => Math.random() - 0.5)
+      // random number between 0 and and poll length
+      index: 0,
+      email: "",
+      choices: [],
+      poll: [],
+      buttons: true,
+      message: "",
+      init() {
+          console.log('init poll')
+          fetch('../poll.json')
+          .then(response => response.json())
+          .then(data => {
+            console.log(data)
+              this.poll = data
+              // shuffle the poll
+              console.log('data init')
+              this.poll = this.poll.sort(() => Math.random() - 0.5)
 
-            
-            // get randob lengths subarray but no less than 3
-            this.poll = this.poll.slice(0,3)
+              
+              // get randob lengths subarray but no less than 3
+              this.poll = this.poll.slice(0,3)
+          })
+
+          {# 
+          this.observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                      console.log("On!")
+                      this.typein()            
+                    }
+                });
+            });
+
+            this.observer.observe(this.$refs.pollblock); 
+            #}
+      },
+      typein() {
+          typeWriter(this.poll[0].question, 100, 
+              (text) => { // Update callback
+                  this.poll[0].question = text;
+              },
+              () => { // Completion callback
+                  this.buttons = true
+              }
+          );
+      },
+      select(q,choice) {
+        console.log(q, choice)
+        this.choices.push({q,choice})
+        this.vote({
+          q: q,
+          a: choice,
+          index: this.index
         })
-
-        {# 
-        this.observer = new IntersectionObserver(entries => {
-              entries.forEach(entry => {
-                  if (entry.isIntersecting) {
-                    console.log("On!")
-                    this.typein()            
-                  }
-              });
+        this.index++
+      },
+      vote (obj) {
+          console.log(obj)
+          trackEvent(obj.q, obj.a)
+          fetch('https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/vote', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(obj)
+          })
+          .then(response => {
+              console.log(response.json())
+          })
+          .catch(error => {
+              console.log(error)
           });
 
-          this.observer.observe(this.$refs.pollblock); 
-          #}
-    },
-    typein() {
-        typeWriter(this.poll[0].question, 100, 
-            (text) => { // Update callback
-                this.poll[0].question = text;
-            },
-            () => { // Completion callback
-                this.buttons = true
-            }
-        );
-    },
-    select(q,choice) {
-      console.log(q, choice)
-      this.choices.push({q,choice})
-      this.vote({
-        q: q,
-        a: choice,
-        index: this.index
-      })
-      this.index++
-    },
-    vote (obj) {
-        console.log(obj)
-        fetch('https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/vote', {
-        method: 'POST',
-        headers: {
+      },
+      sub() {
+        console.log(this.choices, this.email)
+        this.index++
+        const url = 'https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/newsletter';
+        const payload = { params: this.choices, email: this.email};
+
+        fetch(url, {
+          method: 'POST',
+          headers: {
             'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(obj)
+          },
+          body: JSON.stringify(payload)
         })
         .then(response => {
-            console.log(response.json())
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          console.log(data);
+          this.message = 'Done! Thank you for subscribing!'; // Set a success message
+
         })
         .catch(error => {
-            console.log(error)
+          console.error('There was a problem with the fetch operation:', error);
         });
 
-    },
-    sub() {
-      console.log(this.choices, this.email)
-      this.index++
-      const url = 'https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/newsletter';
-      const payload = { params: this.choices, email: this.email};
-
-      fetch(url, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
+      },
+        async trackEvent(question, answer) {
+            const obj = {
+                type : 'poll',
+                action: 1,
+                post_id: this.postId,
+                item: {
+                    question: question,
+                    answer: answer, 
+                }
+            }
+            beacontrack(obj)        
         },
-        body: JSON.stringify(payload)
-      })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(data => {
-        console.log(data);
-        this.message = 'Done! Thank you for subscribing!'; // Set a success message
-
-      })
-      .catch(error => {
-        console.error('There was a problem with the fetch operation:', error);
-      });
-
-    },
-    }
+      }
     }
 
     function splitText(text) {
