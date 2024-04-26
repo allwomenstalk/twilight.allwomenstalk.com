@@ -114,7 +114,7 @@
       },
       vote (obj) {
           console.log(obj)
-          trackEvent(obj.q, obj.a)
+          this.trackEvent(obj.q, obj.a)
           fetch('https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/vote', {
           method: 'POST',
           headers: {
