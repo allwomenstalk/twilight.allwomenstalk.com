@@ -1,3 +1,4 @@
+{# CURRENTLY NOT USED #}
 <div x-data="reactionsData()" class="p-2 text-end">
     <button @click="showReactions = !showReactions" x-show="!showReactions" 
         class="focus:outline-none relative inline-flex items-center gap-x-1.5 rounded-md p-1 px-2 text-sm font-semibold ring-1 ring-inset ring-gray-300 hover:bg-gray-50 hover:text-gray-900 focus:z-10"
@@ -31,3 +32,45 @@
 </div>
 
 
+<script> 
+        function reactionsData() {
+        return {
+            showReactions: false,
+            selectedEmoji: null,
+            previewEmoji: null,
+            reactions: [
+                { emoji: '👍', count: getRandomCount(), selected: false },
+                { emoji: '❤️', count: getRandomCount(), selected: false },
+                { emoji: '😂', count: getRandomCount(), selected: false },
+                { emoji: '😮', count: getRandomCount(), selected: false },
+                { emoji: '😢', count: getRandomCount(), selected: false },
+                { emoji: '😠', count: getRandomCount(), selected: false }
+            ],
+            init() {
+                // random 
+                this.previewEmoji = this.reactions[Math.floor(Math.random() * this.reactions.length)].emoji;
+            },
+            incrementCount(index) {
+                {# if (!this.reactions[index].selected) { #}
+                    this.reactions[index].count++;
+                    this.reactions[index].selected = true;
+                    this.selectedEmoji = this.reactions[index].emoji;
+                    this.showReactions = false;
+                    this.sendReaction("{{post.id}}", index, this.reactions[index].emoji);
+                {# } #}
+            },
+            sendReaction(postId, index, label) {
+                const url = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/reaction?postid=${postId}&page=${index}&label=${label}`;
+                fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    {# console.log('Success:', data); #}
+                })
+                .catch((error) => {
+                    {# console.error('Error:', error); #}
+                });
+            }
+        }
+    }
+
+</script>

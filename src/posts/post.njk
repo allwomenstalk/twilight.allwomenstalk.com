@@ -45,9 +45,8 @@ eleventyComputed:
             {{ page.content | safe }}
         </div>
 
-        {% if post.elaborate[loop.index-1] %}
-            {% include 'partials/elaborate.njk' %}     
-        {% endif %}
+        {% include 'partials/elaborate.njk' %}     
+
 
         
         
@@ -90,7 +89,10 @@ eleventyComputed:
                 {% elif loop.index == 4 %}
                     {% include 'partials/seperator.njk' %}
                 {% elif (loop.index == 6) %}    
+                    
                     {% include "partials/videos.njk" %}
+                    
+
                     {% include 'partials/seperator.njk' %}
                 {% elif (loop.index == 10) %}
                     {# {% include 'partials/story.njk' %} #}
@@ -112,10 +114,11 @@ eleventyComputed:
             {% include 'partials/pinterestcard.njk' %}
 
             {% include 'partials/newsletter.njk' %}
-            
-            {% from "partials/videosgrid.njk" import videosGrid %}
 
-            {{ videosGrid(true) }}
+            {% if post.videos and post.videos.length > 0 %}
+                {% from "partials/videosgrid.njk" import videosGrid %}
+                {{ videosGrid(true) }}
+            {% endif %}
 
 
             {# adding shopping on the end for short posts #}
