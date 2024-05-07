@@ -19,7 +19,7 @@ const pipelinePost = require('./helpers/pipelinePost.js');
 const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri, { useUnifiedTopology: true });
 
-const batchSize = 1500; // Number of documents per batch
+const batchSize = 1000; // Number of documents per batch
 
 let marker = null ; // Marker to keep track of the last processed document
 let filter = [
