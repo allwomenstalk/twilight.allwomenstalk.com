@@ -9,7 +9,15 @@ fs.readFile('cloudflare/pages.json', 'utf8', (err, data) => {
   }
 
   // Parse the JSON data
-  const pages = JSON.parse(data);
+  let pages = JSON.parse(data);
+
+  // filter host:'hair.allwomenstalk.com' 
+  // check script arg for host if not ignore 
+  if (process.argv.length > 2) {
+    const host = process.argv[2];
+    pages = pages.filter(page => page.host === host);
+  }
+  console.log(pages);
 
   // Define a recursive function to deploy each page
   function deployPage(index) {

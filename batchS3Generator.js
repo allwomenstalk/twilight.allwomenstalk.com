@@ -30,7 +30,7 @@ async function generateBatch() {
   run++;
   console.log(`Run ${run}`);
   if (!marker) {
-    await exec('npm run clean'); // Clean the _site directory before the first batch
+    // await exec('npm run clean'); // Clean the _site directory before the first batch
   }
 
   console.log('Connecting to MongoDB');
@@ -61,7 +61,9 @@ async function generateBatch() {
 
     console.log(`Generated batch. Last post ID: ${lastPostId}`);
 
-    // await runEleventyBuild(); // Initiate 11ty build
+    // Write the posts.json file and make a build 
+    fs.writeFileSync(`./src/_data/posts.json`, JSON.stringify(parsed, null, 2));
+    await runEleventyBuild(); // Initiate 11ty build
 
     // console.log('Uploading to S3...');
     // await exec('sh postupload.sh');

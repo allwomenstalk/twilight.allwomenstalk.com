@@ -116,6 +116,7 @@ npx wrangler pages deploy _site/interior.allwomenstalk.com --branch main --proje
 
 Prompt https://chat.openai.com/c/d50ccd98-4cc4-4673-bbe0-d24722ddb120
 
+
 # Zone upate command 
 
 aws route53 change-resource-record-sets --hosted-zone-id Z13EFBU9E7X2EZ --change-batch '{

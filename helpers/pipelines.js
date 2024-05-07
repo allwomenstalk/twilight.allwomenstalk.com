@@ -264,40 +264,21 @@ pipeline_host = [
 pipeline_cf = [
   {
       '$match': {
-          '$or': [
-              {
-                  "host": {
-                      $in: [
-                          'mindfulness.allwomenstalk.com',
-                          'gifts.allwomenstalk.com',
-                          'interior.allwomenstalk.com',
-                          'desserts.allwomenstalk.com',
-                          'accessories.allwomenstalk.com',
-                          'baking.allwomenstalk.com',
-                          'sleep.allwomenstalk.com',
-                          'swimwear.allwomenstalk.com',
-                          'gadgets.allwomenstalk.com',
-                          'bodyart.allwomenstalk.com'
-                      ]
-                  }
-              },
-              {
-                  'super_categories': {
-                      $in: [
-                          'mindfulness',
-                          'gifts',
-                          'interior',
-                          'desserts',
-                          'accessories',
-                          'baking',
-                          'sleep',
-                          'swimwear',
-                          'gadgets',
-                          'bodyart'
-                      ]
-                  }
-              }
+        "host": {
+          $in: [
+              'hair.allwomenstalk.com',
+              // 'mindfulness.allwomenstalk.com',
+              // 'gifts.allwomenstalk.com',
+              // 'interior.allwomenstalk.com',
+              // 'desserts.allwomenstalk.com',
+              // 'accessories.allwomenstalk.com',
+              // 'baking.allwomenstalk.com',
+              // 'sleep.allwomenstalk.com',
+              // 'swimwear.allwomenstalk.com',
+              // 'gadgets.allwomenstalk.com',
+              // 'bodyart.allwomenstalk.com'
           ]
+        }
       }
   }
 ]
