@@ -20,6 +20,7 @@ const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri, { useUnifiedTopology: true });
 
 const batchSize = 500; // Number of documents per batch
+console.log('Batch Size:', batchSize);
 
 let marker = null ; // Marker to keep track of the last processed document
 let filter = [
