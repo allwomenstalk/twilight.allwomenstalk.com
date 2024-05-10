@@ -19,7 +19,14 @@ eleventyComputed:
   </div>
 </div>
 {% set list = archives[tag._id] %}
-{% include "partials/list.njk" %}
+{% set category = tag._id %}
+{% include "partials/listjs.njk" %}
+{# {% include "partials/list.njk" %} #}
+
+{# <button @click="loadmore()" type="button" class="mx-auto rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+  Load More
+{% include "partials/listjs.njk" %}
+{# {% include "partials/list.njk" %} #}
 
 {# <button @click="loadmore()" type="button" class="mx-auto rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
   Load More

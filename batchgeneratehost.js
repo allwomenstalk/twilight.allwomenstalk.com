@@ -4,18 +4,26 @@ const util = require('util');
 const exec = util.promisify(require('child_process').exec);
 require('dotenv').config();
 
-// get host aas argumet or cancel 
-if (process.argv.length < 3) {
-    console.log('Usage: node batchgeneratehost.js <host>');
-    process.exit(1);
-}
-
-const host = process.argv[2];
-console.log('Host:', host);
-
 const parser = require('./helpers/parser.js');
 const pipelinePost = require('./helpers/pipelinePost.js');
+const { env } = require('process');
 
+// Check if command line argument is provided
+if (process.argv.length >= 3) {
+  var host = process.argv[2];
+} else {
+  // If not, try using the environment variable
+  var host = process.env.HOST;
+  if (!host) {
+      // If environment variable is also not available, log usage and exit
+      console.log('Usage: node batchgeneratehost.js <host>');
+      process.exit(1);
+  }
+}
+
+console.log('Host:', host);
+
+// track time 
 const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri, { useUnifiedTopology: true });
 

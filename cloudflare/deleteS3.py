@@ -34,7 +34,7 @@ def delete_all_versions(bucket_name, batch_size=100):
     except Exception as e:
         print(f"Failed to delete all versions from bucket: {bucket_name}. Error: {e}")
 
-delete_all_versions('love.allwomenstalk.com')
+delete_all_versions('allwomenstalk.com')
 exit();
 # Iterate over each host and their domains
 for host in hosts:

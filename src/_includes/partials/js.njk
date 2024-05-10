@@ -20,6 +20,7 @@
             commentspanel: false,
             commentstatic: true,
             menu: false,
+        
             search: {
                 show: false,
                 query: '',
@@ -27,6 +28,13 @@
                 loading: false,
                 categories: {{categories|json|safe}},
             },
+
+            category: null,
+            posts: [],
+            page: 0,
+            loading: false,
+
+
             source: false,
             banner: {
                 show: true,
@@ -38,6 +46,7 @@
             bookmarked: false,
             init () {
                 console.log('init alpine');
+                {# this.loadposts(); #}
                 this.bannerinit ()
                 this.comment.comment_author = window.localStorage.getItem('comment_author') || '';
                 this.comment.comment_author_email = window.localStorage.getItem('comment_author_email') || '';
@@ -54,6 +63,43 @@
 
                 this.showsource();
 
+            },
+
+            loadposts(category) {
+                this.category = category;
+
+                const cdnurl = 'https://pub-ff359827c45e40a7b6e9bad1878cd18a.r2.dev/posts/' + (category ? (category + '/') : '');
+                const cacheBuster = new Date().getTime();
+
+                if (this.loading) return;
+
+                this.loading = true;
+                fetch(`${cdnurl}${this.page}.json?${cacheBuster}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        this.posts.unshift(data)
+                        this.loading = false;
+                    }).catch((error) => {
+                        this.loading = false;
+                    });
+                this.page += 1;
+            },
+
+            formattedDate(date) {
+                date = new Date(date);
+                return date.toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
+            },  
+
+            handleScroll() {
+                let windowHeight = window.innerHeight;
+                let scrollTop = document.documentElement.scrollTop;
+                let offsetHeight = document.documentElement.offsetHeight;
+
+                // Check if the scroll position is within 200px of the bottom of the page
+                if (windowHeight + scrollTop >= offsetHeight - 400) {
+                    console.log('At the bottom of the page');
+                    this.loadposts(this.category);
+                }
             },
 
             bannerinit () {
@@ -643,7 +689,7 @@
         loadJs("https://allwomenstalk.github.io/js/alpine.min.js", () => {
             console.log('alpine loaded');
         });
-    }, 1000)
+    }, 10)
 
     {# disable all logs in production #}
     {% if metadata.NODE_ENV == "production" %}
