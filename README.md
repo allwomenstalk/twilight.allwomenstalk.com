@@ -167,3 +167,11 @@ Food toipsc backup
                 { "title": "Entertaining and Hosting", "subtitle": "Master the Art of Hosting!" },
                 { "title": "Food Sustainability", "subtitle": "Learn How to Eat Responsibly!" }
             ],
+
+
+
+New CF connected build
+
+aws codebuild start-build \
+  --project-name "AllwomenstalkDomainDeploy" \
+  --environment-variables-override name=HOST,value=jewelry.allwomenstalk.com,type=PLAINTEXT

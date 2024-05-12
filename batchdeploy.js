@@ -32,7 +32,8 @@ async function updateHost(hostName) {
         
         if (host) {
             const newHostName = `${hostName}`;
-            const command = `npx wrangler pages deploy ./_site/${newHostName} --branch main --project-name ${host.name} --commit-dirty=true`;
+            // const command = `npx wrangler pages deploy ./_site/${newHostName} --branch main --project-name ${host.name} --commit-dirty=true`;
+            const command = `npx wrangler pages deploy ./_site/${newHostName} --branch main --project-name ${host.name}`;
             console.log(`Deploying ${host.name} at ${newHostName}.`);
             console.log(`Command: ${command}`);
 

@@ -11,6 +11,14 @@ eleventyComputed:
 </div> #}
 {# {% include "partials/newyear.njk" %} #}
 
+<div class=" px-6 py-24 sm:py-32 lg:px-8">
+  <div class="mx-auto max-w-2xl text-center">
+    <p class="text-base font-semibold leading-7 text-gray-600">Hello, Beautiful!</p>
+    <h2 class="mt-6 text-4xl font-bold tracking-tight uppercase text-gray-900 sm:text-6xl">Happy Mothers Day!</h2>
+    {# <p class="mt-6 text-lg leading-8 text-gray-600">{{tag.description}}</p> #}
+  </div>
+</div>
+
 {% set list = archives.all | slicearr(49) %}
 {% include "partials/listjs.njk" %}
 {# {% include "partials/list.njk" %} #}
