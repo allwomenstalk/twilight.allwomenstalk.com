@@ -57,10 +57,19 @@
 
         <!-- Links -->
         <div class="mt-2">
+          <div class="space-y-6 border-t border-gray-200 px-4 py-6">
+            <div class="flow-root">
+              <a href="https://account.allwomenstalk.com" class="_noaff -m-2 block p-2 font-medium text-gray-900">Create an account</a>
+            </div>
+            <div class="flow-root">
+              <a href="https://account.allwomenstalk.com" class="_noaff -m-2 block p-2 font-medium text-gray-900">Sign in</a>
+            </div>
+          </div>
 
           <div id="tabs-1-panel-1" class="space-y-12 px-4 pb-6 pt-2" aria-labelledby="tabs-1-tab-1" role="tabpanel" tabindex="0">
             <div class="grid grid-cols-1 items-start gap-x-6 gap-y-10">
               <div class="grid grid-cols-1 gap-x-6 gap-y-10">
+
                 
                 <div>
                   {# <p id="mobile-featured-heading-0" class="font-medium text-gray-900">Featured</p> #}
@@ -85,6 +94,14 @@
                     </li>
                   </ul>
                 </div> 
+
+                <div class="space-y-6 border-t border-gray-200 py-6">
+                  {% for page in metadata.pages %}
+                  <div class="flow-root">
+                    <a href="{{page.url}}" class="_noaff -m-2 block p-2 text-gray-900">{{page.name}}</a>
+                  </div>
+                  {% endfor %}
+                </div>
                 
                 <div>
                   <p id="mobile-categories-heading" class="font-medium text-gray-900">Categories</p>
@@ -147,22 +164,9 @@
           </div>
         </div>
 
-        <div class="space-y-6 border-t border-gray-200 px-4 py-6">
-          {% for page in metadata.pages %}
-          <div class="flow-root">
-            <a href="{{page.url}}" class="_noaff -m-2 block p-2 font-medium text-gray-900">{{page.name}}</a>
-          </div>
-          {% endfor %}
-        </div>
 
-        <div class="space-y-6 border-t border-gray-200 px-4 py-6">
-          <div class="flow-root">
-            <a href="https://account.allwomenstalk.com" class="_noaff -m-2 block p-2 font-medium text-gray-900">Create an account</a>
-          </div>
-          <div class="flow-root">
-            <a href="https://account.allwomenstalk.com" class="_noaff -m-2 block p-2 font-medium text-gray-900">Sign in</a>
-          </div>
-        </div>
+
+
 
       </div>
     </div>
