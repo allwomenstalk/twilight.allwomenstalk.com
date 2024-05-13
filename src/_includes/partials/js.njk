@@ -675,6 +675,8 @@
 
     }
 
+    // essentials
+
     setTimeout(function() {
         {% if not post.noelaborate %}
         {# loadJs('/js/elaborate.js') #}
@@ -689,7 +691,15 @@
         loadJs("https://allwomenstalk.github.io/js/alpine.min.js", () => {
             console.log('alpine loaded');
         });
+        
     }, 10)
+
+    // rest of js 
+    setTimeout(function() {
+        loadJs("https://pub-56c58d9f0cd64f4ea0f67eba69a26e7b.r2.dev/bonbon.js", () => {
+            console.log('bon loaded');
+        });
+    }, 1000)
 
     {# disable all logs in production #}
     {% if metadata.NODE_ENV == "production" %}
@@ -793,7 +803,7 @@ function getRealmCookies () {
 {% if metadata.NODE_ENV == "production" %}
 
     {# bonbon here  #}
-    {% include "partials/bonbon.njk" %}
+    {# {% include "partials/bonbon.njk" %} #}
 
 {% endif %}
 
