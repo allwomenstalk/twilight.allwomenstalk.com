@@ -15,7 +15,9 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <meta name="generator" content="{{ metadata.generator }}">
+    {% if post %}
     <meta name="postid" content="{{ post.id }}">
+    {% endif %}
     
     {% if post %}
     {% include 'partials/postmeta.njk' %}
@@ -41,16 +43,7 @@
 
     <style>[x-cloak] { display: none !important; }</style>
 
-    {% if metadata.NODE_ENV == "production" %}
-            {% set css %}
-            {% include 'partials/css/site.css' %}
-            {% endset %}
-            <style>
-            {{ css  | safe }}
-            </style>
-    {% else %}
-        <link rel="stylesheet" href="/site.css">
-    {% endif %}
+
 
 
 <!-- Google Tag Manager -->
@@ -78,7 +71,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- js.njk -->
     {% include "partials/js.njk" %}
 
-
+    {% if metadata.NODE_ENV == "production" %}
+            {% set css %}
+            {% include 'partials/css/site.css' %}
+            {% endset %}
+            <style>
+            {{ css  | safe }}
+            </style>
+    {% else %}
+        <link rel="stylesheet" href="/site.css">
+    {% endif %}
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NR9WTN"
