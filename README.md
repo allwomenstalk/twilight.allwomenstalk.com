@@ -117,6 +117,13 @@ npx wrangler pages deploy _site/interior.allwomenstalk.com --branch main --proje
 Prompt https://chat.openai.com/c/d50ccd98-4cc4-4673-bbe0-d24722ddb120
 
 
+**Update** 
+> node batchgeneratehost.js && node batchdeploy.js
+batchgeneratehost.js - generates data for .env HOST in batches of 500 
+batchdeploy.js - deploy to CF pages .env HOST 
+
+batchprocess.js - to process all CF domains
+
 # Zone upate command 
 
 aws route53 change-resource-record-sets --hosted-zone-id Z13EFBU9E7X2EZ --change-batch '{
