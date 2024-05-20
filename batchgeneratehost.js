@@ -122,7 +122,7 @@ async function generateBatch() {
     console.log('Duration (minutes):', duration);
   }
 
-  await client.close();
+  // await client.close();
 }
 
 async function runEleventyBuild() {
