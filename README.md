@@ -156,6 +156,10 @@ node getposts.js && npm run clean && npm run build && sh postupload.sh
 # start cloud build from cli 
 aws codebuild start-build --project-name AllwomenstalkArchives
 
+# Individual post build url 
+https://vf3qip2vrxaaw2fq3wixcyjmii0fcuov.lambda-url.us-east-1.on.aws/?postid=55cf69088ebea80ad96957f3
+lamda that starts Codebuild with POST and HOST 
+
 
 quizzes backup 
 

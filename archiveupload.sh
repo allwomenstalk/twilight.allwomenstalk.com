@@ -2,7 +2,7 @@
 
 # List of folders
 folders=(
-    # "allwomenstalk.com"
+    "allwomenstalk.com"
     # "apps.allwomenstalk.com"
     # "bags.allwomenstalk.com"
     # "beauty.allwomenstalk.com"
@@ -48,6 +48,8 @@ for folder in "${folders[@]}"; do
     # aws s3 cp "_site/$folder" s3://"$folder" --recursive
     # index.html 
     aws s3 cp "_site/$folder/index.html" s3://"$folder/index.html"
+    aws s3 cp "_site/$folder/popular/index.html" s3://"$folder/popular/index.html"
+    aws s3 cp "_site/$folder/trending/index.html" s3://"$folder/trending/index.html"
     aws s3 cp "_site/images/" s3://"$folder/images/" --recursive
     
     # Uplaod the folder js 
