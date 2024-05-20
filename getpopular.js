@@ -59,8 +59,6 @@ async function run () {
 
     // const cursor = await collection.aggregate(pipeline);
     const cursor = await aggregate("Cluster0", "aws", "posts", pipeline);
-    console.log("cursor",cursor)
-    return;
     arr = [];
     await cursor.forEach((item) => {
       
