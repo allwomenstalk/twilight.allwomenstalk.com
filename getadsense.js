@@ -1,12 +1,13 @@
-const { MongoClient } = require('mongodb');
+// const { MongoClient } = require('mongodb');
 const moment = require('moment');
 const fs = require('fs');
+const { aggregate } = require('./helpers/dataApi');
 require('dotenv').config()
-const uri = process.env.MONGODB_URI;
+// const uri = process.env.MONGODB_URI;
 
 const parser = require(fs.realpathSync('.') + "/helpers/parserarchive.js");
 
-const client = new MongoClient(uri, { useUnifiedTopology: true });
+// const client = new MongoClient(uri, { useUnifiedTopology: true });
 
 let path = './src/_data/adsense.json'
 let arr = []
@@ -21,9 +22,9 @@ function SaveData(name, arr) {
 async function run () {
 
   try {
-    await client.connect();
-    const database = client.db('aws');
-    const collection = database.collection('adsense');
+    // await client.connect();
+    // const database = client.db('aws');
+    // const collection = database.collection('adsense');
 
     const pipeline = [
         {
@@ -96,7 +97,8 @@ async function run () {
       ];
 
 
-    const cursor = await collection.aggregate(pipeline);
+    // const cursor = await collection.aggregate(pipeline);
+    const cursor = await aggregate("Cluster0", "aws", "adsense", pipeline);
     arr = [];
     await cursor.forEach((item) => {
       
@@ -109,7 +111,7 @@ async function run () {
     SaveData(path,arr)
     return arr;
   } finally {
-    await client.close();
+    // await client.close();
   }
 };
 

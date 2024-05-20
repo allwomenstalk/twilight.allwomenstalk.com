@@ -28,8 +28,8 @@ const specificPostId = process.env.POST_ID;
 console.log('Specific Post ID:', specificPostId);
 
 // Track time
-const uri = process.env.MONGODB_URI;
-const client = new MongoClient(uri, { useUnifiedTopology: true });
+// const uri = process.env.MONGODB_URI;
+// const client = new MongoClient(uri, { useUnifiedTopology: true });
 
 const batchSize = 1000; // Number of documents per batch
 console.log('Batch Size:', batchSize);
@@ -55,10 +55,11 @@ async function generateBatch() {
     // await exec('npm run clean'); // Clean the _site directory before the first batch
   }
 
-  console.log('Connecting to MongoDB');
-  await client.connect();
-  const database = client.db('aws');
-  const collection = database.collection('posts'); // or 'MaterializedPosts'
+  // console.log('Connecting to MongoDB');
+  // await client.connect();
+  // const database = client.db('aws');
+  // const collection = database.collection('posts'); // or 'MaterializedPosts'
+  
 
   let pipeline;
   if (specificPostId) {

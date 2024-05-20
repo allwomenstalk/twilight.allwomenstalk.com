@@ -1,30 +1,33 @@
-const { MongoClient } = require('mongodb');
+// const { MongoClient } = require('mongodb');
 const fs = require('fs');
 const moment = require('moment');
 require('dotenv').config();
+const { aggregate } = require('./helpers/dataApi');
+
 
 
 const uri = process.env.MONGODB_URI;
-const client = new MongoClient(uri, { useUnifiedTopology: true });
+// const client = new MongoClient(uri, { useUnifiedTopology: true });
 const postperpage = 258;
 const path = './src/_data/archives.json'
 const categoriespath = './src/_data/categories.json'
 
 async function getCategories() {
-    const database = client.db('aws');
-    const collection = database.collection('categories');
-    return collection.find({}).toArray();
+    // const database = client.db('aws');
+    // const collection = database.collection('categories');
+    // return collection.find({}).toArray();
+    return await aggregate('Cluster0', 'aws', 'categories', []);
 }
 
 async function getPostsForCategory(categoryId) {
-    const database = client.db('aws');
-    const collection = database.collection('posts');
-
+    // const database = client.db('aws');
+    // const collection = database.collection('posts');
+    console.log('categoryId', categoryId)
     const pipeline = [
         {
             $match: {
-                super_categories: categoryId==="all"?{$exists:true}:categoryId,
-                'host': /allwomenstalk.com/,
+                super_categories: categoryId==="all"?{$exists:true}:[categoryId],
+                host: { $regex: 'allwomenstalk.com' },
                 // 'post_date': { $gt: new Date('2016-01-01') }
             }
         },
@@ -59,36 +62,17 @@ async function getPostsForCategory(categoryId) {
         }
     ];
 
-    return collection.aggregate(pipeline).toArray();
+    // return collection.aggregate(pipeline).toArray();
+    return await aggregate('Cluster0', 'aws', 'posts', pipeline);
+}
+
+function SaveData(name, arr) {
+    fs.writeFileSync(name, JSON.stringify(arr, null, 2));
+    console.log('Data saved to', name);
 }
 
 
-async function main() {
-    try {
-        await client.connect();
 
-        const categories = await getCategories();
-        SaveData(categoriespath, categories);
-        const groupedPosts = {};
-
-        // adding all category to create homapage list 
-        categories.unshift({_id:"all",name:"All"});
-
-        for (const category of categories) {
-            console.log(`Processing category: ${category.name} (ID: ${category._id})`);
-            const posts = await getPostsForCategory(category._id);
-            console.log(`.... Found ${posts.length} posts`);
-            const transformedPosts = posts.map(post => transformPost(post));
-            groupedPosts[category._id] = transformedPosts;
-        }
-
-        groupedPosts['all'] = Object.values(groupedPosts).flat().slice(0, postperpage);
-        SaveData(path, groupedPosts);
-
-    } finally {
-        await client.close();
-    }
-}
 
 function transformPost(item) {
       var temp = {};
@@ -110,9 +94,33 @@ function transformPost(item) {
     return temp;
 }
 
-function SaveData(name, arr) {
-    fs.writeFileSync(name, JSON.stringify(arr, null, 2));
-    console.log('Data saved to', name);
+
+async function main() {
+    try {
+        // await client.connect();
+
+        const categories = await getCategories();
+        SaveData(categoriespath, categories);
+        const groupedPosts = {};
+
+        // adding all category to create homapage list 
+        categories.unshift({_id:"all",name:"All"});
+
+        for (const category of categories) {
+            console.log(`Processing category: ${category.name} (ID: ${category._id})`);
+            const posts = await getPostsForCategory(category._id);
+            console.log(`.... Found ${posts.length} posts`);
+            const transformedPosts = posts.map(post => transformPost(post));
+            groupedPosts[category._id] = transformedPosts;
+        }
+
+        groupedPosts['all'] = Object.values(groupedPosts).flat().slice(0, postperpage);
+        SaveData(path, groupedPosts);
+
+    } finally {
+        // await client.close();
+    }
 }
+
 
 main();

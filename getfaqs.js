@@ -1,23 +1,26 @@
-const { MongoClient } = require('mongodb');
+// const { MongoClient } = require('mongodb');
 const fs = require('fs');
 require('dotenv').config();
+const { aggregate } = require('./helpers/dataApi');
 
-const uri = process.env.MONGODB_URI;
+
 // const path = './src/_data/faqs.json'; // Specify the file path for the output JSON file
 
-const client = new MongoClient(uri, { useUnifiedTopology: true });
+// const uri = process.env.MONGODB_URI;
+// const client = new MongoClient(uri, { useUnifiedTopology: true });
 
 async function run() {
   let arr = [];
 
   try {
-    console.log('Connecting to MongoDB');
-    await client.connect();
-    const database = client.db('aws'); // Replace with your database name
-    const collection = database.collection('faq'); // Use the 'poll' collection
+    // console.log('Connecting to MongoDB');
+    // await client.connect();
+    // const database = client.db('aws'); // Replace with your database name
+    // const collection = database.collection('faq'); // Use the 'poll' collection
 
 
-    const cursor = await collection.find({}).toArray();
+    // const cursor = await collection.find({}).toArray();
+    cursor = await aggregate("Cluster0", "aws", "faq", []);
     obj = {};
     // process the cursor and make obj with key = post_id and value whole doc
     cursor.forEach(doc => {
@@ -33,7 +36,7 @@ async function run() {
     console.log('The file has been saved');
 
   } finally {
-    await client.close();
+    // await client.close();
   }
 }
 

@@ -3,16 +3,18 @@ const Eleventy = require('@11ty/eleventy');
 const parser = require('./helpers/parser');
 const pipelinePost = require('./helpers/pipelinePost.js');
 const AWS = require('aws-sdk');
+const { aggregate } = require('./helpers/dataApi');
+
 
 exports.handler = async (event, context) => {
   try {
     // Connect to MongoDB
-    const uri = 'mongodb+srv://11tyreadonly:HN0hLpLTZD2sAJNG@cluster0.jfcrg.gcp.mongodb.net/?retryWrites=true&w=majority';
-    const client = new MongoClient(uri);
-    await client.connect();
-    const db = client.db('aws');
+    // const uri = 'mongodb+srv://11tyreadonly:HN0hLpLTZD2sAJNG@cluster0.jfcrg.gcp.mongodb.net/?retryWrites=true&w=majority';
+    // const client = new MongoClient(uri);
+    // await client.connect();
+    // const db = client.db('aws');
+    // // const collection = db.collection('posts');
     // const collection = db.collection('posts');
-    const collection = db.collection('posts');
 
     // Fetch data from MongoDB
     console.log('event', event);
@@ -34,16 +36,21 @@ exports.handler = async (event, context) => {
     const pipeline = [
       {
         $match: {
-          host: new RegExp('allwomenstalk.com'),
+          host: { $regex: 'allwomenstalk.com' },
           post_name: postName,
         },
       },
     ];
     pipeline.push(...pipelinePost);
-    console.log('pipeline', pipeline);
+    console.log('pipeline', JSON.stringify(pipeline, null, 2));
     console.log('Fetching data from MongoDB');
-    const data = await collection.aggregate(pipeline).next();
-    console.log('data', data._id, '\n\n\\');
+    // const data = await collection.aggregate(pipeline).next();
+    let data = await aggregate("Cluster0", "aws", "posts", pipeline);
+    data = data[0]
+    console.log('data', data);
+    console.log('data _id', data._id, '\n\n\\');
+    data.post_date = new Date(data.post_date);
+    data.post_modified = new Date(data.post_modified); 
     let parsed = await parser(data);
     console.log('parsed');
 
@@ -71,8 +78,8 @@ exports.handler = async (event, context) => {
     // console.log('json', json);
 
     // Close the MongoDB connection
-    console.log('Closing MongoDB connection');
-    await client.close();
+    // console.log('Closing MongoDB connection');
+    // await client.close();
 
     // Save files to S3
     // const s3 = new AWS.S3();

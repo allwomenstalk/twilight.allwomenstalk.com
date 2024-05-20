@@ -1,12 +1,14 @@
-const { MongoClient } = require('mongodb');
+// const { MongoClient } = require('mongodb');
 const fs = require('fs');
+const { aggregate } = require('./helpers/dataApi');
+
 require('dotenv').config();
 
-const client = new MongoClient(process.env.MONGODB_URI, { useUnifiedTopology: true });
+// const client = new MongoClient(process.env.MONGODB_URI, { useUnifiedTopology: true });
 
 async function saveCollectionData(collectionName, filePath) {
   try {
-    await client.connect();
+    // await client.connect();
     const pipeline = [
       {
         $lookup: {
@@ -22,13 +24,14 @@ async function saveCollectionData(collectionName, filePath) {
         }
       }
     ];
-    const data = await client.db('aws').collection(collectionName).aggregate(pipeline).toArray();
+    // const data = await client.db('aws').collection(collectionName).aggregate(pipeline).toArray();
+    const data = await aggregate('Cluster0', 'aws', collectionName, pipeline);
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
     console.log('Data saved to', filePath);
   } catch (err) {
     console.error(err);
   } finally {
-    await client.close();
+    // await client.close();
   }
 }
 
