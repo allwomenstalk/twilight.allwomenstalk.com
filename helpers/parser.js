@@ -37,6 +37,9 @@ module.exports = function (item) {
       temp.amp_url = `https://${temp.host}/${item.post_name}/amp.html`;
       temp.title = item.post_title.replace(/[^a-zA-Z0-9_.-\s'"\?]*/g,''); //removeing all emoji
       temp.viral = item.viral_title;
+      if (typeof item.post_date === 'string') {
+        item.post_date = new Date(item.post_date);
+      }
       temp.date = item.post_date.toISOString();
       temp.modified = new Date().toISOString();
       temp.author = { name: item.author.first_name.replace('_', ''), id: item.author._id };

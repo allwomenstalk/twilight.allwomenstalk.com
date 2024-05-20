@@ -1,7 +1,9 @@
-const { MongoClient, ObjectId } = require('mongodb');
+// const { MongoClient, ObjectId } = require('mongodb');
 const fs = require('fs');
 const util = require('util');
 const exec = util.promisify(require('child_process').exec);
+const { aggregate } = require('./helpers/dataApi');
+
 require('dotenv').config();
 
 const parser = require('./helpers/parser.js');
@@ -82,7 +84,8 @@ async function generateBatch() {
     }
   }
 
-  const result = await collection.aggregate(pipeline).toArray();
+  // const result = await collection.aggregate(pipeline).toArray();
+  const result = await aggregate('Cluster0', 'aws', 'posts', pipeline);
 
   if (result.length > 0) {
     const lastIndex = result.length - 1;
