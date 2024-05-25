@@ -141,8 +141,10 @@ module.exports = function (item) {
         //.replace(/<div class=\"embed\" data-media-type=\"instagram\" data-media-url=\"https:\/\/www.instagram.com\/p\/(.*?)\/">(.*?)?<\/div>/g, 
         //  '<amp-instagram data-shortcode="$1" width="1" height="1" layout="responsive"></amp-instagram>')
         .replace(/(<h2.*?>)\s*(\d*)\./g,'$1<span class="pointnum">$2</span>') //make big point numbers
-        .replace(/<div class=\"embed\" data-media-type=\"youtube\" data-media-url=\".*?v=(.*?)\".*?<\/div>/g,
-        '<amp-youtube data-videoid="$1" layout="responsive" width="480" height="270"></amp-youtube>')//making youtube embed
+        .replace(
+          /<div class="embed" data-media-type="youtube" data-media-url="https:\/\/www\.youtube\.com\/watch\?v=([^"]+)"[^>]*>.*?<\/div>/g,
+          '<amp-youtube data-videoid="$1" layout="responsive" width="480" height="270"></amp-youtube>'
+        )
         .replace(/<div class=\"embed\" data-media-type=\"instagram\" data-media-url="https?:\/\/(www\.)?instagram\.com\/p\/(.*?)\/.*?">(.*?)?<\/div>/g, 
         '<p><amp-instagram data-shortcode="$2" width="1" height="1" layout="responsive"></amp-instagram></p>')
         .replace(/<iframe(.*?)><\/iframe>/g,"<amp-iframe $1 layout=\"responsive\"></amp-iframe>")

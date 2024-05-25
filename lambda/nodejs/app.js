@@ -5,18 +5,9 @@ const pipelinePost = require('./helpers/pipelinePost.js');
 const AWS = require('aws-sdk');
 const { aggregate } = require('./helpers/dataApi');
 
-
 exports.handler = async (event, context) => {
   try {
     // Connect to MongoDB
-    // const uri = 'mongodb+srv://11tyreadonly:HN0hLpLTZD2sAJNG@cluster0.jfcrg.gcp.mongodb.net/?retryWrites=true&w=majority';
-    // const client = new MongoClient(uri);
-    // await client.connect();
-    // const db = client.db('aws');
-    // // const collection = db.collection('posts');
-    // const collection = db.collection('posts');
-
-    // Fetch data from MongoDB
     console.log('event', event);
 
     const postName = event.pathParameters ? event.pathParameters.proxy : event.rawPath.replace('/', '');
@@ -44,23 +35,21 @@ exports.handler = async (event, context) => {
     pipeline.push(...pipelinePost);
     console.log('pipeline', JSON.stringify(pipeline, null, 2));
     console.log('Fetching data from MongoDB');
-    // const data = await collection.aggregate(pipeline).next();
     let data = await aggregate("Cluster0", "aws", "posts", pipeline);
-    data = data[0]
+    data = data[0];
     console.log('data', data);
     console.log('data _id', data._id, '\n\n\\');
     data.post_date = new Date(data.post_date);
-    data.post_modified = new Date(data.post_modified); 
+    data.post_modified = new Date(data.post_modified);
     let parsed = await parser(data);
     console.log('parsed');
 
     // Instantiate Eleventy
-    console.log('Instantiating Eleventy')
+    console.log('Instantiating Eleventy');
     const elev = new Eleventy('src', '_site', {
       quietMode: false,
       configPath: '.eleventy.js',
       config: function (eleventyConfig) {
-        
         eleventyConfig.addGlobalData('posts', [parsed]);
         // making empty arrays for archives and popular
         eleventyConfig.addGlobalData('archives', []);
@@ -75,37 +64,28 @@ exports.handler = async (event, context) => {
     console.log('Generating post');
     const json = await elev.toJSON();
 
-    // console.log('json', json);
-
-    // Close the MongoDB connection
-    // console.log('Closing MongoDB connection');
-    // await client.close();
-
     // Save files to S3
-    // const s3 = new AWS.S3();
-    // const bucketName = 'health.allwomenstalk.com';
+    const s3 = new AWS.S3();
+    const bucketName = data.host;
 
-    // Save the first file
+    // Save index.html
     const inputPath1 = './src/posts/post.njk';
-    // const outputPath1 = '_site/health.allwomenstalk.com/nutrition-tips-to-feel-better-look-better-and-live-your-best-life/index.html';
-    const html = json.filter((item) => item.inputPath === inputPath1)[0].content
-    // console.log('html', html);
-  
-    // const url1 = await saveFileToS3AndGetUrl(data1, bucketName, inputPath1, outputPath1, s3);
+    const html = json.filter((item) => item.inputPath === inputPath1)[0].content;
+    const outputPath1 = `${postName}/index.html`;
+    await saveFileToS3(html, bucketName, outputPath1, s3);
 
-    // Save the second file
+    // Save amp.html
     const inputPath2 = './src/posts/amp.njk';
-    // const outputPath2 = '_site/health.allwomenstalk.com/nutrition-tips-to-feel-better-look-better-and-live-your-best-life/amp.html';
-    const amp = json.filter((item) => item.inputPath === inputPath2)[0].content
-    // console.log('amp', amp);
-    // const url2 = await saveFileToS3AndGetUrl(json, bucketName, inputPath2, outputPath2, s3);
+    const amp = json.filter((item) => item.inputPath === inputPath2)[0].content;
+    const outputPath2 = `${postName}/amp.html`;
+    await saveFileToS3(amp, bucketName, outputPath2, s3);
 
     return {
       statusCode: 200,
       headers: {
         'Content-Type': 'text/html',
       },
-      body: event.requestContext&&event.requestContext.stage==='amp' ? amp : html,
+      body: event.requestContext && event.requestContext.stage === 'amp' ? amp : html,
     };
   } catch (error) {
     console.error('Error generating post:', error);
@@ -117,19 +97,15 @@ exports.handler = async (event, context) => {
   }
 };
 
-async function saveFileToS3AndGetUrl(data, bucketName, inputPath, outputPath, s3) {
+async function saveFileToS3(content, bucketName, outputPath, s3) {
+  
   const params = {
     Bucket: bucketName,
     Key: outputPath,
-    Body: JSON.stringify(data),
-    ContentType: 'application/json',
+    Body: content,
+    ContentType: 'text/html',
   };
-
+  console.log(`Saving file to S3: ${params}`);
   await s3.putObject(params).promise();
   console.log(`File saved to S3: ${outputPath}`);
-
-  const url = `https://${bucketName}.s3.amazonaws.com/${outputPath}`;
-  console.log(`Public URL: ${url}`);
-
-  return url;
 }
