@@ -1,10 +1,6 @@
 ---
 layout: layout/default.njk
-pagination:
-  data: categories
-  size: 1
-  alias: tag
-permalink: /{{tag._id}}.allwomenstalk.com/404.html
+permalink: /404.html
 ---
 
 <main class="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
@@ -29,7 +25,7 @@ permalink: /{{tag._id}}.allwomenstalk.com/404.html
         // Extract the base URL (e.g., https://host.com/some-url) without the trailing path or query parameters
         const urlParts = currentUrl.split('/');
         console.log('parts',urlParts);
-        const baseUrl = 'https://' + urlParts.slice(2, 4).join('/') + '/'
+        const baseUrl = 'https://' + urlParts.slice(3, 5).join('/') + '/'
         console.log('base',baseUrl);
 
         // Construct the URL to check if it exists
