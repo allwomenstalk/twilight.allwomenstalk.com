@@ -266,10 +266,10 @@ pipeline_cf = [
       '$match': {
         "host": {
           $in: [
-              'hair.allwomenstalk.com',
+              // 'hair.allwomenstalk.com',
               // 'mindfulness.allwomenstalk.com',
               // 'gifts.allwomenstalk.com',
-              // 'interior.allwomenstalk.com',
+              'interior.allwomenstalk.com',
               // 'desserts.allwomenstalk.com',
               // 'accessories.allwomenstalk.com',
               // 'baking.allwomenstalk.com',

@@ -6,7 +6,6 @@ const uri = process.env.MONGODB_URI;
 const path = './src/_data/polls.json'; // Specify the file path for the output JSON file
 const { aggregate } = require('./helpers/dataApi');
 
-
 // const client = new MongoClient(uri, { useUnifiedTopology: true });
 
 async function run() {
