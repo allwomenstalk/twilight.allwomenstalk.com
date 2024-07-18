@@ -87,7 +87,7 @@ function transformPost(item) {
       temp.date = moment(item.post_date).format('MMM DD');
       temp.author = { name: item.author.first_name.replace('_', ''), id: item.author._id };
       temp.image = item.image_url;
-      temp.imageresize = item.image_url.replace('img.', 'resize.');
+      temp.imageresize = item.image_url.replace('img.allw.mn', 'resize.allw.mn/400x400');
       // temp.content = item.post_content;
       temp.host = item.host
       temp.url = `https://${item.host}/${item.post_name}/`;
