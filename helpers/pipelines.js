@@ -227,10 +227,7 @@ pipeline_name = [
     '$match': {
       'post_name': {$in:
         [
-          "educational-videos-for-girls-who-just-cant-dance",
-          "tea-sandwiches-that-are-tiny-but-delicious",
-          'seductive-text-messages-for-her',
-          'flirty-spring-nail-art-ideas-for-nail-polish-addicts'
+          "curly-hair-enhance-natural-curl",
         ]
       }
     }
@@ -267,16 +264,16 @@ pipeline_cf = [
         "host": {
           $in: [
               // 'hair.allwomenstalk.com',
-              // 'mindfulness.allwomenstalk.com',
-              // 'gifts.allwomenstalk.com',
+              'mindfulness.allwomenstalk.com',
+              'gifts.allwomenstalk.com',
               'interior.allwomenstalk.com',
-              // 'desserts.allwomenstalk.com',
-              // 'accessories.allwomenstalk.com',
-              // 'baking.allwomenstalk.com',
-              // 'sleep.allwomenstalk.com',
-              // 'swimwear.allwomenstalk.com',
-              // 'gadgets.allwomenstalk.com',
-              // 'bodyart.allwomenstalk.com'
+              'desserts.allwomenstalk.com',
+              'accessories.allwomenstalk.com',
+              'baking.allwomenstalk.com',
+              'sleep.allwomenstalk.com',
+              'swimwear.allwomenstalk.com',
+              'gadgets.allwomenstalk.com',
+              'bodyart.allwomenstalk.com'
           ]
         }
       }

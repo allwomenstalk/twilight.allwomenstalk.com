@@ -1,5 +1,451 @@
 [
     {
+        "id": "4192a493-da37-4340-a545-8027e1800c78",
+        "name": "apps-allwomenstalk-com",
+        "subdomain": "apps-allwomenstalk-com.pages.dev",
+        "domains": [
+            "apps-allwomenstalk-com.pages.dev"
+        ],
+        "source": {
+            "type": "github",
+            "config": {
+                "owner": "allwomenstalk",
+                "repo_name": "apps.allwomenstalk.com",
+                "production_branch": "main",
+                "pr_comments_enabled": true,
+                "deployments_enabled": true,
+                "production_deployments_enabled": true,
+                "preview_deployment_setting": "all",
+                "preview_branch_includes": [
+                    "*"
+                ],
+                "preview_branch_excludes": [],
+                "path_includes": [
+                    "*"
+                ],
+                "path_excludes": []
+            }
+        },
+        "build_config": {
+            "build_command": "",
+            "destination_dir": "",
+            "root_dir": "",
+            "web_analytics_tag": null,
+            "web_analytics_token": null
+        },
+        "deployment_configs": {
+            "preview": {
+                "env_vars": null,
+                "fail_open": true,
+                "always_use_latest_compatibility_date": false,
+                "compatibility_date": "2024-07-05",
+                "compatibility_flags": [],
+                "build_image_major_version": 2,
+                "usage_model": "standard"
+            },
+            "production": {
+                "env_vars": null,
+                "fail_open": true,
+                "always_use_latest_compatibility_date": false,
+                "compatibility_date": "2024-07-05",
+                "compatibility_flags": [],
+                "build_image_major_version": 2,
+                "usage_model": "standard"
+            }
+        },
+        "latest_deployment": {
+            "id": "77b235ae-8a89-48bc-8dc3-94e682a2dab2",
+            "short_id": "77b235ae",
+            "project_id": "4192a493-da37-4340-a545-8027e1800c78",
+            "project_name": "apps-allwomenstalk-com",
+            "environment": "production",
+            "url": "https://77b235ae.apps-allwomenstalk-com.pages.dev",
+            "created_on": "2024-07-05T08:21:08.384875Z",
+            "modified_on": "2024-07-05T08:21:35.433784Z",
+            "latest_stage": {
+                "name": "deploy",
+                "started_on": "2024-07-05T08:21:17.301953Z",
+                "ended_on": "2024-07-05T08:21:35.433784Z",
+                "status": "success"
+            },
+            "deployment_trigger": {
+                "type": "ad_hoc",
+                "metadata": {
+                    "branch": "main",
+                    "commit_hash": "ad40089e54e8aafc474d4f04b69c694bb2781b5e",
+                    "commit_message": "Update sitemaps",
+                    "commit_dirty": false
+                }
+            },
+            "stages": [
+                {
+                    "name": "queued",
+                    "started_on": "2024-07-05T08:21:08.869367Z",
+                    "ended_on": "2024-07-05T08:21:08.735613Z",
+                    "status": "success"
+                },
+                {
+                    "name": "initialize",
+                    "started_on": "2024-07-05T08:21:08.735613Z",
+                    "ended_on": "2024-07-05T08:21:11.652791Z",
+                    "status": "success"
+                },
+                {
+                    "name": "clone_repo",
+                    "started_on": "2024-07-05T08:21:11.652791Z",
+                    "ended_on": "2024-07-05T08:21:13.596286Z",
+                    "status": "success"
+                },
+                {
+                    "name": "build",
+                    "started_on": "2024-07-05T08:21:13.596286Z",
+                    "ended_on": "2024-07-05T08:21:17.301953Z",
+                    "status": "success"
+                },
+                {
+                    "name": "deploy",
+                    "started_on": "2024-07-05T08:21:17.301953Z",
+                    "ended_on": "2024-07-05T08:21:35.433784Z",
+                    "status": "success"
+                }
+            ],
+            "build_config": {
+                "build_command": "",
+                "destination_dir": "",
+                "build_caching": null,
+                "root_dir": "",
+                "web_analytics_tag": null,
+                "web_analytics_token": null
+            },
+            "source": {
+                "type": "github",
+                "config": {
+                    "owner": "allwomenstalk",
+                    "repo_name": "apps.allwomenstalk.com",
+                    "production_branch": "main",
+                    "pr_comments_enabled": false
+                }
+            },
+            "env_vars": {},
+            "compatibility_date": "2024-07-05",
+            "compatibility_flags": [],
+            "build_image_major_version": 2,
+            "usage_model": null,
+            "aliases": null,
+            "is_skipped": false,
+            "production_branch": "main"
+        },
+        "canonical_deployment": {
+            "id": "77b235ae-8a89-48bc-8dc3-94e682a2dab2",
+            "short_id": "77b235ae",
+            "project_id": "4192a493-da37-4340-a545-8027e1800c78",
+            "project_name": "apps-allwomenstalk-com",
+            "environment": "production",
+            "url": "https://77b235ae.apps-allwomenstalk-com.pages.dev",
+            "created_on": "2024-07-05T08:21:08.384875Z",
+            "modified_on": "2024-07-05T08:21:35.433784Z",
+            "latest_stage": {
+                "name": "deploy",
+                "started_on": "2024-07-05T08:21:17.301953Z",
+                "ended_on": "2024-07-05T08:21:35.433784Z",
+                "status": "success"
+            },
+            "deployment_trigger": {
+                "type": "ad_hoc",
+                "metadata": {
+                    "branch": "main",
+                    "commit_hash": "ad40089e54e8aafc474d4f04b69c694bb2781b5e",
+                    "commit_message": "Update sitemaps",
+                    "commit_dirty": false
+                }
+            },
+            "stages": [
+                {
+                    "name": "queued",
+                    "started_on": "2024-07-05T08:21:08.869367Z",
+                    "ended_on": "2024-07-05T08:21:08.735613Z",
+                    "status": "success"
+                },
+                {
+                    "name": "initialize",
+                    "started_on": "2024-07-05T08:21:08.735613Z",
+                    "ended_on": "2024-07-05T08:21:11.652791Z",
+                    "status": "success"
+                },
+                {
+                    "name": "clone_repo",
+                    "started_on": "2024-07-05T08:21:11.652791Z",
+                    "ended_on": "2024-07-05T08:21:13.596286Z",
+                    "status": "success"
+                },
+                {
+                    "name": "build",
+                    "started_on": "2024-07-05T08:21:13.596286Z",
+                    "ended_on": "2024-07-05T08:21:17.301953Z",
+                    "status": "success"
+                },
+                {
+                    "name": "deploy",
+                    "started_on": "2024-07-05T08:21:17.301953Z",
+                    "ended_on": "2024-07-05T08:21:35.433784Z",
+                    "status": "success"
+                }
+            ],
+            "build_config": {
+                "build_command": "",
+                "destination_dir": "",
+                "build_caching": null,
+                "root_dir": "",
+                "web_analytics_tag": null,
+                "web_analytics_token": null
+            },
+            "source": {
+                "type": "github",
+                "config": {
+                    "owner": "allwomenstalk",
+                    "repo_name": "apps.allwomenstalk.com",
+                    "production_branch": "main",
+                    "pr_comments_enabled": false
+                }
+            },
+            "env_vars": {},
+            "compatibility_date": "2024-07-05",
+            "compatibility_flags": [],
+            "build_image_major_version": 2,
+            "usage_model": null,
+            "aliases": null,
+            "is_skipped": false,
+            "production_branch": "main"
+        },
+        "created_on": "2024-07-05T08:21:04.987543Z",
+        "production_branch": "main",
+        "production_script_name": "pages-worker--3139259-production",
+        "preview_script_name": "pages-worker--3139259-preview"
+    },
+    {
+        "id": "091b78db-1bfa-41b0-8fa1-7150de4eb905",
+        "name": "nails-allwomenstalk-com",
+        "subdomain": "nails-allwomenstalk-com.pages.dev",
+        "domains": [
+            "nails-allwomenstalk-com.pages.dev"
+        ],
+        "source": {
+            "type": "github",
+            "config": {
+                "owner": "allwomenstalk",
+                "repo_name": "nails.allwomenstalk.com",
+                "production_branch": "main",
+                "pr_comments_enabled": true,
+                "deployments_enabled": true,
+                "production_deployments_enabled": true,
+                "preview_deployment_setting": "all",
+                "preview_branch_includes": [
+                    "*"
+                ],
+                "preview_branch_excludes": [],
+                "path_includes": [
+                    "*"
+                ],
+                "path_excludes": []
+            }
+        },
+        "build_config": {
+            "build_command": "",
+            "destination_dir": "",
+            "root_dir": "",
+            "web_analytics_tag": null,
+            "web_analytics_token": null
+        },
+        "deployment_configs": {
+            "preview": {
+                "env_vars": null,
+                "fail_open": true,
+                "always_use_latest_compatibility_date": false,
+                "compatibility_date": "2024-06-16",
+                "compatibility_flags": [],
+                "build_image_major_version": 2,
+                "usage_model": "standard"
+            },
+            "production": {
+                "env_vars": null,
+                "fail_open": true,
+                "always_use_latest_compatibility_date": false,
+                "compatibility_date": "2024-06-16",
+                "compatibility_flags": [],
+                "build_image_major_version": 2,
+                "usage_model": "standard"
+            }
+        },
+        "latest_deployment": {
+            "id": "f241541a-3e43-494a-acf0-9afd6254d955",
+            "short_id": "f241541a",
+            "project_id": "091b78db-1bfa-41b0-8fa1-7150de4eb905",
+            "project_name": "nails-allwomenstalk-com",
+            "environment": "production",
+            "url": "https://f241541a.nails-allwomenstalk-com.pages.dev",
+            "created_on": "2024-06-16T07:29:28.52466Z",
+            "modified_on": "2024-06-16T07:29:59.614573Z",
+            "latest_stage": {
+                "name": "deploy",
+                "started_on": "2024-06-16T07:29:38.025873Z",
+                "ended_on": "2024-06-16T07:29:59.614573Z",
+                "status": "success"
+            },
+            "deployment_trigger": {
+                "type": "ad_hoc",
+                "metadata": {
+                    "branch": "main",
+                    "commit_hash": "490582a9922ddd8eed711f28a7ff89923d017fb1",
+                    "commit_message": "Update post tips-for-a-perfect-manicure",
+                    "commit_dirty": false
+                }
+            },
+            "stages": [
+                {
+                    "name": "queued",
+                    "started_on": "2024-06-16T07:29:29.039769Z",
+                    "ended_on": "2024-06-16T07:29:28.921787Z",
+                    "status": "success"
+                },
+                {
+                    "name": "initialize",
+                    "started_on": "2024-06-16T07:29:28.921787Z",
+                    "ended_on": "2024-06-16T07:29:32.150796Z",
+                    "status": "success"
+                },
+                {
+                    "name": "clone_repo",
+                    "started_on": "2024-06-16T07:29:32.150796Z",
+                    "ended_on": "2024-06-16T07:29:34.167442Z",
+                    "status": "success"
+                },
+                {
+                    "name": "build",
+                    "started_on": "2024-06-16T07:29:34.167442Z",
+                    "ended_on": "2024-06-16T07:29:38.025873Z",
+                    "status": "success"
+                },
+                {
+                    "name": "deploy",
+                    "started_on": "2024-06-16T07:29:38.025873Z",
+                    "ended_on": "2024-06-16T07:29:59.614573Z",
+                    "status": "success"
+                }
+            ],
+            "build_config": {
+                "build_command": "",
+                "destination_dir": "",
+                "build_caching": null,
+                "root_dir": "",
+                "web_analytics_tag": null,
+                "web_analytics_token": null
+            },
+            "source": {
+                "type": "github",
+                "config": {
+                    "owner": "allwomenstalk",
+                    "repo_name": "nails.allwomenstalk.com",
+                    "production_branch": "main",
+                    "pr_comments_enabled": false
+                }
+            },
+            "env_vars": {},
+            "compatibility_date": "2024-06-16",
+            "compatibility_flags": [],
+            "build_image_major_version": 2,
+            "usage_model": null,
+            "aliases": null,
+            "is_skipped": false,
+            "production_branch": "main"
+        },
+        "canonical_deployment": {
+            "id": "f241541a-3e43-494a-acf0-9afd6254d955",
+            "short_id": "f241541a",
+            "project_id": "091b78db-1bfa-41b0-8fa1-7150de4eb905",
+            "project_name": "nails-allwomenstalk-com",
+            "environment": "production",
+            "url": "https://f241541a.nails-allwomenstalk-com.pages.dev",
+            "created_on": "2024-06-16T07:29:28.52466Z",
+            "modified_on": "2024-06-16T07:29:59.614573Z",
+            "latest_stage": {
+                "name": "deploy",
+                "started_on": "2024-06-16T07:29:38.025873Z",
+                "ended_on": "2024-06-16T07:29:59.614573Z",
+                "status": "success"
+            },
+            "deployment_trigger": {
+                "type": "ad_hoc",
+                "metadata": {
+                    "branch": "main",
+                    "commit_hash": "490582a9922ddd8eed711f28a7ff89923d017fb1",
+                    "commit_message": "Update post tips-for-a-perfect-manicure",
+                    "commit_dirty": false
+                }
+            },
+            "stages": [
+                {
+                    "name": "queued",
+                    "started_on": "2024-06-16T07:29:29.039769Z",
+                    "ended_on": "2024-06-16T07:29:28.921787Z",
+                    "status": "success"
+                },
+                {
+                    "name": "initialize",
+                    "started_on": "2024-06-16T07:29:28.921787Z",
+                    "ended_on": "2024-06-16T07:29:32.150796Z",
+                    "status": "success"
+                },
+                {
+                    "name": "clone_repo",
+                    "started_on": "2024-06-16T07:29:32.150796Z",
+                    "ended_on": "2024-06-16T07:29:34.167442Z",
+                    "status": "success"
+                },
+                {
+                    "name": "build",
+                    "started_on": "2024-06-16T07:29:34.167442Z",
+                    "ended_on": "2024-06-16T07:29:38.025873Z",
+                    "status": "success"
+                },
+                {
+                    "name": "deploy",
+                    "started_on": "2024-06-16T07:29:38.025873Z",
+                    "ended_on": "2024-06-16T07:29:59.614573Z",
+                    "status": "success"
+                }
+            ],
+            "build_config": {
+                "build_command": "",
+                "destination_dir": "",
+                "build_caching": null,
+                "root_dir": "",
+                "web_analytics_tag": null,
+                "web_analytics_token": null
+            },
+            "source": {
+                "type": "github",
+                "config": {
+                    "owner": "allwomenstalk",
+                    "repo_name": "nails.allwomenstalk.com",
+                    "production_branch": "main",
+                    "pr_comments_enabled": false
+                }
+            },
+            "env_vars": {},
+            "compatibility_date": "2024-06-16",
+            "compatibility_flags": [],
+            "build_image_major_version": 2,
+            "usage_model": null,
+            "aliases": null,
+            "is_skipped": false,
+            "production_branch": "main"
+        },
+        "created_on": "2024-06-16T07:29:23.945565Z",
+        "production_branch": "main",
+        "production_script_name": "pages-worker--2970238-production",
+        "preview_script_name": "pages-worker--2970238-preview"
+    },
+    {
         "id": "d81ee760-2971-47c7-97a4-5679bc659e10",
         "name": "allwomenstalk-bodyart",
         "subdomain": "allwomenstalk-bodyart.pages.dev",
@@ -1742,8 +2188,7 @@
         "name": "bestproduct",
         "subdomain": "bestproduct.pages.dev",
         "domains": [
-            "bestproduct.pages.dev",
-            "qanlima.com"
+            "bestproduct.pages.dev"
         ],
         "source": {
             "type": "github",
@@ -1867,9 +2312,7 @@
             "compatibility_flags": [],
             "build_image_major_version": 1,
             "usage_model": "standard",
-            "aliases": [
-                "https://qanlima.com"
-            ],
+            "aliases": null,
             "is_skipped": false,
             "production_branch": "main"
         },
@@ -1950,9 +2393,7 @@
             "compatibility_flags": [],
             "build_image_major_version": 1,
             "usage_model": "standard",
-            "aliases": [
-                "https://qanlima.com"
-            ],
+            "aliases": null,
             "is_skipped": false,
             "production_branch": "main"
         },

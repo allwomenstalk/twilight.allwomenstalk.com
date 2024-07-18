@@ -2,7 +2,7 @@ const fs = require('fs');
 const { exec } = require('child_process');
 
 // Load the data from pages.json
-fs.readFile('pages.json', 'utf8', (err, data) => {
+fs.readFile('pages_.json', 'utf8', (err, data) => {
   if (err) {
     console.error('Error reading the file:', err);
     return;

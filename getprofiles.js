@@ -17,7 +17,7 @@ async function saveCollectionData(collectionName, filePath) {
           pipeline: [
             { $match: { $expr: { $eq: ['$author', '$$userId'] } } },
             { $sample: { size: 30 } },
-            { $addFields: { imageresize: { $replaceAll: { input: "$image_url", find: "img.allw.mn", replacement: "resize.img.allw.mn" } } } },
+            { $addFields: { imageresize: { $replaceAll: { input: "$image_url", find: "img.allw.mn", replacement: "resize.allw.mn/400x400" } } } },
             { $project: { title : '$post_title', imageresize: 1, url: 1 } }
           ],
           as: 'posts'

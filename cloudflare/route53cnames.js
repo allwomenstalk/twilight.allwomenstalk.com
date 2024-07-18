@@ -4,7 +4,7 @@ const util = require('util');
 const exec = util.promisify(require('child_process').exec);
 
 // Path to the JSON file
-const filePath = './hosts.json';
+const filePath = './routes.json';
 
 async function updateRoute53CNAMEs() {
     try {
@@ -15,7 +15,8 @@ async function updateRoute53CNAMEs() {
         for (const host of hosts) {
             if (host.domains && host.domains.length > 0) {
                 const domain = host.domains[0]; // Use the first domain as the CNAME value
-                const cnameComponent = host.subdomain.split('-')[1].split('.')[0]; // Extract 'running' from 'allwomenstalk-running.pages.dev'
+                // const cnameComponent = host.subdomain.split('-')[1].split('.')[0]; // Extract 'running' from 'allwomenstalk-running.pages.dev'
+                const cnameComponent = host.domain.split('.')[0]
                 const cnameValue = `${cnameComponent}.allwomenstalk.com`; // Construct CNAME as 'running.allwomenstalk.com'
 
                 const hostedZoneId = 'Z13EFBU9E7X2EZ'; // Set your hosted zone ID here
@@ -32,7 +33,7 @@ async function updateRoute53CNAMEs() {
                         }
                     }]
                 }'`;
-
+                console.log(command);
                 console.log(`Updating CNAME for ${host.name} to point to ${cnameValue}...`);
                 try {
                     const { stdout, stderr } = await exec(command);
