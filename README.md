@@ -186,3 +186,35 @@ New CF connected build
 aws codebuild start-build \
   --project-name "AllwomenstalkDomainDeploy" \
   --environment-variables-override name=HOST,value=jewelry.allwomenstalk.com,type=PLAINTEXT
+
+# Deploys script with wranger update 
+
+version: 0.2
+
+    phases:
+        build:
+            commands:
+            - echo "Publishing post $HOST/$SLUG on $CF_PROJECT"
+            - git clone https://$GITHUB_TOKEN@github.com/allwomenstalk/$HOST.git .
+            - aws s3 cp s3://$HOST/$SLUG/ ./$SLUG/ --recursive
+            - git config user.email "1416548+kaushan@users.noreply.github.com"
+            - git config user.name "kaushan"
+            - git add .
+            - git commit -m "Update post $SLUG" || echo "Nothing to commit"
+            - git push https://$GITHUB_TOKEN@github.com/allwomenstalk/$HOST.git
+            - npx wrangler pages deploy . --branch main --project-name $CF_PROJECT
+
+## Curent only github push 
+version: 0.2
+
+    phases:
+        build:
+            commands:
+            - echo "Publishing post $HOST/$SLUG on $CF_PROJECT"
+            - git clone https://$GITHUB_TOKEN@github.com/allwomenstalk/$HOST.git .
+            - aws s3 cp s3://$HOST/$SLUG/ ./$SLUG/ --recursive
+            - git config user.email "1416548+kaushan@users.noreply.github.com"
+            - git config user.name "kaushan"
+            - git add .
+            - git commit -m "Update post $SLUG" || echo "Nothing to commit"
+            - git push https://$GITHUB_TOKEN@github.com/allwomenstalk/$HOST.git
