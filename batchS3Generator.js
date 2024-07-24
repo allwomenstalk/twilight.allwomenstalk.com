@@ -25,6 +25,7 @@ const startTime = new Date();
 exec('rm -rf ./batch/*'); // Clean the batch directory before starting
 console.log('Start Time:', startTime);
 let run = 0;
+
 async function generateBatch() {
   
   run++;

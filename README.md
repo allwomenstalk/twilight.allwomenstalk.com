@@ -66,7 +66,7 @@ node batchS3generator.js {creates batch files in folder /batch }
 sh batchbuild.sh (uploads to s3 and starts builds)
 
 new version: 
-batchMaterialize.js to merge all data
+batchMaterialize.js to merge all data (not used now)
 batchS3generator.js to create files 
 batchbuild.sh to upload as tart builds 
 
@@ -124,8 +124,8 @@ batchdeploy.js - deploy to CF pages .env HOST
 
 batchprocess.js - to process all CF domains
 
-# Zone upate command 
 
+# Zone update command 
 aws route53 change-resource-record-sets --hosted-zone-id Z13EFBU9E7X2EZ --change-batch '{
     "Changes": [
         {
@@ -188,7 +188,6 @@ aws codebuild start-build \
   --environment-variables-override name=HOST,value=jewelry.allwomenstalk.com,type=PLAINTEXT
 
 # Deploys script with wranger update 
-
 version: 0.2
 
     phases:
