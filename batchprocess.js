@@ -12,7 +12,7 @@ function runCommandsForHost(domain) {
         // execSync(`node batchgeneratehost.js ${domain}`, { stdio: 'inherit' });
         // execSync(`node batchdeploy.js ${domain}`, { stdio: 'inherit' });
         execSync(`sh batchcommitforce.sh ${domain}`, { stdio: 'inherit' });
-        // execSync(`rm -rf _site/${domain}`, { stdio: 'inherit' });
+        execSync(`rm -rf _site/${domain}`, { stdio: 'inherit' });
         console.log(`Commands completed for: ${domain}`);
     } catch (error) {
         console.error(`Error executing commands for ${domain}: ${error}`);

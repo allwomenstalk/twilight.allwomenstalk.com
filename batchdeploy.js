@@ -22,7 +22,7 @@ if (process.argv.length >= 3) {
   }
 
 // Function to update a specific host
-async function updateHost(hostName) {
+async function deployHost(hostName) {
     const start_time = new Date();
 
     try {
@@ -65,7 +65,7 @@ async function deployHosts() {
         const hosts = JSON.parse(data);
 
         for (const host of hosts) {
-            await updateHost(host['domain']);
+            await deployHost(host['domain']);
         }
     } catch (err) {
         console.error('Error reading the hosts.json file or processing data:', err);
