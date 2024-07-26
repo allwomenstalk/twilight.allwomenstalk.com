@@ -1,4 +1,4 @@
-{% if post.videos and post.videos.length > 0 %}
+{# {% if post.videos and post.videos.length > 0 %} #}
 
   {% from "partials/videosgrid.njk" import videosGrid %}
 
@@ -7,18 +7,40 @@
   <script>
     function videos() {
       return {
-        list: {{ post.videos | shuffle | slicearr(9) | dump | safe }},
+        list: [],
         displayedVideos: [],
         currentVideoId: '',
         showVideo: false,
         loadAmount: 3,
 
         init() {
-          this.shuffleList();
-          this.displayedVideos = this.list.slice(0, this.loadAmount);
-          this.currentVideoId = this.displayedVideos[0].videoId;
-          
+          this.loadVideos();
         },
+
+        loadVideos() {
+          const postVideosUrl = `https://pub-24af77b4388c41c18c367526fb612109.r2.dev/{{post.id}}.json`;
+          const categoryVideosUrl = `https://pub-24af77b4388c41c18c367526fb612109.r2.dev/{{post.category}}.json`;
+
+          const fetchVideos = url => fetch(url)
+            .then(response => {
+              if (!response.ok) throw new Error('Not found');
+              return response.json();
+            });
+
+          fetchVideos(postVideosUrl)
+            .catch(() => fetchVideos(categoryVideosUrl))
+            .then(data => {
+              console.log('Video list:', data);
+              this.videos = data || [];
+              this.shuffleList();
+              this.displayedVideos = this.videos.slice(0, this.loadAmount);
+              this.currentVideoId = this.displayedVideos[0]?.videoId || null;
+            })
+            .catch(() => {
+              this.videos = [];
+            });
+        },
+
 
         shuffleList() {
           this.list = this.list.sort(() => Math.random() - 0.5); // Simple shuffle
@@ -43,4 +65,4 @@
     }
   </script>
 
-{% endif %}
+{# {% endif %} #}

@@ -227,7 +227,7 @@ pipeline_name = [
     '$match': {
       'post_name': {$in:
         [
-          "curly-hair-enhance-natural-curl",
+          "ways-to-politely-turn-down-requests-for-money",
         ]
       }
     }

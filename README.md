@@ -67,10 +67,18 @@ sh batchbuild.sh (uploads to s3 and starts builds)
 
 new version: 
 batchMaterialize.js to merge all data (not used now)
-batchS3generator.js to create files 
-batchbuild.sh to upload as tart builds 
+batchS3generator.js to create files in /batch and run builds for each batch
+batchbuild.sh to upload a start builds 
 
 node batchmaterialize.js && node batchS3generator.js && sh batchbuild.sh 
+
+## Theory 
+- Build all files into _site folder 
+- Deploy S3 domains to S3 
+- Commit CF domains to github 
+- Clean up 
+- ? Test 
+
 
 to clean current files 
 aws s3 rm s3://11tycode/batch/ --recursive

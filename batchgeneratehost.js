@@ -1,9 +1,11 @@
 const { MongoClient, ObjectId } = require('mongodb');
+const { spawn } = require('child_process');
 const fs = require('fs');
 const util = require('util');
 const exec = util.promisify(require('child_process').exec);
 const { aggregate } = require('./helpers/dataApi');
 require('dotenv').config();
+const path = require('path');
 
 const parser = require('./helpers/parser.js');
 const pipelinePost = require('./helpers/pipelinePost.js');
@@ -83,7 +85,7 @@ async function generateBatch() {
     console.log(`Generated batch. Last post ID: ${lastPostId}`);
 
     fs.writeFileSync(`./src/_data/posts.json`, JSON.stringify(parsed, null, 2));
-    await runEleventyBuild(); // Initiate 11ty build
+    await runEleventyBuild(host); // Initiate 11ty build
 
     marker = lastPostId;
 
@@ -102,14 +104,51 @@ async function generateBatch() {
   }
 }
 
-async function runEleventyBuild() {
+async function runEleventyBuild(host) {
   try {
     const buildStartTime = new Date(); // Record the start time of the build
     console.log('Running Eleventy build...');
-    await exec('npm run build');
-    console.log('Eleventy build completed.');
+    
+    const logDir = path.join(__dirname, 'logs');
+    const logFile = path.join(logDir, `${host}.txt`);
+    
+    if (!fs.existsSync(logDir)) {
+      fs.mkdirSync(logDir, { recursive: true });
+    }
+
+    const logStream = fs.createWriteStream(logFile, { flags: 'a' });
+
+    logStream.write(`\n\n===== Build started at ${buildStartTime.toISOString()} =====\n`);
+
+    const buildProcess = spawn('npm', ['run', 'build'], { shell: true });
+
+    if (buildProcess.stdout && buildProcess.stderr) {
+      buildProcess.stdout.pipe(logStream);
+      buildProcess.stderr.pipe(logStream);
+    } else {
+      console.error('Error: stdout or stderr is undefined.');
+      return;
+    }
+
+    await new Promise((resolve, reject) => {
+      buildProcess.on('close', (code) => {
+        if (code === 0) {
+          resolve();
+        } else {
+          reject(new Error(`Build process exited with code ${code}`));
+        }
+      });
+    });
+
     const buildEndTime = new Date(); // Record the end time of the build
     const buildDuration = Math.round((buildEndTime - buildStartTime) / 1000); // Duration in seconds
+
+    logStream.write(`\n===== Build completed at ${buildEndTime.toISOString()} =====\n`);
+    logStream.write(`Build Time (seconds): ${buildDuration}\n`);
+
+    logStream.end();
+
+    console.log('Eleventy build completed.');
     console.log('Build Time (seconds):', buildDuration); // Output the build time
   } catch (error) {
     console.error('Error running Eleventy build:', error);
@@ -125,6 +164,11 @@ async function generateArchive() {
   } catch (error) {
     console.error('Error running Eleventy build:', error);
   }
+}
+
+// delete file _marker.json if it's exits 
+if (fs.existsSync('./_marker.json')) {
+  fs.unlinkSync('./_marker.json');
 }
 
 generateBatch();

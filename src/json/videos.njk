@@ -1,0 +1,9 @@
+---
+pagination: 
+  data: posts
+  size: 1
+  alias: item
+eleventyComputed:
+  permalink: "video/{{item.id}}.json"
+---
+{{ item.videos | dump | safe }}

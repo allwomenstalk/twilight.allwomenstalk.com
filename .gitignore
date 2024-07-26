@@ -20,3 +20,4 @@ src/_includes/partials/css/*.css
 lambda/*
 validation_reports.json
 batch/*
+logs/*
