@@ -31,9 +31,10 @@
             .catch(() => fetchVideos(categoryVideosUrl))
             .then(data => {
               console.log('Video list:', data);
-              this.videos = data || [];
+              this.list = data || [];
+              console.log('Video list:', this.list);
               this.shuffleList();
-              this.displayedVideos = this.videos.slice(0, this.loadAmount);
+              this.displayedVideos = this.list.slice(0, this.loadAmount);
               this.currentVideoId = this.displayedVideos[0]?.videoId || null;
             })
             .catch(() => {

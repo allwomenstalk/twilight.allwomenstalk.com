@@ -19,6 +19,8 @@ if (!host) {
 }
 
 console.log('Host:', host);
+console.log("Cleaning logs ...");
+exec(`rm -rf ./logs/${host}.txt`); // Clean the logs directory before starting
 
 // Check for specific post ID in environment variables
 const specificPostId = process.env.POST_ID;

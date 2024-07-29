@@ -18,7 +18,7 @@ function processFile(filePath) {
             const fileNameMatch = nextLine.match(/Having trouble writing to "(.*?)"/);
             if (fileNameMatch) {
                 const fileName = fileNameMatch[1];
-                console.log(`Eleventy error found in file ${filePath} on line ${index + 2}: ${fileName}`);
+                console.log(`Eleventy error found in file ${filePath} on line ${index + 2}:\n ${fileName} \n`);
             }
         }
     });

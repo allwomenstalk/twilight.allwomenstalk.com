@@ -75,7 +75,7 @@ async function deployHosts() {
 
 
 if (host) {
-    updateHost(host);
+    deployHost(host);
 } else {
     deployHosts();
 }

@@ -29,7 +29,7 @@ fi
 git pull origin main
 
 # Build over the existing files
-npm run build
+# npm run build
 
 # Copy the updated files from _site/[domain]
 cp -r _site/$DOMAIN/* .
