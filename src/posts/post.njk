@@ -76,7 +76,10 @@ eleventyComputed:
                     {% include 'partials/unibots.njk' %}
                     
                 {% elif loop.index == 3 %}
+
+
                     {% if post.faq %}
+                        {# default show faq #}
                         {% include 'partials/faq.njk' %}
                         {% include 'partials/seperator.njk' %}
                     {% elif post.related.inline %}

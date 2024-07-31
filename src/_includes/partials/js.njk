@@ -695,11 +695,11 @@
     }, 10)
 
     // rest of js 
-    setTimeout(function() {
+    {# setTimeout(function() {
         loadJs("https://pub-56c58d9f0cd64f4ea0f67eba69a26e7b.r2.dev/bonbon.js", () => {
             console.log('bon loaded');
         });
-    }, 1000)
+    }, 1000) #}
 
     {# disable all logs in production #}
     {% if metadata.NODE_ENV == "production" %}

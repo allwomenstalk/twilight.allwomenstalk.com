@@ -38,6 +38,12 @@
             <p class="text-base leading-7 text-gray-600">{{item.answer}}</p>
           </dd>
         </div>
+        {% else %}
+        <template x-for="item in items"> 
+          <div>
+            <p x-text="item.question"></p>
+          </div> 
+        </template>
         {% endfor %}
         <!-- More questions... -->
       </dl>
@@ -48,8 +54,34 @@
 <script> 
 function faqData() {
   return {
-    items: {{post.faq | dump | safe}},
-    shown: 3  , 
+    {% if post.faq %}
+    items: {{post.faq | dump | safe }},
+    {%- else -%}
+    items: [],
+    {%- endif -%}
+    shown: 3, 
+    async init() {
+      console.log('faq', this.items)
+      if (this.items.length === 0) {
+        this.loadData();
+      }
+    },
+    loadData() {
+      url = 'https://pub-1969d309989b4ee98dadd29698bd2213.r2.dev/4f32a64a9d2f6889de3c68c3.json'
+      try {
+        fetch(url)
+          .then(response => response.json())
+          .then(data => {
+            console.log('faq', data)
+            this.items = data.list
+          })
+          .catch(error => {
+            console.error('Error:', error);
+          });
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    },
     report(index) {
         item = this.items[index];
         console.log(index,item);

@@ -10,6 +10,7 @@ const path = require('path');
 const parser = require('./helpers/parser.js');
 const pipelinePost = require('./helpers/pipelinePost.js');
 
+
 // Check if command line argument is provided
 const host = process.argv.length >= 3 ? process.argv[2] : process.env.HOST;
 
