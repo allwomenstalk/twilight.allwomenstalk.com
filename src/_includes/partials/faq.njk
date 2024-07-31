@@ -3,9 +3,10 @@
 {# set shown to number of visible on the start #}
 <div x-data="faqData" id="faq" class="max-w-2xl mx-auto">
   <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
-    <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
+    <div class="mx-auto max-w-4xl">
       <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
-      <dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
+      <dl class="mt-10 space-y-6 divide-y">
+
         {% for item in post.faq %}
         <div x-show="shown>={{loop.index}}" x-data="{show:false, index:{{loop.index}} }" class="pt-6" >
           <dt>
@@ -15,19 +16,9 @@
                 {{item.question}}
               </span>
               <span class="ml-6 flex h-7 items-center">
-                <!--
-                  Icon when question is collapsed.
-
-                  Item expanded: "hidden", Item collapsed: ""
-                -->
                 <svg class="h-6 w-6" :class="{hidden:show}"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
                 </svg>
-                <!--
-                  Icon when question is expanded.
-
-                  Item expanded: "", Item collapsed: "hidden"
-                -->
                 <svg class=" h-6 w-6" :class="{hidden:!show}" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecapn="round" stroke-linejoin="round" d="M18 12H6" />
                 </svg>
@@ -39,10 +30,27 @@
           </dd>
         </div>
         {% else %}
-        <template x-for="item in items"> 
-          <div>
-            <p x-text="item.question"></p>
-          </div> 
+        <template x-for="(item, index) in items"> 
+          
+            <div  x-show="shown>=(index+1)&&item" x-data="{show:false}" class="pt-6" >
+              <dt>
+                <button @click="show=!show;report(index)" type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+                  <span x-text="item.question" class="text-base font-semibold leading-7"></span>
+                  <span class="ml-6 flex h-7 items-center">
+                    <svg class="h-6 w-6" :class="{hidden:show}"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                    </svg>
+                    <svg class=" h-6 w-6" :class="{hidden:!show}" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecapn="round" stroke-linejoin="round" d="M18 12H6" />
+                    </svg>
+                  </span>
+                </button>
+              </dt>
+              <dd x-show="show" class="mt-2 pr-12" id="faq-0">
+                <p x-text="item.answer" class="text-base leading-7 text-gray-600"></p>
+              </dd>
+            </div>
+
         </template>
         {% endfor %}
         <!-- More questions... -->
@@ -67,24 +75,27 @@ function faqData() {
       }
     },
     loadData() {
+      url = 'https://pub-1969d309989b4ee98dadd29698bd2213.r2.dev/{{post.id}}.json'
       url = 'https://pub-1969d309989b4ee98dadd29698bd2213.r2.dev/4f32a64a9d2f6889de3c68c3.json'
       try {
         fetch(url)
           .then(response => response.json())
           .then(data => {
-            console.log('faq', data)
+            {# console.log('faq', data) #}
             this.items = data.list
           })
           .catch(error => {
-            console.error('Error:', error);
+            {# console.error('Error:', error); #}
           });
       } catch (error) {
-        console.error('Error:', error);
+        {# console.error('Error:', error); #}
       }
     },
     report(index) {
+        this.shown<this.items.length?this.shown++:this.shown=this.shown;
         item = this.items[index];
-        console.log(index,item);
+        {# console.log(index,item); #}
+        return;
         this.shown++;
         beacontrack({ type: 'faq', action:1,  post_id: '{{post.id}}', item: item })        
     },
