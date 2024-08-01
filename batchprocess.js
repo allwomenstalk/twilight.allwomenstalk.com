@@ -35,13 +35,11 @@ function runCommandsForHost(domain) {
 }
 
 // Loop through each host and run the commands
-function runCommandsForHostWithDelay(hosts, delay) {
-    s3hosts.forEach((host, index) => {
-        console.log(`Running commands for: ${host}`);
-        setTimeout(() => {
-            runCommandsForHost(host.domain);
-        }, index * delay);
-    });
+async function runCommandsForHostWithDelay(hosts, delay) {
+    for (const host of s3hosts) {
+        console.log(`Processing... ${host}`);
+        await runCommandsForHost(host);
+    };
 }
 
 const delay = 10000; // 10 seconds in milliseconds
