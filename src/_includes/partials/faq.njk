@@ -95,7 +95,6 @@ function faqData() {
         this.shown<this.items.length?this.shown++:this.shown=this.shown;
         item = this.items[index];
         {# console.log(index,item); #}
-        return;
         this.shown++;
         beacontrack({ type: 'faq', action:1,  post_id: '{{post.id}}', item: item })        
     },
