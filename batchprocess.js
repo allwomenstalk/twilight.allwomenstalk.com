@@ -37,8 +37,10 @@ function runCommandsForHost(domain) {
 // Loop through each host and run the commands
 async function runCommandsForHostWithDelay(hosts, delay) {
     for (const host of s3hosts) {
-        console.log(`Processing... ${host}`);
-        await runCommandsForHost(host);
+        // h = host.domain;
+        h = host
+        console.log(`Processing... ${h}`);
+        await runCommandsForHost(h);
     };
 }
 

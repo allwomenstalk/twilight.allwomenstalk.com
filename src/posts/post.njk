@@ -77,10 +77,11 @@ eleventyComputed:
                 {% elif loop.index == 3 %}
                         
                         {% include 'partials/faq.njk' %}
-                        {% include 'partials/seperator.njk' %}
 
                     {% if post.faq %}
-                        {# default show faq #}
+                        {# default show faq and extra ad unit #}
+                        {% include 'partials/seperator.njk' %}
+
 
                     {% elif post.related.inline %}
                         {# {% include "partials/relatedinline.njk" %}
