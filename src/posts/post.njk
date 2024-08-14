@@ -29,17 +29,18 @@ eleventyComputed:
     <main id="content">
     
     {% for page in post.pages %}
-        {% if page.title %}
-            {% include 'partials/postH2.njk' %}     
-        {% endif %}
+
         <div class="{%- if post.noaff -%} _noaff {% endif %}
             post prose p-4 overflow-hidden mx-auto max-w-xl
             {%- if loop.first -%} 
              first-line:uppercase first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left 
-            {%- endif -%}
+            {%- endif -%}">
             
-            " id="{{loop.index0}}">
-
+            {% if page.title %}
+            <h3 id="{{loop.index0}}" class="text-3xl md:text-4xl">
+                {{page.number}}. {{page.title | safe }}
+            </h3> 
+            {% endif %}
             
             {{ page.content | safe }}
         </div>
@@ -55,7 +56,7 @@ eleventyComputed:
                 {# inline related #}
                 {% if loop.index > 1 %}
                 {% set inline = post.related.posts[loop.index-2] %}
-                {% include "partials/relatedinline.njk" %}
+                {# {% include "partials/relatedinline.njk" %} #}
                 {% endif %}
 
                 {% if loop.index == 1 %}
@@ -101,8 +102,8 @@ eleventyComputed:
                     {# {% include 'partials/story.njk' %} #}
                     {% include 'partials/seperator.njk' %}
                 {% elif (loop.index == 15 )  %}
-                    {% include "partials/explore.njk" %}
-                    {% include 'partials/seperator.njk' %}
+                    {# {% include "partials/explore.njk" %} #}
+                    {# {% include 'partials/seperator.njk' %} #}
                 {% elif (loop.index == 10) and (loop.length > 12) %}
                     {# adding shopping at the middle on the long posts #}
                     {% include 'partials/shopping.njk' %}
@@ -160,7 +161,7 @@ eleventyComputed:
 
     {% include "partials/listmix.njk" %}
 
-    {% include 'partials/popular.njk' %}
+    {# {% include 'partials/popular.njk' %} #}
 
     {% include 'partials/schema.njk' %}
 

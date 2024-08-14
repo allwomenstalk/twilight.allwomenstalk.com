@@ -211,30 +211,47 @@ module.exports = function (item) {
 
       // video objects 
       temp.pages = [] // array of pages for structured pages
-      temp.content.forEach((page,index) => {
-        
-        if (page.includes('amp-youtube')) {
-          
-          temp.ampyt = true
-          subtitle = page.match(/span>(.*?)</)
-          videoid = page.match(/videoid=\"(.*?)\"/)[1]
+      totalwords = 0
+      lastAdWords = 0 // Track the word count when the last ad was encountered
 
-          VideoObject = {
-            "@context":"https://schema.org",
-            "@type":"VideoObject",
-            "name":subtitle?subtitle[1].trim():'none',
-            "description":subtitle?subtitle[1].trim():'none',
-            "thumbnailUrl":`https://img.youtube.com/vi/${videoid}/0.jpg`,
-            "embedUrl":`https://www.youtube.com/embed/${videoid}`,
-            "uploadDate":temp.date
+      temp.content.forEach((page, index) => {
+
+          if (page.includes('amp-youtube')) {
+
+              temp.ampyt = true
+              subtitle = page.match(/span>(.*?)</)
+              videoid = page.match(/videoid=\"(.*?)\"/)[1]
+
+              VideoObject = {
+                  "@context": "https://schema.org",
+                  "@type": "VideoObject",
+                  "name": subtitle ? subtitle[1].trim() : 'none',
+                  "description": subtitle ? subtitle[1].trim() : 'none',
+                  "thumbnailUrl": `https://img.youtube.com/vi/${videoid}/0.jpg`,
+                  "embedUrl": `https://www.youtube.com/embed/${videoid}`,
+                  "uploadDate": temp.date
+              }
+              temp.SchemaObjects.push(JSON.stringify(VideoObject, null, 4))
           }
-          temp.SchemaObjects.push(JSON.stringify(VideoObject,null,4))
-        }
 
-        // convert to object 
-        temp.pages.push({
-          content: page
-        })
+          // count page words 
+          words = page.match(/\w+/g).length // count words
+          totalwords += words
+
+          // Determine if this page should have an ad
+          let ads = false
+          if (totalwords - lastAdWords >= 200) {
+              ads = true
+              lastAdWords = totalwords // Update lastAdWords to the current total
+          }
+
+          // convert to object 
+          temp.pages.push({
+              content: page,
+              length: words,
+              total: totalwords,
+              ads: ads // Add the ads field
+          })
         title = page.match(/<h2>(.*?)<\/h2>/)
         // remove <span> from title
         if (title) {

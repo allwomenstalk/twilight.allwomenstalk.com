@@ -28,6 +28,6 @@ amp-list div[role=list]{
     @apply block text-[6em] leading-[1.15em] font-thin text-center font-sans;
 }
 .post img {
-    @apply mx-auto rounded-md w-full
+    @apply mx-auto rounded-md w-full bg-slate-100
 }
 
