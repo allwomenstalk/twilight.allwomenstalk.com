@@ -135,8 +135,6 @@ module.exports = function (item) {
       } 
 
 
-      
-
       temp.content = item.post_content 
         //.replace(/<div class=\"embed\" data-media-type=\"instagram\" data-media-url=\"https:\/\/www.instagram.com\/p\/(.*?)\/">(.*?)?<\/div>/g, 
         //  '<amp-instagram data-shortcode="$1" width="1" height="1" layout="responsive"></amp-instagram>')
@@ -197,7 +195,6 @@ module.exports = function (item) {
           }
         }
       })
-      
 
       // temp.url = `${
       //   (item.blog === 'aws'
@@ -211,9 +208,7 @@ module.exports = function (item) {
 
       // video objects 
       temp.pages = [] // array of pages for structured pages
-      totalwords = 0
-      lastAdWords = 0 // Track the word count when the last ad was encountered
-
+    
       temp.content.forEach((page, index) => {
 
           if (page.includes('amp-youtube')) {
@@ -234,23 +229,11 @@ module.exports = function (item) {
               temp.SchemaObjects.push(JSON.stringify(VideoObject, null, 4))
           }
 
-          // count page words 
-          words = page.match(/\w+/g).length // count words
-          totalwords += words
 
-          // Determine if this page should have an ad
-          let ads = false
-          if (totalwords - lastAdWords >= 200) {
-              ads = true
-              lastAdWords = totalwords // Update lastAdWords to the current total
-          }
 
           // convert to object 
           temp.pages.push({
               content: page,
-              length: words,
-              total: totalwords,
-              ads: ads // Add the ads field
           })
         title = page.match(/<h2>(.*?)<\/h2>/)
         // remove <span> from title
@@ -268,7 +251,42 @@ module.exports = function (item) {
         }
 
       })
-      //console.log(temp.SchemaObjects)
+      
+      // words count and ads 
+      totalwords = 0
+      lastAdWords = 0 // Track the word count when the last ad was encountered
+
+      if (temp.pages.length > 0) {
+        temp.pages.forEach((page, index) => {
+            let words = 0
+
+            if (temp.elaborate && temp.elaborate[index] && temp.elaborate[index].html) {
+                // Count words in the 'html' field of elaborate[index]
+                words = temp.elaborate[index].html.match(/\w+/g).length
+            }
+
+            // Add words from 'content' field of the current page
+            // console.log('page:',page.content, page.content.length)
+            if (page.content.trim().length > 20) {
+              words += page.content.match(/\w+/g).length
+              totalwords += words
+
+              // Determine if this page should have an ad
+              let ads = false
+              if (totalwords - lastAdWords >= 200 || index === 0 ) {
+                  ads = true
+                  lastAdWords = totalwords // Update lastAdWords to the current total
+              }
+            
+
+              // Update the page object with new fields
+              page.length = words
+              page.total = totalwords
+              page.ads = ads
+            }
+        })
+      }
+
 
       // related videos 
 

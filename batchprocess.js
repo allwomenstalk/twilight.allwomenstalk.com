@@ -41,6 +41,8 @@ async function runCommandsForHostWithDelay(hosts, delay) {
         // h = host
         console.log(`Processing... ${h}`);
         await runCommandsForHost(h);
+        // run clean up
+        execSync(`rm -rf _site/${h}`, { stdio: 'inherit' });
     };
 }
 
