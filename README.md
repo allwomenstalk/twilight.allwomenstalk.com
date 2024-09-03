@@ -225,3 +225,9 @@ version: 0.2
             - git add .
             - git commit -m "Update post $SLUG" || echo "Nothing to commit"
             - git push https://$GITHUB_TOKEN@github.com/allwomenstalk/$HOST.git
+
+
+
+## Build host 
+
+npm run clean && node batchgeneratehost.js travel.allwomenstalk.com && sh batchcommitforce.sh travel.allwomenstalk.com
