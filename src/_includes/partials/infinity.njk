@@ -1,7 +1,7 @@
 <div x-data="infinity" class="max-w-2xl mx-auto mt-16 sm:rounded-t-xl">
         <template x-for="(item, index) in list" :key="index">
             <div x-show="!item.hidden" class="my-8 sm:my-16">
-                <figure class="mx-4 overflow-hidden rounded-xl">
+                <figure x-show="item.image" class="mx-4 overflow-hidden rounded-xl">
                     <img :src="item.image" alt="" class="aspect-square md:aspect-[16/9] lg:aspect-[3/2] w-full bg-gray-100 object-cover">
                 </figure>
                 {# <textarea x-model="JSON.stringify(item,null,4)"></textarea> #}
@@ -28,7 +28,8 @@
                 this.loadlist();
             },
             loadlist() {
-                url = `https://pub-ff359827c45e40a7b6e9bad1878cd18a.r2.dev/posts/${(this.category ? this.category : '')}/${this.page}.json`;
+                {# url = `https://pub-ff359827c45e40a7b6e9bad1878cd18a.r2.dev/posts/${(this.category ? this.category : '')}/${this.page}.json`; #}
+                url = 'https://pub-ff359827c45e40a7b6e9bad1878cd18a.r2.dev/feed.json'
                 console.log('url', url);
                 fetch(url)
                 .then(response => {
@@ -44,6 +45,12 @@
                         this.list.forEach((item, index) => {
                             item.html = '';
                             this.observeArticle(index);
+                            if (!item.url) {
+                                item.html = item.excerpt;
+                                item.html += '<ul>' + item.outline.map((item) => {
+                                    return `<li>${item}</li>`;
+                                }).join('') + '</ul>';
+                            }
                         });
                     });
                 })
@@ -53,7 +60,9 @@
             },
             getarticle(url, index) {
                 console.log('getarticle', url);
-
+                if (!url) {
+                    return;
+                }
                 fetch(url)
                     .then(response => response.text())
                     .then(html => {
@@ -72,7 +81,7 @@
 
                             if (this.list[index].html.length < 10) {
                                 console.log('length', this.list[index].html.length )
-                                this.list[index].hidden = true
+                                {# this.list[index].hidden = true #}
 
                             }
                         }
