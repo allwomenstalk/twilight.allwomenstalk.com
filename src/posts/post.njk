@@ -30,7 +30,7 @@ eleventyComputed:
     
     {% for page in post.pages %}
 
-        <div class=" post prose p-4 overflow-hidden mx-auto max-w-xl
+        <article class="post prose p-4 overflow-hidden mx-auto max-w-xl
             {%- if post.noaff -%} _noaff {% endif %}
             {%- if loop.first -%} 
              first-line:uppercase first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left 
@@ -43,7 +43,7 @@ eleventyComputed:
             {% endif %}
             
             {{ page.content | safe }}
-        </div>
+        </article>
 
         {% include 'partials/elaborate.njk' %}     
 
@@ -96,7 +96,7 @@ eleventyComputed:
                     {% include 'partials/seperator.njk' %}
                 {% elif (loop.index == 6) %}    
                     
-                    {% include "partials/videos.njk" %}
+                    {# {% include "partials/videos.njk" %} #}
 
                     {% include 'partials/seperator.njk' %}
                 {% elif (loop.index == 10) %}
@@ -151,8 +151,11 @@ eleventyComputed:
 
 
     </main>
+    
+    {% include 'partials/infinity.njk' %}
 
-    {% include 'partials/relatedbadges.njk' %}
+
+    {# {% include 'partials/relatedbadges.njk' %} #}
 
 
     {% include 'partials/adsnew.njk' %}
@@ -160,7 +163,8 @@ eleventyComputed:
 
     {% include 'partials/ads.njk' %}
 
-    {% include "partials/listmix.njk" %}
+
+    {# {% include "partials/listmix.njk" %} #}
 
     {# {% include 'partials/popular.njk' %} #}
 

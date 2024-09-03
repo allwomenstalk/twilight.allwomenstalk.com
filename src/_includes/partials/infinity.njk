@@ -1,0 +1,158 @@
+<div x-data="infinity" class="max-w-3xl mx-auto mt-16 sm:rounded-t-xl">
+  <template x-for="(item, index) in list" :key="index">
+    <div class="my-8 sm:my-16">
+        <figure class="mx-4 overflow-hidden rounded-xl">
+            <img :src="item.image" alt="" 
+            class="aspect-square md:aspect-[16/9] lg:aspect-[3/2] w-full bg-gray-100 object-cover ">
+        </figure>
+        <article x-data="{show:false}" 
+            :class="{'h-[600px]': !show, 'h-auto': show}"
+            class="mx-4 relative overflow-hidden border-3 border-red-500">
+            
+            <a :href="item.url" x-html="item.title" class="block py-4 max-w-md text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"></a>
+
+            <section x-html="item.html" class="prose" :id="'article-' + index"> 
+            </section>
+            <!-- Gradient and Expand Button -->
+            <div x-show="!show" class="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-gray-50 via-gray-50/90 to-transparent"></div>
+            <button x-show="!show" @click="show=expand()" class="absolute bottom-2 left-4 bg-black text-white text-sm font-semibold  px-4 py-2 rounded-lg shadow-md">
+                Continue reading
+            </button>
+        </article>
+        {# <div class="mx-auto max-w-3xl py-12 sm:py-24 lg:flex gap-8 lg:items-center lg:justify-between">
+            <h2 x-html="subscribe[Math.floor(Math.random() * subscribe.length)]" class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"></h2>
+            <div class="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
+            <a href="#subscribe" class="text-sm font-semibold leading-6 text-gray-900">
+                <span x-html="cta[Math.floor(Math.random() * cta.length)]"></span> <span aria-hidden="true">→</span>
+            </a>
+            </div>
+        </div> #}
+
+    </div>
+  </template>
+</div>
+
+<script>
+console.log('infinity');
+function infinity() {
+    return {
+        list: [],
+        url: '{{post.url}}',
+        category: '{{post.category[0]}}',
+        page: 0,
+        init() {
+            console.log('init infinity');
+            this.loadlist();
+        },
+        loadlist() {
+            url = `https://pub-ff359827c45e40a7b6e9bad1878cd18a.r2.dev/posts/${(this.category ? this.category : '')}/${this.page}.json`;
+            console.log('url', url);
+            fetch(url)
+                .then(response => {
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('data', data);
+                    arr = data.filter(item => item.url !== this.url)
+                        .sort(() => Math.random() - 0.5);
+                    this.list.push(...arr);
+                    console.log('list', this.list);
+                    this.$nextTick(() => {
+                        this.list.forEach((item, index) => {
+                            item.html = '';
+                            this.observeArticle(index);
+                        });
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
+        },
+        getarticle(url, index) {
+            console.log('getarticle', url);
+            // set browser url to the article url
+            fetch(url)
+                .then(response => {
+                    return response.text();
+                })
+                .then(html => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    const pages = doc.querySelectorAll('article.post.prose');
+                    {# console.log('articles', articles); #}
+                    // Assuming you're iterating over the NodeList (articles)
+                    pages.forEach((page, i) => {
+                        {# console.log('article', page); #}
+
+                        // Ensure that `this.list[index]` exists before assignment
+                        if (this.list[index]) {
+                            // Store the outerHTML of the article in the list
+                            this.list[index].html += page.outerHTML;
+                        }
+                    });
+                    if (this.list[index].html = '') {
+                        // delete the article if it has no content
+                        this.list.splice(index, 1);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
+            
+            // if last artilce loadmore 
+            if (index === this.list.length - 1) {
+                this.page++;
+                this.loadlist();
+            }
+        },
+        observeArticle(index) {
+            this.$nextTick(() => {
+                const articleElement = document.getElementById('article-' + index);
+                if (articleElement) {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                url = this.list[index].url
+                                {# .replace('https:/', 'http://localhost:8083'); #}
+                                this.getarticle(url, index);
+                                // set browser url to the article url
+                                // window.history.pushState({}, '', '/' + this.list[index].slug + '/');
+                                
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    }, {
+                        rootMargin: '0px 0px 200px 0px', // Start loading before the article is fully in view
+                        threshold: 0.1
+                    });
+                    observer.observe(articleElement);
+                }
+            });
+        }, 
+        async expand() {
+            event = {
+                label: 'expand',
+                page: window.location.pathname,
+            }
+            obj = { type: 'infinity', action:1,  post_id: "{{post._id}}", item: event }
+            this.beacontrack(obj);
+            return true;
+            
+        },
+        beacontrack(obj) {
+            const trackapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/beacon`;
+
+            // Use sendBeacon for sending the tracking data
+            const beaconData = new Blob([JSON.stringify(obj)], { type: 'application/json' });
+            const success = navigator.sendBeacon(trackapi, beaconData);
+
+        },
+        subscribe: [
+            "{{locale[project.locale]['NewsletterTitle']}}",
+        ], 
+        cta: [
+            "{{locale[project.locale]['Subscribe']}}",
+        ]
+    };
+}
+</script>

@@ -28,7 +28,7 @@ const specificPostId = process.env.POST_ID;
 console.log('Specific Post ID:', specificPostId);
 
 // Batch size
-const batchSize = 500; 
+const batchSize = 1000; 
 console.log('Batch Size:', batchSize);
 
 let marker = null; // Marker to keep track of the last processed document
