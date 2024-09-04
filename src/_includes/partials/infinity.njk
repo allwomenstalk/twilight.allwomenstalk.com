@@ -1,36 +1,61 @@
-<div x-data="infinity" class="max-w-2xl mx-auto mt-16 sm:rounded-t-xl">
+<div x-data="infinity" class="max-w-2xl sm:px-4 mx-auto mt-16 sm:rounded-t-xl">
         <template x-for="(item, index) in list" :key="index">
             <div x-show="!item.hidden" class="my-8 sm:my-16">
                 <figure x-show="item.image" class="mx-4 overflow-hidden rounded-xl">
                     <img :src="item.image" alt="" class="aspect-square md:aspect-[16/9] lg:aspect-[3/2] w-full bg-gray-100 object-cover">
                 </figure>
-                {# <textarea x-model="JSON.stringify(item,null,4)"></textarea> #}
-                <a :href="item.url" x-html="item.title" class="mx-4 block py-4 max-w-md text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"></a>
-                <article x-data="{show:index==0}" :class="{'h-[400px]': !show, 'h-auto': show}" class="prose post mx-4 relative overflow-hidden border-3 border-red-500">
-                    
+                <a x-html="item.title" class="mx-4 block py-4 max-w-md text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"></a>
+                <article x-data="{show:false}" :class="{'h-[200px]': !show, 'h-auto': show}" class="prose mx-4 relative overflow-hidden border-3 border-red-500">
                     <section x-html="item.html" :id="'article-' + index"></section>
                     <div x-show="!show" class="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-gray-50 via-gray-50/90 to-transparent"></div>
-                    <button x-show="!show" @click="show=expand()" class="absolute bottom-2 left-0f bg-black text-white text-sm font-semibold px-4 py-2 rounded-lg shadow-md">Continue reading</button>
+                    <button x-show="!show" @click="show=expand(item)" class="absolute bottom-2 left-0f bg-black text-white text-sm font-semibold px-4 py-2 rounded-lg shadow-md">Continue reading</button>
                 </article>
             </div>
         </template>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
     console.log('infinity');
+    var converter = new showdown.Converter();
     function infinity() {
         return {
             list: [],
-            url: 'https://beauty.allwomenstalk.com/carriere-freres-solid-soaps/',
-            category: 'beauty',
+            url: "{{post.url}}",
+            postid: "{{post.id}}",
+            category: "{{post.category[0]}}",
             page: 0,
             init() {
                 console.log('init infinity');
                 this.loadlist();
             },
-            loadlist() {
-                {# url = `https://pub-ff359827c45e40a7b6e9bad1878cd18a.r2.dev/posts/${(this.category ? this.category : '')}/${this.page}.json`; #}
-                url = 'https://pub-ff359827c45e40a7b6e9bad1878cd18a.r2.dev/feed.json'
+            async loadlist() {
+                let postfeed = `https://pub-ff359827c45e40a7b6e9bad1878cd18a.r2.dev/${this.postid}.json`;
+                let catfeed = `https://pub-ff359827c45e40a7b6e9bad1878cd18a.r2.dev/${this.category}.json`;
+
+                // Function to check if URL exists
+                const checkURLExists = async (url) => {
+                    try {
+                        const response = await fetch(url, { method: 'HEAD' });
+                        return response.ok;
+                    } catch {
+                        return false;
+                    }
+                };
+
+                // Check URLs in order
+                let url = (await checkURLExists(postfeed)) ? postfeed : 
+                          (await checkURLExists(catfeed)) ? catfeed : null;
+
+                if (url) {
+                    console.log('Using URL:', url);
+                    // Use the url
+                } else {
+                    console.error('Neither postfeed nor catfeed exist.');
+                    // Stop the process
+                }          
+
                 console.log('url', url);
+
                 fetch(url)
                 .then(response => {
                     return response.json();
@@ -44,7 +69,7 @@
                     this.$nextTick(() => {
                         this.list.forEach((item, index) => {
                             item.html = '';
-                            this.observeArticle(index);
+                            // this.observeArticle(index);
                             if (!item.url) {
                                 item.html = item.excerpt;
                                 item.html += '<ul>' + item.outline.map((item) => {
@@ -63,38 +88,65 @@
                 if (!url) {
                     return;
                 }
+
                 fetch(url)
-                    .then(response => response.text())
-                    .then(html => {
-                        const parser = new DOMParser();
-                        const doc = parser.parseFromString(html, 'text/html');
-                        const pages = doc.querySelectorAll('article.post.prose');
-                        let content = '';
+                .then(response => response.text())
+                .then(html => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    const pages = doc.querySelectorAll('article.post.prose');
+                    let content = '';
 
-                        pages.forEach((page) => {
-                            content += page.innerHTML;
-                        });
-
-                        if (this.list[index]) {
-                            this.list[index].html = content || ""; // Assign content or default text if empty
-                            console.log('html content', this.list[index].html);
-
-                            if (this.list[index].html.length < 10) {
-                                console.log('length', this.list[index].html.length )
-                                {# this.list[index].hidden = true #}
-
-                            }
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Error fetching data:', error);
+                    pages.forEach((page) => {
+                        content += page.innerHTML;
                     });
+
+                    if (this.list[index]) {
+                        this.list[index].html = content || ""; // Assign content or default text if empty
+                        console.log('html content', this.list[index].html);
+
+                        if (this.list[index].html.length < 10) {
+                            console.log('length', this.list[index].html.length)
+
+
+                        }
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
 
                 // If this is the last article, load more
                 if (index === this.list.length - 1) {
                     this.page++;
                     this.loadlist();
                 }
+            },
+            getGPT(obj) {
+                console.log('getGPT', obj);
+
+                {# obj._id['$oid'] = '66d6d50966437136e9659dca'; #}
+                const url = `https://us-east-1.aws.data.mongodb-api.com/app/azoio-evvkb/endpoint/create?id=${obj._id['$oid']}`;
+                
+                console.log('url', url);
+
+                fetch(url)
+                    .then(response => {
+                        return response.json();
+                    })
+                    .then(data => {
+                        console.log('data', data);
+
+                        const el = this.list.find(el => el._id === obj._id);
+                        // remove first # line 
+                        data.html = converter.makeHtml(data.content.replace(/#.*\n/, ''));
+                        if (el) {
+                            Object.assign(el, data);
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error fetching data:', error);
+                    });
             },
             observeArticle(index) {
                 this.$nextTick(() => {
@@ -103,11 +155,8 @@
                         const observer = new IntersectionObserver((entries) => {
                             entries.forEach(entry => {
                                 if (entry.isIntersecting) {
-                                    url = this.list[index].url
 
-                                    this.getarticle(url, index);
-                                    // set browser url to the article url
-                                    // window.history.pushState({}, '', '/' + this.list[index].slug + '/');
+                                    this.getGPT(this.list[index])
 
                                     observer.unobserve(entry.target);
                                 }
@@ -121,7 +170,8 @@
                     }
                 });
             },
-            async expand() {
+            async expand(item) {
+                item.html = "Loading...";
                 event = {
                     label: 'expand',
                     page: window.location.pathname,
@@ -132,7 +182,8 @@
                     post_id: "",
                     item: event
                 }
-                this.beacontrack(obj);
+                this.getGPT(item)
+//                 this.beacontrack(obj);
                 return true;
 
             },
