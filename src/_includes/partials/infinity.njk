@@ -5,11 +5,21 @@
                     <img :src="item.image" alt="" class="aspect-square md:aspect-[16/9] lg:aspect-[3/2] w-full bg-gray-100 object-cover">
                 </figure>
                 <a x-html="item.title" class="mx-4 block py-4 max-w-md text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"></a>
-                <article x-data="{show:false}" :class="{'h-[200px]': !show, 'h-auto': show}" class="prose mx-4 relative overflow-hidden border-3 border-red-500">
-                    <section x-html="item.html" :id="'article-' + index"></section>
+                <article x-data="{show:item.exists}" :class="{'h-[200px]': !show, 'h-auto': show}" class=" mx-4 relative overflow-hidden border-3 border-red-500">
+                    <section x-show="!item.html" x-html="item.excerpt" :id="'excerpt-' + index"></section>
+                    {# outline #}
+                    <ul x-show="item.outline && !item.html" class="list-disc list-inside divide-y">
+                        <template x-for="item in item.outline">
+                            <li x-text="item"></li>
+                        </template>
+                    </ul>
+                    <section x-html="item.html" :id="'article-' + index" class="prose"></section>
                     <div x-show="!show" class="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-gray-50 via-gray-50/90 to-transparent"></div>
                     <button x-show="!show" @click="show=expand(item)" class="absolute bottom-2 left-0f bg-black text-white text-sm font-semibold px-4 py-2 rounded-lg shadow-md">Continue reading</button>
                 </article>
+
+                {# <pre x-text="JSON.stringify(item, null, 4)" class='text-xs'></pre> #}
+
             </div>
         </template>
     </div>
@@ -25,14 +35,13 @@
             category: "{{post.category[0]}}",
             page: 0,
             init() {
-                console.log('init infinity');
-                this.loadlist();
+                console.log('Infinity initialized');
+                this.loadList();
             },
-            async loadlist() {
-                let postfeed = `https://pub-ff359827c45e40a7b6e9bad1878cd18a.r2.dev/${this.postid}.json`;
-                let catfeed = `https://pub-ff359827c45e40a7b6e9bad1878cd18a.r2.dev/${this.category}.json`;
+            async loadList() {
+                const postFeed = `https://pub-ff359827c45e40a7b6e9bad1878cd18a.r2.dev/feed/${this.postid}.json`;
+                const categoryFeed = `https://pub-ff359827c45e40a7b6e9bad1878cd18a.r2.dev/feed/${this.category}.json`;
 
-                // Function to check if URL exists
                 const checkURLExists = async (url) => {
                     try {
                         const response = await fetch(url, { method: 'HEAD' });
@@ -42,167 +51,131 @@
                     }
                 };
 
-                // Check URLs in order
-                let url = (await checkURLExists(postfeed)) ? postfeed : 
-                          (await checkURLExists(catfeed)) ? catfeed : null;
+                const url = (await checkURLExists(postFeed)) ? postFeed : 
+                            (await checkURLExists(categoryFeed)) ? categoryFeed : null;
 
-                if (url) {
-                    console.log('Using URL:', url);
-                    // Use the url
-                } else {
-                    console.error('Neither postfeed nor catfeed exist.');
-                    // Stop the process
-                }          
-
-                console.log('url', url);
-
-                fetch(url)
-                .then(response => {
-                    return response.json();
-                })
-                .then(data => {
-                    console.log('data', data);
-                    arr = data.filter(item => item.url !== this.url)
-                    .sort(() => Math.random() - 0.5);
-                    this.list.push(...arr);
-                    console.log('list', this.list);
-                    this.$nextTick(() => {
-                        this.list.forEach((item, index) => {
-                            item.html = '';
-                            // this.observeArticle(index);
-                            if (!item.url) {
-                                item.html = item.excerpt;
-                                item.html += '<ul>' + item.outline.map((item) => {
-                                    return `<li>${item}</li>`;
-                                }).join('') + '</ul>';
-                            }
-                        });
-                    });
-                })
-                .catch(error => {
-                    console.error('Error fetching data:', error);
-                });
-            },
-            getarticle(url, index) {
-                console.log('getarticle', url);
                 if (!url) {
+                    console.error('Neither postFeed nor categoryFeed are available.');
                     return;
                 }
 
-                fetch(url)
-                .then(response => response.text())
-                .then(html => {
+                console.log('Using URL:', url);
+
+                try {
+                    const response = await fetch(url);
+                    const data = await response.json();
+                    console.log('Fetched data:', data);
+
+                    const filteredList = data
+                        .filter(item => item.url !== this.url)
+                        .sort(() => Math.random() - 0.5)
+                        .sort((a, b) => Number(b.exist) - Number(a.exist));
+
+                    this.list.push(...filteredList);
+                    console.log('Updated list:', this.list);
+
+                    this.list.forEach((item, index) => {
+                        if (item.exists) {
+                            console.log('Item exists:', item, "Observing article:", index);
+                            this.observeArticle(index);
+                        }
+                    });
+                } catch (error) {
+                    console.error('Error fetching data:', error);
+                }
+            },
+            async getArticle(url, index) {
+                if (!url) return;
+                console.log('Fetching article content from:', url);
+
+                try {
+                    const response = await fetch(url);
+                    const html = await response.text();
                     const parser = new DOMParser();
                     const doc = parser.parseFromString(html, 'text/html');
                     const pages = doc.querySelectorAll('article.post.prose');
+                    
                     let content = '';
-
-                    pages.forEach((page) => {
+                    pages.forEach(page => {
                         content += page.innerHTML;
                     });
 
                     if (this.list[index]) {
-                        this.list[index].html = content || ""; // Assign content or default text if empty
-                        console.log('html content', this.list[index].html);
+                        this.list[index].html = content || '';
+                        console.log('Article HTML:', this.list[index].html);
 
                         if (this.list[index].html.length < 10) {
-                            console.log('length', this.list[index].html.length)
-
-
+                            console.log('Content length:', this.list[index].html.length);
                         }
                     }
-                })
-                .catch(error => {
-                    console.error('Error fetching data:', error);
-                });
+                } catch (error) {
+                    console.error('Error fetching article:', error);
+                }
 
-                // If this is the last article, load more
                 if (index === this.list.length - 1) {
                     this.page++;
-                    this.loadlist();
+                    this.loadList();
                 }
             },
-            getGPT(obj) {
-                console.log('getGPT', obj);
+            async getContent(item) {
+                console.log('Fetching content for:', item);
 
-                {# obj._id['$oid'] = '66d6d50966437136e9659dca'; #}
-                const url = `https://us-east-1.aws.data.mongodb-api.com/app/azoio-evvkb/endpoint/create?id=${obj._id['$oid']}`;
-                
-                console.log('url', url);
+                const url = `https://us-east-1.aws.data.mongodb-api.com/app/azoio-evvkb/endpoint/create?id=${item._id}`;
+                console.log('Content URL:', url);
 
-                fetch(url)
-                    .then(response => {
-                        return response.json();
-                    })
-                    .then(data => {
-                        console.log('data', data);
-
-                        const el = this.list.find(el => el._id === obj._id);
-                        // remove first # line 
-                        data.html = converter.makeHtml(data.content.replace(/#.*\n/, ''));
-                        if (el) {
-                            Object.assign(el, data);
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Error fetching data:', error);
-                    });
+                try {
+                    const response = await fetch(url);
+                    const data = await response.json();
+                    const listItem = this.list.find(el => el._id === item._id);
+                    
+                    data.html = converter.makeHtml(data.content.replace(/#.*\n/, ''));
+                    if (listItem) {
+                        Object.assign(listItem, data);
+                    }
+                } catch (error) {
+                    console.error('Error fetching content:', error);
+                }
             },
             observeArticle(index) {
                 this.$nextTick(() => {
-                    const articleElement = document.getElementById('article-' + index);
-                    if (articleElement) {
-                        const observer = new IntersectionObserver((entries) => {
-                            entries.forEach(entry => {
-                                if (entry.isIntersecting) {
+                    const articleElement = document.getElementById(`article-${index}`);
+                    if (!articleElement) return;
 
-                                    this.getGPT(this.list[index])
-
-                                    observer.unobserve(entry.target);
-                                }
-                            });
-                        }, {
-                            rootMargin: '0px 0px 200px 0px',
-                            // Start loading before the article is fully in view
-                            threshold: 0.1
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                console.log('Article in view:', index);
+                                this.getContent(this.list[index]);
+                                observer.unobserve(entry.target);
+                            }
                         });
-                        observer.observe(articleElement);
-                    }
+                    }, {
+                        rootMargin: '0px 0px 200px 0px',
+                        threshold: 0.1
+                    });
+
+                    observer.observe(articleElement);
                 });
             },
             async expand(item) {
                 item.html = "Loading...";
-                event = {
-                    label: 'expand',
-                    page: window.location.pathname,
-                }
-                obj = {
-                    type: 'infinity',
+                const event = { label: 'expand', page: window.location.pathname };
+                const obj = {
+                    type: 'infinitygpt',
                     action: 1,
-                    post_id: "",
+                    post_id: this.postid,
                     item: event
-                }
-                this.getGPT(item)
-//                 this.beacontrack(obj);
-                return true;
-
+                };
+                this.getContent(item);
+                this.beaconTrack(obj);
             },
-            beacontrack(obj) {
-                const trackapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/beacon`;
-
-                // Use sendBeacon for sending the tracking data
-                const beaconData = new Blob([JSON.stringify(obj)], {
-                    type: 'application/json'
-                });
-                const success = navigator.sendBeacon(trackapi, beaconData);
-
+            beaconTrack(data) {
+                const trackAPI = 'https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/beacon';
+                const beaconData = new Blob([JSON.stringify(data)], { type: 'application/json' });
+                navigator.sendBeacon(trackAPI, beaconData);
             },
-            subscribe: [
-            "",
-            ],
-            cta: [
-            "",
-            ]
+            subscribe: [""],
+            cta: [""]
         };
     }
     </script>

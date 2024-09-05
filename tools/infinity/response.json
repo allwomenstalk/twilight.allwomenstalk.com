@@ -1,0 +1,24 @@
+{
+    "id": "chatcmpl-A4Cvmdvzllcr1lH8YRdillHZkuZkM",
+    "object": "chat.completion",
+    "created": 1725566382,
+    "model": "gpt-4-0613",
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": "[\n {\n  \"title\": \"10 Most Exhilarating Adventure Activities for Women\",\n  \"slug\": \"top-adventure-activities-for-women\",\n  \"excerpt\": \"A short list of adventurous activities that every woman should try at least once in their life. From skydiving to scuba diving, here are ten incredible ways to satisfy your thirst for adrenaline.\",\n  \"outline\": [\n   \"Bungee Jumping: Human Slinky\",\n   \"Skydiving: Taking the Plunge\",\n   \"White-water Rafting: Rapids Rowing\",\n   \"Hiking to Machu Picchu: Trekking the Inca Trail\",\n   \"Scuba Diving: Underwater World Exploration\",\n   \"Off-roading: Embrace the Dirt\",\n   \"Ziplining: High-Speed Fun\",\n   \"Paragliding: Soaring with the Birds\",\n   \"Mountain Climbing: Conquer the Heights\",\n   \"Snowboarding: Winter Wave Riding\"\n   ]\n },\n {\n  \"title\": \"15 Unforgettable Solo Travel Destinations for Women\",\n  \"slug\": \"unforgettable-solo-travel-for-women\",\n  \"excerpt\": \"A comprehensive list that covers some of the best destinations around the world for solo female travelers. These spots are safe, empowering, and offer unique experiences.\",\n  \"outline\": [\n   \"Iceland: Land of Ice and Fire\",\n   \"New Zealand: Hobbit Country\",\n   \"Sri Lanka: Pearl of the Indian Ocean\", \n   \"Japan: High Tech and Tradition\", \n   \"Italy: Pasta Lover's Paradise\",\n   \"Canada: Wilderness Wide Open\",\n   \"Thailand: Spicy and Soulful\",\n   \"Australia: Down Under Delight\",\n   \"Scotland: High Land High Times\",\n   \"Bali: Beach Babe's Dream\",\n   \"Costa Rica: Green and Serene\",\n   \"Greece: Ionic and Iconic\",\n   \"Germany: Historic Heart\",\n   \"Kenya: Wildlife Wonder\",\n   \"Peru: Inca Innings\"\n   ]\n },\n {\n   \"title\": \"5 Books to Ignite Your Travel Spirit\",\n   \"slug\": \"books-to-ignite-travel-spirit\",\n   \"excerpt\": \"Looking for a fresh perspective on travel or some inspiration for your next adventure? Here are five soul-stirring books that will ignite your wanderlust.\",\n   \"outline\": [\n    \"Wild by Cheryl Strayed\",\n    \"Eat, Pray, Love by Elizabeth Gilbert\",\n    \"On the Road by Jack Kerouac\",\n    \"The Alchemist by Paulo Coelho\",\n    \"Into the Wild by Jon Krakauer\"\n   ]\n },\n {\n   \"title\": \"20 Essential Travel Tips Every Woman Should Know\",\n   \"slug\": \"essential-travel-tips-for-women\",\n   \"excerpt\": \"A list of essential travel tips every adventurous woman should keep in mind. These handy tricks will help you travel safely, efficiently, and with less stress.\",\n   \"outline\": [\n    \"Packing Basics: Less is More\",\n    \"Solo Safety: Common Sense Rules\",\n    \"Staying Healthy on the Road\",\n    \"Dealing with Culture Shock\",\n    \"Travel Scams: Spot them and Dodge them\",\n    \"Hostel Etiquette: Dos and Don'ts\",\n    \"Money Management While Traveling\",\n    \"Embracing Local Cuisine\",\n    \"Coping with Travel Fatigue\",\n    \"Sustainable Travel: Leave No Trace\",\n    \"Learning Basic Phrases in Local Language\",\n    \"Travel Insurance: Safety Blanket\",\n    \"Finding Reliable Transportation\",\n    \"Being Respectful to Local Communities\",\n    \"Nurturing Instant Friendships on the Road\",\n    \"Using Technology for Hassle-Free Travel\",\n    \"Dealing with Homesickness\",\n    \"Documenting Your Travel: Memories Preserved\",\n    \"Staying Connected: Wi-Fi Wonders\",\n    \"Carrying Portable Water Purifiers\"\n   ]\n },\n {\n   \"title\": \"The Perfect Travel Skincare Routine for Exciting Adventures\",\n   \"slug\": \"travel-skincare-routine-adventures\",\n   \"excerpt\": \"Maintaining a good skincare routine while travelling can be a challenge. Here are some tips and tricks on how to stay glowing while adventures catch up on you.\",\n   \"outline\": [\n    \"Understanding How Travel Affects Your Skin\",\n    \"Developing Your On-the-Go Skincare Routine\",\n    \"Staying Hydrated: Inside and Out\",\n    \"Essential Travel-Size Beauty Products\",\n    \"Sun Protection: Your Best Pal\",\n    \"Coping with Varying Climates: Skincare Switches\",\n    \"Quick and Easy Makeup Hacks for Travel\",\n    \"Carrying Skin-Friendly Foods\",\n    \"Resting Well to Revive Your Skin\",\n    \"Maintaining Exercise for Skin Glow\"\n   ]\n }\n]",
+                "refusal": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 152,
+        "completion_tokens": 994,
+        "total_tokens": 1146
+    },
+    "system_fingerprint": null
+}
