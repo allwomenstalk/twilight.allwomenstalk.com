@@ -231,3 +231,5 @@ version: 0.2
 ## Build host 
 
 npm run clean && node batchgeneratehost.js travel.allwomenstalk.com && sh batchcommitforce.sh travel.allwomenstalk.com
+
+npm run clean && node batchgeneratehost.js love.allwomenstalk.com && sh batchcommitforce.sh love.allwomenstalk.com
