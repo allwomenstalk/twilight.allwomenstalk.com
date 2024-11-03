@@ -1,0 +1,87 @@
+[
+    {
+        "_id": "66dffdc7cf5229c457eee071",
+        "title": "10 Quick and Delicious Homemade Treats for Gifting",
+        "slug": "quick-delicious-homemade-treats-gifting",
+        "excerpt": "Discover quick and delicious homemade treats perfect for gifting anytime.",
+        "outline": [
+            "Easy chocolate truffles",
+            "Homemade granola bars",
+            "Flavorful nut mixes",
+            "DIY hot cocoa kits",
+            "Instant mug cakes",
+            "Fresh fruit baskets",
+            "Handmade cookies",
+            "Savory popcorn mixes",
+            "Spiced nuts",
+            "Flavored sugar cubes"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dffdc7cf5229c457eee074",
+        "title": "7 Personalized Food Gifts That Show You Care",
+        "slug": "personalized-food-gifts-show-care",
+        "excerpt": "Personalized food gifts that add a special touch for any occasion.",
+        "outline": [
+            "Customized cookie jars",
+            "Monogrammed cutting boards",
+            "Personalized spice blends",
+            "Engraved cheese knives",
+            "Homemade signature sauces",
+            "Personalized wine bottles",
+            "Custom recipe books"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dffdc7cf5229c457eee07c",
+        "title": "5 Luxurious Gourmet Food Gifts for Special Occasions",
+        "slug": "luxurious-gourmet-food-gifts",
+        "excerpt": "Indulge in luxurious gourmet food gifts that elevate special occasions.",
+        "outline": [
+            "Artisan chocolate boxes",
+            "Gourmet cheese assortments",
+            "Exquisite wine & cheese baskets",
+            "Specialty olive oil sets",
+            "Premium charcuterie boards"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dffdc7cf5229c457eee087",
+        "title": "8 DIY Food Gift Kits to Make at Home",
+        "slug": "diy-food-gift-kits-home",
+        "excerpt": "Create thoughtful DIY food gift kits at home for any celebration.",
+        "outline": [
+            "Cookie decorating kits",
+            "Build-your-own-taco kits",
+            "Homemade pizza kits",
+            "S'mores kits",
+            "Soup mix jars",
+            "Breakfast-in-a-jar kits",
+            "Tea blending kits",
+            "DIY gift baskets"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dffdc7cf5229c457eee092",
+        "title": "10 Healthy Food Gift Ideas for the Health-Conscious",
+        "slug": "healthy-food-gift-ideas-health-conscious",
+        "excerpt": "Explore healthy food gift ideas that cater to health-conscious loved ones.",
+        "outline": [
+            "Organic snack boxes",
+            "Fruit and nut baskets",
+            "Homemade granola",
+            "Herbal tea sets",
+            "Smoothie ingredient kits",
+            "Vegan baked goods",
+            "Gluten-free treats",
+            "Nut butter sampler",
+            "Low-sugar baked items",
+            "Plant-based protein bars"
+        ],
+        "exists": false
+    }
+]

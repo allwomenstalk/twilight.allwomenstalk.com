@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "66dccd11d8c51d0a97fb77f4",
+        "title": "The Art of Assembling the Perfect Cheese Board",
+        "slug": "perfect-cheese-board",
+        "excerpt": "Discover the secrets to setting up a crowd-pleasing cheese board that pairs perfectly with your tasty bruschetta",
+        "outline": [
+            "Selecting the Perfect Cheese Varieties",
+            "Adding the Best Complementing Fruits",
+            "Incorporating Nuts for Extra Crunch",
+            "Choosing High-Quality Cold Meats",
+            "Final Touches: Jams, Honey, and Chocolates"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dccd11d8c51d0a97fb77f9",
+        "title": "10 Simple and Delicious Homemade Dips",
+        "slug": "homemade-dips",
+        "excerpt": "Explore the joy of cooking with these simple and delicious homemade dip recipes that can accentuate your bruschetta flavors",
+        "outline": [
+            "Classic Guacamole Dip",
+            "Creamy Artichoke Dip",
+            "Homemade Hummus Dip",
+            "Chipotle Salsa Dip",
+            "Sweet Mango Chutney Dip"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dccd11d8c51d0a97fb77fe",
+        "title": "Creating Classy Canap\u00e9s for Your next Gathering",
+        "slug": "classy-canap\u00e9s",
+        "excerpt": "Take your hosting game up a notch with these classy canap\u00e9 ideas that will make your next social gathering unforgettable",
+        "outline": [
+            "An Overview of Canap\u00e9s and Their Origins",
+            "Classic Canap\u00e9s Ideas You'll Love",
+            "Vegan Canap\u00e9s for Conscious Eaters",
+            "Innovative Fusion Canap\u00e9s",
+            "Plating and Serving Canap\u00e9s"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dccd11d8c51d0a97fb7805",
+        "title": "Exploring the World of Gourmet Olives",
+        "slug": "gourmet-olives",
+        "excerpt": "Delve into the deliciously wide world of gourmet olives, appreciating the depth they could add to your bruschetta toppings",
+        "outline": [
+            "Understanding Different Types of Olives",
+            "Infusing Flavors into Olives",
+            "How to Store Gourmet Olives",
+            "Making Your Own Marinated Olives at Home",
+            "Pairing Olives with Other Foods"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dccd11d8c51d0a97fb780e",
+        "title": "The Ultimate Guide to Italian Antipasti",
+        "slug": "italian-antipasti-guide",
+        "excerpt": "Discover the essence of Italian cuisine with this ultimate guide to Antipasti - traditional Italian appetizers that go hand-in-hand with bruschetta",
+        "outline": [
+            "Decoding the Antipasti Tradition",
+            "Classic Antipasti Dishes Every Foodie Should Know",
+            "Vegetarian and Vegan Antipasti Options",
+            "Pairing Antipasti with Wines",
+            "DIY Italian Antipasti at Home"
+        ],
+        "exists": false
+    }
+]

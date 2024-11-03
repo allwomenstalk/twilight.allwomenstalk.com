@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "66dcc6b9d8c51d0a97e4be4c",
+        "title": "5 Delicious Ways to Incorporate Couscous into Your Salads",
+        "slug": "couscous-in-salads",
+        "excerpt": "Discover various ways in which you can incorporate couscous into your salads to give them a unique twist.",
+        "outline": [
+            "Decoding the Pearl Couscous Salad",
+            "Sweet and Savory: Fig Couscous Salad Recipe",
+            "Exotic Flavours: Moroccan-Inspired Couscous Salad",
+            "Vibrant Veggies: Couscous Salad with Fresh Veggies",
+            "Delicious and Nutritious: Quinoa and Couscous Salad"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dcc6b9d8c51d0a97e4be4f",
+        "title": "5 Delectable Middle Eastern Couscous Dishes to Try",
+        "slug": "middle-eastern-couscous-dishes",
+        "excerpt": "Explore the rich flavors of the Middle East with these exquisite couscous dishes.",
+        "outline": [
+            "Traditional Isreali Couscous Pilaf",
+            "Persian Pearl Couscous Soup Recipe",
+            "Recreating the Majesty: Tunisian Couscous Dish",
+            "The Lebanese Way: Couscous Tabbouleh",
+            "Aromatic Delight: Couscous with Spiced Lamb"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dcc6b9d8c51d0a97e4be54",
+        "title": "Reviews: The 5 Best Packaged Pearl Couscous Brands",
+        "slug": "best-packaged-pearl-couscous-brands",
+        "excerpt": "Find out more about the top five packaged pearl couscous brands that you should try.",
+        "outline": [
+            "Riviana Pearl Couscous - Pure Comfort Food",
+            "Maftoul: The Authentic Palestinian Couscous",
+            "Delallo's Italian Pearl Couscous - Transforming Your Kitchen",
+            "Great River Mill's Organic Couscous - Health-Centric Approach",
+            "Baron\u2019s Original Israeli Couscous - Taste the Tradition"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dcc6b9d8c51d0a97e4be5a",
+        "title": "5 Simple Couscous Recipes for Busy Weeknights",
+        "slug": "simple-couscous-recipes",
+        "excerpt": "Get to know some quick and easy couscous recipes that are perfect for any busy weeknight.",
+        "outline": [
+            "15-minute Pearl Couscous with Veggies",
+            "Speedy Couscous Stir-fry Recipe",
+            "Fast Pearl Couscous with Spicy Shrimp",
+            "Quick Couscous with Beef and Broccoli",
+            "5-ingredient Couscous Chicken Recipe"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dcc6b9d8c51d0a97e4be63",
+        "title": "How to Prepare and Cook Pearl Couscous Like a Pro",
+        "slug": "prepare-cook-pearl-couscous",
+        "excerpt": "Master how to properly prepare and cook pearl couscous with these easy-to-follow tips.",
+        "outline": [
+            "The Basics of Pearl Couscous Preparation",
+            "Perfecting the Pearl: How to Cook Couscous",
+            "From Water to Wine: Experimenting with Liquids in Couscous",
+            "Cooking Times and Techniques for Optimal Couscous",
+            "The Secret Ingredient: How Spices Can Transform Your Couscous"
+        ],
+        "exists": false
+    }
+]

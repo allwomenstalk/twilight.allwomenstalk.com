@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "66f678bc80bd1ee71c0557be",
+        "title": "10 Creative Date Night Ideas to Rekindle Your Romance",
+        "slug": "creative-date-night-ideas",
+        "excerpt": "Bring back the spark with these creative and fun date nights.",
+        "outline": [
+            "Why date nights are important",
+            "DIY date night ideas at home",
+            "Outdoor adventures",
+            "Unique experiences to try together",
+            "Tips for planning a memorable date night"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66f67a1f80bd1ee71c0a740b",
+        "title": "50 Sweet Good Morning Texts to Make Her Smile",
+        "slug": "sweet-good-morning-texts-her",
+        "excerpt": "Brighten her day with these heartwarming good morning messages.",
+        "outline": [
+            "Why good morning texts matter",
+            "Classic good morning messages",
+            "Cute and playful morning texts",
+            "Deep and meaningful morning greetings",
+            "How to personalize your good morning text"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66f67a1f80bd1ee71c0a7411",
+        "title": "30 Love Letters to Make Her Fall in Love All Over Again",
+        "slug": "love-letters-for-her",
+        "excerpt": "Capture her heart with these timeless love letters.",
+        "outline": [
+            "The art of writing a love letter",
+            "Examples of romantic love letters",
+            "Letters to express gratitude",
+            "Apology letters for when you\u2019ve messed up",
+            "Tips for personalizing your love letter"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66f67a1f80bd1ee71c0a7417",
+        "title": "20 Heartfelt Apologies to Win Her Back",
+        "slug": "heartfelt-apologies-her",
+        "excerpt": "Mend your relationship with these sincere apology messages.",
+        "outline": [
+            "Understanding the importance of a genuine apology",
+            "Crafting the perfect apology",
+            "Examples of heartfelt apologies",
+            "When and how to apologize",
+            "Rebuilding trust after an apology"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66f67a1f80bd1ee71c0a741f",
+        "title": "35 Cute Nicknames for Your Girlfriend She\u2019ll Love",
+        "slug": "cute-nicknames-girlfriend",
+        "excerpt": "Find the perfect nickname to express your love and affection.",
+        "outline": [
+            "The significance of nicknames in a relationship",
+            "Popular nicknames for girlfriends",
+            "Funny and playful nicknames",
+            "Romantic and sweet nicknames",
+            "Creating a unique nickname just for her"
+        ],
+        "exists": false
+    }
+]

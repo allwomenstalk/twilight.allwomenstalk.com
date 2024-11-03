@@ -1,0 +1,71 @@
+[
+    {
+        "_id": "66dcc597d8c51d0a97e09eba",
+        "title": "Creative Ways to Use Mini Cocotte in Everyday Cooking",
+        "slug": "cooking-with-mini-cocotte",
+        "excerpt": "Discover unexpected and delicious ways to use your mini cocotte in day-to-day meals.",
+        "outline": [
+            "Making Individual Breakfasts",
+            "Baking Mini Cocotte Bread",
+            "Whipping Up Warm Desserts",
+            "Cooking Vegan Mini Cocotte Dishes",
+            "Creating Delectable Mini Cocotte Dinners"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dcc597d8c51d0a97e09ebd",
+        "title": "Healthy Mini Cocotte Meals for Vegans",
+        "slug": "vegan-mini-cocotte-meals",
+        "excerpt": "Even if you're on a vegan diet, you can still enjoy tasty meals cooked in a mini cocotte.",
+        "outline": [
+            "Delicious Dairy-Free Mini Cocotte Recipes",
+            "Protein-Packed Plant-Based Mini Cocotte Dishes",
+            "Indulgent Vegan Desserts in a Cocotte",
+            "Nutritious Vegan Breakfast Ideas in a Cocotte",
+            "Easy Vegan Lunches Made in a Cocotte"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dcc597d8c51d0a97e09ec5",
+        "title": "Host a Dinner Party with These Mini Cocotte Recipes",
+        "slug": "mini-cocotte-dinner-party",
+        "excerpt": "Impress your guests with delicious dishes cooked in a mini cocotte. Explore fun and creative ideas for your next dinner party.",
+        "outline": [
+            "A Guide to Mini Cocotte Appetizers",
+            "Hearty Mini Cocotte Main Courses for Your Guests",
+            "Quick and Easy Mini Cocotte Side Dishes",
+            "Decadent Desserts in Individual Cocottes",
+            "Wine Pairings for Your Mini Cocotte Menu"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dcc597d8c51d0a97e09ecc",
+        "title": "Seasonal Mini Cocotte Recipes to Try",
+        "slug": "seasonal-mini-cocotte-recipes",
+        "excerpt": "Get creative with seasonal produce and make the most out of your mini cocotte with these recipes.",
+        "outline": [
+            "Winter Mini Cocotte Recipes",
+            "Spring Dishes in a Cocotte",
+            "Summer Mini Cocotte Meal Ideas",
+            "Autumn Mini Cocotte Dishes"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dcc597d8c51d0a97e09ed5",
+        "title": "Upgrade Your Brunch with These Mini Cocotte Ideas",
+        "slug": "brunch-mini-cocotte-ideas",
+        "excerpt": "Give your brunch a boost with these mouthwatering and individually serving recipes made in a mini cocotte.",
+        "outline": [
+            "Mini Cocotte Egg Dishes",
+            "Baked Goods for Brunch in a Cocotte",
+            "Brunch Appetizers in Individual Cocottes",
+            "Sweet Brunch Treats in a Cocotte",
+            "Drink Pairings for Your Mini Cocotte Brunch"
+        ],
+        "exists": true
+    }
+]

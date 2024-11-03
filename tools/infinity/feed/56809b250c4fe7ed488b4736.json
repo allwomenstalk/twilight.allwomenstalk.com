@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "66dccc9ad8c51d0a97f9b6c3",
+        "title": "10 Easy-To-Make Toothpick Appetizer Recipes",
+        "slug": "10-easy-to-make-toothpick-appetizer-recipes",
+        "excerpt": "Discover 10 easy-to-make toothpick appetizer recipes that will add a touch of elegance to any event, from casual gatherings to fancy cocktail parties.",
+        "outline": [
+            "Mini Mozzarella Sticks with Marinara Dipping Sauce",
+            "Pineapple and Ham Skewers with Sweet Dipping Sauce",
+            "Cheesy Spinach and Artichoke Bites",
+            "Chicken Teriyaki Skewers with Sesame Seeds",
+            "Cherry Tomato and Basil Mini Skewers"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dccc9ad8c51d0a97f9b6c6",
+        "title": "8 Toothpick Appetizers That Don't Require Cooking",
+        "slug": "8-toothpick-appetizers-no-cooking-required",
+        "excerpt": "Save time and beat the heat with these 8 toothpick appetizers that don\u2019t require any cooking, perfect for your next summer party or potluck.",
+        "outline": [
+            "Caprese Salad Skewers",
+            "Fruit and Cheese Kabobs",
+            "Prosciutto-Wrapped Melon Balls",
+            "Smoked Salmon Roll-ups",
+            "Antipasto Skewers"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dccc9ad8c51d0a97f9b6cb",
+        "title": "5 Vegan Toothpick Appetizers for Your Next Gathering",
+        "slug": "5-vegan-toothpick-appetizers",
+        "excerpt": "Are you planning a party and have vegan guests coming? Worry not! Here are 5 vegan toothpick appetizer recipes to serve at your next gathering.",
+        "outline": [
+            "Rainbow Vegetable Skewers",
+            "Cucumber and Hummus Bites",
+            "Tofu and Vegetable Kabobs",
+            "Stuffed Dates with Almond Butter",
+            "Avocado and Tomato Skewers"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dccc9ad8c51d0a97f9b6d8",
+        "title": "6 Seafood Toothpick Appetizers for Your Next Soiree",
+        "slug": "6-seafood-toothpick-appetizers",
+        "excerpt": "Impress your guests with these 6 seafood toothpick appetizer recipes. From shrimp to scallops, these bite-size treats will add a touch of sophistication to your next soiree.",
+        "outline": [
+            "Shrimp and Pineapple Skewers",
+            "Scallop and Bacon Bites",
+            "Mini Crab Cakes with Garlic Aioli",
+            "Tuna and Cucumber Rolls",
+            "Lobster Tail Skewers"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dccc9ad8c51d0a97f9b6d0",
+        "title": "7 Low-Carb Toothpick Appetizers for Your Next Party",
+        "slug": "7-low-carb-toothpick-appetizers",
+        "excerpt": "Sticking to your diet should not be a challenge, even when at a party. Check out these 7 low-carb toothpick appetizer recipes for your next event.",
+        "outline": [
+            "Zucchini and Cherry Tomato Skewers",
+            "Prosciutto and Melon Bites",
+            "Sausage and Cheese Kabobs",
+            "Meatball Lettuce Wraps",
+            "Chicken and Avocado Rolls"
+        ],
+        "exists": true
+    }
+]

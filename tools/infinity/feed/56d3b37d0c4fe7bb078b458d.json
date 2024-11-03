@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "66f678c480bd1ee71c057a4c",
+        "title": "15 Clever Ways to Turn Down Unwanted Advances",
+        "slug": "clever-ways-turn-down-unwanted-advances",
+        "excerpt": "Learn how to gracefully and humorously say no to unwanted attention.",
+        "outline": [
+            "Quick and witty retorts",
+            "Sarcasm with a smile",
+            "Setting clear boundaries",
+            "Using humor to deflect",
+            "Maintaining self-respect and confidence"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66f678c480bd1ee71c057a50",
+        "title": "10 Ways to Boost Your Self-Esteem in Relationships",
+        "slug": "boost-self-esteem-relationships",
+        "excerpt": "Discover how to enhance your confidence and feel empowered in your romantic endeavors.",
+        "outline": [
+            "Practicing self-love",
+            "Setting healthy boundaries",
+            "Communicating effectively",
+            "Focusing on personal growth",
+            "Surrounding yourself with positive influences"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66f678c480bd1ee71c057a57",
+        "title": "12 Signs Your Relationship is Built on Respect",
+        "slug": "signs-relationship-built-on-respect",
+        "excerpt": "Identify the key indicators of a healthy and respectful relationship.",
+        "outline": [
+            "Mutual trust and support",
+            "Open and honest communication",
+            "Respecting each other's boundaries",
+            "Encouraging personal growth",
+            "Handling conflicts respectfully"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66f678c480bd1ee71c057a66",
+        "title": "8 Fun Ways to Keep the Spark Alive in Long-term Relationships",
+        "slug": "ways-keep-spark-alive-long-term-relationships",
+        "excerpt": "Keep the excitement and passion alive with these creative ideas.",
+        "outline": [
+            "Planning surprise date nights",
+            "Trying new activities together",
+            "Communicating your desires",
+            "Expressing appreciation regularly",
+            "Keeping a sense of humor"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66f678c480bd1ee71c057a76",
+        "title": "10 Empowering Quotes Every Woman Should Remember",
+        "slug": "empowering-quotes-every-woman-should-remember",
+        "excerpt": "Find inspiration and strength in these powerful quotes by remarkable women.",
+        "outline": [
+            "Quotes about self-love",
+            "Encouraging independence",
+            "Building self-confidence",
+            "Embracing inner strength",
+            "Fostering resilience"
+        ],
+        "exists": true
+    }
+]

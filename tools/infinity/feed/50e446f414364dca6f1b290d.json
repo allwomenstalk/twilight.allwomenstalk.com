@@ -1,0 +1,88 @@
+[
+    {
+        "_id": "66f67a5280bd1ee71c0b249f",
+        "title": "10 Red Flags in a Relationship You Should Never Ignore",
+        "slug": "red-flags-relationship-never-ignore",
+        "excerpt": "Identify the warning signs early on to protect your heart and happiness.",
+        "outline": [
+            "Constant lying",
+            "Lack of respect",
+            "Controlling behavior",
+            "Frequent criticism",
+            "Jealousy and possessiveness",
+            "No interest in your life",
+            "Lack of communication",
+            "Avoiding commitment",
+            "Disrespecting boundaries",
+            "Refusing to resolve conflicts"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66f67a5280bd1ee71c0b24a3",
+        "title": "8 Subtle Signs Your Relationship Has Run Its Course",
+        "slug": "subtle-signs-relationship-over",
+        "excerpt": "Sometimes the end of a relationship isn't so loud. Here\u2019s what to look out for.",
+        "outline": [
+            "Reduced affection",
+            "Feeling indifferent",
+            "Frequent daydreams of being single",
+            "Lack of future planning together",
+            "Constant arguments about small things",
+            "No longer enjoying each other\u2019s company",
+            "Feeling more like roommates",
+            "Constantly seeking distractions"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66f67a5280bd1ee71c0b24a9",
+        "title": "How to Know If You're Settling in Your Relationship",
+        "slug": "signs-youre-settling-relationship",
+        "excerpt": "Settling in a relationship can lead to long-term unhappiness. Here\u2019s how to tell if you are.",
+        "outline": [
+            "Ignoring red flags",
+            "Constantly compromising your needs",
+            "Focusing on potential rather than reality",
+            "Feeling a void even when together",
+            "Fear of being alone keeping you in",
+            "Comparing your relationship with others",
+            "Lowering your standards",
+            "Accepting less than you deserve"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66f67a5280bd1ee71c0b24b2",
+        "title": "7 Signs It's Time to Let Go and Move On from Love",
+        "slug": "signs-time-let-go-move-on-love",
+        "excerpt": "When love turns into a burden, it might be time to let go and move forward.",
+        "outline": [
+            "Persistent sadness and anxiety",
+            "Loss of trust",
+            "Constant emotional exhaustion",
+            "Personal growth coming to a halt",
+            "More bad days than good",
+            "Love turns into obligation",
+            "No longer feeling valued"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66f67a5280bd1ee71c0b24b8",
+        "title": "Why Self-Love is Crucial Before Starting a New Relationship",
+        "slug": "importance-self-love-before-new-relationship",
+        "excerpt": "Understand the vital role of self-love in creating a healthy relationship.",
+        "outline": [
+            "Building self-esteem",
+            "Understanding personal boundaries",
+            "Ability to recognize red flags",
+            "Avoiding codependency",
+            "Fostering independence",
+            "Improving communication skills",
+            "Developing healthy relationship habits",
+            "Attracting the right partner"
+        ],
+        "exists": true
+    }
+]

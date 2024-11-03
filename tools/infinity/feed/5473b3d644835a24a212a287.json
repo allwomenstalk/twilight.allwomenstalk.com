@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "66dc7abdd8c51d0a97cfb696",
+        "title": "The Top 10 Most Popular Japanese Dishes and How to Make Them",
+        "slug": "popular-japanese-dishes",
+        "excerpt": "Discover iconic meals from Japan, their history, and how you can recreate them in the comfort of your own home.",
+        "outline": [
+            "The Origin of Sushi and How to Prepare It",
+            "Ramen: Japan's Comfort Food",
+            "Bringing Japan's Street Food to Your Kitchen: Takoyaki",
+            "Unpacking Umami: A Look at Japanese Curry",
+            "A Guide to Homemade Tempura"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dc7abdd8c51d0a97cfb699",
+        "title": "5 Essential Japanese Ingredients Every Home Cook Should Have",
+        "slug": "essential-japanese-cooking-ingredients",
+        "excerpt": "Explore the must-have items in Japanese cuisine and how to use them in your recipes.",
+        "outline": [
+            "Understanding the Importance of Soy Sauce",
+            "Umami Explained: The Role of Miso",
+            "Rice: More Than Just a Side Dish",
+            "The Versatility of Sake",
+            "Seaweed: A Staple Ingredient"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dc7abdd8c51d0a97cfb69f",
+        "title": "Mastering the Art of Bento: Creating Japanese Lunch Boxes at Home",
+        "slug": "creating-japanese-bento-boxes",
+        "excerpt": "Learn how to craft your own Bento boxes for a unique and delicious lunch.",
+        "outline": [
+            "The Basics of Bento",
+            "Choosing Your Main Protein",
+            "Selecting Seasonal Vegetables",
+            "Adding a Taste of the Sea with Pickled Vegetables",
+            "Finishing Touches: Fruit and Dessert Combinations"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dc7abdd8c51d0a97cfb6a7",
+        "title": "Exploring Japan Through Desserts: 5 Traditional Sweets to Make at Home",
+        "slug": "traditional-japanese-desserts",
+        "excerpt": "Get a taste of Japan's desserts with these traditional, sweet, and delicious recipes.",
+        "outline": [
+            "Elevate Your Tea Time with Matcha Cookies",
+            "Bring the Festival Home: DIY Taiyaki",
+            "How to Create Authentic Mochi",
+            "A Closer Look at Dorayaki: Japan's Pancake Sandwich",
+            "Sakura-Yokan: A Blooming Delight"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dc7abdd8c51d0a97cfb6ad",
+        "title": "Sushi Making for Beginners: A Step-by-Step Guide",
+        "slug": "sushi-making-for-beginners",
+        "excerpt": "Making sushi at home can seem daunting, but this beginner's guide will have you rolling in no time.",
+        "outline": [
+            "Understanding the Types of Sushi",
+            "Choosing Your Sushi Ingredients",
+            "Mastering the Perfect Sushi Rice",
+            "Rolling Your Sushi: Techniques and Tips",
+            "Serving and Enjoying Your Homemade Sushi"
+        ],
+        "exists": false
+    }
+]

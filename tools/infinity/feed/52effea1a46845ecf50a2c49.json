@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "66dcc4f5d8c51d0a97de592d",
+        "title": "Superfood Smoothies: The Good, The Bad, The Yummy",
+        "slug": "superfood-smoothies-good-bad-yummy",
+        "excerpt": "Explore the world of superfood smoothies, its health benefits, potential pitfalls and delicious recipes that won't upset your tummy.",
+        "outline": [
+            "The Superfood Smoothies Phenomenon: A Brief Overview",
+            "The Health Benefits of Superfood Smoothies",
+            "The Not So Pleasant Side Effects of Some Superfood Smoothies",
+            "5 Tried and Tested Tummy-Friendly Superfood Smoothie Recipes",
+            "Making the Right Choice: Picking the Best Ingredients for Your Smoothie"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dcc4f5d8c51d0a97de5931",
+        "title": "Sensitive Stomach? Try These Gentle and Nourishing Smoothies!",
+        "slug": "gentle-nourishing-smoothies-for-sensitive-stomach",
+        "excerpt": "Discover a selection of smoothie recipes specifically designed for those with sensitive stomachs. Amp up your nutrition without discomfort.",
+        "outline": [
+            "Understanding the Basics: What\u2019s a Sensitive Stomach?",
+            "The Connection Between Smoothies and Stomach Issues",
+            "Choosing Ingredients that Soothe, Not Agitate, the Stomach",
+            "7 Recipe Ideas for Nourishing and Gentle Smoothies",
+            "Tips for Making Your Own Gentle and Nourishing Smoothie"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dcc4f5d8c51d0a97de5935",
+        "title": "Common Smoothie Ingredients and Their Health Impacts",
+        "slug": "common-smoothie-ingredients-health-impacts",
+        "excerpt": "An in-depth look into the most common ingredients found in smoothies, their health benefits, and potential negative side effects.",
+        "outline": [
+            "Exploring the Popularity of Smoothies",
+            "10 Common Smoothie Ingredients: Their Benefits and Drawbacks",
+            "Is There Such a Thing as a 'Bad' Smoothie?",
+            "Tips to Make Your Smoothie More Gut-Friendly",
+            "Do\u2019s and Don\u2019ts of Smoothie Making: A Beginner\u2019s Guide"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dcc4f5d8c51d0a97de5939",
+        "title": "Yogurt in Your Smoothies: Friend or Foe?",
+        "slug": "yogurt-in-your-smoothies-friend-or-foe",
+        "excerpt": "A dive into the pros and cons of using yogurt in your smoothies, helping readers make informed decisions based on their dietary needs.",
+        "outline": [
+            "The Role of Yogurt in the World of Smoothies",
+            "The Health Benefits of Adding Yogurt to Your Smoothies",
+            "The Potential Downsides of Yogurt in Smoothies",
+            "5 Delicious, Tummy-Friendly Smoothie Recipes without Yogurt",
+            "Choosing the Right Type of Yogurt for Your Smoothies"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dcc4f5d8c51d0a97de593e",
+        "title": "Elimination Diet: Identifying Smoothie Ingredients That Trigger Upset Stomach",
+        "slug": "elimination-diet-identifying-triggers-smoothies",
+        "excerpt": "This guide introduces the concept of elimination diets and how they can be used to identify problematic smoothie ingredients leading to stomach discomfort.",
+        "outline": [
+            "What is an Elimination Diet? A Simple Explanation",
+            "Possible Smoothie Ingredients That Might Be Causing Your Stomach Discomfort",
+            "How to Carry Out an Elimination Diet with Your Smoothies",
+            "Reintroducing Ingredients: Monitoring Your Progress",
+            "Stay Healthy & Happy: Tips for a Successful Elimination Diet"
+        ],
+        "exists": true
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "66dcccf9d8c51d0a97fb2810",
+        "title": "Top 5 Comfort Dishes for Stomach Discomfort",
+        "slug": "comfort-foods-for-stomach-discomfort",
+        "excerpt": "Uncover our top recipes specially designed to be gentle on the stomach, while comforting your soul",
+        "outline": [
+            "Finding comfort in food for an upset stomach",
+            "Ginger and Honey Rice Porridge",
+            "Soothing Soup From Around the World",
+            "Aromatic Herbal Teas: A Sip of Calm",
+            "Easy-to-Digest Pasta Dishes"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dcccf9d8c51d0a97fb2814",
+        "title": "5 Nutritious Smoothies for Settling Your Stomach",
+        "slug": "nutritious-smoothies-for-settling-stomach",
+        "excerpt": "Explore a variety of smoothie recipes packed with nutrition that won't unsettle your stomach",
+        "outline": [
+            "Why smoothies are great for unsettled bellies",
+            "Banana and Ginger Smoothie: A Blissful Blend",
+            "Soothing Green Smoothie: A Nutritional Powerhouse",
+            "Bone-Healing Mixed Berry Smoothie",
+            "Protein-Packed Almond and Oats Smoothie"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dcccf9d8c51d0a97fb281b",
+        "title": "5 Quick and Easy Recipes for Upset Stomach",
+        "slug": "quick-and-easy-recipes-for-upset-stomach",
+        "excerpt": "Discover quick recipes that are perfect for those days when your tummy is a little sensitive",
+        "outline": [
+            "Sweet Potato Soup: Nutritious and Tummy Friendly",
+            "Simple Yet Soothing: Steamed Rice and Bland Chicken",
+            "Ginger Mint Tea: Your Instant Fix",
+            "Banana Pancakes: Easy on The Tummy and Tasty",
+            "No Cook Foods That Are Gentle on An Upset Stomach"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dcccf9d8c51d0a97fb2822",
+        "title": "5 Healthy Recipes that Are Gentle to Your Gut",
+        "slug": "healthy-recipes-gentle-to-your-gut",
+        "excerpt": "Take a look at our list of culinary solutions that tend to upset tummies without compromising taste or nutrition",
+        "outline": [
+            "The Power of Broths and Soups",
+            "Ginger Tofu Stir Fry: \u201cThe Tummy Tamer\u201d",
+            "Steamed Vegetables with a Twist",
+            "Berry-licious Desserts You Can Digest",
+            "Keeping Your Gut Happy with Probiotic-Rich Foods"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dcccf9d8c51d0a97fb2827",
+        "title": "5 Foods to Avoid When Your Stomach is Upset",
+        "slug": "foods-to-avoid-when-stomach-is-upset",
+        "excerpt": "Understanding what not to eat when your stomach is upset can be as important as knowing calming foods",
+        "outline": [
+            "Why Choosing The Right Foods Matters",
+            "Sugar, Sweeteners, and Highly Processed Foods",
+            "Alcohol and Caffeine: A No-Go",
+            "Avoid Fried and Greasy Foods",
+            "High Fiber Foods: Not An Ideal Choice"
+        ],
+        "exists": false
+    }
+]

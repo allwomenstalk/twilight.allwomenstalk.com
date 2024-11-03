@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "66f679eb80bd1ee71c09b14b",
+        "title": "Understanding Emotional Intimacy in Relationships",
+        "slug": "understanding-emotional-intimacy-relationships",
+        "excerpt": "Explore the depths of emotional intimacy and how it strengthens your relationship.",
+        "outline": [
+            "What is emotional intimacy?",
+            "How emotional intimacy differs from physical intimacy",
+            "Ways to cultivate emotional intimacy",
+            "Benefits of emotional intimacy in a relationship",
+            "Signs of a strong emotional connection"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66f679eb80bd1ee71c09b14f",
+        "title": "The Role of Communication in a Healthy Relationship",
+        "slug": "role-of-communication-healthy-relationship",
+        "excerpt": "Discover how effective communication can enhance your relationship and bring you closer.",
+        "outline": [
+            "Importance of open communication",
+            "Tips for effective communication",
+            "Common communication barriers",
+            "Non-verbal communication cues",
+            "How to improve communication in your relationship"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66f679eb80bd1ee71c09b155",
+        "title": "Romantic Gestures to Strengthen Your Love",
+        "slug": "romantic-gestures-strengthen-love",
+        "excerpt": "Simple yet meaningful romantic gestures that can bring you and your partner closer.",
+        "outline": [
+            "Thoughtful surprise ideas",
+            "Creative date night suggestions",
+            "How to express love through small acts",
+            "Personalized gifts that show you care",
+            "The impact of consistency in romantic gestures"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66f679eb80bd1ee71c09b15b",
+        "title": "The Importance of Physical Touch in Love and Relationships",
+        "slug": "importance-physical-touch-love-relationships",
+        "excerpt": "Understand the different ways physical touch can strengthen your bond with your partner.",
+        "outline": [
+            "Types of physical touch in relationships",
+            "How touch fosters intimacy",
+            "Understanding personal boundaries",
+            "Ways to incorporate touch in daily life",
+            "The science behind the power of touch"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66f679eb80bd1ee71c09b166",
+        "title": "Building Trust and Mutual Respect in Your Relationship",
+        "slug": "building-trust-mutual-respect-relationship",
+        "excerpt": "Learn the foundations of trust and respect to create a lasting and fulfilling relationship.",
+        "outline": [
+            "Why trust is essential in a relationship",
+            "Signs of mutual respect",
+            "Steps to rebuild trust after it\u2019s broken",
+            "How to show respect in daily interactions",
+            "Balancing trust and vulnerability"
+        ],
+        "exists": false
+    }
+]

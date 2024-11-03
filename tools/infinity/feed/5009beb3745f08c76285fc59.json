@@ -1,0 +1,77 @@
+[
+    {
+        "_id": "66df66de9999dedc1947ddd5",
+        "title": "10 Quick and Easy Low Calorie Lunch Ideas",
+        "slug": "quick-easy-low-calorie-lunch-ideas",
+        "excerpt": "Discover a selection of delicious lunch ideas that are low calorie but still filling and satisfying.",
+        "outline": [
+            "How to Plan Low Calorie Meals",
+            "Grilled Chicken Salad",
+            "Sushi Roll",
+            "Roasted Vegetable Wrap",
+            "Tomato Soup and Whole Grain Toast",
+            "Quinoa and Black Bean Salad",
+            "Spinach and Tofu Stir-fry",
+            "Steamed Fish with Vegetables",
+            "Turkey and Vegetable Roll-ups",
+            "Cauliflower Fried Rice"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66df66de9999dedc1947ddd8",
+        "title": "5 Low Calorie Breakfast Ideas to Kickstart Your Day",
+        "slug": "low-calorie-breakfast-ideas",
+        "excerpt": "Learn how a low calorie breakfast can set your day off to a great start without impacting your waistline.",
+        "outline": [
+            "Acai Berry Smoothie Bowl",
+            "Poached Eggs on Rye Bread",
+            "Chia Seed Pudding",
+            "Low Calorie Pancakes",
+            "Overnight Oats with Fresh Fruit"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66df66de9999dedc1947dddd",
+        "title": "The Role of Salads in Weight Management",
+        "slug": "role-of-salads-in-weight-management",
+        "excerpt": "Delve into the benefits of incorporating salads into your diet for effective weight management.",
+        "outline": [
+            "The Power of Greens",
+            "Understanding Caloric Density",
+            "Choosing the Right Toppings",
+            "The Importance of Variety",
+            "Incorporating Protein Sources"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66df66de9999dedc1947dde7",
+        "title": "Plant-Based Meals for a High Energy Day",
+        "slug": "plant-based-meals-for-high-energy-day",
+        "excerpt": "Discover how plant-based meals can provide you with enough energy and nutrients for a productive day.",
+        "outline": [
+            "Green Smoothie for Breakfast",
+            "Chickpea Curry for Lunch",
+            "Vegetable Stir-Fry for Dinner",
+            "Plant-Based Protein Sources",
+            "Benefits of a Plant-Based Diet"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66df66de9999dedc1947ddec",
+        "title": "Juicing 101: Making Nutrition-Packed Drinks at Home",
+        "slug": "juicing-101-nutrition-packed-drinks-home",
+        "excerpt": "Learn the art of juicing, offering a range of benefits from improved digestion to enhanced detoxification.",
+        "outline": [
+            "Selecting the Right Fruits and Vegetables",
+            "Understanding the Juicing Process",
+            "Benefits of Drinking Freshly Squeezed Juice",
+            "Juicing Recipes for Beginners",
+            "Lessons Learned from Juicing"
+        ],
+        "exists": false
+    }
+]

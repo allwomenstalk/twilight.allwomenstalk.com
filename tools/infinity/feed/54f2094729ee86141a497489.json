@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "66dcc615d8c51d0a97e2749a",
+        "title": "10 Healthy Chorizo Meals for the Health Conscious",
+        "slug": "healthy-chorizo-meals",
+        "excerpt": "Explore healthy and delicious chorizo recipes that won\u2019t disappoint your taste buds and health.",
+        "outline": [
+            "Choosing The Right Chorizo for Your Meal",
+            "Vegetables That Pair Well With Chorizo",
+            "Recipe 1: Chorizo with Quinoa and Spinach",
+            "Recipe 2: Chorizo and Lentil Salad",
+            "Recipe 3: Chorizo and Turkey Lettuce Wraps"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dcc615d8c51d0a97e2749f",
+        "title": "5 Quick Chorizo Recipes for Busy Women",
+        "slug": "quick-chorizo-recipes",
+        "excerpt": "Here are some quick and easy chorizo recipes perfect for busy women on the go.",
+        "outline": [
+            "Why Chorizo is Perfect for Quick Meals",
+            "Recipe 1: Chorizo and Cheddar Quesadillas",
+            "Recipe 2: One-Pot Chorizo Pasta",
+            "Recipe 3: Chorizo and Pepper Stir-fry",
+            "Recipe 4: Chorizo and Egg Breakfast Burritos"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dcc615d8c51d0a97e274a7",
+        "title": "5 Impress Your Partner: Romantic Chorizo Dinner Recipes",
+        "slug": "romantic-chorizo-recipes",
+        "excerpt": "Impress your loved one with a delicious chorizo meal during a candlelit dinner.",
+        "outline": [
+            "Setting the Mood for a Chorizo Dinner",
+            "Recipe 1: Chorizo-Stuffed Roasted Chicken",
+            "Recipe 2: Chorizo and Shrimp Pasta",
+            "Recipe 3: Chorizo and Red Wine Risotto",
+            "Recipe 4: Grilled Lobster with Chorizo Butter"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dcc615d8c51d0a97e274ad",
+        "title": "Chorizo Party: 5 Dishes to Serve for Your Friends",
+        "slug": "chorizo-party-dishes",
+        "excerpt": "Spice up your next gathering with delicious and aromatic chorizo dishes that your friends will love.",
+        "outline": [
+            "Setting Up a Chorizo Themed Party",
+            "Recipe 1: Mini Chorizo Pizzas",
+            "Recipe 2: Chorizo and Cheese Dip",
+            "Recipe 3: Chorizo and Potato Skewers",
+            "Recipe 4: Chorizo Taco Bites"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dcc615d8c51d0a97e274b3",
+        "title": "5 Various Ways to Use Chorizo in Your Vegetarian Meals",
+        "slug": "vegetarian-chorizo-recipes",
+        "excerpt": "Discover the world of vegetarian chorizo and how you can incorporate it into your meat-free meals",
+        "outline": [
+            "What is Vegetarian Chorizo and Why Use It",
+            "Recipe 1: Vegetarian Chorizo and Chickpea Stew",
+            "Recipe 2: Vegetarian Chorizo Tacos",
+            "Recipe 3: Vegetarian Chorizo and Spinach Frittata",
+            "Recipe 4: Vegetarian Chorizo and Bean Soup"
+        ],
+        "exists": false
+    }
+]

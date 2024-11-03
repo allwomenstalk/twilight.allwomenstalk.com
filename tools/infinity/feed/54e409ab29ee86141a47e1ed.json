@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "66df66bf9999dedc19476e80",
+        "title": "Dreamy Mashed Potato Variations that Love Gravy",
+        "slug": "mashed-potato-variations-love-gravy",
+        "excerpt": "Discover the many delicious faces of mashed potatoes and why they are the perfect platform for your gravy.",
+        "outline": [
+            "Classic Creamy Mashed Potatoes",
+            "Sweet Potato Mash with a Twist",
+            "Rustic Skin-on Mashed Potatoes",
+            "Cheesy Garlic Mashed Potatoes",
+            "Chive and Sour Cream Mashed Potatoes"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66df66bf9999dedc19476e88",
+        "title": "Comfort Food: Gravy-Inspired Pasta Dishes",
+        "slug": "comfort-food-gravy-inspired-pasta",
+        "excerpt": "Elevate your pasta dishes with these delightful and comforting gravy-inspired recipes.",
+        "outline": [
+            "Spaghetti Bolognese with Rich Gravy",
+            "Creamy Gravy Carbonara",
+            "Mushroom Gravy Pasta",
+            "Sausage Gravy Pasta Casserole",
+            "Cheesy Gravy Lasagna"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66df66bf9999dedc19476e8d",
+        "title": "Giving Thanksgiving Leftovers a New Life: Gravy Edition",
+        "slug": "thanksgiving-leftovers-new-life-gravy-edition",
+        "excerpt": "Revive your Thanksgiving leftovers with these recipes, courtesy of a delicious drizzle of gravy.",
+        "outline": [
+            "Turkey and Gravy Sandwiches",
+            "Thanksgiving Leftover Casserole with Gravy",
+            "Turkey and Gravy Pot Pie",
+            "Stuffing and Gravy Meatballs",
+            "Leftover Thanksgiving Gravy Soup"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66df66bf9999dedc19476e94",
+        "title": "Outstanding Meat Gravy Combinations You Have to Try",
+        "slug": "outstanding-meat-gravy-combinations",
+        "excerpt": "Unleash new flavors with these outstanding meat and gravy combinations you've probably never thought of.",
+        "outline": [
+            "Pork Chops with Apple Gravy",
+            "Beef Steak with Mushroom and Onion Gravy",
+            "Chicken Breasts with Lemon Gravy",
+            "Lamb Chops with Mint Gravy",
+            "Turkey Meatballs with Cranberry Gravy"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66df66bf9999dedc19476e99",
+        "title": "Rice Dishes Better with Gravy",
+        "slug": "rice-dishes-better-with-gravy",
+        "excerpt": "Make your rice dishes more scrumptious with the addition of gravy. Here are some ideas.",
+        "outline": [
+            "Chicken Fried Rice with Gravy",
+            "Beef Gravy over White Rice",
+            "Gravy-drenched Cajun Rice",
+            "Rice and Gravy Casserole",
+            "Fried Rice with Egg Gravy"
+        ],
+        "exists": false
+    }
+]

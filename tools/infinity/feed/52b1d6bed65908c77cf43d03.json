@@ -1,0 +1,89 @@
+[
+    {
+        "_id": "66dffdfdcf5229c457ef94a5",
+        "title": "10 Creative Appetizers to Impress Your Guests",
+        "slug": "creative-appetizers-impress-guests",
+        "excerpt": "Elevate your hosting game with these inventive and delicious appetizers.",
+        "outline": [
+            "Savory Mini Tarts",
+            "Stuffed Mushroom Caps",
+            "Caprese Skewers",
+            "Spicy Shrimp Cups",
+            "Smoked Salmon Blinis",
+            "Gourmet Cheese Board",
+            "Pesto Stuffed Tomatoes",
+            "Bacon Wrapped Dates",
+            "Avocado Egg Rolls",
+            "Crispy Zucchini Fries"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dffdfdcf5229c457ef94a9",
+        "title": "7 Easy and Elegant Desserts to Wow Your Guests",
+        "slug": "easy-elegant-desserts-wow-guests",
+        "excerpt": "Serve these stunning and simple desserts to make a lasting impression.",
+        "outline": [
+            "Upside-Down Pineapple Cake",
+            "Chocolate Fondue with Fresh Fruits",
+            "Mini Cheesecake Bites",
+            "Lemon Sorbet Served in Lemons",
+            "Raspberry and White Chocolate Mousse",
+            "Apple Tarte Tatin",
+            "No-Bake Oreo Truffles"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dffdfdcf5229c457ef94af",
+        "title": "12 Refreshing Cocktails for Your Next Party",
+        "slug": "refreshing-cocktails-next-party",
+        "excerpt": "Keep the good times flowing with these refreshing and delightful cocktails.",
+        "outline": [
+            "Classic Mojito",
+            "Strawberry Basil Lemonade",
+            "Pineapple Mango Rum Punch",
+            "Cucumber Gin Fizz",
+            "Blueberry Vodka Spritz",
+            "Grapefruit Rosemary Mimosa",
+            "Pomegranate Prosecco Punch",
+            "Watermelon Margarita",
+            "Lavender Collins",
+            "Spiked Iced Tea",
+            "Peach Sangria",
+            "Coconut Daiquiri"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dffdfdcf5229c457ef94b9",
+        "title": "8 Healthy Snack Ideas for Your Guests",
+        "slug": "healthy-snack-ideas-guests",
+        "excerpt": "Keep your guests satisfied with these tasty and nutritious snacks.",
+        "outline": [
+            "Mixed Nut and Fruit Trail Mix",
+            "Veggie and Hummus Platter",
+            "Greek Yogurt and Berry Parfaits",
+            "Kale Chips with Sea Salt",
+            "Stuffed Bell Peppers",
+            "Avocado and Turkey Roll-ups",
+            "Homemade Granola Bars",
+            "Edamame with Sea Salt"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dffdfdcf5229c457ef94c7",
+        "title": "5 Brunch Recipes Your Guests Will Love",
+        "slug": "brunch-recipes-guests-love",
+        "excerpt": "Start your morning gatherings right with these delightful brunch recipes.",
+        "outline": [
+            "Sausage and Cheese Breakfast Casserole",
+            "Banana Nut Pancakes",
+            "Spinach and Feta Quiche",
+            "Avocado Toast with Poached Eggs",
+            "Cinnamon French Toast Bake"
+        ],
+        "exists": false
+    }
+]

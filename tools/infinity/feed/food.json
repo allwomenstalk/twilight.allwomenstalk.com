@@ -1,0 +1,138 @@
+[
+    {
+        "_id": "66dcc655d8c51d0a97e357c9",
+        "title": "Walnuts: The Ultimate Brain Food",
+        "slug": "walnuts-the-ultimate-brain-food",
+        "excerpt": "Understand why walnuts are known as brain food and learn about the various health benefits they offer.",
+        "outline": [
+            "Why Walnuts are Good for the Brain",
+            "Walnuts and Heart Health",
+            "Aiding Weight Management with Walnuts",
+            "Easy Walnut Recipes",
+            "Beauty Benefits of Walnut Oil"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dffddecf5229c457ef2cd6",
+        "title": "Creative Pink Appetizers for Your Next Party",
+        "slug": "creative-pink-appetizers",
+        "excerpt": "Dazzle your guests with these fun and easy-to-make pink appetizers that are perfect for any gathering.",
+        "outline": [
+            "Pink Deviled Eggs",
+            "Beetroot Hummus Dip",
+            "Watermelon and Feta Skewers",
+            "Salmon Stuffed Cucumbers",
+            "Pink Sushi Rolls"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66df67a19999dedc194acd22",
+        "title": "Sweet and Tangy Passion Fruit Desserts",
+        "slug": "tangy-passion-fruit-desserts",
+        "excerpt": "Bring a tropical twist to your dessert table with these delicious passion fruit recipe ideas. The sweet-tangy flavor will delight any dessert lover.",
+        "outline": [
+            "Passion Fruit Tarts",
+            "Tropical Passion Fruit Ice Cream",
+            "Delicious Passion Fruit Cheesecakes",
+            "Passion Fruit Panna Cotta",
+            "Exotic Passion Fruit Trifle"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dffdfdcf5229c457ef94a5",
+        "title": "10 Creative Appetizers to Impress Your Guests",
+        "slug": "creative-appetizers-impress-guests",
+        "excerpt": "Elevate your hosting game with these inventive and delicious appetizers.",
+        "outline": [
+            "Savory Mini Tarts",
+            "Stuffed Mushroom Caps",
+            "Caprese Skewers",
+            "Spicy Shrimp Cups",
+            "Smoked Salmon Blinis",
+            "Gourmet Cheese Board",
+            "Pesto Stuffed Tomatoes",
+            "Bacon Wrapped Dates",
+            "Avocado Egg Rolls",
+            "Crispy Zucchini Fries"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dcccb8d8c51d0a97fa3fcd",
+        "title": "Creative Celery Salads: Adding Crunch to Your Plates",
+        "slug": "creative-celery-salads",
+        "excerpt": "Step up your salad game with these fresh and innovative ways to add celery into your salad bowl. Perfect for appetizers or a green side dish!",
+        "outline": [
+            "Understanding the Nutritional Benefits of Celery in Salads",
+            "Top 5 Unique Celery Salad Recipes to Try",
+            "Incorporating Different Types of Celery into Your Salad",
+            "Food Pairing: What Goes Well with Celery Salads",
+            "Keeping Your Celery Salad Fresh: Storage and Preparation Tips"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dccc9ad8c51d0a97f9b6d0",
+        "title": "7 Low-Carb Toothpick Appetizers for Your Next Party",
+        "slug": "7-low-carb-toothpick-appetizers",
+        "excerpt": "Sticking to your diet should not be a challenge, even when at a party. Check out these 7 low-carb toothpick appetizer recipes for your next event.",
+        "outline": [
+            "Zucchini and Cherry Tomato Skewers",
+            "Prosciutto and Melon Bites",
+            "Sausage and Cheese Kabobs",
+            "Meatball Lettuce Wraps",
+            "Chicken and Avocado Rolls"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dffdc7cf5229c457eee092",
+        "title": "10 Healthy Food Gift Ideas for the Health-Conscious",
+        "slug": "healthy-food-gift-ideas-health-conscious",
+        "excerpt": "Explore healthy food gift ideas that cater to health-conscious loved ones.",
+        "outline": [
+            "Organic snack boxes",
+            "Fruit and nut baskets",
+            "Homemade granola",
+            "Herbal tea sets",
+            "Smoothie ingredient kits",
+            "Vegan baked goods",
+            "Gluten-free treats",
+            "Nut butter sampler",
+            "Low-sugar baked items",
+            "Plant-based protein bars"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dccc65d8c51d0a97f900dc",
+        "title": "Refreshing Middle Eastern Salads for Summer Evenings",
+        "slug": "refreshing-middle-eastern-salads",
+        "excerpt": "Make your summer evenings cool with these refreshing Middle Eastern salads. Secure your health and keep your taste buds enthralled with this light yet flavorful fare.",
+        "outline": [
+            "Fattoush: A Crispy Delight",
+            "Tabbouleh: The Green Goddess",
+            "Cucumber Yogurt Salad: The Chilled Wonder",
+            "Carrot Salad: A Tangy Surprise",
+            "Parsley Salad: The Herbal Magic"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dcc788d8c51d0a97e79360",
+        "title": "Indulge in Sweet Treats: Delectable Desserts for Your Girls Night",
+        "slug": "delectable-desserts-for-girls-night",
+        "excerpt": "Finish your girls' night on a high note with these irresistible yet easy-to-make desserts.",
+        "outline": [
+            "Homemade Fudgy Brownies",
+            "Strawberry Cheesecake Bites",
+            "Easy Mini Pavlovas",
+            "Dark Chocolate Dipped Fruits",
+            "French Macarons for Beginners"
+        ],
+        "exists": false
+    }
+]

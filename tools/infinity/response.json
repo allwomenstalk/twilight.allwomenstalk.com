@@ -1,14 +1,14 @@
 {
-    "id": "chatcmpl-AC1XKZHVVsDP1GSLoT1tbNw4b40Em",
+    "id": "chatcmpl-AOhl0LTtHPtJ4tZDeKhj3Cjwnr4NH",
     "object": "chat.completion",
-    "created": 1727429206,
-    "model": "gpt-4o-2024-05-13",
+    "created": 1730451438,
+    "model": "gpt-4-0613",
     "choices": [
         {
             "index": 0,
             "message": {
                 "role": "assistant",
-                "content": "[\n  {\n    \"title\": \"Unusual Date Night Ideas for Couples\",\n    \"slug\": \"unusual-date-night-ideas-for-couples\",\n    \"excerpt\": \"Discover some creative and romantic date night ideas that will keep the spark alive.\",\n    \"outline\": [\n      \"Outdoor Adventure Dates\",\n      \"DIY Craft Nights\",\n      \"Mystery Dining\",\n      \"Themed Movie Nights\",\n      \"Stargazing Picnics\"\n    ]\n  },\n  {\n    \"title\": \"How to Keep the Romance Alive in a Long-Term Relationship\",\n    \"slug\": \"how-to-keep-romance-alive-long-term-relationship\",\n    \"excerpt\": \"Maintaining romance in a long-term relationship can be challenging, but these tips will help.\",\n    \"outline\": [\n      \"Importance of Communication\",\n      \"Planning Surprises\",\n      \"Prioritizing Intimacy\",\n      \"Regular Date Nights\",\n      \"Revisiting Shared Goals\"\n    ]\n  },\n  {\n    \"title\": \"Spicing Up Your Relationship: Fun and Sexy Games for Couples\",\n    \"slug\": \"sexy-games-for-couples\",\n    \"excerpt\": \"Boost intimacy and fun in your relationship with these engaging games.\",\n    \"outline\": [\n      \"Truth or Dare\",\n      \"Bedroom Bingo\",\n      \"Fantasy Role Play\",\n      \"Sexy Scavenger Hunt\",\n      \"Strip Poker and Other Classic Games\"\n    ]\n  },\n  {\n    \"title\": \"Surprising Benefits of Morning Sex\",\n    \"slug\": \"benefits-of-morning-sex\",\n    \"excerpt\": \"Explore why starting your day with intimacy can improve your relationship and well-being.\",\n    \"outline\": [\n      \"Boosts Mood and Reduces Stress\",\n      \"Improves Physical Health\",\n      \"Enhances Relationship Bond\",\n      \"Increases Energy Levels\",\n      \"Sets a Positive Tone for the Day\"\n    ]\n  },\n  {\n    \"title\": \"Effective Communication Tips for a Healthier Relationship\",\n    \"slug\": \"communication-tips-for-healthy-relationship\",\n    \"excerpt\": \"Strong communication is key to a thriving relationship. Learn tips to improve it.\",\n    \"outline\": [\n      \"Active Listening\",\n      \"Expressing Feelings Honestly\",\n      \"Avoiding Blame\",\n      \"Using 'I' Statements\",\n      \"Non-Verbal Communication\"\n    ]\n  }\n]",
+                "content": "[\n {\n   \"title\": \"Exploring sensual destination hotspots for a romantic getaway with a Pisces man\",\n   \"slug\": \"pisces-man-romantic-getaway\",\n   \"excerpt\": \"Pisces men are known for their romantic soul. Discover top sensual destinations that can enhance your intimate experience with a Pisces partner.\",\n   \"outline\": [\n     \"Water destinations: Perfect for a Pisces man\", \n     \"Exploring historical sites: Catering to his imaginative nature\",\n     \"Eye-catching landscapes: Arousing his artistic tendencies\",\n     \"Cultural cities: Feeding his creative spirits\",\n     \"Exotic destinations: Appealing his adventurous side\"\n    ]\n },\n {\n   \"title\": \"Enhance your intimate relationship while travelling with a Pisces man\",\n   \"slug\": \"travel-intimacy-pisces-man\",\n   \"excerpt\": \"Learn about the various ways you can strengthen your romantic ties with a Pisces man while journeying together.\", \n   \"outline\": [\n     \"Sharing travel experiences: Building stronger bonds\",\n     \"Understanding his needs: Secure a successful vacation\",\n     \"Appreciating his surprises: Embracing spontaneity\",\n     \"Finding common grounds: Fostering harmony\",\n     \"Teasing his senses: Igniting the fire\"\n   ]\n },\n {\n   \"title\": \"Perfecting your travel preparation for an adventure with a Pisces man\",\n   \"slug\": \"pisces-man-travel-preparation\",\n   \"excerpt\": \"Preparing for a journey with your Pisces partner? Here are some tips on how you can ensure a seamless and romantic getaway.\",\n   \"outline\": [\n     \"Understanding his preferences: Setting the best Itinerary\",\n     \"Packing essentials: For a romantic night\",\n     \"Setting the mood: Music and more\",\n     \"Accommodating his interests: To keep him intrigued\",\n     \"Factoring in relaxation time: For moments of magic\"\n   ]\n },\n {\n   \"title\": \"Creating unforgettable memories while travelling with a Pisces man\",\n   \"slug\": \"unforgettable-travel-memories-pisces-man\",\n   \"excerpt\": \"See how you can create special moments that you can treasure forever when you are travelling with a Pisces man.\",\n   \"outline\": [\n     \"Capturing moments: Through his artistic eyes\",\n     \"Dining under the stars: Sharing intimate meals\",\n     \"Spontaneous exploration: Unleashing his adventurous side\",\n     \"Simple gestures of love: Strengthening your bond\",\n     \"Nightly walks: Healing and relaxing\"\n   ]\n },\n {\n   \"title\": \"Surviving travel mishaps with a Pisces man\",\n   \"slug\": \"travel-mishaps-pisces-man\",\n   \"excerpt\": \"When on the road, things may not always go as planned. Here's how to cope with unexpected mishaps when you're with a Pisces partner.\",\n   \"outline\": [\n     \"Keeping calm: Soothing his worries\",\n     \"Adapting quickly: Embracing changes\",\n     \"Finding beauty in chaos: Appreciating the unplanned\",\n     \"Nurturing positivity: Keeping the mood light\",\n     \"Preserving intimacy: Despite the situations\"\n   ]\n }\n]",
                 "refusal": null
             },
             "logprobs": null,
@@ -16,12 +16,15 @@
         }
     ],
     "usage": {
-        "prompt_tokens": 150,
-        "completion_tokens": 483,
-        "total_tokens": 633,
+        "prompt_tokens": 158,
+        "completion_tokens": 662,
+        "total_tokens": 820,
+        "prompt_tokens_details": {
+            "cached_tokens": 0
+        },
         "completion_tokens_details": {
             "reasoning_tokens": 0
         }
     },
-    "system_fingerprint": "fp_057232b607"
+    "system_fingerprint": null
 }

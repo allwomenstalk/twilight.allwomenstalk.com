@@ -1,0 +1,88 @@
+[
+    {
+        "_id": "66f678b180bd1ee71c052ff2",
+        "title": "Top 50 Romantic Quotes to Melt Her Heart",
+        "slug": "top-50-romantic-quotes",
+        "excerpt": "Discover the most charming and heartfelt quotes to express your love and make her feel special.",
+        "outline": [
+            "Why romantic quotes matter",
+            "Famous romantic quotes",
+            "Modern romantic quotes",
+            "Quotes for special occasions",
+            "How to use romantic quotes in everyday life"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66f678b180bd1ee71c052ffa",
+        "title": "7 Creative Ways to Show Love Without Words",
+        "slug": "7-creative-ways-show-love",
+        "excerpt": "Learn unique and meaningful gestures to demonstrate your love without uttering a single word.",
+        "outline": [
+            "Surprise gestures",
+            "Thoughtful gifts",
+            "Acts of service",
+            "Quality time",
+            "Physical touch",
+            "Handwritten notes",
+            "Creating a love memory"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66f678b180bd1ee71c052ffe",
+        "title": "10 Date Night Ideas to Rekindle Romance",
+        "slug": "10-date-night-ideas",
+        "excerpt": "Plan unforgettable date nights that will reignite the romance and keep the spark alive.",
+        "outline": [
+            "Stargazing picnic",
+            "Cooking together",
+            "Movie marathon",
+            "Outdoor adventures",
+            "Couple's spa night",
+            "Game night",
+            "Cultural experiences",
+            "Weekend getaways",
+            "Creative arts and crafts",
+            "Dance in the living room"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66f678b180bd1ee71c053004",
+        "title": "15 Unique Love Songs to Dedicate to Her",
+        "slug": "15-unique-love-songs",
+        "excerpt": "Find the perfect soundtrack to your love story with these unique and touching songs.",
+        "outline": [
+            "Classic love ballads",
+            "Modern love songs",
+            "Indie love songs",
+            "Love songs from movies",
+            "Hidden gems",
+            "Personalizing the dedication",
+            "Building a love playlist",
+            "Using music to express feelings",
+            "Sharing song history",
+            "Incorporating songs into special moments"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66f678b180bd1ee71c05300d",
+        "title": "How to Write a Love Letter That Will Make Her Swoon",
+        "slug": "how-to-write-love-letter",
+        "excerpt": "Learn the art of crafting the perfect love letter that captures your emotions and makes her feel adored.",
+        "outline": [
+            "Understanding the love letter tradition",
+            "Choosing the right stationery",
+            "Starting with a heartfelt greeting",
+            "Expressing your emotions",
+            "Including shared memories",
+            "Describing your future together",
+            "Closing with a romantic sign-off",
+            "Presentation tips",
+            "When and how to deliver the letter"
+        ],
+        "exists": true
+    }
+]

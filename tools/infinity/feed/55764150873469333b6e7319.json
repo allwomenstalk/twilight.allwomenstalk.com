@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "66dd613ed8c51d0a97fcdfbc",
+        "title": "5 Fresh and Tasty Fruit Salad Recipes",
+        "slug": "fresh-and-tasty-fruit-salad-recipes",
+        "excerpt": "Delicious yet highly nutritious fruit salad recipes that are perfect for weight loss and healthy lifestyle.",
+        "outline": [
+            "Choosing the Right Fruits for Your Salad",
+            "Classic Fresh Fruit Salad Recipe",
+            "Spicy Watermelon and Feta Salad Recipe",
+            "Tropical Fruit Salad with Honey Lime Dressing Recipe",
+            "Mixed Berry Salad with Mint Recipe"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dd613ed8c51d0a97fcdfd3",
+        "title": "5 Protein-Packed Salads for Weight Loss",
+        "slug": "protein-packed-salads-weight-loss",
+        "excerpt": "Dive into a world of protein-rich salads that are not only delicious but might help shed those extra pounds as well.",
+        "outline": [
+            "Benefits of Adding Protein to Your Salads",
+            "Grilled Chicken Salad with Avocado Dressing Recipe",
+            "Quinoa and Black Bean Salad Recipe",
+            "Chickpea and Tuna Salad Recipe",
+            "Roasted Tempeh and Veggie Salad Recipe"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dd613ed8c51d0a97fcdfdd",
+        "title": "5 Unique Asian-Inspired Salad Recipes",
+        "slug": "unique-asian-inspired-salad-recipes",
+        "excerpt": "Add a twist to your salads with these unique and flavorsome Asian-inspired salad recipes. Perfect for those on a weight loss journey.",
+        "outline": [
+            "The Influence of Asian Cuisine on Salads",
+            "Vietnamese Vermicelli Noodle Salad Recipe",
+            "Japanese Cucumber Salad (Sunomono) Recipe",
+            "Thai Mango Salad Recipe",
+            "Korean Spinach Salad (Sigeumchi Namul) Recipe"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dd613ed8c51d0a97fcdfe1",
+        "title": "5 Delicious Vegan Salad Recipes",
+        "slug": "delicious-vegan-salad-recipes",
+        "excerpt": "Explore the world of plant-based diet with these delicious vegan salad recipes, ideal for weight loss.",
+        "outline": [
+            "Why Choose Vegan Salads",
+            "Raw Kale and Avocado Salad Recipe",
+            "Vegan Caesar Salad Recipe",
+            "Lemony Lentil and Chickpea Salad Recipe",
+            "Thai-Inspired Red Cabbage Salad Recipe"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dd613ed8c51d0a97fcdfd9",
+        "title": "5 Quick and Easy Salad Recipes for Dinner",
+        "slug": "quick-easy-salad-recipes-dinner",
+        "excerpt": "Looking forward to shedding those pounds without compromising on taste? Try these quick and easy salad recipes for dinner.",
+        "outline": [
+            "Tips for Making Balanced Meal with Salads",
+            "Shrimp Avocado Salad Recipe",
+            "Goat Cheese and Beets Salad Recipe",
+            "Roasted Pumpkin and Quinoa Salad Recipe",
+            "Greek Salad Recipe"
+        ],
+        "exists": false
+    }
+]

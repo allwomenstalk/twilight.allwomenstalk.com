@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "66dffde8cf5229c457ef4e8e",
+        "title": "Affordable High-Protein Vegetarian Meals",
+        "slug": "affordable-high-protein-vegetarian-meals",
+        "excerpt": "Explore budget-friendly vegetarian dishes packed with protein.",
+        "outline": [
+            "Benefits of high-protein vegetarian diets",
+            "Top protein-packed vegetables and legumes",
+            "Quick and easy vegetarian recipes",
+            "Tips for grocery shopping on a budget",
+            "Meal prepping for the week"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dffde8cf5229c457ef4e97",
+        "title": "Budget-Friendly Protein Sources for Women",
+        "slug": "budget-friendly-protein-sources-for-women",
+        "excerpt": "Discover inexpensive protein sources that cater specifically to women's dietary needs.",
+        "outline": [
+            "Nutritional needs of women",
+            "Top affordable protein sources",
+            "Protein-rich snack ideas",
+            "Balancing protein with other macronutrients",
+            "Smart shopping strategies"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dffde8cf5229c457ef4e9d",
+        "title": "High-Protein Breakfasts on a Budget",
+        "slug": "high-protein-breakfasts-on-a-budget",
+        "excerpt": "Kick start your day with budget-friendly, protein-rich breakfast ideas.",
+        "outline": [
+            "Importance of a high-protein breakfast",
+            "Affordable protein-packed breakfast ingredients",
+            "Simple and quick breakfast recipes",
+            "Make-ahead breakfast options",
+            "Healthy topping ideas to boost protein"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dffde8cf5229c457ef4ea4",
+        "title": "Cheap and Easy High-Protein Snacks",
+        "slug": "cheap-easy-high-protein-snacks",
+        "excerpt": "Keep your energy levels up with affordable, high-protein snacks.",
+        "outline": [
+            "Why snacking on protein is important",
+            "Low-cost high-protein snack options",
+            "DIY snack recipes",
+            "Portable snacks for on-the-go",
+            "Storing snacks for freshness"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dffde8cf5229c457ef4eae",
+        "title": "Budget Cooking: High-Protein Dinners for Families",
+        "slug": "budget-cooking-high-protein-dinners-for-families",
+        "excerpt": "Enjoy family-friendly, high-protein dinners without breaking the bank.",
+        "outline": [
+            "Family nutrition and protein needs",
+            "Bulk cooking and batch recipes",
+            "Cost-effective protein choices",
+            "Dinner recipes kids will love",
+            "Saving money with leftovers"
+        ],
+        "exists": false
+    }
+]

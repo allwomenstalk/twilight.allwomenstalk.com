@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "66df67d19999dedc194b85bc",
+        "title": "Superfood Combos: 5 Exciting Ways to Use Peanut Butter",
+        "slug": "superfood-combos-peanut-butter",
+        "excerpt": "Discover the powerful benefits of incorporating peanut butter into your diet and exciting ways to combine it with other superfoods.",
+        "outline": [
+            "Exploring the Nutritional Landscape of Peanut Butter",
+            "Fruits and Peanut Butter: A Nutritious Mix",
+            "Healthy Grains: Pairing Options with Peanut Butter",
+            "The Magic of Seeds and Nut Butters",
+            "Choco-peanut Butter Smoothies for Health Boost"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66df67d19999dedc194b85c0",
+        "title": "5 Unconventional Peanut Butter Sandwiches You Need to Try",
+        "slug": "unconventional-peanut-butter-sandwiches",
+        "excerpt": "Think beyond the PB&J. Here are five exciting and slightly unconventional peanut butter sandwiches that you need to try.",
+        "outline": [
+            "Peanut Butter and Bacon Sandwich",
+            "The Sweet-n-Spicy Peanut Butter Delight",
+            "Vegetable Stuffed Peanut Butter Sandwich",
+            "The Fusion of Nut Butters in a Sandwich",
+            "Exotic Peanut Butter Sandwiches from Around the World"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66df67d19999dedc194b85c8",
+        "title": "5 Creative Twists to Peanut Butter Recipes for Kids",
+        "slug": "creative-peanut-butter-recipes-kids",
+        "excerpt": "Inspire your little ones with creative and fun peanut butter recipes that are not only delicious but also packed with nutrition.",
+        "outline": [
+            "Peanut Butter Jelly Unicorn Sandwiches",
+            "Homemade Peanut Butter Granola Bars",
+            "Crispy Peanut Butter Balls Recipe",
+            "Peanut Butter and Fruit Pizza",
+            "Peanut Butter Banana Popsicles"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66df67d19999dedc194b85d6",
+        "title": "5 Peanut Butter Alternatives for Peanut Allergies",
+        "slug": "peanut-butter-alternatives-allergies",
+        "excerpt": "Don\u2019t let a peanut allergy prevent you from enjoying the taste of a nutty sandwich. Discover the tasty, nutritious, and safe alternatives to peanut butter.",
+        "outline": [
+            "Almond Butter: A Healthy and Delicious Alternative",
+            "Soy Nut Butter: Nut-Free and Full of Protein",
+            "Sunflower Seed Butter: Nutty and Allergy-Friendly",
+            "Coconut Butter: A Tropical Twist",
+            "Pumpkin Seed Butter: Unique and Nutrient-Rich"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66df67d19999dedc194b85de",
+        "title": "Peanut Butter: 5 Delicious Cocktail Mix-ins",
+        "slug": "peanut-butter-cocktail-mixins",
+        "excerpt": "Cheers to the buttery goodness! Amp up your cocktail game with these fantastic peanut butter-infused mix-ins.",
+        "outline": [
+            "Peanut Butter Whiskey Sour",
+            "Creamy Peanut Butter Martini",
+            "Peanut Butter and Jelly Margarita",
+            "Peanut Butter Chocolate White Russian",
+            "Peanut Butter Bourbon Smash"
+        ],
+        "exists": false
+    }
+]

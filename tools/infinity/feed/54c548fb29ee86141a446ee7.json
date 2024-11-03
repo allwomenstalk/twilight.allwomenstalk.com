@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "66df67019999dedc194862f3",
+        "title": "5 Flavor-Packed Twist to Classic Recipes Using Jalapenos",
+        "slug": "jalapeno-twist-classic-recipes",
+        "excerpt": "Explore 5 classic dishes that get an exciting upgrade with the addition of spicy jalapenos.",
+        "outline": [
+            "Spicy Jalapeno Mac and Cheese",
+            "Jalapeno Popper Grilled Cheese Sandwich",
+            "Bacon Wrapped Jalapeno Popper Chicken",
+            "Jalapeno Cheddar Cornbread",
+            "Creamy Jalapeno Popper Soup"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66df67019999dedc194862f6",
+        "title": "5 Easy Jalapeno Snacks for Your Next Girls' Night",
+        "slug": "easy-jalapeno-snacks-girls-night",
+        "excerpt": "Get ready to add spice to your next girls' night with these easy jalapeno snacks.",
+        "outline": [
+            "Jalapeno Popper Dip",
+            "Jalapeno Cheddar Mini Muffins",
+            "Bacon Jalapeno Deviled Eggs",
+            "Jalapeno Popper Stuffed Mushrooms",
+            "Jalapeno Lime Chicken Wings"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66df67019999dedc194862fc",
+        "title": "5 Unexpected Desserts with a Jalapeno Kick",
+        "slug": "unexpected-jalapeno-desserts",
+        "excerpt": "Spice up your dessert menu with 5 unexpected dessert recipes incorporating jalapeno pepper.",
+        "outline": [
+            "Jalapeno Lime Cheesecake",
+            "Jalapeno Chocolate Truffles",
+            "Strawberry Jalapeno Jam",
+            "Jalapeno Honey Ice Cream",
+            "Pineapple Jalapeno Sorbet"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66df67019999dedc19486302",
+        "title": "5 Health Benefits of Eating Jalapenos",
+        "slug": "health-benefits-eating-jalapenos",
+        "excerpt": "Find out 5 health benefits of adding this spicy pepper to your daily diet.",
+        "outline": [
+            "Boosts Metabolism",
+            "Improves Digestion",
+            "Rich in Vitamins A and C",
+            "Supports Weight Loss",
+            "Fights Off Infections"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66df67019999dedc1948630a",
+        "title": "5 Creative Ways to Use Jalapenos in Your Drinks",
+        "slug": "creative-jalapeno-drinks",
+        "excerpt": "Learn about 5 creative ways of adding jalapenos to your favourite drinks, from water to cocktails",
+        "outline": [
+            "Jalapeno Infused Water",
+            "Jalapeno Mojito",
+            "Spicy Jalapeno Margarita",
+            "Pineapple Jalapeno Smoothie",
+            "Hot Jalapeno Ginger Lemon Tea"
+        ],
+        "exists": false
+    }
+]

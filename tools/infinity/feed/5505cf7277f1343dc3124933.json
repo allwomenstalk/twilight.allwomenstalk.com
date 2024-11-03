@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "66da08c9d8c51d0a9710b191",
+        "title": "The Top East Coast Beaches for Shell Collecting",
+        "slug": "east-coast-beaches-shell-collecting",
+        "excerpt": "Discover the best East Coast beaches in US where shell collectors can find unique and beautiful seashells.",
+        "outline": [
+            "The variety of shells on East Coast beaches",
+            "Best time to go shell hunting on East Coast",
+            "Noteworthy East Coast beaches for shell collectors",
+            "Useful tools for shell collecting",
+            "East Coast shell collecting etiquettes"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66da08c9d8c51d0a9710b196",
+        "title": "Exploring Florida's Gulf Coast: A Shell Hunter's Paradise",
+        "slug": "florida-gulf-coast-shell-hunter-paradise",
+        "excerpt": "From Sanibel Island to Marco Island, explore Florida's Gulf Coast, a shell collector's paradise offering unique and stunning specimens.",
+        "outline": [
+            "Overview of Florida's Gulf Coast beaches",
+            "Identifying shells in the Gulf Coast",
+            "Top beaches in Florida for shell collectors",
+            "Planning your Gulf Coast shell hunting trip",
+            "Tips for preserving your shell collection"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66da08c9d8c51d0a9710b199",
+        "title": "Pacific Shores: West Coast Shelling Destinations",
+        "slug": "pacific-shores-west-coast-shelling-destinations",
+        "excerpt": "Venture beyond the typical and experience shell collecting in the unique beaches of the West Coast. From California to Washington, these shores are brimming with spectacular finds.",
+        "outline": [
+            "West Coast beaches: What makes them unique",
+            "Common shell species in the West Coast",
+            "Top West Coast destinations for shell collectors",
+            "Best season for shell hunting on West Coast",
+            "West Coast shelling: Do's and Don'ts"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66da08c9d8c51d0a9710b19c",
+        "title": "Shell Hunting Adventures in Hawaii",
+        "slug": "shell-hunting-adventures-hawaii",
+        "excerpt": "Go on a tropical shell hunting adventure in the paradise that is Hawaii. Explore the diverse beaches and the unique shells they offer.",
+        "outline": [
+            "Diversity of Hawaiian beaches",
+            "Types of shells you can find in Hawaii",
+            "List of Hawaiian beaches perfect for shell hunting",
+            "What to bring and wear for a Hawaiian shell hunting",
+            "Hawaiian shell hunting safety guidelines"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66da08c9d8c51d0a9710b1a1",
+        "title": "Seashells and Their Symbolism in Women's Fashion",
+        "slug": "seashells-symbolism-womens-fashion",
+        "excerpt": "Learn how sea shells have been used in fashion and why they are a symbol of femininity and natural beauty. Discover creative ways to incorporate your shell collection into your wardrobe.",
+        "outline": [
+            "History of shells in fashion",
+            "Shell themed jewelry: How to accessorize the beach way",
+            "Why shells symbolize femininity",
+            "DIY Fashion projects using your shell collection",
+            "Styling tips to pair your shell accessories with different outfits"
+        ],
+        "exists": false
+    }
+]

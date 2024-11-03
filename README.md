@@ -228,8 +228,18 @@ version: 0.2
 
 
 
-## Build host 
+## Build host (infity branch)
 
 npm run clean && node batchgeneratehost.js travel.allwomenstalk.com && sh batchcommitforce.sh travel.allwomenstalk.com
 
 npm run clean && node batchgeneratehost.js love.allwomenstalk.com && sh batchcommitforce.sh love.allwomenstalk.com
+
+## Safe CORS 
+http://localhost:8081
+https://allwomenstalk.com
+https://*.allwomenstalk.com
+http://*.s3-website-us-west-2.amazonaws.com
+https://*.pages.dev
+http://127.0.0.1:8088
+http://127.0.0.1:8888
+http://localhost:8085

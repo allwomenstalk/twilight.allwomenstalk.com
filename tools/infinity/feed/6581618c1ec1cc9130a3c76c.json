@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "66d96e7066437136e9659e18",
+        "title": "Finding the Best Accommodations: A Woman Traveler's Guide",
+        "slug": "finding-best-accommodations-woman-travelers-guide",
+        "excerpt": "A comprehensive guide covering everything female travelers need to know about selecting the best accommodations, from boutique hotels to home-share options.",
+        "outline": [
+            "Boutique Hotels vs Chain Hotels",
+            "Discovering Reliable Home-Share Options",
+            "Understanding the Importance of Locations",
+            "Reviewing Amenities",
+            "Read and Understand Reviews"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66d96e7066437136e9659e17",
+        "title": "Safety Tips for Solo Woman Traveler",
+        "slug": "safety-tips-solo-woman-traveler",
+        "excerpt": "Essential advice on how to stay safe when traveling alone as a woman. From where to stay to the benefits of group tours, this article provides actionable information and tips.",
+        "outline": [
+            "Understanding the Importance of Research",
+            "Choosing Safe Accommodations",
+            "Making the Most of Group Tours",
+            "Using Technology to Stay Safe",
+            "Connecting with Other Women Travelers"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66d96e7066437136e9659e16",
+        "title": "How Women Travelers Can Beat Jet Lag: Tips and Tricks",
+        "slug": "women-travelers-beat-jet-lag",
+        "excerpt": "In-depth guide about effective techniques women on the move can use to overcome the inconvenient effects of jet lag.",
+        "outline": [
+            "Understanding Jet Lag",
+            "Preparing Your Body Before the Trip",
+            "Surviving Long Flights",
+            "Adapting Your Body upon Arrival",
+            "Best Foods to Overcome Jet Lag"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66d96e7066437136e9659e19",
+        "title": "Mastering the Art of Vacation Relaxation: A Guide for Women",
+        "slug": "mastering-art-vacation-relaxation-women-guide",
+        "excerpt": "Practical advice for women on how to truly relax and enjoy their vacation. The article offers ideas on activities, mindset, and planning to ensure a stress-free holiday.",
+        "outline": [
+            "Planning Ahead to Minimize Stress",
+            "Unplugging from Work",
+            "Choosing Relaxation Activities",
+            "Embracing the Vacation Mindset",
+            "Creating Memories: Journaling Your Travels"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66d96e7066437136e9659e15",
+        "title": "Wardrobe Essentials: A Woman's Guide to Packing for a Vacation",
+        "slug": "wardrobe-essentials-womens-guide-to-packing",
+        "excerpt": "An article detailing how to pack for a vacation, focusing on the key items every woman should include in her suitcase.",
+        "outline": [
+            "Pick the Perfect Luggage",
+            "Plan Your Vacation Outfits",
+            "Essential Clothes to Pack",
+            "Packing Shoes the Right Way",
+            "Bagging Up Your Beauty Products"
+        ],
+        "exists": true
+    }
+]

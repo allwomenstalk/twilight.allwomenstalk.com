@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "66d9cb6cd8c51d0a972c46c4",
+        "title": "Top 5 Witchy Attractions to Visit in Salem",
+        "slug": "witchy-attractions-salem",
+        "excerpt": "Explore Salem's rich witchcraft history through its top attractions.",
+        "outline": [
+            "The Salem Witch Museum",
+            "The Witch House",
+            "Gallows Hill",
+            "Peabody Essex Museum",
+            "The Witch Trials Memorial"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66d9cb6cd8c51d0a972c46c7",
+        "title": "A Feminist\u2019s Guide to Historical Salem",
+        "slug": "feminist-guide-historical-salem",
+        "excerpt": "Discover Salem from a feminist perspective, focusing on the influential women in its history.",
+        "outline": [
+            "Women in the Salem Witch Trials",
+            "The Girls of Salem- Accusers or Victims?",
+            "Salem's undocumented Heroines",
+            "Legacy of Salem\u2019s Women",
+            "Contemporary Women in Salem"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66d9cb6cd8c51d0a972c46ca",
+        "title": "Salem's Haunted Locations You Can't Miss",
+        "slug": "salems-haunted-locations",
+        "excerpt": "Brace yourself for the chilling tales behind Salem\u2019s most haunted locations.",
+        "outline": [
+            "Gallows Hill",
+            "Hawthorne Hotel",
+            "Howard Street Cemetery",
+            "The Joshua Ward House",
+            "Lyceum Hall"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66d9cb6cd8c51d0a972c46ce",
+        "title": "Unique Shopping Experiences in Salem",
+        "slug": "unique-shopping-salem",
+        "excerpt": "Navigate your way through Salem\u2019s unique boutiques and antique shops.",
+        "outline": [
+            "The Witch City Mall",
+            "Salem Witch Store and Coffee shop",
+            "Hex: Old World Witchery",
+            "Crow Haven Corner",
+            "HausWitch"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66d9cb6cd8c51d0a972c46d7",
+        "title": "Eco-Friendly Explorations in Salem",
+        "slug": "eco-friendly-explorations-salem",
+        "excerpt": "Experience Salem in an eco-friendly way, from outdoor adventures to sustainable dining.",
+        "outline": [
+            "Salem's Nature Parks and Reserves",
+            "Sustainable Shopping in Salem",
+            "Eco-Friendly Accommodations",
+            "Sustainable Dining in Salem",
+            "Public Transportation and Biking in Salem"
+        ],
+        "exists": false
+    }
+]

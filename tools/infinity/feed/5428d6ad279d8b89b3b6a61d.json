@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "66dcccb8d8c51d0a97fa3fc9",
+        "title": "Super Easy Celery Juice Recipes - A Beginners' Guide",
+        "slug": "easy-celery-juice-recipes",
+        "excerpt": "Ever wondered the best way to consume celery? We got your back! Start your journey to a healthier routine with these super easy and tasty celery juice recipes!",
+        "outline": [
+            "What is Celery Juice and Why You Should Drink It",
+            "Choosing the Right Celery for Your Juice",
+            "Top 5 Quick and Tasty Celery Juice Recipes",
+            "How to Easily Make Celery Juice without a Juicer",
+            "Making Celery Juice Taste Better: Tips and Tricks"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dcccb8d8c51d0a97fa3fcd",
+        "title": "Creative Celery Salads: Adding Crunch to Your Plates",
+        "slug": "creative-celery-salads",
+        "excerpt": "Step up your salad game with these fresh and innovative ways to add celery into your salad bowl. Perfect for appetizers or a green side dish!",
+        "outline": [
+            "Understanding the Nutritional Benefits of Celery in Salads",
+            "Top 5 Unique Celery Salad Recipes to Try",
+            "Incorporating Different Types of Celery into Your Salad",
+            "Food Pairing: What Goes Well with Celery Salads",
+            "Keeping Your Celery Salad Fresh: Storage and Preparation Tips"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dcccb8d8c51d0a97fa3fd2",
+        "title": "Celery as Pizza Topping: Worth a Try or Not?",
+        "slug": "celery-pizza-topping",
+        "excerpt": "Break away from your usual pizza toppings and try out celery for a change. It\u2019s crunchy, it\u2019s flavourful, and could be just the twist your pizza party needs!",
+        "outline": [
+            "Why Celery on Pizza?",
+            "Choosing the Right Celery for Your Pizza",
+            "Top 5 Unique Pizza Recipes with Celery",
+            "Pairing Celery Toppings with Other Flavors",
+            "Making Your Own Celery Pizza at Home: A Simple Guide"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dcccb8d8c51d0a97fa3fdb",
+        "title": "Revamp Your Soup Game with Celery",
+        "slug": "revamp-soup-celery",
+        "excerpt": "Adding celery to your soup is easiest way to boost up the flavor factor. Discover how celery can transform your soup game with these wonderful recipes.",
+        "outline": [
+            "The Benefits of Adding Celery in Soup",
+            "Selecting the Perfect Celery for Your Soup Recipe",
+            "Top 5 Comforting Celery Soup Recipes",
+            "Tips to Enhance the Flavor of Celery in Soup",
+            "Cook Your Own Celery Soup: A Beginner\u2019s Guide"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dcccb8d8c51d0a97fa3fe3",
+        "title": "Celery Snacks: Unusual and Delicious Creations",
+        "slug": "celery-snacks",
+        "excerpt": "Let's ditch the potato chips for a healthier snack alternative. Discover surprising and creative ways of turning celery into your next go-to munchie.",
+        "outline": [
+            "Why Choose Celery for Snacks",
+            "Top 5 Quick Celery Snack Recipes",
+            "Choosing and Storing Celery for Snacks",
+            "Pairing Celery Snacks with a Delicious Dip",
+            "Pro Tips for Making Celery Snacks Even Better"
+        ],
+        "exists": false
+    }
+]

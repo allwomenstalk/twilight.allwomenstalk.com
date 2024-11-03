@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "66dcc6f8d8c51d0a97e594df",
+        "title": "15 Delicious Finger Food Ideas for Your Next Party",
+        "slug": "delicious-finger-food-ideas",
+        "excerpt": "Explore these mouth-watering, bite-sized treats that everyone at your next party will love.",
+        "outline": [
+            "Why Finger Foods are a Winning Choice",
+            "Delicious Mini Sandwich Recipes",
+            "Creative and Savory Meatball Ideas",
+            "Cheese-Based Finger Foods",
+            "Sweet Finger Foods for Dessert Lovers"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dcc6f8d8c51d0a97e594e2",
+        "title": "Creating the Perfect Charcuterie Board: A Guide",
+        "slug": "perfect-charcuterie-board-guide",
+        "excerpt": "Learn how to create an attractive, appetizing charcuterie board for any occasion.",
+        "outline": [
+            "What is a Charcuterie Board?",
+            "Choosing the Right Meats",
+            "Selecting the Perfect Cheese Match",
+            "Adding Fruits and Nuts for Balance",
+            "Setting up your Charcuterie Board"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dcc6f8d8c51d0a97e594e8",
+        "title": "10 Creative Canap\u00e9 Ideas for Your Next Event",
+        "slug": "creative-canape-ideas",
+        "excerpt": "Discover creative and delicious canap\u00e9 options to add a touch of sophistication to your next event.",
+        "outline": [
+            "Understanding What Canap\u00e9s Are",
+            "Vegetarian Canap\u00e9 Ideas",
+            "Seafood Canap\u00e9 Choices",
+            "Canap\u00e9s with Meat and Poultry",
+            "Bonus: Vegan Canap\u00e9 Options"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dcc6f8d8c51d0a97e594ef",
+        "title": "Exploring World Cuisine: 12 International Appetizers",
+        "slug": "exploring-world-cuisine-appetizers",
+        "excerpt": "Take your taste buds on a global tour and explore appetizers from various cultures.",
+        "outline": [
+            "French Cuisine Appetizers",
+            "Tasty Greek Mezze",
+            "Italian Antipasto Delights",
+            "Middle Eastern Maza Selection",
+            "Discovering Asian Appetizer Choices"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dcc6f8d8c51d0a97e594f4",
+        "title": "18 Quick and Easy Appetizers for Your Last-Minute Party",
+        "slug": "quick-easy-appetizers-last-minute-party",
+        "excerpt": "Learn how to whip up impressive appetizers that come together in a snap for those last-minute gatherings.",
+        "outline": [
+            "Why Quick Appetizers Can Save Your Party",
+            "Quick Dips and Spreads",
+            "Easy Seafood Appetizer Ideas",
+            "Delectable Veggie Appetizers",
+            "Fast and Painless Meat Appetizers"
+        ],
+        "exists": false
+    }
+]

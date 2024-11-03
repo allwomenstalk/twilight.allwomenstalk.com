@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "66dc7a4ed8c51d0a97ce1748",
+        "title": "Gluten-Free Eating: Discovering Tasty Options Around The Globe",
+        "slug": "gluten-free-eating-global",
+        "excerpt": "Join us on a gourmet journey as we explore gluten-free culinary delights from all over the world.",
+        "outline": [
+            "Sampling the gluten-free variety of Asian cuisine",
+            "Discovering the richness of gluten-free African dishes",
+            "Tasting the delights of gluten-free gastronomy in Latin America",
+            "Exploring gluten-free Mediterranean food",
+            "An overview of gluten-free sweets from around the world"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dc7a4ed8c51d0a97ce174e",
+        "title": "Top 5 Gluten-Free Friendly Cities For Foodie Travelers",
+        "slug": "top-gluten-free-cities",
+        "excerpt": "A roundup of the world's best cities that offer a wealth of gluten-free options for the discerning traveler.",
+        "outline": [
+            "Vibrant gluten-free scene in Melbourne, Australia",
+            "Portland's Gluten-Free Culture",
+            "The wide array of gluten-free choices in Barcelona",
+            "Unearthing gluten-free gems in Rome",
+            "London and its bustling gluten-free marketplaces"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dc7a4ed8c51d0a97ce1751",
+        "title": "Thriving Gluten-Free: Navigating Restaurants While Traveling",
+        "slug": "Navigating-gluten-free-restaurants",
+        "excerpt": "An easy-to-follow guide for those traveling while maintaining a gluten-free diet, including helpful tips to eat out safely and enjoyably.",
+        "outline": [
+            "Understanding restaurant menus: Deciphering gluten-free",
+            "Asking the right questions for gluten-free dining",
+            "How to avoid cross-contamination in restaurants",
+            "Recognizing gluten-free friendly restaurant certifications",
+            "Apps and resources for finding gluten-free restaurants"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dc7a4ed8c51d0a97ce1755",
+        "title": "Gluten-Free Packable Snacks: Avoid Hunger On The Move",
+        "slug": "gluten-free-travel-snacks",
+        "excerpt": "A guide to portable, satisfying, gluten-free snacks to keep you energized while ensuring you stick to your diet on your travels.",
+        "outline": [
+            "Healthy fruit and nut combos",
+            "Travel-friendly gluten-free granola",
+            "Individually wrapped gluten-free protein bars",
+            "DIY gluten-free trail mix",
+            "Decadent gluten-free dark chocolate"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dc7a4ed8c51d0a97ce175a",
+        "title": "Gluten-Free Living: How to Plan Your Dream Vacation",
+        "slug": "Gluten-free-vacation-planning",
+        "excerpt": "Traveling with dietary restrictions need not be a hassle. This article provides tips on planning a fun and stress-free vacation for gluten-free individuals.",
+        "outline": [
+            "Choosing gluten-free friendly travel destinations",
+            "Packing your gluten-free essentials",
+            "Navigating airport food options",
+            "Finding gluten-free accommodations",
+            "Staying gluten-free during cultural immersion: local markets and food stalls"
+        ],
+        "exists": false
+    }
+]

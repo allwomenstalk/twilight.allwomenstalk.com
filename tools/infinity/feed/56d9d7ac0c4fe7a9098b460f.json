@@ -1,0 +1,99 @@
+[
+    {
+        "_id": "66f67a4280bd1ee71c0ae871",
+        "title": "10 Surprising Tips to Keep the Romance Alive",
+        "slug": "10-surprising-tips-to-keep-romance-alive",
+        "excerpt": "Discover unique ways to keep the spark alive and ensure your relationship continues to flourish.",
+        "outline": [
+            "Plan spontaneous date nights",
+            "Explore new hobbies together",
+            "Send thoughtful love notes",
+            "Create a 'no phones' rule during meals",
+            "Try couples' massages at home",
+            "Revisit your first date locations",
+            "Cook a special meal together",
+            "Write a joint bucket list",
+            "Organize a surprise weekend getaway",
+            "Practice active listening"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66f67a4280bd1ee71c0ae875",
+        "title": "7 Key Secrets to Deep Emotional Connection",
+        "slug": "7-key-secrets-to-deep-emotional-connection",
+        "excerpt": "Strengthen the emotional intimacy in your relationship with these essential tips and techniques.",
+        "outline": [
+            "Share daily highs and lows",
+            "Communicate openly and honestly",
+            "Practice empathy and understanding",
+            "Prioritize quality time together",
+            "Develop shared rituals and traditions",
+            "Seek couple's therapy when needed",
+            "Foster mutual respect and admiration"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66f67a4280bd1ee71c0ae883",
+        "title": "12 Fun and Flirty Games to Play with Your Partner",
+        "slug": "12-fun-flirty-games-to-play-with-your-partner",
+        "excerpt": "Add some playful excitement to your relationship with these entertaining games for couples.",
+        "outline": [
+            "Truth or dare: Couples edition",
+            "Sexy scavenger hunt",
+            "Guess the body part",
+            "Naughty Jenga",
+            "Strip poker",
+            "Kiss and tell",
+            "Love letter swap",
+            "Bedroom bingo",
+            "Intimate Q&A",
+            "Playful role-playing",
+            "Couple's board games",
+            "Fantasy fulfillment list"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66f67a4280bd1ee71c0ae88d",
+        "title": "8 Ways to Improve Your Relationship Through Better Communication",
+        "slug": "8-ways-improve-relationship-through-better-communication",
+        "excerpt": "Effective communication is the backbone of any healthy relationship. Learn how to enhance yours.",
+        "outline": [
+            "Practice active listening",
+            "Use 'I' statements",
+            "Avoid blame and criticism",
+            "Schedule regular check-ins",
+            "Express appreciation and gratitude",
+            "Learn to compromise",
+            "Set aside time for deep conversations",
+            "Communicate affection and love"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66f67a4280bd1ee71c0ae896",
+        "title": "15 Creative Date Ideas for Every Season",
+        "slug": "15-creative-date-ideas-for-every-season",
+        "excerpt": "Keep the romance alive with these seasonal date ideas that are sure to impress.",
+        "outline": [
+            "Spring picnic in the park",
+            "Summer beach day",
+            "Fall foliage hike",
+            "Winter ice skating",
+            "Visit a local farmer's market",
+            "Attend a seasonal festival",
+            "Take a cooking class together",
+            "Explore a new city",
+            "Go stargazing",
+            "Visit a botanical garden",
+            "Attend an outdoor concert",
+            "Have a photoshoot day",
+            "Plant a garden together",
+            "Go on a bike ride",
+            "Decorate for the holidays"
+        ],
+        "exists": false
+    }
+]

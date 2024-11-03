@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "66df672b9999dedc1948f54e",
+        "title": "Saucy Dreams: Top 5 Veal Sauce Recipes to Explore",
+        "slug": "top-veal-sauce-recipes",
+        "excerpt": "Unveil the secret to stunning veal dishes with these 5 must-try sauce recipes that take your veal to a new level of taste explosion.",
+        "outline": [
+            "Classic Veal Marsala Sauce Recipe",
+            "Creamy Veal Mushroom Sauce Recipe",
+            "Traditional Veal Piccata Lemon Sauce",
+            "Tasty Veal Wine Reduction Sauce",
+            "Delectable Veal Tomato Sauce Recipe"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66df672b9999dedc1948f552",
+        "title": "5 Best Veal Cuts and How to Cook Them Perfectly",
+        "slug": "best-veal-cuts-cooking-guide",
+        "excerpt": "Discover the top 5 cuts of veal and receive expert advice on how to perfectly cook each variety to preserve the soft and tender veal textures.",
+        "outline": [
+            "Best Way to Cook Veal Scallopini",
+            "How to Grill Veal Chops Perfectly",
+            "Secrets to Delicious Veal Sweetbreads",
+            "Tender Veal Roast Cooking Tips",
+            "Preparing Delectable Veal Cutlets"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66df672b9999dedc1948f557",
+        "title": "5 Veal Dishes That Pair Perfectly With Wine",
+        "slug": "veal-dishes-wine-pairings",
+        "excerpt": "Experience the art of food and wine pairing with these 5 veal dishes that come alive when served with the perfect vino.",
+        "outline": [
+            "Veal Marsala Paired With an Elegant Red",
+            "Veal Piccata and Zesty White Wine: A Match Made in Heaven",
+            "Veal Chop and Cabernet Sauvignon: A Classic Pairing",
+            "Veal Scaloppine and Light Ros\u00e9: Summer Delight",
+            "Rollatini alla Veal and Sweet White Wine"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66df672b9999dedc1948f55e",
+        "title": "5 Healthy Veal Recipes That Don't Skimp on Flavor",
+        "slug": "healthy-veal-recipes",
+        "excerpt": "Indulge guilt-free with these 5 healthy veal recipes that pack all the flavor without the extra calories.",
+        "outline": [
+            "Healthy Veal Marsala Recipe",
+            "Lean Veal Cutlet Recipe",
+            "Veal Skewer Recipe: A Low-Carb Delight",
+            "Easy and Healthy Veal Stew",
+            "Grilled Veal Chops With Fresh Herbs"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66df672b9999dedc1948f564",
+        "title": "5 Temptingly Tender Veal Stew Recipes",
+        "slug": "tender-veal-stew-recipes",
+        "excerpt": "Warm up your winter nights with these 5 hearty and tender veal stew recipes that are sure to become your next comfort food favorites.",
+        "outline": [
+            "Classic Veal Stew Recipe",
+            "Slow Cooked Veal Stew With Red Wine",
+            "Comforting Creamy Veal Stew",
+            "Rustic Veal Stew With Root Vegetables",
+            "Veal Stew with a Twist: Exotic Spices"
+        ],
+        "exists": true
+    }
+]

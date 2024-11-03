@@ -1,0 +1,63 @@
+[
+    {
+        "_id": "66dccc81d8c51d0a97f96289",
+        "title": "The Ultimate Guide to Natural Sweeteners: From Stevia to Monk Fruit",
+        "slug": "ultimate-guide-natural-sweeteners-stevia-monk-fruit",
+        "excerpt": "Explore the world of natural sweeteners and find out which ones not only taste the best, but are also the most beneficial for your health.",
+        "outline": [
+            "The Origin of Natural Sweeteners",
+            "Healthiest Natural Sweeteners",
+            "Comparing Stevia and Monk Fruit",
+            "Top Brands for Natural Sweeteners"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dccc81d8c51d0a97f9628c",
+        "title": "Healthy Baking Substitutions: Using Stevia Instead of Sugar",
+        "slug": "healthy-baking-substitutions-using-stevia",
+        "excerpt": "Discover the joys of baking with Stevia, a natural sweetener that can help cut calories without sacrificing taste.",
+        "outline": [
+            "The Health Benefits of Using Stevia in Baking",
+            "How to Substitute Stevia for Sugar",
+            "Baking Recipes That Use Stevia"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dccc81d8c51d0a97f96291",
+        "title": "10 Tasty Drinks That Use Stevia for Sweetness",
+        "slug": "tasty-drinks-use-stevia-sweetness",
+        "excerpt": "Looking for ways to cut back on sugar? Try these tasty drink recipes that use Stevia as a natural sweetener.",
+        "outline": [
+            "The Pros and Cons of Using Stevia in Drinks",
+            "How to Sweeten Drinks with Stevia",
+            "Delicious Stevia-Sweetened Drink Recipes"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dccc81d8c51d0a97f96298",
+        "title": "Understanding the Health Benefits and Risks of Stevia",
+        "slug": "understanding-health-benefits-risks-stevia",
+        "excerpt": "While Stevia is a popular sweetener, it's important to understand the potential health benefits and risks associated with it.",
+        "outline": [
+            "What Is Stevia and How Is It Made?",
+            "The Potential Health Benefits of Stevia",
+            "The Potential Risks of Stevia"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dccc81d8c51d0a97f9629a",
+        "title": "Delicious Dessert Recipes Using Stevia",
+        "slug": "delicious-dessert-recipes-using-stevia",
+        "excerpt": "Who says desserts can't be healthy? These recipes prove that you can still indulge in your sweet tooth while using Stevia as a natural sweetener.",
+        "outline": [
+            "Why Use Stevia in Desserts",
+            "Choosing the Right Brand of Stevia for Baking",
+            "Yummy Stevia-Sweetened Dessert Recipes"
+        ],
+        "exists": false
+    }
+]
