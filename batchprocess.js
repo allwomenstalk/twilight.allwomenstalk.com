@@ -22,10 +22,12 @@ function runCommandsForHost(domain) {
         // execSync(`node batchdeploy.js ${domain}`, { stdio: 'inherit' });
         // if not s3host then run the git commands
         if (!s3hosts.includes(domain)) {
+            console.log(`Running git commands for: ${domain}`);
             execSync(`sh batchcommitforce.sh ${domain}`, { stdio: 'inherit' });
             execSync(`rm -rf _site/${domain}`, { stdio: 'inherit' });
         } else {
             // aws s3 cp _site/allwomenstalk.com s3://allwomenstalk.com --recursive
+            console.log(`Running aws s3 commands for: ${domain}`);
             execSync(`aws s3 cp _site/${domain} s3://${domain} --recursive`, { stdio: 'inherit' });
         }
         console.log(`Commands completed for: ${domain}`);
