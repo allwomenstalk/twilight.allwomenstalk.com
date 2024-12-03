@@ -1,137 +1,71 @@
 [
     {
-        "_id": "66dcc655d8c51d0a97e357c9",
-        "title": "Walnuts: The Ultimate Brain Food",
-        "slug": "walnuts-the-ultimate-brain-food",
-        "excerpt": "Understand why walnuts are known as brain food and learn about the various health benefits they offer.",
+        "_id": "66dffde8cf5229c457ef4e8e",
+        "title": "Affordable High-Protein Vegetarian Meals",
+        "slug": "affordable-high-protein-vegetarian-meals",
+        "excerpt": "Explore budget-friendly vegetarian dishes packed with protein.",
         "outline": [
-            "Why Walnuts are Good for the Brain",
-            "Walnuts and Heart Health",
-            "Aiding Weight Management with Walnuts",
-            "Easy Walnut Recipes",
-            "Beauty Benefits of Walnut Oil"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "66dffddecf5229c457ef2cd6",
-        "title": "Creative Pink Appetizers for Your Next Party",
-        "slug": "creative-pink-appetizers",
-        "excerpt": "Dazzle your guests with these fun and easy-to-make pink appetizers that are perfect for any gathering.",
-        "outline": [
-            "Pink Deviled Eggs",
-            "Beetroot Hummus Dip",
-            "Watermelon and Feta Skewers",
-            "Salmon Stuffed Cucumbers",
-            "Pink Sushi Rolls"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "66df67a19999dedc194acd22",
-        "title": "Sweet and Tangy Passion Fruit Desserts",
-        "slug": "tangy-passion-fruit-desserts",
-        "excerpt": "Bring a tropical twist to your dessert table with these delicious passion fruit recipe ideas. The sweet-tangy flavor will delight any dessert lover.",
-        "outline": [
-            "Passion Fruit Tarts",
-            "Tropical Passion Fruit Ice Cream",
-            "Delicious Passion Fruit Cheesecakes",
-            "Passion Fruit Panna Cotta",
-            "Exotic Passion Fruit Trifle"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "66dffdfdcf5229c457ef94a5",
-        "title": "10 Creative Appetizers to Impress Your Guests",
-        "slug": "creative-appetizers-impress-guests",
-        "excerpt": "Elevate your hosting game with these inventive and delicious appetizers.",
-        "outline": [
-            "Savory Mini Tarts",
-            "Stuffed Mushroom Caps",
-            "Caprese Skewers",
-            "Spicy Shrimp Cups",
-            "Smoked Salmon Blinis",
-            "Gourmet Cheese Board",
-            "Pesto Stuffed Tomatoes",
-            "Bacon Wrapped Dates",
-            "Avocado Egg Rolls",
-            "Crispy Zucchini Fries"
+            "Benefits of high-protein vegetarian diets",
+            "Top protein-packed vegetables and legumes",
+            "Quick and easy vegetarian recipes",
+            "Tips for grocery shopping on a budget",
+            "Meal prepping for the week"
         ],
         "exists": true
     },
     {
-        "_id": "66dcccb8d8c51d0a97fa3fcd",
-        "title": "Creative Celery Salads: Adding Crunch to Your Plates",
-        "slug": "creative-celery-salads",
-        "excerpt": "Step up your salad game with these fresh and innovative ways to add celery into your salad bowl. Perfect for appetizers or a green side dish!",
+        "_id": "66dccd42d8c51d0a97fc1e6c",
+        "title": "A Guide to Cooking Pasta Dishes as a Date Night Activity",
+        "slug": "pasta-dishes-date-night",
+        "excerpt": "Enjoy a romantic Italian style date night by cooking pasta together. Learn how to prepare basic sauces, cook the pasta to perfection, and dish up a meal to remember.",
         "outline": [
-            "Understanding the Nutritional Benefits of Celery in Salads",
-            "Top 5 Unique Celery Salad Recipes to Try",
-            "Incorporating Different Types of Celery into Your Salad",
-            "Food Pairing: What Goes Well with Celery Salads",
-            "Keeping Your Celery Salad Fresh: Storage and Preparation Tips"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "66dccc9ad8c51d0a97f9b6d0",
-        "title": "7 Low-Carb Toothpick Appetizers for Your Next Party",
-        "slug": "7-low-carb-toothpick-appetizers",
-        "excerpt": "Sticking to your diet should not be a challenge, even when at a party. Check out these 7 low-carb toothpick appetizer recipes for your next event.",
-        "outline": [
-            "Zucchini and Cherry Tomato Skewers",
-            "Prosciutto and Melon Bites",
-            "Sausage and Cheese Kabobs",
-            "Meatball Lettuce Wraps",
-            "Chicken and Avocado Rolls"
+            "Basic pasta recipes to cook together",
+            "Creating homemade sauces",
+            "Choosing the right pasta type",
+            "Cooking pasta to perfection",
+            "Serving your culinary masterpiece"
         ],
         "exists": true
     },
     {
-        "_id": "66dffdc7cf5229c457eee092",
-        "title": "10 Healthy Food Gift Ideas for the Health-Conscious",
-        "slug": "healthy-food-gift-ideas-health-conscious",
-        "excerpt": "Explore healthy food gift ideas that cater to health-conscious loved ones.",
+        "_id": "66dcc6b9d8c51d0a97e4be4c",
+        "title": "5 Delicious Ways to Incorporate Couscous into Your Salads",
+        "slug": "couscous-in-salads",
+        "excerpt": "Discover various ways in which you can incorporate couscous into your salads to give them a unique twist.",
         "outline": [
-            "Organic snack boxes",
-            "Fruit and nut baskets",
-            "Homemade granola",
-            "Herbal tea sets",
-            "Smoothie ingredient kits",
-            "Vegan baked goods",
-            "Gluten-free treats",
-            "Nut butter sampler",
-            "Low-sugar baked items",
-            "Plant-based protein bars"
+            "Decoding the Pearl Couscous Salad",
+            "Sweet and Savory: Fig Couscous Salad Recipe",
+            "Exotic Flavours: Moroccan-Inspired Couscous Salad",
+            "Vibrant Veggies: Couscous Salad with Fresh Veggies",
+            "Delicious and Nutritious: Quinoa and Couscous Salad"
         ],
-        "exists": false
+        "exists": true
     },
     {
-        "_id": "66dccc65d8c51d0a97f900dc",
-        "title": "Refreshing Middle Eastern Salads for Summer Evenings",
-        "slug": "refreshing-middle-eastern-salads",
-        "excerpt": "Make your summer evenings cool with these refreshing Middle Eastern salads. Secure your health and keep your taste buds enthralled with this light yet flavorful fare.",
+        "_id": "66dc7abdd8c51d0a97cfb696",
+        "title": "The Top 10 Most Popular Japanese Dishes and How to Make Them",
+        "slug": "popular-japanese-dishes",
+        "excerpt": "Discover iconic meals from Japan, their history, and how you can recreate them in the comfort of your own home.",
         "outline": [
-            "Fattoush: A Crispy Delight",
-            "Tabbouleh: The Green Goddess",
-            "Cucumber Yogurt Salad: The Chilled Wonder",
-            "Carrot Salad: A Tangy Surprise",
-            "Parsley Salad: The Herbal Magic"
+            "The Origin of Sushi and How to Prepare It",
+            "Ramen: Japan's Comfort Food",
+            "Bringing Japan's Street Food to Your Kitchen: Takoyaki",
+            "Unpacking Umami: A Look at Japanese Curry",
+            "A Guide to Homemade Tempura"
         ],
-        "exists": false
+        "exists": true
     },
     {
-        "_id": "66dcc788d8c51d0a97e79360",
-        "title": "Indulge in Sweet Treats: Delectable Desserts for Your Girls Night",
-        "slug": "delectable-desserts-for-girls-night",
-        "excerpt": "Finish your girls' night on a high note with these irresistible yet easy-to-make desserts.",
+        "_id": "66dcc71ad8c51d0a97e61546",
+        "title": "5 Cucumber-Based Drinks to Stay Hydrated",
+        "slug": "cucumber-based-hydrating-drinks",
+        "excerpt": "Feast your taste buds on these hydrating cucumber drinks. Whip up these easy-to-make beverages and stay refreshed whether it's been a long, hot summer day or you simply need an energy boost.",
         "outline": [
-            "Homemade Fudgy Brownies",
-            "Strawberry Cheesecake Bites",
-            "Easy Mini Pavlovas",
-            "Dark Chocolate Dipped Fruits",
-            "French Macarons for Beginners"
+            "Cucumber and Mint infused Water",
+            "Refreshing Cucumber Lemonade",
+            "Cucumber and Lime Mocktail",
+            "Cucumber Green Smoothie",
+            "Cucumber and Kiwi Juice"
         ],
         "exists": false
     }

@@ -1,106 +1,159 @@
 [
     {
-        "_id": "6727a5f85584cc59d36c20b6",
-        "title": "The Ultimate 3-Day Palm Springs Itinerary",
-        "slug": "ultimate-3-day-palm-springs-itinerary",
-        "excerpt": "Ready to plan your perfect three days relaxing and playing in Palm Springs? Here\u2019s what you\u2019ve got to know before you go!",
+        "_id": "6727a5f85584cc59d36c20e4",
+        "title": "The Ultimate Savannah Foodie Guide",
+        "slug": "ultimate-savannah-foodie-guide",
+        "excerpt": "From Southern food to speakeasy bars \u2014 this is a foodie's dream. Here are the best places to eat in Savannah, Georgia!",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "6727a5f85584cc59d36c1f5c",
-        "title": "How to Protect and Treat \"Blue Lagoon\" Hair",
-        "slug": "how-to-care-for-your-hair-at-the-blue-lagoon",
-        "excerpt": "While the silica and sulphur in the water of the Blue Lagoon are amazing for your skin, beware. Here's how to protect and treat Blue Lagoon hair!",
+        "_id": "6727a5f85584cc59d36c2093",
+        "title": "Top Things to Do in Banff & Lake Louise in the Winter",
+        "slug": "top-things-to-do-banff-lake-louise-winter",
+        "excerpt": "From the thrill of dog sledding to the indulgence of a stay at Fairmont Banff Springs, here are the top things to do in Banff & Lake Louise in the winter!",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "6727a5f85584cc59d36c1f94",
-        "title": "The Ultimate Father's Day Gift Guide",
-        "slug": "ultimate-fathers-day-gift-guide",
-        "excerpt": "From making beer at home to the perfect items for an adventurer to fun things any father is sure to love, here's my ultimate Father's Day gift guide!",
+        "_id": "6727a5f85584cc59d36c1ffb",
+        "title": "The Best Places to Eat in Cape Town",
+        "slug": "best-places-to-eat-cape-town",
+        "excerpt": "Feeling hungry in the Mother City? Whether you're in the mood for breakfast, lunch or dinner - here's my guide to finding the best food in Cape Town!",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "6727a5f85584cc59d36c20a1",
-        "title": "The Coolest Airbnbs in the Pacific Northwest",
-        "slug": "coolest-airbnbs-in-the-pacific-northwest",
-        "excerpt": "Find your next cozy getaway! From Oregon to Washington, here are some of the coolest (and unique) Airbnbs in the Pacific Northwest!",
+        "_id": "66d8121b66437136e9659df0",
+        "title": "7 Road Trip Games for Couples: Make the Journey Fun Together",
+        "slug": "road-trip-games-couples-fun-journey",
+        "excerpt": "Add some fun and bonding to your road trip with these games for couples.",
+        "outline": [
+            "Introduction to couple road trip games",
+            "Game #1: The Relationship Quiz",
+            "Game #2: Guess My Favorite",
+            "Game #3: The Bucket List Game",
+            "Game #4: Who Knows Me Best?",
+            "Game #5: Fantasy Vacation Planning",
+            "Game #6: Dream House Game",
+            "Game #7: The Compliment Game"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66d6d50966437136e9659de4",
+        "title": "How to Plan a Rome Trip Focused on Architectural Exploration",
+        "slug": "plan-rome-trip-architectural-exploration",
+        "excerpt": "A comprehensive guide on how to plan a trip to Rome focused entirely on architectural exploration.",
+        "outline": [
+            "Introduction to trip planning for architecture enthusiasts",
+            "Step-by-step guide to planning your itinerary",
+            "Booking tips for accommodations and tours",
+            "Travel hacks for a smooth and enjoyable trip"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "6727a5f85584cc59d36c1fb9",
+        "title": "5-Day Egypt Itinerary for Cairo and the Pyramids",
+        "slug": "5-day-egypt-itinerary-for-cairo-and-the-pyramids",
+        "excerpt": "Want to see the pyramids at Giza, explore Cairo, and make a day trip to Alexandria? Here's my 5-day Egypt itinerary for Cairo and the pyramids!",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "6727a5f85584cc59d36c206c",
-        "title": "A Guide to Litchfield National Park",
-        "slug": "a-guide-to-litchfield-national-park",
-        "excerpt": "Litchfield National Park is the perfect weekend getaway from Darwin. It's home to stunning waterfalls, crystal clear pools and picturesque camping grounds.",
+        "_id": "6727a5f85584cc59d36c1f5e",
+        "title": "The Ultimate Guide to Moving to Morocco",
+        "slug": "the-ultimate-guide-to-moving-to-morocco",
+        "excerpt": "So you\u2019re moving to Morocco--congrats! There are few countries to rival Morocco\u2019s rich diversity of culture, language, music, and architecture.",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "6727a5f85584cc59d36c1fcb",
-        "title": "Itinerary for Two Weeks in Morocco",
-        "slug": "itinerary-two-weeks-morocco",
-        "excerpt": "Morocco is a truly incredible country and there so much to see and do. Here is a compiled itinerary for two weeks in Morocco!",
+        "_id": "6727a5f85584cc59d36c2143",
+        "title": "How to Travel Germany on a Budget",
+        "slug": "how-to-travel-germany-on-a-budget",
+        "excerpt": "Traveling in Europe is not always the cheapest trip, so here are my tips to travel Germany on a budget and make the most of your experience!",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "6727a5f85584cc59d36c1fe2",
-        "title": "The Ultimate Namibia Road Trip Itinerary",
-        "slug": "the-ultimate-namibia-road-trip-itinerary",
-        "excerpt": "Namibia is a massive country with so much to see and do. Here are three of my top itineraries for Namibia to help you plan an amazing road trip!",
+        "_id": "6727a5f85584cc59d36c1fe9",
+        "title": "The Best Time to Travel to the Seychelles\u00a0",
+        "slug": "the-best-time-to-travel-to-the-seychelles",
+        "excerpt": "There's no bad time to travel to the Seychelles, but there are a few things you want to keep in mind when planning your vacation to this tropical paradise.",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "6727a5f85584cc59d36c20cf",
-        "title": "The Ultimate Guide to San Francisco in a Weekend",
-        "slug": "the-ultimate-guide-to-san-francisco-in-a-weekend",
-        "excerpt": "San Francisco is a city of high tech and startups, diverse restaurants and fun little neighborhoods. Don't miss my guide to San Francisco in a weekend!",
+        "_id": "6727a5f85584cc59d36c1fc0",
+        "title": "Bucket List Experiences in Kenya",
+        "slug": "bucket-list-experiences-in-kenya",
+        "excerpt": "Kenya is the ultimate safari definition and one of my new favorite corners of the world. Here are my bucket list travel experiences in Kenya!",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "6727a5f85584cc59d36c20ab",
-        "title": "Top Stops Along the Pacific Coast Highway",
-        "slug": "top-stops-along-the-pacific-coast-highway",
-        "excerpt": "Ready for the ultimate California road trip? Get a convertible, pack your bikini and prepare for the adventure of a lifetime down the Pacific Coast Highway!",
+        "_id": "6727a5f85584cc59d36c2030",
+        "title": "Jasmine Valley Jungle Eco-Resort in Kep, Cambodia",
+        "slug": "jasmine-valley-eco-resort-kep-cambodia",
+        "excerpt": "Jasmine Valley Eco-Resort features solar powered and sustainable accommodation in the jungle of Kep, Cambodia.",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "6727a5f85584cc59d36c207e",
-        "title": "20 Photos to Inspire You to Travel to Mo'orea",
-        "slug": "20-photos-to-inspire-you-to-travel-to-moorea",
-        "excerpt": "An incredible place for a girls' getaway, Mo'orea in French Polynesia is a grand island adventure. Here are 20 photos to inspire you to visit!",
+        "_id": "6727a5f85584cc59d36c1fd5",
+        "title": "The Ultimate Guide to Traveling by Train in Morocco",
+        "slug": "the-ultimate-guide-to-traveling-by-train-in-morocco",
+        "excerpt": "Traveling by train in Morocco is fast, cheap, and a great way to see some of the incredible landscape between cities. Here are my tips for getting around!",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "6727a5f85584cc59d36c2005",
-        "title": "Renting a Luxury Villa in Cape Town with Blue Views",
-        "slug": "renting-a-luxury-villa-in-cape-town-with-blue-views",
-        "excerpt": "Luxury is not only worth it, but it's also affordable in Cape Town. Here\u2019s what you need to know before renting a luxury villa in Cape Town with Blue Views.",
+        "_id": "6727a5f85584cc59d36c203b",
+        "title": "10 Local Foods to Try in Japan",
+        "slug": "10-local-foods-to-try-in-japan",
+        "excerpt": "Whether you\u2019re visiting Japan or want to try authentic Japanese foods in your hometown, consider one of these 10 local dishes!",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "6727a5f85584cc59d36c2014",
-        "title": "Photo Tips from my South Africa Photography Tour with Fujifilm",
-        "slug": "photo-tips-from-my-south-africa-photography-tour",
-        "excerpt": "Here are some photography tips from TBA Escapes November South Africa Photography Tour with FUJIFILM USA!",
+        "_id": "66da08c9d8c51d0a9710b199",
+        "title": "Pacific Shores: West Coast Shelling Destinations",
+        "slug": "pacific-shores-west-coast-shelling-destinations",
+        "excerpt": "Venture beyond the typical and experience shell collecting in the unique beaches of the West Coast. From California to Washington, these shores are brimming with spectacular finds.",
+        "outline": [
+            "West Coast beaches: What makes them unique",
+            "Common shell species in the West Coast",
+            "Top West Coast destinations for shell collectors",
+            "Best season for shell hunting on West Coast",
+            "West Coast shelling: Do's and Don'ts"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "6727a5f85584cc59d36c2114",
+        "title": "The Best Time to Travel to Austria",
+        "slug": "best-time-to-travel-to-austria",
+        "excerpt": "Whether you're wanting to explore the Christmas markets in Vienna or Salzburg or experience the countryside, here are the best times to travel to Austria!",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "6727a5f85584cc59d36c213d",
-        "title": "20 Photos to Inspire You to Visit Provence",
-        "slug": "20-photos-to-inspire-you-to-visit-provence",
-        "excerpt": "If you want a French countryside travel experience, you need to visit Provence\u2014the region has vineyards, lavender fields, hill-top villages, and more!",
-        "outline": null,
+        "_id": "66d8121b66437136e9659df4",
+        "title": "7 Car Games for Long Drives in Scenic Destinations",
+        "slug": "car-games-long-drives-scenic-destinations",
+        "excerpt": "Make the most of scenic drives with these car games that focus on the beauty around you.",
+        "outline": [
+            "Introduction to scenic destination car games",
+            "Game #1: Spot the Landmark",
+            "Game #2: The Nature Game",
+            "Game #3: Count the Mountains",
+            "Game #4: Scenic Storytelling",
+            "Game #5: Where Are We Going? (landmark guessing)",
+            "Game #6: Create a Scenic Playlist",
+            "Game #7: Postcard Creation Game (verbal)"
+        ],
         "exists": false
     },
     {
@@ -109,137 +162,65 @@
         "slug": "how-to-spend-24-hours-in-ghent-belgium",
         "excerpt": "Everywhere you turn in this town it looks like it was ripped from the pages of a story book. Here\u2019s how to spend 24 hours in Ghent, Belgium!",
         "outline": null,
-        "exists": false
+        "exists": true
     },
     {
-        "_id": "6727a5f85584cc59d36c2140",
-        "title": "Tips for Visiting Roussillon",
-        "slug": "tips-for-visiting-roussillon",
-        "excerpt": "Roussillon is a picturesque hillside French village that's home to charming cafes, markets, and galleries. Here are my tips for visiting Roussillon!",
+        "_id": "6727a5f85584cc59d36c209d",
+        "title": "The Coolest Airbnbs in the United States",
+        "slug": "coolest-airbnbs-in-the-united-states",
+        "excerpt": "Renting an Airbnb is one of my favorite ways to see the country. I'm bringing you the coolest Airbnbs to stay at in the United States!",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "66d6d50966437136e9659dd4",
-        "title": "Rome for Architecture Enthusiasts: A Travel Itinerary",
-        "slug": "rome-architecture-enthusiasts-itinerary",
-        "excerpt": "A detailed travel itinerary for architecture enthusiasts visiting Rome.",
+        "_id": "6727a5f85584cc59d36c207c",
+        "title": "Tips for Renting a Classic Car in Havana",
+        "slug": "tips-for-renting-a-classic-car-in-havana",
+        "excerpt": "Ready to step back in time and soak in the incredible sights and sounds of this colorful Caribbean island? Here are a few essential tips for renting a classic car in Havana.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c20c2",
+        "title": "The Coolest Airbnbs in Los Angeles",
+        "slug": "coolest-airbnbs-in-los-angeles",
+        "excerpt": "From modern apartments to houses that capture the Old Hollywood charm, here are the coolest Airbnbs to stay at in Los Angeles!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c1fa2",
+        "title": "How to Budget for a Destination Wedding",
+        "slug": "how-to-budget-for-a-destination-wedding",
+        "excerpt": "Recently engaged or trying to figure out how to make a destination wedding possible? I\u2019m sharing my tips on how to budget for the big day!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "66d6d50966437136e9659dcd",
+        "title": "Architectural Walking Tours: Discover Rome's History on Foot",
+        "slug": "architectural-walking-tours-rome",
+        "excerpt": "Experience Rome's rich history through guided walking tours focusing on its architecture.",
         "outline": [
-            "Introduction to Rome for architecture lovers",
-            "Day-by-day itinerary for exploring architectural sites",
-            "Must-see landmarks and hidden gems",
-            "Tips for maximizing the experience"
+            "Introduction to Rome\u2019s walking tours",
+            "Top architectural walking routes",
+            "Detailed guide for each route",
+            "Insider tips for enjoying the tour"
         ],
         "exists": false
     },
     {
-        "_id": "6727a5f85584cc59d36c1fe0",
-        "title": "Top Things To Do in Mozambique",
-        "slug": "top-things-to-do-in-mozambique",
-        "excerpt": "From old ruins to white sand beaches to incredible scuba diving and more, here are the top things to see and do in Mozambique!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c2049",
-        "title": "The Ultimate Guide to Island Hopping in Thailand",
-        "slug": "the-ultimate-guide-to-island-hopping-in-thailand",
-        "excerpt": "Thailand is rather inexpensive, and you will find that island hopping is a great way to see it all. Here's my ultimate guide to island hopping in Thailand!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c20a6",
-        "title": "The Ultimate Weekend in Alaska Road Trip Itinerary",
-        "slug": "ultimate-weekend-alaska-road-trip-itinerary",
-        "excerpt": "Want to explore some of the highlights of Alaska but don't have a ton of time? Here's the ultimate weekend in Alaska road trip itinerary!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c208a",
-        "title": "20 Photos to Inspire You to Visit Bogot\u00e1",
-        "slug": "20-photos-to-inspire-you-to-visit-bogota",
-        "excerpt": "The city is full of life, culture, and brimming with people from all over the world\u2014 here's why you need to visit Bogot\u00e1!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c1f34",
-        "title": "10 Amazing Islands You Need to Visit Now",
-        "slug": "10-amazing-islands-you-need-to-visit-now",
-        "excerpt": "As a beach lover, I\u2019m always ready for an island adventure. Be sure to add these ten amazing islands your travel bucket list!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c1f3f",
-        "title": "Mykonos Beach and Party Guide",
-        "slug": "mykonos-greece-beach-and-party-guide",
-        "excerpt": "For first-time visitors to the Greek island, this guide will help you find the best nightlife, parties, and beach clubs on Mykonos!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c2003",
-        "title": "Staying at MannaBay Boutique Guest House in Cape Town",
-        "slug": "staying-at-mannabay-in-cape-town",
-        "excerpt": "During my time in Cape Town, I checked into MannaBay Boutique Hotel for a luxurious stay. It is one of the best boutique properties I've stayed at.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c2122",
-        "title": "5 Romantic Places for Couples in the Czech Republic",
-        "slug": "5-romantic-places-for-couples-in-the-czech-republic",
-        "excerpt": "Our favorite memories from our summer Europe trip are all the romantic places in the Czech Republic- Prague, Pilsen and more!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c1fd0",
-        "title": "Essential Tips for Your First Trip to Morocco",
-        "slug": "essential-tips-morocco",
-        "excerpt": "From the vibrant red Atlas Mountains to the explosion of colors in the endless markets around the ancient medinas, Morocco has a unique beauty all its own.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c20a7",
-        "title": "10 Places to Visit in Arizona (That Aren\u2019t the Grand Canyon)",
-        "slug": "10-places-to-visit-in-arizona-that-arent-the-grand-canyon",
-        "excerpt": "From underrated towns to hidden natural wonders, here are the top ten places to visit in Arizona (that aren\u2019t the Grand Canyon).",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c2018",
-        "title": "The Ultimate Up The Creek Festival Survival Guide",
-        "slug": "ultimate-up-the-creek-festival-survival-guide",
-        "excerpt": "Up The Creek is one of Cape Town's best boutique music festivals. Here's everything you need to know to survive your first Up The Creek Festival!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c1f37",
-        "title": "The World Cup for Kiteboarding",
-        "slug": "world-cup-for-kiteboarding",
-        "excerpt": "While visiting the gorgeous island of Fuerteventura in the Canary Islands I was lucky enough to go to the 2012 World Cup for Kiteboarding and Windsurfing.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6724981f1efd909655bcd7ff",
-        "title": "Perfecting your travel preparation for an adventure with a Pisces man",
-        "slug": "pisces-man-travel-preparation",
-        "excerpt": "Preparing for a journey with your Pisces partner? Here are some tips on how you can ensure a seamless and romantic getaway.",
+        "_id": "66daafd2d8c51d0a97641eb3",
+        "title": "US Fishing Villages: A Journey into the Past",
+        "slug": "fishing-villages-past-journey",
+        "excerpt": "Stepping into these fishing villages is like a step back in time. Each village possesses a unique history that captured the spirit of the fishing industry in the past centuries.",
         "outline": [
-            "Understanding his preferences: Setting the best Itinerary",
-            "Packing essentials: For a romantic night",
-            "Setting the mood: Music and more",
-            "Accommodating his interests: To keep him intrigued",
-            "Factoring in relaxation time: For moments of magic"
+            "History & heritage of US fishing industry",
+            "Oceanic libraries & museums in fishing villages",
+            "Touring historic lighthouses and maritime museums",
+            "Photographing rejuvenated fishers' cottages",
+            "Seafood culture: tasting history at local dining spots"
         ],
-        "exists": false
+        "exists": true
     }
 ]
