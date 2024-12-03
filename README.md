@@ -248,5 +248,3 @@ http://localhost:8085
 
 
 # cloudshell 
-
-git clone https://$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@github.com/allwomenstalk/love.allwomenstalk.com.git
