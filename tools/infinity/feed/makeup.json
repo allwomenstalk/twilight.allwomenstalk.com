@@ -1,0 +1,33 @@
+[
+    {
+        "_id": "67508f67a3f6ce9b16307ac6",
+        "title": "Top 9 Budget-Friendly Makeup Brands",
+        "slug": "top-9-budget-friendly-makeup-brands",
+        "excerpt": "Discover affordable makeup brands that don\u2019t compromise on quality.",
+        "outline": [
+            "The rise of budget-friendly beauty",
+            "Key factors to consider when choosing affordable makeup",
+            "Brand spotlight: Quality on a budget",
+            "Popular products under $10",
+            "Where to buy budget-friendly makeup",
+            "Tips for makeup longevity on a budget",
+            "Common misconceptions about cheap makeup",
+            "Personal reviews from everyday users",
+            "Comparison: High-end vs. budget brands"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67508fcba3f6ce9b16307adb",
+        "title": "Contour and Highlight Techniques for Olive Skin",
+        "slug": "contour-highlight-olive-skin",
+        "excerpt": "Learn contour and highlight tricks tailored for olive skin tones.",
+        "outline": [
+            "Selecting the right contour shade",
+            "Highlighting for a natural glow",
+            "How to create definition with contour",
+            "Blending techniques for seamless look"
+        ],
+        "exists": false
+    }
+]

@@ -1,0 +1,73 @@
+[
+    {
+        "_id": "66dcc5edd8c51d0a97e1e4e5",
+        "title": "Most Loved Amuse-Bouches Around the Globe",
+        "slug": "most-loved-amuse-bouches-worldwide",
+        "excerpt": "Take your taste buds on a world tour by exploring the most-loved Amuse-Bouches from different corners of the globe.",
+        "outline": [
+            "Amuse-Bouches in French Cuisine",
+            "Italian Inspired Amuse-Bouches",
+            "Exploring Asian Amuse-Bouches",
+            "Amuse-Bouches in American Restaurants",
+            "Unexpected Amuse-Bouches from Different Cultures"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dffdd2cf5229c457ef03f8",
+        "title": "8 Plant-Based Breakfast Ideas to Fuel Your Morning",
+        "slug": "plant-based-breakfast-ideas",
+        "excerpt": "Try these 8 plant-based breakfast ideas packed with nutrients to start your day full of energy.",
+        "outline": [
+            "Vegan Tofu Scramble",
+            "Plant-based Breakfast Burrito",
+            "Sweet Potato and Black Bean Hash",
+            "Vegan Pancakes with Berries",
+            "Almond Butter and Banana Toast",
+            "Chickpea Omelette",
+            "Smoothie Bowl with Granola",
+            "Avocado Toast with Radishes"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67507a57a3f6ce9b16307708",
+        "title": "Planning the Perfect Halloween Drink Menu",
+        "slug": "planning-perfect-halloween-drink-menu",
+        "excerpt": "Compile a thrilling collection of drinks for a memorable party.",
+        "outline": [
+            "Balancing fluency and variety",
+            "Seasonal flavors to include",
+            "Considerations for dietary restrictions"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dcc71ad8c51d0a97e6155b",
+        "title": "5 Luxurious Cucumber Beauty Treatments You Can Try at Home",
+        "slug": "cucumber-beauty-treatments-at-home",
+        "excerpt": "Reap the skin benefits of cucumbers with these luxurious DIY beauty treatments. From refreshing face masks to soothing cucumber eye treatments, find out how you can love your skin more with these cucumber-based beauty routines.",
+        "outline": [
+            "Cucumber Facial Mask for Hydration",
+            "Cucumber Eye Treatment for Dark Circles",
+            "Cucumber Toner for a Refreshed Skin",
+            "Cucumber-Aloe Vera Gel for Sunburns",
+            "Cucumber Soak for Tired Feet"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66df67019999dedc194862f3",
+        "title": "5 Flavor-Packed Twist to Classic Recipes Using Jalapenos",
+        "slug": "jalapeno-twist-classic-recipes",
+        "excerpt": "Explore 5 classic dishes that get an exciting upgrade with the addition of spicy jalapenos.",
+        "outline": [
+            "Spicy Jalapeno Mac and Cheese",
+            "Jalapeno Popper Grilled Cheese Sandwich",
+            "Bacon Wrapped Jalapeno Popper Chicken",
+            "Jalapeno Cheddar Cornbread",
+            "Creamy Jalapeno Popper Soup"
+        ],
+        "exists": false
+    }
+]

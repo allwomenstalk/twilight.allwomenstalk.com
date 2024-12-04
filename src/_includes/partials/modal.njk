@@ -1,14 +1,14 @@
 <div x-show="currentTitle" id="modal" class="relative z-10">
   <!-- Overlay -->
-  <div class="fixed inset-0 bg-gray-500/75"></div>
+  {# <div class="fixed inset-0 bg-gray-500/75"></div> #}
 
   <!-- Modal Content -->
-  <div @click.away="currentTitle = null" @keyup.escape.window="currentTitle = null" class="fixed top-[110px] inset-0 max-w-2xl mx-auto overflow-y-auto bg-gray-50 items-center justify-center ">
+  <div @click.away="currentTitle = null" @keyup.escape.window="currentTitle = null" class="fixed top-[110px] inset-0 overflow-y-auto bg-gray-50 items-center justify-center ">
     <!-- Close Button -->
     <button 
       @click="currentTitle = null"
       type="button" 
-      class="fixed m-2 rounded-full bg-black/50 text-gray-300 hover:text-white focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 z-50">
+      class="fixed right-0 m-4 lg:m-6 xl:m-10 rounded-full bg-black/50 text-gray-300 hover:text-white focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 z-50">
       <span class="sr-only">Close</span>
       <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -16,17 +16,17 @@
     </button>
 
     <!-- Figure Section -->
-    <figure class="overflow-hidden relative items-center justify-center">
+    <figure class="overflow-hidden relative items-center justify-center md:p-2 lg:p-4 xl:p-8">
         <!-- Image -->
         <img :src="currentTitle.image" x-transition alt=""
             :class="'filter hue-rotate-'+currentTitle.hue+' rotate-'+currentTitle.rotation"
-            class="aspect-[16/9] w-full bg-gray-100 object-cover">
+            class="aspect-[16/9] w-full bg-gray-100 object-cover md:rounded-md lg:rounded-lg">
 
         <!-- Title -->
         <a x-html="currentTitle.title"
             x-transition
-            class="absolute mx-8 block py-8 max-w-md text-2xl font-bold tracking-tight text-white sm:text-3xl drop-shadow-sm
-            bottom-0 md:bottom-auto md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:text-center md:max-w-xl">
+            class="absolute mx-8 block py-8 max-w-md text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight text-white sm:text-3xl drop-shadow-sm bottom-0 
+            sm:bottom-auto sm:top-1/2 sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 sm:text-center sm:max-w-xl">
         </a>
 
     </figure>
