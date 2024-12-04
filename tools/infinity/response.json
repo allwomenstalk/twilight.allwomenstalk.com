@@ -1,14 +1,14 @@
 {
-    "id": "chatcmpl-AOhl0LTtHPtJ4tZDeKhj3Cjwnr4NH",
+    "id": "chatcmpl-AalvyNww9ZHYl295OYpNwaaiVr1BA",
     "object": "chat.completion",
-    "created": 1730451438,
-    "model": "gpt-4-0613",
+    "created": 1733327430,
+    "model": "gpt-4o-2024-08-06",
     "choices": [
         {
             "index": 0,
             "message": {
                 "role": "assistant",
-                "content": "[\n {\n   \"title\": \"Exploring sensual destination hotspots for a romantic getaway with a Pisces man\",\n   \"slug\": \"pisces-man-romantic-getaway\",\n   \"excerpt\": \"Pisces men are known for their romantic soul. Discover top sensual destinations that can enhance your intimate experience with a Pisces partner.\",\n   \"outline\": [\n     \"Water destinations: Perfect for a Pisces man\", \n     \"Exploring historical sites: Catering to his imaginative nature\",\n     \"Eye-catching landscapes: Arousing his artistic tendencies\",\n     \"Cultural cities: Feeding his creative spirits\",\n     \"Exotic destinations: Appealing his adventurous side\"\n    ]\n },\n {\n   \"title\": \"Enhance your intimate relationship while travelling with a Pisces man\",\n   \"slug\": \"travel-intimacy-pisces-man\",\n   \"excerpt\": \"Learn about the various ways you can strengthen your romantic ties with a Pisces man while journeying together.\", \n   \"outline\": [\n     \"Sharing travel experiences: Building stronger bonds\",\n     \"Understanding his needs: Secure a successful vacation\",\n     \"Appreciating his surprises: Embracing spontaneity\",\n     \"Finding common grounds: Fostering harmony\",\n     \"Teasing his senses: Igniting the fire\"\n   ]\n },\n {\n   \"title\": \"Perfecting your travel preparation for an adventure with a Pisces man\",\n   \"slug\": \"pisces-man-travel-preparation\",\n   \"excerpt\": \"Preparing for a journey with your Pisces partner? Here are some tips on how you can ensure a seamless and romantic getaway.\",\n   \"outline\": [\n     \"Understanding his preferences: Setting the best Itinerary\",\n     \"Packing essentials: For a romantic night\",\n     \"Setting the mood: Music and more\",\n     \"Accommodating his interests: To keep him intrigued\",\n     \"Factoring in relaxation time: For moments of magic\"\n   ]\n },\n {\n   \"title\": \"Creating unforgettable memories while travelling with a Pisces man\",\n   \"slug\": \"unforgettable-travel-memories-pisces-man\",\n   \"excerpt\": \"See how you can create special moments that you can treasure forever when you are travelling with a Pisces man.\",\n   \"outline\": [\n     \"Capturing moments: Through his artistic eyes\",\n     \"Dining under the stars: Sharing intimate meals\",\n     \"Spontaneous exploration: Unleashing his adventurous side\",\n     \"Simple gestures of love: Strengthening your bond\",\n     \"Nightly walks: Healing and relaxing\"\n   ]\n },\n {\n   \"title\": \"Surviving travel mishaps with a Pisces man\",\n   \"slug\": \"travel-mishaps-pisces-man\",\n   \"excerpt\": \"When on the road, things may not always go as planned. Here's how to cope with unexpected mishaps when you're with a Pisces partner.\",\n   \"outline\": [\n     \"Keeping calm: Soothing his worries\",\n     \"Adapting quickly: Embracing changes\",\n     \"Finding beauty in chaos: Appreciating the unplanned\",\n     \"Nurturing positivity: Keeping the mood light\",\n     \"Preserving intimacy: Despite the situations\"\n   ]\n }\n]",
+                "content": "[\n  {\n    \"title\": \"10 No-Booze Halloween Punch Recipes for All Ages\",\n    \"slug\": \"no-booze-halloween-punch-recipes\",\n    \"excerpt\": \"Enjoy Halloween festivities with these delightful alcohol-free punches perfect for every guest.\",\n    \"outline\": [\n      \"Explore fun flavors for a crowd\",\n      \"Perfect for kids and designated drivers\",\n      \"How to infuse festive colors\"\n    ]\n  },\n  {\n    \"title\": \"How to Use Dry Ice for Eerie Effects\",\n    \"slug\": \"use-dry-ice-eerie-effects\",\n    \"excerpt\": \"Create a haunting atmosphere with dry ice in your party drinks.\",\n    \"outline\": [\n      \"Safety tips for using dry ice\",\n      \"Achieving the perfect smoky effect\",\n      \"Creative presentation ideas\"\n    ]\n  },\n  {\n    \"title\": \"10 Halloween-Themed Garnishes for Your Party Drinks\",\n    \"slug\": \"halloween-themed-garnishes-party-drinks\",\n    \"excerpt\": \"Elevate your drinks with these spooky and fun garnish ideas.\",\n    \"outline\": [\n      \"Edible eyeballs and gummy worms\",\n      \"Using fresh herbs for a spooky touch\",\n      \"The art of rimming glasses with sugar or spices\"\n    ]\n  },\n  {\n    \"title\": \"5 Budget-Friendly Halloween Drink Ideas\",\n    \"slug\": \"budget-friendly-halloween-drink-ideas\",\n    \"excerpt\": \"Save money with these easy and affordable drink ideas for your Halloween party.\",\n    \"outline\": [\n      \"Utilizing pantry staples\",\n      \"Seasonal fruits as a cost-effective ingredient\",\n      \"Making the most of home bar essentials\"\n    ]\n  },\n  {\n    \"title\": \"Kid-Friendly Halloween Party Beverages\",\n    \"slug\": \"kid-friendly-halloween-party-beverages\",\n    \"excerpt\": \"Create memorable drinks that are safe and fun for kids.\",\n    \"outline\": [\n      \"Using bright colors to entice kids\",\n      \"Interesting textures and add-ins\",\n      \"Incorporating kid-favorite flavors\"\n    ]\n  },\n  {\n    \"title\": \"Planning the Perfect Halloween Drink Menu\",\n    \"slug\": \"planning-perfect-halloween-drink-menu\",\n    \"excerpt\": \"Compile a thrilling collection of drinks for a memorable party.\",\n    \"outline\": [\n      \"Balancing fluency and variety\",\n      \"Seasonal flavors to include\",\n      \"Considerations for dietary restrictions\"\n    ]\n  },\n  {\n    \"title\": \"Spooky Mocktails: Halloween Drinks Without the Alcohol\",\n    \"slug\": \"spooky-mocktails-halloween-drinks\",\n    \"excerpt\": \"Enjoy flavor-packed, alcohol-free drinks that fit the eerie theme.\",\n    \"outline\": [\n      \"Suggestions for spooky-looking drinks\",\n      \"Ideas for enhancing flavor without alcohol\",\n      \"Creating complexity with layering\"\n    ]\n  },\n  {\n    \"title\": \"Saving Time: Pre-Made vs. Homemade Halloween Punch\",\n    \"slug\": \"premade-vs-homemade-halloween-punch\",\n    \"excerpt\": \"Decide between efficiency and a personal touch on your Halloween drink options.\",\n    \"outline\": [\n      \"Pros and cons of store-bought options\",\n      \"Quick homemade recipes to consider\",\n      \"Balancing prep time with party enjoyment\"\n    ]\n  },\n  {\n    \"title\": \"10 Classic Halloween Drinks that Never Go Out of Style\",\n    \"slug\": \"classic-halloween-drinks\",\n    \"excerpt\": \"Embrace timeless drinks that are always a hit during Halloween.\",\n    \"outline\": [\n      \"Overview of punch recipes with a long-standing appeal\",\n      \"Innovative ways to update traditional flavors\",\n      \"Fan-favorite ingredients that stand the test of time\"\n    ]\n  },\n  {\n    \"title\": \"Creative Uses for Leftover Halloween Punch\",\n    \"slug\": \"uses-for-leftover-halloween-punch\",\n    \"excerpt\": \"Turn leftover party drinks into exciting new creations.\",\n    \"outline\": [\n      \"Making popsicles or slushies\",\n      \"Incorporating into baked goods\",\n      \"How to safely store for later use\"\n    ]\n  }\n]",
                 "refusal": null
             },
             "logprobs": null,
@@ -16,15 +16,19 @@
         }
     ],
     "usage": {
-        "prompt_tokens": 158,
-        "completion_tokens": 662,
-        "total_tokens": 820,
+        "prompt_tokens": 172,
+        "completion_tokens": 853,
+        "total_tokens": 1025,
         "prompt_tokens_details": {
-            "cached_tokens": 0
+            "cached_tokens": 0,
+            "audio_tokens": 0
         },
         "completion_tokens_details": {
-            "reasoning_tokens": 0
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
         }
     },
-    "system_fingerprint": null
+    "system_fingerprint": "fp_831e067d82"
 }

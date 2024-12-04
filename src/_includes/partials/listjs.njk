@@ -21,11 +21,14 @@
             }">
 
         <img class="object-cover w-full h-full" 
-             :class="post.hue ? 'filter hue-rotate-' + post.hue : ''"
+             :class="post.hue ? post.hue : ''"
              :src="post.image" 
              :alt="post.title" 
              loading="lazy" 
              decoding="async">
+        <!-- 
+        saturate-200 -hue-rotate-[30deg] hue-rotate-[30deg] hue-rotate-[45deg] hue-rotate-[60deg] hue-rotate-[90deg] hue-rotate-[180deg] hue-rotate-[240deg] hue-rotate-[270deg] hue-rotate-[300deg]
+        -->
       </div>
       
       <div class="border border-gray-300 rounded-b p-4 flex flex-col justify-between leading-normal h-56 cardtitle bg-white dark:bg-gray-900"

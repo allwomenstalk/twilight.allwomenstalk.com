@@ -2,6 +2,7 @@
 import os
 from pymongo import MongoClient
 from dotenv import load_dotenv
+import sys
 
 import datetime
 
@@ -12,7 +13,13 @@ load_dotenv()
 MONGODB_URI_AWS = os.getenv("MONGODB_URI")  # Connection to 'aws' database
 MONGODB_URI_REALM = os.getenv("MONGODB_URI_REALM")  # Connection to 'gpt' database
 
-category = "love"
+# category = "love"
+category = sys.argv[1]
+if not category:
+    print("Please provide a category as an argument")
+    sys.exit(1)
+
+print(f"Generating content for category: {category}")
 
 # Connect to 'aws' database
 client_aws = MongoClient(MONGODB_URI_AWS)

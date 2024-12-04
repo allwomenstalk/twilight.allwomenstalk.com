@@ -76,4 +76,4 @@ phases:
 # Run via CLI on cloud
 aws codebuild start-build \
   --project-name AllwomenstalkGitHubRebuild \
-  --environment-variables-override name=HOST,value=travel.allwomenstalk.com,type=PLAINTEXT
+  --environment-variables-override name=HOST,value=food.allwomenstalk.com,type=PLAINTEXT
