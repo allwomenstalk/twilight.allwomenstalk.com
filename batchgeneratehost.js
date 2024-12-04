@@ -157,6 +157,11 @@ async function runEleventyBuild(host) {
     logStream.end();
 
     console.log('Eleventy build completed.');
+    // print out logs 
+    console.log('Logs:');
+    const logs = fs.readFileSync(logFile, 'utf8');
+    console.log(logs);
+
     console.log('Build Time (seconds):', buildDuration); // Output the build time
   } catch (error) {
     console.error('Error running Eleventy build:', error);

@@ -1,72 +1,113 @@
 [
     {
-        "_id": "66dffde8cf5229c457ef4e8e",
-        "title": "Affordable High-Protein Vegetarian Meals",
-        "slug": "affordable-high-protein-vegetarian-meals",
-        "excerpt": "Explore budget-friendly vegetarian dishes packed with protein.",
+        "_id": "66dcc597d8c51d0a97e09eba",
+        "title": "Creative Ways to Use Mini Cocotte in Everyday Cooking",
+        "slug": "cooking-with-mini-cocotte",
+        "excerpt": "Discover unexpected and delicious ways to use your mini cocotte in day-to-day meals.",
         "outline": [
-            "Benefits of high-protein vegetarian diets",
-            "Top protein-packed vegetables and legumes",
-            "Quick and easy vegetarian recipes",
-            "Tips for grocery shopping on a budget",
-            "Meal prepping for the week"
+            "Making Individual Breakfasts",
+            "Baking Mini Cocotte Bread",
+            "Whipping Up Warm Desserts",
+            "Cooking Vegan Mini Cocotte Dishes",
+            "Creating Delectable Mini Cocotte Dinners"
         ],
         "exists": true
     },
     {
-        "_id": "66dccd42d8c51d0a97fc1e6c",
-        "title": "A Guide to Cooking Pasta Dishes as a Date Night Activity",
-        "slug": "pasta-dishes-date-night",
-        "excerpt": "Enjoy a romantic Italian style date night by cooking pasta together. Learn how to prepare basic sauces, cook the pasta to perfection, and dish up a meal to remember.",
+        "_id": "66dcc615d8c51d0a97e274ad",
+        "title": "Chorizo Party: 5 Dishes to Serve for Your Friends",
+        "slug": "chorizo-party-dishes",
+        "excerpt": "Spice up your next gathering with delicious and aromatic chorizo dishes that your friends will love.",
         "outline": [
-            "Basic pasta recipes to cook together",
-            "Creating homemade sauces",
-            "Choosing the right pasta type",
-            "Cooking pasta to perfection",
-            "Serving your culinary masterpiece"
-        ],
-        "exists": true
-    },
-    {
-        "_id": "66dcc6b9d8c51d0a97e4be4c",
-        "title": "5 Delicious Ways to Incorporate Couscous into Your Salads",
-        "slug": "couscous-in-salads",
-        "excerpt": "Discover various ways in which you can incorporate couscous into your salads to give them a unique twist.",
-        "outline": [
-            "Decoding the Pearl Couscous Salad",
-            "Sweet and Savory: Fig Couscous Salad Recipe",
-            "Exotic Flavours: Moroccan-Inspired Couscous Salad",
-            "Vibrant Veggies: Couscous Salad with Fresh Veggies",
-            "Delicious and Nutritious: Quinoa and Couscous Salad"
-        ],
-        "exists": true
-    },
-    {
-        "_id": "66dc7abdd8c51d0a97cfb696",
-        "title": "The Top 10 Most Popular Japanese Dishes and How to Make Them",
-        "slug": "popular-japanese-dishes",
-        "excerpt": "Discover iconic meals from Japan, their history, and how you can recreate them in the comfort of your own home.",
-        "outline": [
-            "The Origin of Sushi and How to Prepare It",
-            "Ramen: Japan's Comfort Food",
-            "Bringing Japan's Street Food to Your Kitchen: Takoyaki",
-            "Unpacking Umami: A Look at Japanese Curry",
-            "A Guide to Homemade Tempura"
-        ],
-        "exists": true
-    },
-    {
-        "_id": "66dcc71ad8c51d0a97e61546",
-        "title": "5 Cucumber-Based Drinks to Stay Hydrated",
-        "slug": "cucumber-based-hydrating-drinks",
-        "excerpt": "Feast your taste buds on these hydrating cucumber drinks. Whip up these easy-to-make beverages and stay refreshed whether it's been a long, hot summer day or you simply need an energy boost.",
-        "outline": [
-            "Cucumber and Mint infused Water",
-            "Refreshing Cucumber Lemonade",
-            "Cucumber and Lime Mocktail",
-            "Cucumber Green Smoothie",
-            "Cucumber and Kiwi Juice"
+            "Setting Up a Chorizo Themed Party",
+            "Recipe 1: Mini Chorizo Pizzas",
+            "Recipe 2: Chorizo and Cheese Dip",
+            "Recipe 3: Chorizo and Potato Skewers",
+            "Recipe 4: Chorizo Taco Bites"
         ],
         "exists": false
+    },
+    {
+        "_id": "66df67019999dedc194862f6",
+        "title": "5 Easy Jalapeno Snacks for Your Next Girls' Night",
+        "slug": "easy-jalapeno-snacks-girls-night",
+        "excerpt": "Get ready to add spice to your next girls' night with these easy jalapeno snacks.",
+        "outline": [
+            "Jalapeno Popper Dip",
+            "Jalapeno Cheddar Mini Muffins",
+            "Bacon Jalapeno Deviled Eggs",
+            "Jalapeno Popper Stuffed Mushrooms",
+            "Jalapeno Lime Chicken Wings"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dffe27cf5229c457f01ae3",
+        "title": "Best Healthy State Fair Food Alternatives",
+        "slug": "healthy-state-fair-foods",
+        "excerpt": "Explore healthier food options you can find at state fairs without compromising on taste.",
+        "outline": [
+            "Fresh fruit kebabs",
+            "Grilled corn on the cob",
+            "Quinoa salad bowls",
+            "Veggie skewers",
+            "Smoothie bowls"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66df67fd9999dedc194c58d7",
+        "title": "5 Amazingly Easy Gourmet Dishes to Impress Your Man",
+        "slug": "easy-gourmet-dishes",
+        "excerpt": "From the app to the dessert, these gourmet recipes are surprisingly manageable, regardless of your expertise level.",
+        "outline": [
+            "Italian Spinach and Ricotta Stuffed Shells",
+            "Coq Au Vin: Simplifying a French Classic",
+            "Recreating Restaurant Style Steak at Home",
+            "Homemade Chocolate Lava Cake",
+            "Sourcing Ingredients for Gourmet Cooking"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66e9b5ebf39a97d88c1c93de",
+        "title": "Exotic African Food: A Culinary Excursion Across African Countries",
+        "slug": "exotic-african-food-culinary-excursion",
+        "excerpt": "Explore the complex flavors and tantalizing textures that define African cuisine. From tangy Moroccan tagines to hearty South African bobotie, prepare to redefine your culinary expectations.",
+        "outline": [
+            "Savoring Moroccan Tagines and Couscous",
+            "Relishing Ethiopian Injera and Doro Wat",
+            "Indulging in West African Jollof Rice",
+            "Enjoying South African Bobotie and Biltong",
+            "Tasting Tunisian Shakshuka and Brik"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66df67019999dedc194862f3",
+        "title": "5 Flavor-Packed Twist to Classic Recipes Using Jalapenos",
+        "slug": "jalapeno-twist-classic-recipes",
+        "excerpt": "Explore 5 classic dishes that get an exciting upgrade with the addition of spicy jalapenos.",
+        "outline": [
+            "Spicy Jalapeno Mac and Cheese",
+            "Jalapeno Popper Grilled Cheese Sandwich",
+            "Bacon Wrapped Jalapeno Popper Chicken",
+            "Jalapeno Cheddar Cornbread",
+            "Creamy Jalapeno Popper Soup"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dccc81d8c51d0a97f96289",
+        "title": "The Ultimate Guide to Natural Sweeteners: From Stevia to Monk Fruit",
+        "slug": "ultimate-guide-natural-sweeteners-stevia-monk-fruit",
+        "excerpt": "Explore the world of natural sweeteners and find out which ones not only taste the best, but are also the most beneficial for your health.",
+        "outline": [
+            "The Origin of Natural Sweeteners",
+            "Healthiest Natural Sweeteners",
+            "Comparing Stevia and Monk Fruit",
+            "Top Brands for Natural Sweeteners"
+        ],
+        "exists": true
     }
 ]
