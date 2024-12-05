@@ -1,6 +1,15 @@
 ---
 layout: layout/archive.njk
-permalink: /love.allwomenstalk.com/feed/index.html
+pagination:
+  data: categories
+  size: 1
+  alias: tag
+permalink: /{{tag._id}}.allwomenstalk.com/feed/index.html
+eleventyComputed:
+  title: Allwomenstalk {{ tag.name }}
+  description: "{{ tag.description }}"
+  url: "https://{{ tag._id }}.allwomenstalk.com/"
 ---
 {% set inifnitytype = 'feed' %}
+{% set post = {category:[tag._id]} %}
 {% include "partials/infinity.njk" %}

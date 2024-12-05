@@ -1,4 +1,4 @@
-<div x-data="infinity" id="infinity" class="sm:px-4 mx-auto mt-16 sm:rounded-t-xl">
+<div x-data="infinity" id="infinity" class="px-2 sm:px-4 mx-auto mt-16 sm:rounded-t-xl">
 
 
 
@@ -8,7 +8,7 @@
 <template x-for="(item, index) in list" :key="index">
     <div x-show="!item.hidden" :id="'article-'+index" class="my-8 sm:my-16">
 
-        <figure x-show="item.image" class="mx-4 my-2 overflow-hidden rounded-xl relative items-center justify-center">
+        <figure x-show="item.image" class=" my-2 overflow-hidden rounded-xl relative items-center justify-center">
             <!-- Image -->
             <!-- rotate-180 -->
             <!-- hue-rotate-90 hue-rotate-45 hue-rotate-30 hue-rotate-15 -->
@@ -27,7 +27,7 @@
         </figure>
 
         <!-- Article Content -->
-        <article x-data="{show:false}" :class="{'h-auto': !show, 'h-auto': show}" class="max-w-xl mx-auto m-10 relative overflow-hidden border-3 border-red-500">
+        <article x-data="{show:false}" :class="{'h-auto': !show, 'h-auto': show}" class="max-w-xl mx-2 md:mx-auto m-10 relative overflow-hidden border-3 border-red-500">
             <section x-show="!item.html" x-html="item.excerpt" :id="'excerpt-' + index"></section>
             <div x-show="item.outline && !item.html" class="overflow-hidden rounded-lg border border-gray-300 my-4">
                 <ul class="divide-y divide-gray-300">
@@ -43,9 +43,16 @@
                     </template>
                 </ul>
             </div>
-            <button x-show="!show && item.outline" @click="show=expand(item)" class="bg-black text-white shadow-md">Expand all</button>
+
+            <button x-show="!show" @click="show=expand(item)" class="my-4 bg-black text-white text-sm font-semibold px-4 py-2 rounded-lg shadow-md">
+                <span x-text="item.outline ? 'Expand all' : 'Show'"></span>
+                <svg x-show="item.exists" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="inline-block w-4 ml-2">
+                <path fill-rule="evenodd" d="M9.58 1.077a.75.75 0 0 1 .405.82L9.165 6h4.085a.75.75 0 0 1 .567 1.241l-6.5 7.5a.75.75 0 0 1-1.302-.638L6.835 10H2.75a.75.75 0 0 1-.567-1.241l6.5-7.5a.75.75 0 0 1 .897-.182Z" clip-rule="evenodd" />
+                </svg>
+
+            </button>
+            
             <section x-show="item.html" x-html="item.html" :id="'article-' + index" class="prose"></section>
-            <button x-show="!show && !item.outline" @click="show=expand(item)" class="my-4 bg-black text-white text-sm font-semibold px-4 py-2 rounded-lg shadow-md">Show</button>
         </article>
     </div>
 </template>
