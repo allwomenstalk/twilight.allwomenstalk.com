@@ -115,6 +115,7 @@
                 }
                 beacontrack({ type: 'infinity', action:1,  item: event })
                 this.getContent(item);
+                
             },
 
             async getContent(item) {
@@ -479,7 +480,7 @@
                             rotation: [0, 180][Math.floor(Math.random() * 2)],
                             image: bg.split('\n')[Math.floor(Math.random() * bg.split('\n').length)]
                         }))
-                        .sort(() => 0.5 - Math.random());
+                        {% if metadata.NODE_ENV == "production" %} .sort(() => 0.5 - Math.random()); {% endif %}
 
                     } catch (error) {
                         console.error('Error loading list:', error);

@@ -1,20 +1,46 @@
 [
     {
-        "_id": "6750786ca3f6ce9b163076a9",
-        "title": "Dynamics of On-Screen Love: Chemistry and Craft",
-        "slug": "dynamics-on-screen-love",
-        "excerpt": "Dive into the elements that create believable on-screen romance.",
+        "_id": "6750794aa3f6ce9b163076e0",
+        "title": "The Art of Acceptance in Friendships",
+        "slug": "art-of-acceptance-in-friendships",
+        "excerpt": "Fostering inclusive and accepting friendships regardless of sexual orientation.",
         "outline": [
-            "Understanding On-Screen Chemistry",
-            "Role of Script in Romantic Dynamics",
-            "Director's Influence on Chemistry",
-            "The Challenge of Casting Chemistry",
-            "Acting Techniques for Romance",
-            "How Real-Life Couples Affect Romantic Dynamics",
-            "Impact of Method Acting on Love Scenes",
-            "Challenges in Filming Romantic Dynamics",
-            "The Importance of Non-Verbal Cues",
-            "Audience Interpretation of On-Screen Love"
+            "Understanding diversity within friendships",
+            "Creating non-judgmental environments",
+            "Celebrating individuality and personal choices",
+            "The benefits of diversity in social circles"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6750794aa3f6ce9b163076e2",
+        "title": "How to Support Someone Exploring Their Sexuality",
+        "slug": "supporting-exploring-sexuality",
+        "excerpt": "Learn how to be a supportive friend to someone questioning their sexuality.",
+        "outline": [
+            "Offering a listening ear without judgment",
+            "The importance of confidentiality and respect",
+            "Validating their experiences and feelings",
+            "Encouraging exploration and self-discovery"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6750786ca3f6ce9b163076a7",
+        "title": "10 Romantic Movie Moments That Warm Your Heart",
+        "slug": "romantic-movie-moments",
+        "excerpt": "Discover scenes from movies that showcase love in its most genuine form.",
+        "outline": [
+            "Characteristics of Heartwarming Romance",
+            "Realism versus Fiction in Romantic Scenes",
+            "The Role of Dialogue in Romantic Moments",
+            "Unexpected Sources of Emotion",
+            "Underrated Romantic Movie Moments",
+            "The Craft of Creating Emotional Impact",
+            "Lessons Learned from Movie Romance",
+            "Directors Who Excel in Romantic Storytelling",
+            "Revisiting Nostalgic Romance Scenes",
+            "Modern Takes on Classic Romance"
         ],
         "exists": false
     }
