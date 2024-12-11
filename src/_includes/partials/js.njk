@@ -6,7 +6,7 @@
 {{!-- loadJs('https://account.allwomenstalk.com/js/profile.js'); --}} #}
 
 <script> 
-    var converter = new showdown.Converter();
+    var converter = null;
 
     function data() {
         return {
@@ -130,6 +130,18 @@
                     const response = await fetch(url);
                     const data = await response.json();
                     data.content = data.content.replace(/## Conclusion\n/, '');
+                    try {
+                        if (!window.showdown) {
+                            console.log('loading showdown');
+                            await loadJs('https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js');
+                        }
+                        if (!window.converter) {
+                            window.converter = new showdown.Converter();
+                        }
+                        
+                    } catch (error) {
+                        console.error(error);
+                    }
                     this.currentTitle.html = converter.makeHtml(data.content.replace(/#.*\n/, ''));
                     
                 } catch (error) {
@@ -186,7 +198,6 @@
                 this.search.query = '';
                 this.search.results = [];
                 this.search.categories = this.search.categories.sort(() => 0.5 - Math.random());
-
             },
             async getsearch() {
                 this.search.loading = true;
@@ -564,14 +575,15 @@
         }
     }
 
-    function loadJs(e,callback) {
-        var t = document.createElement("script");
-        t.src = e,
-        t.setAttribute("defer", "true"),
-        document.documentElement.firstChild.appendChild(t)
-        t.onload = function () {
-            if (callback) callback()
-        };
+    function loadJs(url) {
+        return new Promise((resolve, reject) => {
+            const script = document.createElement("script");
+            script.src = url;
+            script.setAttribute("defer", "true");
+            script.onload = () => resolve();
+            script.onerror = () => reject(new Error(`Failed to load script: ${url}`));
+            document.documentElement.firstChild.appendChild(script);
+        });
     }
 
     function addMultilineHtml(html, divId) {

@@ -51,7 +51,7 @@
         {% include "partials/subscribe.njk" %}
     </div>
 
-    <div x-show="currentTitle.html" class="overflow-hidden rounded-lg border border-gray-300 max-w-xl mx-8 md:mx-auto my-10">
+    <div x-show="currentTitle.html && feed.length>0" class="overflow-hidden rounded-lg border border-gray-300 max-w-xl mx-8 md:mx-auto my-10">
         <ul class="divide-y divide-gray-300">
             <template x-for="item in feed.sort(() => 0.5 - Math.random()).slice(0,10)">
                 <li @click="$refs.modal.scrollTo({ top: 0, behavior: 'smooth' }); select(item); " class="text-sm px-4 py-2 relative flex justify-between items-center cursor-pointer">
@@ -64,6 +64,15 @@
                 </li>
             </template>
         </ul>
+    </div>
+
+    {# close button #}
+    <div class="flex items-center justify-center">
+
+    <button @click="currentTitle = null" class="my-4 bg-gray-700 text-white text-sm font-semibold px-4 py-2 rounded-lg shadow-md">
+      <span>Close</span>
+    </button>
+
     </div>
 
   </div>

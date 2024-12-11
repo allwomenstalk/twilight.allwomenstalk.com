@@ -1,0 +1,142 @@
+[
+    {
+        "_id": "67597014a3f6ce9b164c480b",
+        "title": "How to Stay Motivated During Marathon Training",
+        "slug": "stay-motivated-marathon-training",
+        "excerpt": "Discover strategies to keep your spirits high throughout your training journey.",
+        "outline": [
+            "Setting realistic goals",
+            "Finding a running buddy or group",
+            "Tracking progress with a running diary",
+            "Celebrating small milestones",
+            "Staying inspired with running stories"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67597014a3f6ce9b164c4811",
+        "title": "The Importance of Sleep for Female Athletes",
+        "slug": "importance-of-sleep-female-athletes",
+        "excerpt": "Examine the critical role of sleep in performance and recovery for women.",
+        "outline": [
+            "Understanding sleep cycles",
+            "Effects of sleep on athletic performance",
+            "Developing a bedtime routine",
+            "Recognizing sleep disruptions",
+            "Tips for improving sleep quality"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67597014a3f6ce9b164c480e",
+        "title": "Common Injuries in Running and How to Prevent Them",
+        "slug": "prevent-running-injuries",
+        "excerpt": "Identify common running-related injuries and learn prevention techniques.",
+        "outline": [
+            "Runner's knee symptoms and prevention",
+            "Importance of proper running form",
+            "Stretching exercises for injury prevention",
+            "Choosing appropriate footwear",
+            "Building strength to avoid injuries"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67597014a3f6ce9b164c480c",
+        "title": "Essential Gear for Women Runners",
+        "slug": "essential-gear-women-runners",
+        "excerpt": "A comprehensive guide to essential running gear tailored for women.",
+        "outline": [
+            "Choosing the right running shoes",
+            "Benefits of moisture-wicking clothing",
+            "Finding the perfect sports bra",
+            "Useful accessories for runners",
+            "Cold weather gear options"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67597014a3f6ce9b164c4810",
+        "title": "Adapting Your Training for Different Race Distances",
+        "slug": "adapting-training-race-distances",
+        "excerpt": "Learn how to tailor your training regimen according to race length.",
+        "outline": [
+            "Fundamentals of training cycles",
+            "Adjusting pace and distance",
+            "Strength training for endurance",
+            "Cross-training benefits",
+            "Listening to your body's signals"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67597014a3f6ce9b164c4812",
+        "title": "Understanding The Female Athlete Triad",
+        "slug": "understanding-female-athlete-triad",
+        "excerpt": "Explore the components of the Female Athlete Triad and its impacts.",
+        "outline": [
+            "Components of the Triad",
+            "Challenges faced by female athletes",
+            "Effects on physical performance",
+            "Strategies for prevention",
+            "Seeking professional help"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67597014a3f6ce9b164c480a",
+        "title": "The Perfect Dinner Meal Plan for Female Runners",
+        "slug": "perfect-dinner-meal-plan-female-runners",
+        "excerpt": "Explore meal plans tailored for women that boost energy before race day.",
+        "outline": [
+            "Understanding macronutrient balance",
+            "Key vitamins and minerals for energy",
+            "Pre-race dinner ideas",
+            "Hydration tips and tricks",
+            "Timing your meal for optimal digestion"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67597014a3f6ce9b164c480f",
+        "title": "Mental Strategies for Race Day Success",
+        "slug": "mental-strategies-race-day-success",
+        "excerpt": "Harness the power of the mind to excel on race day.",
+        "outline": [
+            "Building pre-race confidence",
+            "Visualization techniques",
+            "Breathing exercises for calm",
+            "Managing race day nerves",
+            "Developing a strong mindset"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67597014a3f6ce9b164c4813",
+        "title": "Balancing Running with Daily Life",
+        "slug": "balancing-running-daily-life",
+        "excerpt": "Tips for integrating running into a busy lifestyle for women.",
+        "outline": [
+            "Time management for training",
+            "Blending family and fitness",
+            "Incorporating running on travels",
+            "Setting personal boundaries",
+            "Leveraging community support"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67597014a3f6ce9b164c480d",
+        "title": "Best Recovery Practices Post-Race",
+        "slug": "best-recovery-practices-post-race",
+        "excerpt": "Explore effective strategies for a speedy recovery after racing.",
+        "outline": [
+            "Importance of cool-down exercises",
+            "Best stretches for recovery",
+            "Role of nutrition in recovery",
+            "Hydration and rest tips",
+            "Utilizing foam rollers and massage"
+        ],
+        "exists": false
+    }
+]

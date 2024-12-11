@@ -1,0 +1,174 @@
+[
+    {
+        "_id": "675970baa3f6ce9b164c4863",
+        "title": "9 Financial Mistakes Couples Make After Marriage",
+        "slug": "financial-mistakes-couples-marriage",
+        "excerpt": "Learn about the financial pitfalls newlyweds should avoid.",
+        "outline": [
+            "Not discussing financial goals",
+            "Keeping individual accounts secret",
+            "Ignoring budgeting essentials",
+            "Overspending on lifestyle",
+            "Neglecting emergency funds",
+            "Underestimating debts",
+            "Skipping investment planning",
+            "Failing to plan for retirement",
+            "Avoiding difficult money conversations"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "675970baa3f6ce9b164c486b",
+        "title": "7 Surprising Benefits of Staying Single",
+        "slug": "benefits-staying-single",
+        "excerpt": "Explore why some choose the single life over marriage.",
+        "outline": [
+            "Stronger self-awareness",
+            "Financial independence",
+            "Career flexibility",
+            "Variety in social interactions",
+            "Freedom for travel and adventure",
+            "Fewer social pressures",
+            "Time to pursue personal interests"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "675970baa3f6ce9b164c4866",
+        "title": "7 Ways Marriage Changes Your Friendships",
+        "slug": "marriage-changes-friendships",
+        "excerpt": "Discover the impact of marriage on your social circles.",
+        "outline": [
+            "Shifting priorities",
+            "Balancing couple and friend time",
+            "Inclusive activities",
+            "Understanding friend dynamics",
+            "Communicating changes",
+            "Nurturing individual friendships",
+            "Keeping connections strong"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "675970baa3f6ce9b164c4869",
+        "title": "6 Ways Work-Life Balance Affects Marriage",
+        "slug": "work-life-balance-marriage-effects",
+        "excerpt": "Understand how balancing careers and love life impacts marital satisfaction.",
+        "outline": [
+            "Business stress spilling over",
+            "Prioritizing relationship time",
+            "Navigating different work schedules",
+            "Supporting career ambitions",
+            "Division of household duties",
+            "Regularly checking in on priorities"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "675970baa3f6ce9b164c4864",
+        "title": "8 Tips for Balancing Personal Time in Marriage",
+        "slug": "balancing-personal-time-marriage",
+        "excerpt": "Discover how to maintain individuality while being a couple.",
+        "outline": [
+            "Communicate your needs",
+            "Schedule personal time regularly",
+            "Encourage separate hobbies",
+            "Respect each other's space",
+            "Set boundaries for alone time",
+            "Support career pursuits",
+            "Cultivate mutual friends",
+            "Mindfully manage quality time together"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "675970baa3f6ce9b164c4867",
+        "title": "9 Strategies for a Happy Long-Distance Marriage",
+        "slug": "long-distance-marriage-strategies",
+        "excerpt": "Effective ways to maintain a healthy marriage despite the miles.",
+        "outline": [
+            "Setting realistic expectations",
+            "Maintaining regular communication",
+            "Planning visits regularly",
+            "Building trust over distance",
+            "Utilizing technology creatively",
+            "Involving family and friends",
+            "Creating shared experiences",
+            "Seeking support when needed",
+            "Staying positive during tough times"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "675970baa3f6ce9b164c4868",
+        "title": "10 Skills Every Couple Should Master Before Marriage",
+        "slug": "skills-before-marriage",
+        "excerpt": "Essential skills to develop for a successful marriage.",
+        "outline": [
+            "Effective communication",
+            "Conflict resolution",
+            "Financial management",
+            "Goal setting as a team",
+            "Time management",
+            "Emotional intelligence",
+            "Adaptability to change",
+            "Compromise and sacrifice",
+            "Techniques for stress reduction",
+            "Negotiation and persuasion"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "675970baa3f6ce9b164c486a",
+        "title": "Understanding the Legal Implications of Marriage",
+        "slug": "legal-implications-marriage",
+        "excerpt": "What you should know about the legal side of tying the knot.",
+        "outline": [
+            "Marriage licenses and certificates",
+            "Financial legalities in marriage",
+            "Name change processes",
+            "Inheritance rights",
+            "Legal impact on property",
+            "The role of prenuptial agreements",
+            "Parental responsibilities post-marriage",
+            "Rights in case of separation or divorce"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "675970baa3f6ce9b164c4865",
+        "title": "The Psychological Impact of Marriage on Women",
+        "slug": "psychological-impact-marriage-women",
+        "excerpt": "Understand the emotional changes women experience post-marriage.",
+        "outline": [
+            "Identity shifts",
+            "Adjustment to new roles",
+            "Managing expectations",
+            "Emotional dependency",
+            "Stress from in-law dynamics",
+            "Balancing career and home",
+            "Impact on self-esteem",
+            "Coping strategies for change"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "675970baa3f6ce9b164c4862",
+        "title": "10 Myths About Marriage That Aren't True",
+        "slug": "myths-about-marriage-debunked",
+        "excerpt": "Explore the common misconceptions about marriage and why they don't hold up.",
+        "outline": [
+            "Love sustains a marriage",
+            "Marriage is always fulfilling",
+            "Children always strengthen the bond",
+            "In-laws are always a problem",
+            "Shared interests mean more happiness",
+            "A good marriage is effortless",
+            "Couples therapy means failure",
+            "Marriage means lack of freedom",
+            "Happy couples never argue",
+            "Marriage solves relationship issues"
+        ],
+        "exists": false
+    }
+]

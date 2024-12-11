@@ -1,0 +1,142 @@
+[
+    {
+        "_id": "67596f8da3f6ce9b164c47c0",
+        "title": "Laugh-Inducing Romantic Comedies to Watch with Your Partner",
+        "slug": "romantic-comedies-to-watch",
+        "excerpt": "Add some humor to your night with these top-tier romantic comedies.",
+        "outline": [
+            "Classic rom-coms that stand the test of time",
+            "Newer rom-coms you should check out",
+            "Celebrity pairings that bring the laughs",
+            "Dynamic duos with great chemistry",
+            "Feel-good endings that leave you smiling"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596f8da3f6ce9b164c47c3",
+        "title": "Films with Steamy Scenes to Fuel the Fire",
+        "slug": "films-with-steamy-scenes",
+        "excerpt": "Turn up the heat with these sultry on-screen moments.",
+        "outline": [
+            "Famous movie scenes known for their heat",
+            "Films where the romance sizzles",
+            "Actors who bring chemistry to the screen",
+            "Unexpectedly spicy storylines",
+            "Scenes that sparked talk and controversy"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596f8da3f6ce9b164c47c6",
+        "title": "Heartfelt Dramas with Deep Romantic Themes",
+        "slug": "heartfelt-dramas-with-romance",
+        "excerpt": "Delve into romantic dramas that stir the soul.",
+        "outline": [
+            "Iconic dramatic romances",
+            "Films where emotion takes center stage",
+            "Stories of overcoming personal challenges",
+            "Romantic dramas based on true events",
+            "Emotionally intense movies with love at their core"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596f8da3f6ce9b164c47c1",
+        "title": "Hidden Gem Romance Movies You Might Have Missed",
+        "slug": "hidden-gem-romance-movies",
+        "excerpt": "Explore little-known films that deliver big on romance.",
+        "outline": [
+            "Indie romances with touching stories",
+            "Overlooked romance films from the past decade",
+            "Foreign romance films worth watching",
+            "Adventurous romances that surprise",
+            "Romantic films with unique settings"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596f8da3f6ce9b164c47c2",
+        "title": "Timeless Love Stories: Movies That Capture Enduring Romance",
+        "slug": "movies-enduring-romance",
+        "excerpt": "Dive into films where love triumphs against the odds.",
+        "outline": [
+            "Epic romances through history",
+            "Real-life stories of famous couples",
+            "On-screen chemistry that captivates",
+            "Classic film adaptations of famous novels",
+            "Love across different cultures and backgrounds"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596f8da3f6ce9b164c47c7",
+        "title": "Feel-Good Romantic Films to Boost Your Mood",
+        "slug": "feel-good-romantic-films",
+        "excerpt": "Brighten your day with these uplifting love stories.",
+        "outline": [
+            "Romantic films with happy endings",
+            "Stories that celebrate love and friendship",
+            "Movies featuring love at first sight",
+            "Inspiring journeys of personal growth through love",
+            "Cult classics with heartwarming tales"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596f8da3f6ce9b164c47c4",
+        "title": "Love and Adventure: Thrilling Romance Movies to Watch",
+        "slug": "thrilling-romance-movies",
+        "excerpt": "Combine passion and excitement with these adventure-filled romances.",
+        "outline": [
+            "Action-packed romance films",
+            "Love stories set against dramatic backdrops",
+            "Romantic films with a side of suspense",
+            "Unexpected adventures in relationships",
+            "Exploring the unknown together"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596f8da3f6ce9b164c47bf",
+        "title": "Best Movies for a Magical Date Night at Home",
+        "slug": "movies-for-magical-date-night",
+        "excerpt": "Transform your living room into a personal theater for an unforgettable date night.",
+        "outline": [
+            "Essential movie night preparations",
+            "Creating the perfect viewing atmosphere",
+            "Engaging romance plots to get lost in",
+            "Movies with unforgettable soundtracks",
+            "Hints of fantasy: adding magic to your evening"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596f8da3f6ce9b164c47be",
+        "title": "Romantic Movies to Set the Mood for a Cozy Night In",
+        "slug": "romantic-movies-cozy-night-in",
+        "excerpt": "Discover heartwarming films perfect for a night of romance.",
+        "outline": [
+            "Top classic romantic films",
+            "Modern romances you can't miss",
+            "Independent films with love stories",
+            "Romantic comedies that warm the heart",
+            "Foreign films that capture love beautifully"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596f8da3f6ce9b164c47c5",
+        "title": "Films with Long-Distance Love Stories",
+        "slug": "long-distance-love-movies",
+        "excerpt": "Movies that prove love knows no bounds.",
+        "outline": [
+            "Successful portrayals of long-distance love",
+            "Movies with letters, calls, and messages",
+            "Romances that triumph over distance",
+            "Unforgettable airport and train station scenes",
+            "Overcoming obstacles for love"
+        ],
+        "exists": false
+    }
+]

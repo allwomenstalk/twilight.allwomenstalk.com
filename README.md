@@ -228,8 +228,7 @@ version: 0.2
 
 
 
-## Build host (infity branch)
-
+## Build host (infinity branch)
 
 
 npm run clean && node batchgeneratehost.js love.allwomenstalk.com && sh batchcommitforce.sh love.allwomenstalk.com

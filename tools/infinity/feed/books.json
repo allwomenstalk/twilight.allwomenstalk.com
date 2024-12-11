@@ -1,0 +1,157 @@
+[
+    {
+        "_id": "67596e15a3f6ce9b164c46fc",
+        "title": "10 Timeless Themes in Classic European Literature",
+        "slug": "timeless-themes-classic-european-literature",
+        "excerpt": "Explore the enduring themes that continue to resonate in classic works.",
+        "outline": [
+            "Love and Romance",
+            "Social Class and Society",
+            "Fate and Destiny",
+            "Struggles with Identity",
+            "Sacrifice and Redemption",
+            "Conflicts between Tradition and Change",
+            "Power and Corruption",
+            "The Quest for Freedom",
+            "War and Peace",
+            "The Nature of Good vs Evil"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596e15a3f6ce9b164c4702",
+        "title": "Classic European Literature that Changed History",
+        "slug": "classic-european-literature-changed-history",
+        "excerpt": "Discover literary masterpieces that have left a significant impact on historical events and social movements.",
+        "outline": [
+            "Frankenstein\u2019s Influence on Science and Ethics",
+            "Les Mis\u00e9rables and the Spirit of Revolution",
+            "The Communist Manifesto\u2019s Literary Heritage",
+            "Frankenstein\u2019s Scientific Dilemmas",
+            "1984 as Political Warning",
+            "The Impact of Utopian Novels on Society"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596e15a3f6ce9b164c4703",
+        "title": "European Literary Movements that Transformed Fiction",
+        "slug": "european-literary-movements-transformed-fiction",
+        "excerpt": "An overview of key movements that have significantly influenced the trajectory of fiction writing.",
+        "outline": [
+            "The Excitement of Romanticism",
+            "Realism\u2019s Reaction Against Romantics",
+            "Naturalism's Close Look at Real Life",
+            "Modernism\u2019s Break from Tradition",
+            "Postmodern Fiction and Irony",
+            "The Surrealist Surge of Imagination"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596e15a3f6ce9b164c4700",
+        "title": "The Role of Nature in Classic European Literature",
+        "slug": "role-nature-classic-european-literature",
+        "excerpt": "Explore how natural landscapes have shaped and influenced literary narratives.",
+        "outline": [
+            "Nature as a Mirror to Human Emotion",
+            "Landscape Descriptions in Romantic Poetry",
+            "Use of Nature as a Symbol in Gothic Literature",
+            "Pastoral Settings in the Works of Hardy",
+            "The Influence of Seasons on Narrative Structure"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596e15a3f6ce9b164c46fe",
+        "title": "The Evolution of Feminism in Classic European Literature",
+        "slug": "evolution-feminism-classic-european-literature",
+        "excerpt": "Trace the development of feminist ideas through iconic European literary works.",
+        "outline": [
+            "Early Representations of Strong Women",
+            "Challenges to Traditional Gender Roles",
+            "Female Agency and Independence",
+            "Dialogues on Marriage and Family",
+            "Portraying Female Desires and Ambitions",
+            "Literary Critique of Patriarchal Systems"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596e15a3f6ce9b164c4701",
+        "title": "7 Novels That Capture 19th Century European Society",
+        "slug": "novels-capture-19th-century-european-society",
+        "excerpt": "A look at works that provide insight into life during the 19th century in Europe.",
+        "outline": [
+            "Charles Dickens\u2019 Social Commentary",
+            "The Bront\u00ebs\u2019 Views on Marriage and Society",
+            "George Eliot\u2019s Exploration of Middle-Class Life",
+            "Balzac\u2019s Realistic Depiction of Paris",
+            "Zola\u2019s Naturalist Approach",
+            "Middlemarch\u2019s Multilayered Society Analysis"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596e15a3f6ce9b164c4704",
+        "title": "7 European Authors We Owe Much of Modern Literature To",
+        "slug": "european-authors-modern-literature-influence",
+        "excerpt": "Meet the masterminds whose ideas continue to inspire today\u2019s writers.",
+        "outline": [
+            "Dostoevsky's Psychological Depth",
+            "Joyce\u2019s Narrative Techniques",
+            "Kafka's Bureaucratic Fantasies",
+            "Woolf's Stream of Consciousness",
+            "Borges\u2019 Fictive Labyrinths",
+            "Calvino\u2019s Cosmicomics",
+            "The Minimalism of Beckett"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596e15a3f6ce9b164c46fb",
+        "title": "7 Unforgettable Heroines in Classic European Literature",
+        "slug": "unforgettable-heroines-classic-european-literature",
+        "excerpt": "Discover the powerful female characters who have captivated readers for generations.",
+        "outline": [
+            "Emma Bovary from 'Madame Bovary' by Gustave Flaubert",
+            "Jane Eyre from 'Jane Eyre' by Charlotte Bront\u00eb",
+            "Elizabeth Bennet from 'Pride and Prejudice' by Jane Austen",
+            "Anna Karenina from 'Anna Karenina' by Leo Tolstoy",
+            "Nora Helmer from 'A Doll's House' by Henrik Ibsen",
+            "Cathy Earnshaw from 'Wuthering Heights' by Emily Bront\u00eb",
+            "Lady Macbeth from 'Macbeth' by William Shakespeare"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596e15a3f6ce9b164c46fd",
+        "title": "5 Influential European Authors and Their Impact on Literature",
+        "slug": "influential-european-authors-literature-impact",
+        "excerpt": "Learn about the authors who have shaped the landscape of literature across Europe.",
+        "outline": [
+            "William Shakespeare\u2019s Contribution to Drama",
+            "Leo Tolstoy\u2019s Exploration of Human Experience",
+            "Victor Hugo\u2019s Influence on Social Change",
+            "Jane Austen's Insight into Gender and Class",
+            "Franz Kafka\u2019s Surreal Character Studies"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596e15a3f6ce9b164c46ff",
+        "title": "7 Poetic Geniuses of Classic European Literature",
+        "slug": "poetic-geniuses-classic-european-literature",
+        "excerpt": "Delve into the works of poets whose verses have stood the test of time.",
+        "outline": [
+            "William Wordsworth and Romanticism",
+            "Rainer Maria Rilke\u2019s Innovative Forms",
+            "John Keats and the Keatsian Odes",
+            "Goethe\u2019s Lyricism and Influence",
+            "Walt Whitman's Impact on European Poets",
+            "Extracting Meaning from Sylvia Plath\u2019s Work",
+            "The Traditional and Modern in W.B. Yeats\u2019s Poetry"
+        ],
+        "exists": false
+    }
+]

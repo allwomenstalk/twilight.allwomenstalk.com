@@ -1,0 +1,164 @@
+[
+    {
+        "_id": "67596f7aa3f6ce9b164c47b6",
+        "title": "9 Creative Ways to Boost Your Income Without a Full-Time Job",
+        "slug": "creative-income-methods",
+        "excerpt": "Explore alternative income streams that fit your lifestyle.",
+        "outline": [
+            "Tap into freelance opportunities",
+            "Sell handmade crafts online",
+            "Offer online tutoring or consulting",
+            "Rent unused space or items",
+            "Participate in market research surveys",
+            "Host workshops or classes",
+            "Write for blogs or small publications",
+            "Pet sitting or dog walking services",
+            "Start a blog or YouTube channel"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596f7aa3f6ce9b164c47b8",
+        "title": "7 Money Management Tips for Recent Graduates",
+        "slug": "money-management-graduates",
+        "excerpt": "Learn financial basics that lay a strong foundation for future wealth.",
+        "outline": [
+            "Create your first budget",
+            "Understand student loan repayments",
+            "Prioritize emergency savings",
+            "Start thinking about retirement",
+            "Understand credit scores and credit cards",
+            "Set short-term financial goals",
+            "Be mindful of lifestyle inflation"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596f7aa3f6ce9b164c47b4",
+        "title": "8 Smart Ways to Prepare for Holiday Spending",
+        "slug": "holiday-spending-strategies",
+        "excerpt": "Get ahead of holiday expenses with savvy financial tips.",
+        "outline": [
+            "Set a realistic holiday budget",
+            "Start a holiday savings fund",
+            "Track down coupon codes and deals",
+            "Make a gift list and stick to it",
+            "Consider DIY gifts for a personal touch",
+            "Plan travel well in advance",
+            "Research cash-back reward opportunities",
+            "Use a financial planner for holiday expenses"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596f7aa3f6ce9b164c47b3",
+        "title": "Top 10 Budgeting Apps to Boost Your Savings",
+        "slug": "best-budgeting-apps",
+        "excerpt": "Take control of your finances with the best apps to help you save.",
+        "outline": [
+            "Compare features of leading apps",
+            "Assess ease of use for beginners",
+            "Find apps with customizable budgets",
+            "Explore unique savings challenges",
+            "Utilize apps with bill tracking capabilities",
+            "Evaluate connectivity with bank accounts",
+            "Identify apps with investment options",
+            "Seek platforms offering financial education",
+            "Read user reviews and ratings",
+            "Determine your personal priorities in an app"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596f7aa3f6ce9b164c47b7",
+        "title": "How to Build an Emergency Fund: 7 Essential Tips",
+        "slug": "building-emergency-fund",
+        "excerpt": "Ensure financial security by creating a cushion for unexpected expenses.",
+        "outline": [
+            "Set a clear savings goal",
+            "Automate regular savings transfers",
+            "Redirect windfalls to your fund",
+            "Cut non-essential expenses",
+            "Focus on building good saving habits",
+            "Review and adjust budget regularly",
+            "Find a high-yield savings account"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596f7aa3f6ce9b164c47b2",
+        "title": "6 Ways to Score Big During Off-Season Shopping",
+        "slug": "off-season-shopping-tips",
+        "excerpt": "Discover strategies to save big by shopping at the right time of year.",
+        "outline": [
+            "Plan purchases around end-of-season sales",
+            "Understand clearance schedules of major stores",
+            "Leverage social media for sale alerts",
+            "Focus on quality over quantity",
+            "Create a wishlist and wait for sales",
+            "Join loyalty programs for extra savings"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596f7aa3f6ce9b164c47bb",
+        "title": "Strategies to Master the Art of Bargain Shopping",
+        "slug": "bargain-shopping-strategies",
+        "excerpt": "Unlock the secrets to finding the best deals year-round.",
+        "outline": [
+            "Shop around for price comparisons",
+            "Use apps dedicated to discount hunting",
+            "Know when and where to shop for deals",
+            "Understand how to negotiate prices",
+            "Stay patient and wait for the right deal"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596f7aa3f6ce9b164c47ba",
+        "title": "5 Ways to Financially Prepare for Parenthood",
+        "slug": "financial-prep-parenthood",
+        "excerpt": "Navigate parenthood confidently with a strong financial plan in hand.",
+        "outline": [
+            "Budget for baby essentials and ongoing costs",
+            "Investigate healthcare options",
+            "Understand parental leave benefits",
+            "Start an education savings account",
+            "Build a support network for financial advice"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596f7aa3f6ce9b164c47b5",
+        "title": "5 Lessons We Can Learn from Minimalist Living",
+        "slug": "minimalist-living-lessons",
+        "excerpt": "Explore the financial wisdom in adopting a minimalist lifestyle.",
+        "outline": [
+            "Prioritize needs over wants",
+            "Declutter to appreciate what you have",
+            "Spend on experiences not possessions",
+            "Adopt a mindful consumption approach",
+            "Embrace sustainable living"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596f7aa3f6ce9b164c47b9",
+        "title": "Ten Frugal Living Hacks to Reduce Monthly Expenses",
+        "slug": "frugal-living-hacks",
+        "excerpt": "Discover practical tips that will help lower your spending each month.",
+        "outline": [
+            "Meal prep for the week ahead",
+            "Cancel unused subscriptions",
+            "Embrace DIY home projects",
+            "Use energy-efficient appliances",
+            "Switch to generic brands",
+            "Repair rather than replace",
+            "Rethink your cable plan",
+            "Batch cook and freeze meals",
+            "Create homemade cleaning supplies",
+            "Plan outings around free events"
+        ],
+        "exists": false
+    }
+]
