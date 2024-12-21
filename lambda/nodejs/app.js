@@ -11,6 +11,7 @@ exports.handler = async (event, context) => {
   try {
     // Connect to MongoDB
     console.log('event', event);
+    
 
     const postName = event.pathParameters ? event.pathParameters.proxy : event.rawPath.replace('/', '');
     event.post_name = postName;
@@ -67,6 +68,7 @@ exports.handler = async (event, context) => {
     const json = await elev.toJSON();
     console.log('json', json);
 
+
     // Initialize S3 Client
     const s3 = new S3Client({ region: 'us-west-2' });
     const bucketName = data.host;
@@ -82,6 +84,7 @@ exports.handler = async (event, context) => {
       console.error('Error saving file to S3:', error, 'Not saved to S3');
     }
     console.log('html', html);
+    
 
     // Save amp.html
     const inputPath2 = './src/posts/amp.njk';
@@ -94,14 +97,18 @@ exports.handler = async (event, context) => {
     }
     // await saveFileToS3(amp, bucketName, outputPath2, s3);
     console.log('amp', amp);
+    
 
     // Push files to GitHub
     const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
     const owner = 'allwomenstalk';
     const repo = data.host;
 
-    await pushFileToGitHub(octokit, owner, repo, outputPath1, html);
-    await pushFileToGitHub(octokit, owner, repo, outputPath2, amp);
+    // updating github repo only for subdomains
+    if (repo !== "allwomenstalk.com") {
+      await pushFileToGitHub(octokit, owner, repo, outputPath1, html);
+      await pushFileToGitHub(octokit, owner, repo, outputPath2, amp);
+    }
 
     return {
       statusCode: 200,
