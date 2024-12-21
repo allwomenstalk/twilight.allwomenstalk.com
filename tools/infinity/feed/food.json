@@ -1,19 +1,59 @@
 [
     {
-        "_id": "67507670a3f6ce9b16307653",
-        "title": "Understanding Nutrient-Dense Foods on a Low-Calorie Diet",
-        "slug": "understanding-nutrient-dense-foods-on-a-low-calorie-diet",
-        "excerpt": "Learn how to choose foods that offer maximum nutrients and minimal calories.",
+        "_id": "66dc7a93d8c51d0a97cf20b7",
+        "title": "No Time? No Problem! Overnight Low-Carb Breakfast Ideas",
+        "slug": "overnight-low-carb-breakfast-ideas",
+        "excerpt": "Prepare your breakfast the night before with these delicious low-carb options that promises to keep you full for long.",
         "outline": [
-            "Definition and importance of nutrient density",
-            "Examples of nutrient-dense foods",
-            "Benefits of including greens in your diet",
-            "Role of whole grains",
-            "Protein sources with low-calorie content",
-            "Incorporating fruits and veggies",
-            "Importance of hydration"
+            "Overnight Chia Pudding",
+            "Low-Carb Breakfast Casserole",
+            "Savory Omelette Muffins",
+            "Breakfast Burrito Bowl",
+            "Coconut Milk and Berry Smoothie"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dffde8cf5229c457ef4e97",
+        "title": "Budget-Friendly Protein Sources for Women",
+        "slug": "budget-friendly-protein-sources-for-women",
+        "excerpt": "Discover inexpensive protein sources that cater specifically to women's dietary needs.",
+        "outline": [
+            "Nutritional needs of women",
+            "Top affordable protein sources",
+            "Protein-rich snack ideas",
+            "Balancing protein with other macronutrients",
+            "Smart shopping strategies"
         ],
         "exists": false
+    },
+    {
+        "_id": "66dcccded8c51d0a97fac30a",
+        "title": "5 Unexpected Gourmet Dishes You Can Make With Leftovers",
+        "slug": "gourmet-dishes-with-leftovers",
+        "excerpt": "Turn your leftovers into fancy meals with these simple gourmet recipes. A creative and money-saving way to enjoy great food!",
+        "outline": [
+            "Turn last night's steak into a gourmet steak salad",
+            "Create a fancy chicken alfredo pasta with leftover roast chicken",
+            "Reinvent leftover mashed potatoes into French gourmet potato cheesecakes",
+            "Give a new life to salmon leftovers by turning them into salmon tartares",
+            "Turn your leftover soup into a gourmet chowder"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dccd42d8c51d0a97fc1e78",
+        "title": "Couples That Cook Together: Baking Sweet Treats for Your Loved One",
+        "slug": "baking-sweet-treats-for-lovers",
+        "excerpt": "Sightsee in the world of baking as a date night activity by creating sweet treats together. Ideal for couples with a sweet tooth who want to try baking at home.",
+        "outline": [
+            "Choosing the right recipe",
+            "Preparing your baking station",
+            "Mixing, kneading and rolling techniques",
+            "Baking and checking for doneness",
+            "Decorating and sharing your sweet treats"
+        ],
+        "exists": true
     },
     {
         "_id": "66dffe08cf5229c457efb784",
@@ -33,188 +73,74 @@
         "exists": false
     },
     {
-        "_id": "66df66bf9999dedc19476e99",
-        "title": "Rice Dishes Better with Gravy",
-        "slug": "rice-dishes-better-with-gravy",
-        "excerpt": "Make your rice dishes more scrumptious with the addition of gravy. Here are some ideas.",
+        "_id": "66df67a19999dedc194acd27",
+        "title": "Homemade Passion Fruit Jams and Preserves",
+        "slug": "homemade-passion-fruit-jams",
+        "excerpt": "Explore the craft of making homemade jams and preserves with the unique flavor of passion fruit. Perfect for your breakfast toast, biscuits or even as a cake filling.",
         "outline": [
-            "Chicken Fried Rice with Gravy",
-            "Beef Gravy over White Rice",
-            "Gravy-drenched Cajun Rice",
-            "Rice and Gravy Casserole",
-            "Fried Rice with Egg Gravy"
+            "Traditional Passion Fruit Jam",
+            "Spiced Passion Fruit Preserve",
+            "Passion Fruit and Mango Jam",
+            "Passion Fruit and Berry Jelly",
+            "Passion Fruit Curd"
         ],
         "exists": false
     },
     {
-        "_id": "66dccd42d8c51d0a97fc1e70",
-        "title": "Date Night BBQ Ideas for Couples who Love to Grill",
-        "slug": "date-night-bbq-ideas",
-        "excerpt": "Unleash your inner grill master with these fun and tasty BBQ ideas for your date night. Ideal for couples who love spending time outdoors and trying new recipes.",
+        "_id": "66dcc4f5d8c51d0a97de5931",
+        "title": "Sensitive Stomach? Try These Gentle and Nourishing Smoothies!",
+        "slug": "gentle-nourishing-smoothies-for-sensitive-stomach",
+        "excerpt": "Discover a selection of smoothie recipes specifically designed for those with sensitive stomachs. Amp up your nutrition without discomfort.",
         "outline": [
-            "Planning your BBQ Menu",
-            "Grilling tips and tricks",
-            "Plating and presentation ideas",
-            "BBQ safety awareness",
-            "Best BBQ recipes for couples"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "66dffe12cf5229c457efd6c9",
-        "title": "The Ultimate Guide to Growing Your Own Salad Greens",
-        "slug": "guide-to-growing-salad-greens",
-        "excerpt": "Learn how to grow fresh and flavorful salad greens in your own garden.",
-        "outline": [
-            "Choosing the Right Greens",
-            "Preparing the Soil",
-            "Planting Tips",
-            "Watering and Feeding",
-            "Pest Control",
-            "Harvesting",
-            "Storage and Usage"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "66df66bf9999dedc19476e94",
-        "title": "Outstanding Meat Gravy Combinations You Have to Try",
-        "slug": "outstanding-meat-gravy-combinations",
-        "excerpt": "Unleash new flavors with these outstanding meat and gravy combinations you've probably never thought of.",
-        "outline": [
-            "Pork Chops with Apple Gravy",
-            "Beef Steak with Mushroom and Onion Gravy",
-            "Chicken Breasts with Lemon Gravy",
-            "Lamb Chops with Mint Gravy",
-            "Turkey Meatballs with Cranberry Gravy"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "66df67fd9999dedc194c58cb",
-        "title": "12 Three-Course Meal Ideas for the Perfect Romantic Dinner at Home",
-        "slug": "romantic-home-recipes",
-        "excerpt": "Cook up romance with these easy-to-make three-course meal ideas that are perfect for date night.",
-        "outline": [
-            "Appetizer: Baked Brie with Fig Jam",
-            "Main Course: Blackened Salmon with Saut\u00e9ed Veggies",
-            "Dessert: Dark Chocolate Fondue with Fresh Fruits",
-            "Tips to Set a Romantic Dinner Table",
-            "Drink Pairings: Tips on Selecting the Right Wine"
+            "Understanding the Basics: What\u2019s a Sensitive Stomach?",
+            "The Connection Between Smoothies and Stomach Issues",
+            "Choosing Ingredients that Soothe, Not Agitate, the Stomach",
+            "7 Recipe Ideas for Nourishing and Gentle Smoothies",
+            "Tips for Making Your Own Gentle and Nourishing Smoothie"
         ],
         "exists": true
     },
     {
-        "_id": "66dffd94cf5229c457ee1de6",
-        "title": "Creating the Ultimate Snack Platter for Girls Night",
-        "slug": "ultimate-snack-platter-girls-night",
-        "excerpt": "Pair your drinks with the perfect snacks. Learn how to create a delectable snack platter that's perfect for a girls night in.",
+        "_id": "66dccc65d8c51d0a97f900e8",
+        "title": "Sizzling Middle Eastern Grill Ideas for Your Next BBQ",
+        "slug": "middle-eastern-grill-ideas",
+        "excerpt": "Turn your BBQ nights around with these sizzling Middle Eastern grill ideas. Spiced to perfection, these grill recipes will light up any summer evening.",
         "outline": [
-            "Choosing the Right Cheeses",
-            "Selection of Cured Meats",
-            "Adding Fresh and Dried Fruits",
-            "Choosing Crackers and Breads",
-            "Adding Nuts and Dips for Extra Flavor"
+            "Kebabs: The Savory Sticks",
+            "Zaatar Grilled Chicken: The Aromatic Delight",
+            "Grilled Halloumi: The Cheesy Charm",
+            "Shish Tawook: The Tangy Temptation",
+            "Harissa Grilled Eggplant: The Spiced Elegance"
         ],
         "exists": false
     },
     {
-        "_id": "66dffd94cf5229c457ee1ddf",
-        "title": "5 Boozy and Beautiful Cocktails to Impress at Your Next Girls Night",
-        "slug": "boozy-beautiful-cocktails-girls-night",
-        "excerpt": "Get ready to shake, stir, and pour! Discover 5 cocktail recipes that are sure to impress at your next girls night.",
+        "_id": "66df677b9999dedc194a3887",
+        "title": "Indulge Your Senses: 5 Creamy Cocktails with a Kick",
+        "slug": "creamy-cocktails-with-a-kick",
+        "excerpt": "Explore new options for delicious cocktails that feature creamy textures and warming spirits. Learn to mix them at home for perfect evenings staying in.",
         "outline": [
-            "The Classic Cosmopolitan",
-            "Strawberry Mojito Madness",
-            "The Chocolate Martini Temptation",
-            "Rosemary Gin Fizz",
-            "The Spicy Margarita Challenge"
+            "The Seductive World of Creamy Cocktails",
+            "5 Must-Try Creamy Cocktail Recipes",
+            "Mixing Tips for the Perfect Creamy Cocktail",
+            "Exploring Spirit Options for Creamy Cocktails",
+            "The Best Occasions for Creamy Cocktails"
         ],
         "exists": true
     },
     {
-        "_id": "66df672b9999dedc1948f55e",
-        "title": "5 Healthy Veal Recipes That Don't Skimp on Flavor",
-        "slug": "healthy-veal-recipes",
-        "excerpt": "Indulge guilt-free with these 5 healthy veal recipes that pack all the flavor without the extra calories.",
+        "_id": "66dcc615d8c51d0a97e274a7",
+        "title": "5 Impress Your Partner: Romantic Chorizo Dinner Recipes",
+        "slug": "romantic-chorizo-recipes",
+        "excerpt": "Impress your loved one with a delicious chorizo meal during a candlelit dinner.",
         "outline": [
-            "Healthy Veal Marsala Recipe",
-            "Lean Veal Cutlet Recipe",
-            "Veal Skewer Recipe: A Low-Carb Delight",
-            "Easy and Healthy Veal Stew",
-            "Grilled Veal Chops With Fresh Herbs"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "66dcccf9d8c51d0a97fb2822",
-        "title": "5 Healthy Recipes that Are Gentle to Your Gut",
-        "slug": "healthy-recipes-gentle-to-your-gut",
-        "excerpt": "Take a look at our list of culinary solutions that tend to upset tummies without compromising taste or nutrition",
-        "outline": [
-            "The Power of Broths and Soups",
-            "Ginger Tofu Stir Fry: \u201cThe Tummy Tamer\u201d",
-            "Steamed Vegetables with a Twist",
-            "Berry-licious Desserts You Can Digest",
-            "Keeping Your Gut Happy with Probiotic-Rich Foods"
+            "Setting the Mood for a Chorizo Dinner",
+            "Recipe 1: Chorizo-Stuffed Roasted Chicken",
+            "Recipe 2: Chorizo and Shrimp Pasta",
+            "Recipe 3: Chorizo and Red Wine Risotto",
+            "Recipe 4: Grilled Lobster with Chorizo Butter"
         ],
         "exists": true
-    },
-    {
-        "_id": "66dcc634d8c51d0a97e2dbf0",
-        "title": "10 Nutritious Smoothies That Enhance Your Booty",
-        "slug": "nutritious-booty-enhancing-smoothies",
-        "excerpt": "Discover the magic of nutrition and its impact on shaping your body with these 10 delicious, booty-enhancing smoothie recipes.",
-        "outline": [
-            "Why Nutritious Smoothies Play a Big Role",
-            "Essential Ingredients in Booty Boosting Smoothies",
-            "5 Amazing Fruit Smoothie Recipes",
-            "5 Delicious Protein Smoothie Recipes",
-            "How to Include These Smoothies in Your Daily Diet"
-        ],
-        "exists": true
-    },
-    {
-        "_id": "66dffe08cf5229c457efb777",
-        "title": "5 DIY Cat Treat Recipes You Can Make at Home",
-        "slug": "diy-cat-treat-recipes",
-        "excerpt": "Creative homemade treat recipes that your cat will adore.",
-        "outline": [
-            "Why make treats at home?",
-            "Basic ingredients for cat treats",
-            "Easy 5-minute recipes",
-            "Creative shapes and flavors",
-            "Storage tips for homemade treats"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "66dcc6f8d8c51d0a97e594ef",
-        "title": "Exploring World Cuisine: 12 International Appetizers",
-        "slug": "exploring-world-cuisine-appetizers",
-        "excerpt": "Take your taste buds on a global tour and explore appetizers from various cultures.",
-        "outline": [
-            "French Cuisine Appetizers",
-            "Tasty Greek Mezze",
-            "Italian Antipasto Delights",
-            "Middle Eastern Maza Selection",
-            "Discovering Asian Appetizer Choices"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "66dcccb8d8c51d0a97fa3fdb",
-        "title": "Revamp Your Soup Game with Celery",
-        "slug": "revamp-soup-celery",
-        "excerpt": "Adding celery to your soup is easiest way to boost up the flavor factor. Discover how celery can transform your soup game with these wonderful recipes.",
-        "outline": [
-            "The Benefits of Adding Celery in Soup",
-            "Selecting the Perfect Celery for Your Soup Recipe",
-            "Top 5 Comforting Celery Soup Recipes",
-            "Tips to Enhance the Flavor of Celery in Soup",
-            "Cook Your Own Celery Soup: A Beginner\u2019s Guide"
-        ],
-        "exists": false
     },
     {
         "_id": "675076caa3f6ce9b1630766a",
@@ -231,193 +157,91 @@
         "exists": false
     },
     {
-        "_id": "66dcc634d8c51d0a97e2dbf8",
-        "title": "Fat-Boosting vs. Protein-Packing: Foods That Create Curves",
-        "slug": "foods-that-create-curves",
-        "excerpt": "Balance your diet between fats and proteins to build an enviable butt with this informative guide",
+        "_id": "66dffe12cf5229c457efd6c3",
+        "title": "10 Delicious Salad Recipes to Try This Week",
+        "slug": "delicious-salad-recipes",
+        "excerpt": "Make your meals more exciting with these delicious and easy-to-make salad recipes.",
         "outline": [
-            "Understanding the Role of Fats in Butt Size",
-            "Listing High-Fat Foods for Butt Growth",
-            "The Importance of Proteins for Glute Muscle Development",
-            "Top High-Protein Foods for a Fuller Butt",
-            "Balancing Fats and Proteins: Sample Diet Plans"
+            "Quinoa and Kale Salad",
+            "Mediterranean Chickpea Salad",
+            "Spinach and Strawberry Salad",
+            "Avocado and Tomato Salad",
+            "Caesar Salad with a Twist",
+            "Grilled Chicken and Arugula Salad",
+            "Caprese Salad",
+            "Asian Noodle Salad",
+            "Beet and Goat Cheese Salad",
+            "Crunchy Thai Peanut Salad"
         ],
         "exists": false
     },
     {
-        "_id": "67596eb1a3f6ce9b164c4757",
-        "title": "Benefits of Adding Psyllium to Juices and Drinks",
-        "slug": "psyllium-juices-drinks",
-        "excerpt": "Refresh your hydration routine with psyllium.",
+        "_id": "66df67579999dedc1949b587",
+        "title": "Adding a Gourmet Twist to Your Vegetable Soup Recipes",
+        "slug": "adding-gourmet-twist-vegetable-soup-recipes",
+        "excerpt": "Simple ways to turn your regular vegetable soup into a gourmet dish with a touch of inspiration.",
         "outline": [
-            "How psyllium improves your drink",
-            "Recipe for psyllium-infused lemonade",
-            "Fruity psyllium juices for summer"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "66df66bf9999dedc19476e80",
-        "title": "Dreamy Mashed Potato Variations that Love Gravy",
-        "slug": "mashed-potato-variations-love-gravy",
-        "excerpt": "Discover the many delicious faces of mashed potatoes and why they are the perfect platform for your gravy.",
-        "outline": [
-            "Classic Creamy Mashed Potatoes",
-            "Sweet Potato Mash with a Twist",
-            "Rustic Skin-on Mashed Potatoes",
-            "Cheesy Garlic Mashed Potatoes",
-            "Chive and Sour Cream Mashed Potatoes"
+            "The world of gourmet soups: upscale ingredients to consider",
+            "How to infuse luxury into your soup",
+            "Presentation tips: plating and serving gourmet soups",
+            "Accompaniments: what to serve with your gourmet soup",
+            "Tips for a low-budget gourmet meal"
         ],
         "exists": true
     },
     {
-        "_id": "66dcc6f8d8c51d0a97e594df",
-        "title": "15 Delicious Finger Food Ideas for Your Next Party",
-        "slug": "delicious-finger-food-ideas",
-        "excerpt": "Explore these mouth-watering, bite-sized treats that everyone at your next party will love.",
+        "_id": "66dcc655d8c51d0a97e357c0",
+        "title": "Exploring the Nutritional Values of Different Nuts",
+        "slug": "nutritional-values-of-different-nuts",
+        "excerpt": "Discover the science behind the nutrients found in a wide variety of nuts and why they're an essential part of a healthy diet.",
         "outline": [
-            "Why Finger Foods are a Winning Choice",
-            "Delicious Mini Sandwich Recipes",
-            "Creative and Savory Meatball Ideas",
-            "Cheese-Based Finger Foods",
-            "Sweet Finger Foods for Dessert Lovers"
+            "Almonds: A Protein Powerhouse",
+            "Walnuts: Rich in Omega-3 Fatty Acids",
+            "Pistachios: Packed with Fiber",
+            "Brazil Nuts: Selenium for Your Brain",
+            "Hazelnuts: Vitamin E for Skin Health",
+            "Macadamia Nuts: Healthy Fats Galore",
+            "Pecans: Antioxidant Arsenal"
         ],
         "exists": true
     },
     {
-        "_id": "675076caa3f6ce9b1630766c",
-        "title": "Essential Ingredients for the Perfect Fall Hot Chocolate",
-        "slug": "essential-ingredients-fall-hot-chocolate",
-        "excerpt": "Craft the ultimate hot chocolate with these key ingredients.",
+        "_id": "66dcc5edd8c51d0a97e1e4e9",
+        "title": "The Role of Amuse-Bouches in A Dining Course",
+        "slug": "role-amuse-bouches-dining-course",
+        "excerpt": "Get insights on how Amuse-Bouches are designed to excite the palate and set the tone for the main course.",
         "outline": [
-            "Types of chocolate for rich flavor",
-            "Unique spices to enhance flavor",
-            "Exploring milk alternatives",
-            "Adding a hint of booze",
-            "Toppings that take it to the next level"
+            "Understanding the concept of Amuse-Bouches",
+            "How Amuse-Bouches complements the dinner",
+            "Interesting Facts about Amuse-Bouches",
+            "Classic Examples of Amuse-Bouches",
+            "Impact of Amuse-Bouches on your dining experience"
         ],
         "exists": false
     },
     {
-        "_id": "66df672b9999dedc1948f54e",
-        "title": "Saucy Dreams: Top 5 Veal Sauce Recipes to Explore",
-        "slug": "top-veal-sauce-recipes",
-        "excerpt": "Unveil the secret to stunning veal dishes with these 5 must-try sauce recipes that take your veal to a new level of taste explosion.",
+        "_id": "67596eb1a3f6ce9b164c4753",
+        "title": "Using Psyllium in Baking for a Healthier Treat",
+        "slug": "psyllium-baking-treats",
+        "excerpt": "Add a healthy twist to your baking with psyllium.",
         "outline": [
-            "Classic Veal Marsala Sauce Recipe",
-            "Creamy Veal Mushroom Sauce Recipe",
-            "Traditional Veal Piccata Lemon Sauce",
-            "Tasty Veal Wine Reduction Sauce",
-            "Delectable Veal Tomato Sauce Recipe"
+            "Benefits of psyllium in baked goods",
+            "Psyllium muffins and bread recipes",
+            "Creating psyllium cookies for sneaky fiber intake"
         ],
         "exists": false
     },
     {
-        "_id": "66dffddecf5229c457ef2cd6",
-        "title": "Creative Pink Appetizers for Your Next Party",
-        "slug": "creative-pink-appetizers",
-        "excerpt": "Dazzle your guests with these fun and easy-to-make pink appetizers that are perfect for any gathering.",
+        "_id": "66dcc71ad8c51d0a97e61546",
+        "title": "5 Cucumber-Based Drinks to Stay Hydrated",
+        "slug": "cucumber-based-hydrating-drinks",
+        "excerpt": "Feast your taste buds on these hydrating cucumber drinks. Whip up these easy-to-make beverages and stay refreshed whether it's been a long, hot summer day or you simply need an energy boost.",
         "outline": [
-            "Pink Deviled Eggs",
-            "Beetroot Hummus Dip",
-            "Watermelon and Feta Skewers",
-            "Salmon Stuffed Cucumbers",
-            "Pink Sushi Rolls"
-        ],
-        "exists": true
-    },
-    {
-        "_id": "675076caa3f6ce9b16307672",
-        "title": "Traditional Fall-Inspired Beverages from Around the World",
-        "slug": "traditional-fall-inspired-beverages-world",
-        "excerpt": "Explore cultural drinks that capture the essence of fall.",
-        "outline": [
-            "Mexican champurrado",
-            "Indian masala chai",
-            "Korean sujeonggwa",
-            "Russian sbiten",
-            "Swiss hot spiced wine"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "66dffdfdcf5229c457ef94af",
-        "title": "12 Refreshing Cocktails for Your Next Party",
-        "slug": "refreshing-cocktails-next-party",
-        "excerpt": "Keep the good times flowing with these refreshing and delightful cocktails.",
-        "outline": [
-            "Classic Mojito",
-            "Strawberry Basil Lemonade",
-            "Pineapple Mango Rum Punch",
-            "Cucumber Gin Fizz",
-            "Blueberry Vodka Spritz",
-            "Grapefruit Rosemary Mimosa",
-            "Pomegranate Prosecco Punch",
-            "Watermelon Margarita",
-            "Lavender Collins",
-            "Spiked Iced Tea",
-            "Peach Sangria",
-            "Coconut Daiquiri"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "66dffe27cf5229c457f01ae7",
-        "title": "10 State Fair Drinks You Just Have to Sip",
-        "slug": "state-fair-drinks",
-        "excerpt": "Sip on some of the most unique and delightful beverages found at state fairs.",
-        "outline": [
-            "Fresh-squeezed lemonade",
-            "Frosty root beer float",
-            "Creamy milkshakes",
-            "Chocolate-dipped iced coffee",
-            "Deep-fried soda",
-            "Bubble tea with a twist",
-            "Sparkling fruit punch",
-            "Frozen margarita pops",
-            "Lavender lemonade",
-            "Homemade sarsaparilla"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "67596eb1a3f6ce9b164c4759",
-        "title": "Creative Ways to Introduce Kids to Psyllium",
-        "slug": "psyllium-kids-friendly",
-        "excerpt": "Making psyllium part of your kid's diet without fuss.",
-        "outline": [
-            "Why psyllium is good for kids",
-            "Kid-friendly psyllium recipes",
-            "Tips for incorporating fiber subtly"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "66dcc634d8c51d0a97e2dbfe",
-        "title": "Superfoods for a Super Booty: The Power of Seeds and Nuts",
-        "slug": "superfoods-for-super-booty",
-        "excerpt": "Unlock the power of seeds and nuts in crafting a well-shaped posterior with this insightful article",
-        "outline": [
-            "Understanding How Seeds and Nuts Impact Your Curves",
-            "Listing & Describing Beneficial Seeds and Nuts",
-            "Easy & Delicious Seed and Nut Recipes for Butt Enlargement",
-            "Including Seeds and Nuts in Your Daily Diet",
-            "Health Benefits of Nuts and Seeds Beyond Booty Growth"
-        ],
-        "exists": true
-    },
-    {
-        "_id": "67507670a3f6ce9b16307654",
-        "title": "Top 6 Low-Calorie Comfort Foods from Around the World",
-        "slug": "top-6-low-calorie-comfort-foods-from-around-the-world",
-        "excerpt": "Explore comforting dishes from different cultures that are easy on the calories.",
-        "outline": [
-            "Japanese miso soup",
-            "Italian minestrone",
-            "Vietnamese pho",
-            "Indian lentil dal",
-            "Mexican tortilla soup",
-            "Middle-Eastern tabbouleh salad"
+            "Cucumber and Mint infused Water",
+            "Refreshing Cucumber Lemonade",
+            "Cucumber and Lime Mocktail",
+            "Cucumber Green Smoothie",
+            "Cucumber and Kiwi Juice"
         ],
         "exists": false
     },
@@ -436,250 +260,418 @@
         "exists": true
     },
     {
-        "_id": "66df67fd9999dedc194c58d7",
-        "title": "5 Amazingly Easy Gourmet Dishes to Impress Your Man",
-        "slug": "easy-gourmet-dishes",
-        "excerpt": "From the app to the dessert, these gourmet recipes are surprisingly manageable, regardless of your expertise level.",
+        "_id": "66dcc5edd8c51d0a97e1e4fc",
+        "title": "Hosting an Exclusive Amuse-Bouches Party",
+        "slug": "hosting-exclusive-amuse-bouches-party",
+        "excerpt": "Looking to host a party? Why not make it an Amuse-Bouches party? Plan an unforgettable night with tips and tricks for a successful gathering.",
         "outline": [
-            "Italian Spinach and Ricotta Stuffed Shells",
-            "Coq Au Vin: Simplifying a French Classic",
-            "Recreating Restaurant Style Steak at Home",
-            "Homemade Chocolate Lava Cake",
-            "Sourcing Ingredients for Gourmet Cooking"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "66dcc788d8c51d0a97e7936a",
-        "title": "Non-Alcoholic Beverages that Wow: Mocktails for Your Girls Night",
-        "slug": "mocktails-for-girls-night",
-        "excerpt": "Offer your non-drinking friends a treat with these exciting, non-alcoholic beverages that don't compromise on taste.",
-        "outline": [
-            "Virgin Pina Colada \u2013 A Tropical Delight",
-            "Cucumber Mint Cooler",
-            "Non-alcoholic Sangria",
-            "Mock Champagne with Gingerale and Pineapple",
-            "Lavender and Lemon Sparkling Water"
+            "Planning your Amuse-Bouches menu",
+            "Setting Up an Elegant Ambiance",
+            "Preparing Quick and Delicious Amuse-Bouches",
+            "Choosing the right Drinks",
+            "Keeping the party fun and engaging"
         ],
         "exists": true
     },
     {
-        "_id": "66dcc655d8c51d0a97e357c3",
-        "title": "All About Almonds: Delicious Recipes and Health Benefits",
-        "slug": "all-about-almonds",
-        "excerpt": "Learn about the numerous health benefits of almonds and discover delicious and easy-to-follow recipes to incorporate them into your diet.",
+        "_id": "675076caa3f6ce9b16307672",
+        "title": "Traditional Fall-Inspired Beverages from Around the World",
+        "slug": "traditional-fall-inspired-beverages-world",
+        "excerpt": "Explore cultural drinks that capture the essence of fall.",
         "outline": [
-            "The Nutritional Profile of Almonds",
-            "Almond Milk: A Dairy-Free Alternative",
-            "Crunchy Almond Salads",
-            "Sweet Almond Desserts",
-            "Skin and Hair Benefits of Almond Oil"
+            "Mexican champurrado",
+            "Indian masala chai",
+            "Korean sujeonggwa",
+            "Russian sbiten",
+            "Swiss hot spiced wine"
         ],
         "exists": false
     },
     {
-        "_id": "66dffe08cf5229c457efb76a",
-        "title": "10 Healthy Snacks Your Cat Will Love",
-        "slug": "healthy-snacks-for-cats",
-        "excerpt": "Explore a range of nutritious snacks that will keep your feline happy and healthy.",
+        "_id": "66dcc6b9d8c51d0a97e4be54",
+        "title": "Reviews: The 5 Best Packaged Pearl Couscous Brands",
+        "slug": "best-packaged-pearl-couscous-brands",
+        "excerpt": "Find out more about the top five packaged pearl couscous brands that you should try.",
         "outline": [
-            "Benefits of healthy treats for cats",
-            "Homemade vs. store-bought snacks",
-            "Top 10 healthy treats",
-            "Ingredients to avoid",
-            "Recipes for homemade cat snacks"
+            "Riviana Pearl Couscous - Pure Comfort Food",
+            "Maftoul: The Authentic Palestinian Couscous",
+            "Delallo's Italian Pearl Couscous - Transforming Your Kitchen",
+            "Great River Mill's Organic Couscous - Health-Centric Approach",
+            "Baron\u2019s Original Israeli Couscous - Taste the Tradition"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596eb1a3f6ce9b164c475a",
+        "title": "Understanding the Health Benefits of Psyllium",
+        "slug": "psyllium-health-benefits",
+        "excerpt": "Deep dive into why psyllium is great for your health.",
+        "outline": [
+            "Overview of psyllium and its origins",
+            "Digestive health and psyllium",
+            "Psyllium's role in heart health",
+            "Maintaining a balanced diet with psyllium"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dcc6b9d8c51d0a97e4be4c",
+        "title": "5 Delicious Ways to Incorporate Couscous into Your Salads",
+        "slug": "couscous-in-salads",
+        "excerpt": "Discover various ways in which you can incorporate couscous into your salads to give them a unique twist.",
+        "outline": [
+            "Decoding the Pearl Couscous Salad",
+            "Sweet and Savory: Fig Couscous Salad Recipe",
+            "Exotic Flavours: Moroccan-Inspired Couscous Salad",
+            "Vibrant Veggies: Couscous Salad with Fresh Veggies",
+            "Delicious and Nutritious: Quinoa and Couscous Salad"
         ],
         "exists": true
     },
     {
-        "_id": "66e9b5ebf39a97d88c1c93d5",
-        "title": "The Foodie\u2019s Guide to Latin American Eats",
-        "slug": "foodies-guide-latin-american-eats",
-        "excerpt": "Discover the vibrancy of Latin American food, marked with bold flavors and lively colors. From Mexican tacos to Brazilian feijoada, find out what makes these dishes unique and delightful.",
+        "_id": "66dc7a93d8c51d0a97cf20b4",
+        "title": "Quick and Easy Low-Carb Breakfasts for Busy Women",
+        "slug": "easy-low-carb-breakfasts-busy-women",
+        "excerpt": "Make breakfast a breeze with these easy low-carb recipes that won't take up your time and keeps you full for hours.",
         "outline": [
-            "Relishing Mexican Tacos and Enchiladas",
-            "Feasting on Argentine Asado (BBQ)",
-            "Savoring Brazilian Feijoada and Acaraj\u00e9",
-            "Delighting in Peruvian Ceviche",
-            "Exploring Cuban Sandwiches and Ropa Vieja"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "66df677b9999dedc194a3890",
-        "title": "Cuddle Up with These 5 Cozy Whiskey Cocktails",
-        "slug": "cozy-whiskey-cocktails",
-        "excerpt": "Keep cozy with the rich and warming flavors of whiskey-based cocktails. Pick up some recipes and impress your loved ones with these delightful drinks.",
-        "outline": [
-            "Exploring the Appeal of Whiskey Cocktails",
-            "5 Cozy Whiskey Cocktail Recipes",
-            "The Role of Whiskey in Mixology",
-            "Pairing Whiskey with the Right Ingredients for Cocktails",
-            "The Ideal Setting for Enjoying Whiskey Cocktails"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "66dffdf2cf5229c457ef6f74",
-        "title": "6 Fun Ways to Incorporate Vanilla Ice Cream into Your Desserts",
-        "slug": "incorporate-vanilla-ice-cream-in-desserts",
-        "excerpt": "Discover fun and delicious ways to include vanilla ice cream in your desserts.",
-        "outline": [
-            "Ice cream sandwich cookies",
-            "Affogato delight",
-            "Vanilla ice cream pie",
-            "Ice cream stuffed fruit",
-            "Layered ice cream cake",
-            "Ice cream trifle"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "66dcc69cd8c51d0a97e455f2",
-        "title": "Healthy and Savory Pear Salads for Every Season",
-        "slug": "pear-salad-recipes",
-        "excerpt": "Discover range of pear salads, combining different fruits, vegetables, and dressing that bring out the best of pears.",
-        "outline": [
-            "Winter Pear Salad Ideas",
-            "Refreshing Summer Pear Salads",
-            "Autumn-inspired Pear Salad Recipes",
-            "Springy Pear Salad Mixing Ideas",
-            "Best Pear Varieties For Salads"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "66dcc615d8c51d0a97e274ad",
-        "title": "Chorizo Party: 5 Dishes to Serve for Your Friends",
-        "slug": "chorizo-party-dishes",
-        "excerpt": "Spice up your next gathering with delicious and aromatic chorizo dishes that your friends will love.",
-        "outline": [
-            "Setting Up a Chorizo Themed Party",
-            "Recipe 1: Mini Chorizo Pizzas",
-            "Recipe 2: Chorizo and Cheese Dip",
-            "Recipe 3: Chorizo and Potato Skewers",
-            "Recipe 4: Chorizo Taco Bites"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "66dcccded8c51d0a97fac30a",
-        "title": "5 Unexpected Gourmet Dishes You Can Make With Leftovers",
-        "slug": "gourmet-dishes-with-leftovers",
-        "excerpt": "Turn your leftovers into fancy meals with these simple gourmet recipes. A creative and money-saving way to enjoy great food!",
-        "outline": [
-            "Turn last night's steak into a gourmet steak salad",
-            "Create a fancy chicken alfredo pasta with leftover roast chicken",
-            "Reinvent leftover mashed potatoes into French gourmet potato cheesecakes",
-            "Give a new life to salmon leftovers by turning them into salmon tartares",
-            "Turn your leftover soup into a gourmet chowder"
+            "5-Minute Breakfast Salad",
+            "Blueberry Almond Smoothie",
+            "Cheese, Egg and Spinach Muffins",
+            "Avocado and Bacon Wraps",
+            "Frittata with Veggies and Feta Cheese"
         ],
         "exists": true
     },
     {
-        "_id": "66dccc65d8c51d0a97f900e6",
-        "title": "Middle Eastern Dips and Spread for a Healthy Snacking",
-        "slug": "middle-eastern-dips-spread",
-        "excerpt": "Delve into the world of Middle Eastern spreads and dips. Perfectly creamy, spicy and full of flavor, these sides will transform your snacking experience.",
+        "_id": "66df67d19999dedc194b85c8",
+        "title": "5 Creative Twists to Peanut Butter Recipes for Kids",
+        "slug": "creative-peanut-butter-recipes-kids",
+        "excerpt": "Inspire your little ones with creative and fun peanut butter recipes that are not only delicious but also packed with nutrition.",
         "outline": [
-            "Hummus: The Smooth Classic",
-            "Mutabbal: The Smokey Flavor",
-            "Tahini Sauce: The Nutty Surprise",
-            "Zhoug: The Spicy Kick",
-            "Labneh: The Tangy Twist"
+            "Peanut Butter Jelly Unicorn Sandwiches",
+            "Homemade Peanut Butter Granola Bars",
+            "Crispy Peanut Butter Balls Recipe",
+            "Peanut Butter and Fruit Pizza",
+            "Peanut Butter Banana Popsicles"
         ],
         "exists": false
     },
     {
-        "_id": "66dcc6f8d8c51d0a97e594e2",
-        "title": "Creating the Perfect Charcuterie Board: A Guide",
-        "slug": "perfect-charcuterie-board-guide",
-        "excerpt": "Learn how to create an attractive, appetizing charcuterie board for any occasion.",
+        "_id": "67507670a3f6ce9b16307655",
+        "title": "The Ultimate Guide to Low-Calorie Baking Substitutes",
+        "slug": "ultimate-guide-to-low-calorie-baking-substitutes",
+        "excerpt": "Discover healthier alternatives for your favorite baked goods.",
         "outline": [
-            "What is a Charcuterie Board?",
-            "Choosing the Right Meats",
-            "Selecting the Perfect Cheese Match",
-            "Adding Fruits and Nuts for Balance",
-            "Setting up your Charcuterie Board"
+            "Flour substitutes",
+            "Sugar replacements",
+            "Dairy alternatives",
+            "Egg substitutes",
+            "Using fruit purees",
+            "Healthy fats for baking"
         ],
         "exists": false
     },
     {
-        "_id": "66dffdc7cf5229c457eee074",
-        "title": "7 Personalized Food Gifts That Show You Care",
-        "slug": "personalized-food-gifts-show-care",
-        "excerpt": "Personalized food gifts that add a special touch for any occasion.",
+        "_id": "66dcc6b9d8c51d0a97e4be63",
+        "title": "How to Prepare and Cook Pearl Couscous Like a Pro",
+        "slug": "prepare-cook-pearl-couscous",
+        "excerpt": "Master how to properly prepare and cook pearl couscous with these easy-to-follow tips.",
         "outline": [
-            "Customized cookie jars",
-            "Monogrammed cutting boards",
-            "Personalized spice blends",
-            "Engraved cheese knives",
-            "Homemade signature sauces",
-            "Personalized wine bottles",
-            "Custom recipe books"
+            "The Basics of Pearl Couscous Preparation",
+            "Perfecting the Pearl: How to Cook Couscous",
+            "From Water to Wine: Experimenting with Liquids in Couscous",
+            "Cooking Times and Techniques for Optimal Couscous",
+            "The Secret Ingredient: How Spices Can Transform Your Couscous"
         ],
         "exists": false
     },
     {
-        "_id": "66dccc4cd8c51d0a97f8af13",
-        "title": "Guide To Decoding Food Labels for Low Fructose Diet",
-        "slug": "decoding-food-labels-for-low-fructose",
-        "excerpt": "This guide will assist you in understanding food labels and making healthier choices suited to a low fructose diet.",
+        "_id": "66dcc597d8c51d0a97e09ed5",
+        "title": "Upgrade Your Brunch with These Mini Cocotte Ideas",
+        "slug": "brunch-mini-cocotte-ideas",
+        "excerpt": "Give your brunch a boost with these mouthwatering and individually serving recipes made in a mini cocotte.",
         "outline": [
-            "Unraveling the Mystery of Food Labels",
-            "Misleading Terms to Watch Out For",
-            "Identifying Hidden Fructose",
-            "Choosing Low-Fructose Alternatives",
-            "Practical Tips for Grocery Shopping"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "66dccc65d8c51d0a97f900e1",
-        "title": "Middle Eastern Desserts to Sweeten Your Days",
-        "slug": "middle-eastern-desserts",
-        "excerpt": "Satiate your sweet tooth with these tantalizing Middle Eastern desserts. Explore this listicle to learn about the sweets and pastries that will bring a lavish finale to your meals.",
-        "outline": [
-            "Baklava: The Layered Decadence",
-            "Knafeh: The Cheese Delight",
-            "Rice Pudding: Creamy Comfort",
-            "Sesame Cookies: The Crunchy Joy",
-            "Rose Water Ice Cream: A Fragrant Treat"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "66dcc597d8c51d0a97e09ebd",
-        "title": "Healthy Mini Cocotte Meals for Vegans",
-        "slug": "vegan-mini-cocotte-meals",
-        "excerpt": "Even if you're on a vegan diet, you can still enjoy tasty meals cooked in a mini cocotte.",
-        "outline": [
-            "Delicious Dairy-Free Mini Cocotte Recipes",
-            "Protein-Packed Plant-Based Mini Cocotte Dishes",
-            "Indulgent Vegan Desserts in a Cocotte",
-            "Nutritious Vegan Breakfast Ideas in a Cocotte",
-            "Easy Vegan Lunches Made in a Cocotte"
+            "Mini Cocotte Egg Dishes",
+            "Baked Goods for Brunch in a Cocotte",
+            "Brunch Appetizers in Individual Cocottes",
+            "Sweet Brunch Treats in a Cocotte",
+            "Drink Pairings for Your Mini Cocotte Brunch"
         ],
         "exists": true
     },
     {
-        "_id": "67507670a3f6ce9b1630764e",
-        "title": "10 Low-Calorie Dinners That Taste Decadent",
-        "slug": "10-low-calorie-dinners-that-taste-decadent",
-        "excerpt": "Indulge in these hearty, satisfying meals without the guilt or extra calories.",
+        "_id": "66dcc740d8c51d0a97e69ad2",
+        "title": "Exploring Pink: Traditional Pink Beverages Around the World",
+        "slug": "exploring-pink-traditional-pink-beverages",
+        "excerpt": "Showcasing a vibrant panorama of cultures, let's embark on a flavorful journey exploring traditional pink beverages across the globe.",
         "outline": [
-            "Delicious stir-fry recipes",
-            "Savory stuffed bell peppers",
-            "Hearty veggie chili",
-            "Zucchini noodles with marinara",
-            "Mushroom and spinach lasagna",
-            "Lentil and black bean tacos",
-            "Tofu and vegetable curry",
-            "Creamy cauliflower soup",
-            "Healthy chicken pot pie",
-            "Grilled portobello burgers"
+            "The Pink Chai of Kashmir, India",
+            "Mexico's Pink Horchata",
+            "Japan's Sakura Tea: A Cherry Blossom Delight",
+            "Sipping on Iran's Pink Rose Sherbet",
+            "Bandung: The Pink Milk Drink of Southeast Asia"
         ],
         "exists": false
+    },
+    {
+        "_id": "66dcccf9d8c51d0a97fb2822",
+        "title": "5 Healthy Recipes that Are Gentle to Your Gut",
+        "slug": "healthy-recipes-gentle-to-your-gut",
+        "excerpt": "Take a look at our list of culinary solutions that tend to upset tummies without compromising taste or nutrition",
+        "outline": [
+            "The Power of Broths and Soups",
+            "Ginger Tofu Stir Fry: \u201cThe Tummy Tamer\u201d",
+            "Steamed Vegetables with a Twist",
+            "Berry-licious Desserts You Can Digest",
+            "Keeping Your Gut Happy with Probiotic-Rich Foods"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dcc69cd8c51d0a97e455ef",
+        "title": "Exploring Varieties of Pears and Their Unique Flavours",
+        "slug": "exploring-varieties-of-pears",
+        "excerpt": "A comprehensive guide to different varieties of pears and the unique flavours that set them apart.",
+        "outline": [
+            "Differentiating Between Varieties of Pears",
+            "The Unique Flavours of Each Pear Variety",
+            "Best Pear Varieties for Cooking",
+            "Most Delicious Fresh Eating Pear Varieties",
+            "What The Shape of a Pear Can Tell You About Its Taste"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dccc65d8c51d0a97f900dc",
+        "title": "Refreshing Middle Eastern Salads for Summer Evenings",
+        "slug": "refreshing-middle-eastern-salads",
+        "excerpt": "Make your summer evenings cool with these refreshing Middle Eastern salads. Secure your health and keep your taste buds enthralled with this light yet flavorful fare.",
+        "outline": [
+            "Fattoush: A Crispy Delight",
+            "Tabbouleh: The Green Goddess",
+            "Cucumber Yogurt Salad: The Chilled Wonder",
+            "Carrot Salad: A Tangy Surprise",
+            "Parsley Salad: The Herbal Magic"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dcc740d8c51d0a97e69aba",
+        "title": "Frozen Enchantments: Pink Slushie Cocktails",
+        "slug": "frozen-enchantments-pink-slushie-cocktails",
+        "excerpt": "Bringing back the nostalgia of childhood summers, explore the realm of pink slushie cocktails that promise refreshment with a grown-up twist.",
+        "outline": [
+            "Understanding the Art of Making Slushie Cocktails",
+            "Popular Pink Slushie Cocktail Recipes",
+            "Choosing the Right Ingredients for your Slushie Cocktail",
+            "Creating Non-alcoholic Pink Slushies",
+            "Organising a Slushie Cocktail Night"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dcccb8d8c51d0a97fa3fcd",
+        "title": "Creative Celery Salads: Adding Crunch to Your Plates",
+        "slug": "creative-celery-salads",
+        "excerpt": "Step up your salad game with these fresh and innovative ways to add celery into your salad bowl. Perfect for appetizers or a green side dish!",
+        "outline": [
+            "Understanding the Nutritional Benefits of Celery in Salads",
+            "Top 5 Unique Celery Salad Recipes to Try",
+            "Incorporating Different Types of Celery into Your Salad",
+            "Food Pairing: What Goes Well with Celery Salads",
+            "Keeping Your Celery Salad Fresh: Storage and Preparation Tips"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "67596eb1a3f6ce9b164c4754",
+        "title": "Enhancing Soups and Stews with Psyllium",
+        "slug": "psyllium-soups-stews",
+        "excerpt": "Thicken your soups and stews naturally with psyllium.",
+        "outline": [
+            "How psyllium acts as a thickener",
+            "Flavor enhancement tips",
+            "Favorite psyllium soup recipes"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dccd11d8c51d0a97fb77f9",
+        "title": "10 Simple and Delicious Homemade Dips",
+        "slug": "homemade-dips",
+        "excerpt": "Explore the joy of cooking with these simple and delicious homemade dip recipes that can accentuate your bruschetta flavors",
+        "outline": [
+            "Classic Guacamole Dip",
+            "Creamy Artichoke Dip",
+            "Homemade Hummus Dip",
+            "Chipotle Salsa Dip",
+            "Sweet Mango Chutney Dip"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dffe27cf5229c457f01ad2",
+        "title": "5 Weirdest State Fair Foods That Actually Taste Good",
+        "slug": "weirdest-state-fair-foods",
+        "excerpt": "Take a look at some bizarre state fair foods that surprisingly delight the taste buds.",
+        "outline": [
+            "Kool-Aid pickles",
+            "Deep-fried butter",
+            "Spaghetti donut",
+            "Fried Coke",
+            "Doughnut burgers"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "675076caa3f6ce9b1630766b",
+        "title": "Delicious Spiced Coffees to Savor in Fall",
+        "slug": "delicious-spiced-coffees-savor-fall",
+        "excerpt": "Spice up your coffee routine with these flavorful options.",
+        "outline": [
+            "Pumpkin spice latte at home",
+            "Cinnamon mocha magic",
+            "Nutmeg-infused cold brew",
+            "Clove and caramel coffee delight",
+            "Vanilla and cardamom coffee mix"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "675076caa3f6ce9b16307673",
+        "title": "Fragrant Autumn Lattes: Beyond Pumpkin Spice",
+        "slug": "fragrant-autumn-lattes-beyond-pumpkin-spice",
+        "excerpt": "Find new favorite latte flavors for autumn.",
+        "outline": [
+            "Maple pecan latte",
+            "Cinnamon dolce delight",
+            "Blackberry sage infusion",
+            "Salted caramel coffee",
+            "Gingerbread latte love"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dccc81d8c51d0a97f96291",
+        "title": "10 Tasty Drinks That Use Stevia for Sweetness",
+        "slug": "tasty-drinks-use-stevia-sweetness",
+        "excerpt": "Looking for ways to cut back on sugar? Try these tasty drink recipes that use Stevia as a natural sweetener.",
+        "outline": [
+            "The Pros and Cons of Using Stevia in Drinks",
+            "How to Sweeten Drinks with Stevia",
+            "Delicious Stevia-Sweetened Drink Recipes"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66df67a19999dedc194acd22",
+        "title": "Sweet and Tangy Passion Fruit Desserts",
+        "slug": "tangy-passion-fruit-desserts",
+        "excerpt": "Bring a tropical twist to your dessert table with these delicious passion fruit recipe ideas. The sweet-tangy flavor will delight any dessert lover.",
+        "outline": [
+            "Passion Fruit Tarts",
+            "Tropical Passion Fruit Ice Cream",
+            "Delicious Passion Fruit Cheesecakes",
+            "Passion Fruit Panna Cotta",
+            "Exotic Passion Fruit Trifle"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "675076caa3f6ce9b16307671",
+        "title": "Cozy Milk-Based Drinks to Enjoy by the Fire",
+        "slug": "cozy-milk-based-drinks-fire",
+        "excerpt": "Unwind with these comforting milk-based beverages.",
+        "outline": [
+            "Golden milk's soothing properties",
+            "Vanilla almond milk steamer",
+            "Coconut milk and turmeric blend",
+            "Italian-style hot milk with honey",
+            "Masala doodh with warming spices"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dc7abdd8c51d0a97cfb6a7",
+        "title": "Exploring Japan Through Desserts: 5 Traditional Sweets to Make at Home",
+        "slug": "traditional-japanese-desserts",
+        "excerpt": "Get a taste of Japan's desserts with these traditional, sweet, and delicious recipes.",
+        "outline": [
+            "Elevate Your Tea Time with Matcha Cookies",
+            "Bring the Festival Home: DIY Taiyaki",
+            "How to Create Authentic Mochi",
+            "A Closer Look at Dorayaki: Japan's Pancake Sandwich",
+            "Sakura-Yokan: A Blooming Delight"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66df67019999dedc1948630a",
+        "title": "5 Creative Ways to Use Jalapenos in Your Drinks",
+        "slug": "creative-jalapeno-drinks",
+        "excerpt": "Learn about 5 creative ways of adding jalapenos to your favourite drinks, from water to cocktails",
+        "outline": [
+            "Jalapeno Infused Water",
+            "Jalapeno Mojito",
+            "Spicy Jalapeno Margarita",
+            "Pineapple Jalapeno Smoothie",
+            "Hot Jalapeno Ginger Lemon Tea"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dd613ed8c51d0a97fcdfe1",
+        "title": "5 Delicious Vegan Salad Recipes",
+        "slug": "delicious-vegan-salad-recipes",
+        "excerpt": "Explore the world of plant-based diet with these delicious vegan salad recipes, ideal for weight loss.",
+        "outline": [
+            "Why Choose Vegan Salads",
+            "Raw Kale and Avocado Salad Recipe",
+            "Vegan Caesar Salad Recipe",
+            "Lemony Lentil and Chickpea Salad Recipe",
+            "Thai-Inspired Red Cabbage Salad Recipe"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "66dcc6f8d8c51d0a97e594e8",
+        "title": "10 Creative Canap\u00e9 Ideas for Your Next Event",
+        "slug": "creative-canape-ideas",
+        "excerpt": "Discover creative and delicious canap\u00e9 options to add a touch of sophistication to your next event.",
+        "outline": [
+            "Understanding What Canap\u00e9s Are",
+            "Vegetarian Canap\u00e9 Ideas",
+            "Seafood Canap\u00e9 Choices",
+            "Canap\u00e9s with Meat and Poultry",
+            "Bonus: Vegan Canap\u00e9 Options"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dccc81d8c51d0a97f9628c",
+        "title": "Healthy Baking Substitutions: Using Stevia Instead of Sugar",
+        "slug": "healthy-baking-substitutions-using-stevia",
+        "excerpt": "Discover the joys of baking with Stevia, a natural sweetener that can help cut calories without sacrificing taste.",
+        "outline": [
+            "The Health Benefits of Using Stevia in Baking",
+            "How to Substitute Stevia for Sugar",
+            "Baking Recipes That Use Stevia"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "66dcccded8c51d0a97fac324",
+        "title": "A Tour Around the World with these Gourmet Dishes",
+        "slug": "world-gourmet-dishes",
+        "excerpt": "Travel the world from the comfort of your own home with these international gourmet recipes.",
+        "outline": [
+            "Italian Gourmet: Tuscan Chicken Pasta",
+            "French Gourmet: Classic Ratatouille",
+            "Mexican Gourmet: Chipotle Shrimp Tacos",
+            "Spanish Gourmet: Authentic Seafood Paella",
+            "Vietnamese Gourmet: B\u00fan ch\u1ea3 (Grilled pork with noodles)"
+        ],
+        "exists": true
     },
     {
         "_id": "66dcccf9d8c51d0a97fb2827",
@@ -696,30 +688,17 @@
         "exists": false
     },
     {
-        "_id": "66dcc597d8c51d0a97e09ecc",
-        "title": "Seasonal Mini Cocotte Recipes to Try",
-        "slug": "seasonal-mini-cocotte-recipes",
-        "excerpt": "Get creative with seasonal produce and make the most out of your mini cocotte with these recipes.",
+        "_id": "66df67fd9999dedc194c58e5",
+        "title": "The Joy of Cooking with Your Partner: Couple's Cook Off Ideas",
+        "slug": "couples-cook-off-ideas",
+        "excerpt": "Turn the act of cooking into a fun, bonding experience with these couples cook off ideas.",
         "outline": [
-            "Winter Mini Cocotte Recipes",
-            "Spring Dishes in a Cocotte",
-            "Summer Mini Cocotte Meal Ideas",
-            "Autumn Mini Cocotte Dishes"
+            "Homemade Pizza Challenge",
+            "Cook-Off Classic: The Burger Battle",
+            "Taco Tuesday: Couple's Edition",
+            "Dessert Duo: Create Your Own Sundae",
+            "Tips for Organizing a Successful Cook-Off"
         ],
-        "exists": true
-    },
-    {
-        "_id": "66e9b5ebf39a97d88c1c93cd",
-        "title": "Exploring the Tastes of Asia: 5 Must-Try Asian Cuisines",
-        "slug": "exploring-tastes-of-asia",
-        "excerpt": "Delve into the rich flavors and unique profiles of Asia\u2019s most delectable dishes. Embark on a culinary journey through different Asian regions, from spicy Thai to umami-rich Japanese fare.",
-        "outline": [
-            "Savoring the Spiciness of Thai Cuisine",
-            "Experience the Complexity of Korean Dishes",
-            "Indulging in Fresh, Healthy Vietnamese Meals",
-            "Discover the Umami Flavors of Japanese Food",
-            "Enjoying the Variety in Chinese Cuisine"
-        ],
-        "exists": true
+        "exists": false
     }
 ]

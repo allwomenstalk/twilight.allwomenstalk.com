@@ -1,39 +1,29 @@
 [
     {
-        "_id": "67596dd1a3f6ce9b164c46da",
-        "title": "Exploring Relationship Building Apps",
-        "slug": "relationship-building-apps",
-        "excerpt": "A look at apps designed to strengthen and nurture relationships.",
+        "_id": "6759d84ba3f6ce9b164c56e1",
+        "title": "Developing a Consistent Aesthetic for Your Instagram Profile",
+        "slug": "developing-instagram-aesthetic",
+        "excerpt": "Cultivate a visually appealing and consistent Instagram aesthetic.",
         "outline": [
-            "Understanding love languages and compatibility",
-            "Apps for setting and achieving relationship goals",
-            "Conflict resolution and problem-solving platforms",
-            "Journaling and reflection apps",
-            "Vision board apps for couples",
-            "Apps for planning future activities together",
-            "Developing trust and transparency online",
-            "Sharing and setting relationship milestones",
-            "Therapy and counseling app options",
-            "Apps for acknowledging and celebrating daily successes"
+            "Choosing a theme that reflects your brand",
+            "Color schemes and their psychological impact",
+            "Staying consistent with filters and styles",
+            "Creating a cohesive grid layout",
+            "Tools to help plan your Instagram feed"
         ],
         "exists": false
     },
     {
-        "_id": "67596dd1a3f6ce9b164c46db",
-        "title": "Apps for Planning the Perfect Couples Getaway",
-        "slug": "couples-getaway-planning-apps",
-        "excerpt": "Find the best apps to help plan and enjoy a romantic trip with your partner.",
+        "_id": "6759d84ba3f6ce9b164c56de",
+        "title": "Top Tips for Crafting Memorable Instagram Captions",
+        "slug": "top-tips-memorable-instagram-captions",
+        "excerpt": "Learn key strategies to craft catchy and memorable Instagram captions.",
         "outline": [
-            "Travel itinerary planning apps",
-            "Finding romantic accommodation deals",
-            "Discovering hidden local gems",
-            "Transportation and carpooling apps",
-            "Budgeting apps for travel",
-            "Packing and travel checklist apps",
-            "Language and translation apps",
-            "Photo and travel diary apps",
-            "Apps offering date and travel tips",
-            "Recommendations for travel safety apps"
+            "Understanding your audience's preferences",
+            "Incorporating trending topics into captions",
+            "Balancing humor and sentiment",
+            "Utilizing emojis effectively",
+            "Testing different styles for maximum impact"
         ],
         "exists": false
     },
@@ -57,6 +47,25 @@
         "exists": false
     },
     {
+        "_id": "67596dd1a3f6ce9b164c46da",
+        "title": "Exploring Relationship Building Apps",
+        "slug": "relationship-building-apps",
+        "excerpt": "A look at apps designed to strengthen and nurture relationships.",
+        "outline": [
+            "Understanding love languages and compatibility",
+            "Apps for setting and achieving relationship goals",
+            "Conflict resolution and problem-solving platforms",
+            "Journaling and reflection apps",
+            "Vision board apps for couples",
+            "Apps for planning future activities together",
+            "Developing trust and transparency online",
+            "Sharing and setting relationship milestones",
+            "Therapy and counseling app options",
+            "Apps for acknowledging and celebrating daily successes"
+        ],
+        "exists": false
+    },
+    {
         "_id": "67596dd1a3f6ce9b164c46d9",
         "title": "10 Date Night Apps to Make Your Evenings Memorable",
         "slug": "date-night-apps-for-couples",
@@ -72,6 +81,53 @@
             "Apps for booking local events and activities",
             "Mindfulness and relaxation sessions",
             "Storytelling and writing collaboration apps"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759d84ba3f6ce9b164c56e3",
+        "title": "Understanding Instagram's Algorithm: Tips to Maximize Reach",
+        "slug": "understanding-instagram-algorithm",
+        "excerpt": "Master Instagram's algorithm to increase your content's visibility.",
+        "outline": [
+            "Key factors influencing content reach",
+            "Strategies to increase engagement",
+            "Timing posts for optimal visibility",
+            "Analyzing performance data",
+            "Adapting to algorithm changes"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759d84ba3f6ce9b164c56e5",
+        "title": "Instagram Influencers: Building a Career from Your Profile",
+        "slug": "instagram-influencer-career",
+        "excerpt": "Turn your Instagram profile into a thriving influencer career.",
+        "outline": [
+            "Defining your niche and audience",
+            "Building a strong personal brand",
+            "Navigating partnerships and sponsorships",
+            "Growing your following authentically",
+            "Maintaining longevity as an influencer"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596dd1a3f6ce9b164c46dc",
+        "title": "Strengthen Your Bond with Fitness Apps for Couples",
+        "slug": "fitness-apps-for-couples",
+        "excerpt": "Get active and fit together using these specially designed fitness applications.",
+        "outline": [
+            "Popular workout streaming apps",
+            "Apps for setting mutual fitness goals",
+            "Tracking and monitoring fitness progress",
+            "Virtual race and competition apps",
+            "Yoga and meditation apps",
+            "Meal planning and nutrition tracking",
+            "Apps with social support communities",
+            "Flexible home workout programs",
+            "Steps and activity tracking competitions",
+            "Finding local workout events or classes"
         ],
         "exists": false
     },
@@ -114,6 +170,67 @@
         "exists": false
     },
     {
+        "_id": "67596dd1a3f6ce9b164c46db",
+        "title": "Apps for Planning the Perfect Couples Getaway",
+        "slug": "couples-getaway-planning-apps",
+        "excerpt": "Find the best apps to help plan and enjoy a romantic trip with your partner.",
+        "outline": [
+            "Travel itinerary planning apps",
+            "Finding romantic accommodation deals",
+            "Discovering hidden local gems",
+            "Transportation and carpooling apps",
+            "Budgeting apps for travel",
+            "Packing and travel checklist apps",
+            "Language and translation apps",
+            "Photo and travel diary apps",
+            "Apps offering date and travel tips",
+            "Recommendations for travel safety apps"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759d84ba3f6ce9b164c56e2",
+        "title": "How Instagram Stories Can Enhance Your Brand",
+        "slug": "enhancing-brand-instagram-stories",
+        "excerpt": "Utilize Instagram Stories to connect with followers and enhance your brand.",
+        "outline": [
+            "Leveraging the immediacy of Stories",
+            "Engagement tools within Instagram Stories",
+            "Highlighting important stories",
+            "Connecting with followers authentically",
+            "Creating a narrative through Stories"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759d84ba3f6ce9b164c56e0",
+        "title": "The Rise of Instagram Reels: What You Need to Know",
+        "slug": "rise-of-instagram-reels",
+        "excerpt": "Discover how Instagram Reels are transforming content creation on the platform.",
+        "outline": [
+            "Understanding Instagram Reels' appeal",
+            "Key differences between Reels and Stories",
+            "Creating engaging Reels content",
+            "Optimizing your Reels for better reach",
+            "Analyzing Reels performance metrics"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759d84ba3f6ce9b164c56dd",
+        "title": "Best Instagram Caption Apps to Elevate Your Posts",
+        "slug": "best-instagram-caption-apps",
+        "excerpt": "Explore top apps that help you craft the most engaging Instagram captions.",
+        "outline": [
+            "Overview of Instagram caption creators",
+            "Choosing the right app for your style",
+            "Features to look for in a caption app",
+            "Pros and cons of popular caption apps",
+            "How these apps boost your social media presence"
+        ],
+        "exists": false
+    },
+    {
         "_id": "67596dd1a3f6ce9b164c46de",
         "title": "Financial Planning Apps for Couples to Secure Their Future",
         "slug": "financial-planning-apps-for-couples",
@@ -133,40 +250,44 @@
         "exists": false
     },
     {
-        "_id": "67596dd1a3f6ce9b164c46d8",
-        "title": "Top 10 Communication Apps for Couples to Enhance Intimacy",
-        "slug": "communication-apps-for-couples",
-        "excerpt": "Explore the best apps that help couples stay connected and improve their communication.",
+        "_id": "6759d84ba3f6ce9b164c56e4",
+        "title": "Explore IGTV: Long-Form Video Content on Instagram",
+        "slug": "explore-igtv-long-form-content",
+        "excerpt": "Dive into IGTV for enhancing your Instagram with long-form video content.",
         "outline": [
-            "Text-based communication apps",
-            "Apps with voice message features",
-            "Apps for video calling and virtual dates",
-            "Scheduled check-ins and reminders",
-            "Apps for sharing activities and schedules",
-            "Private photo and media sharing",
-            "Apps with shared note-taking capabilities",
-            "Voice and video filters to add fun",
-            "Mood and emotion tracking apps",
-            "Apps encouraging thoughtful conversation"
+            "Understanding the benefits of IGTV",
+            "Creating appealing long-form videos",
+            "Cross-promoting IGTV content",
+            "Measuring success with IGTV analytics",
+            "Comparing IGTV with other video platforms"
         ],
         "exists": false
     },
     {
-        "_id": "67596dd1a3f6ce9b164c46dc",
-        "title": "Strengthen Your Bond with Fitness Apps for Couples",
-        "slug": "fitness-apps-for-couples",
-        "excerpt": "Get active and fit together using these specially designed fitness applications.",
+        "_id": "6759d84ba3f6ce9b164c56df",
+        "title": "Improve Engagement with These Instagram Hashtag Strategies",
+        "slug": "improve-engagement-hashtag-strategies",
+        "excerpt": "Boost your Instagram engagement by mastering hashtag strategies.",
         "outline": [
-            "Popular workout streaming apps",
-            "Apps for setting mutual fitness goals",
-            "Tracking and monitoring fitness progress",
-            "Virtual race and competition apps",
-            "Yoga and meditation apps",
-            "Meal planning and nutrition tracking",
-            "Apps with social support communities",
-            "Flexible home workout programs",
-            "Steps and activity tracking competitions",
-            "Finding local workout events or classes"
+            "Why hashtags are crucial for visibility",
+            "The art of mixing popular and niche hashtags",
+            "How to research effective hashtags",
+            "When to update your hashtag strategy",
+            "Avoiding banned or overused hashtags"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759d84ba3f6ce9b164c56e6",
+        "title": "Strategies for Instagram Growth: From 0 to 10K Followers",
+        "slug": "strategies-instagram-growth",
+        "excerpt": "Learn strategies to grow your Instagram followers from scratch.",
+        "outline": [
+            "Crafting a compelling profile",
+            "Engaging with your community",
+            "Posting consistency and quality",
+            "Networking with other users",
+            "Analyzing growth through insights"
         ],
         "exists": false
     },
@@ -186,6 +307,25 @@
             "Personalized meditation plans",
             "Shared progress and milestone tracking",
             "Access to expert stress-relief talks"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596dd1a3f6ce9b164c46d8",
+        "title": "Top 10 Communication Apps for Couples to Enhance Intimacy",
+        "slug": "communication-apps-for-couples",
+        "excerpt": "Explore the best apps that help couples stay connected and improve their communication.",
+        "outline": [
+            "Text-based communication apps",
+            "Apps with voice message features",
+            "Apps for video calling and virtual dates",
+            "Scheduled check-ins and reminders",
+            "Apps for sharing activities and schedules",
+            "Private photo and media sharing",
+            "Apps with shared note-taking capabilities",
+            "Voice and video filters to add fun",
+            "Mood and emotion tracking apps",
+            "Apps encouraging thoughtful conversation"
         ],
         "exists": false
     }

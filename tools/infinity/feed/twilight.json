@@ -1,20 +1,121 @@
 [
     {
-        "_id": "675970a0a3f6ce9b164c485a",
-        "title": "Mythological Origins of Vampires and Werewolves",
-        "slug": "mythological-origins-vampires-werewolves",
-        "excerpt": "Trace the roots of vampire and werewolf myths that inspired stories like Twilight.",
+        "_id": "675970a0a3f6ce9b164c485b",
+        "title": "Analyzing the Romance Dynamics in 'Twilight'",
+        "slug": "romance-dynamics-twilight",
+        "excerpt": "Delve into the intricate romantic relationships and dynamics within Twilight, iconic and controversial.",
         "outline": [
-            "Ancient vampire legends",
-            "Folklore inspirations",
-            "Werewolf transformation myths",
-            "Vampires in Eastern European lore",
-            "Blood-thirst and immortality themes",
-            "Lycanthropy origins",
-            "Cultural significance",
-            "Evolution in modern stories",
-            "Twilight\u2019s take on these myths",
-            "Myths in contemporary culture"
+            "Bella and Edward\u2019s eternal bond",
+            "Jacob and Bella\u2019s complex friendship",
+            "Love triangle exploration",
+            "Romantic tension development",
+            "Power dynamics in relationships",
+            "Bella's personal growth through romance",
+            "Edward\u2019s protective nature",
+            "Jacob\u2019s love and loyalty",
+            "Impact on readers\u2019 perspectives",
+            "Contemporary romantic themes"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "675970a0a3f6ce9b164c4852",
+        "title": "10 Essential Traits Bella Swan Embraced in 'Twilight'",
+        "slug": "bella-swan-traits-twilight",
+        "excerpt": "Explore the qualities that made Bella Swan a relatable and impactful character in the Twilight series.",
+        "outline": [
+            "Self-discovery journey",
+            "Courage under pressure",
+            "Loyalty to loved ones",
+            "Balancing emotions",
+            "Assertiveness",
+            "Adapting to new realities",
+            "Understanding complex relationships",
+            "Unique sense of fashion",
+            "Embracing vulnerability",
+            "Pursuit of true love"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759db3ba3f6ce9b164c5861",
+        "title": "10 Compelling Werewolf Novels to Sink Your Teeth Into",
+        "slug": "compelling-werewolf-novels",
+        "excerpt": "Discover must-read werewolf novels that captivate and thrill.",
+        "outline": [
+            "The Last Werewolf by Glen Duncan",
+            "Bitten by Kelley Armstrong",
+            "Moon Called by Patricia Briggs",
+            "Sharp Teeth by Toby Barlow",
+            "Blood and Chocolate by Annette Curtis Klause",
+            "The Wolf Gift by Anne Rice",
+            "Frostbite by David Wellington",
+            "Red Moon by Benjamin Percy",
+            "Skin Trade by George R.R. Martin",
+            "The Radleys by Matt Haig"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "675970a0a3f6ce9b164c4853",
+        "title": "7 Ways to Channel Your Inner Vamp in Everyday Life",
+        "slug": "channel-inner-vamp-everyday",
+        "excerpt": "Unveil small lifestyle changes that can help channel a bit of mystique and allure of a fictional vampire.",
+        "outline": [
+            "Confidence boost techniques",
+            "Achieving a mysterious allure",
+            "Mastering the art of listening",
+            "Minding your environment",
+            "Refining personal style",
+            "Reading body language",
+            "Keeping secrets wisely"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759db3ba3f6ce9b164c585b",
+        "title": "Unraveling the Mysteries: Folklore vs. Modern Werewolf Myths",
+        "slug": "folklore-modern-werewolf-myths",
+        "excerpt": "Compare and contrast traditional beliefs with contemporary interpretations of werewolves.",
+        "outline": [
+            "The origins of the werewolf myth",
+            "Variations of werewolves in different cultures",
+            "Werewolves in 20th-century popular culture",
+            "Scientifically debunking werewolf legends",
+            "How modern narratives redefine werewolves"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759db3ba3f6ce9b164c585c",
+        "title": "Werewolves in Romance: Why Do We Love Them?",
+        "slug": "werewolves-in-romance",
+        "excerpt": "Explore the enduring attraction of werewolves in romantic stories.",
+        "outline": [
+            "The mysterious allure of the werewolf lover",
+            "The power dynamics in werewolf human relationships",
+            "The trope of protective and fierce love",
+            "How werewolves complement vampire romances",
+            "Why forbidden love stories captivate us"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "675970a0a3f6ce9b164c4859",
+        "title": "The Impact of Twilight on Modern Vampire Culture",
+        "slug": "impact-twilight-modern-vampire-culture",
+        "excerpt": "Uncover how Twilight transformed the portrayal of vampires in modern media and culture.",
+        "outline": [
+            "Re-defining vampire archetypes",
+            "Twilight\u2019s influence on young adult fiction",
+            "Public perception shifts",
+            "Vampires in popular culture contrast",
+            "Fantasy romance genre expansion",
+            "Twilight\u2019s visual and stylistic impact",
+            "Fandom and community building",
+            "Transformation of vampire media post-Twilight",
+            "Criticisms and controversies",
+            "Legacy of Twilight's vampire mythology"
         ],
         "exists": false
     },
@@ -33,6 +134,34 @@
             "Origin stories of the Cullens",
             "Vampire alliances and conflicts",
             "Cultural impact of Twilight vampires"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759db3ba3f6ce9b164c585d",
+        "title": "Practical Tips for Writing a Captivating Werewolf Story",
+        "slug": "tips-writing-werewolf-story",
+        "excerpt": "Learn how to craft compelling werewolf narratives that engage readers.",
+        "outline": [
+            "Building a unique werewolf mythology",
+            "Developing relatable characters with dual identities",
+            "Creating a compelling conflict",
+            "Balancing horror and romance elements",
+            "Crafting a satisfying resolution"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759db3ba3f6ce9b164c5859",
+        "title": "The Psychological Appeal of Werewolves in Fiction",
+        "slug": "psychological-appeal-werewolves-fiction",
+        "excerpt": "Examine why people are drawn to the mysterious allure of werewolves.",
+        "outline": [
+            "Werewolves as a metaphor for identity crisis",
+            "The thrill of transformation and self-discovery",
+            "Fear and fascination with the beast within",
+            "Werewolves as symbols of rebellion",
+            "The romantic allure of the werewolf legend"
         ],
         "exists": false
     },
@@ -56,40 +185,49 @@
         "exists": false
     },
     {
-        "_id": "675970a0a3f6ce9b164c485b",
-        "title": "Analyzing the Romance Dynamics in 'Twilight'",
-        "slug": "romance-dynamics-twilight",
-        "excerpt": "Delve into the intricate romantic relationships and dynamics within Twilight, iconic and controversial.",
+        "_id": "675970a0a3f6ce9b164c4858",
+        "title": "10 Lessons We Can Learn from 'Twilight'",
+        "slug": "lessons-learn-from-twilight",
+        "excerpt": "From love triangles to supernatural dilemmas, explore what Twilight teaches us about life.",
         "outline": [
-            "Bella and Edward\u2019s eternal bond",
-            "Jacob and Bella\u2019s complex friendship",
-            "Love triangle exploration",
-            "Romantic tension development",
-            "Power dynamics in relationships",
-            "Bella's personal growth through romance",
-            "Edward\u2019s protective nature",
-            "Jacob\u2019s love and loyalty",
-            "Impact on readers\u2019 perspectives",
-            "Contemporary romantic themes"
+            "The power of choice",
+            "Consequences of decisions",
+            "Importance of family bonds",
+            "Value of friendship",
+            "Discovering inner strength",
+            "The courage to face fears",
+            "Resilience in the face of adversity",
+            "Sacrifice for loved ones",
+            "Understanding different perspectives",
+            "Embracing individuality"
         ],
         "exists": false
     },
     {
-        "_id": "675970a0a3f6ce9b164c4859",
-        "title": "The Impact of Twilight on Modern Vampire Culture",
-        "slug": "impact-twilight-modern-vampire-culture",
-        "excerpt": "Uncover how Twilight transformed the portrayal of vampires in modern media and culture.",
+        "_id": "6759db3ba3f6ce9b164c585e",
+        "title": "How Werewolves Became Pop Culture Icons",
+        "slug": "werewolves-pop-culture",
+        "excerpt": "Trace the journey of werewolves from folklore to modern-day pop culture status.",
         "outline": [
-            "Re-defining vampire archetypes",
-            "Twilight\u2019s influence on young adult fiction",
-            "Public perception shifts",
-            "Vampires in popular culture contrast",
-            "Fantasy romance genre expansion",
-            "Twilight\u2019s visual and stylistic impact",
-            "Fandom and community building",
-            "Transformation of vampire media post-Twilight",
-            "Criticisms and controversies",
-            "Legacy of Twilight's vampire mythology"
+            "Werewolves in the early film industry",
+            "Major turning points in werewolf popularity",
+            "Merchandising and commercialization of werewolf stories",
+            "Werewolves as video game protagonists",
+            "Influence of werewolves on fashion and lifestyle"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759db3ba3f6ce9b164c585f",
+        "title": "The Role of Werewolves in Fantasy vs. Horror Genres",
+        "slug": "werewolves-fantasy-horror-genres",
+        "excerpt": "Discuss how werewolves are adapted differently across two popular genres.",
+        "outline": [
+            "Werewolves as heroes in fantasy",
+            "The use of fear and transformation in horror narratives",
+            "Challenging the genre norms with werewolves",
+            "How settings influence werewolf portrayals",
+            "Noteworthy works that blend both genres"
         ],
         "exists": false
     },
@@ -132,56 +270,68 @@
         "exists": false
     },
     {
-        "_id": "675970a0a3f6ce9b164c4858",
-        "title": "10 Lessons We Can Learn from 'Twilight'",
-        "slug": "lessons-learn-from-twilight",
-        "excerpt": "From love triangles to supernatural dilemmas, explore what Twilight teaches us about life.",
+        "_id": "6759db3ba3f6ce9b164c5858",
+        "title": "Exploring the Different Types of Werewolves in Literature and Film",
+        "slug": "types-of-werewolves-literature-film",
+        "excerpt": "Dive into the fascinating world of werewolves and discover their various adaptations.",
         "outline": [
-            "The power of choice",
-            "Consequences of decisions",
-            "Importance of family bonds",
-            "Value of friendship",
-            "Discovering inner strength",
-            "The courage to face fears",
-            "Resilience in the face of adversity",
-            "Sacrifice for loved ones",
-            "Understanding different perspectives",
-            "Embracing individuality"
+            "Classic versus modern werewolves",
+            "How cinema has portrayed werewolves",
+            "Werewolves in popular books",
+            "The evolution of werewolf mythology",
+            "Comparing werewolves in different cultures"
         ],
         "exists": false
     },
     {
-        "_id": "675970a0a3f6ce9b164c4853",
-        "title": "7 Ways to Channel Your Inner Vamp in Everyday Life",
-        "slug": "channel-inner-vamp-everyday",
-        "excerpt": "Unveil small lifestyle changes that can help channel a bit of mystique and allure of a fictional vampire.",
+        "_id": "6759db3ba3f6ce9b164c585a",
+        "title": "Top 10 Iconic Werewolf Characters We Can't Forget",
+        "slug": "iconic-werewolf-characters",
+        "excerpt": "Remember the most unforgettable werewolves that graced our screens and pages.",
         "outline": [
-            "Confidence boost techniques",
-            "Achieving a mysterious allure",
-            "Mastering the art of listening",
-            "Minding your environment",
-            "Refining personal style",
-            "Reading body language",
-            "Keeping secrets wisely"
+            "Jacob Black from Twilight",
+            "Remus Lupin from Harry Potter",
+            "Scott Howard from Teen Wolf",
+            "Michael Corvin from Underworld",
+            "David Kessler from An American Werewolf in London",
+            "Laurence Talbot from The Wolf Man",
+            "Ginger Fitzgerald from Ginger Snaps",
+            "Oz from Buffy the Vampire Slayer",
+            "Lucian from Underworld",
+            "George Sands from Being Human"
         ],
         "exists": false
     },
     {
-        "_id": "675970a0a3f6ce9b164c4852",
-        "title": "10 Essential Traits Bella Swan Embraced in 'Twilight'",
-        "slug": "bella-swan-traits-twilight",
-        "excerpt": "Explore the qualities that made Bella Swan a relatable and impactful character in the Twilight series.",
+        "_id": "675970a0a3f6ce9b164c485a",
+        "title": "Mythological Origins of Vampires and Werewolves",
+        "slug": "mythological-origins-vampires-werewolves",
+        "excerpt": "Trace the roots of vampire and werewolf myths that inspired stories like Twilight.",
         "outline": [
-            "Self-discovery journey",
-            "Courage under pressure",
-            "Loyalty to loved ones",
-            "Balancing emotions",
-            "Assertiveness",
-            "Adapting to new realities",
-            "Understanding complex relationships",
-            "Unique sense of fashion",
-            "Embracing vulnerability",
-            "Pursuit of true love"
+            "Ancient vampire legends",
+            "Folklore inspirations",
+            "Werewolf transformation myths",
+            "Vampires in Eastern European lore",
+            "Blood-thirst and immortality themes",
+            "Lycanthropy origins",
+            "Cultural significance",
+            "Evolution in modern stories",
+            "Twilight\u2019s take on these myths",
+            "Myths in contemporary culture"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759db3ba3f6ce9b164c5860",
+        "title": "Understanding Werewolf Transformation: A Deep Dive",
+        "slug": "understanding-werewolf-transformation",
+        "excerpt": "Insight into the symbolic and storytelling significance of werewolf transformations.",
+        "outline": [
+            "The science fiction of lycanthropy",
+            "Emotional and physical aspects of transformation",
+            "Cultural symbolism of changing forms",
+            "Werewolf transformations across mediums",
+            "Impact of transformation on identity"
         ],
         "exists": false
     }

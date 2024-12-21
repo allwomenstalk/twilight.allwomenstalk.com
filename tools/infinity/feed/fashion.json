@@ -1,5 +1,69 @@
 [
     {
+        "_id": "6759d8f2a3f6ce9b164c5744",
+        "title": "Timeless Fashion Pieces That Never Go Out of Style",
+        "slug": "timeless-fashion-pieces",
+        "excerpt": "Stay fashion-savvy with pieces that withstand changing trends.",
+        "outline": [
+            "Trench Coats that Transcend Seasons",
+            "Classic Leather Jackets",
+            "Functional Yet Fashionable Sneakers",
+            "Iconic Handbags",
+            "Pearl Jewelry Swaying with Time",
+            "Sturdy Denim Jackets",
+            "LBD - Little Black Dress Impact",
+            "Polished Loafers",
+            "Sophisticated Blazers",
+            "Tried and True Printed Scarves"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596e83a3f6ce9b164c4743",
+        "title": "Wardrobe Transformations: Easy Updates for Any Season",
+        "slug": "wardrobe-transformations-seasonal-updates",
+        "excerpt": "Simple tips to refresh your wardrobe with the change of seasons.",
+        "outline": [
+            "Swapping layers for seasonal transitions",
+            "Incorporating seasonal colors",
+            "Updating accessories for a new look",
+            "Tips for eco-friendly wardrobe refreshes"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596e83a3f6ce9b164c473f",
+        "title": "Navigating Tricky Dress Codes with Style",
+        "slug": "navigating-tricky-dress-codes",
+        "excerpt": "Demystify confusing dress codes and present yourself stylishly.",
+        "outline": [
+            "Understanding the basics of dress codes",
+            "How to dress casually yet appropriately",
+            "Business casual vs. business professional",
+            "Tips for formal attire events"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759d8f2a3f6ce9b164c5742",
+        "title": "The Power of Monochrome Outfits",
+        "slug": "monochrome-fashion-impact",
+        "excerpt": "Unlock the sleek and sophisticated look of monochrome styling.",
+        "outline": [
+            "Choosing a Statement Color",
+            "Layering with Different Textures",
+            "Balancing Shades and Tones",
+            "Selecting Monochrome Patterns",
+            "Accessorizing Monochrome Looks",
+            "Modern Monochrome Street Style",
+            "Monochrome Office Wear",
+            "Transitioning from Day to Night",
+            "Complementary Footwear Styling",
+            "Exuding Confidence in Monochrome"
+        ],
+        "exists": false
+    },
+    {
         "_id": "67596e83a3f6ce9b164c473b",
         "title": "Fashion Dos and Don'ts for Sheer Fabrics",
         "slug": "fashion-dos-and-donts-for-sheer-fabrics",
@@ -13,28 +77,73 @@
         "exists": false
     },
     {
-        "_id": "67596e83a3f6ce9b164c4740",
-        "title": "Mastering Athleisure: Comfort Meets Fashion",
-        "slug": "mastering-athleisure",
-        "excerpt": "Combine comfort and style effortlessly with athleisure.",
+        "_id": "6759d8f2a3f6ce9b164c573f",
+        "title": "Why Confidence is the Best Accessory",
+        "slug": "confidence-best-accessory",
+        "excerpt": "Explore how self-assurance can elevate any outfit.",
         "outline": [
-            "The origins and rise of the athleisure trend",
-            "Choosing pieces that transition from gym to street",
-            "Balancing sporty with chic elements",
-            "Top athleisure brands to explore"
+            "Attitude Over Attire",
+            "Power Poses in Fashion",
+            "Color Sensibility and Self-Confidence",
+            "Believing in Bold Choices",
+            "Finding Your Personal Fashion Voice",
+            "Navigating Fashion with Ease",
+            "Embracing Your Unique Style",
+            "Projecting Daring Looks",
+            "Confidence Boosting Fashion Tips",
+            "Pairing Mental Strength with Fashion"
         ],
         "exists": false
     },
     {
-        "_id": "67596e83a3f6ce9b164c4741",
-        "title": "Building Confidence Through Personal Style",
-        "slug": "building-confidence-personal-style",
-        "excerpt": "Harness the power of personal style to boost your confidence.",
+        "_id": "6759d8f2a3f6ce9b164c573d",
+        "title": "10 Fashion Do's and Don'ts You Need to Know",
+        "slug": "fashion-dos-donts-guide",
+        "excerpt": "Navigate fashion choices with these essential do's and don'ts.",
         "outline": [
-            "Discovering your unique fashion sense",
-            "Experimenting with different looks",
-            "Embracing color to express yourself",
-            "Simplifying your wardrobe for ease"
+            "Balance Bold Patterns",
+            "Avoiding Overly Tight Clothing",
+            "Investing in Quality over Quantity",
+            "Color Matching in Outfits",
+            "Appropriate Makeup for Your Attire",
+            "Using Layers Wisely",
+            "Neutral Tones as a Safe Choice",
+            "Footwear Tips for Every Occasion",
+            "Understanding Proper Fit",
+            "When to Break the Rules"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759d8f2a3f6ce9b164c573b",
+        "title": "10 Fashion Trends That Men Secretly Admire on Women",
+        "slug": "fashion-trends-men-admire",
+        "excerpt": "Uncover the fashion trends that catch men's attention and appreciation.",
+        "outline": [
+            "Classic Denim Styles",
+            "Casual Athletic Gear",
+            "Flowy Spring Dresses",
+            "Statement Accessories",
+            "Elegant Coats and Jackets",
+            "Chic Bohemian Looks",
+            "Timeless Little Black Dress",
+            "Playful Ruffles and Frills",
+            "Bold Geometric Prints",
+            "Sleek and Stylish Jumpsuits"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596e83a3f6ce9b164c473d",
+        "title": "10 Must-Have Wardrobe Essentials for Every Woman",
+        "slug": "must-have-wardrobe-essentials",
+        "excerpt": "A guide to essential wardrobe pieces for any woman's closet.",
+        "outline": [
+            "The versatility of a white button-down shirt",
+            "Little black dresses for various occasions",
+            "Choosing the perfect pair of jeans",
+            "Classic blazers that suit every look",
+            "Comfortable but stylish footwear"
         ],
         "exists": false
     },
@@ -48,6 +157,76 @@
             "Neutral palettes as a signature choice",
             "Staple designs like trench coats",
             "Iconic fashion moments and their influence"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67596e83a3f6ce9b164c473a",
+        "title": "The Art of Stylish Layering",
+        "slug": "art-of-stylish-layering",
+        "excerpt": "Master the chic and practical fashion trick of layering.",
+        "outline": [
+            "Choosing the right fabrics for layering",
+            "How to mix textures and patterns effectively",
+            "Achieving a balanced silhouette",
+            "Seasonal layering tips and tricks"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759d8f2a3f6ce9b164c5743",
+        "title": "Secrets to Effortlessly Stylish Everyday Looks",
+        "slug": "effortless-everyday-style",
+        "excerpt": "Create fashion-forward outfits without the fuss using these simple tips.",
+        "outline": [
+            "Mastering the Art of Layering",
+            "Incorporating Timeless Basics",
+            "Wearing Stripes and Patterns",
+            "Creating a Signature Look",
+            "About Minimalist Jewelry",
+            "Choosing Comfy Yet Stylish Shoes",
+            "No-fail Color Combinations",
+            "Expressing Personality with Accessories",
+            "Building an Outfit around One Piece",
+            "Quick Transformations with Scarves"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759d8f2a3f6ce9b164c5741",
+        "title": "Decoding Dress Codes for Every Occasion",
+        "slug": "understanding-dress-codes",
+        "excerpt": "Master the art of dressing appropriately for any event with confidence.",
+        "outline": [
+            "Casual Day Outfits",
+            "Business Casual Demystified",
+            "Smart Casual Details",
+            "Cocktail Attire Grasped",
+            "Formal Evening Wear",
+            "Black Tie Optional Explained",
+            "Wedding Guest Wardrobes",
+            "Gala Glamour Attire",
+            "Beach and Resort Wear",
+            "Travel Outfit Choices"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759d8f2a3f6ce9b164c573e",
+        "title": "Integrating Classic and Modern Styles for a Unique Look",
+        "slug": "mix-classic-modern-styles",
+        "excerpt": "Blend timeless pieces with contemporary trends for a distinctive style.",
+        "outline": [
+            "Pairing Retro with Current Denim Trends",
+            "Balancing Vintage Dresses with New Shoes",
+            "Adding Modern Accessories to Classic Suits",
+            "Layering Techniques That Mix Eras",
+            "Incorporating Modern Technology in Fashion",
+            "Contrasting Textures from Different Decades",
+            "Updating Classic Little Black Dress",
+            "Refreshing Past Styles with Current Prints",
+            "Combining Old-School Coats with Modern Essentials",
+            "Juxtaposing Traditional and Futuristic Hats"
         ],
         "exists": false
     },
@@ -78,55 +257,66 @@
         "exists": false
     },
     {
-        "_id": "67596e83a3f6ce9b164c473f",
-        "title": "Navigating Tricky Dress Codes with Style",
-        "slug": "navigating-tricky-dress-codes",
-        "excerpt": "Demystify confusing dress codes and present yourself stylishly.",
+        "_id": "67596e83a3f6ce9b164c4740",
+        "title": "Mastering Athleisure: Comfort Meets Fashion",
+        "slug": "mastering-athleisure",
+        "excerpt": "Combine comfort and style effortlessly with athleisure.",
         "outline": [
-            "Understanding the basics of dress codes",
-            "How to dress casually yet appropriately",
-            "Business casual vs. business professional",
-            "Tips for formal attire events"
+            "The origins and rise of the athleisure trend",
+            "Choosing pieces that transition from gym to street",
+            "Balancing sporty with chic elements",
+            "Top athleisure brands to explore"
         ],
         "exists": false
     },
     {
-        "_id": "67596e83a3f6ce9b164c473a",
-        "title": "The Art of Stylish Layering",
-        "slug": "art-of-stylish-layering",
-        "excerpt": "Master the chic and practical fashion trick of layering.",
+        "_id": "67596e83a3f6ce9b164c4741",
+        "title": "Building Confidence Through Personal Style",
+        "slug": "building-confidence-personal-style",
+        "excerpt": "Harness the power of personal style to boost your confidence.",
         "outline": [
-            "Choosing the right fabrics for layering",
-            "How to mix textures and patterns effectively",
-            "Achieving a balanced silhouette",
-            "Seasonal layering tips and tricks"
+            "Discovering your unique fashion sense",
+            "Experimenting with different looks",
+            "Embracing color to express yourself",
+            "Simplifying your wardrobe for ease"
         ],
         "exists": false
     },
     {
-        "_id": "67596e83a3f6ce9b164c4743",
-        "title": "Wardrobe Transformations: Easy Updates for Any Season",
-        "slug": "wardrobe-transformations-seasonal-updates",
-        "excerpt": "Simple tips to refresh your wardrobe with the change of seasons.",
+        "_id": "6759d8f2a3f6ce9b164c573c",
+        "title": "How to Use Accessories to Elevate Any Outfit",
+        "slug": "accessories-elevate-outfit",
+        "excerpt": "Discover the impact of accessories and how they enhance your outfit.",
         "outline": [
-            "Swapping layers for seasonal transitions",
-            "Incorporating seasonal colors",
-            "Updating accessories for a new look",
-            "Tips for eco-friendly wardrobe refreshes"
+            "Choosing the Right Statement Necklace",
+            "Importance of a Versatile Belt",
+            "Understanding Layered Jewelry",
+            "Styling with Hats for Different Seasons",
+            "The Role of a Signature Watch",
+            "Enhancing Outfits with Scarves",
+            "Bag Styles to Compliment Your Look",
+            "The Power of Sunglasses",
+            "Experimenting with Funky Socks",
+            "Incorporating Aesthetic Hair Accessories"
         ],
         "exists": false
     },
     {
-        "_id": "67596e83a3f6ce9b164c473d",
-        "title": "10 Must-Have Wardrobe Essentials for Every Woman",
-        "slug": "must-have-wardrobe-essentials",
-        "excerpt": "A guide to essential wardrobe pieces for any woman's closet.",
+        "_id": "6759d8f2a3f6ce9b164c5740",
+        "title": "Wardrobe Essentials Every Woman Needs",
+        "slug": "essential-wardrobe-items",
+        "excerpt": "Essential pieces that form the foundation of a versatile wardrobe.",
         "outline": [
-            "The versatility of a white button-down shirt",
-            "Little black dresses for various occasions",
-            "Choosing the perfect pair of jeans",
-            "Classic blazers that suit every look",
-            "Comfortable but stylish footwear"
+            "Classic White Shirt",
+            "Perfect Pair of Jeans",
+            "Tailored Blazer",
+            "Simple Black Pants",
+            "Versatile Little Black Dress",
+            "Comfortable Flats",
+            "Cozy Knitwear",
+            "Statement Outerwear",
+            "Reliable Tote Bag",
+            "Elegant Pair of Heels"
         ],
         "exists": false
     }

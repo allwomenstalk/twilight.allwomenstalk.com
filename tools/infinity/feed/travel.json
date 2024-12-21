@@ -1,260 +1,402 @@
 [
     {
-        "_id": "6727a5f85584cc59d36c207d",
-        "title": "The Ultimate Guide to Puerto Rico in Three Days",
-        "slug": "the-ultimate-guide-to-puerto-rico-in-three-days",
-        "excerpt": "After 3 days on\u00a0the Island of Enchantment, I got to experience a lot of what the island had to offer. Here's my ultimate guide to Puerto Rico in three days!",
+        "_id": "6727a5f85584cc59d36c20dc",
+        "title": "The Ultimate Guide to Visiting Rocky Mountain National Park",
+        "slug": "ultimate-guide-to-visiting-rocky-mountain-national-park",
+        "excerpt": "From where to stay to getting around and even which hikes to do, here's the ultimate guide to visiting Rocky Mountain National Park!",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "6727a5f85584cc59d36c1f86",
-        "title": "What to Pack for an African Safari",
-        "slug": "what-to-pack-for-an-african-safari",
-        "excerpt": "A cute safari style means comfortable layers that will keep you warm. Here's my ultimate safari packing list, plus what to expect on an African safari!",
+        "_id": "6727a5f85584cc59d36c2131",
+        "title": "The Best Time to Travel to France",
+        "slug": "best-time-to-travel-to-france",
+        "excerpt": "France is a destination that oozes old world glamour and sophistication. Use my guide on the best time to travel to France to plan the perfect trip!",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "6727a5f85584cc59d36c2013",
-        "title": "Staying at Gondwana Game Reserve in South Africa",
-        "slug": "visiting-gondwana-game-reserve-in-south-africa",
-        "excerpt": "Just a four-hour drive from Cape Town, the Gondwana Game Reserve in South Africa will give you an authentic African safari experience.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c2006",
-        "title": "Why You Need to Visit Babylonstoren in South Africa",
-        "slug": "visiting-babylonstoren-in-south-africa",
-        "excerpt": "While the Cape Winelands are famous for its vineyards, Babylonstoren is a stunning South African farm that does it all-- wine, food and accommodation.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c1f3a",
-        "title": "The Ultimate Mallorca Itinerary\u00a0",
-        "slug": "ultimate-mallorca-itinerary",
-        "excerpt": "From the charming towns of Deia and Valldemossa to the stunning beaches on the Southeast coast, this is the ultimate Mallorca itinerary!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c20f9",
-        "title": "The Ultimate Itinerary for Portland in a Weekend",
-        "slug": "ultimate-2-day-portland-itinerary",
-        "excerpt": "Heading to the City of Roses? From where to stay to where to eat and what to do, here's the ultimate two-day Portland itinerary.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c1f49",
-        "title": "Guide to Stockholm\u2019s Subway Art",
-        "slug": "guide-to-stockholms-subway-art",
-        "excerpt": "Stockholm's subway art is one of the top things to do in the city. With over 90 stations, here\u2019s my guide to the best subway art in Stockholm!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c2060",
-        "title": "Tips for Visiting the Great Blue Hole in Belize",
-        "slug": "tips-for-visiting-the-great-blue-hole-in-belize",
-        "excerpt": "The Blue Hole in Belize has incredible natural beauty. Here are my top essential tips for visiting the Great Blue Hole in Belize.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c1f41",
-        "title": "The Best Hotels to Stay at in Lisbon",
-        "slug": "best-hotels-to-stay-at-in-lisbon",
-        "excerpt": "Dream of strolling the streets of Portugal? From budget-friendly stays to boutique hotels, here are the best hotels to stay at in Lisbon!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c2055",
-        "title": "Highlights from the TBA Escapes Jordan Ancient Wonders Tour",
-        "slug": "highlights-from-the-tba-escapes-jordan-ancient-wonders-tour",
-        "excerpt": "From Petra, diving in the Red Sea, floating in the Dead Sea, and exploring the deserts of Wadi Rum\u2014here are the highlights from the TBA Escapes Jordan Tour!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c1fcd",
-        "title": "How to Spend 48 Hours in Essaouira",
-        "slug": "how-to-spend-48-hours-in-essaouira",
-        "excerpt": "Located on Morocco's coast, Essaouira is known for it\u2019s laid back atmosphere and excellent kitesurfing conditions. Here's my guide to 48 hours in Essaouira!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "66d9cb6cd8c51d0a972c46ca",
-        "title": "Salem's Haunted Locations You Can't Miss",
-        "slug": "salems-haunted-locations",
-        "excerpt": "Brace yourself for the chilling tales behind Salem\u2019s most haunted locations.",
+        "_id": "66d81eb566437136e9659df7",
+        "title": "7 Funny Place Names You\u2019ll Want to Visit Just for the Laugh",
+        "slug": "funny-place-names-visit-laugh",
+        "excerpt": "Some place names are so funny, they\u2019ll make you want to visit just to take a picture with the sign.",
         "outline": [
-            "Gallows Hill",
-            "Hawthorne Hotel",
-            "Howard Street Cemetery",
-            "The Joshua Ward House",
-            "Lyceum Hall"
+            "Funny place names that are worth a visit",
+            "Place #1: Wank, Germany",
+            "Place #2: Dildo, Canada",
+            "Place #3: Poo, India",
+            "Place #4: Muff, Ireland",
+            "Place #5: Fanny Bay, Canada",
+            "Place #6: Cockburn, Australia",
+            "Place #7: Twatt, Scotland",
+            "Why these hilarious destinations attract travelers"
         ],
         "exists": true
     },
     {
-        "_id": "6727a5f85584cc59d36c1ff6",
-        "title": "How to Travel Cape Town on a Budget",
-        "slug": "cape-town-on-a-budget",
-        "excerpt": "Cape Town is one of the most affordable destinations for U.S. travelers. Here's how to see the best of Cape Town on a budget!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c20bd",
-        "title": "Tips for Visiting Universal Studios Hollywood During the Holidays",
-        "slug": "tips-for-visiting-universal-studios-hollywood-during-the-holidays",
-        "excerpt": "Planning a trip to Universal Studios Hollywood? Here are my best tips for beating the crowds and soaking up as much of the magic as possible!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "66d6d50966437136e9659de7",
-        "title": "Packing Essentials for Exploring Rome\u2019s Architectural Sites",
-        "slug": "packing-essentials-exploring-rome-architectural-sites",
-        "excerpt": "A packing guide for travelers planning to explore Rome's architectural sites.",
+        "_id": "66dc7a4ed8c51d0a97ce1748",
+        "title": "Gluten-Free Eating: Discovering Tasty Options Around The Globe",
+        "slug": "gluten-free-eating-global",
+        "excerpt": "Join us on a gourmet journey as we explore gluten-free culinary delights from all over the world.",
         "outline": [
-            "Introduction to packing for Rome",
-            "List of essential items for architectural exploration",
-            "Packing tips for different seasons",
-            "Travel hacks for light and efficient packing"
+            "Sampling the gluten-free variety of Asian cuisine",
+            "Discovering the richness of gluten-free African dishes",
+            "Tasting the delights of gluten-free gastronomy in Latin America",
+            "Exploring gluten-free Mediterranean food",
+            "An overview of gluten-free sweets from around the world"
         ],
         "exists": true
     },
     {
-        "_id": "66d6d50966437136e9659de0",
-        "title": "Accessible Travel: Rome\u2019s Architectural Sights for All Abilities",
-        "slug": "accessible-travel-rome-architectural-sights",
-        "excerpt": "A guide to Rome's architectural sights with a focus on accessibility for all travelers.",
+        "_id": "6727a5f85584cc59d36c2049",
+        "title": "The Ultimate Guide to Island Hopping in Thailand",
+        "slug": "the-ultimate-guide-to-island-hopping-in-thailand",
+        "excerpt": "Thailand is rather inexpensive, and you will find that island hopping is a great way to see it all. Here's my ultimate guide to island hopping in Thailand!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c20e8",
+        "title": "The Best Hotels to Stay at in Chicago",
+        "slug": "best-hotels-to-stay-at-in-chicago",
+        "excerpt": "From luxurious locations to budget-friendly stays, here are the best hotels to stay at in Chicago!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c20ae",
+        "title": "The Ultimate Two-Week California National Park Road Trip Itinerary",
+        "slug": "ultimate-two-week-california-national-park-road-trip-itinerary",
+        "excerpt": "From San Diego to Death Valley to Yosemite to South Lake Tahoe, here's the ultimate two-week California national park road trip!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "66d81eb566437136e9659df9",
+        "title": "11 Strangely Named Towns You Won\u2019t Believe Are Real",
+        "slug": "strangely-named-towns-real",
+        "excerpt": "Some town names are so strange, they sound made-up. Here are 11 real places with truly odd names.",
         "outline": [
-            "Introduction to accessible travel in Rome",
-            "List of accessible architectural sites",
-            "Accessibility features and tips for visitors",
-            "Travel resources for individuals with disabilities"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c1fec",
-        "title": "Staying at the Hilton Seychelles Northolme Resort & Spa",
-        "slug": "staying-at-the-hilton-seychelles-northolme-resort-spa",
-        "excerpt": "In the heart of Mah\u00e9 Island, you\u2019ll find perched villas offering panoramic ocean views at the Hilton Seychelles Northolme Resort & Spa!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c1f9a",
-        "title": "Why Couples That Travel Together Stay Together",
-        "slug": "why-couples-that-travel-together-stay-together",
-        "excerpt": "We're here to tell you why couples that travel together, stay together- from growing together, facing adversity, to making memories!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "66d6d50966437136e9659ddd",
-        "title": "The Best Hotels Near Rome\u2019s Top Architectural Attractions",
-        "slug": "best-hotels-near-rome-architectural-attractions",
-        "excerpt": "A guide to the best hotels located near Rome\u2019s most famous architectural attractions.",
-        "outline": [
-            "Introduction to accommodations in Rome",
-            "Top hotels near key architectural sites",
-            "Amenities and services for travelers",
-            "Booking tips for a convenient stay"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c2019",
-        "title": "The Best Time to Travel to Uganda",
-        "slug": "best-time-to-travel-to-uganda",
-        "excerpt": "You can truly visit Uganda throughout the year as its climate very rarely changes. Here are the best times to travel to Uganda!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c1f6e",
-        "title": "How to Reduce Your Environmental Impact While Traveling",
-        "slug": "how-to-reduce-your-environmental-impact-while-traveling",
-        "excerpt": "We can all do something to reduce our carbon footprint while traveling. Here are my tips on how to reduce your environmental impact!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c202b",
-        "title": "10 Tips for Your First Trip to Bali",
-        "slug": "10-tips-for-your-first-trip-to-bali",
-        "excerpt": "Bali is the most popular destinations in Indonesia for travelers. But before you go, here are the things you need to know for your first trip to Bali!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c20cf",
-        "title": "The Ultimate Guide to San Francisco in a Weekend",
-        "slug": "the-ultimate-guide-to-san-francisco-in-a-weekend",
-        "excerpt": "San Francisco is a city of high tech and startups, diverse restaurants and fun little neighborhoods. Don't miss my guide to San Francisco in a weekend!",
-        "outline": null,
-        "exists": true
-    },
-    {
-        "_id": "66d838f166437136e9659e02",
-        "title": "10 Most Beautiful Model Villages Around the World",
-        "slug": "beautiful-model-villages-world",
-        "excerpt": "These stunning model villages from around the world offer a unique way to explore miniature replicas of famous landmarks and towns.",
-        "outline": [
-            "Beautiful model villages you can visit globally",
-            "Village #1: Bekonscot, UK",
-            "Village #2: Cockington Green Gardens, Australia",
-            "Village #3: Bourton-on-the-Water, UK",
-            "Village #4: Madurodam, Netherlands",
-            "Village #5: Babbacombe Model Village, UK",
-            "Village #6: Tobu World Square, Japan",
-            "Village #7: Swissminiatur, Switzerland",
-            "Village #8: Miniaturk, Turkey",
-            "Village #9: France Miniature, France",
-            "Village #10: Mini-Europe, Belgium",
-            "What makes these model villages a must-see"
+            "Oddly named towns that actually exist",
+            "Town #1: Truth or Consequences, USA",
+            "Town #2: Beer, England",
+            "Town #3: Condom, France",
+            "Town #4: Peculiar, Missouri, USA",
+            "Town #5: Cut and Shoot, Texas, USA",
+            "Town #6: Spankers Hill Wood, England",
+            "Town #7: Rough and Ready, California, USA",
+            "Town #8: Crazy Woman Creek, Wyoming, USA",
+            "Town #9: Come By Chance, Australia",
+            "Town #10: Looneyville, Texas, USA",
+            "Town #11: Knockemstiff, Ohio, USA",
+            "How these towns got their names"
         ],
         "exists": true
     },
     {
-        "_id": "6727a5f85584cc59d36c20a4",
-        "title": "The Best Destinations in the United States for Leaf Peeping",
-        "slug": "best-destinations-united-states-leaf-peeping",
-        "excerpt": "Looking to see the gorgeous colors of changing fall foliage? Here are the best leaf-peeping spots in the United States for prime autumn hues!",
+        "_id": "6727a5f85584cc59d36c1ff3",
+        "title": "Why You Should Visit South Africa in the Winter",
+        "slug": "why-you-should-visit-south-africa-in-the-winter",
+        "excerpt": "Winter is an incredible time to visit South Africa. You'll find cheap flights, great accommodation deals and it's the best season for safaris!",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "6727a5f85584cc59d36c20e9",
-        "title": "The Ultimate Guide to Visiting the Maine Coast",
-        "slug": "ultimate-guide-to-visiting-the-maine-coast",
-        "excerpt": "Want to experience all the rustic and rugged charm of Maine? Here's the ultimate guide to visiting the Maine Coast.",
+        "_id": "6727a5f85584cc59d36c20b5",
+        "title": "San Diego Christmas Events and Activities for 2023",
+        "slug": "top-christmas-events-activities-san-diego",
+        "excerpt": "There's no shortage of yuletide cheer in Southern California \u2014 here are the best things to do during Christmas in San Diego!",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "6727a5f85584cc59d36c20ec",
-        "title": "The Best Hotels to Stay at in Boston",
-        "slug": "best-hotels-to-stay-at-in-boston",
-        "excerpt": "The cobblestones and buildings allow visitors to feel as if they are walking through history. Boston is a city of many different neighborhoods, each unique in its own way.",
+        "_id": "66dc7a4ed8c51d0a97ce1755",
+        "title": "Gluten-Free Packable Snacks: Avoid Hunger On The Move",
+        "slug": "gluten-free-travel-snacks",
+        "excerpt": "A guide to portable, satisfying, gluten-free snacks to keep you energized while ensuring you stick to your diet on your travels.",
+        "outline": [
+            "Healthy fruit and nut combos",
+            "Travel-friendly gluten-free granola",
+            "Individually wrapped gluten-free protein bars",
+            "DIY gluten-free trail mix",
+            "Decadent gluten-free dark chocolate"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "6727a5f85584cc59d36c203d",
+        "title": "A Local's Guide to Osaka, Japan",
+        "slug": "locals-guide-to-osaka-japan",
+        "excerpt": "From where to stay and what to do to where to eat and even day trips from the city\u2014here's a local's guide to visiting Osaka, Japan!",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "6727a5f85584cc59d36c2063",
-        "title": "Staying at Hamanasi Adventure & Dive Resort in Belize",
-        "slug": "staying-hamanasi-adventure-dive-resort-belize",
-        "excerpt": "When I read that Hamanasi Adventure & Dive Resort was a PADI 5-Star Resort, I knew I had to start planning my first trip to Belize!",
+        "_id": "6727a5f85584cc59d36c1f3d",
+        "title": "The Ultimate Guide to Solo Female Travel",
+        "slug": "the-ultimate-guide-to-solo-female-travel",
+        "excerpt": "Whether you are a first-time solo traveler or a seasoned traveler, I've included all of my best travel tips in this guide to solo female travel!",
         "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c2061",
+        "title": "The Best Time to Travel to Costa Rica",
+        "slug": "the-best-time-to-go-to-costa-rica",
+        "excerpt": "This Central American country offers volcanic-sand coastlines, rugged coves, and white-sand beaches. Here\u2019s is the best time to go to Costa Rica!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c206a",
+        "title": "Itinerary for Australia\u2019s Great Big Outback",
+        "slug": "itinerary-for-australias-great-big-outback",
+        "excerpt": "The Outback deserves a spot on every traveler\u2019s bucket list. Ready for a trip you won't forget? Don't miss my itinerary for Australia\u2019s Great Big Outback.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c20e0",
+        "title": "The Coolest Airbnbs in Miami",
+        "slug": "coolest-airbnbs-in-miami",
+        "excerpt": "From unique stays you\u2019ll only find in Miami to posh penthouses, here is a rundown of all of the very best of the best Airbnbs in Florida.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c1f51",
+        "title": "The Ultimate Guide to Moving to Iceland",
+        "slug": "the-ultimate-guide-to-moving-to-iceland-reykjavik",
+        "excerpt": "So you're thinking about moving to Iceland? Reykjavik is the city of Sigur R\u00f3s, breathtaking scenery, and innovative tech and culture scene.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c1ffd",
+        "title": "A Beer Lover\u2019s Guide to Cape Town",
+        "slug": "a-beer-lovers-guide-to-cape-town",
+        "excerpt": "South Africa may be known for its rich wine culture, but the country also boasts a thriving craft and traditional beer scene. Ready to quench your thirst? Check out my beer lover's guide to Cape Town",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c1fb9",
+        "title": "5-Day Egypt Itinerary for Cairo and the Pyramids",
+        "slug": "5-day-egypt-itinerary-for-cairo-and-the-pyramids",
+        "excerpt": "Want to see the pyramids at Giza, explore Cairo, and make a day trip to Alexandria? Here's my 5-day Egypt itinerary for Cairo and the pyramids!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c204f",
+        "title": "The Ultimate Girlfriend Getaway Guide to San Diego",
+        "slug": "the-ultimate-girlfriend-getaway-guide-san-diego",
+        "excerpt": "This town is one of my faves on the Pacific coast, and it has something for everyone. Here\u2019s the ultimate girlfriends getaway guide to San Diego.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c20d2",
+        "title": "The Best of San Francisco in a Day",
+        "slug": "best-of-san-francisco-in-a-day",
+        "excerpt": "San Francisco is easily one of the greatest cities in the United States to explore, here's how to see the best of San Francisco in a day.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c1fee",
+        "title": "Exploring The Seychelles with Herbal Essences' bio:renew Collection",
+        "slug": "exploring-seychelles-with-herbal-essences-biorenew-collection",
+        "excerpt": "I brought the Herbal Essences' bio:renew Coconut Milk Collection along on my trip to the Seychelles to help hydrate my beach hair!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "66d8121b66437136e9659def",
+        "title": "Interactive Car Games for Engaging Long Rides",
+        "slug": "interactive-car-games-long-rides",
+        "excerpt": "Engage the whole car with these interactive games perfect for making long rides fly by.",
+        "outline": [
+            "Introduction to interactive car games",
+            "Game #1: Charades (car-friendly version)",
+            "Game #2: Pictionary (on paper or app)",
+            "Game #3: Car Karaoke",
+            "Game #4: The Debate Game",
+            "Game #5: Guess the Song",
+            "Game #6: License Plate Stories",
+            "Game #7: Improv a Skit"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "6727a5f85584cc59d36c2083",
+        "title": "Skydiving at Skydive Wanaka in Queenstown, New Zealand",
+        "slug": "skydiving-in-queenstown-new-zealand",
+        "excerpt": "On our trip down to Queenstown, New Zealand, we decided to step up the level of extreme activities. Here's my experience skydiving in Queenstown!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c1fd1",
+        "title": "The Best Time to Travel to Morocco",
+        "slug": "the-best-time-to-travel-to-morocco",
+        "excerpt": "Whether you're looking for the ultimate desert glamping getaway or a skiing vacation in Africa - here is the best time to travel to Morocco!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c1f9e",
+        "title": "6 Reasons to Plan a Romantic Getaway to the Gili Islands",
+        "slug": "6-reasons-to-plan-a-romantic-getaway-to-the-gili-islands",
+        "excerpt": "As one of the most romantic, seaside destinations we've been to, here's why you should plan your next romantic getaway to the Gili Islands!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c2045",
+        "title": "10 Tips for Your First Trip to Thailand",
+        "slug": "10-tips-for-your-first-trip-to-thailand",
+        "excerpt": "Planning your first trip to Thailand? Here are some important things you need to know before you arrive in the Land of Smiles!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c2080",
+        "title": "Staying at Conrad Bora Bora Nui",
+        "slug": "staying-at-conrad-bora-bora-nui",
+        "excerpt": "Every time I visit French Polynesia, it takes my breath away and this was no exception. Here's my overview of staying at the Conrad Bora Bora Nui.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "67597085a3f6ce9b164c4848",
+        "title": "Navigating Public Transport in a New City",
+        "slug": "navigating-public-transport-new-city",
+        "excerpt": "Tips to help you get around effortlessly in unfamiliar places.",
+        "outline": [
+            "Research Routes Ahead of Time",
+            "Download Navigation Apps",
+            "Understand Local Etiquette",
+            "Ask Locals for Advice",
+            "Purchase a Transport Pass"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c1fae",
+        "title": "The Ultimate Carry-On Packing Guide",
+        "slug": "ultimate-carry-on-packing-guide",
+        "excerpt": "Whether you're taking a short flight or a transatlantic flight, this carry-on packing guide will ensure you are prepared for a comfortable journey.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "66d83bdd66437136e9659e0e",
+        "title": "7 Must-Visit Cities Along the Mississippi River for Culture and Entertainment",
+        "slug": "must-visit-cities-mississippi-river-culture-entertainment",
+        "excerpt": "From music to museums, these vibrant cities along the Mississippi River offer a perfect blend of culture and entertainment.",
+        "outline": [
+            "Cultural and entertainment highlights along the Mississippi River",
+            "City #1: New Orleans, Louisiana",
+            "City #2: St. Louis, Missouri",
+            "City #3: Memphis, Tennessee",
+            "City #4: Davenport, Iowa",
+            "City #5: Minneapolis, Minnesota",
+            "City #6: Baton Rouge, Louisiana",
+            "City #7: Dubuque, Iowa",
+            "Why these cities are cultural hubs along the Mississippi"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "6727a5f85584cc59d36c20f2",
+        "title": "The Coolest Airbnbs in New York City",
+        "slug": "coolest-airbnbs-in-new-york-city",
+        "excerpt": "From the boroughs of Brooklyn to all around Manhattan and Queens these places have so much charm. Here are the coolest Airbnbs to stay at in New York City!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c2095",
+        "title": "10 Places to Visit in Mexico (That Aren\u2019t Tulum)",
+        "slug": "10-places-to-visit-in-mexico-that-arent-tulum",
+        "excerpt": "If you\u2019re looking to go under the radar, here are 10 places to visit in Mexico that aren\u2019t Tulum (and let\u2019s just keep these between us).",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c212c",
+        "title": "Tips for Visiting London's Borough Market",
+        "slug": "tips-visiting-londons-borough-market",
+        "excerpt": "Are you a foodie visiting London? There is no doubt you need to check out the historical Borough Market! Here are my tips for planning your trip!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c1f81",
+        "title": "Top 10 Places to Visit When You're In Love",
+        "slug": "top-10-places-to-visit-when-youre-in-love",
+        "excerpt": "There\u2019s nothing better than exploring new places with the one you love. Here are our top picks for romantics places to visit when you're in love!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c1f5e",
+        "title": "The Ultimate Guide to Moving to Morocco",
+        "slug": "the-ultimate-guide-to-moving-to-morocco",
+        "excerpt": "So you\u2019re moving to Morocco--congrats! There are few countries to rival Morocco\u2019s rich diversity of culture, language, music, and architecture.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c1f5a",
+        "title": "Diving the Silfra Fissure in Iceland",
+        "slug": "diving-the-silfra-fissure-in-iceland",
+        "excerpt": "The Silfra Fissure in Iceland is one of the most incredible dive sites you will ever see. Be sure to check out my experience diving and other helpful tips!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "66da0da9d8c51d0a97234dba",
+        "title": "Women-Only Spa Resorts: Ditch the Swimwear",
+        "slug": "women-only-spa-resorts",
+        "excerpt": "Explore lavish women-only spa resorts where you can embrace body positivity and have a pampering experience like no other.",
+        "outline": [
+            "Why Choose a Women-Only Spa?",
+            "Spotlight on Luxurious Women-Only Spas",
+            "What to Expect at a Nude Spa",
+            "Benefits of Going Clothing-Free at a Spa",
+            "Respecting Spa Etiquette"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c200c",
+        "title": "Staying at Emily Moon River Lodge in Plettenberg Bay",
+        "slug": "staying-at-emily-moon-river-lodge-in-plettenberg-bay",
+        "excerpt": "During my first road trip along the Garden Route in South Africa, I stayed at Emily Moon River Lodge. Here's my review on what you can expect!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c20b6",
+        "title": "The Ultimate 3-Day Palm Springs Itinerary",
+        "slug": "ultimate-3-day-palm-springs-itinerary",
+        "excerpt": "Ready to plan your perfect three days relaxing and playing in Palm Springs? Here\u2019s what you\u2019ve got to know before you go!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "66d6d50966437136e9659dd2",
+        "title": "How to Experience Rome\u2019s Architecture on a Budget",
+        "slug": "experience-rome-architecture-budget",
+        "excerpt": "A budget-friendly guide to exploring Rome's architectural wonders.",
+        "outline": [
+            "Introduction to budget travel in Rome",
+            "Free and low-cost architectural sites",
+            "Money-saving tips for exploring",
+            "Budget accommodations near key landmarks"
+        ],
         "exists": false
     },
     {
@@ -274,191 +416,72 @@
         "exists": true
     },
     {
-        "_id": "66da08c9d8c51d0a9710b19c",
-        "title": "Shell Hunting Adventures in Hawaii",
-        "slug": "shell-hunting-adventures-hawaii",
-        "excerpt": "Go on a tropical shell hunting adventure in the paradise that is Hawaii. Explore the diverse beaches and the unique shells they offer.",
-        "outline": [
-            "Diversity of Hawaiian beaches",
-            "Types of shells you can find in Hawaii",
-            "List of Hawaiian beaches perfect for shell hunting",
-            "What to bring and wear for a Hawaiian shell hunting",
-            "Hawaiian shell hunting safety guidelines"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c20a5",
-        "title": "How to Get Unlimited Data When Traveling the USA",
-        "slug": "best-esim-us-travelers",
-        "excerpt": "In an era where staying connected is essential, Holafly eSIM USA emerges as the ultimate solution for hassle-free travel in the USA.",
+        "_id": "6727a5f85584cc59d36c1f4f",
+        "title": "Top Sailing Destinations in Sicily",
+        "slug": "top-sailing-destinations-in-sicily",
+        "excerpt": "I visited Sicily with the Yacht Week Italy, where we sailed to 6 jaw-dropping destinations. Here are the top sailing destinations in Sicily!",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "6727a5f85584cc59d36c1ff3",
-        "title": "Why You Should Visit South Africa in the Winter",
-        "slug": "why-you-should-visit-south-africa-in-the-winter",
-        "excerpt": "Winter is an incredible time to visit South Africa. You'll find cheap flights, great accommodation deals and it's the best season for safaris!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c1ff5",
-        "title": "The Ultimate Guide to Driving the Cape Peninsula in a Day",
-        "slug": "driving-the-cape-peninsula-in-a-day",
-        "excerpt": "There are few vistas as breathtaking as the oceanic drive along Cape Peninsula Road. Here's the perfect itinerary for seeing all the sights in a day!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c2030",
-        "title": "Jasmine Valley Jungle Eco-Resort in Kep, Cambodia",
-        "slug": "jasmine-valley-eco-resort-kep-cambodia",
-        "excerpt": "Jasmine Valley Eco-Resort features solar powered and sustainable accommodation in the jungle of Kep, Cambodia.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c1fe7",
-        "title": "A Guide to Mah\u00e9 Island in the Seychelles",
-        "slug": "a-guide-to-mahe-island-in-the-seychelles",
-        "excerpt": "With pristine white-sand beaches, lush forests, and dramatic mountains, Mah\u00e9 Island in the Seychelles is a true tropical paradise.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "66d838f166437136e9659e01",
-        "title": "6 Quirky Miniature Villages in Europe You Have to See",
-        "slug": "quirky-miniature-villages-europe",
-        "excerpt": "Explore the most charming and quirky miniature villages across Europe that offer a fun, family-friendly day out.",
-        "outline": [
-            "Unique miniature villages you can visit across Europe",
-            "Village #1: Madurodam, Netherlands",
-            "Village #2: Minimundus, Austria",
-            "Village #3: France Miniature, France",
-            "Village #4: Swissminiatur, Switzerland",
-            "Village #5: Mini-Europe, Belgium",
-            "Village #6: Miniatur Wunderland, Germany",
-            "How to plan a visit to these fun attractions"
-        ],
-        "exists": true
-    },
-    {
-        "_id": "6727a5f85584cc59d36c2120",
-        "title": "The Best Time to Travel to Croatia",
-        "slug": "best-time-go-croatia",
-        "excerpt": "Croatia is easily one of my favorite destinations. There is so much to do year round but each season has highlights. Here's the best time to go to Croatia!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c1fb7",
-        "title": "Staying at Meno a Kwena in Botswana",
-        "slug": "staying-at-meno-a-kwena-in-botswana",
-        "excerpt": "Located on the Boteti River in Botswana, this is the perfect place to disconnect. Here\u2019s my experience staying at Meno a Kwena in Botswana.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c1fd7",
-        "title": "Visiting the Fellah Hotel in Marrakech",
-        "slug": "visiting-the-fellah-hotel-in-marrakech",
-        "excerpt": "I'm in love with boutique hotels and this Moroccan gem is going right into my collection. Here's my experience visiting the Fellah Hotel in Marrakech.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c213e",
-        "title": "Essential Tips for Driving in Provence",
-        "slug": "essential-tips-for-driving-in-provence",
-        "excerpt": "There are a lot of rules of the road that you might be unfamiliar with in France. Here are my essential tips for driving in Provence!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c1fa4",
-        "title": "The Best Luxury Eco-Hotels in the World",
-        "slug": "best-eco-luxury-hotels-in-the-world",
-        "excerpt": "Reduce your impact when you travel by choosing hotels that focus on sustainability. Here are some of the best eco luxury hotels in the world!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c2044",
-        "title": "How to Travel Thailand on $20 a Day",
-        "slug": "how-to-travel-thailand-on-20dollars",
-        "excerpt": "Thailand is considered one of the best budget-friendly destinations in the world. Traveling Thailand on $20 per day is totally doable. Here's how!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c20fc",
-        "title": "The Ultimate 3-Day Charleston Guide",
-        "slug": "ultimate-3-day-charleston-guide",
-        "excerpt": "From where to stay to what to eat and all the things to do in between \u2014 here is your ultimate 3-Day Charleston Guide.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c1f3d",
-        "title": "The Ultimate Guide to Solo Female Travel",
-        "slug": "the-ultimate-guide-to-solo-female-travel",
-        "excerpt": "Whether you are a first-time solo traveler or a seasoned traveler, I've included all of my best travel tips in this guide to solo female travel!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c2059",
-        "title": "The Best Time to Travel to Turkey",
-        "slug": "the-best-time-to-travel-to-turkey",
-        "excerpt": "Want to explore Constantinople\u2014I mean Istanbul? Here are the best times to travel to Turkey and experience the iconic place where the East meets the West.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c20c6",
-        "title": "The Ultimate Guide to Santa Barbara in a Weekend",
-        "slug": "ultimate-guide-santa-barbara-weekend",
-        "excerpt": "Santa Barbara is the ultimate California coastal town. Here's my guide to Santa Barbara in a weekend and all the spots you need to hit!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6727a5f85584cc59d36c1ffb",
-        "title": "The Best Places to Eat in Cape Town",
-        "slug": "best-places-to-eat-cape-town",
-        "excerpt": "Feeling hungry in the Mother City? Whether you're in the mood for breakfast, lunch or dinner - here's my guide to finding the best food in Cape Town!",
+        "_id": "6727a5f85584cc59d36c2114",
+        "title": "The Best Time to Travel to Austria",
+        "slug": "best-time-to-travel-to-austria",
+        "excerpt": "Whether you're wanting to explore the Christmas markets in Vienna or Salzburg or experience the countryside, here are the best times to travel to Austria!",
         "outline": null,
         "exists": true
     },
     {
-        "_id": "6727a5f85584cc59d36c2108",
-        "title": "The Ultimate Wellness and Hiking Guide for Moab, Utah",
-        "slug": "ultimate-wellness-and-hiking-guide-for-moab-utah",
-        "excerpt": "From Arches National Park to Canyonlands National Park, here's the ultimate wellness and hiking guide for Moab, Utah!",
+        "_id": "6727a5f85584cc59d36c213a",
+        "title": "10 Places to Visit in the South of France",
+        "slug": "10-places-to-visit-in-the-south-of-france",
+        "excerpt": "From Provence to St. Tropez and everything in between \u2014 here are ten of the best places to visit in the South of France.",
+        "outline": null,
+        "exists": true
+    },
+    {
+        "_id": "6727a5f85584cc59d36c1f9d",
+        "title": "Tips for Proposing on Vacation",
+        "slug": "tips-for-proposing-on-vacation",
+        "excerpt": "Proposing on vacation is incredibly romantic and thoughtful. Here are our Couples Travel Expert's tips for proposing on a getaway!",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "66daafd2d8c51d0a97641ea5",
-        "title": "Stunning Waterfront Towns in the US Perfect for a Girls Weekend",
-        "slug": "girls-weekend-waterfront-towns",
-        "excerpt": "Take a break from the city rush in these tranquil waterfront towns. Each town offers a unique blend of relaxation and adventure for a perfect girls weekend getaway.",
+        "_id": "66d9cb6cd8c51d0a972c46ce",
+        "title": "Unique Shopping Experiences in Salem",
+        "slug": "unique-shopping-salem",
+        "excerpt": "Navigate your way through Salem\u2019s unique boutiques and antique shops.",
         "outline": [
-            "Exploring the heritage in coastal towns",
-            "Shopping and dining in quaint town centers",
-            "Nautical adventures in harbor towns",
-            "Romantic hideaways in seaside towns",
-            "Spa retreats in scenic water towns"
+            "The Witch City Mall",
+            "Salem Witch Store and Coffee shop",
+            "Hex: Old World Witchery",
+            "Crow Haven Corner",
+            "HausWitch"
         ],
         "exists": true
     },
     {
-        "_id": "6727a5f85584cc59d36c1f9e",
-        "title": "6 Reasons to Plan a Romantic Getaway to the Gili Islands",
-        "slug": "6-reasons-to-plan-a-romantic-getaway-to-the-gili-islands",
-        "excerpt": "As one of the most romantic, seaside destinations we've been to, here's why you should plan your next romantic getaway to the Gili Islands!",
+        "_id": "6727a5f85584cc59d36c209e",
+        "title": "The Ultimate Southwest USA Road Trip Itinerary",
+        "slug": "ultimate-southwest-usa-road-trip-itinerary",
+        "excerpt": "From Sedona, Arizona to the Grand Canyon onto New Mexcio, Moab, and Salt Lake City\u2014here is the ultimate two-week Southwest USA road trip itinerary!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c2001",
+        "title": "Staying at Belmond Mount Nelson Hotel in Cape Town",
+        "slug": "staying-at-belmond-mount-nelson-hotel-in-cape-town",
+        "excerpt": "Old-Hollywood glamour and colonial grandeur come together to create the magnetic atmosphere at the Belmond Mount Nelson Hotel.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "6727a5f85584cc59d36c1f7b",
+        "title": "10 Reasons Studying Abroad is Worth It",
+        "slug": "10-reasons-studying-abroad-is-worth-it",
+        "excerpt": "Studying abroad is a rite of passage and nobody should miss it. It changes the way that you see the world and your own culture, and offers new experiences!",
         "outline": null,
         "exists": false
     }

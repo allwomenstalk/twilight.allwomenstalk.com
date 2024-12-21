@@ -1,5 +1,99 @@
 [
     {
+        "_id": "6759db6ea3f6ce9b164c5889",
+        "title": "Nighttime Strategies for Deeper Sleep",
+        "slug": "nighttime-strategies-deeper-sleep",
+        "excerpt": "Strategies to transition into the most restorative sleep possible.",
+        "outline": [
+            "Breathwork for Relaxation",
+            "Guide to Effective Luminosity Management",
+            "Curating the Ideal Mattress and Pillow",
+            "Talking to a Sleep Specialist",
+            "Incorporating Daily Nature Time"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759db6ea3f6ce9b164c5883",
+        "title": "How Successful Women Unwind Before Bed",
+        "slug": "successful-women-unwind-before-bed",
+        "excerpt": "The calming rituals of successful women to end the day right.",
+        "outline": [
+            "Disconnect with a Book",
+            "Practice Gratitude Reflections",
+            "Use Calming Essential Oils",
+            "Curate a Soothing Playlist",
+            "Choose Comfortable Sleepwear"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759db6ea3f6ce9b164c5888",
+        "title": "How to Create an Empowering Nightly Ritual",
+        "slug": "empowering-nightly-ritual",
+        "excerpt": "End your day with a nightly ritual that empowers your mind and spirit.",
+        "outline": [
+            "Visualize Success and Goals",
+            "Craft an Inspirational Playlist",
+            "Reflect on Daily Accomplishments",
+            "The Joy of Slow, Appreciative Eating",
+            "Appreciate Stillness and Quiet"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "675970eba3f6ce9b164c4883",
+        "title": "The Role of Mental Health in Sleep Quality",
+        "slug": "mental-health-role-sleep-quality",
+        "excerpt": "Examine how mental well-being influences the quality of your sleep.",
+        "outline": [
+            "Link between anxiety and sleep disruption",
+            "Depression and its impact on sleep patterns",
+            "Practicing cognitive behavioral therapy",
+            "Improving sleep through counseling",
+            "Support groups for sleep issues",
+            "Building emotional resilience",
+            "Recognizing when to seek help",
+            "Coping mechanisms for sleep disturbances",
+            "Nurturing positive mental health rituals",
+            "Impact of social interactions on sleep"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759db6ea3f6ce9b164c5881",
+        "title": "The Secret Sleep Habits of High Achievers",
+        "slug": "secret-sleep-habits-high-achievers",
+        "excerpt": "Explore the bedtime routines that support great achievements.",
+        "outline": [
+            "Consistency is Key",
+            "No Electronic Devices Before Bed",
+            "Calm Your Mind with Meditation",
+            "The Benefits of a Cool, Dark Room",
+            "Pre-bedtime Journaling Practices"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "675970eba3f6ce9b164c4882",
+        "title": "Why Regular Exercise is Key to Good Sleep",
+        "slug": "why-exercise-key-good-sleep",
+        "excerpt": "Discover the positive effects of physical activity on your sleep quality.",
+        "outline": [
+            "Types of exercises that improve sleep",
+            "The best time to work out for better sleep",
+            "How regular walking helps with insomnia",
+            "Combining yoga with sleep benefits",
+            "Aerobic exercises for sleep enhancement",
+            "Building a balanced exercise routine",
+            "Tracking your exercise and sleep patterns",
+            "Staying motivated for active living",
+            "Exercise-induced endorphins and sleep",
+            "Cautions for exercise close to bedtime"
+        ],
+        "exists": false
+    },
+    {
         "_id": "675970eba3f6ce9b164c487e",
         "title": "Diet and Its Impact on Sleep Quality",
         "slug": "diet-impact-sleep-quality",
@@ -38,21 +132,40 @@
         "exists": false
     },
     {
-        "_id": "675970eba3f6ce9b164c487d",
-        "title": "Understanding Your Sleep Patterns Better",
-        "slug": "understanding-sleep-patterns-better",
-        "excerpt": "Gain insights into your sleep stages and how to improve them.",
+        "_id": "675970eba3f6ce9b164c487c",
+        "title": "The Ideal Sleep Environment: Tips for a Dreamy Night",
+        "slug": "ideal-sleep-environment-tips",
+        "excerpt": "Transform your bedroom into a sanctuary for better sleep.",
         "outline": [
-            "Introduction to sleep cycles",
-            "Signs of a healthy sleep pattern",
-            "Common sleep disorders in women",
-            "How sleep stages affect well-being",
-            "Keeping a sleep diary",
-            "Utilizing sleep tracking apps",
-            "Interpreting your sleep data",
-            "Importance of REM sleep",
-            "Ways to increase deep sleep",
-            "Consulting with sleep specialists"
+            "Reducing light pollution in the bedroom",
+            "The importance of a comfortable mattress",
+            "How to choose the right pillow",
+            "Optimal room temperature for sleep",
+            "Soundproofing techniques for minimal disruption",
+            "Introducing restful colors in your decor",
+            "The benefits of air purifiers",
+            "Using blackout curtains effectively",
+            "Organizing a clutter-free space",
+            "Keeping distractions away from the bed"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "675970eba3f6ce9b164c4880",
+        "title": "Best Personal Care Practices for Improved Sleep",
+        "slug": "personal-care-practices-improved-sleep",
+        "excerpt": "Adopt personal care habits that benefit your sleep quality.",
+        "outline": [
+            "Power of a skincare routine before bed",
+            "Using comfortable sleepwear",
+            "Benefits of bedtime yoga",
+            "Foot care for relaxation",
+            "Practicing oral hygiene",
+            "Hair health and nighttime routines",
+            "Self-massage techniques",
+            "Emphasizing hygiene in bed",
+            "Setting up a pleasant morning routine",
+            "Balancing personal care with wellness practices"
         ],
         "exists": false
     },
@@ -95,6 +208,34 @@
         "exists": false
     },
     {
+        "_id": "6759db6ea3f6ce9b164c5884",
+        "title": "Crafting the Perfect Evening Routine",
+        "slug": "crafting-evening-routine",
+        "excerpt": "Design an evening routine that guides you to productive tomorrows.",
+        "outline": [
+            "Plan Tomorrow's Agenda",
+            "Mindful Breathing Exercises",
+            "Limit Caffeine in the Afternoon",
+            "The Art of Tidying Up Tonight",
+            "Setting Technology Limits"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759db6ea3f6ce9b164c5882",
+        "title": "10 Bedtime Rituals for a Restful Night",
+        "slug": "10-bedtime-rituals-restful-night",
+        "excerpt": "Unlock the bedtime routines that ensure a restful sleep.",
+        "outline": [
+            "Limit Late Night Snacks",
+            "Establish a Fixed Sleep Schedule",
+            "Nightly Skincare as a Wind-Down Ritual",
+            "Incorporate Stretching Before Sleep",
+            "Create a Sleep-Friendly Environment"
+        ],
+        "exists": false
+    },
+    {
         "_id": "675970eba3f6ce9b164c4881",
         "title": "Unlocking the Secrets of Napping effectively",
         "slug": "napping-effectively-secrets",
@@ -114,78 +255,77 @@
         "exists": false
     },
     {
-        "_id": "675970eba3f6ce9b164c4882",
-        "title": "Why Regular Exercise is Key to Good Sleep",
-        "slug": "why-exercise-key-good-sleep",
-        "excerpt": "Discover the positive effects of physical activity on your sleep quality.",
+        "_id": "6759db6ea3f6ce9b164c588a",
+        "title": "Mastering Evening Routines for Better Sleep Hygiene",
+        "slug": "evening-routines-sleep-hygiene",
+        "excerpt": "Introduce habits that promote sound sleep hygiene.",
         "outline": [
-            "Types of exercises that improve sleep",
-            "The best time to work out for better sleep",
-            "How regular walking helps with insomnia",
-            "Combining yoga with sleep benefits",
-            "Aerobic exercises for sleep enhancement",
-            "Building a balanced exercise routine",
-            "Tracking your exercise and sleep patterns",
-            "Staying motivated for active living",
-            "Exercise-induced endorphins and sleep",
-            "Cautions for exercise close to bedtime"
+            "Identify Your Sleep Triggers",
+            "The Efficacy of Morning Light",
+            "Effective Stress Reduction Techniques",
+            "Keeping a Sleep Diary",
+            "Incorporating Rituals from Different Cultures"
         ],
         "exists": false
     },
     {
-        "_id": "675970eba3f6ce9b164c4880",
-        "title": "Best Personal Care Practices for Improved Sleep",
-        "slug": "personal-care-practices-improved-sleep",
-        "excerpt": "Adopt personal care habits that benefit your sleep quality.",
+        "_id": "6759db6ea3f6ce9b164c5886",
+        "title": "Achieve More: Sleep Secrets of Productive Women",
+        "slug": "sleep-secrets-productive-women",
+        "excerpt": "How sleep powers the productivity of the world's busiest women.",
         "outline": [
-            "Power of a skincare routine before bed",
-            "Using comfortable sleepwear",
-            "Benefits of bedtime yoga",
-            "Foot care for relaxation",
-            "Practicing oral hygiene",
-            "Hair health and nighttime routines",
-            "Self-massage techniques",
-            "Emphasizing hygiene in bed",
-            "Setting up a pleasant morning routine",
-            "Balancing personal care with wellness practices"
+            "Why Sleep is Non-Negotiable",
+            "Power of Naps During the Day",
+            "The Impact of Regular Exercise",
+            "Routine Sleep Assessments",
+            "Avoiding Alcohol Close to Bedtime"
         ],
         "exists": false
     },
     {
-        "_id": "675970eba3f6ce9b164c487c",
-        "title": "The Ideal Sleep Environment: Tips for a Dreamy Night",
-        "slug": "ideal-sleep-environment-tips",
-        "excerpt": "Transform your bedroom into a sanctuary for better sleep.",
+        "_id": "675970eba3f6ce9b164c487d",
+        "title": "Understanding Your Sleep Patterns Better",
+        "slug": "understanding-sleep-patterns-better",
+        "excerpt": "Gain insights into your sleep stages and how to improve them.",
         "outline": [
-            "Reducing light pollution in the bedroom",
-            "The importance of a comfortable mattress",
-            "How to choose the right pillow",
-            "Optimal room temperature for sleep",
-            "Soundproofing techniques for minimal disruption",
-            "Introducing restful colors in your decor",
-            "The benefits of air purifiers",
-            "Using blackout curtains effectively",
-            "Organizing a clutter-free space",
-            "Keeping distractions away from the bed"
+            "Introduction to sleep cycles",
+            "Signs of a healthy sleep pattern",
+            "Common sleep disorders in women",
+            "How sleep stages affect well-being",
+            "Keeping a sleep diary",
+            "Utilizing sleep tracking apps",
+            "Interpreting your sleep data",
+            "Importance of REM sleep",
+            "Ways to increase deep sleep",
+            "Consulting with sleep specialists"
         ],
         "exists": false
     },
     {
-        "_id": "675970eba3f6ce9b164c4883",
-        "title": "The Role of Mental Health in Sleep Quality",
-        "slug": "mental-health-role-sleep-quality",
-        "excerpt": "Examine how mental well-being influences the quality of your sleep.",
+        "_id": "6759db6ea3f6ce9b164c5887",
+        "title": "The Art of Detoxing Your Evening Routine",
+        "slug": "detox-your-evening-routine",
+        "excerpt": "Rejuvenate with an evening routine that cleanses the day away.",
         "outline": [
-            "Link between anxiety and sleep disruption",
-            "Depression and its impact on sleep patterns",
-            "Practicing cognitive behavioral therapy",
-            "Improving sleep through counseling",
-            "Support groups for sleep issues",
-            "Building emotional resilience",
-            "Recognizing when to seek help",
-            "Coping mechanisms for sleep disturbances",
-            "Nurturing positive mental health rituals",
-            "Impact of social interactions on sleep"
+            "Eliminating Screen Time",
+            "Herbal Tea for Relaxation",
+            "Dedicate Time for Personal Hobbies",
+            "Mind Decluttering Techniques",
+            "The Power of Gentle Yoga"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759db6ea3f6ce9b164c5885",
+        "title": "Simple Nightly Practices for Quality Sleep",
+        "slug": "simple-nightly-practices-quality-sleep",
+        "excerpt": "Implement simple changes for a better night's rest.",
+        "outline": [
+            "Understanding Your Natural Sleep Cycle",
+            "Benefits of Taking a Warm Bath",
+            "The Role of Nutrition on Sleep",
+            "Embrace Serenity with a Sleep Mask",
+            "Setting Up a Bedtime Alarm"
         ],
         "exists": false
     }
