@@ -38,7 +38,10 @@ eleventyComputed:
             
             {% if page.title %}
             <h3 id="{{loop.index0}}" class="not-prose text-3xl md:text-4xl font-bold my-4 md:my-6">
-                {{page.number}}. {{page.title | safe }}
+                {% if page.number %}
+                    {{ page.number }}.
+                {% endif %}
+                {{page.title | safe }}
             </h3> 
             {% endif %}
             
