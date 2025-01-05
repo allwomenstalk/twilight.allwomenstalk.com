@@ -116,7 +116,7 @@ eleventyComputed:
             {# {% include 'partials/cta.njk' %} #}
         {% else %}
             
-            {% include 'partials/pinterestcard.njk' %}
+            {# {% include 'partials/pinterestcard.njk' %} #}
 
             {# {% include 'partials/newsletter.njk' %} #}
 
@@ -151,11 +151,12 @@ eleventyComputed:
 
 
     </main>
-    
-    {% include 'partials/infinity.njk' %}
+    {% set modal = true %}
+    {% set samplesize = 5 %}
+    {% include 'partials/infeedity/feed.njk' %}
 
 
-    {# {% include 'partials/relatedbadges.njk' %} #}
+    {% include 'partials/relatedbadges.njk' %}
 
 
     {% include 'partials/adsnew.njk' %}

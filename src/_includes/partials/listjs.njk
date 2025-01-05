@@ -5,7 +5,6 @@
 
 
 <template x-for="list in posts" >
-
   <template x-for="(post, index) in list" :key="index">
     <a  :href="post.url ? post.url : null" 
     @click="post.url ? null : (select(post), $event.preventDefault())"
@@ -38,7 +37,7 @@
                 'md:border-l-0 sm:rounded-r sm:roun-l-none sm:h-full': index % 7 === 6
             }">
         <div>
-          <p class="text-xs text-gray-700 flex items-center uppercase" x-text="post.category">
+          <p class="text-xs opacity-50 flex items-center uppercase" x-text="post.category">
             <!-- Category will be dynamically filled -->
           </p>
           
@@ -58,7 +57,9 @@
       </div>
     </a>
   </template>
-  
+
+
+
 </template>
 </div>
 

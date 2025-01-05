@@ -1,8 +1,41 @@
 [
     {
+        "_id": "67597073a3f6ce9b164c4842",
+        "title": "Teen Resilience: Bouncing Back from Challenges",
+        "slug": "teen-resilience-bouncing-back",
+        "category": "teen",
+        "excerpt": "Building resilience to navigate the hurdles of teenage life.",
+        "outline": [
+            "Understanding resilience",
+            "Importance of a growth mindset",
+            "Learning from failures",
+            "Developing coping strategies",
+            "Building a support network",
+            "Nurturing mental health",
+            "Setting realistic goals"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759db2aa3f6ce9b164c5851",
+        "title": "Tech Gadgets Every Teen Needs for School",
+        "slug": "tech-gadgets-teens-school",
+        "category": "teen",
+        "excerpt": "A look at the latest tech gadgets that enhance the educational experience for teens.",
+        "outline": [
+            "Best tablets and laptops for students",
+            "Gadgets that improve study habits",
+            "Apps for organizing school work",
+            "Headphones for focused learning",
+            "Tech for virtual collaboration"
+        ],
+        "exists": false
+    },
+    {
         "_id": "67597073a3f6ce9b164c483d",
         "title": "The Importance of Self-Esteem in Teenagers",
         "slug": "importance-of-teen-self-esteem",
+        "category": "teen",
         "excerpt": "Exploring why self-esteem matters and how to boost it effectively.",
         "outline": [
             "Defining self-esteem",
@@ -13,12 +46,13 @@
             "Dealing with criticism",
             "Finding strengths and talents"
         ],
-        "exists": false
+        "exists": true
     },
     {
         "_id": "67597073a3f6ce9b164c4840",
         "title": "Coping with Teenage Stress",
         "slug": "coping-with-teenage-stress",
+        "category": "teen",
         "excerpt": "Learn practical ways to manage stress during teenage years.",
         "outline": [
             "Identifying stress sources",
@@ -32,79 +66,10 @@
         "exists": false
     },
     {
-        "_id": "6759db2aa3f6ce9b164c584d",
-        "title": "How to Start a Book Club for Teens",
-        "slug": "start-book-club-teens",
-        "excerpt": "Step-by-step guide to creating a fun and engaging book club for teens.",
-        "outline": [
-            "Choosing the right books",
-            "Organizing regular meetings",
-            "Encouraging open discussions",
-            "Utilizing online platforms",
-            "Inviting guest speakers or authors"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "6759db2aa3f6ce9b164c5851",
-        "title": "Tech Gadgets Every Teen Needs for School",
-        "slug": "tech-gadgets-teens-school",
-        "excerpt": "A look at the latest tech gadgets that enhance the educational experience for teens.",
-        "outline": [
-            "Best tablets and laptops for students",
-            "Gadgets that improve study habits",
-            "Apps for organizing school work",
-            "Headphones for focused learning",
-            "Tech for virtual collaboration"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "6759db2aa3f6ce9b164c584f",
-        "title": "Building Your Career: Internships for Teens",
-        "slug": "internships-teens-career-building",
-        "excerpt": "Explore how internships can kickstart a teen's career path.",
-        "outline": [
-            "Finding opportunities in your area",
-            "Balancing work and school schedules",
-            "Developing valuable skills",
-            "Networking tips for teens",
-            "Showcasing internships on resumes"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "6759db2aa3f6ce9b164c584e",
-        "title": "Essential Mental Health Resources for Teens",
-        "slug": "mental-health-resources-teens",
-        "excerpt": "A guide to mental health resources that support teen well-being.",
-        "outline": [
-            "Finding online counseling options",
-            "Recognizing the signs of mental health issues",
-            "Establishing support groups",
-            "Apps and tools for mental wellness",
-            "Educating on coping strategies"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "6759db2aa3f6ce9b164c5850",
-        "title": "The Importance of Volunteering for Teens",
-        "slug": "importance-volunteering-teens",
-        "excerpt": "Learn how volunteering can enhance personal growth and community impact.",
-        "outline": [
-            "Building empathy and compassion",
-            "Exploring different fields of interest",
-            "Improving communication skills",
-            "Relationships and teamwork",
-            "Finding local volunteer opportunities"
-        ],
-        "exists": false
-    },
-    {
         "_id": "67597073a3f6ce9b164c483b",
         "title": "How to Build Strong Friendships in Your Teens",
         "slug": "how-to-build-strong-teen-friendships",
+        "category": "teen",
         "excerpt": "Tips on forming lasting bonds and dealing with conflicts in teenage friendships.",
         "outline": [
             "Identifying true friendship qualities",
@@ -121,6 +86,7 @@
         "_id": "67597073a3f6ce9b164c483f",
         "title": "Effective Communication Skills for Teens",
         "slug": "effective-communication-for-teens",
+        "category": "teen",
         "excerpt": "Developing skills to express yourself clearly and listen actively.",
         "outline": [
             "Importance of clear communication",
@@ -134,57 +100,25 @@
         "exists": false
     },
     {
-        "_id": "67597073a3f6ce9b164c4841",
-        "title": "The Role of Empathy in Teen Relationships",
-        "slug": "role-of-empathy-in-teen-relationships",
-        "excerpt": "Understanding how empathy can enhance connections with peers.",
+        "_id": "6759db2aa3f6ce9b164c584e",
+        "title": "Essential Mental Health Resources for Teens",
+        "slug": "mental-health-resources-teens",
+        "category": "teen",
+        "excerpt": "A guide to mental health resources that support teen well-being.",
         "outline": [
-            "What empathy means in practice",
-            "Benefits of empathy in friendships",
-            "Learning to understand others' perspectives",
-            "Cultivating empathetic behaviors",
-            "Overcoming barriers to empathy",
-            "Role of empathy in conflict resolution",
-            "Promoting a culture of understanding"
+            "Finding online counseling options",
+            "Recognizing the signs of mental health issues",
+            "Establishing support groups",
+            "Apps and tools for mental wellness",
+            "Educating on coping strategies"
         ],
         "exists": false
-    },
-    {
-        "_id": "67597073a3f6ce9b164c483a",
-        "title": "Understanding Teenage Mood Swings",
-        "slug": "understanding-teenage-mood-swings",
-        "excerpt": "Learn why mood swings are common in teenage girls and how to handle them effectively.",
-        "outline": [
-            "Common triggers for mood swings",
-            "Significance of hormonal changes",
-            "Emotional intelligence in teens",
-            "Effective communication tactics",
-            "Role of peer pressure",
-            "Managing stress and anxiety",
-            "Importance of supportive environments"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "67597073a3f6ce9b164c4843",
-        "title": "Creating a Healthy Balance Between School and Social Life",
-        "slug": "balancing-school-and-social-life",
-        "excerpt": "Strategies for managing academics while enjoying a fulfilling social life.",
-        "outline": [
-            "Time management techniques",
-            "Setting academic priorities",
-            "Planning social activities mindfully",
-            "Avoiding overcommitment",
-            "The role of extracurricular activities",
-            "Recognizing the signs of burnout",
-            "Maintaining mental well-being"
-        ],
-        "exists": true
     },
     {
         "_id": "67597073a3f6ce9b164c483e",
         "title": "Exploring the Teenage Social Hierarchy",
         "slug": "exploring-teenage-social-hierarchy",
+        "category": "teen",
         "excerpt": "A guide to understanding social dynamics in teenage environments.",
         "outline": [
             "Types of social hierarchies",
@@ -198,9 +132,42 @@
         "exists": false
     },
     {
+        "_id": "6759db2aa3f6ce9b164c584a",
+        "title": "10 Empowering Podcasts for Teen Girls",
+        "slug": "empowering-podcasts-teen-girls",
+        "category": "teen",
+        "excerpt": "Explore inspiring podcasts that resonate with teen girls.",
+        "outline": [
+            "Podcasts that boost confidence",
+            "Learning from successful women",
+            "Navigating friendships and relationships",
+            "Career advice from industry leaders",
+            "Fostering creativity and innovation"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67597073a3f6ce9b164c4843",
+        "title": "Creating a Healthy Balance Between School and Social Life",
+        "slug": "balancing-school-and-social-life",
+        "category": "teen",
+        "excerpt": "Strategies for managing academics while enjoying a fulfilling social life.",
+        "outline": [
+            "Time management techniques",
+            "Setting academic priorities",
+            "Planning social activities mindfully",
+            "Avoiding overcommitment",
+            "The role of extracurricular activities",
+            "Recognizing the signs of burnout",
+            "Maintaining mental well-being"
+        ],
+        "exists": true
+    },
+    {
         "_id": "6759db2aa3f6ce9b164c5849",
         "title": "Top Self-Improvement Books for Teens",
         "slug": "top-self-improvement-books-teens",
+        "category": "teen",
         "excerpt": "Discover the best self-help reads that can inspire and motivate teens.",
         "outline": [
             "The power of positive thinking",
@@ -209,56 +176,13 @@
             "Overcoming stress and anxiety",
             "Developing healthy habits"
         ],
-        "exists": false
-    },
-    {
-        "_id": "67597073a3f6ce9b164c4842",
-        "title": "Teen Resilience: Bouncing Back from Challenges",
-        "slug": "teen-resilience-bouncing-back",
-        "excerpt": "Building resilience to navigate the hurdles of teenage life.",
-        "outline": [
-            "Understanding resilience",
-            "Importance of a growth mindset",
-            "Learning from failures",
-            "Developing coping strategies",
-            "Building a support network",
-            "Nurturing mental health",
-            "Setting realistic goals"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "6759db2aa3f6ce9b164c584b",
-        "title": "The Best Apps for Budgeting for Teens",
-        "slug": "best-budgeting-apps-teens",
-        "excerpt": "A roundup of apps that help teens manage their finances effectively.",
-        "outline": [
-            "Ease of use for beginners",
-            "Features like budget tracking",
-            "Debt management for teens",
-            "Interactive money goals",
-            "Parental oversight options"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "6759db2aa3f6ce9b164c584c",
-        "title": "5 Inspirational Role Models Every Teen Should Know",
-        "slug": "inspirational-role-models-teens",
-        "excerpt": "Meet five influential figures who inspire positive change in teens.",
-        "outline": [
-            "Social activists making a difference",
-            "Young entrepreneurs breaking barriers",
-            "Artists pushing creative boundaries",
-            "Athletes and their journey to success",
-            "Science and technology innovators"
-        ],
-        "exists": false
+        "exists": true
     },
     {
         "_id": "67597073a3f6ce9b164c483c",
         "title": "Navigating Peer Pressure",
         "slug": "navigating-peer-pressure",
+        "category": "teen",
         "excerpt": "Strategies to help you withstand peer pressure and stay true to yourself.",
         "outline": [
             "Understanding peer influence",
@@ -272,16 +196,32 @@
         "exists": false
     },
     {
-        "_id": "6759db2aa3f6ce9b164c584a",
-        "title": "10 Empowering Podcasts for Teen Girls",
-        "slug": "empowering-podcasts-teen-girls",
-        "excerpt": "Explore inspiring podcasts that resonate with teen girls.",
+        "_id": "6759db2aa3f6ce9b164c584f",
+        "title": "Building Your Career: Internships for Teens",
+        "slug": "internships-teens-career-building",
+        "category": "teen",
+        "excerpt": "Explore how internships can kickstart a teen's career path.",
         "outline": [
-            "Podcasts that boost confidence",
-            "Learning from successful women",
-            "Navigating friendships and relationships",
-            "Career advice from industry leaders",
-            "Fostering creativity and innovation"
+            "Finding opportunities in your area",
+            "Balancing work and school schedules",
+            "Developing valuable skills",
+            "Networking tips for teens",
+            "Showcasing internships on resumes"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759db2aa3f6ce9b164c584c",
+        "title": "5 Inspirational Role Models Every Teen Should Know",
+        "slug": "inspirational-role-models-teens",
+        "category": "teen",
+        "excerpt": "Meet five influential figures who inspire positive change in teens.",
+        "outline": [
+            "Social activists making a difference",
+            "Young entrepreneurs breaking barriers",
+            "Artists pushing creative boundaries",
+            "Athletes and their journey to success",
+            "Science and technology innovators"
         ],
         "exists": false
     },
@@ -289,6 +229,7 @@
         "_id": "6759db2aa3f6ce9b164c5852",
         "title": "Teen Fashion Trends to Watch in 2024",
         "slug": "teen-fashion-trends-2024",
+        "category": "teen",
         "excerpt": "Stay stylish and on-trend with these upcoming teen fashion trends.",
         "outline": [
             "Sustainable and eco-friendly materials",
@@ -296,6 +237,85 @@
             "Must-have accessories",
             "Bold patterns and colors",
             "Incorporating personal style"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "6759db2aa3f6ce9b164c5850",
+        "title": "The Importance of Volunteering for Teens",
+        "slug": "importance-volunteering-teens",
+        "category": "teen",
+        "excerpt": "Learn how volunteering can enhance personal growth and community impact.",
+        "outline": [
+            "Building empathy and compassion",
+            "Exploring different fields of interest",
+            "Improving communication skills",
+            "Relationships and teamwork",
+            "Finding local volunteer opportunities"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759db2aa3f6ce9b164c584b",
+        "title": "The Best Apps for Budgeting for Teens",
+        "slug": "best-budgeting-apps-teens",
+        "category": "teen",
+        "excerpt": "A roundup of apps that help teens manage their finances effectively.",
+        "outline": [
+            "Ease of use for beginners",
+            "Features like budget tracking",
+            "Debt management for teens",
+            "Interactive money goals",
+            "Parental oversight options"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67597073a3f6ce9b164c483a",
+        "title": "Understanding Teenage Mood Swings",
+        "slug": "understanding-teenage-mood-swings",
+        "category": "teen",
+        "excerpt": "Learn why mood swings are common in teenage girls and how to handle them effectively.",
+        "outline": [
+            "Common triggers for mood swings",
+            "Significance of hormonal changes",
+            "Emotional intelligence in teens",
+            "Effective communication tactics",
+            "Role of peer pressure",
+            "Managing stress and anxiety",
+            "Importance of supportive environments"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "67597073a3f6ce9b164c4841",
+        "title": "The Role of Empathy in Teen Relationships",
+        "slug": "role-of-empathy-in-teen-relationships",
+        "category": "teen",
+        "excerpt": "Understanding how empathy can enhance connections with peers.",
+        "outline": [
+            "What empathy means in practice",
+            "Benefits of empathy in friendships",
+            "Learning to understand others' perspectives",
+            "Cultivating empathetic behaviors",
+            "Overcoming barriers to empathy",
+            "Role of empathy in conflict resolution",
+            "Promoting a culture of understanding"
+        ],
+        "exists": false
+    },
+    {
+        "_id": "6759db2aa3f6ce9b164c584d",
+        "title": "How to Start a Book Club for Teens",
+        "slug": "start-book-club-teens",
+        "category": "teen",
+        "excerpt": "Step-by-step guide to creating a fun and engaging book club for teens.",
+        "outline": [
+            "Choosing the right books",
+            "Organizing regular meetings",
+            "Encouraging open discussions",
+            "Utilizing online platforms",
+            "Inviting guest speakers or authors"
         ],
         "exists": false
     }

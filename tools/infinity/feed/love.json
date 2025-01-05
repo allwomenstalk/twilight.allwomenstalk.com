@@ -1,89 +1,428 @@
 [
     {
-        "_id": "672732c15584cc59d36c1c38",
-        "title": "Narcissistic Supply: 34 Secrets to Control a Narcissist & Cut Their Power ASAP!",
-        "slug": "narcissistic-supply",
-        "excerpt": "If you have a narcissist in your life, you won\u2019t need telling how difficult it is to be around them. The answer? Cut off their narcissistic supply.",
+        "_id": "672732c15584cc59d36c1b76",
+        "title": "Emotionally Manipulative Boyfriend: 24 BIG Signs & Reasons to Leave This Man",
+        "slug": "emotionally-manipulative-boyfriend",
+        "category": "love",
+        "excerpt": "If you think you\u2019re dealing with an emotionally manipulative boyfriend, it\u2019s vital to learn the signs of a manipulative man to break free from his games.",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "672732c15584cc59d36c1a74",
-        "title": "8 Fun, Flirty Games for Your Naughty House Party",
-        "slug": "fun-flirty-games-for-your-naughty-house-party",
-        "excerpt": "Gearing up for a house party? Sure, you have plenty of food and drinks, but what about entertainment? Use these 8 games for an unforgettable evening.",
+        "_id": "672732c15584cc59d36c1d28",
+        "title": "10 Cheerful Ways to be the Fun Partner in a Relationship",
+        "slug": "be-the-fun-partner-in-a-relationship",
+        "category": "love",
+        "excerpt": "Every relationship needs a little fun occasionally, and if your partner has the wit and charm of a verruca, then it's time to step up to the plate.",
         "outline": null,
         "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1b52",
+        "title": "13 Step-by-Step Eye Contact Flirting Moves to Catch Someone's Eye ASAP!",
+        "slug": "subtle-eye-contact-flirting",
+        "category": "love",
+        "excerpt": "Eye contact can be your best friend when it comes to flirting with your crush. Follow these tips to hook and reel them in using only the power of your eyes!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1b8c",
+        "title": "Age Gap in Relationships & 42 Truths About Dating Someone Younger or Older",
+        "slug": "when-does-age-difference-in-relationships-matter",
+        "category": "love",
+        "excerpt": "Do age gaps in relationships really matter that much? Well, it depends on a lot of factors. So, here are things you should think about.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c18c4",
+        "title": "Facetime Sex: 19 Naughty Tips & Ways to Have Sex Over a Video Call",
+        "slug": "facetime-sex-moves",
+        "category": "love",
+        "excerpt": "Whether you\u2019re long distance loves or you want to surprise your partner at work, a spot of FaceTime sex will tick all the right boxes.",
+        "outline": null,
+        "exists": true
+    },
+    {
+        "_id": "672732c15584cc59d36c1bf6",
+        "title": "Trauma Bonding in Relationships: 35 Signs & Secrets to Unmask & Escape",
+        "slug": "trauma-bonding",
+        "category": "love",
+        "excerpt": "Wondering what is Trauma bonding? Here are the signs and must-knows to escape this toxic emotional tie of inconsistent positive-negative reinforcement!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1998",
+        "title": "9 Ways You and Your Partner Bring Out Each Other's Best",
+        "slug": "ways-you-and-your-partner-bring-out-each-others-best",
+        "category": "love",
+        "excerpt": "Being in a relationship can help bring out the best in you. Find out how you can do this for each other and create a better and happier relationship.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1a88",
+        "title": "Relocating for Romance - Should You Move for Love?",
+        "slug": "relocate-move-for-love",
+        "category": "love",
+        "excerpt": "If given the chance to choose between staying in a familiar place and moving to be with the one you love, which would you choose?",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1a51",
+        "title": "5 Powerful Steps to Break Out of Your Comfort Zone",
+        "slug": "powerful-steps-to-break-out-of-your-comfort-zone",
+        "category": "love",
+        "excerpt": "They say that a boat is safe on the docks, but that's not what boats are made for. How can you grow if you choose to stay within your comfort zone?",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1886",
+        "title": "Penis Facts: 30 Shocking & Weird Trivia to Make You A Dick Expert in No Time!",
+        "slug": "penis-facts",
+        "category": "love",
+        "excerpt": "The human body is a wonderful thing. It\u2019s complex, confusing, but it does amazing things. Check out these fascinating penis facts to see what we mean!",
+        "outline": null,
+        "exists": true
+    },
+    {
+        "_id": "672732c15584cc59d36c19ec",
+        "title": "10 Baby-Free Reasons Why You Missed Your Period",
+        "slug": "baby-free-reasons-why-you-missed-your-period",
+        "category": "love",
+        "excerpt": "Missed your period? Relax, it doesn't necessarily mean you're pregnant. Here are 10 reasons why you may have missed your monthly gift.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c18c7",
+        "title": "30 Sweet & Cute Nicknames for Your Boyfriend He'll Actually Like Hearing",
+        "slug": "cute-nicknames-for-your-boyfriend",
+        "category": "love",
+        "excerpt": "Having pet names is part of being in a relationship! Here are some cute nicknames for your boyfriend - you can choose the perfect one.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c19c4",
+        "title": "Gone Girl: Suspense, Revenge and Everything in Between",
+        "slug": "gone-girl-suspense-revenge-and-everything-in-between",
+        "category": "love",
+        "excerpt": "The ultimate guidebook for revenge or a step back for feminism? Whatever your thoughts on Gone Girl, we can all agree: it offers one captivating ride.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1834",
+        "title": "24 Fun Challenges to Do with Friends to Bond & Create Fun Memories",
+        "slug": "fun-challenges-to-do-with-friends",
+        "category": "love",
+        "excerpt": "Whether you\u2019re staying in or going out, it's easy to entertain when you\u2019re with friends. Try these fun challenges to do with friends to up the ante.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c191e",
+        "title": "25 Sad But Clear Signs Your Friend Is Trying to Break Up With You",
+        "slug": "signs-your-friend-is-trying-to-break-up-with-you",
+        "category": "love",
+        "excerpt": "Not all friendships last a lifetime. If a friend seems to be getting distant from you, look for these signs your friend is trying to break up with you.",
+        "outline": null,
+        "exists": true
+    },
+    {
+        "_id": "672732c15584cc59d36c1d21",
+        "title": "5 Powerful Steps to Break Out of Your Comfort Zone",
+        "slug": "powerful-steps-to-break-out-of-your-comfort-zone",
+        "category": "love",
+        "excerpt": "They say that a boat is safe on the docks, but that's not what boats are made for. How can you grow if you choose to stay within your comfort zone?",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c195e",
+        "title": "29 Secrets & Signs You're Growing Apart in a Relationship",
+        "slug": "signs-you-may-be-growing-apart",
+        "category": "love",
+        "excerpt": "Every relationship has its ups and downs, but if the downs are starting to add up, it might be a sign you're growing apart in a relationship.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c19e8",
+        "title": "How to Push the Right Buttons to Achieve Multiple Orgasms",
+        "slug": "the-magnificent-journey-to-achieving-multiple-orgasms",
+        "category": "love",
+        "excerpt": "Some people think it's a myth, but a lot of women can attest to the fact that they've had multiple orgasms. Here's how you can join in on the fun.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c18a3",
+        "title": "26 Lesbian Stereotypes, Myths & Clich\u00e9s Most People Still Believe Even Now",
+        "slug": "lesbian-stereotypes",
+        "category": "love",
+        "excerpt": "There are plenty of lesbian stereotypes and myths out there, but which are true and which are downright false? It\u2019s time to unveil the truth!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1d03",
+        "title": "What to Do When You Find out You're Being Cheated With",
+        "slug": "what-to-do-when-you-find-out-youre-being-cheated-with",
+        "category": "love",
+        "excerpt": "When you find yourself in the situation of being the other man or woman, you're faced with the decision to stay or let go. Here's what you should do.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c18a0",
+        "title": "The Secrets to Master the Art of Constructive Criticism in a Relationship",
+        "slug": "ways-to-master-the-art-of-constructive-criticism",
+        "category": "love",
+        "excerpt": "Being able to offer constructive criticism is an important, but difficult life skill to master. These steps help you master this skill with ease.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1e0f",
+        "title": "How to Increase the Female Libido: 21 Science-Backed Libido Boosting Methods",
+        "slug": "how-to-increase-sex-drive-in-women",
+        "category": "love",
+        "excerpt": "If you want to know how to increase the female libido, you first have to understand what makes women tick. We can help with that.",
+        "outline": null,
+        "exists": true
+    },
+    {
+        "_id": "672732c15584cc59d36c1a5a",
+        "title": "10 Dating Behaviors that are Extremely Unattractive",
+        "slug": "dating-behaviors-that-are-unattractive",
+        "category": "love",
+        "excerpt": "In the early stages of a relationship, dating provides a chance to get to know each other better. So why can't some people resist behaving badly?",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1b0c",
+        "title": "Breakup Anxiety: The 2 BIG Types, 38 Signs & Must-Knows to Overcome Them",
+        "slug": "breakup-anxiety",
+        "category": "love",
+        "excerpt": "There are two types of breakup anxiety \u2013 one happens before a breakup and the other happens after. Both are equally damaging.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1c9d",
+        "title": "22 Bite-Size Tips on Having More Success with Women",
+        "slug": "bite-size-tips-on-having-more-success-with-women",
+        "category": "love",
+        "excerpt": "What do women want that you can give? Love? Attention? Money? Unfortunately, it takes more than just that to be successful with women.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1b64",
+        "title": "Girlfriend Takes You for Granted? 32 Signs, Whys & Ways to Show Your Worth",
+        "slug": "how-to-handle-a-girlfriend-that-takes-you-for-granted-change-her",
+        "category": "love",
+        "excerpt": "Girlfriend takes you for granted? Learn how to recognize the signs, communicate openly, and nurture mutual respect.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1e6e",
+        "title": "17 Brilliant Yet Simple Ways To Save Money As A Couple",
+        "slug": "brilliant-yet-simple-ways-to-save-money-as-a-couple",
+        "category": "love",
+        "excerpt": "Are you looking for smart ways to save money as a couple without compromising on your lifestyle? Try these 17 simple ways, and see the difference!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1e06",
+        "title": "Guy Friend Acts Weird? 40 Signs, Reasons & Tips When He's Acting Strange",
+        "slug": "guy-friend-acts-weird",
+        "category": "love",
+        "excerpt": "Guys can be strange sometimes. What are you supposed to do when a guy friend acts weird out of the blue? First thing\u2014don\u2019t panic!",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1b3f",
+        "title": "18 Common Marital Problems & Smart Solutions to Save Your Marriage",
+        "slug": "common-marital-problems-and-solutions",
+        "category": "love",
+        "excerpt": "Everyone wants the perfect marriage and to ride off into the sunset and live happily ever after. However, most people encounter marital problems.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1ac7",
+        "title": "The Virgin's Guide to Acting Like She Has Experience",
+        "slug": "the-virgins-guide-to-acting-like-she-has-experience",
+        "category": "love",
+        "excerpt": "You're about to lose your v-card to that guy you're dating but don't want to come off as a newbie? Here's the virgin's guide to acting like she has experience.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "66f67a3680bd1ee71c0ac2ae",
+        "title": "12 Creative Date Ideas to Suggest Over Text",
+        "slug": "creative-date-ideas-over-text",
+        "category": "love",
+        "excerpt": "Impress him with these 12 creative date ideas you can suggest via text.",
+        "outline": [
+            "Planning a picnic in the park",
+            "Suggesting a visit to a museum or art gallery",
+            "Recommending a fun cooking class together",
+            "Proposing an outdoor adventure or hike",
+            "Going to a live music event or concert",
+            "Suggesting a game night with favorite board games",
+            "Meeting at a cozy caf\u00e9 for coffee and conversation",
+            "Exploring a local farmers' market together",
+            "Attending a comedy show or improv night",
+            "Trying a new fitness class like yoga or dance",
+            "Planning a themed movie night at home",
+            "Recommending a spontaneous road trip to a nearby town"
+        ],
+        "exists": true
+    },
+    {
+        "_id": "672732c15584cc59d36c190f",
+        "title": "Unicorning: 46 Secrets to Be a Unicorn, Drop Hints & Find the Perfect Couple",
+        "slug": "how-to-be-a-unicorn",
+        "category": "love",
+        "excerpt": "If you're intrigued by unicorning, know the dos, don'ts, and red flags on how to be a unicorn. And learn these secrets to navigate a fun, tricky threesome.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1aa0",
+        "title": "Nom-Nom No-Nos: 17 Foods to Avoid Before Having Sex",
+        "slug": "foods-to-avoid-before-sex",
+        "category": "love",
+        "excerpt": "Before you get your freak on, you always get your food on. But can some of your meals be ruining your time between the sheets? Here are 17 food faux pas.",
+        "outline": null,
+        "exists": true
+    },
+    {
+        "_id": "672732c15584cc59d36c1a5d",
+        "title": "Orgasmic Insuck: Powerful Orgasms & Easier Fertilization?",
+        "slug": "orgasmic-insuck-powerful-orgasms-easier-fertilization",
+        "category": "love",
+        "excerpt": "Trouble getting pregnant\u2014or just figuring it out? Enter: orgasmic insuck. While it sounds like a life-sucking vortex, it may benefit your sex life.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1d12",
+        "title": "20 Easy Life-Changing Hacks for 20-Something Guys",
+        "slug": "easy-life-changing-hacks-for-twenty-something-guys",
+        "category": "love",
+        "excerpt": "Your twenties may well be the most exciting and most anxiety-inducing time of your life. But how can you survive such a tumultuous era?",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1a12",
+        "title": "Pulling Out Is Completely Safe and Other Bad Sex Advice",
+        "slug": "pulling-out-and-other-bad-sex-advice",
+        "category": "love",
+        "excerpt": "Ever had a friend give you sex advice that was totally wrong? We're spilling the secrets on bad sex advice you should never, ever fall for.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1c3d",
+        "title": "Loveless Relationship: 54 Signs, Causes, Reasons & Steps to Fix It ASAP!",
+        "slug": "loveless-relationship-why-people-stay",
+        "category": "love",
+        "excerpt": "Do you have to fall in love to be in a relationship? Or can you exist in a loveless relationship knowing that you don't harbor any romantic feelings?",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1ab8",
+        "title": "A Letter to My Ex: Here's What I\u2019ve Always Wanted to Say",
+        "slug": "letter-to-my-ex",
+        "category": "love",
+        "excerpt": "When a relationship ends, you may be left thinking, \u201cI wish I could write a letter to my ex\u201d in order to say everything that needs to be said.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1c26",
+        "title": "34 Things Guys Think About After You Sleep with Them for the First Time",
+        "slug": "what-do-guys-think-after-you-sleep-with-them",
+        "category": "love",
+        "excerpt": "Sex is a confusing topic. Are you moving too fast, or too slow? And what on earth do guys think about during and after you sleep with them? We have the answers for you.",
+        "outline": null,
+        "exists": false
+    },
+    {
+        "_id": "672732c15584cc59d36c1ba7",
+        "title": "41 Self-Pleasure Secrets to Give Yourself an Orgasm & Have Sex with Yourself",
+        "slug": "how-to-have-sex-with-yourself",
+        "category": "love",
+        "excerpt": "If you want to learn how to have sex with yourself, it\u2019s not that difficult. Plus, it helps you figure out what you like so you can tell your partner, too!",
+        "outline": null,
+        "exists": true
     },
     {
         "_id": "672732c15584cc59d36c1a87",
         "title": "How to Start Dating Again: 13 Signs You're Ready to Get Back in the Game",
         "slug": "how-to-start-dating-again",
+        "category": "love",
         "excerpt": "Have you been single for a long time? Do you want to get back into the exciting world of finally finding that special someone?",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1bdc",
-        "title": "Weak & Strong Men: What It Means & 56 Signs of a Weak Man in a Relationship",
-        "slug": "signs-of-a-weak-man-in-a-relationship",
-        "excerpt": "Are you with a guy who is frustrating you on a daily basis? If you are, then you need to know the signs of a weak man in a relationship.",
         "outline": null,
         "exists": true
     },
     {
-        "_id": "672732c15584cc59d36c1841",
-        "title": "Fur Baby: Why Millennials Are Choosing Puppies Over Babies",
-        "slug": "fur-baby-puppies-over-babies",
-        "excerpt": "Do your millennial friends refer to their dog as their fur baby? Here are all the reasons why millennials are choosing puppy love over having kids.",
+        "_id": "672732c15584cc59d36c195b",
+        "title": "Freaky Porn: The Top Porn Searches and the Crazy Things We Watch",
+        "slug": "freaky-porn-searches",
+        "category": "love",
+        "excerpt": "It\u2019s no secret that men and women have different preferences, and sex is no exception. Here\u2019s what men and women like in freaky porn.",
+        "outline": null,
+        "exists": true
+    },
+    {
+        "_id": "672732c15584cc59d36c1932",
+        "title": "50 Dirty Things to Say to a Girl to Make Her Horny & Dirty Talk Mistakes to Avoid!",
+        "slug": "dirty-things-to-say-to-a-girl",
+        "category": "love",
+        "excerpt": "Words are a powerful tool you can use to turn your girl on and make her want you. These dirty things to say to a girl will leave her dripping wet for you.",
+        "outline": null,
+        "exists": true
+    },
+    {
+        "_id": "672732c15584cc59d36c1ccc",
+        "title": "Dealing with Divorced Parents at your Wedding",
+        "slug": "dealing-with-divorced-parents-at-your-wedding",
+        "category": "love",
+        "excerpt": "Your parents love you more than anything, except maybe arguing with each other. Here's how to celebrate your marriage with parents who are divorced.",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "672732c15584cc59d36c1a86",
-        "title": "Happily Ever After: 10 Steps to Find Yours and Keep It",
-        "slug": "happily-ever-after",
-        "excerpt": "The happily ever after you find in fairy tales don't always play as smoothly in real life. But we've got ways to work around that.",
+        "_id": "672732c15584cc59d36c1d88",
+        "title": "A Letter to My Ex: Here's What I\u2019ve Always Wanted to Say",
+        "slug": "letter-to-my-ex",
+        "category": "love",
+        "excerpt": "When a relationship ends, you may be left thinking, \u201cI wish I could write a letter to my ex\u201d in order to say everything that needs to be said.",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "672732c15584cc59d36c1c89",
-        "title": "5 Easy Ways to Stop Comparing Your New Guy to Your Ex",
-        "slug": "easy-ways-to-stop-comparing-your-new-guy-to-your-ex",
-        "excerpt": "Are you comparing all your potential Mr. Rights to your former Mr. Wrong? Don't be that girl. Here's how you can quit comparing your dates to your ex.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1c1f",
-        "title": "Sigma Female: What Makes Her, 33 Traits & BIG Strengths that Roar Silently",
-        "slug": "sigma-female",
-        "excerpt": "A sigma female is strong and special, but do you know their unique characteristics, strengths and weaknesses? Find out everything about them right here.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1c99",
-        "title": "7 Date Ideas That Men Love But Women Actually Hate",
-        "slug": "date-ideas-that-men-love-but-women-actually-hate",
-        "excerpt": "While the majority of men plan a date with the lucky girl in mind, others are flat out clueless about date ideas she'll actually enjoy!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1e68",
-        "title": "6 Ways to Stop Glorifying Busy and Start Living Instead!",
-        "slug": "6-ways-to-stop-glorifying-busy-and-start-living-instead",
-        "excerpt": "Do you find yourself feeling busy all the time? Use these 6 ways to banish the glorification of busy and start living a more productive life instead!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1d3a",
-        "title": "15 Reasons Why You Should Travel at Least Once a Year",
-        "slug": "why-you-should-travel-at-least-once-a-year",
-        "excerpt": "They say that travel feeds the soul, but there are 15 solid reasons why embarking on a journey at least once a year is the best thing you can do.",
+        "_id": "672732c15584cc59d36c1e12",
+        "title": "I Don't Want a Relationship: 30 Reasons, Signs & Why It's Definitely Okay",
+        "slug": "i-dont-want-a-relationship",
+        "category": "love",
+        "excerpt": "In a world that often glorifies being in a relationship, feeling out of place for saying 'I don't want a relationship' is more common than you think.",
         "outline": null,
         "exists": false
     },
@@ -91,336 +430,35 @@
         "_id": "672732c15584cc59d36c1c09",
         "title": "Dating a Bipolar Man: 51 Signs You're Dating One & How to Tell if He Loves You",
         "slug": "dating-a-bipolar-man",
+        "category": "love",
         "excerpt": "Wondering how to tell if a bipolar man loves you? It's more than mood swings. Look for emotional connection, trigger awareness, and emotional check-ins.",
         "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1b89",
-        "title": "Husband Material: 31 Signs to Split a Boyfriend You Date & A Man You Marry",
-        "slug": "husband-material",
-        "excerpt": "Out of all the guys in the world, some are husband material and some aren\u2019t. Maybe he\u2019s just not ready yet, or maybe he\u2019s prime for the picking!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1bac",
-        "title": "Fake Breasts: The Subtle Implant Signs to Tell If Your Girl's Boobs Aren't Real",
-        "slug": "how-to-tell-if-your-girlfriends-breasts-arent-real",
-        "excerpt": "Are you wondering if your girl\u2019s breasts are too good to be true? Here's how to tell if she has implants or fake breasts, or if they're all-natural.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c18c9",
-        "title": "The 24 Best Threesome Sex Positions for All Combos of Men & Women",
-        "slug": "best-threesome-positions",
-        "excerpt": "You\u2019re feeling naughty and want to do a threesome, but where do you start? Well, first, you need to know the best threesome sex positions.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1e0a",
-        "title": "How to Sext a Girl Right: 24 Tips to Avoid Creepy & Weird Vibes",
-        "slug": "how-to-sext-a-girl",
-        "excerpt": "If you\u2019re not comfortable sexting a girl, odds are you\u2019re not going to do it, or it\u2019s not going to go well. It\u2019s about time you learned how to sext a girl.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1de9",
-        "title": "Machiavellianism: The Good, The Bad & 51 Tips to Spot & Dodge Their Tricks",
-        "slug": "machiavellianism-traits",
-        "excerpt": "How can you tell if someone has Machiavellianism traits? If you think someone you know fits this personality type, here\u2019s what you need to know.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c19ba",
-        "title": "10 Ways to Handle Sexual Frustration with Your Partner",
-        "slug": "ways-to-handle-sexual-frustration-with-your-partner",
-        "excerpt": "Frustration is never a good look. When you're starting to feel it in your sexual relationship, it's time to turn to these healing methods.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "66f67a1f80bd1ee71c0a7411",
-        "title": "30 Love Letters to Make Her Fall in Love All Over Again",
-        "slug": "love-letters-for-her",
-        "excerpt": "Capture her heart with these timeless love letters.",
-        "outline": [
-            "The art of writing a love letter",
-            "Examples of romantic love letters",
-            "Letters to express gratitude",
-            "Apology letters for when you\u2019ve messed up",
-            "Tips for personalizing your love letter"
-        ],
         "exists": true
     },
     {
-        "_id": "672732c15584cc59d36c1e62",
-        "title": "8 Easy Ways To Avoid Awkward Silences During a Date",
-        "slug": "8-easy-ways-to-avoid-awkward-silences-during-a-date",
-        "excerpt": "Ever been on a date peppered with so many awkward pauses that time seems to drag on forever? Keep these tips in mind to avoid those awkward silences!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1d34",
-        "title": "12 Amazing Facts You Didn't Know About Semen",
-        "slug": "amazing-facts-you-didnt-know-about-semen",
-        "excerpt": "Semen is a magical thing. But aside from the obvious part it plays in procreation, here are 12 amazing little facts about male ejaculate.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1cba",
-        "title": "How to Stop Holding on to a Relationship That's Over",
-        "slug": "how-to-stop-holding-on-to-a-relationship-thats-over",
-        "excerpt": "The first step in letting go of a failed relationship is often the hardest but it can be done. Learn to stop being so hung up through these steps.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1b8a",
-        "title": "Massage Etiquette: The Newbie's Guide to the Types, Tips and 25 Dos & Don'ts",
-        "slug": "massage-etiquette",
-        "excerpt": "Massage clinics are places of relaxation and comfort. But if you don\u2019t know about proper massage etiquette, a great afternoon can become an awkward one!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1946",
-        "title": "Do Women Ever Get Penis Envy? The Truth Revealed!",
-        "slug": "do-women-ever-get-penis-envy-the-truth-revealed",
-        "excerpt": "When hearing the phrase \"penis envy,\"\u009d most people assume it's a male issue. But in truth, it's also a concept that can plague women.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1b0a",
-        "title": "24 Bad Girl Sex Tricks to Try in Bed & Seduce and Leave a Guy Obsessed!",
-        "slug": "bad-girl-sex-tricks",
-        "excerpt": "Want to send your man on a ride he'll never forget? Here are 10 bad girl sex tricks for oral, hand-jobs, intercourse, and everything in between!",
+        "_id": "672732c15584cc59d36c18ce",
+        "title": "27 Traits that Makes a Woman Attractive to Men & Secrets that Scream Hot Stuff",
+        "slug": "what-makes-a-woman-attractive",
+        "category": "love",
+        "excerpt": "Looking to be a cut above? Want to know what makes a woman attractive? These 22 things certainly scream HOT and not hot mess!",
         "outline": null,
         "exists": true
     },
     {
-        "_id": "672732c15584cc59d36c1abb",
-        "title": "Essential Traits of Successful Men You Should Work On",
-        "slug": "traits-of-successful-men-that-you-should-work-on",
-        "excerpt": "Want to know how to be successful with a great career, a well-rounded social circle, and a zest for life? Here are the traits of successful men!",
+        "_id": "672732c15584cc59d36c1cbd",
+        "title": "12 Toxic Dating Habits that You Think are Normal",
+        "slug": "12-toxic-dating-habits-that-you-think-are-normal",
+        "category": "love",
+        "excerpt": "Dating habits don't start and end with a date. Here are 12 common toxic dating habits that most of us indulge in, without really realizing it!",
         "outline": null,
         "exists": false
     },
     {
-        "_id": "672732c15584cc59d36c1d4e",
-        "title": "Letting Go of Your Ex: 15 Ways to Make It Easier",
-        "slug": "letting-go-of-your-ex",
-        "excerpt": "The pain of letting someone you love go is never easy to deal with. Here are the best ways to get through that tough time with grace and poise.",
-        "outline": null,
-        "exists": true
-    },
-    {
-        "_id": "672732c15584cc59d36c1c5f",
-        "title": "10 Answers to Dumb Questions People Ask Lesbians",
-        "slug": "answers-to-dumb-questions-people-ask-lesbians",
-        "excerpt": "Don't you just hate it when people get all up in your business when they find out you're a lesbian? Here are the best ways to answer their questions!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c18b7",
-        "title": "Slow Sex: 16 Steamy Reasons It's So Sexy & Tips to Experience It Yourself",
-        "slug": "slow-sex-reasons-why-its-best",
-        "excerpt": "Most people are about wham, bam, thank you ma\u2019am, but have you ever tried the joys of slow sex? It\u2019s true that slow passionate sex is a real game changer!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1922",
-        "title": "Boyfriend Taking You For Granted? 30 Signs, Why It Happens & Ways to Fix It",
-        "slug": "boyfriend-is-taking-you-for-granted",
-        "excerpt": "Too many people put up with others who treat them poorly. Well, we say it\u2019s time to end it! If your boyfriend is taking you for granted, follow these tips.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1beb",
-        "title": "High Self-Esteem: 33 Low Signs, What Hurts Self-Worth & Secrets to Pump It",
-        "slug": "ways-to-have-high-self-esteem",
-        "excerpt": "It\u2019s normal to feel down once in a while, but constant negativity isn\u2019t healthy. Use these tips to have high self-esteem and feel better about yourself.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "66f67a3680bd1ee71c0ac2a9",
-        "title": "5 Signs He's Interested in You Based on His Texts",
-        "slug": "signs-hes-interested-based-on-texts",
-        "excerpt": "Decode his text messages with these 5 signs that he's into you.",
-        "outline": [
-            "Frequency and promptness of his replies",
-            "Use of playful and flirty language",
-            "Sharing personal stories and experiences",
-            "Asking personal questions about you",
-            "Initiating plans to meet up in person"
-        ],
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1d45",
-        "title": "13 Signs It's Finally Time to Start Dating Again",
-        "slug": "signs-its-time-to-start-dating-again",
-        "excerpt": "Being single is fun for a while, but are you ready to get back into the dating world? Here are 13 signs it's time to start dating again.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c19d9",
-        "title": "The Pros & Cons of Dating a Guy Who is Handy",
-        "slug": "the-pros-cons-of-dating-a-guy-who-is-handy",
-        "excerpt": "I can't stress enough why it's important to be with a guy who can fix things. But along with the pros are also a couple of not-so-obvious cons.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1ae1",
-        "title": "Teenage Love Stories - A Reunion of Teenage Love",
-        "slug": "teenage-love-stories",
-        "excerpt": "What would you do if you see your school crush again at a reunion? Read this true love story of melting hearts and second impressions.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c19e0",
-        "title": "9 Words and Phrases Every Man Needs in His Arsenal",
-        "slug": "words-and-phrases-every-man-needs-in-his-arsenal",
-        "excerpt": "Looking to be the perfect wordsmith? Here's why having these 9 words and phrases in your vocal variations will lead to a happier relationship.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1cf5",
-        "title": "Get Her to Fall for You with these 10 Sneaky Moves",
-        "slug": "get-her-to-fall-for-you-with-these-sneaky-moves",
-        "excerpt": "You don't need to be super smooth to bag a date with the girl of your dreams. But if you need help, here are some moves you can try.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1c46",
-        "title": "What Does Eye Contact Mean to a Guy? 37 Signs & Secrets to Read His Mind",
-        "slug": "what-does-eye-contact-mean-to-a-guy",
-        "excerpt": "What does eye contact mean to a guy? It\u2019s not always easy to know. So, if you\u2019re trying to decode his messages, here is a guide for you to figure it out.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "6724978d1efd909655bafea5",
-        "title": "6 Honest Reasons He Hasn't Used the G-Word Yet",
-        "slug": "reasons-why-no-girlfriend-label",
-        "excerpt": "Understand the honest reasons behind his hesitance to define the relationship.",
-        "outline": [
-            "Fear of Losing Freedom",
-            "Waiting for the Right Moment",
-            "Recovering from Past Relationships",
-            "Testing Compatibility First",
-            "Career and Life Goals Focus",
-            "Ensuring Strong Bond Beforehand"
-        ],
-        "exists": true
-    },
-    {
-        "_id": "672732c15584cc59d36c1897",
-        "title": "85 Interesting, Random Questions to Ask a Guy to Break the Awkward Silence",
-        "slug": "random-questions-to-ask-a-guy",
-        "excerpt": "You\u2019re talking to a guy and\u2026 you run out of things to say. Yikes, right? With these random questions to ask a guy, you\u2019ll never run into awkward silences!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1b90",
-        "title": "A Guy with a Girlfriend Likes You: 15 Truths to Read His Mind & Intentions",
-        "slug": "guy-with-a-girlfriend-likes-you",
-        "excerpt": "Does a guy with a girlfriend flirt with you or look at you all the time? Here are the things to keep in mind when this guy tries to get your attention.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "66f678df80bd1ee71c05d8ba",
-        "title": "The Scorpio Love Challenge: How to Keep Things Exciting",
-        "slug": "scorpio-love-challenge",
-        "excerpt": "Learn how to keep a relationship with a Scorpio exciting and full of surprises.",
-        "outline": [
-            "Planning adventurous dates",
-            "Engaging in playful teasing",
-            "Trying new experiences together",
-            "Maintaining mystery and intrigue",
-            "Showing commitment consistently"
-        ],
-        "exists": true
-    },
-    {
-        "_id": "672732c15584cc59d36c18f5",
-        "title": "Heyoka Empath: What It Means, 50 Signs & Their Good & Bad Sides In Love",
-        "slug": "heyoka-empath",
-        "excerpt": "Have you ever heard of a Heyoka empath? You probably haven\u2019t. But if you feel deeply connected, mirror emotions, challenge norms, and crave authenticity, you just might be one.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1d3f",
-        "title": "What to Expect at Your First Gynecologist Appointment",
-        "slug": "what-to-expect-at-your-first-gynecologist-appointment",
-        "excerpt": "Your first gynecologist appointment may seem daunting and embarrassing, so we're looking at everything, from how to relax to what to expect from your exam.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c18e3",
-        "title": "Why Do I Always Attract the Wrong Guys & Repeat the Same Mistakes with Men?",
-        "slug": "stop-falling-for-the-wrong-men",
-        "excerpt": "YOU may be the reason you keep choosing the wrong guys. Read these reasons and learn from your mistakes.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1bfd",
-        "title": "How to Give Your Girlfriend Her Space, What It Means & 29 Signs She Needs It",
-        "slug": "when-a-girl-says-she-needs-space-what-she-means-expects-from-you",
-        "excerpt": "When your girlfriend says she needs space, what does it mean? If you give your girlfriend space, do you risk making the situation worse? Here\u2019s the answer.",
-        "outline": null,
-        "exists": true
-    },
-    {
-        "_id": "672732c15584cc59d36c1dfa",
-        "title": "25 Traits of Successful Men You Should Start Working On Today",
-        "slug": "traits-of-successful-men-that-you-should-work-on",
-        "excerpt": "Want to know how to be successful with a great career, a well-rounded social circle, and a zest for life? Here are the traits of successful men!",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1a17",
-        "title": "22 Smitten Signs Your Partner Is Slowly Falling in Love with Someone Else",
-        "slug": "signs-your-partner-is-falling-in-love-with-someone-else",
-        "excerpt": "When we fall in love with someone, we think it\u2019s going to last forever. But right now, you see signs your partner is falling in love with someone else.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1cc4",
-        "title": "Itching to Get Hitched: Why You Shouldn't Rush Marriage",
-        "slug": "itching-to-get-hitched-why-you-shouldnt-rush-marriage",
-        "excerpt": "Are you pressured into marriage because everyone your age is getting hitched? Here's why you should take a step back and give it some time.",
-        "outline": null,
-        "exists": false
-    },
-    {
-        "_id": "672732c15584cc59d36c1c17",
-        "title": "Boyfriend Taking You For Granted? 30 Signs, Why It Happens & Ways to Fix It",
-        "slug": "boyfriend-is-taking-you-for-granted",
-        "excerpt": "Too many people put up with others who treat them poorly. Well, we say it\u2019s time to end it! If your boyfriend is taking you for granted, follow these tips.",
+        "_id": "672732c15584cc59d36c1d09",
+        "title": "5 Big Things I Learned from Reinventing My Dating Life",
+        "slug": "things-i-learned-from-reinventing-my-dating-life",
+        "category": "love",
+        "excerpt": "I have discovered many things over the years about myself, women, and relationships, but below are the top 5 most important things I have learned.",
         "outline": null,
         "exists": false
     }
