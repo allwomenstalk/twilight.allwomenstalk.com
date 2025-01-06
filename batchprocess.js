@@ -5,11 +5,23 @@ const path = require('path');
 
 // Read the JSON file
 const data = fs.readFileSync('./cloudflare/hosts.json', 'utf8');
-const hosts = JSON.parse(data);
+const cfhosts = JSON.parse(data);
 const s3hosts = ['allwomenstalk.com', 
-    "love.allwomenstalk.com",
     "lifestyle.allwomenstalk.com",
 ]
+// combine hosts
+// const hosts = [...cfhosts, ...s3hosts.map(el=>{
+//     return {
+//         domain: el,
+//     }
+// })];
+hosts = [
+    {
+        domain: "love.allwomenstalk.com",
+    }
+]
+console.log(hosts)
+// 
 // reset profile - write into src/_data/profiles.json "[]"
 fs.writeFileSync('./src/_data/profiles.json', '[]', 'utf8');
 

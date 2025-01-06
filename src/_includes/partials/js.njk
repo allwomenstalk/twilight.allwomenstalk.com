@@ -474,8 +474,15 @@
 
             async getfeed() {
                 console.log('getfeed'); 
+                let cat;
+                if (!this.category) {
+                    categories = ['love', 'travel', 'beauty', 'cooking', 'books'];
+                    cat = categories[Math.floor(Math.random() * categories.length)];
+                } else {
+                    cat = this.category
+                }
                 if (this.feed.length === 0) {
-                    const url = `https://pub-ff359827c45e40a7b6e9bad1878cd18a.r2.dev/feed/${this.category}.json`;
+                    const url = `https://pub-ff359827c45e40a7b6e9bad1878cd18a.r2.dev/feed/${cat}.json`;
                     try {
                         const response = await fetch(url);
                         const data = await response.json();
