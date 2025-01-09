@@ -37,6 +37,13 @@ module.exports = function(eleventyConfig) {
     return JSON.stringify(value);
   });
 
+  // Add a custom filter to format dates
+  eleventyConfig.addFilter("formatDate", function(date) {
+    if (!date) return "";
+    const options = { year: 'numeric', month: 'short', day: 'numeric' };
+    return new Intl.DateTimeFormat('en-US', options).format(new Date(date));
+  });
+
   // Watch targets
   eleventyConfig.addWatchTarget("./src/styles/");
 
