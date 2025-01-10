@@ -1,14 +1,17 @@
-const { MongoClient } = require('mongodb');
+const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
 const Eleventy = require('@11ty/eleventy');
 const parser = require('./helpers/parser');
 const pipelinePost = require('./helpers/pipelinePost.js');
-const AWS = require('aws-sdk');
 const { aggregate } = require('./helpers/dataApi');
 
 exports.handler = async (event, context) => {
+  // Dynamically import @octokit/rest
+  const { Octokit } = await import("@octokit/rest");
+
   try {
     // Connect to MongoDB
     console.log('event', event);
+    
 
     const postName = event.pathParameters ? event.pathParameters.proxy : event.rawPath.replace('/', '');
     event.post_name = postName;
@@ -63,22 +66,49 @@ exports.handler = async (event, context) => {
     // Generate the post
     console.log('Generating post');
     const json = await elev.toJSON();
+    console.log('json', json);
 
-    // Save files to S3
-    const s3 = new AWS.S3();
+
+    // Initialize S3 Client
+    const s3 = new S3Client({ region: 'us-west-2' });
     const bucketName = data.host;
+    console.log('bucketName', bucketName) 
 
     // Save index.html
     const inputPath1 = './src/posts/post.njk';
     const html = json.filter((item) => item.inputPath === inputPath1)[0].content;
     const outputPath1 = `${postName}/index.html`;
-    await saveFileToS3(html, bucketName, outputPath1, s3);
+    try {
+      await saveFileToS3(html, bucketName, outputPath1, s3);
+    } catch (error) {
+      console.error('Error saving file to S3:', error, 'Not saved to S3');
+    }
+    console.log('html', html);
+    
 
     // Save amp.html
     const inputPath2 = './src/posts/amp.njk';
     const amp = json.filter((item) => item.inputPath === inputPath2)[0].content;
     const outputPath2 = `${postName}/amp.html`;
-    await saveFileToS3(amp, bucketName, outputPath2, s3);
+    try {
+      await saveFileToS3(amp, bucketName, outputPath2, s3);
+    } catch (error) {
+      console.error('Error saving file to S3:', error, 'Not saved to S3');
+    }
+    // await saveFileToS3(amp, bucketName, outputPath2, s3);
+    console.log('amp', amp);
+    
+
+    // Push files to GitHub
+    const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
+    const owner = 'allwomenstalk';
+    const repo = data.host;
+
+    // updating github repo only for subdomains
+    if (repo !== "allwomenstalk.com") {
+      await pushFileToGitHub(octokit, owner, repo, outputPath1, html);
+      await pushFileToGitHub(octokit, owner, repo, outputPath2, amp);
+    }
 
     return {
       statusCode: 200,
@@ -105,7 +135,26 @@ async function saveFileToS3(content, bucketName, outputPath, s3) {
     Body: content,
     ContentType: 'text/html',
   };
-  console.log(`Saving file to S3: ${params}`);
-  await s3.putObject(params).promise();
+  console.log(`Saving file to S3: ${outputPath}`);
+  await s3.send(new PutObjectCommand(params));
   console.log(`File saved to S3: ${outputPath}`);
+}
+
+async function pushFileToGitHub(octokit, owner, repo, path, content) {
+  const { data: { sha } } = await octokit.repos.getContent({
+    owner,
+    repo,
+    path,
+  }).catch(() => ({ data: {} }));
+
+  await octokit.repos.createOrUpdateFileContents({
+    owner,
+    repo,
+    path,
+    message: `Add/update file ${path}`,
+    content: Buffer.from(content).toString('base64'),
+    sha,
+  });
+
+  console.log(`File pushed to GitHub: ${path}`);
 }

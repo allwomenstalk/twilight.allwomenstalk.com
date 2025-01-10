@@ -37,6 +37,22 @@ module.exports = function(eleventyConfig) {
     return JSON.stringify(value);
   });
 
+  // Add a custom filter to format dates
+  eleventyConfig.addFilter("formatDate", function(date) {
+    if (!date) return ""; // Handle undefined or null date
+    try {
+      const parsedDate = new Date(date); // Ensure valid Date object
+      if (isNaN(parsedDate)) {
+        throw new Error("Invalid date");
+      }
+      const options = { year: 'numeric', month: 'short', day: 'numeric' };
+      return new Intl.DateTimeFormat('en-US', options).format(parsedDate);
+    } catch (error) {
+      console.error("Error formatting date:", error.message, date);
+      return ""; // Return empty string on error
+    }
+  });
+
   // Watch targets
   eleventyConfig.addWatchTarget("./src/styles/");
 

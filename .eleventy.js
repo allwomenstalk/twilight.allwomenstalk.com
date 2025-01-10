@@ -39,9 +39,18 @@ module.exports = function(eleventyConfig) {
 
   // Add a custom filter to format dates
   eleventyConfig.addFilter("formatDate", function(date) {
-    if (!date) return "";
-    const options = { year: 'numeric', month: 'short', day: 'numeric' };
-    return new Intl.DateTimeFormat('en-US', options).format(new Date(date));
+    if (!date) return ""; // Handle undefined or null date
+    try {
+      const parsedDate = new Date(date); // Ensure valid Date object
+      if (isNaN(parsedDate)) {
+        throw new Error("Invalid date");
+      }
+      const options = { year: 'numeric', month: 'short', day: 'numeric' };
+      return new Intl.DateTimeFormat('en-US', options).format(parsedDate);
+    } catch (error) {
+      console.error("Error formatting date:", error.message, date);
+      return ""; // Return empty string on error
+    }
   });
 
   // Watch targets
