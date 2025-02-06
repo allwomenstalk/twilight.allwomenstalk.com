@@ -30,7 +30,7 @@
     {% if metadata.NODE_ENV == "production" %}
         {% set css %}
         {% include 'partials/css/base.css' %}
-        {% include 'partials/css/site.css' %}
+        {% include 'partials/css/amp.css' %}
         {% endset %}
         <style amp-custom>
         {{ css  | cssamp | safe  }}
