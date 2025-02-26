@@ -7,7 +7,7 @@ cname.js - to upate cnames on Route53
 routesupdate.js - not sure if it works at all and how (don't use)
 
 buckets.js - delete/clean buckets (too long so py file is better)
-buckets.py - cleasn versions and files with boto3
+buckets.py - clean versions and files with boto3
 buckets.sh - for buckets delete 
 
 test.js - calls all hosts from hosts.csv and makes screenshots 
@@ -20,6 +20,15 @@ https://api.cloudflare.com/client/v4/accounts/cbe44b125e21f7aada0eefba2df8fc30/p
 curl 'https://api.cloudflare.com/client/v4/accounts/cbe44b125e21f7aada0eefba2df8fc30/pages/projects/apps-allwomenstalk-com/deployments' \
 --header 'Authorization: Bearer Pixaud0cA3muF1JWAZf3vFUhHTtsMB10mH1Opyij'
 
+## Output into file 
+
+    curl -o projects.json 'https://api.cloudflare.com/client/v4/accounts/cbe44b125e21f7aada0eefba2df8fc30/pages/projects/apps-allwomenstalk-com/deployments' \
+    --header 'Authorization: Bearer Pixaud0cA3muF1JWAZf3vFUhHTtsMB10mH1Opyij'
+
+
+curl -o projects.json \
+  -X GET "https://api.cloudflare.com/client/v4/accounts/cbe44b125e21f7aada0eefba2df8fc30/pages/projects" \
+  --header 'Authorization: Bearer Pixaud0cA3muF1JWAZf3vFUhHTtsMB10mH1Opyij'
 
 # Domains pages udpate 
 - create file domainpages.json with pages data to move subdomains 

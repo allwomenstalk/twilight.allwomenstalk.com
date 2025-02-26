@@ -1,5 +1,86 @@
 [
     {
+        "name": "allwomenstalk-baking",
+        "subdomain": "allwomenstalk-baking.pages.dev",
+        "domains": [
+            "allwomenstalk-baking.pages.dev",
+            "baking.allwomenstalk.com"
+        ],
+        "domain": "baking.allwomenstalk.com"
+    },
+    {
+        "name": "allwomenstalk-mindfulness",
+        "subdomain": "allwomenstalk-mindfulness.pages.dev",
+        "domains": [
+            "allwomenstalk-mindfulness.pages.dev",
+            "mindfulness.allwomenstalk.com"
+        ],
+        "domain": "mindfulness.allwomenstalk.com"
+    },
+    {
+        "name": "allwomenstalk-gadgets",
+        "subdomain": "allwomenstalk-gadgets.pages.dev",
+        "domains": [
+            "allwomenstalk-gadgets.pages.dev",
+            "gadgets.allwomenstalk.com"
+        ],
+        "domain": "gadgets.allwomenstalk.com"
+    },
+    {
+        "name": "allwomenstalk-paranormal",
+        "subdomain": "allwomenstalk-paranormal.pages.dev",
+        "domains": [
+            "allwomenstalk-paranormal.pages.dev",
+            "paranormal.allwomenstalk.com"
+        ],
+        "domain": "paranormal.allwomenstalk.com"
+    },
+    {
+        "name": "allwomenstalk-interior",
+        "subdomain": "allwomenstalk-interior.pages.dev",
+        "domains": [
+            "allwomenstalk-interior.pages.dev",
+            "interior.allwomenstalk.com"
+        ],
+        "domain": "interior.allwomenstalk.com"
+    },
+    {
+        "name": "allwomenstalk-sleep",
+        "subdomain": "allwomenstalk-sleep.pages.dev",
+        "domains": [
+            "allwomenstalk-sleep.pages.dev",
+            "sleep.allwomenstalk.com"
+        ],
+        "domain": "sleep.allwomenstalk.com"
+    },
+    {
+        "name": "allwomenstalk-swimwear",
+        "subdomain": "allwomenstalk-swimwear.pages.dev",
+        "domains": [
+            "allwomenstalk-swimwear.pages.dev",
+            "swimwear.allwomenstalk.com"
+        ],
+        "domain": "swimwear.allwomenstalk.com"
+    },
+    {
+        "name": "allwomenstalk-bodyart",
+        "subdomain": "allwomenstalk-bodyart.pages.dev",
+        "domains": [
+            "allwomenstalk-bodyart.pages.dev",
+            "bodyart.allwomenstalk.com"
+        ],
+        "domain": "bodyart.allwomenstalk.com"
+    },
+    {
+        "name": "allwomenstalk-accessories",
+        "subdomain": "allwomenstalk-accessories.pages.dev",
+        "domains": [
+            "allwomenstalk-accessories.pages.dev",
+            "accessories.allwomenstalk.com"
+        ],
+        "domain": "accessories.allwomenstalk.com"
+    },
+    {
         "name": "allwomenstalk-hair",
         "subdomain": "allwomenstalk-hair.pages.dev",
         "domains": [

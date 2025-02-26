@@ -28,7 +28,7 @@ const specificPostId = process.env.POST_ID;
 console.log('Specific Post ID:', specificPostId);
 
 // Batch size
-const batchSize = 500; 
+const batchSize = 1000; 
 console.log('Batch Size:', batchSize);
 
 let marker = null; // Marker to keep track of the last processed document
@@ -83,6 +83,11 @@ async function generateBatch() {
     const lastPostId = result[lastIndex]._id.toString();
     const parsed = result.map(parser);
 
+    // create batch directory if it's not exits
+    if (!fs.existsSync('./batch')) {
+      fs.mkdirSync('./batch');
+    }
+    
     fs.writeFileSync(`./batch/posts_${run}.json`, JSON.stringify(parsed, null, 2));
     fs.writeFileSync('./_marker.json', JSON.stringify({ lastPostId }));
     console.log(`Generated batch. Last post ID: ${lastPostId}`);
@@ -152,6 +157,11 @@ async function runEleventyBuild(host) {
     logStream.end();
 
     console.log('Eleventy build completed.');
+    // print out logs 
+    console.log('Logs:');
+    const logs = fs.readFileSync(logFile, 'utf8');
+    console.log(logs);
+
     console.log('Build Time (seconds):', buildDuration); // Output the build time
   } catch (error) {
     console.error('Error running Eleventy build:', error);

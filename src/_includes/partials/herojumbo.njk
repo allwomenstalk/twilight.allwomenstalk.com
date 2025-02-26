@@ -26,8 +26,16 @@
           <button @click="commentspanel=true;getComments()" type="button" class=" px-2.5 py-1.5 text-sm text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600">
             {{ post.comment_count }} Comments
           </button>
+          {# date #}
+
           {% endif %}
 
+      {% endif %}
+
+      {% if post.date %}
+        <span class="px-2.5 py-1.5 text-sm text-white">
+          {{ post.date | formatDate }}
+        </span>
       {% endif %}
       </span>
       

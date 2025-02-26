@@ -6,6 +6,8 @@
 {{!-- loadJs('https://account.allwomenstalk.com/js/profile.js'); --}} #}
 
 <script> 
+    var converter = null;
+
     function data() {
         return {
             title:"Other",
@@ -31,8 +33,10 @@
 
             category: null,
             posts: [],
+            feed:[],
             page: 0,
             loading: false,
+            currentTitle: false,
 
 
             source: false,
@@ -77,12 +81,73 @@
                 fetch(`${cdnurl}${this.page}.json?${cacheBuster}`)
                     .then(response => response.json())
                     .then(data => {
+
+                        console.log("post data", data)
                         this.posts.unshift(data)
+                        console.log(this.posts.length, this.posts)
                         this.loading = false;
+                        this.getfeed();
+
                     }).catch((error) => {
                         this.loading = false;
                     });
                 this.page += 1;
+
+            },
+
+            select(item) {
+                
+                this.currentTitle = item;
+                const modal = document.getElementById('modal');
+                const overlay = document.getElementById('overlay');
+
+                // Get the current scroll position
+                const scrollY = window.scrollY;
+
+                // Position the modal at the current scroll position
+                modal.style.top = `${scrollY}px`;
+
+                console.log('selected', item);
+                event = { 
+                    label: 'archive', 
+                    page: window.location.href, 
+                    item: item.title
+                }
+                beacontrack({ type: 'infinity', action:1,  item: event })
+                this.getContent(item);
+                
+            },
+
+            async getContent(item) {
+                this.rotation = false
+                this.loading = true;
+                console.log('Fetching content for:', item);
+
+                const url = `https://us-east-1.aws.data.mongodb-api.com/app/azoio-evvkb/endpoint/create?id=${item._id}`;
+                console.log('Content URL:', url);
+
+                try {
+                    const response = await fetch(url);
+                    const data = await response.json();
+                    data.content = data.content.replace(/## Conclusion\n/, '');
+                    try {
+                        if (!window.showdown) {
+                            console.log('loading showdown');
+                            await loadJs('https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js');
+                        }
+                        if (!window.converter) {
+                            window.converter = new showdown.Converter();
+                        }
+                        
+                    } catch (error) {
+                        console.error(error);
+                    }
+                    this.currentTitle.html = converter.makeHtml(data.content.replace(/#.*\n/, ''));
+                    
+                } catch (error) {
+                    console.error('Error fetching content:', error);
+                }
+                this.loading = false;
             },
 
             formattedDate(date) {
@@ -123,8 +188,7 @@
                         this.source = data;
                     });
                 } catch (e) {
-                    {# console.log('error', e); #}
-
+                    console.log('error', e);
                 }
                 
                 console.log('img', img);
@@ -134,7 +198,6 @@
                 this.search.query = '';
                 this.search.results = [];
                 this.search.categories = this.search.categories.sort(() => 0.5 - Math.random());
-
             },
             async getsearch() {
                 this.search.loading = true;
@@ -405,6 +468,60 @@
             loadmore () {
                 console.log('loadmore');
             },
+
+
+            // infinity 
+
+            async getfeed() {
+                console.log('getfeed'); 
+                let cat;
+                if (!this.category) {
+                    categories = ['travel', 'beauty', 'cooking', 'books'];
+                    cat = categories[Math.floor(Math.random() * categories.length)];
+                } else {
+                    cat = this.category
+                }
+                if (this.feed.length === 0) {
+                    const url = `https://pub-ff359827c45e40a7b6e9bad1878cd18a.r2.dev/feed/${cat}.json`;
+                    try {
+                        const response = await fetch(url);
+                        const data = await response.json();
+                        this.feed = data.map((item, index) => ({
+                            ...item,
+                            type: 'feed',
+                            url: false,
+                            hue: [
+                                "hue-rotate-[-30deg]", "hue-rotate-[30deg]", "hue-rotate-[45deg]",
+                                "hue-rotate-[60deg]", "hue-rotate-[90deg]", "hue-rotate-[180deg]",
+                                "hue-rotate-[240deg]", "hue-rotate-[270deg]", "hue-rotate-[300deg]"
+                                ][Math.floor(Math.random() * 5)],
+                            rotation: [0, 180][Math.floor(Math.random() * 2)],
+                            image: bg.split('\n')[Math.floor(Math.random() * bg.split('\n').length)]
+                        }))
+                        {% if metadata.NODE_ENV == "production" %} .sort(() => 0.5 - Math.random()); {% endif %}
+
+                    } catch (error) {
+                        console.error('Error loading list:', error);
+                    }
+                }
+                
+                console.log('feed', this.feed);
+
+                const feed = [...this.feed]; // Copy feed to prevent mutating original
+                let feedIndex = 0;
+
+                console.log(this.posts.length,this.posts)
+
+                this.posts[0] = this.posts[0].flatMap((post, i) => {
+                    // Insert post, and after every 3rd post, insert a feed item if available
+                    return (i + 1) % 2 === 0 && feedIndex < feed.length && i % 7 !== 6
+                        ? [post, feed[feedIndex++]]
+                        : [post];
+                });
+
+                // remove used feed elements
+                this.feed = this.feed.slice(feedIndex);
+        },
         }
     }
 
@@ -465,14 +582,15 @@
         }
     }
 
-    function loadJs(e,callback) {
-        var t = document.createElement("script");
-        t.src = e,
-        t.setAttribute("defer", "true"),
-        document.documentElement.firstChild.appendChild(t)
-        t.onload = function () {
-            if (callback) callback()
-        };
+    function loadJs(url) {
+        return new Promise((resolve, reject) => {
+            const script = document.createElement("script");
+            script.src = url;
+            script.setAttribute("defer", "true");
+            script.onload = () => resolve();
+            script.onerror = () => reject(new Error(`Failed to load script: ${url}`));
+            document.documentElement.firstChild.appendChild(script);
+        });
     }
 
     function addMultilineHtml(html, divId) {
@@ -704,11 +822,11 @@
     {# disable all logs in production #}
     {% if metadata.NODE_ENV == "production" %}
     
-        if(!window.console) window.console = {};
+        {# if(!window.console) window.console = {};
         var methods = ["log", "debug", "warn", "info"];
         for(var i=0;i<methods.length;i++){
             console[methods[i]] = function(){};
-        } 
+        }  #}
 
         
     {% endif %}
@@ -797,6 +915,26 @@ function getRealmCookies () {
 
    
 }
+
+
+bg =`https://pub-ff6bb52033e3451e83c2df5c4e8c073f.r2.dev/73df9d6f-599e-471a-8fec-271e350ff1d1/0_3.png
+https://pub-ff6bb52033e3451e83c2df5c4e8c073f.r2.dev/a3baae07-2fd8-460b-ba7a-313eb51e656f/0_3.png
+https://pub-ff6bb52033e3451e83c2df5c4e8c073f.r2.dev/14772c47-1924-4985-8149-11fbd570d9c8/0_3.png
+https://pub-ff6bb52033e3451e83c2df5c4e8c073f.r2.dev/ec9ce53f-a3ff-4540-b2c0-38913317e8c2/0_3.png
+https://pub-ff6bb52033e3451e83c2df5c4e8c073f.r2.dev/09f00e87-e198-4e74-bf94-e355e1f90de9/0_0.png
+https://pub-ff6bb52033e3451e83c2df5c4e8c073f.r2.dev/07342aae-ea1e-4fed-8de4-2d1554fae572/0_0.png
+https://pub-ff6bb52033e3451e83c2df5c4e8c073f.r2.dev/24d2ccb7-bd32-4b9c-be83-d47d3208c79e/0_0.png
+https://pub-ff6bb52033e3451e83c2df5c4e8c073f.r2.dev/21c90a2e-f563-4be9-be60-b46824e75713/0_1.png
+https://pub-ff6bb52033e3451e83c2df5c4e8c073f.r2.dev/98ba8b4f-85f9-45a4-8168-70e0e1f87de5/0_1.png
+https://pub-ff6bb52033e3451e83c2df5c4e8c073f.r2.dev/499cd8bf-ccf9-4d84-a815-9e25cd39e248/0_0.png
+https://pub-ff6bb52033e3451e83c2df5c4e8c073f.r2.dev/bda2dc70-5ec2-4568-836e-d8af9571c999/0_1.png
+https://pub-ff6bb52033e3451e83c2df5c4e8c073f.r2.dev/9c07f23d-86d4-45b1-a21b-12bc89df16d4/0_0.png
+https://pub-ff6bb52033e3451e83c2df5c4e8c073f.r2.dev/cb62f3b7-26ed-4628-9b6d-abb0e388cb6f/0_3.png
+https://pub-ff6bb52033e3451e83c2df5c4e8c073f.r2.dev/904fbc56-4ff4-4def-ad8d-026464c846ac/0_2.png
+https://pub-ff6bb52033e3451e83c2df5c4e8c073f.r2.dev/ed5dc76f-0a65-4a01-981c-63bf26788567/0_0.png
+https://pub-ff6bb52033e3451e83c2df5c4e8c073f.r2.dev/fb7d44d7-7468-4f69-a708-0b41f3317797/0_2.png
+https://pub-ff6bb52033e3451e83c2df5c4e8c073f.r2.dev/9ec7f3b5-f59c-42be-8b55-b5cc6473d04d/0_1.png
+https://pub-ff6bb52033e3451e83c2df5c4e8c073f.r2.dev/52a792a8-13a9-4c7f-be2c-9fb73cc33b2c/0_0.png`
 
 </script>
 

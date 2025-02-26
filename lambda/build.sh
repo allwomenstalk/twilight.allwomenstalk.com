@@ -4,7 +4,9 @@
 echo "Updating lambda..."
 cp -r ../src/ ./nodejs/src
 echo "Copying node modules..."
-cp -r ../node_modules/ ./nodejs/node_modules
+# cp -r ../node_modules/ ./nodejs/node_modules
+echo "Copying eleventy.js..."
+cp ../.eleventy.js ./nodejs/.eleventy.js
 
 # Clean up 
 rm ./nodejs/src/_data/posts.json
@@ -21,8 +23,12 @@ echo "Update completed successfully!"
 
 echo "Building and deploying lambda..."
 cd nodejs
-sam build
-sam deploy
+
+zip -r ../function.zip . 
+
+aws lambda update-function-code \
+    --function-name NJKPostLambdaGithubSAM \
+    --zip-file fileb://../function.zip > /dev/null 2>&1 &
 
 echo "Deploy completed successfully!"
 echo "Cleaning up..."

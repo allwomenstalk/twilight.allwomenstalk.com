@@ -7,12 +7,8 @@ Resources:
     Properties:
       CodeUri: .
       Handler: app.handler
-      Runtime: nodejs18.x
-      FunctionName: NJKPostLambdaGithub
-      Timeout: 30
-      Environment:                    # Add the Environment property
-        Variables:
-          ELEVENTY_PRODUCTION: true 
-          GITHUB_TOKEN: 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
-          ATLAS_DATA_API_KEY: 7vqeWzN9Cfe9zq70DPL7ZeY3ATWqWciYwBcuwURAUTqwEndAlbhylEFol2RvaVRB
-          ATLAS_DATA_API_URL: https://data.mongodb-api.com/app/data-paobg/endpoint/data/v1
+      Runtime: nodejs20.x
+      FunctionName: NJKPostLambdaGithubSAM
+      Timeout: 15
+      FunctionUrlConfig:  # Add this block for the Function URL
+        AuthType: NONE    # Use NONE for public access or AWS_IAM for restricted access

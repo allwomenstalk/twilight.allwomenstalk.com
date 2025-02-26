@@ -226,3 +226,25 @@ version: 0.2
             - git add .
             - git commit -m "Update post $SLUG" || echo "Nothing to commit"
             - git push https://$GITHUB_TOKEN@github.com/allwomenstalk/$HOST.git
+
+
+
+## Build host (infinity branch)
+
+
+npm run clean && node batchgeneratehost.js love.allwomenstalk.com && sh batchcommitforce.sh love.allwomenstalk.com
+
+npm run clean && node batchgeneratehost.js travel.allwomenstalk.com && sh batchcommitforce.sh travel.allwomenstalk.com
+
+## Safe CORS 
+http://localhost:8081
+https://allwomenstalk.com
+https://*.allwomenstalk.com
+http://*.s3-website-us-west-2.amazonaws.com
+https://*.pages.dev
+http://127.0.0.1:8088
+http://127.0.0.1:8888
+http://localhost:8085
+
+
+# cloudshell 

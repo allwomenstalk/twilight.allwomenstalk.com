@@ -34,11 +34,15 @@
             e && (t = document.querySelector("#coverimage"), s = document.createElement("div"), sourcename = "" != e.source_name ? e.source_name.replace(")", "") : new URL(e.source_url).hostname, s.innerHTML = "<a target='_blank' href='" + e.source_url.replace(")", "") + "' rel='noreferrer'>" + sourcename + "</a>", s.classList.add("drop-shadow", "text-white", "absolute", "opacity-70", "right-0", "text-xs", "-mt-6", "py-1", "px-2"), t.parentNode.insertBefore(s, t), t.parentNode.insertBefore(s, t.nextSibling))
         })
     }
-    function loadJs(e) {
-        var t = document.createElement("script");
-        t.src = e,
-        t.setAttribute("defer", "true"),
-        document.documentElement.firstChild.appendChild(t)
+    function loadJs(url) {
+        return new Promise((resolve, reject) => {
+            const script = document.createElement("script");
+            script.src = url;
+            script.setAttribute("defer", "true");
+            script.onload = () => resolve();
+            script.onerror = () => reject(new Error(`Failed to load script: ${url}`));
+            document.documentElement.firstChild.appendChild(script);
+        });
     }
     setTimeout(function() {
         {# loadJs("https://allwomenstalk.com/assets/js/autoComplete.min.js"), #}

@@ -30,7 +30,7 @@ eleventyComputed:
     
     {% for page in post.pages %}
 
-        <div class=" post prose p-4 overflow-hidden mx-auto max-w-xl
+        <article class="post prose p-4 overflow-hidden mx-auto max-w-xl
             {%- if post.noaff -%} _noaff {% endif %}
             {%- if loop.first -%} 
              first-line:uppercase first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left 
@@ -46,7 +46,7 @@ eleventyComputed:
             {% endif %}
             
             {{ page.content | safe }}
-        </div>
+        </article>
 
         {% include 'partials/elaborate.njk' %}     
 
@@ -99,7 +99,7 @@ eleventyComputed:
                     {% include 'partials/seperator.njk' %}
                 {% elif (loop.index == 6) %}    
                     
-                    {% include "partials/videos.njk" %}
+                    {# {% include "partials/videos.njk" %} #}
 
                     {% include 'partials/seperator.njk' %}
                 {% elif (loop.index == 10) %}
@@ -119,9 +119,9 @@ eleventyComputed:
             {# {% include 'partials/cta.njk' %} #}
         {% else %}
             
-            {% include 'partials/pinterestcard.njk' %}
+            {# {% include 'partials/pinterestcard.njk' %} #}
 
-            {% include 'partials/newsletter.njk' %}
+            {# {% include 'partials/newsletter.njk' %} #}
 
             {% if post.videos and post.videos.length > 0 %}
                 {% from "partials/videosgrid.njk" import videosGrid %}
@@ -154,6 +154,10 @@ eleventyComputed:
 
 
     </main>
+    {% set modal = true %}
+    {% set samplesize = 5 %}
+    {% include 'partials/infeedity/feed.njk' %}
+
 
     {% include 'partials/relatedbadges.njk' %}
 
@@ -163,7 +167,8 @@ eleventyComputed:
 
     {% include 'partials/ads.njk' %}
 
-    {% include "partials/listmix.njk" %}
+
+    {# {% include "partials/listmix.njk" %} #}
 
     {# {% include 'partials/popular.njk' %} #}
 
