@@ -71,7 +71,7 @@ eleventyComputed:
 
 
                 {% elif loop.index == 2 %}
-                
+                    
                     {% include 'partials/seperator.njk' %}
                     
                 {% elif loop.index == 3 %}
@@ -84,7 +84,6 @@ eleventyComputed:
 
 
                     {% elif post.related.inline %}
-                        {% include "partials/relatedinline.njk" %}
                         {% include 'partials/seperator.njk' %}
                     {% else %}    
                         {% include 'partials/seperator.njk' %}
@@ -98,6 +97,11 @@ eleventyComputed:
                 {% elif loop.index == 4 %}
                     {% include 'partials/spins/widget.njk' %}
                     {% include 'partials/seperator.njk' %}
+                {# 5 #}
+                {% elif (loop.index == 5) %}
+                    {% if post.related.inline %}
+                    {% include "partials/relatedinline.njk" %}
+                    {% endif %}
                 {% elif (loop.index == 6) %}    
                     
                     {# {% include "partials/videos.njk" %} #}

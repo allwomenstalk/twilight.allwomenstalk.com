@@ -428,8 +428,8 @@ module.exports = function (item) {
       // }
 
       // related inline repalce interlink if exits 
-      if (item.interlink) {
-        temp.related.inline = marked(item.interlink)
+      if (item.interlinks && item.interlinks.length > 0) {
+        temp.related.inline = marked(item.interlinks[0].content)
       }
       
 

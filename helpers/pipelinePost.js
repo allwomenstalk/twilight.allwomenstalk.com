@@ -10,7 +10,25 @@ module.exports = [{
     'path': '$author',
     'preserveNullAndEmptyArrays': true
   }
-}, {
+}, 
+{
+  "$lookup": {
+      "from": "interlinks",
+      "let": {"first_super_category": {"$arrayElemAt": ["$super_categories", 0]}},
+      "pipeline": [
+          {
+              "$match": {
+                  "$expr": {
+                      "$eq": ["$category", "$$first_super_category"]
+                  }
+              }
+          },
+          // {"$sample": {"size": 1}}
+      ],
+      "as": "interlinks"
+  }
+},
+{
   '$lookup': {
         'from': 'related_cluster', 
         'localField': '_id', 
@@ -29,10 +47,11 @@ module.exports = [{
     'path': '$related',
     'preserveNullAndEmptyArrays': true 
   }
-}, {
+}, 
+{
   '$set': {
     'related': '$related.posts', 
-    'interlink': '$related.interlink'
+    // 'interlink': '$related.interlink'
   }
 },{
   '$lookup': {
@@ -121,21 +140,5 @@ module.exports = [{
     as: "elaborate",
   },
 },
-   {
-      "$lookup": {
-          "from": "interlinks",
-          "let": {"first_super_category": {"$arrayElemAt": ["$super_categories", 0]}},
-          "pipeline": [
-              {
-                  "$match": {
-                      "$expr": {
-                          "$eq": ["$category", "$$first_super_category"]
-                      }
-                  }
-              },
-              {"$sample": {"size": 1}}
-          ],
-          "as": "interlinks"
-      }
-  }
+   
 ]

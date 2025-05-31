@@ -102,9 +102,9 @@ pipeline_recent_updated = [
 pipeline_filter = [
    {
     '$match': {
-      // '_id': ObjectId('604854b781118707f2732712')
+      '_id': new ObjectId('52a90013d65908c77cf4366a')
       // '_id': { $in:  ids.map(id=>new ObjectId(id)) },
-      'post_name': 'tea-sandwiches-that-are-tiny-but-delicious',
+      // 'post_name': 'tea-sandwiches-that-are-tiny-but-delicious',
       
       
       // 'image_url': new RegExp('_400x400.jpg|_400x300.jpg|720x720.jpg')
@@ -238,7 +238,7 @@ pipeline_name = [
 pipeline_category = [
   {
     '$match': {
-      "super_categories":{$in:["food","love","nails","hair","makeup"]}
+      "super_categories":{$in:["money","beauty"]}
     }
   },
   {
@@ -246,7 +246,7 @@ pipeline_category = [
       "seo.clicks": -1
     }
   },
-  {$limit: 1000}
+  {$limit: 100}
 ]
 
 
