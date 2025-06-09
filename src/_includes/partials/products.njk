@@ -7,7 +7,7 @@
                 <div class="relative -mb-6 w-full overflow-x-auto pb-6">
                     <ul role="list" class="mx-4 inline-flex space-x-8 sm:mx-6">
                         <template x-for="product in products" :key="product.URL">
-                            <li class="inline-flex w-40 flex-col text-center">
+                            <a :href="product.link" target="_blank" class="inline-flex w-40 flex-col text-center">
                                 <div class="group relative">
                                     <button @click="select(product)">
                                         <img :src="product.Image" alt="" class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75">
@@ -22,7 +22,7 @@
                                         <p class="mt-1 text-gray-900" x-text="product.MSRP"></p>
                                     </div>
                                 </div>
-                            </li>
+                            </a>
                         </template>
                     </ul>
                 </div>
@@ -62,11 +62,12 @@
                 const defaultUrl = 'https://pub-32f53c81c4ca4d1b9c8f46637cea8290.r2.dev/feed/default.json';
 
                 console.log(`Trying to fetch: ${categoryUrl}`);
-
+                feed = "{{post.category}}"
                 fetch(categoryUrl)
                 .then(response => {
                     if (!response.ok) {
                         console.warn(`Category fetch failed (${response.status}), trying default...`);
+                        feed = "default"
                         return fetch(defaultUrl);
                     }
                     return response;
@@ -74,6 +75,10 @@
                 .then(response => response.json())
                 .then(data => {
                     console.log('Products data loaded:', data);
+                    data.forEach((product, index) => {
+                        product.link = 'https://allwomenstalk.com/products/?id='+feed+'-'+index;
+
+                    });
                     this.products = data.sort(() => Math.random() - 0.5);
                 })
                 .catch(error => {
@@ -100,6 +105,8 @@
                 } catch (error) {
                     console.error('Error sending product:', error);
                 }
+
+                // open url 
             }
         }
     }

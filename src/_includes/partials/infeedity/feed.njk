@@ -405,6 +405,7 @@
                         await delay(1); // Delay of 500ms between each addition
                     } #}
 
+                    if (item.outline) {
                     for (let i = 0; i < item.outline.length; i++) {
                         this.currentTitle.toc[i] = (i+1) +". "; // Start with an empty string for the current element
                         for (const char of item.outline[i]) {
@@ -412,6 +413,7 @@
                             await delay(7); // Delay of 100ms between each character
                         }
                         await delay(500); // Additional delay of 500ms between elements
+                    }
                     }
                     this.placeholder = true
 
