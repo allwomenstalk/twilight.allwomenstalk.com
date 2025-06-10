@@ -29,6 +29,7 @@ eleventyComputed:
 
     <main id="content">
     
+
     {% for page in post.pages %}
 
         <article class="post prose p-4 overflow-hidden mx-auto max-w-xl
@@ -162,7 +163,8 @@ eleventyComputed:
     </main>
 
     {% include 'partials/products.njk' %}
-
+    {% include 'partials/iniret.njk' %}
+    
     {% set modal = true %}
     {% set samplesize = 5 %}
     {% include 'partials/infeedity/feed.njk' %}

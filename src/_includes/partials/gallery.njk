@@ -50,6 +50,7 @@
             async loadData() {
                 const urls = [
                     `https://pub-45ecdc54aa154cebadd24d43e9fd0375.r2.dev/{{post.slug}}.json`,
+                    `https://pub-45ecdc54aa154cebadd24d43e9fd0375.r2.dev/{{post.category}}.json`,
                     `https://pub-45ecdc54aa154cebadd24d43e9fd0375.r2.dev/random.json`
                 ];
                 {# console.log(urls); #}
@@ -64,6 +65,12 @@
                             const replace = this.formats[this.format];
                             this.list.forEach(item => {
                                 item.image = item.image_url.replace(".png", replace);
+                                if(!item.link) {
+                                    item.link = "{{post.url}}";
+                                }
+                                if (!item.title) {
+                                    item.title = "via @allwomenstalk";
+                                }
                             });
 
                             console.log(this.list);
