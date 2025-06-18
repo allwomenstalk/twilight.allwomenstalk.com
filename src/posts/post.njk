@@ -125,9 +125,9 @@ eleventyComputed:
             {# {% include 'partials/cta.njk' %} #}
         {% else %}
             
-            {# {% include 'partials/pinterestcard.njk' %} #}
+            {% include 'partials/pinterestcard.njk' %}
 
-            {# {% include 'partials/newsletter.njk' %} #}
+            {% include 'partials/newsletter.njk' %}
 
             {% if post.videos and post.videos.length > 0 %}
                 {% from "partials/videosgrid.njk" import videosGrid %}
@@ -139,7 +139,6 @@ eleventyComputed:
             {# {% include 'partials/subscribe.njk' %} #}
             
             {# {% include 'partials/rating.njk' %} #}
-            {% include 'partials/pinterestcard.njk' %}
 
             
             {% include "partials/commentspanel.njk" %}
@@ -167,7 +166,7 @@ eleventyComputed:
     
     {% set modal = true %}
     {% set samplesize = 5 %}
-    {% include 'partials/infeedity/feed.njk' %}
+    {# {% include 'partials/infeedity/feed.njk' %} #}
 
 
     {% include 'partials/relatedbadges.njk' %}
