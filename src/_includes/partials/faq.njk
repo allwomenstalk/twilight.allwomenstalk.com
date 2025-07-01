@@ -2,7 +2,7 @@
 
 {# set shown to number of visible on the start #}
 <div x-data="faqData" id="faq" class="max-w-2xl mx-auto">
-  <div x-show="items.length>0" class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
+  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
     <div class="mx-auto max-w-4xl">
       <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
       <dl class="mt-10 space-y-6 divide-y">
@@ -75,13 +75,14 @@ function faqData() {
       }
     },
     loadData() {
-      url = 'https://pub-1969d309989b4ee98dadd29698bd2213.r2.dev/{{post.id}}.json'
+      {# url = 'https://pub-1969d309989b4ee98dadd29698bd2213.r2.dev/{{post.id}}.json' #}
       {# url = 'https://pub-1969d309989b4ee98dadd29698bd2213.r2.dev/4f32a64a9d2f6889de3c68c3.json' #}
+      url = 'https://faq.azo.workers.dev/{{post.id}}/'
       try {
         fetch(url)
           .then(response => response.json())
           .then(data => {
-            {# console.log('faq', data) #}
+            console.log('faq', data)
             this.items = data.list
           })
           .catch(error => {
