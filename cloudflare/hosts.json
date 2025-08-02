@@ -376,5 +376,14 @@
             "food.allwomenstalk.com"
         ],
         "domain": "food.allwomenstalk.com"
+    }, 
+    {
+        "name": "allwomenstalk-love",
+        "subdomain": "allwomenstalk-love.pages.dev",
+        "domains": [
+            "allwomenstalk-love.pages.dev",
+            "love.allwomenstalk.com"
+        ],
+        "domain": "love.allwomenstalk.com"
     }
 ]
