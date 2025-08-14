@@ -14,7 +14,7 @@ async function fetchInterlinks() {
         await client.connect();
 
         const database = client.db('aws'); // This will automatically select the database from the URI.
-        const collection = database.collection('PostsInterlink');
+        const collection = database.collection('interlinks');
 
         const documents = await collection.find({}).toArray();
         console.log('Fetched interlink documents:', documents.length);

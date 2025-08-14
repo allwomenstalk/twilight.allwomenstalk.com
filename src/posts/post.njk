@@ -25,9 +25,11 @@ eleventyComputed:
     
     {# {% include 'partials/widget.njk' %} #}
     {# {% include 'partials/shopping.njk' %} #}
+    
 
     <main id="content">
     
+
     {% for page in post.pages %}
 
         <article class="post prose p-4 overflow-hidden mx-auto max-w-xl
@@ -41,7 +43,7 @@ eleventyComputed:
                 {% if page.number %}
                     {{ page.number }}.
                 {% endif %}
-                {{page.title | safe }}
+                {{ page.title | safe }}
             </h3> 
             {% endif %}
             
@@ -67,16 +69,10 @@ eleventyComputed:
                     {% include 'partials/seperator.njk' %}
                     
                     {% include 'partials/toc.njk' %} 
-                    
-                    {% if quizzes[post.id] %}
-                    {% include "partials/quiz.njk" %}  
-                    {% else %} 
-                    {% include 'partials/poll.njk' %}
-                    {% endif %}
 
 
                 {% elif loop.index == 2 %}
-                
+                    
                     {% include 'partials/seperator.njk' %}
                     
                 {% elif loop.index == 3 %}
@@ -89,18 +85,28 @@ eleventyComputed:
 
 
                     {% elif post.related.inline %}
-                        {# {% include "partials/relatedinline.njk" %}
-                        {% include 'partials/seperator.njk' %} #}
+                        {% include 'partials/seperator.njk' %}
                     {% else %}    
                         {% include 'partials/seperator.njk' %}
+                        {% if quizzes[post.id] %}
+                        {% include "partials/quiz.njk" %}  
+                        {% else %} 
+                        {% include 'partials/poll.njk' %}
+                        {% endif %}
                     {% endif %}
 
                 {% elif loop.index == 4 %}
+                    {% include 'partials/spins/widget.njk' %}
                     {% include 'partials/seperator.njk' %}
+                {# 5 #}
+                {% elif (loop.index == 5) %}
+                    {% if post.related.inline %}
+                    {% include "partials/relatedinline.njk" %}
+                    {% endif %}
                 {% elif (loop.index == 6) %}    
                     
                     {# {% include "partials/videos.njk" %} #}
-
+                    {% include 'partials/gallery.njk' %}
                     {% include 'partials/seperator.njk' %}
                 {% elif (loop.index == 10) %}
                     {# {% include 'partials/story.njk' %} #}
@@ -151,12 +157,17 @@ eleventyComputed:
         {% endif %}
 
     {% endfor %}
-
+    {% include "partials/herostats.njk" %}
+    {% include 'partials/herogamification.njk' %}
 
     </main>
+
+    {% include 'partials/products.njk' %}
+    {% include 'partials/iniret.njk' %}
+    
     {% set modal = true %}
     {% set samplesize = 5 %}
-    {% include 'partials/infeedity/feed.njk' %}
+    {# {% include 'partials/infeedity/feed.njk' %} #}
 
 
     {% include 'partials/relatedbadges.njk' %}

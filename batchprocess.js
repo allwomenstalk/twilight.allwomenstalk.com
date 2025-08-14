@@ -10,16 +10,13 @@ const s3hosts = ['allwomenstalk.com',
     "lifestyle.allwomenstalk.com",
 ]
 // combine hosts
-// const hosts = [...cfhosts, ...s3hosts.map(el=>{
-//     return {
-//         domain: el,
-//     }
-// })];
-hosts = [
-    {
-        domain: "love.allwomenstalk.com",
+const hosts = [...cfhosts, ...s3hosts.map(el=>{
+    return {
+        domain: el,
     }
-]
+})];
+// hosts = [ { domain: "love.allwomenstalk.com"} ]
+
 console.log(hosts)
 // 
 // reset profile - write into src/_data/profiles.json "[]"

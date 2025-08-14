@@ -397,7 +397,9 @@ module.exports = function (item) {
       temp.related = {}
       temp.related.posts = []
       
-      if (item.clusterlinks && item.clusterlinks.length>0) temp.related.clusterlinks = item.clusterlinks[0].posts.map(item=>mapRelatedPosts(item))
+      if (item.clusterlinks && item.clusterlinks.length>0) {
+        temp.related.clusterlinks = item.clusterlinks[0].posts.map(item=>mapRelatedPosts(item))
+      }
       
       if (item.related && item.related.length > 0) {
         // console.log('related',item._id)
@@ -428,8 +430,8 @@ module.exports = function (item) {
       // }
 
       // related inline repalce interlink if exits 
-      if (item.interlink) {
-        temp.related.inline = marked(item.interlink)
+      if (item.interlinks && item.interlinks.length > 0) {
+        temp.related.inline = marked(item.interlinks[0].content)
       }
       
 
@@ -488,7 +490,8 @@ function mapRelatedPosts(item) {
   // console.log(item)
   obj.post_date = item.post_date
   obj.post_modified = item.post_modified
-  obj.title = item.post_title.replace(/[^a-zA-Z0-9_.-:\s]*/g,'');
+  obj.title = item.post_title.replace(/[^a-zA-Z0-9_.-:\s]*/g,'').trim()
+  if (obj.title.length > 50) obj.title = obj.title.slice(0,50) + '...'
   
 
   if (item.keywords && item.keywords.length>0) {

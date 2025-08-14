@@ -11,6 +11,8 @@ const parser = require(fs.realpathSync('.') + "/helpers/parser.js");
 const mongopipelines = require('./helpers/pipelines.js');
 const pipelinePost = require('./helpers/pipelinePost.js');
 
+console.log('mongopipelines', pipelinePost)
+
 
 const month = new Date().getMonth() + 1;
 const months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
@@ -75,10 +77,16 @@ main = async () => {
 
     const cursor = await collection.aggregate(pipeline);
     const arr = [];
+    // save localy for debug 
+    const debugfilename = './src/_data/debug.json';
+    debugarr = [];
+
     await cursor.forEach((item) => {
+      debugarr.push(item);
       arr.push(parser(item));
     });
     fs.writeFileSync(filename, JSON.stringify(arr, null, 4));
+    fs.writeFileSync(debugfilename, JSON.stringify(debugarr, null, 4));
 
     console.log('process.env.NODE_ENV', process.env.NODE_ENV);
     console.log('arr length', arr.length);

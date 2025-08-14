@@ -75,13 +75,14 @@ function faqData() {
       }
     },
     loadData() {
-      url = 'https://pub-1969d309989b4ee98dadd29698bd2213.r2.dev/{{post.id}}.json'
+      {# url = 'https://pub-1969d309989b4ee98dadd29698bd2213.r2.dev/{{post.id}}.json' #}
       {# url = 'https://pub-1969d309989b4ee98dadd29698bd2213.r2.dev/4f32a64a9d2f6889de3c68c3.json' #}
+      url = 'https://faq.azo.workers.dev/{{post.id}}/'
       try {
         fetch(url)
           .then(response => response.json())
           .then(data => {
-            {# console.log('faq', data) #}
+            console.log('faq', data)
             this.items = data.list
           })
           .catch(error => {
