@@ -83,10 +83,10 @@
                     .then(data => {
 
                         console.log("post data", data)
-                        this.posts.unshift(data)
+                        this.posts.push(data)
                         console.log(this.posts.length, this.posts)
                         this.loading = false;
-                        this.getfeed();
+                        {# this.getfeed(); #}
 
                     }).catch((error) => {
                         this.loading = false;
@@ -161,7 +161,7 @@
                 let offsetHeight = document.documentElement.offsetHeight;
 
                 // Check if the scroll position is within 200px of the bottom of the page
-                if (windowHeight + scrollTop >= offsetHeight - 400) {
+                if (windowHeight + scrollTop >= offsetHeight - 1000) {
                     console.log('At the bottom of the page');
                     this.loadposts(this.category);
                 }
