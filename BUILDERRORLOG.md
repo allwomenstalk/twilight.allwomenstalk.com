@@ -1,29 +1,29 @@
-[Container] 2025/08/19 07:46:59.023935 Running on CodeBuild On-demand
-[Container] 2025/08/19 07:46:59.023961 Waiting for agent ping
-[Container] 2025/08/19 07:46:59.124893 Waiting for DOWNLOAD_SOURCE
-[Container] 2025/08/19 07:47:03.621736 Phase is DOWNLOAD_SOURCE
-[Container] 2025/08/19 07:47:03.624347 CODEBUILD_SRC_DIR=/codebuild/output/src201312639/src/github.com/allwomenstalk/archives
-[Container] 2025/08/19 07:47:03.625412 YAML location is /codebuild/readonly/buildspec.yml
-[Container] 2025/08/19 07:47:03.627369 Setting HTTP client timeout to higher timeout for Github and GitHub Enterprise sources
-[Container] 2025/08/19 07:47:03.627441 Processing environment variables
-[Container] 2025/08/19 07:47:03.767440 No runtime version selected in buildspec.
-[Container] 2025/08/19 07:47:03.795842 Moving to directory /codebuild/output/src201312639/src/github.com/allwomenstalk/archives
-[Container] 2025/08/19 07:47:03.795872 Cache is not defined in the buildspec
-[Container] 2025/08/19 07:47:03.831628 Skip cache due to: no paths specified to be cached
-[Container] 2025/08/19 07:47:03.831999 Registering with agent
-[Container] 2025/08/19 07:47:03.869562 Phases found in YAML: 2
-[Container] 2025/08/19 07:47:03.869581  INSTALL: 1 commands
-[Container] 2025/08/19 07:47:03.869584  BUILD: 12 commands
-[Container] 2025/08/19 07:47:03.869968 Phase complete: DOWNLOAD_SOURCE State: SUCCEEDED
-[Container] 2025/08/19 07:47:03.869981 Phase context status code:  Message: 
-[Container] 2025/08/19 07:47:03.968011 Entering phase INSTALL
-[Container] 2025/08/19 07:47:03.999734 Running command npm install
+[Container] 2025/08/19 08:06:55.428384 Running on CodeBuild On-demand
+[Container] 2025/08/19 08:06:55.428404 Waiting for agent ping
+[Container] 2025/08/19 08:06:55.529393 Waiting for DOWNLOAD_SOURCE
+[Container] 2025/08/19 08:06:59.839315 Phase is DOWNLOAD_SOURCE
+[Container] 2025/08/19 08:06:59.842152 CODEBUILD_SRC_DIR=/codebuild/output/src2386615742/src/github.com/allwomenstalk/archives
+[Container] 2025/08/19 08:06:59.843971 YAML location is /codebuild/readonly/buildspec.yml
+[Container] 2025/08/19 08:06:59.853008 Setting HTTP client timeout to higher timeout for Github and GitHub Enterprise sources
+[Container] 2025/08/19 08:06:59.853166 Processing environment variables
+[Container] 2025/08/19 08:06:59.992022 No runtime version selected in buildspec.
+[Container] 2025/08/19 08:07:00.020782 Moving to directory /codebuild/output/src2386615742/src/github.com/allwomenstalk/archives
+[Container] 2025/08/19 08:07:00.020935 Cache is not defined in the buildspec
+[Container] 2025/08/19 08:07:00.058922 Skip cache due to: no paths specified to be cached
+[Container] 2025/08/19 08:07:00.059206 Registering with agent
+[Container] 2025/08/19 08:07:00.093771 Phases found in YAML: 2
+[Container] 2025/08/19 08:07:00.093800  INSTALL: 1 commands
+[Container] 2025/08/19 08:07:00.093804  BUILD: 12 commands
+[Container] 2025/08/19 08:07:00.094113 Phase complete: DOWNLOAD_SOURCE State: SUCCEEDED
+[Container] 2025/08/19 08:07:00.094126 Phase context status code:  Message: 
+[Container] 2025/08/19 08:07:00.196428 Entering phase INSTALL
+[Container] 2025/08/19 08:07:00.242389 Running command npm install
 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
-npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
 npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
 npm warn deprecated puppeteer@22.15.0: < 24.9.0 is no longer supported
 
-added 653 packages, and audited 654 packages in 26s
+added 653 packages, and audited 654 packages in 24s
 
 160 packages are looking for funding
   run `npm fund` for details
@@ -35,32 +35,23 @@ a different dependency.
 
 Run `npm audit` for details.
 
-[Container] 2025/08/19 07:47:35.711193 Phase complete: INSTALL State: SUCCEEDED
-[Container] 2025/08/19 07:47:35.711237 Phase context status code:  Message: 
-[Container] 2025/08/19 07:47:35.743656 Entering phase PRE_BUILD
-[Container] 2025/08/19 07:47:35.787464 Phase complete: PRE_BUILD State: SUCCEEDED
-[Container] 2025/08/19 07:47:35.787490 Phase context status code:  Message: 
-[Container] 2025/08/19 07:47:35.819832 Entering phase BUILD
-[Container] 2025/08/19 07:47:35.820997 Running command echo "[]" > src/_data/posts.json
+[Container] 2025/08/19 08:07:30.422048 Phase complete: INSTALL State: SUCCEEDED
+[Container] 2025/08/19 08:07:30.422068 Phase context status code:  Message: 
+[Container] 2025/08/19 08:07:30.453546 Entering phase PRE_BUILD
+[Container] 2025/08/19 08:07:30.501142 Phase complete: PRE_BUILD State: SUCCEEDED
+[Container] 2025/08/19 08:07:30.501169 Phase context status code:  Message: 
+[Container] 2025/08/19 08:07:30.535770 Entering phase BUILD
+[Container] 2025/08/19 08:07:30.536660 Running command echo "[]" > src/_data/posts.json
 
-[Container] 2025/08/19 07:47:35.915033 Running command node getpopular.js
+[Container] 2025/08/19 08:07:30.593803 Running command node getpopular.js
 Running getpopular.js
 API URL: https://data.mongodb-api.com/app/data-paobg/endpoint/data/v1
 The file has been saved!
 
-[Container] 2025/08/19 07:47:37.618869 Running command node getpolls.js
+[Container] 2025/08/19 08:07:31.905756 Running command node getpolls.js
 Running getpolls.js
 API URL: https://data.mongodb-api.com/app/data-paobg/endpoint/data/v1
 cursor [
-  {
-    _id: 'nails',
-    list: [ [Object], [Object], [Object], [Object], [Object], [Object] ]
-  },
-  {
-    _id: 'hair',
-    list: [ [Object], [Object], [Object], [Object], [Object], [Object] ]
-  },
-  { _id: null, list: [ [Object] ] },
   {
     _id: 'makeup',
     list: [ [Object], [Object], [Object], [Object], [Object], [Object] ]
@@ -78,13 +69,22 @@ cursor [
     ]
   },
   {
+    _id: 'hair',
+    list: [ [Object], [Object], [Object], [Object], [Object], [Object] ]
+  },
+  {
     _id: 'love',
     list: [ [Object], [Object], [Object], [Object], [Object], [Object] ]
-  }
+  },
+  {
+    _id: 'nails',
+    list: [ [Object], [Object], [Object], [Object], [Object], [Object] ]
+  },
+  { _id: null, list: [ [Object] ] }
 ]
 The file has been saved as "polls.json"
 
-[Container] 2025/08/19 07:47:37.830051 Running command node getarchives.js
+[Container] 2025/08/19 08:07:32.116346 Running command node getarchives.js
 API URL: https://data.mongodb-api.com/app/data-paobg/endpoint/data/v1
 Data saved to ./src/_data/categories.json
 Processing category: All (ID: all)
@@ -277,20 +277,20 @@ API URL: https://data.mongodb-api.com/app/data-paobg/endpoint/data/v1
 .... Found 35 posts
 Data saved to ./src/_data/archives.json
 
-[Container] 2025/08/19 07:47:49.875577 Running command node getadsense.js
+[Container] 2025/08/19 08:07:41.436216 Running command node getadsense.js
 Running getadsense.js
 API URL: https://data.mongodb-api.com/app/data-paobg/endpoint/data/v1
 The file has been saved!
 
-[Container] 2025/08/19 07:47:50.110225 Running command node getprofiles.js
+[Container] 2025/08/19 08:07:41.663615 Running command node getprofiles.js
 API URL: https://data.mongodb-api.com/app/data-paobg/endpoint/data/v1
 Data saved to ./src/_data/profiles.json
 
-[Container] 2025/08/19 07:47:59.740962 Running command node getmix.js
+[Container] 2025/08/19 08:07:50.868472 Running command node getmix.js
 API URL: https://data.mongodb-api.com/app/data-paobg/endpoint/data/v1
 Data saved to ./src/_data/mixlist.json
 
-[Container] 2025/08/19 07:48:00.117242 Running command ls src/_data/
+[Container] 2025/08/19 08:07:51.250393 Running command ls src/_data/
 adsense.json
 archives.json
 categories.json
@@ -308,60 +308,97 @@ profiles.json
 quizzes.json
 quotes.json
 
-[Container] 2025/08/19 07:48:00.127969 Running command cat src/index.njk
+[Container] 2025/08/19 08:07:51.261075 Running command cat src/index.njk
 ---
 layout: layout/default.njk
-url: {{metadata.host}}
+url: "{{metadata.host}}"
 ---
 
 <!-- Fixed Navigation Menu -->
 <nav class="fixed top-4 right-4 z-50 bg-white rounded-lg shadow-lg border border-gray-200 p-2">
     <div class="flex flex-col space-y-1">
-        <a href="#header" class="flex items-center px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors">
+        <a
+            href="#header"
+            class="flex items-center px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors">
             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0
+                        011 1v4a1 1 0 001 1m-6 0h6"></path>
             </svg>
             Header
         </a>
-        <a href="#quick-actions" class="flex items-center px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors">
+        <a
+            href="#quick-actions"
+            class="flex items-center px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors">
             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
             </svg>
             Actions
         </a>
-        <a href="#categories" class="flex items-center px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors">
+        <a
+            href="#categories"
+            class="flex items-center px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors">
             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2
+                        2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
             </svg>
             Categories
         </a>
-        <a href="#profiles" class="flex items-center px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors">
+        <a
+            href="#profiles"
+            class="flex items-center px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors">
             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015
+                        0z"></path>
             </svg>
             Profiles
         </a>
-        <a href="#shopping" class="flex items-center px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors">
+        <a
+            href="#shopping"
+            class="flex items-center px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors">
             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
             </svg>
             Shopping
         </a>
-        <a href="#recent-posts" class="flex items-center px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors">
+        <a
+            href="#recent-posts"
+            class="flex items-center px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors">
             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
             </svg>
             Recent Posts
         </a>
-        <a href="#post-details" class="flex items-center px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors">
+        <a
+            href="#post-details"
+            class="flex items-center px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors">
             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2
+                        2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
             </svg>
             Post Details
         </a>
     </div>
 </nav>
-
 <main
     class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <!-- Header Section -->
@@ -540,9 +577,9 @@ url: {{metadata.host}}
                                 <td class="px-6 py-4 whitespace-nowrap">
                                     {% if post.category %}
                                         <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
-                                            {% if post.category.length and post.category.length > 0 %}
-                                                {{ post.category[0] }}
-                                            {% else %}
+                                            {% if post.category and post.category.length and post.category.length > 0 %}
+                                                {{ post.category }}
+                                            {% elif post.category %}
                                                 {{ post.category }}
                                             {% endif %}
                                         </span>
@@ -596,7 +633,6 @@ url: {{metadata.host}}
             </div>
         </div>
     </div>
-    
     <!-- Post Details Cards (Alternative view) -->
     <div id="post-details" class="mb-12">
         <h2 class="text-2xl font-semibold text-gray-900 mb-6">Post Details</h2>
@@ -617,7 +653,7 @@ url: {{metadata.host}}
                                 {% if post.category %}
                                     <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">
                                         {% if post.category.length and post.category.length > 0 %}
-                                            {{ post.category[0] }}
+                                            {{ post.category }}
                                         {% else %}
                                             {{ post.category }}
                                         {% endif %}
@@ -674,7 +710,7 @@ url: {{metadata.host}}
         </div>
     </div>
 </main>
-[Container] 2025/08/19 07:48:00.137416 Running command npm run build
+[Container] 2025/08/19 08:07:51.270824 Running command npm run build
 
 > windty@1.0.0 build
 > run-s build:*
@@ -698,34 +734,34 @@ url: {{metadata.host}}
 [11ty] 
 [11ty] Original error stack trace: Template render error: (./src/index.njk)
 [11ty]   TypeError: Cannot read properties of undefined (reading '0')
-[11ty]     at Object._prettifyError (/codebuild/output/src201312639/src/github.com/allwomenstalk/archives/node_modules/nunjucks/src/lib.js:32:11)
-[11ty]     at /codebuild/output/src201312639/src/github.com/allwomenstalk/archives/node_modules/nunjucks/src/environment.js:464:19
-[11ty]     at Template.root [as rootRenderFunc] (eval at _compile (/codebuild/output/src201312639/src/github.com/allwomenstalk/archives/node_modules/nunjucks/src/environment.js:527:18), <anonymous>:274:3)
-[11ty]     at Template.render (/codebuild/output/src201312639/src/github.com/allwomenstalk/archives/node_modules/nunjucks/src/environment.js:454:10)
-[11ty]     at /codebuild/output/src201312639/src/github.com/allwomenstalk/archives/node_modules/@11ty/eleventy/src/Engines/Nunjucks.js:411:14
+[11ty]     at Object._prettifyError (/codebuild/output/src2386615742/src/github.com/allwomenstalk/archives/node_modules/nunjucks/src/lib.js:32:11)
+[11ty]     at /codebuild/output/src2386615742/src/github.com/allwomenstalk/archives/node_modules/nunjucks/src/environment.js:464:19
+[11ty]     at Template.root [as rootRenderFunc] (eval at _compile (/codebuild/output/src2386615742/src/github.com/allwomenstalk/archives/node_modules/nunjucks/src/environment.js:527:18), <anonymous>:277:3)
+[11ty]     at Template.render (/codebuild/output/src2386615742/src/github.com/allwomenstalk/archives/node_modules/nunjucks/src/environment.js:454:10)
+[11ty]     at /codebuild/output/src2386615742/src/github.com/allwomenstalk/archives/node_modules/@11ty/eleventy/src/Engines/Nunjucks.js:411:14
 [11ty]     at new Promise (<anonymous>)
-[11ty]     at /codebuild/output/src201312639/src/github.com/allwomenstalk/archives/node_modules/@11ty/eleventy/src/Engines/Nunjucks.js:410:14
-[11ty]     at Template._render (/codebuild/output/src201312639/src/github.com/allwomenstalk/archives/node_modules/@11ty/eleventy/src/TemplateContent.js:514:28)
+[11ty]     at /codebuild/output/src2386615742/src/github.com/allwomenstalk/archives/node_modules/@11ty/eleventy/src/Engines/Nunjucks.js:410:14
+[11ty]     at Template._render (/codebuild/output/src2386615742/src/github.com/allwomenstalk/archives/node_modules/@11ty/eleventy/src/TemplateContent.js:514:28)
 [11ty]     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-[11ty]     at async Template.renderWithoutLayout (/codebuild/output/src201312639/src/github.com/allwomenstalk/archives/node_modules/@11ty/eleventy/src/Template.js:456:27)
-[11ty] Benchmark    671ms  29%     1× (Data) `./src/_data/metadata.js`
-[11ty] Copied 7 files / Wrote 0 files in 2.16 seconds (v2.0.1)
+[11ty]     at async Template.renderWithoutLayout (/codebuild/output/src2386615742/src/github.com/allwomenstalk/archives/node_modules/@11ty/eleventy/src/Template.js:456:27)
+[11ty] Benchmark    526ms  25%     1× (Data) `./src/_data/metadata.js`
+[11ty] Copied 7 files / Wrote 0 files in 1.96 seconds (v2.0.1)
 ERROR: "build:eleventy" exited with 1.
 
-[Container] 2025/08/19 07:48:09.012360 Command did not exit successfully npm run build exit status 1
-[Container] 2025/08/19 07:48:09.017933 Phase complete: BUILD State: FAILED
-[Container] 2025/08/19 07:48:09.017953 Phase context status code: COMMAND_EXECUTION_ERROR Message: Error while executing command: npm run build. Reason: exit status 1
-[Container] 2025/08/19 07:48:09.049920 Entering phase POST_BUILD
-[Container] 2025/08/19 07:48:09.052838 Phase complete: POST_BUILD State: SUCCEEDED
-[Container] 2025/08/19 07:48:09.052853 Phase context status code:  Message: 
-[Container] 2025/08/19 07:48:09.102838 Set report auto-discover timeout to 5 seconds
-[Container] 2025/08/19 07:48:09.102877 Expanding base directory path:  .
-[Container] 2025/08/19 07:48:09.105804 Assembling file list
-[Container] 2025/08/19 07:48:09.105819 Expanding .
-[Container] 2025/08/19 07:48:09.108785 Expanding file paths for base directory .
-[Container] 2025/08/19 07:48:09.108799 Assembling file list
-[Container] 2025/08/19 07:48:09.108801 Expanding **/*
-[Container] 2025/08/19 07:48:09.170761 Found 2 file(s)
-[Container] 2025/08/19 07:48:09.170912 Report auto-discover file discovery took 0.068074 seconds
-[Container] 2025/08/19 07:48:09.171732 Phase complete: UPLOAD_ARTIFACTS State: SUCCEEDED
-[Container] 2025/08/19 07:48:09.171749 Phase context status code:  Message: 
+[Container] 2025/08/19 08:08:00.034046 Command did not exit successfully npm run build exit status 1
+[Container] 2025/08/19 08:08:00.039847 Phase complete: BUILD State: FAILED
+[Container] 2025/08/19 08:08:00.039872 Phase context status code: COMMAND_EXECUTION_ERROR Message: Error while executing command: npm run build. Reason: exit status 1
+[Container] 2025/08/19 08:08:00.074401 Entering phase POST_BUILD
+[Container] 2025/08/19 08:08:00.077197 Phase complete: POST_BUILD State: SUCCEEDED
+[Container] 2025/08/19 08:08:00.077215 Phase context status code:  Message: 
+[Container] 2025/08/19 08:08:00.127872 Set report auto-discover timeout to 5 seconds
+[Container] 2025/08/19 08:08:00.127919 Expanding base directory path:  .
+[Container] 2025/08/19 08:08:00.130731 Assembling file list
+[Container] 2025/08/19 08:08:00.130745 Expanding .
+[Container] 2025/08/19 08:08:00.133700 Expanding file paths for base directory .
+[Container] 2025/08/19 08:08:00.133714 Assembling file list
+[Container] 2025/08/19 08:08:00.133717 Expanding **/*
+[Container] 2025/08/19 08:08:00.192931 Found 2 file(s)
+[Container] 2025/08/19 08:08:00.192976 Report auto-discover file discovery took 0.065104 seconds
+[Container] 2025/08/19 08:08:00.193643 Phase complete: UPLOAD_ARTIFACTS State: SUCCEEDED
+[Container] 2025/08/19 08:08:00.193657 Phase context status code:  Message: 

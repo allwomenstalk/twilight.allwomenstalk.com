@@ -255,7 +255,7 @@ url: "{{metadata.host}}"
                                                 <a href="{{ post.host }}/{{ post.slug }}" class="hover:text-indigo-600">{{ post.title }}</a>
                                             </div>
                                             <div class="text-sm text-gray-500">{{ post.host }}</div>
-                                            {% if post.elaborate["1"] %}
+                                            {% if post.elaborate and post.elaborate["1"] %}
                                                 <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800 mt-1">
                                                     Elaborated
                                                 </span>
@@ -341,11 +341,7 @@ url: "{{metadata.host}}"
                                     comments</span>
                                 {% if post.category %}
                                     <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">
-                                        {% if post.category.length and post.category.length > 0 %}
-                                            {{ post.category }}
-                                        {% else %}
-                                            {{ post.category }}
-                                        {% endif %}
+                                        {{ post.category }}
                                     </span>
                                 {% endif %}
                             </div>
@@ -388,7 +384,7 @@ url: "{{metadata.host}}"
                                 </a>
                             </div>
                         </div>
-                        {% if post.elaborate["1"] %}
+                        {% if post.elaborate and post.elaborate["1"] %}
                             <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
                                 Elaborated
                             </span>
