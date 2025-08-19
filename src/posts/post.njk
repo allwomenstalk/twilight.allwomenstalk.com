@@ -12,7 +12,6 @@ ampimage: "{{image}}"
 ampcategory: "{{category}}"
 eleventyComputed: 
   title: "{{post.title}} - {{metadata.title}}"
-  content: "{{post.content}}"
 ---
     
     {% include 'partials/leaderboard.njk' %}
@@ -47,7 +46,7 @@ eleventyComputed:
             </h3> 
             {% endif %}
             
-            {{ page.content | safe }}
+            {{ page.pageContent | safe }}
         </article>
 
         {% include 'partials/elaborate.njk' %}     

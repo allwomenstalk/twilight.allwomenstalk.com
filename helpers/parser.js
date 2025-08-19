@@ -135,7 +135,7 @@ module.exports = function (item) {
       } 
 
 
-      temp.content = item.post_content 
+      temp.postContent = item.post_content 
         //.replace(/<div class=\"embed\" data-media-type=\"instagram\" data-media-url=\"https:\/\/www.instagram.com\/p\/(.*?)\/">(.*?)?<\/div>/g, 
         //  '<amp-instagram data-shortcode="$1" width="1" height="1" layout="responsive"></amp-instagram>')
         .replace(/(<h2.*?>)\s*(\d*)\./g,'$1<span class="pointnum">$2</span>') //make big point numbers
@@ -154,13 +154,13 @@ module.exports = function (item) {
           // temp.content = item.post_content;
       //adding Table of content
       
-      temp.contentamp = temp.content
+      temp.contentamp = temp.postContent
         .replace(/<img([^>]+)\/>/g,"<amp-img $1 layout=\"responsive\"><noscript><img $1 ></noscript></amp-img>")
         .replace(/src="(.*?)(\d*)x(\d*)\.(jpg|gif|png)"/g, 'src="$1$2x$3.$4" width="$2" height="$3"')
         .split(/(?=<h2)/g)
 
       // extra convertion for non amp pages only 
-      temp.content = temp.content
+      temp.postContent = temp.postContent
         // lazy loading for images
         .replace(/src="(.*?)(\d*)x(\d*)\.(jpg|gif|png)"/g, 'src="$1$2x$3.$4" width="$2" height="$3" loading="lazy"')
         // adding wepb for images
@@ -168,7 +168,7 @@ module.exports = function (item) {
                   '$1https://resize.allw.mn/1028x0/filters:format(webp)/filters:quality(70)/content/$2$3');
 
       // breaking into pages
-      temp.content = temp.content
+      temp.postContent = temp.postContent
         // .replace(/<img ([^>]+)\/>/g, "<img $1 class='rounded-lg my-2' loading='lazy' decoding='async'/>") //adding lazy and async 
         // .replace(/<img src="(.*?)(\d*)x(\d*)\.(jpg|png)"(.*?)\/>/g,
         //   '<picture><source type="image/webp" srcset="$1$2x$3.$4"><img src="$1$2x$3.$4"$5></picture>')
@@ -178,7 +178,7 @@ module.exports = function (item) {
 
       // ellaorate parts 
       temp.elaborate = {}
-      temp.content.forEach((page,index) => {
+      temp.postContent.forEach((page,index) => {
         //filter by pageNumber
         // if (item.elaborate.publish){ // only if it's published
           extra = item.elaborate.filter(i=>i.pageNumber == index)?.[0]
@@ -209,7 +209,7 @@ module.exports = function (item) {
       // video objects 
       temp.pages = [] // array of pages for structured pages
     
-      temp.content.forEach((page, index) => {
+      temp.postContent.forEach((page, index) => {
 
           if (page.includes('amp-youtube')) {
 
@@ -233,7 +233,7 @@ module.exports = function (item) {
 
           // convert to object 
           temp.pages.push({
-              content: page,
+              pageContent: page,
           })
         title = page.match(/<h2>(.*?)<\/h2>/)
         // remove <span> from title
@@ -245,8 +245,8 @@ module.exports = function (item) {
             temp.pages[index].number = number
           }
           title = title[1].replace(/<span.*?span>/g,'')
-          // remove title from content
-          temp.pages[index].content = temp.pages[index].content.replace(/<h2>.*?<\/h2>/,'')
+          // remove title from pageContent
+          temp.pages[index].pageContent = temp.pages[index].pageContent.replace(/<h2>.*?<\/h2>/,'')
           temp.pages[index].title = title
         }
 
@@ -265,10 +265,10 @@ module.exports = function (item) {
                 words = temp.elaborate[index].html.match(/\w+/g).length
             }
 
-            // Add words from 'content' field of the current page
-            // console.log('page:',page.content, page.content.length)
-            if (page.content.trim().length > 20) {
-              words += page.content.match(/\w+/g).length
+            // Add words from 'pageContent' field of the current page
+            // console.log('page:',page.pageContent, page.pageContent.length)
+            if (page.pageContent.trim().length > 20) {
+              words += page.pageContent.match(/\w+/g).length
               totalwords += words
 
               // Determine if this page should have an ad
@@ -389,9 +389,9 @@ module.exports = function (item) {
         temp.SchemaObjects.push(JSON.stringify(faqSchemaObj))
       }
 
-      if (temp.content.join('').includes('amp-instagram')) temp.ampig = true
-      if (temp.content.join('').includes('amp-iframe')) temp.ampif = true
-      if (temp.content.join('').includes('<amp-')) temp.amp = true 
+      if (temp.postContent.join('').includes('amp-instagram')) temp.ampig = true
+      if (temp.postContent.join('').includes('amp-iframe')) temp.ampif = true
+      if (temp.postContent.join('').includes('<amp-')) temp.amp = true 
       
       // related posts
       temp.related = {}
@@ -415,8 +415,8 @@ module.exports = function (item) {
       }
       // filter out older then 2018
       // temp.related.posts = temp.related.posts.filter(el=>el.post_date.getFullYear()>2018)
-      temp.related.pagescount = temp.content.length
-      temp.related.afterposts = temp.related.posts.slice(temp.content.length)
+      temp.related.pagescount = temp.postContent.length
+      temp.related.afterposts = temp.related.posts.slice(temp.postContent.length)
       temp.related.inline = false
       
       // interlinks first 
@@ -440,7 +440,7 @@ module.exports = function (item) {
       // temp.related.posts = temp.related.posts.slice(2,8)
 
       //comments list 
-      temp.pagecomments = Array (temp.content.length) // array for inline comments
+      temp.pagecomments = Array (temp.postContent.length) // array for inline comments
       item.comments.forEach((el,i)=>{
         anchor = /^#(\d*)[\. ]/
         if (el.comment_content.match(anchor)) { //inline comments, one per page
@@ -470,7 +470,7 @@ module.exports = function (item) {
       
       // comments
       temp.comments = item.comments.filter(el=>!el.comment_parent)
-      temp.content.map(el=>{
+      temp.postContent.map(el=>{
         return {
           page: el,
           related:temp.related

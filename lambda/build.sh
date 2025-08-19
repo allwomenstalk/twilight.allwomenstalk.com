@@ -21,9 +21,11 @@ cp -r ../helpers/ ./nodejs/helpers
 
 echo "Update completed successfully!"
 
-echo "Building and deploying lambda..."
+echo "Installing dependencies..."
 cd nodejs
+npm install
 
+echo "Building and deploying lambda..."
 zip -r ../function.zip . 
 
 aws lambda update-function-code \
