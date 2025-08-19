@@ -1,29 +1,29 @@
-[Container] 2025/08/19 08:06:55.428384 Running on CodeBuild On-demand
-[Container] 2025/08/19 08:06:55.428404 Waiting for agent ping
-[Container] 2025/08/19 08:06:55.529393 Waiting for DOWNLOAD_SOURCE
-[Container] 2025/08/19 08:06:59.839315 Phase is DOWNLOAD_SOURCE
-[Container] 2025/08/19 08:06:59.842152 CODEBUILD_SRC_DIR=/codebuild/output/src2386615742/src/github.com/allwomenstalk/archives
-[Container] 2025/08/19 08:06:59.843971 YAML location is /codebuild/readonly/buildspec.yml
-[Container] 2025/08/19 08:06:59.853008 Setting HTTP client timeout to higher timeout for Github and GitHub Enterprise sources
-[Container] 2025/08/19 08:06:59.853166 Processing environment variables
-[Container] 2025/08/19 08:06:59.992022 No runtime version selected in buildspec.
-[Container] 2025/08/19 08:07:00.020782 Moving to directory /codebuild/output/src2386615742/src/github.com/allwomenstalk/archives
-[Container] 2025/08/19 08:07:00.020935 Cache is not defined in the buildspec
-[Container] 2025/08/19 08:07:00.058922 Skip cache due to: no paths specified to be cached
-[Container] 2025/08/19 08:07:00.059206 Registering with agent
-[Container] 2025/08/19 08:07:00.093771 Phases found in YAML: 2
-[Container] 2025/08/19 08:07:00.093800  INSTALL: 1 commands
-[Container] 2025/08/19 08:07:00.093804  BUILD: 12 commands
-[Container] 2025/08/19 08:07:00.094113 Phase complete: DOWNLOAD_SOURCE State: SUCCEEDED
-[Container] 2025/08/19 08:07:00.094126 Phase context status code:  Message: 
-[Container] 2025/08/19 08:07:00.196428 Entering phase INSTALL
-[Container] 2025/08/19 08:07:00.242389 Running command npm install
+[Container] 2025/08/19 08:54:49.342668 Running on CodeBuild On-demand
+[Container] 2025/08/19 08:54:49.342685 Waiting for agent ping
+[Container] 2025/08/19 08:54:49.443654 Waiting for DOWNLOAD_SOURCE
+[Container] 2025/08/19 08:54:52.460935 Phase is DOWNLOAD_SOURCE
+[Container] 2025/08/19 08:54:52.463395 CODEBUILD_SRC_DIR=/codebuild/output/src236002706/src/github.com/allwomenstalk/archives
+[Container] 2025/08/19 08:54:52.464452 YAML location is /codebuild/readonly/buildspec.yml
+[Container] 2025/08/19 08:54:52.477644 Setting HTTP client timeout to higher timeout for Github and GitHub Enterprise sources
+[Container] 2025/08/19 08:54:52.477726 Processing environment variables
+[Container] 2025/08/19 08:54:52.619145 No runtime version selected in buildspec.
+[Container] 2025/08/19 08:54:52.647419 Moving to directory /codebuild/output/src236002706/src/github.com/allwomenstalk/archives
+[Container] 2025/08/19 08:54:52.647562 Cache is not defined in the buildspec
+[Container] 2025/08/19 08:54:52.679776 Skip cache due to: no paths specified to be cached
+[Container] 2025/08/19 08:54:52.680227 Registering with agent
+[Container] 2025/08/19 08:54:52.708887 Phases found in YAML: 2
+[Container] 2025/08/19 08:54:52.708906  INSTALL: 1 commands
+[Container] 2025/08/19 08:54:52.708910  BUILD: 12 commands
+[Container] 2025/08/19 08:54:52.709201 Phase complete: DOWNLOAD_SOURCE State: SUCCEEDED
+[Container] 2025/08/19 08:54:52.709213 Phase context status code:  Message: 
+[Container] 2025/08/19 08:54:52.798490 Entering phase INSTALL
+[Container] 2025/08/19 08:54:52.828174 Running command npm install
 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
-npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
 npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
 npm warn deprecated puppeteer@22.15.0: < 24.9.0 is no longer supported
 
-added 653 packages, and audited 654 packages in 24s
+added 653 packages, and audited 654 packages in 22s
 
 160 packages are looking for funding
   run `npm fund` for details
@@ -35,27 +35,24 @@ a different dependency.
 
 Run `npm audit` for details.
 
-[Container] 2025/08/19 08:07:30.422048 Phase complete: INSTALL State: SUCCEEDED
-[Container] 2025/08/19 08:07:30.422068 Phase context status code:  Message: 
-[Container] 2025/08/19 08:07:30.453546 Entering phase PRE_BUILD
-[Container] 2025/08/19 08:07:30.501142 Phase complete: PRE_BUILD State: SUCCEEDED
-[Container] 2025/08/19 08:07:30.501169 Phase context status code:  Message: 
-[Container] 2025/08/19 08:07:30.535770 Entering phase BUILD
-[Container] 2025/08/19 08:07:30.536660 Running command echo "[]" > src/_data/posts.json
+[Container] 2025/08/19 08:55:19.583976 Phase complete: INSTALL State: SUCCEEDED
+[Container] 2025/08/19 08:55:19.583995 Phase context status code:  Message: 
+[Container] 2025/08/19 08:55:19.623845 Entering phase PRE_BUILD
+[Container] 2025/08/19 08:55:19.676580 Phase complete: PRE_BUILD State: SUCCEEDED
+[Container] 2025/08/19 08:55:19.676605 Phase context status code:  Message: 
+[Container] 2025/08/19 08:55:19.710490 Entering phase BUILD
+[Container] 2025/08/19 08:55:19.711719 Running command echo "[]" > src/_data/posts.json
 
-[Container] 2025/08/19 08:07:30.593803 Running command node getpopular.js
+[Container] 2025/08/19 08:55:19.826689 Running command node getpopular.js
 Running getpopular.js
 API URL: https://data.mongodb-api.com/app/data-paobg/endpoint/data/v1
 The file has been saved!
 
-[Container] 2025/08/19 08:07:31.905756 Running command node getpolls.js
+[Container] 2025/08/19 08:55:21.741944 Running command node getpolls.js
 Running getpolls.js
 API URL: https://data.mongodb-api.com/app/data-paobg/endpoint/data/v1
 cursor [
-  {
-    _id: 'makeup',
-    list: [ [Object], [Object], [Object], [Object], [Object], [Object] ]
-  },
+  { _id: null, list: [ [Object] ] },
   {
     _id: 'general',
     list: [
@@ -69,10 +66,6 @@ cursor [
     ]
   },
   {
-    _id: 'hair',
-    list: [ [Object], [Object], [Object], [Object], [Object], [Object] ]
-  },
-  {
     _id: 'love',
     list: [ [Object], [Object], [Object], [Object], [Object], [Object] ]
   },
@@ -80,11 +73,18 @@ cursor [
     _id: 'nails',
     list: [ [Object], [Object], [Object], [Object], [Object], [Object] ]
   },
-  { _id: null, list: [ [Object] ] }
+  {
+    _id: 'hair',
+    list: [ [Object], [Object], [Object], [Object], [Object], [Object] ]
+  },
+  {
+    _id: 'makeup',
+    list: [ [Object], [Object], [Object], [Object], [Object], [Object] ]
+  }
 ]
 The file has been saved as "polls.json"
 
-[Container] 2025/08/19 08:07:32.116346 Running command node getarchives.js
+[Container] 2025/08/19 08:55:21.984098 Running command node getarchives.js
 API URL: https://data.mongodb-api.com/app/data-paobg/endpoint/data/v1
 Data saved to ./src/_data/categories.json
 Processing category: All (ID: all)
@@ -277,20 +277,20 @@ API URL: https://data.mongodb-api.com/app/data-paobg/endpoint/data/v1
 .... Found 35 posts
 Data saved to ./src/_data/archives.json
 
-[Container] 2025/08/19 08:07:41.436216 Running command node getadsense.js
+[Container] 2025/08/19 08:55:36.522924 Running command node getadsense.js
 Running getadsense.js
 API URL: https://data.mongodb-api.com/app/data-paobg/endpoint/data/v1
 The file has been saved!
 
-[Container] 2025/08/19 08:07:41.663615 Running command node getprofiles.js
+[Container] 2025/08/19 08:55:36.751912 Running command node getprofiles.js
 API URL: https://data.mongodb-api.com/app/data-paobg/endpoint/data/v1
 Data saved to ./src/_data/profiles.json
 
-[Container] 2025/08/19 08:07:50.868472 Running command node getmix.js
+[Container] 2025/08/19 08:55:49.698847 Running command node getmix.js
 API URL: https://data.mongodb-api.com/app/data-paobg/endpoint/data/v1
 Data saved to ./src/_data/mixlist.json
 
-[Container] 2025/08/19 08:07:51.250393 Running command ls src/_data/
+[Container] 2025/08/19 08:55:50.100990 Running command ls src/_data/
 adsense.json
 archives.json
 categories.json
@@ -308,7 +308,7 @@ profiles.json
 quizzes.json
 quotes.json
 
-[Container] 2025/08/19 08:07:51.261075 Running command cat src/index.njk
+[Container] 2025/08/19 08:55:50.109294 Running command cat src/index.njk
 ---
 layout: layout/default.njk
 url: "{{metadata.host}}"
@@ -566,7 +566,7 @@ url: "{{metadata.host}}"
                                                 <a href="{{ post.host }}/{{ post.slug }}" class="hover:text-indigo-600">{{ post.title }}</a>
                                             </div>
                                             <div class="text-sm text-gray-500">{{ post.host }}</div>
-                                            {% if post.elaborate["1"] %}
+                                            {% if post.elaborate and post.elaborate["1"] %}
                                                 <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800 mt-1">
                                                     Elaborated
                                                 </span>
@@ -652,11 +652,7 @@ url: "{{metadata.host}}"
                                     comments</span>
                                 {% if post.category %}
                                     <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">
-                                        {% if post.category.length and post.category.length > 0 %}
-                                            {{ post.category }}
-                                        {% else %}
-                                            {{ post.category }}
-                                        {% endif %}
+                                        {{ post.category }}
                                     </span>
                                 {% endif %}
                             </div>
@@ -699,7 +695,7 @@ url: "{{metadata.host}}"
                                 </a>
                             </div>
                         </div>
-                        {% if post.elaborate["1"] %}
+                        {% if post.elaborate and post.elaborate["1"] %}
                             <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
                                 Elaborated
                             </span>
@@ -710,7 +706,7 @@ url: "{{metadata.host}}"
         </div>
     </div>
 </main>
-[Container] 2025/08/19 08:07:51.270824 Running command npm run build
+[Container] 2025/08/19 08:55:50.116597 Running command npm run build
 
 > windty@1.0.0 build
 > run-s build:*
@@ -734,34 +730,34 @@ url: "{{metadata.host}}"
 [11ty] 
 [11ty] Original error stack trace: Template render error: (./src/index.njk)
 [11ty]   TypeError: Cannot read properties of undefined (reading '0')
-[11ty]     at Object._prettifyError (/codebuild/output/src2386615742/src/github.com/allwomenstalk/archives/node_modules/nunjucks/src/lib.js:32:11)
-[11ty]     at /codebuild/output/src2386615742/src/github.com/allwomenstalk/archives/node_modules/nunjucks/src/environment.js:464:19
-[11ty]     at Template.root [as rootRenderFunc] (eval at _compile (/codebuild/output/src2386615742/src/github.com/allwomenstalk/archives/node_modules/nunjucks/src/environment.js:527:18), <anonymous>:277:3)
-[11ty]     at Template.render (/codebuild/output/src2386615742/src/github.com/allwomenstalk/archives/node_modules/nunjucks/src/environment.js:454:10)
-[11ty]     at /codebuild/output/src2386615742/src/github.com/allwomenstalk/archives/node_modules/@11ty/eleventy/src/Engines/Nunjucks.js:411:14
+[11ty]     at Object._prettifyError (/codebuild/output/src236002706/src/github.com/allwomenstalk/archives/node_modules/nunjucks/src/lib.js:32:11)
+[11ty]     at /codebuild/output/src236002706/src/github.com/allwomenstalk/archives/node_modules/nunjucks/src/environment.js:464:19
+[11ty]     at Template.root [as rootRenderFunc] (eval at _compile (/codebuild/output/src236002706/src/github.com/allwomenstalk/archives/node_modules/nunjucks/src/environment.js:527:18), <anonymous>:266:3)
+[11ty]     at Template.render (/codebuild/output/src236002706/src/github.com/allwomenstalk/archives/node_modules/nunjucks/src/environment.js:454:10)
+[11ty]     at /codebuild/output/src236002706/src/github.com/allwomenstalk/archives/node_modules/@11ty/eleventy/src/Engines/Nunjucks.js:411:14
 [11ty]     at new Promise (<anonymous>)
-[11ty]     at /codebuild/output/src2386615742/src/github.com/allwomenstalk/archives/node_modules/@11ty/eleventy/src/Engines/Nunjucks.js:410:14
-[11ty]     at Template._render (/codebuild/output/src2386615742/src/github.com/allwomenstalk/archives/node_modules/@11ty/eleventy/src/TemplateContent.js:514:28)
+[11ty]     at /codebuild/output/src236002706/src/github.com/allwomenstalk/archives/node_modules/@11ty/eleventy/src/Engines/Nunjucks.js:410:14
+[11ty]     at Template._render (/codebuild/output/src236002706/src/github.com/allwomenstalk/archives/node_modules/@11ty/eleventy/src/TemplateContent.js:514:28)
 [11ty]     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-[11ty]     at async Template.renderWithoutLayout (/codebuild/output/src2386615742/src/github.com/allwomenstalk/archives/node_modules/@11ty/eleventy/src/Template.js:456:27)
-[11ty] Benchmark    526ms  25%     1× (Data) `./src/_data/metadata.js`
-[11ty] Copied 7 files / Wrote 0 files in 1.96 seconds (v2.0.1)
+[11ty]     at async Template.renderWithoutLayout (/codebuild/output/src236002706/src/github.com/allwomenstalk/archives/node_modules/@11ty/eleventy/src/Template.js:456:27)
+[11ty] Benchmark    524ms  24%     1× (Data) `./src/_data/metadata.js`
+[11ty] Copied 7 files / Wrote 0 files in 2.04 seconds (v2.0.1)
 ERROR: "build:eleventy" exited with 1.
 
-[Container] 2025/08/19 08:08:00.034046 Command did not exit successfully npm run build exit status 1
-[Container] 2025/08/19 08:08:00.039847 Phase complete: BUILD State: FAILED
-[Container] 2025/08/19 08:08:00.039872 Phase context status code: COMMAND_EXECUTION_ERROR Message: Error while executing command: npm run build. Reason: exit status 1
-[Container] 2025/08/19 08:08:00.074401 Entering phase POST_BUILD
-[Container] 2025/08/19 08:08:00.077197 Phase complete: POST_BUILD State: SUCCEEDED
-[Container] 2025/08/19 08:08:00.077215 Phase context status code:  Message: 
-[Container] 2025/08/19 08:08:00.127872 Set report auto-discover timeout to 5 seconds
-[Container] 2025/08/19 08:08:00.127919 Expanding base directory path:  .
-[Container] 2025/08/19 08:08:00.130731 Assembling file list
-[Container] 2025/08/19 08:08:00.130745 Expanding .
-[Container] 2025/08/19 08:08:00.133700 Expanding file paths for base directory .
-[Container] 2025/08/19 08:08:00.133714 Assembling file list
-[Container] 2025/08/19 08:08:00.133717 Expanding **/*
-[Container] 2025/08/19 08:08:00.192931 Found 2 file(s)
-[Container] 2025/08/19 08:08:00.192976 Report auto-discover file discovery took 0.065104 seconds
-[Container] 2025/08/19 08:08:00.193643 Phase complete: UPLOAD_ARTIFACTS State: SUCCEEDED
-[Container] 2025/08/19 08:08:00.193657 Phase context status code:  Message: 
+[Container] 2025/08/19 08:55:58.899244 Command did not exit successfully npm run build exit status 1
+[Container] 2025/08/19 08:55:58.903859 Phase complete: BUILD State: FAILED
+[Container] 2025/08/19 08:55:58.903872 Phase context status code: COMMAND_EXECUTION_ERROR Message: Error while executing command: npm run build. Reason: exit status 1
+[Container] 2025/08/19 08:55:58.936469 Entering phase POST_BUILD
+[Container] 2025/08/19 08:55:58.938674 Phase complete: POST_BUILD State: SUCCEEDED
+[Container] 2025/08/19 08:55:58.938689 Phase context status code:  Message: 
+[Container] 2025/08/19 08:55:58.983521 Set report auto-discover timeout to 5 seconds
+[Container] 2025/08/19 08:55:58.983558 Expanding base directory path:  .
+[Container] 2025/08/19 08:55:58.986453 Assembling file list
+[Container] 2025/08/19 08:55:58.986469 Expanding .
+[Container] 2025/08/19 08:55:58.989335 Expanding file paths for base directory .
+[Container] 2025/08/19 08:55:58.989348 Assembling file list
+[Container] 2025/08/19 08:55:58.989351 Expanding **/*
+[Container] 2025/08/19 08:55:59.047146 Found 2 file(s)
+[Container] 2025/08/19 08:55:59.047195 Report auto-discover file discovery took 0.063673 seconds
+[Container] 2025/08/19 08:55:59.048052 Phase complete: UPLOAD_ARTIFACTS State: SUCCEEDED
+[Container] 2025/08/19 08:55:59.048068 Phase context status code:  Message: 
