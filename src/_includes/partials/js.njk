@@ -201,8 +201,7 @@
             },
             async getsearch() {
                 this.search.loading = true;
-                // fitter categories
-
+                // filter categories
 
                 {# window.originalCategories = null; #}
                 if (!window.originalCategories) {
@@ -223,15 +222,41 @@
 
                     return categoryName.startsWith(searchQuery);
                 });
-                if (this.search.query.length<3) {this.search.results=[];return};
-                this.search.results = [];
-                apiurl = "https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/search"
-                {# apiurl = "https://kyrbdz2evj.execute-api.us-east-1.amazonaws.com/v1/search" #}
-                const url = `${apiurl}?q=${this.search.query}`;
-                const response = await fetch(url);
-                const data = await response.json();
                 
-                this.search.results = data.posts;
+                if (this.search.query.length < 3) {
+                    this.search.results = [];
+                    this.search.loading = false;
+                    return;
+                }
+                
+                this.search.results = [];
+                
+                try {
+                    const apiurl = "https://olgdvvxouytdchveiaad.supabase.co/functions/v1/search";
+                    const url = `${apiurl}?q=${encodeURIComponent(this.search.query)}`;
+                    const response = await fetch(url);
+                    const data = await response.json();
+                    
+                    if (data.success && data.results) {
+                        console.log(data.results)
+                        // Transform Supabase results to match expected format
+                        this.search.results = data.results.map(result => ({
+                            id: result.id,
+                            title: result.content,
+                            similarity: result.similarity,
+                            image: result.metadata?.image_url || '',
+                            url: result?.url || `/${result.id}/`,
+                            category: result.metadata?.category || result.metadata?.source || 'posts'
+                        }));
+                    } else {
+                        console.error('Search API error:', data);
+                        this.search.results = [];
+                    }
+                } catch (error) {
+                    console.error('Search request failed:', error);
+                    this.search.results = [];
+                }
+                
                 this.search.loading = false;
             },
 
