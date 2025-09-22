@@ -1,12 +1,12 @@
 const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
-const Eleventy = require('@11ty/eleventy');
 const parser = require('./helpers/parser');
 const pipelinePost = require('./helpers/pipelinePost.js');
 const { aggregate } = require('./helpers/dataApi');
 
 exports.handler = async (event, context) => {
-  // Dynamically import @octokit/rest
+  // Dynamically import @octokit/rest and Eleventy
   const { Octokit } = await import("@octokit/rest");
+  const { Eleventy } = await import("@11ty/eleventy");
 
   try {
     // Connect to MongoDB
