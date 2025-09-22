@@ -17,18 +17,20 @@
             
             <div class="mt-16 grid grid-cols-1 gap-8 xl:col-span-2 xl:mt-0">
                 <div>
-                    <h3 class="text-sm/6 font-semibold text-gray-950 dark:text-white">All Categories</h3>
+                    <h3 class="text-sm/6 font-semibold text-gray-950 dark:text-white">
+                    </h3>
                     <div class="mt-6 grid grid-cols-2 gap-x-8 gap-y-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
                         {% for category in categories | sort(attribute='name') %}
                         {% if category.public != false %}
-                        <a href="/{{ category._id }}.allwomenstalk.com" class="text-sm/6 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">{{ category.name }}</a>
+                        <a href="https://{{ category._id }}.allwomenstalk.com" class="text-sm/6 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">{{ category.name }}</a>
                         {% endif %}
                         {% endfor %}
                         <a href="https://tools.allwomenstalk.com" class="text-sm/6 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Tools</a>
                     </div>
                 </div>
                 <div class="mt-10">
-                    <h3 class="text-sm/6 font-semibold text-gray-950 dark:text-white">Services</h3>
+                    <h3 class="text-sm/6 font-semibold text-gray-950 dark:text-white">
+                    </h3>
                     <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
                         {% for page in metadata.pages %}
                         <a href="{{ page.url }}" class="text-sm/6 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">{{ page.name }}</a>
