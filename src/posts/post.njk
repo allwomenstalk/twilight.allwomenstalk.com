@@ -46,7 +46,8 @@ eleventyComputed:
             </h3> 
             {% endif %}
             
-            {{ page.pageContent | safe }}
+            {{ page.pageContent | enhanceLists | safe }}
+            
         </article>
 
         {% include 'partials/elaborate.njk' %}     
