@@ -13,6 +13,7 @@ async function  main() {
               post_name: postName,
             },
           },
+          ...pipelinePost,
     ]
     console.log('pipeline', JSON.stringify(pipeline, null, 2));
 

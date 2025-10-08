@@ -21,3 +21,5 @@ lambda/*
 validation_reports.json
 batch/*
 logs/*
+src/_data/debug.json
+src/_data/posts.json

@@ -1,9 +1,76 @@
 const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
+const https = require('https');
 const parser = require('./helpers/parser');
 const pipelinePost = require('./helpers/pipelinePost.js');
-const { aggregate } = require('./helpers/dataApi');
 
-exports.handler = async (event, context) => {
+// DATAPI Configuration - using environment variables
+const API_URL = process.env.DATA_API_URL;
+const API_KEY = process.env.DATA_API_KEY;
+const API_SECRET = process.env.DATA_API_SECRET;
+
+const DATAPI_CONFIG = {
+  workerUrl: 'https://data-api.azo.workers.dev',
+  database: 'aws',
+  collection: 'posts',
+  apiUrl: API_URL,
+  apiKey: API_KEY,
+  apiSecret: API_SECRET
+};
+
+/**
+ * Helper function to make DATAPI requests via Cloudflare Worker
+ */
+async function callDATAPI(database, collection, pipeline) {
+  const data = JSON.stringify({
+    database,
+    collection,
+    pipeline
+  });
+
+  const url = new URL('/aggregate', DATAPI_CONFIG.workerUrl);
+  const options = {
+    hostname: url.hostname,
+    path: url.pathname,
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      // Include API credentials if available
+      ...(DATAPI_CONFIG.apiKey && { 'X-API-Key': DATAPI_CONFIG.apiKey }),
+      ...(DATAPI_CONFIG.apiSecret && { 'X-API-Secret': DATAPI_CONFIG.apiSecret })
+    }
+  };
+
+  return new Promise((resolve, reject) => {
+    const req = https.request(options, (res) => {
+      let responseBody = '';
+
+      res.on('data', (chunk) => {
+        responseBody += chunk;
+      });
+
+      res.on('end', () => {
+        try {
+          const response = JSON.parse(responseBody);
+          console.log('DATAPI Response:', response);
+          resolve(response);
+        } catch (parseError) {
+          console.error('Failed to parse DATAPI response:', parseError);
+          reject(parseError);
+        }
+      });
+    });
+
+    req.on('error', (error) => {
+      console.error('DATAPI request error:', error);
+      reject(error);
+    });
+
+    req.write(data);
+    req.end();
+  });
+}
+
+exports.handler = async (event) => {
   // Dynamically import @octokit/rest and Eleventy
   const { Octokit } = await import("@octokit/rest");
   const { Eleventy } = await import("@11ty/eleventy");
@@ -11,7 +78,7 @@ exports.handler = async (event, context) => {
   try {
     // Connect to MongoDB
     console.log('event', event);
-    
+
 
     const postName = event.pathParameters ? event.pathParameters.proxy : event.rawPath.replace('/', '');
     event.post_name = postName;
@@ -37,9 +104,19 @@ exports.handler = async (event, context) => {
     ];
     pipeline.push(...pipelinePost);
     console.log('pipeline', JSON.stringify(pipeline, null, 2));
-    console.log('Fetching data from MongoDB');
-    let data = await aggregate("Cluster0", "aws", "posts", pipeline);
-    data = data[0];
+    console.log('Fetching data from DATAPI via Cloudflare Worker');
+    const response = await callDATAPI(DATAPI_CONFIG.database, DATAPI_CONFIG.collection, pipeline);
+    let data = response.result ? response.result[0] : null;
+
+    if (!data) {
+      return {
+        statusCode: 404,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ error: 'Post not found' }),
+      };
+    }
     console.log('data', data);
     console.log('data _id', data._id, '\n\n\\');
     data.post_date = new Date(data.post_date);
@@ -72,7 +149,7 @@ exports.handler = async (event, context) => {
     // Initialize S3 Client
     const s3 = new S3Client({ region: 'us-west-2' });
     const bucketName = data.host;
-    console.log('bucketName', bucketName) 
+    console.log('bucketName', bucketName)
 
     // Save index.html
     const inputPath1 = './src/posts/post.njk';
@@ -84,7 +161,7 @@ exports.handler = async (event, context) => {
       console.error('Error saving file to S3:', error, 'Not saved to S3');
     }
     console.log('html', html);
-    
+
 
     // Save amp.html
     const inputPath2 = './src/posts/amp.njk';
@@ -97,7 +174,7 @@ exports.handler = async (event, context) => {
     }
     // await saveFileToS3(amp, bucketName, outputPath2, s3);
     console.log('amp', amp);
-    
+
 
     // Push files to GitHub
     const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
@@ -128,7 +205,7 @@ exports.handler = async (event, context) => {
 };
 
 async function saveFileToS3(content, bucketName, outputPath, s3) {
-  
+
   const params = {
     Bucket: bucketName,
     Key: outputPath,

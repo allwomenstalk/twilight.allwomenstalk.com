@@ -10,7 +10,7 @@ const filename = './src/_data/posts.json';
 // Determine default pipeline from arguments or environment variable
 const defaultPipeline = process.argv[2] || process.env.PIPELINE;
 
-const limitPerBuild = process.env.NODE_ENV === "production" ? 10000 : 10000;
+const limitPerBuild = process.env.NODE_ENV === "production" ? 10 : 10;
 
 async function main() {
     try {

@@ -21,16 +21,25 @@ cp -r ../helpers/ ./nodejs/helpers
 
 echo "Update completed successfully!"
 
+# Load environment variables from .env file
+source ../.env
+
 echo "Installing dependencies..."
 cd nodejs
 npm install
 
 echo "Building and deploying lambda..."
-zip -r ../function.zip . 
+zip -r ../function.zip .
 
+# Update function code
 aws lambda update-function-code \
     --function-name NJKPostLambdaGithubSAM \
-    --zip-file fileb://../function.zip > /dev/null 2>&1 &
+    --zip-file fileb://../function.zip > /dev/null 2>&1
+
+# Update environment variables
+aws lambda update-function-configuration \
+    --function-name NJKPostLambdaGithubSAM \
+    --environment Variables="{DATA_API_URL=$DATA_API_URL,DATA_API_KEY=$DATA_API_KEY,DATA_API_SECRET=$DATA_API_SECRET,GITHUB_TOKEN=$GITHUB_TOKEN}" > /dev/null 2>&1 &
 
 echo "Deploy completed successfully!"
 echo "Cleaning up..."
