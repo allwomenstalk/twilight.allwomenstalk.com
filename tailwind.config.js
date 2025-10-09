@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./src/**/*.{html,njk,js}"],
+  content: ["./src/**/*.{html,njk,js}", "./.eleventy.js"],
   darkMode: 'class',
   theme: {
     extend: {},

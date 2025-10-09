@@ -101,7 +101,6 @@
           console.log('spins',this.spins);
           await this.load();
           this.setupScrollTracking();
-          
       },
       load() {
         const options = {
@@ -116,7 +115,18 @@
         
         fetch('https://spins.azo.workers.dev', options)
           .then(r => r.ok ? r.json() : Promise.reject(r.statusText))
-          .then(data => (this.spins = data.sort(() => Math.random() - 0.5), this.list(), this.display(this.spins[0][0], true) ))
+          .then(data => {
+            {% if spinsArchive %}
+            // On archive page: keep API order and show full list
+            this.spins = data;
+            this.list();
+            {% else %}
+            // On non-archive pages: randomize and auto-open one spin
+            this.spins = data.sort(() => Math.random() - 0.5);
+            this.list();
+            this.display(this.spins[0][0], true);
+            {% endif %}
+          })
           .catch(e => console.error('Fetch error:', e));
       },
       async display(item, notrack = false) {
