@@ -809,13 +809,27 @@
     }
 
 
+    function toPlain(value) {
+    try {
+        // structuredClone strips proxies nicely in modern browsers
+        return structuredClone(value);
+    } catch {
+        // fallback: JSON round-trip
+        try { return JSON.parse(JSON.stringify(value)); } catch { return value; }
+    }
+    }
+
     function beacontrack(obj) {
-        const trackapi = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/beacon`;
+    try {
+        const clean = toPlain(obj);
+        const json = JSON.stringify(clean);
+        if (!json) return;
 
-        // Use sendBeacon for sending the tracking data
-        const beaconData = new Blob([JSON.stringify(obj)], { type: 'application/json' });
-        const success = navigator.sendBeacon(trackapi, beaconData);
-
+        const beaconData = new Blob([json], { type: 'application/json' });
+        navigator.sendBeacon('https://beacon.azo.workers.dev/', beaconData);
+    } catch (e) {
+        console.error('beacontrack failed', e);
+    }
     }
 
     // essentials

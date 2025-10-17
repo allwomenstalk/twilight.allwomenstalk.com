@@ -37,6 +37,9 @@ eleventyComputed:
             {{ page.pageContent | enhanceLists | safe }}
         </article>
         {% include 'partials/elaborate.njk' %}
+        {% if not loop.first and not loop.last %}
+            {% include 'partials/faq.njk' %}
+        {% endif %}
         {% if not loop.last %}
             {# inline related #}
             {% if loop.index > 1 %}
@@ -49,10 +52,10 @@ eleventyComputed:
             {% elif loop.index == 2 %}
                 {% include 'partials/seperator.njk' %}
             {% elif loop.index == 3 %}
-                {% include 'partials/faq.njk' %}
+                {# {% include 'partials/faq.njk' %} #}
                 {% if post.faq %}
                     {# default show faq and extra ad unit #}
-                    {% include 'partials/seperator.njk' %}
+                    {# {% include 'partials/seperator.njk' %} #}
                 {% elif post.related.inline %}
                     {% include 'partials/seperator.njk' %}
                 {% else %}
@@ -122,8 +125,7 @@ eleventyComputed:
 <div class="ad-slot mx-auto overflow-hidden" id="slot-related"></div>
 {% include 'partials/ads.njk' %}
 {# {% include "partials/listmix.njk" %} #}
-{# {% include 'partials/popular.njk' %} #}
-{% include 'partials/schema.njk' %}
+{# {% include 'partials/popular.njk' %} #}{% include 'partials/schema.njk' %}
 {# <div class="ad-slot mx-auto overflow-hidden" id="slot-review"></div> #}
 {# {% include 'partials/reviews.njk' %} #}<div class="ad-slot mx-auto overflow-hidden" id="slot-final"> </div>
 {# Posts scripts only  #}

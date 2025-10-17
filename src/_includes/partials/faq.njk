@@ -1,106 +1,193 @@
 {# https://chat.openai.com/c/0473e927-5436-44b6-a0ce-10b81aa7a56f #}
-
 {# set shown to number of visible on the start #}
-<div x-data="faqData" id="faq" class="max-w-2xl mx-auto">
-  <div x-show="items.length>0" class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
-    <div class="mx-auto max-w-4xl">
-      <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
-      <dl class="mt-10 space-y-6 divide-y">
-
-        {% for item in post.faq %}
-        <div x-show="shown>={{loop.index}}" x-data="{show:false, index:{{loop.index}} }" class="pt-6" >
-          <dt>
-            <!-- Expand/collapse question button -->
-            <button @click="show=!show;report({{loop.index0}})" type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
-              <span class="text-base font-semibold leading-7">
-                {{item.question}}
-              </span>
-              <span class="ml-6 flex h-7 items-center">
-                <svg class="h-6 w-6" :class="{hidden:show}"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                </svg>
-                <svg class=" h-6 w-6" :class="{hidden:!show}" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecapn="round" stroke-linejoin="round" d="M18 12H6" />
-                </svg>
-              </span>
-            </button>
-          </dt>
-          <dd x-show="show" class="mt-2 pr-12" id="faq-0">
-            <p class="text-base leading-7 text-gray-600">{{item.answer}}</p>
-          </dd>
+  <div x-data="faqData" id="faq" class="max-w-2xl mx-auto"> <div x-show="items.length>0" class="mx-auto max-w-7xl px-4 lg:px-6">
+    <div
+      class="mx-auto max-w-4xl">
+      {# <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2> #}
+      <div class="overflow-hidden bg-white shadow sm:rounded-md dark:bg-gray-800/50 dark:shadow-none dark:outline dark:outline-1
+          dark:-outline-offset-1 dark:outline-white/10">
+        <ul role="list" class="divide-y divide-gray-200 dark:divide-white/10">
+          {% for item in post.faq %}
+            <li x-show="shown>={{ loop.index }}" x-data="{show:false, index:{{ loop.index }} }" class="px-2 py-2 sm:px-4">
+              <dl>
+                <dt>
+                  <!-- Expand/collapse question button -->
+                  <button
+                    @click="show=!show;report({{ loop.index0 }})"
+                    type="button"
+                    class="flex w-full items-start justify-between text-left text-gray-900 dark:text-white"
+                    aria-controls="faq-0"
+                    aria-expanded="false">
+                    <span class="text-base font-semibold leading-7">
+                      {{ item.question }}
+                    </span>
+                    <span class="ml-6 flex h-7 items-center">
+                      <svg
+                        class="size-4"
+                        :class="{hidden:show}"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        aria-hidden="true">
+                        <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0
+                        0-1.5h-3.5v-3.5Z"/>
+                      </svg>
+                      <svg
+                        class="size-4"
+                        :class="{hidden:!show}"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        aria-hidden="true">
+                        <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z"/>
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <dd x-show="show" class="mt-2 pr-12" id="faq-0">
+                  <p class="text-base leading-7 text-gray-600 dark:text-gray-300">{{ item.answer }}</p>
+                </dd>
+              </dl>
+            </li>
+          {% else %}
+            <template x-for="(item, index) in items">
+              <li
+                x-show="shown>=(index+1)&&item"
+                x-data="{show:false}"
+                class="px-4 py-4 sm:px-6 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                <dl>
+                  <dt>
+                    <button
+                      @click="show=!show;report(index)"
+                      type="button"
+                      class="flex w-full items-start justify-between text-left text-gray-900 dark:text-white"
+                      aria-controls="faq-0"
+                      aria-expanded="false">
+                      <span x-text="item.question" class="text-base font-semibold leading-7"></span>
+                      <span class="ml-6 flex h-7 items-center">
+                        <svg
+                          class="size-4"
+                          :class="{hidden:show}"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          aria-hidden="true">
+                          <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0
+                          0-1.5h-3.5v-3.5Z"/>
+                        </svg>
+                        <svg
+                          class="size-4"
+                          :class="{hidden:!show}"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          aria-hidden="true">
+                          <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z"/>
+                        </svg>
+                      </span>
+                    </button>
+                  </dt>
+                  <dd x-show="show" class="mt-2 pr-12" id="faq-0">
+                    <p x-text="item.answer" class="text-base leading-7 text-gray-600 dark:text-gray-300"></p>
+                  </dd>
+                </dl>
+              </li>
+            </template>
+          {% endfor %}
+          <!-- More questions... -->
+        </ul>
+      </div>
+      <!-- Ask AI Question - Input Group -->
+      <div class="mt-4" x-data="{question: ''}">
+        <div class="flex space-x-3">
+          <input
+            type="text"
+            x-model="question"
+            placeholder="Have a question? Ask AI..."
+            maxlength="80"
+            class="flex-1 rounded-md border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white px-3 py-2 text-sm
+              focus:border-blue-500 focus:ring-blue-500"/>
+          <button
+            @click="askQuestion()"
+            :disabled="!question.trim()"
+            class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 disabled:bg-gray-400
+              disabled:cursor-not-allowed">
+            Ask
+          </button>
         </div>
-        {% else %}
-        <template x-for="(item, index) in items"> 
-          
-            <div  x-show="shown>=(index+1)&&item" x-data="{show:false}" class="pt-6" >
-              <dt>
-                <button @click="show=!show;report(index)" type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
-                  <span x-text="item.question" class="text-base font-semibold leading-7"></span>
-                  <span class="ml-6 flex h-7 items-center">
-                    <svg class="h-6 w-6" :class="{hidden:show}"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                    </svg>
-                    <svg class=" h-6 w-6" :class="{hidden:!show}" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecapn="round" stroke-linejoin="round" d="M18 12H6" />
-                    </svg>
-                  </span>
-                </button>
-              </dt>
-              <dd x-show="show" class="mt-2 pr-12" id="faq-0">
-                <p x-text="item.answer" class="text-base leading-7 text-gray-600"></p>
-              </dd>
-            </div>
-
-        </template>
-        {% endfor %}
-        <!-- More questions... -->
-      </dl>
+        <div class="mt-0">
+          <span class="text-[8px] text-gray-500 dark:text-gray-400" x-text="`${question.length}/80`"></span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
-<script> 
-function faqData() {
-  return {
-    {% if post.faq %}
-    items: {{post.faq | dump | safe }},
-    {%- else -%}
-    items: [],
-    {%- endif -%}
-    shown: 3, 
-    async init() {
-      console.log('faq', this.items)
-      if (this.items.length === 0) {
-        this.loadData();
-      }
-    },
-    loadData() {
-      {# url = 'https://pub-1969d309989b4ee98dadd29698bd2213.r2.dev/{{post.id}}.json' #}
-      {# url = 'https://pub-1969d309989b4ee98dadd29698bd2213.r2.dev/4f32a64a9d2f6889de3c68c3.json' #}
-      url = 'https://faq.azo.workers.dev/{{post.id}}/'
-      try {
-        fetch(url)
-          .then(response => response.json())
-          .then(data => {
-            console.log('faq', data)
-            this.items = data.list
-          })
-          .catch(error => {
-            console.error('Error:', error);
-          });
-      } catch (error) {
-        console.error('Error:', error);
-      }
-    },
-    report(index) {
-        this.shown<this.items.length?this.shown++:this.shown=this.shown;
+<script>
+  function faqData() {
+    return {
+      {% if post.faq %}
+        items : {{ post.faq | dump | safe }},
+      {%- else -%}
+        items : [],
+      {%- endif -%}
+      shown: 3,
+      async init() {
+        console.log('faq', this.items)
+        if (this.items.length === 0) {
+          this.loadData();
+        }
+      },
+      loadData() {
+        url = 'https://faq.azo.workers.dev/         {{ post.id }}/'
+        try {
+          fetch(url)
+            .then(response => response.json())
+            .then(data => {
+              console.log('faq', data)
+              this.items = data.list
+            })
+            .catch(error => {
+              console.error('Error:', error);
+            });
+        } catch (error) {
+          console.error('Error:', error);
+        }
+      },
+      report(index) {
+        this.shown < this.items.length
+          ? this.shown ++
+          : this.shown = this.shown;
         item = this.items[index];
         item.index = index;
         item.total = this.items.length;
-        {# console.log(index,item); #}
-        this.shown++;
-        beacontrack({ type: 'faq', action:1,  post_id: '{{post.id}}', item: item })        
-    },
-  };
-}
+        this.shown ++;
+        beacontrack({type: 'faq', action: 1, post_id: '{{ post.id }}', item: item})
+      },
+      askQuestion() {
+        const question = document
+          .querySelector('input[x-model="question"]')
+          .value
+          .trim();
+        if (! question) 
+          return;
+        
+        const postUrl = '{{ post.url }}';
+        const siteDomain = 'allwomenstalk.com';
+        const prompt = `Answer question: ${question}, in context of ${postUrl}, link back to article and suggest more relevant articles from ${siteDomain}`;
+        const chatUrl = `https://chat.openai.com/?hints=search&q=${
+          encodeURIComponent(prompt)
+        }`;
+        window.open(chatUrl, '_blank');
+        // Track the question
+        const item = {
+          question: question,
+          index: -1, // Special index for user questions
+          total: this.items.length + 1,
+          isAI: true, // Mark as AI-generated question
+          source: 'user_input' // Indicate this came from user input
+        };
+        beacontrack({type: 'faq', action: 1, post_id: '{{ post.id }}', item: item});
+      }
+    };
+  }
 </script>

@@ -248,3 +248,10 @@ http://localhost:8085
 
 
 # cloudshell 
+
+
+FAQ 
+
+{# url = 'https://pub-1969d309989b4ee98dadd29698bd2213.r2.dev/ {{ post.id }}.json' #} 
+        {# url = 'https://pub-1969d309989b4ee98dadd29698bd2213.r2.dev/4f32a64a9d2f6889de3c68c3.json'#}
+        
