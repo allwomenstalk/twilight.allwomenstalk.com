@@ -9,7 +9,7 @@ async function saveCollectionData(collectionName, filePath) {
   try {
     // await client.connect();
     // const data = await client.db('aws').collection(collectionName).find({}).toArray();
-    const pipeline = []
+    const pipeline = [{ $match: {} }];
     const data = await aggregate('Cluster0', 'aws', collectionName, pipeline);
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
     console.log('Data saved to', filePath);
