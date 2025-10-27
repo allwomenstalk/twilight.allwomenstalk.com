@@ -6,7 +6,7 @@ const { aggregate } = require('./helpers/dataApi');
 
 
 
-const uri = process.env.MONGODB_URI;
+// const uri = process.env.MONGODB_URI;
 // const client = new MongoClient(uri, { useUnifiedTopology: true });
 const postperpage = 258;
 const path = './src/_data/archives.json'
@@ -16,7 +16,7 @@ async function getCategories() {
     // const database = client.db('aws');
     // const collection = database.collection('categories');
     // return collection.find({}).toArray();
-    return await aggregate('Cluster0', 'aws', 'categories', []);
+    return await aggregate('Cluster0', 'aws', 'categories', [{ $match: {} }]);
 }
 
 async function getPostsForCategory(categoryId) {
@@ -26,7 +26,7 @@ async function getPostsForCategory(categoryId) {
     const pipeline = [
         {
             $match: {
-                super_categories: categoryId==="all"?{$exists:true}:[categoryId],
+                super_categories: categoryId === "all" ? { $exists: true } : [categoryId],
                 host: { $regex: 'allwomenstalk.com' },
                 // 'post_date': { $gt: new Date('2016-01-01') }
             }
@@ -75,22 +75,21 @@ function SaveData(name, arr) {
 
 
 function transformPost(item) {
-      var temp = {};
-      temp.id = item._id;
-      temp.slug = item.post_name;
-      temp.tags = [item.super_categories[0]]; 
-      //moving form tags to category 
-      temp.category = item.super_categories[0]
-      temp.url = `https://allwomenstalk.com/${item.post_name}`;
-      temp.title = item.post_title.replace(/[^a-zA-Z0-9_.-\s]*/g,''); //removeing all emoji;
-      temp.fulldate = item.post_date;
-      temp.date = moment(item.post_date).format('MMM DD');
-      temp.author = { name: item.author.first_name.replace('_', ''), id: item.author._id };
-      temp.image = item.image_url;
-      temp.imageresize = item.image_url?.replace('img.allw.mn', 'resize.allw.mn/400x400');
-      // temp.content = item.post_content;
-      temp.host = item.host
-      temp.url = `https://${item.host}/${item.post_name}/`;
+    var temp = {};
+    temp.id = item._id;
+    temp.slug = item.post_name;
+    temp.tags = [item.super_categories[0]];
+    //moving form tags to category 
+    temp.category = item.super_categories[0]
+    temp.title = item.post_title.replace(/[^a-zA-Z0-9_.-\s]*/g, ''); //removeing all emoji;
+    temp.fulldate = item.post_date;
+    temp.date = moment(item.post_date).format('MMM DD');
+    temp.author = { name: item.author.first_name.replace('_', ''), id: item.author._id };
+    temp.image = item.image_url;
+    temp.imageresize = item.image_url?.replace('img.allw.mn', 'resize.allw.mn/400x400');
+    // temp.content = item.post_content;
+    temp.host = item.host;
+    temp.url = `https://${item.host}/${item.post_name}/`;
     return temp;
 }
 
@@ -104,7 +103,7 @@ async function main() {
         const groupedPosts = {};
 
         // adding all category to create homapage list 
-        categories.unshift({_id:"all",name:"All"});
+        categories.unshift({ _id: "all", name: "All" });
 
         for (const category of categories) {
             console.log(`Processing category: ${category.name} (ID: ${category._id})`);

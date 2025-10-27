@@ -291,7 +291,7 @@
     "_id": "mindfulness",
     "count": 1602,
     "name": "Mindfulness",
-    "modified": "2000-01-01T05:00:00Z",
+    "modified": "2000-01-01T05:00:00.000Z",
     "public": false,
     "description": "Explore the world of mindfulness through guided practices, insights, and techniques to cultivate presence, awareness, and inner peace."
   },
