@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Simple 11ty template with tailwind",
   "scripts": {
+    "archives": "node --max-old-space-size=4096 getarchives.js",
     "start": "run-p start:*",
     "start:eleventy": "eleventy --serve",
     "start:alpine": "npx esbuild ./src/js/alpine.js --outfile=./_site/js/alpine.js  --bundle --target=es2018 --minify",

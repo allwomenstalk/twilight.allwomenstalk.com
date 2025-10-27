@@ -101,19 +101,32 @@ async function main() {
         const categories = await getCategories();
         SaveData(categoriespath, categories);
         const groupedPosts = {};
+        const allPosts = []; // Separate array for 'all' category
 
         // adding all category to create homapage list 
         categories.unshift({ _id: "all", name: "All" });
 
         for (const category of categories) {
+            if (category._id === "all") continue; // Skip 'all' for now
+
             console.log(`Processing category: ${category.name} (ID: ${category._id})`);
             const posts = await getPostsForCategory(category._id);
             console.log(`.... Found ${posts.length} posts`);
+
             const transformedPosts = posts.map(post => transformPost(post));
             groupedPosts[category._id] = transformedPosts;
+
+            // Add to allPosts array for 'all' category
+            allPosts.push(...transformedPosts);
+
+            // Force garbage collection hint
+            if (global.gc) {
+                global.gc();
+            }
         }
 
-        groupedPosts['all'] = Object.values(groupedPosts).flat().slice(0, postperpage);
+        // Create 'all' category from collected posts
+        groupedPosts['all'] = allPosts.slice(0, postperpage);
         SaveData(path, groupedPosts);
 
     } finally {
