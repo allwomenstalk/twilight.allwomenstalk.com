@@ -28,7 +28,7 @@ const specificPostId = process.env.POST_ID;
 console.log('Specific Post ID:', specificPostId);
 
 // Batch size
-const batchSize = 1000; 
+const batchSize = 100;
 console.log('Batch Size:', batchSize);
 
 let marker = null; // Marker to keep track of the last processed document
@@ -61,11 +61,11 @@ async function generateBatch() {
 
     if (marker) {
       stage = {
-        $match: {
-          $expr: {
-            $gt: [
-              '$_id',
-              { $toObjectId: marker }
+        "$match": {
+          "$expr": {
+            "$gt": [
+              { "$toObjectId": "$_id" },
+              { "$toObjectId": marker }
             ]
           }
         }
@@ -75,19 +75,29 @@ async function generateBatch() {
   }
 
   // console.log('Pipeline:', JSON.stringify(pipeline, null, 2));
-  const result = await aggregate('Cluster0', 'aws', 'posts', pipeline);
-  console.log('Posts in results:', result.length);
+  let retult = false
+  try {
+    result = await aggregate('Cluster0', 'aws', 'posts', pipeline);
+    // console.log("++++++++++++++++++")
+    // console.log('result', result)
+    console.log("------------------")
+    console.log('Posts in results:', result.length);
+  } catch (e) {
+    console.log("!!!!!!!")
+    console.log(e)
+  }
 
-  if (result.length > 0) {
+  if (result && result.length > 0) {
     const lastIndex = result.length - 1;
     const lastPostId = result[lastIndex]._id.toString();
+    console.log('Last post id', lastPostId)
     const parsed = result.map(parser);
 
     // create batch directory if it's not exits
     if (!fs.existsSync('./batch')) {
       fs.mkdirSync('./batch');
     }
-    
+
     fs.writeFileSync(`./batch/posts_${run}.json`, JSON.stringify(parsed, null, 2));
     fs.writeFileSync('./_marker.json', JSON.stringify({ lastPostId }));
     console.log(`Generated batch. Last post ID: ${lastPostId}`);
@@ -116,10 +126,10 @@ async function runEleventyBuild(host) {
   try {
     const buildStartTime = new Date(); // Record the start time of the build
     console.log('Running Eleventy build...');
-    
+
     const logDir = path.join(__dirname, 'logs');
     const logFile = path.join(logDir, `${host}.txt`);
-    
+
     if (!fs.existsSync(logDir)) {
       fs.mkdirSync(logDir, { recursive: true });
     }

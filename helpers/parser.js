@@ -35,7 +35,8 @@ module.exports = function (item) {
       
       temp.url = `https://${temp.host}/${item.post_name}`;
       temp.amp_url = `https://${temp.host}/${item.post_name}/amp.html`;
-      temp.title = item.post_title.replace(/[^a-zA-Z0-9_.-\s'"\?]*/g,''); //removeing all emoji
+      
+      temp.title = item.post_title.replace(/[^a-zA-Z0-9_.:\-\s]/g, '').trim();
       temp.viral = item.viral_title;
       if (typeof item.post_date === 'string') {
         item.post_date = new Date(item.post_date);
@@ -490,7 +491,7 @@ function mapRelatedPosts(item) {
   // console.log(item)
   obj.post_date = item.post_date
   obj.post_modified = item.post_modified
-  obj.title = item.post_title.replace(/[^a-zA-Z0-9_.-:\s]*/g,'').trim()
+  obj.title = item.post_title.replace(/[^a-zA-Z0-9_.:\-\s]/g, '').trim();
   if (obj.title.length > 50) obj.title = obj.title.slice(0,50) + '...'
   
 
