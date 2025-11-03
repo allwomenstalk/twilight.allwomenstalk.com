@@ -1,4 +1,5 @@
 /* Shared Component Styles - Essential cross-page components */
+@tailwind components;
 
 /* Typography Components */
 .hero-title,

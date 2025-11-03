@@ -43,10 +43,10 @@ module.exports = function (item) {
       }
       temp.date = item.post_date.toISOString();
       temp.modified = new Date().toISOString();
-      console.log(item)
-      console.log(item.author)
+
       temp.author = { name: item.author.first_name.replace('_', ''), id: item.author._id };
       temp.image = item.image_url;
+      temp.video_url = item.video_url;
       temp.comment_count = item.comment_count;
 
       // collections 

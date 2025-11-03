@@ -403,3 +403,20 @@ pipeline_slugs = [
     }
   }
 ]
+
+pipeline_video_posts = [
+  {
+    '$match': {
+      'video_url': {
+        '$exists': true,
+        '$ne': null,
+        '$ne': ''
+      }
+    }
+  },
+  {
+    '$sort': {
+      'post_date': -1
+    }
+  }
+]
