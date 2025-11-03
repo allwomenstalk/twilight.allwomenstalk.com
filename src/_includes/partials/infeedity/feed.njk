@@ -160,7 +160,7 @@
                             event: event
                         }
                     };
-                    this.beaconTrack(obj);
+                    beaconTrack(obj);
 
                 });
             },  
@@ -430,14 +430,9 @@
 
 
                 {# tracking on #}
-                this.beaconTrack(obj);
+                beaconTrack(obj);
             },
 
-            beaconTrack(data) {
-                const trackAPI = 'https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/beacon';
-                const beaconData = new Blob([JSON.stringify(data)], { type: 'application/json' });
-                navigator.sendBeacon(trackAPI, beaconData);
-            },
             subscribe: [""],
             cta: [""]
         };

@@ -207,7 +207,7 @@ eleventyComputed:
         const item = {
           question: question,
           index: -1, // Special index for user questions
-          total: this.items.length + 1,
+          total: (this.items?.length ?? 0) + 1,
           isAI: true, // Mark as AI-generated question
           source: 'user_input' // Indicate this came from user input
         };
