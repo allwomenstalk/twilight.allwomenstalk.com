@@ -2,9 +2,9 @@
   {% for quote in quotes | shuffle | slicearr(1) %}
     {% set link = "https://twitter.com/intent/tweet?text=" + quote.content + "%0A@allwomenstalk%0A&url=" + post.url + "&hashtags=quotes" %}
     {% set ref = "https://quotes.allwomenstalk.com/"+quote.authorSlug+"/" %}
-    <div class="py-10 max-w-2xl mx-auto md:rounded-xl">
-      <div class="mx-auto flex max-w-2xl flex-col gap-x-8 gap-y-8 px-8 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
-        <div class="w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-4 xl:py-4">
+    <div class="py-10 max-w-xl mx-auto md:rounded-xl">
+      <div class="mx-auto flex max-w-xl flex-col gap-x-8 gap-y-8 px-8 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
+        <div class="w-full max-w-xl xl:max-w-none xl:flex-auto xl:px-4 xl:py-4">
           <a href="https://quotes.allwomenstalk.com/author/" class="text-base font-semibold leading-8 tracking-tight text-pink-600">
           Famous Quotes
           </a>

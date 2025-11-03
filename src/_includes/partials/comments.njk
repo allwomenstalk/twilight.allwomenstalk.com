@@ -26,7 +26,7 @@
       <p class="mt-2 text-3xl font-bold tracking-tight">Where Thoughts and Opinions Converge</p>
     </div>
     
-    <div class="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
+    <div class="mx-auto mt-16 flow-root max-w-xl sm:mt-20 lg:mx-0 lg:max-w-none">
       <div class="-mt-8 sm:-mx-4 columns-1 sm:columns-2 sm:text-[0] lg:columns-3">
         {% for comment in post.comments %}
         <div class="pt-4 sm:inline-block sm:w-full sm:px-4">
@@ -71,7 +71,7 @@
 
 {# <div class="">
   <div class="px-6 py-6 sm:px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl text-center">
+    <div class="mx-auto max-w-xl text-center">
       <h2 class="text-3xl font-bold tracking-tightsm:text-4xl">Share your thoughts instantly by tweeting us your comment.</h2>
       <div class="mt-10 flex items-center justify-center gap-x-6">
 
@@ -97,7 +97,7 @@
 
 {% if post.comments %}
   <p id="comments" class="uppercase tracking-wide text-sm opacity-70 font-bold text-center mt-8">Comments</p>
-  <ul class="m-4 mx-auto max-w-2xl" id="comments">
+  <ul class="m-4 mx-auto max-w-xl" id="comments">
     {% for comment in post.comments %}
       <li class="text-sm mb-2 px-4" id="{{ comment._id }}" data-author="{{ comment.comment_author }}">
         <b>{{ comment.comment_author }}:</b><span class="ml-2">{{ comment.comment_content }}</span>

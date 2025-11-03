@@ -16,104 +16,104 @@ eleventyComputed:
 
 {% include 'partials/leaderboard.njk' %}
 {% include 'partials/herojumbo.njk' %}
-<div class="max-w-2xl mx-auto px-4 md:px-10">
-    {% include 'partials/bookmark.njk' %}
+<div class="max-w-xl mx-auto px-4 md:px-10">
+  {% include 'partials/bookmark.njk' %}
 </div>
 {# {% include 'partials/widget.njk' %} #}
 {# {% include 'partials/shopping.njk' %} #}
 <main id="content">
-    {% for page in post.pages %}
-        <article class="post prose p-4 overflow-hidden mx-auto max-w-xl {%- if post.noaff -%} _noaff {% endif %} {%- if loop.first -%}
-                first-line:uppercase first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left {%- endif
-                -%}">
-            {% if page.title %}
-                <h3 id="{{ loop.index0 }}" class="not-prose text-3xl md:text-4xl font-bold my-4 md:my-6">
-                    {% if page.number %}
-                        {{ page.number }}.
-                    {% endif %}
-                    {{ page.title | safe }}
-                </h3>
-            {% endif %}
-            {{ page.pageContent | enhanceLists | safe }}
-        </article>
-        {% include 'partials/elaborate.njk' %}
-        {% if not loop.first and not loop.last %}
-            {% include 'partials/faq.njk' %}
-        {% endif %}
-        {% if not loop.last %}
-            {# inline related #}
-            {% if loop.index > 1 %}
-                {% set inline = post.related.posts[loop.index-2] %}
-                {# {% include "partials/relatedinline.njk" %} #}
-            {% endif %}
-            {% if loop.index == 1 %}
-                {% include 'partials/seperator.njk' %}
-                {% include 'partials/toc.njk' %}
-            {% elif loop.index == 2 %}
-                {% include 'partials/seperator.njk' %}
-            {% elif loop.index == 3 %}
-                {# {% include 'partials/faq.njk' %} #}
-                {% if post.faq %}
-                    {# default show faq and extra ad unit #}
-                    {# {% include 'partials/seperator.njk' %} #}
-                {% elif post.related.inline %}
-                    {% include 'partials/seperator.njk' %}
-                {% else %}
-                    {% include 'partials/seperator.njk' %}
-                    {% if quizzes[post.id] %}
-                        {% include "partials/quiz.njk" %}
-                    {% else %}
-                        {% include 'partials/poll.njk' %}
-                    {% endif %}
-                {% endif %}
-            {% elif loop.index == 4 %}
-                {% include 'partials/spins/widget.njk' %}
-                {% include 'partials/seperator.njk' %}
-                {# 5 #}
-            {% elif (loop.index == 5) %}
-                {% if post.related.inline %}
-                    {% include "partials/relatedinline.njk" %}
-                {% endif %}
-            {% elif (loop.index == 6) %}
-                {# {% include "partials/videos.njk" %} #}
-                {% include 'partials/gallery.njk' %}
-                {% include 'partials/seperator.njk' %}
-            {% elif (loop.index == 10) %}
-                {# {% include 'partials/story.njk' %} #}
-                {% include 'partials/seperator.njk' %}
-            {% elif (loop.index == 15 ) %}
-                {# {% include "partials/explore.njk" %} #}
-                {# {% include 'partials/seperator.njk' %} #}
-            {% elif (loop.index == 10) and (loop.length > 12) %}
-                {# adding shopping at the middle on the long posts #}
-                {% include 'partials/shopping.njk' %}
-            {% else %}
-                {# <hr class="ad-slot hidden hr{{loop.index}}"> #}
-                {% include 'partials/seperator.njk' %}
-            {% endif %}
-            {# {% include 'partials/cta.njk' %} #}
+  {% for page in post.pages %}
+    <article class="post prose p-4 overflow-hidden mx-auto max-w-xl {% if post.noaff %} _noaff {% endif %} {% if loop.first %}
+        first-line:uppercase first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left {%- endif
+        -%}">
+      {% if page.title %}
+        <h3 id="{{ loop.index0 }}" class="not-prose text-3xl md:text-4xl font-bold my-4 md:my-6">
+          {% if page.number %}
+            {{ page.number }}.
+          {% endif %}
+          {{ page.title | safe }}
+        </h3>
+      {% endif %}
+      {{ page.pageContent | enhanceLists | safe }}
+    </article>
+    {% include 'partials/elaborate.njk' %}
+    {% if not loop.first and not loop.last %}
+      {% include 'partials/faq.njk' %}
+    {% endif %}
+    {% if not loop.last %}
+      {# inline related #}
+      {% if loop.index > 1 %}
+        {% set inline = post.related.posts[loop.index-2] %}
+        {# {% include "partials/relatedinline.njk" %} #}
+      {% endif %}
+      {% if loop.index == 1 %}
+        {% include 'partials/seperator.njk' %}
+        {% include 'partials/toc.njk' %}
+      {% elif loop.index == 2 %}
+        {% include 'partials/seperator.njk' %}
+      {% elif loop.index == 3 %}
+        {# {% include 'partials/faq.njk' %} #}
+        {% if post.faq %}
+          {# default show faq and extra ad unit #}
+          {# {% include 'partials/seperator.njk' %} #}
+        {% elif post.related.inline %}
+          {% include 'partials/seperator.njk' %}
         {% else %}
-            {# {% include 'partials/pinterestcard.njk' %} #}
-            {# {% include 'partials/newsletter.njk' %} #}
-                {% if post.videos and post.videos.length > 0 %}
-                {% from "partials/videosgrid.njk" import videosGrid %}
-            {{ videosGrid(true) }}
-            {% endif %}
-            {# adding shopping on the end for short posts #}
-            {# {% include 'partials/subscribe.njk' %} #}
-            {# {% include 'partials/rating.njk' %} #}
-            {% include "partials/commentspanel.njk" %}{% if (loop.length < 12) %}
-                {# {% include 'partials/shopping.njk' %} #}
-            {% endif %}
-            {# {% include 'partials/collections.njk' %} #}
-            {# {% include 'partials/seperator.njk' %} #}
-            {% if not post.noads %}
-                {# {% include 'partials/keywordsgallery.njk' %} #}
-            {% endif %}
+          {% include 'partials/seperator.njk' %}
+          {% if quizzes[post.id] %}
+            {% include "partials/quiz.njk" %}
+          {% else %}
+            {% include 'partials/poll.njk' %}
+          {% endif %}
         {% endif %}
-    {% endfor %}
-    {% include "partials/herostats.njk" %}
-    {% include 'partials/herogamification.njk' %}
+      {% elif loop.index == 4 %}
+        {% include 'partials/spins/widget.njk' %}
+        {% include 'partials/seperator.njk' %}
+        {# 5 #}
+      {% elif (loop.index == 5) %}
+        {% if post.related.inline %}
+          {% include "partials/relatedinline.njk" %}
+        {% endif %}
+      {% elif (loop.index == 6) %}
+        {# {% include "partials/videos.njk" %} #}
+        {% include 'partials/gallery.njk' %}
+        {% include 'partials/seperator.njk' %}
+      {% elif (loop.index == 10) %}
+        {# {% include 'partials/story.njk' %} #}
+        {% include 'partials/seperator.njk' %}
+      {% elif (loop.index == 15 ) %}
+        {# {% include "partials/explore.njk" %} #}
+        {# {% include 'partials/seperator.njk' %} #}
+      {% elif (loop.index == 10) and (loop.length > 12) %}
+        {# adding shopping at the middle on the long posts #}
+        {% include 'partials/shopping.njk' %}
+      {% else %}
+        {# <hr class="ad-slot hidden hr{{loop.index}}"> #}
+        {% include 'partials/seperator.njk' %}
+      {% endif %}
+      {# {% include 'partials/cta.njk' %} #}
+    {% else %}
+      {# {% include 'partials/pinterestcard.njk' %} #}
+      {# {% include 'partials/newsletter.njk' %} #}
+        {% if post.videos and post.videos.length > 0 %}
+        {% from "partials/videosgrid.njk" import videosGrid %}
+      {{ videosGrid(true) }}
+      {% endif %}
+      {# adding shopping on the end for short posts #}
+      {# {% include 'partials/subscribe.njk' %} #}
+      {# {% include 'partials/rating.njk' %} #}
+      {% include "partials/commentspanel.njk" %}{% if (loop.length < 12) %}
+        {# {% include 'partials/shopping.njk' %} #}
+      {% endif %}
+      {# {% include 'partials/collections.njk' %} #}
+      {# {% include 'partials/seperator.njk' %} #}
+      {% if not post.noads %}
+        {# {% include 'partials/keywordsgallery.njk' %} #}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  {% include "partials/herostats.njk" %}
+  {% include 'partials/herogamification.njk' %}
 </main>
 {% include 'partials/products.njk' %}
 {% include 'partials/iniret.njk' %}
@@ -123,29 +123,27 @@ eleventyComputed:
 {% include 'partials/relatedbadges.njk' %}
 {% include 'partials/adsnew.njk' %}
 <div class="ad-slot mx-auto overflow-hidden" id="slot-related"></div>
-{% include 'partials/ads.njk' %}
-{# {% include "partials/listmix.njk" %} #}
+{% include 'partials/ads.njk' %}{# {% include "partials/listmix.njk" %} #}
 {# {% include 'partials/popular.njk' %} #}{% include 'partials/schema.njk' %}
 {# <div class="ad-slot mx-auto overflow-hidden" id="slot-review"></div> #}
 {# {% include 'partials/reviews.njk' %} #}<div class="ad-slot mx-auto overflow-hidden" id="slot-final"> </div>
 {# Posts scripts only  #}
 {% if post.amp %}
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
 {% endif %}
 {% if post.ampig %}
-    <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
+  <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
 {% endif %}
 <script type='text/javascript'>
-    (function () {
-        var loc = window.location.href;
-        var dd = document.createElement('script');
-        dd.type = 'text/javascript';
-        dd.src = 'https://static.digidip.net/allwomenstalk.js?loc=' + loc;
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(dd, s);
-    })();
+  (function () {
+    var loc = window.location.href;
+    var dd = document.createElement('script');
+    dd.type = 'text/javascript';
+    dd.src = 'https://static.digidip.net/allwomenstalk.js?loc=' + loc;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(dd, s);
+  })();
 </script>
-
 {# faq single script  #}
 <script>
   function faqData() {
@@ -163,7 +161,7 @@ eleventyComputed:
         }
       },
       loadData() {
-        url = 'https://faq.azo.workers.dev/{{ post.id }}/'
+        url = 'https://faq.azo.workers.dev/  {{ post.id }}/'
         try {
           fetch(url)
             .then(response => response.json())
@@ -207,7 +205,7 @@ eleventyComputed:
         const item = {
           question: question,
           index: -1, // Special index for user questions
-          total: (this.items?.length ?? 0) + 1,
+          total: (this.items ?. length ?? 0) + 1,
           isAI: true, // Mark as AI-generated question
           source: 'user_input' // Indicate this came from user input
         };

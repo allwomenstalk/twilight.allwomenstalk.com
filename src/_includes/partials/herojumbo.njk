@@ -1,94 +1,65 @@
 <div class="hero mb-6 overflow-hidden">
-<div class="grid gap-y-8 md:gap-y-16 mx-auto mt-2 p-6 align-middle relative bg-gradient-to-br from-pink-500 to-pink-900 text-gray-100">
-    
-    <div class="flex justify-between uppercase tracking-wide text-sm font-bold text-white opacity-70">
+  <div class="grid gap-y-8 md:gap-y-16 mx-auto mt-2 p-6 align-middle relative bg-gradient-to-b text-pink-800">
+    <div class="flex justify-between uppercase tracking-wide text-sm font-bold text-gray-800 opacity-90">
       <a href="https://{{ post.category[0] }}.allwomenstalk.com/" class="">{{ post.category[0] }}</a>
-
       <a href="#rating" class="">{{ post.ratingstars }}</a>
     </div>
-
-    <h1 class="mx-auto max-w-2xl font-bold text-4xl leading-tight py-2 md:text-6xl md:text-center md:pr-16 overflow-hidden">
+    <h1 class="mx-auto max-w-2xl font-bold text-4xl leading-tight py-2 md:text-6xl md:text-center overflow-hidden">
       {{ post.viral or post.title }}
     </h1>
-    <p class="mt-2 text-sm text-white opacity-70 flex justify-between">
-      <span class="flex items-center">
-        <a href="https://allwomenstalk.com/profile/{{ post.author.id }}/" class="text-white">{{ post.author.name }}</a>
-      </span>
+    <p class="mt-2 text-sm text-gray-800 opacity-90 flex justify-end">
       <span>
-      {# comments button or comments link #}
-      {% if (post.comment_count > 1) %}
-      
+        {# comments button or comments link #}
+        {% if (post.comment_count > 1) %}
           {% if amp %}
-          <a href="{{post.url}}#comments" class=" px-2.5 py-1.5 text-sm text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600">
-            {{ post.comment_count }} Comments
-          </a>
+            <a href="{{ post.url }}#comments" class=" px-2.5 py-1.5 text-sm text-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600">
+              {{ post.comment_count }} Comments
+            </a>
           {% else %}
-          <button @click="commentspanel=true;getComments()" type="button" class=" px-2.5 py-1.5 text-sm text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600">
-            {{ post.comment_count }} Comments
-          </button>
-          {# date #}
-
+            <button
+              @click="commentspanel=true;getComments()"
+              type="button"
+              class=" px-2.5 py-1.5 text-sm text-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
+                focus-visible:outline-pink-600">
+              {{ post.comment_count }} Comments
+            </button>
           {% endif %}
-
-      {% endif %}
-
-      {% if post.date %}
-        <span class="px-2.5 py-1.5 text-sm text-white">
-          {{ post.date | formatDate }}
-        </span>
-      {% endif %}
+        {% endif %}
       </span>
-      
-      {# native share #}
-      {# <span>
-      {% if amp %}
-      <amp-social-share type="system" aria-label="Share">Share</amp-social-share>
-      {% else %}
-      <button @click="share()" type="button" class=" px-2.5 py-1.5 text-sm font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600">
-        <svg class="w-5 inline-block " fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5"></path>
-        </svg> 
-        <span class="hidden md:inline-block">Share</span>
-      </button>
-      {% endif %}
-      </span> #}
-
-
     </p>
-
     {# <svg class="text-pink-800 z-10 hidden md:block absolute right-0 inset-y-0 h-full w-48 transform translate-x-1/2 " fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-      <polygon points="50,0 100,0 50,100 0,100"></polygon>
-    </svg> #}
+                      <polygon points="50,0 100,0 50,100 0,100"></polygon>
+                    </svg> #}
   </div>
-
-
-
-<div class="relative mx-auto overflow-hidden">
-    
+  <div class="relative mx-auto overflow-hidden">
     {% if post.image %}
-    <!-- Background image container -->
-    <div class="hiden md:block absolute inset-0 bg-black overflow-hidden">
-        <img class="object-cover w-full h-full blur-xl opacity-70" src="{{ post.image }}" alt="{{ post.title }}">
+      <!-- Foreground content -->
+      <div class="relative z-10">
+        <img class="w-full sm:rounded-xl object-cover max-w-xl mx-auto h-full" id="coverimage" src="{{ post.image }}" alt="{{ post.title }}" width="{{ post.imagesize.width }}" height="{{ post.imagesize.height }}" srcset="{{ post.imagewebp400 }} 400w, {{ post.imagewebp800 }} 800w, {{ post.imagewebp1200 }} 1200w, {{ post.image }} 1x" decoding="async">
+          <button
+            x-cloak
+            x-show="source"
+            @click="window.open(source.source_url, '_blank')"
+            class="absolute text-black text-2xl bottom-2 right-2 opacity-70 hover:opacity-100">
+            <span
+              x-text="source.source_name"
+              class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset
+                ring-gray-500/10"></span>
+          </button>
+        </div>
+      {% endif %}
+      <!-- Author and Date under image -->
+      <div class="mt-4 max-w-xl mx-auto px-4">
+        <div class="flex justify-between items-center text-sm text-gray-600">
+          <span class="flex items-center whitespace-nowrap">
+            <span class="text-gray-600 mr-1">By</span>
+            <a href="https://allwomenstalk.com/profile/{{ post.author.id }}/" class="text-gray-800 hover:text-pink-600 font-medium">{{ post.author.name }}</a>
+          </span>
+          {% if post.date and (post.date | isWithinLastYear) %}
+            <span class="text-gray-600">
+              {{ post.date | formatDate }}
+            </span>
+          {% endif %}
+        </div>
+      </div>
     </div>
-
-    <!-- Foreground content -->
-    <div class="relative z-10">
-        <img class="w-full object-cover max-w-2xl mx-auto h-full" id="coverimage" src="{{ post.image }}" alt="{{ post.title }}" width="{{ post.imagesize.width }}" height="{{ post.imagesize.height }}" 
-        srcset="{{ post.imagewebp400 }} 400w, 
-                {{ post.imagewebp800 }} 800w, 
-                {{ post.imagewebp1200 }} 1200w, 
-                {{ post.image }} 1x" decoding="async">
-
-        <button x-cloak x-show="source" @click="window.open(source.source_url, '_blank')" class="absolute text-black text-2xl bottom-2 right-2 opacity-70 hover:opacity-100">
-          <span x-text="source.source_name" class="inline-flex items-center rounded-md bg-white px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"></span>
-        </button>
-    </div>
-  
-    {% endif %}
-
-</div>
-
-
-
-
-</div>

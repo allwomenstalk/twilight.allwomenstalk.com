@@ -53,6 +53,25 @@ module.exports = function(eleventyConfig) {
     }
   });
 
+  // Add a custom filter to check if date is within the last year
+  eleventyConfig.addFilter("isWithinLastYear", function(date) {
+    if (!date) return false;
+    try {
+      const parsedDate = new Date(date);
+      if (isNaN(parsedDate)) {
+        return false;
+      }
+      const currentDate = new Date();
+      const oneYearAgo = new Date();
+      oneYearAgo.setFullYear(currentDate.getFullYear() - 1);
+      
+      return parsedDate >= oneYearAgo;
+    } catch (error) {
+      console.error("Error checking date:", error.message, date);
+      return false;
+    }
+  });
+
   eleventyConfig.addFilter("enhanceLists", function(content) {
     if (typeof content !== "string" || !content.includes("<ul")) {
       return content;

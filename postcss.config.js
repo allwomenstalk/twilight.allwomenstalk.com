@@ -12,7 +12,14 @@ module.exports = ({ env }) => {
       cssnano:
         env === "production"
           ? {
-              preset: ["default", { discardComments: { removeAll: true } }],
+              preset: ["default", { 
+                discardComments: { removeAll: true },
+                normalizeWhitespace: true,
+                mergeLonghand: true,
+                mergeRules: true,
+                minifySelectors: true,
+                minifyParams: true
+              }],
             }
           : false,
     },

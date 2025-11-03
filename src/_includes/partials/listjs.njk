@@ -1,20 +1,18 @@
-<div
-  @scroll.window="handleScroll"
-  x-init="loadposts('{{ category }}')"
-  class="">
+<div @scroll.window="handleScroll" x-init="loadposts('{{ category }}')" class="">
   <template x-for="list in posts">
-    <div class="col-span-full grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-8 lg:grid-cols-6 lg:gap-4 xl:gap-8 p-4 max-w-screen-xl mx-auto">
+    <div class="col-span-full grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-8 lg:grid-cols-6 lg:gap-4 xl:gap-8 p-4 max-w-screen-xl
+        mx-auto">
       <template x-for="(post, index) in list" :key="index">
         <a
           :href="post.url ? post.url : null"
           @click="post.url ? null : (select(post), $event.preventDefault())"
           :title="post.title"
-          class="text-gray-900 rounded-lg hover:opacity-70 relative"
+          class="text-gray-900 rounded-lg hover:opacity-70 relative "
           :class="{'col-span-full sm:grid grid-cols-2 h-88': index % 7 === 6}">
           <div
-            class="aspect-w-1 aspect-h-1 overflow-hidden bg-cover bg-center fixed"
-            :class="{ 'h-full rounded-b' : post.type == 'feed', 'h-64 rounded-t sm:rounded-t-none sm:rounded-l': index % 7 === 6,
-              'rounded-t ': index % 7 !== 6 }">
+            class="aspect-w-1 aspect-h-1 w-full aspect-square overflow-hidden bg-cover bg-center relative"
+            :class="{ 'rounded-b' : post.type == 'feed', 'rounded-t sm:rounded-t-none sm:rounded-l h-96': index % 7 === 6, 'rounded-t h-48 ':
+              index % 7 !== 6 }">
             <img
               class="object-cover w-full h-full"
               :class="post.hue ? post.hue : ''"
@@ -47,17 +45,13 @@
             </div>
           </a>
         </template>
-        
         <!-- Static widget sections that appear between post loads -->
         <div class="w-full my-2 lg:my-12 col-span-full  mx-auto px-0 ">
           {% include 'partials/spins/widget.njk' %}
         </div>
-
       </div>
-
     </template>
   </div>
-
   <div x-show="loading" class="text-center my-12">
     {% include "partials/spinner.njk" %}
   </div>
