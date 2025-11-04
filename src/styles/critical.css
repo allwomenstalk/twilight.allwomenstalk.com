@@ -4,7 +4,8 @@
 
 /* Critical Typography */
 .hero-title,
-.post-title {
+.post-title, 
+.hero h1 {
     font-family: 'Bodoni Moda', serif;
     font-display: optional;
 }

@@ -53,6 +53,43 @@ module.exports = function(eleventyConfig) {
     }
   });
 
+  // Add a custom filter to check if date is within the last year
+  eleventyConfig.addFilter("isWithinLastYear", function(date) {
+    if (!date) return false;
+    try {
+      const parsedDate = new Date(date);
+      if (isNaN(parsedDate)) {
+        return false;
+      }
+      const currentDate = new Date();
+      const oneYearAgo = new Date();
+      oneYearAgo.setFullYear(currentDate.getFullYear() - 1);
+      
+      return parsedDate >= oneYearAgo;
+    } catch (error) {
+      console.error("Error checking date:", error.message, date);
+      return false;
+    }
+  });
+
+  // Add Roman numeral filter
+  eleventyConfig.addFilter("toRoman", (number) => {
+    const values = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+    const symbols = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
+    
+    let result = '';
+    let num = parseInt(number);
+    
+    for (let i = 0; i < values.length; i++) {
+      while (num >= values[i]) {
+        result += symbols[i];
+        num -= values[i];
+      }
+    }
+    
+    return result;
+  });
+
   eleventyConfig.addFilter("enhanceLists", function(content) {
     if (typeof content !== "string" || !content.includes("<ul")) {
       return content;

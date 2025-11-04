@@ -29,29 +29,24 @@
         {% if post %}
             {% include 'partials/postmeta.njk' %}
         {% endif %}
-        {# CSS Loading - Always include essential styles #}
+        {# CSS Loading - Simplified and reliable #}
         <style>
-            {
-                # Always include base styles for proper rendering #
-            }
-            {% include 'partials/css/base.css' %}
-            {% include 'partials/css/components.css' %}
             {% if metadata.NODE_ENV == "production" %}
-                {
-                    # Production: Add critical CSS #
-                }
+                {# Production: All essential CSS inline #}
+                {% include 'partials/css/base.css' %}
+                {% include 'partials/css/components.css' %}
                 {% include 'partials/css/critical.css' %}
+                {% include 'partials/css/site.css' %}
             {% else %}
-                {
-                    # Development: Add all utilities #
-                }
+                {# Development: All CSS inline for reliability #}
+                {% include 'partials/css/base.css' %}
+                {% include 'partials/css/components.css' %}
                 {% include 'partials/css/site.css' %}
             {% endif %}
         </style>
         {# Debug: Show NODE_ENV and CSS status #}
         <!-- NODE_ENV: {{ metadata.NODE_ENV }} -->
-        <!-- CSS Files Loaded: base.css, components.css, {% if metadata.NODE_ENV == "production" %}critical.css{% else
-        %}site.css{% endif %} -->
+        <!-- CSS Files Loaded: base.css, components.css, {% if metadata.NODE_ENV == "production" %}critical.css, site.css{% else %}site.css{% endif %} -->
         <!-- Google Tag Manager -->
             <script>
 (function (w, d, s, l, i) {
@@ -76,29 +71,7 @@
         {% include "partials/footer.njk" %}
         <!-- js.njk -->
         {% include "partials/js.njk" %}
-        {% if metadata.NODE_ENV == "production" %}
-            {# Production: Deferred CSS - Load asynchronously after page load #}
-            <script>
-                // Load deferred CSS asynchronously
-                function loadDeferredCSS() {
-                    var style = document.createElement('style');
-                    style.textContent = `{% include 'partials/css/deferred.css' %}{% include 'partials/css/site.css' %}`;
-                    document.head.appendChild(style);
-                }
-                // Load after page load
-                if (window.addEventListener) {
-                    window.addEventListener('load', loadDeferredCSS, false);
-                } else if (window.attachEvent) {
-                    window.attachEvent('onload', loadDeferredCSS);
-                }
-            </script>
-            <noscript>
-                <style>
-                    {% include 'partials/css/deferred.css' %}
-                    {% include 'partials/css/site.css' %}
-                </style>
-            </noscript>
-        {% endif %}
+        {# No deferred CSS - everything is inline now for reliability #}
         <!-- Google Tag Manager (noscript) -->
         <noscript>
             <iframe

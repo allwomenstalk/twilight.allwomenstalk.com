@@ -6,6 +6,10 @@
     @apply block text-[6em] leading-[1.15em] font-thin text-center font-sans;
 }
 
+body h3.not-prose {
+    font-family: 'Bodoni Moda', serif !important;
+}
+
 .post-image,
 .post img,
 .prose .post img,
