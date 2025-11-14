@@ -18,7 +18,7 @@ eleventyComputed:
 {% include 'partials/herojumbo.njk' %}
 {# {% include 'partials/widget.njk' %} #}
 {# {% include 'partials/shopping.njk' %} #}
-<main id="content">
+<main id="content" class="bg-gray-50">
   {% for page in post.pages %}
     <article class="post prose p-4 overflow-hidden mx-auto max-w-xl {% if post.noaff %} _noaff {% endif %} {% if loop.first %}
         first-line:uppercase first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left {%- endif

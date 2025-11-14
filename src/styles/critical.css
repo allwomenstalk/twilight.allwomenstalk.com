@@ -8,10 +8,11 @@
 .hero h1 {
     font-family: 'Bodoni Moda', serif;
     font-display: optional;
+    color: #B77466;
 }
 
 .post-title {
-    @apply text-2xl font-bold mb-2 text-center uppercase;
+    @apply text-2xl mb-2 text-center;
 }
 
 /* Critical Loading States */

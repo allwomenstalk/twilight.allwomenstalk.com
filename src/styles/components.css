@@ -2,16 +2,6 @@
 @tailwind components;
 
 /* Typography Components */
-.hero-title,
-.post-title {
-    font-family: 'Bodoni Moda', serif;
-    font-display: optional;
-}
-
-.post-title {
-    @apply text-2xl font-bold mb-2 text-center uppercase;
-}
-
 .post-number {
     @apply block text-[6em] leading-[1.15em] font-thin text-center font-sans;
 }

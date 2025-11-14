@@ -36,7 +36,9 @@ module.exports = function (item) {
       temp.url = `https://${temp.host}/${item.post_name}`;
       temp.amp_url = `https://${temp.host}/${item.post_name}/amp.html`;
       
-      temp.title = item.post_title.replace(/[^a-zA-Z0-9_.:\-\s]/g, '').trim();
+      temp.title = item.post_title
+        .replace(/[^a-zA-Z0-9_.:\!\?\&’\-\s]/g, '')
+        .trim();
       temp.viral = item.viral_title;
       if (typeof item.post_date === 'string') {
         item.post_date = new Date(item.post_date);
