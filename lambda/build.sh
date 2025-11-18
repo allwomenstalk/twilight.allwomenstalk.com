@@ -60,12 +60,12 @@ ls -lh ../function.zip
 aws lambda update-function-code \
     --function-name NJKPostLambdaGithubSAM \
     --zip-file fileb://../function.zip \
-    --publish
+    --publish > /dev/null 2>&1
 
 # Update environment variables
 aws lambda update-function-configuration \
     --function-name NJKPostLambdaGithubSAM \
-    --environment Variables="{DATA_API_URL=$DATA_API_URL,DATA_API_KEY=$DATA_API_KEY,DATA_API_SECRET=$DATA_API_SECRET,GITHUB_TOKEN=$GITHUB_TOKEN}" > /dev/null 2>&1 &
+    --environment Variables="{DATA_API_URL=$DATA_API_URL,DATA_API_KEY=$DATA_API_KEY,DATA_API_SECRET=$DATA_API_SECRET,GITHUB_TOKEN=$GITHUB_TOKEN}" > /dev/null 2>&1
 
 echo "Deploy completed successfully!"
 # echo "Cleaning up..."

@@ -31,6 +31,7 @@ async function run() {
     console.log('cursor', cursor);
     obj = {}
     await cursor.forEach((item) => {
+      
       obj[item._id] = item.list;
       // arr.push(item);
     });

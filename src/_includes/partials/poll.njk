@@ -1,4 +1,4 @@
-<div x-data="poll" x-ref="pollblock" class="mx-auto max-w-md py-4" >
+<div x-data="poll" x-ref="pollblock" class="mx-auto max-w-xl py-4 px-4" >
   <template x-for="(item,i) in poll">
   <div x-show="index==i" x-transition.300 class="w-full">
     <div class="p-4 sm:p-0">
@@ -32,21 +32,24 @@
 
   <div x-show="index>0&&index==poll.length" x-cloak class="mx-auto  py-16 ">
     <div class="mx-auto max-w-7xl">
-      <div class="max-w-xl text-base font-bold tracking-tight text-gray-900 ">
-        <p class="block text-2xl sm:text-4xl font-bold tracking-tight ">Thanks for sharing your thoughts!</p>
-        <p class="block text-lg tracking-normal">Please subscribe for your personalized newsletter:</p>
-      </div>
-      <form class="mt-2 max-w-md" @submit.prevent="sub()">
-        <div class="flex gap-x-4">
-          <label for="email-address" class="sr-only">Email address</label>
-          <input id="email-address" x-model="email" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-pink-600 sm:text-sm sm:leading-6" placeholder="Enter your email">
-          <button type="submit" class="flex-none rounded-md bg-pink-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-pink-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600">Subscribe</button>
+      <div x-show="!subscribed" x-transition.300>
+        <div class="max-w-xl text-base font-bold tracking-tight text-gray-900 ">
+          <p class="block text-2xl sm:text-4xl font-bold tracking-tight ">Thanks for sharing your thoughts!</p>
+          <p class="block text-lg tracking-normal">Please subscribe for your personalized newsletter:</p>
         </div>
-        <p x-text="message" class="mt-2 text-sm leading-6 text-gray-900">
-          <!-- Read our <a href="#" class="font-semibold text-pink-600 hover:text-pink-500">privacy&nbsp;policy</a>. -->
-        </p>
-        
-      </form>
+        <form class="mt-2 max-w-md" @submit.prevent="sub()">
+          <div class="flex gap-x-4">
+            <label for="email-address" class="sr-only">Email address</label>
+            <input id="email-address" x-model="email" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-pink-600 sm:text-sm sm:leading-6" placeholder="Enter your email">
+            <button type="submit" class="flex-none rounded-md bg-pink-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-pink-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600">Subscribe</button>
+          </div>
+        </form>
+      </div>
+      
+      <div x-show="subscribed" x-transition.300 class="max-w-xl text-base font-bold tracking-tight text-gray-900">
+        <p class="block text-2xl sm:text-4xl font-bold tracking-tight ">Successfully subscribed!</p>
+        <p class="block text-lg tracking-normal">Thank you for subscribing! Check your inbox for personalized content.</p>
+      </div>
     </div>
   </div>
   
@@ -63,9 +66,31 @@
       poll: [],
       buttons: true,
       message: "",
+      subscribed: false,
+      category: "{{post.category}}", 
+      postId: "{{post.id}}",
       init() {
           console.log('init poll')
-          fetch('../poll.json')
+          
+          // Get category from URL or use 'general' as fallback
+          const urlParams = new URLSearchParams(window.location.search);
+          const category = this.category;
+          
+          // Construct R2 URL
+          const baseUrl = 'https://pub-6552e6724af743cb85ba134221b75702.r2.dev';
+          const pollUrl = `${baseUrl}/${category}.json`;
+          
+          console.log('Fetching polls from:', pollUrl);
+          
+          fetch(pollUrl)
+          .then(response => {
+            if (!response.ok) {
+              console.log(`Failed to load ${category}.json, falling back to general.json`);
+              // Fallback to general.json if category fails
+              return fetch(`${baseUrl}/general.json`);
+            }
+            return response;
+          })
           .then(response => response.json())
           .then(data => {
             console.log(data)
@@ -77,6 +102,19 @@
               
               // get randob lengths subarray but no less than 3
               this.poll = this.poll.slice(0,3)
+          })
+          .catch(error => {
+            console.error('Error loading polls:', error);
+            // Final fallback to general.json
+            fetch(`${baseUrl}/general.json`)
+              .then(response => response.json())
+              .then(data => {
+                console.log('Loaded fallback general.json', data);
+                this.poll = data;
+                this.poll = this.poll.sort(() => Math.random() - 0.5);
+                this.poll = this.poll.slice(0,3);
+              })
+              .catch(err => console.error('Failed to load fallback:', err));
           })
 
           {# 
@@ -115,26 +153,14 @@
       vote (obj) {
           console.log(obj)
           this.trackEvent(obj.q, obj.a)
-          fetch('https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/vote', {
-          method: 'POST',
-          headers: {
-              'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(obj)
-          })
-          .then(response => {
-              console.log(response.json())
-          })
-          .catch(error => {
-              console.log(error)
-          });
-
       },
       sub() {
         console.log(this.choices, this.email)
-        this.index++
-        const url = 'https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/newsletter';
-        const payload = { params: this.choices, email: this.email};
+        const url = 'https://olgdvvxouytdchveiaad.supabase.co/functions/v1/subscribe';
+        const payload = { 
+          params: this.choices, 
+          email: this.email
+        };
 
         fetch(url, {
           method: 'POST',
@@ -151,11 +177,11 @@
         })
         .then(data => {
           console.log(data);
-          this.message = 'Done! Thank you for subscribing!'; // Set a success message
-
+          this.subscribed = true;
         })
         .catch(error => {
           console.error('There was a problem with the fetch operation:', error);
+          this.message = 'Oops! Something went wrong. Please try again.';
         });
 
       },

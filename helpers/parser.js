@@ -43,7 +43,9 @@ module.exports = function (item) {
       if (typeof item.post_date === 'string') {
         item.post_date = new Date(item.post_date);
       }
-      temp.date = item.post_date.toISOString();
+      temp.date = item?.post_date
+        ? new Date(item.post_date).toISOString()
+        : null;
       temp.modified = new Date().toISOString();
 
       temp.author = {

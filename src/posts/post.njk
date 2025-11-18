@@ -37,6 +37,7 @@ eleventyComputed:
     {% if not loop.first and not loop.last %}
       {% include 'partials/faq.njk' %}
     {% endif %}
+    
     {% if not loop.last %}
       {# inline related #}
       {% if loop.index > 1 %}
@@ -44,6 +45,7 @@ eleventyComputed:
         {# {% include "partials/relatedinline.njk" %} #}
       {% endif %}
       {% if loop.index == 1 %}
+        {% include 'partials/poll.njk' %}
         {% include 'partials/seperator.njk' %}
         {% include 'partials/toc.njk' %}
       {% elif loop.index == 2 %}
@@ -90,6 +92,7 @@ eleventyComputed:
       {% endif %}
       {# {% include 'partials/cta.njk' %} #}
     {% else %}
+      {% include 'partials/poll.njk' %}
       {# {% include 'partials/pinterestcard.njk' %} #}
       {# {% include 'partials/newsletter.njk' %} #}
         {% if post.videos and post.videos.length > 0 %}
@@ -99,7 +102,8 @@ eleventyComputed:
       {# adding shopping on the end for short posts #}
       {# {% include 'partials/subscribe.njk' %} #}
       {# {% include 'partials/rating.njk' %} #}
-      {% include "partials/commentspanel.njk" %}{% if (loop.length < 12) %}
+      {% include "partials/commentspanel.njk" %}
+      {% if (loop.length < 12) %}
         {# {% include 'partials/shopping.njk' %} #}
       {% endif %}
       {# {% include 'partials/collections.njk' %} #}
