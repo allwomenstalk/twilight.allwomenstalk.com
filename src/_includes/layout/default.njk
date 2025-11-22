@@ -3,9 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
-        <title>{{ post.title | default(title) }}</title>
-        <meta property="og:title" content="{{ post.viral or post.title or title }}">
-        <meta property="og:description" content="{{ post.description | default(description) }}">
+        <title>{{ post.meta_title or post.title or title }}</title>
         <meta property="og:url" content="{{ post.url | default (url) }}">
         <meta property="og:site_name" content="{{ post.site_name | default(metadata.title) }}">
         <meta name="description" content="{{ post.description | default(metadata.description) }}">

@@ -1,6 +1,12 @@
-<div x-data="{ show: true }" x-show="show" class="relative bg-white border border-gray-200 rounded-lg shadow-sm p-4 mb-4 max-w-xl mx-auto">
+<div x-data="{ 
+    show: true,
+    trackAndOpen() {
+        beacontrack({ type: 'preferred', post_id: '{{post.id}}', action: 'click' });
+        window.open('https://www.google.com/preferences/source?q=allwomenstalk.com', '_blank', 'noopener,noreferrer');
+    }
+}" x-show="show" class="relative bg-white border border-gray-200 rounded-lg shadow-sm p-4 mb-4 max-w-xl mx-auto">
     <div class="flex items-center gap-4">
-        <button @click="beacontrack({ type: 'preferred', post_id: '{{post.id}}', action: 'click' })" class="flex-shrink-0 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded" aria-label="Subscribe to Google Preferred Source">
+        <button @click="trackAndOpen()" class="flex-shrink-0 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded cursor-pointer" aria-label="Subscribe to Google Preferred Source">
             <img
                 alt="Google Preferred Source Banner"
                 loading="lazy"

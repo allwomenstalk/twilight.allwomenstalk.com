@@ -37,7 +37,7 @@ module.exports = function (item) {
       temp.amp_url = `https://${temp.host}/${item.post_name}/amp.html`;
       
       temp.title = item.post_title
-        .replace(/[^a-zA-Z0-9_.:\!\?\&’\-\s]/g, '')
+        .replace(/[^a-zA-Z0-9_.:\!\?\&’\%\-\s]/g, '')
         .trim();
       temp.viral = item.viral_title;
       if (typeof item.post_date === 'string') {
@@ -114,6 +114,12 @@ module.exports = function (item) {
       if (item.meta_description) {
         temp.description = item.meta_description
       }
+
+      // meta_title 
+      if (item.meta_title) {
+        temp.meta_title = item.meta_title
+      }
+      
 
       //makig list for TOC
       var toc = item.post_content
@@ -333,6 +339,7 @@ module.exports = function (item) {
               "dateCreated": temp.date,
               "dateModified": temp.modified,
               "description": temp.description,
+              "meta_title": temp.meta_title,
               "publisher": {
                    "@type": "Organization",
                    "name": "All Women's Talk",
