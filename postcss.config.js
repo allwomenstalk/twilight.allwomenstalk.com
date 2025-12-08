@@ -18,7 +18,8 @@ module.exports = ({ env }) => {
                 mergeLonghand: true,
                 mergeRules: true,
                 minifySelectors: true,
-                minifyParams: true
+                minifyParams: true,
+                minifyFontValues: { removeQuotes: false }
               }],
             }
           : false,

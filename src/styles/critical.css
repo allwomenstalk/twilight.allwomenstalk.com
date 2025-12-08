@@ -6,7 +6,7 @@
 .hero-title,
 .post-title, 
 .hero h1 {
-    font-family: 'Bodoni Moda', serif;
+    font-family: 'Playfair Display', serif !important;
     font-display: optional;
     color: #B77466;
 }

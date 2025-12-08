@@ -6,7 +6,11 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'display': ['"Playfair Display"', 'serif'],
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
