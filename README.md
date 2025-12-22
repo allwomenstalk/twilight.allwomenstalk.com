@@ -59,6 +59,15 @@ To update archivces
 
 node getarchives.js && npm run build && sh archiveupload.sh
 
+## Update homepage only (S3)
+Build once, then upload only `index.html` + shared `*.css` + `js/` + `images/`.
+
+`./homepagedeploy.sh allwomenstalk.com`
+
+Or upload only (no build):
+
+`./homepageupload.sh allwomenstalk.com`
+
 
 # Batch update: 
 
@@ -245,6 +254,43 @@ https://*.pages.dev
 http://127.0.0.1:8088
 http://127.0.0.1:8888
 http://localhost:8085
+
+
+# Search Functionality
+
+The site implements real-time search functionality via a Supabase edge function endpoint.
+
+## Search Endpoint
+- **URL**: `https://olgdvvxouytdchveiaad.supabase.co/functions/v1/search`
+- **Method**: GET
+- **Query Parameter**: `q` (search query string)
+
+## Usage Example
+```javascript
+const apiurl = "https://olgdvvxouytdchveiaad.supabase.co/functions/v1/search";
+const url = `${apiurl}?q=${encodeURIComponent(searchQuery)}`;
+const response = await fetch(url);
+const data = await response.json();
+```
+
+## Response Format
+The endpoint returns results in the following structure:
+```json
+{
+  "success": true,
+  "results": [
+    {
+      "id": "post_id",
+      "title": "Post Title",
+      "excerpt": "Post excerpt...",
+      "url": "/post-url/"
+    }
+  ]
+}
+```
+
+## Implementation
+Search functionality is integrated in `src/_includes/partials/js.njk` and provides real-time search results as users type.
 
 
 # cloudshell 
