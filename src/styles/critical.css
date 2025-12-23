@@ -3,16 +3,14 @@
 @tailwind components;
 
 /* Critical Typography */
-.hero-title,
-.post-title, 
-.hero h1 {
+.post-title {
     font-family: 'Playfair Display', serif !important;
     font-display: optional;
     color: #B77466;
 }
 
-.post-title {
-    @apply text-2xl mb-2 text-center;
+.post .post-title {
+    @apply text-2xl mb-2 text-center font-normal;
 }
 
 /* Critical Loading States */
