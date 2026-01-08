@@ -155,33 +155,120 @@ eleventyComputed:
       {%- else -%}
         items : [],
       {%- endif -%}
-      shown: 3,
+      shown: 0,
+      maxShown: 3,
+      observer: null,
+      loadTimer: null,
+      loaded: false,
+      revealTimer: null,
       async init() {
         console.log('faq', this.items)
         if (this.items.length === 0) {
-          this.loadData();
+          this.observeHeading();
+        } else {
+          this.shuffleItems();
+          this.revealItems();
         }
       },
-      loadData() {
-        url = 'https://faq.azo.workers.dev/  {{ post.id }}/'
+      revealItems() {
+        if (this.revealTimer) return;
+        const total = this.items ? this.items.length : 0;
+        if (total === 0) return;
+        const targetCount = Math.min(this.maxShown, total);
+        this.revealTimer = setInterval(() => {
+          if (this.shown >= targetCount) {
+            clearInterval(this.revealTimer);
+            this.revealTimer = null;
+            return;
+          }
+          this.shown += 1;
+        }, 500);
+      },
+      shuffleItems() {
+        if (!this.items || this.items.length < 2) return;
+        for (let i = this.items.length - 1; i > 0; i -= 1) {
+          const j = Math.floor(Math.random() * (i + 1));
+          const temp = this.items[i];
+          this.items[i] = this.items[j];
+          this.items[j] = temp;
+        }
+      },
+      findHeadingTarget() {
+        let node = this.$el ? this.$el.previousElementSibling : null;
+        while (node) {
+          if (node.matches && node.matches('h2, h3')) return node;
+          if (node.querySelector) {
+            const found = node.querySelector('h2, h3');
+            if (found) return found;
+          }
+          node = node.previousElementSibling;
+        }
+        return this.$el || null;
+      },
+      observeHeading() {
+        if (this.loaded || this.observer) return;
+        const target = this.findHeadingTarget();
+        if (!target || !window.IntersectionObserver) {
+          this.loadData();
+          return;
+        }
+        this.observer = new IntersectionObserver((entries) => {
+          const entry = entries[0];
+          if (!entry) return;
+          if (entry.isIntersecting) {
+            if (this.loadTimer) return;
+            this.loadTimer = setTimeout(() => {
+              this.loaded = true;
+              this.loadTimer = null;
+              this.loadData();
+              if (this.observer) this.observer.disconnect();
+            }, 1000);
+          } else if (this.loadTimer) {
+            clearTimeout(this.loadTimer);
+            this.loadTimer = null;
+          }
+        }, { threshold: 0.6 });
+        this.observer.observe(target);
+      },
+      async loadData() {
+        const cdnUrl = 'https://pub-1969d309989b4ee98dadd29698bd2213.r2.dev/{{ post.id }}.json';
+        const workerUrl = 'https://faq.azo.workers.dev/{{ post.id }}/';
+
         try {
-          fetch(url)
-            .then(response => response.json())
-            .then(data => {
-              console.log('faq', data)
-              this.items = data.list
-            })
-            .catch(error => {
-              console.error('Error:', error);
-            });
+          const cdnResponse = await fetch(cdnUrl);
+          if (cdnResponse.ok) {
+            const cdnData = await cdnResponse.json();
+            console.log('faq', cdnData);
+            this.items = cdnData.list || [];
+            this.shuffleItems();
+            this.revealItems();
+            return;
+          }
+          if (cdnResponse.status !== 404) {
+            console.warn('FAQ CDN request failed:', cdnResponse.status);
+            return;
+          }
         } catch (error) {
-          console.error('Error:', error);
+          console.warn('FAQ CDN error:', error);
+        }
+
+        try {
+          const response = await fetch(workerUrl);
+          if (!response.ok) {
+            console.warn('FAQ worker request failed:', response.status);
+            return;
+          }
+          const data = await response.json();
+          console.log('faq', data);
+          this.items = data.list || [];
+          this.shuffleItems();
+          this.revealItems();
+        } catch (error) {
+          console.error('FAQ worker error:', error);
         }
       },
       report(index) {
-        this.shown < this.items.length
-          ? this.shown ++
-          : this.shown = this.shown;
+        this.shown = Math.min(this.shown, this.maxShown);
         item = this.items[index];
         item.index = index;
         item.total = this.items.length;

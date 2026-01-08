@@ -8,7 +8,7 @@
           dark:-outline-offset-1 dark:outline-white/10">
         <ul role="list" class="divide-y divide-gray-200 dark:divide-white/10">
           {% for item in post.faq %}
-            <li x-show="shown>={{ loop.index }}" x-data="{show:false, index:{{ loop.index }} }" class="px-2 py-2 sm:px-4">
+            <li x-show="shown>={{ loop.index }}" x-transition x-data="{show:false, index:{{ loop.index }} }" class="px-2 py-2 sm:px-4">
               <dl>
                 <dt>
                   <!-- Expand/collapse question button -->
@@ -18,28 +18,18 @@
                     class="flex w-full items-start justify-between text-left text-gray-900 dark:text-white"
                     aria-controls="faq-0"
                     aria-expanded="false">
-                    <span class="text-base font-semibold leading-7">
+                    <span class="min-w-0 flex-1 truncate text-base font-semibold leading-7">
                       {{ item.question }}
                     </span>
-                    <span class="ml-6 flex h-7 items-center">
+                    <span class="ml-4 flex h-7 items-center shrink-0">
                       <svg
                         class="size-4"
-                        :class="{hidden:show}"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 16 16"
                         fill="currentColor"
                         aria-hidden="true">
                         <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0
                         0-1.5h-3.5v-3.5Z"/>
-                      </svg>
-                      <svg
-                        class="size-4"
-                        :class="{hidden:!show}"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 16 16"
-                        fill="currentColor"
-                        aria-hidden="true">
-                        <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z"/>
                       </svg>
                     </span>
                   </button>
@@ -53,8 +43,9 @@
             <template x-for="(item, index) in items">
               <li
                 x-show="shown>=(index+1)&&item"
+                x-transition
                 x-data="{show:false}"
-                class="px-4 py-4 sm:px-6 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                class="px-4 py-4 sm:px-6">
                 <dl>
                   <dt>
                     <button
@@ -63,26 +54,16 @@
                       class="flex w-full items-start justify-between text-left text-gray-900 dark:text-white"
                       aria-controls="faq-0"
                       aria-expanded="false">
-                      <span x-text="item.question" class="text-base font-semibold leading-7"></span>
-                      <span class="ml-6 flex h-7 items-center">
+                      <span x-text="item.question" class="min-w-0 flex-1 truncate text-base font-semibold leading-7"></span>
+                      <span class="ml-4 flex h-7 items-center shrink-0">
                         <svg
                           class="size-4"
-                          :class="{hidden:show}"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 16 16"
                           fill="currentColor"
                           aria-hidden="true">
                           <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0
                           0-1.5h-3.5v-3.5Z"/>
-                        </svg>
-                        <svg
-                          class="size-4"
-                          :class="{hidden:!show}"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 16 16"
-                          fill="currentColor"
-                          aria-hidden="true">
-                          <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z"/>
                         </svg>
                       </span>
                     </button>
