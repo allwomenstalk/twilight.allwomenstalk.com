@@ -163,17 +163,16 @@ eleventyComputed:
       revealTimer: null,
       async init() {
         console.log('faq', this.items)
-        if (this.items.length === 0) {
-          this.observeHeading();
-        } else {
+        if (this.items.length > 0) {
           this.shuffleItems();
-          this.revealItems();
         }
+        this.observeHeading();
       },
       revealItems() {
         if (this.revealTimer) return;
         const total = this.items ? this.items.length : 0;
         if (total === 0) return;
+        this.shuffleItems();
         const targetCount = Math.min(this.maxShown, total);
         this.revealTimer = setInterval(() => {
           if (this.shown >= targetCount) {
@@ -193,23 +192,15 @@ eleventyComputed:
           this.items[j] = temp;
         }
       },
-      findHeadingTarget() {
-        let node = this.$el ? this.$el.previousElementSibling : null;
-        while (node) {
-          if (node.matches && node.matches('h2, h3')) return node;
-          if (node.querySelector) {
-            const found = node.querySelector('h2, h3');
-            if (found) return found;
-          }
-          node = node.previousElementSibling;
-        }
-        return this.$el || null;
-      },
       observeHeading() {
         if (this.loaded || this.observer) return;
-        const target = this.findHeadingTarget();
+        const target = this.$el || null;
         if (!target || !window.IntersectionObserver) {
-          this.loadData();
+          if (this.items.length > 0) {
+            this.revealItems();
+          } else {
+            this.loadData();
+          }
           return;
         }
         this.observer = new IntersectionObserver((entries) => {
@@ -220,7 +211,11 @@ eleventyComputed:
             this.loadTimer = setTimeout(() => {
               this.loaded = true;
               this.loadTimer = null;
-              this.loadData();
+              if (this.items.length > 0) {
+                this.revealItems();
+              } else {
+                this.loadData();
+              }
               if (this.observer) this.observer.disconnect();
             }, 1000);
           } else if (this.loadTimer) {
