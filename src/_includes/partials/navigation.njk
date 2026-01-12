@@ -86,18 +86,7 @@
                     </div>
                   {% endfor %}
                 </div>
-                <div>
-                  <p id="mobile-categories-heading" class="font-medium text-gray-900">Categories</p>
-                  <ul role="list" aria-labelledby="mobile-categories-heading" class="mt-6">
-                    {% for category in categories %}
-                      <li class="flex w-full">
-                        <a
-                          href="https://{{ category._id }}.allwomenstalk.com/"
-                          class="_noaff text-gray-500 w-full -ml-2 hover:bg-gray-200 p-2 rounded">{{ category.name }}</a>
-                      </li>
-                    {% endfor %}
-                  </ul>
-                </div>
+                <div></div>
               </div>
               <div class="grid grid-cols-1 gap-x-6 gap-y-10">{#                 
                                                                                                 <div>
@@ -285,5 +274,30 @@
           </div>
         </div>
       </nav>
+      <div class="">
+        <div class="mx-auto px-4">
+          {% set badge_base = "inline-flex items-center rounded-full px-2 py-1 text-xs font-medium ring-1 ring-inset" %}
+          {% set badge_colors = [
+            "bg-gray-50 text-gray-600 ring-gray-500/10 dark:bg-gray-400/10 dark:text-gray-400 dark:ring-gray-400/20",
+            "bg-red-50 text-red-700 ring-red-600/10 dark:bg-red-400/10 dark:text-red-400 dark:ring-red-400/20",
+            "bg-yellow-50 text-yellow-800 ring-yellow-600/20 dark:bg-yellow-400/10 dark:text-yellow-500 dark:ring-yellow-400/20",
+            "bg-green-50 text-green-700 ring-green-600/20 dark:bg-green-400/10 dark:text-green-400 dark:ring-green-500/20",
+            "bg-blue-50 text-blue-700 ring-blue-700/10 dark:bg-blue-400/10 dark:text-blue-400 dark:ring-blue-400/30",
+            "bg-indigo-50 text-indigo-700 ring-indigo-700/10 dark:bg-indigo-400/10 dark:text-indigo-400 dark:ring-indigo-400/30",
+            "bg-purple-50 text-purple-700 ring-purple-700/10 dark:bg-purple-400/10 dark:text-purple-400 dark:ring-purple-400/30",
+            "bg-pink-50 text-pink-700 ring-pink-700/10 dark:bg-pink-400/10 dark:text-pink-400 dark:ring-pink-400/20"
+          ] %}
+          <div class="flex gap-2 overflow-x-auto py-3 whitespace-nowrap">
+            {% for category in categories | shuffle %}
+              {% set badge_color = badge_colors[loop.index0 % (badge_colors | length)] %}
+              <a
+                href="https://{{ category._id }}.allwomenstalk.com/"
+                class="_noaff {{ badge_base }} {{ badge_color }}">
+                {{ category.name }}
+              </a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
     </header>
   </div>
