@@ -11,15 +11,17 @@ const API_SECRET = process.env.DATA_API_SECRET;
  */
 const aggregate = async (cluster, database, collection, pipeline, maxRetries = 3) => {
   console.log('API URL:', API_URL);
+  const clusterName = cluster || 'cluster1';
 
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
     try {
       console.log(`Calling ${API_URL}/aggregate (Attempt ${attempt}/${maxRetries})`)
-      payload = {
-          database,
-          collection,
-          pipeline
-        }
+      const payload = {
+        cluster: clusterName,
+        database,
+        collection,
+        pipeline
+      };
       console.log(payload)
 
       const response = await axios.post(
