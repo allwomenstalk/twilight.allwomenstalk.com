@@ -25,7 +25,7 @@ async function saveCollectionData(collectionName, filePath) {
       }
     ];
     // const data = await client.db('aws').collection(collectionName).aggregate(pipeline).toArray();
-    const data = await aggregate('Cluster0', 'aws', collectionName, pipeline);
+    const data = await aggregate('cluster1', 'aws', collectionName, pipeline);
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
     console.log('Data saved to', filePath);
   } catch (err) {

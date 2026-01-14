@@ -42,7 +42,8 @@ module.exports = [{
         'foreignField': '_id', 
         'as': 'related'
     }
-}, { //removing posts without related with false and keep with true 
+}, 
+{ //removing posts without related with false and keep with true 
   '$unwind': {
     'path': '$related',
     'preserveNullAndEmptyArrays': true 
@@ -53,7 +54,8 @@ module.exports = [{
     'related': '$related.posts', 
     // 'interlink': '$related.interlink'
   }
-},{
+},
+{
   '$lookup': {
     'from': 'comments', 
     'let': {
@@ -83,19 +85,22 @@ module.exports = [{
     ], 
     'as': 'comments'
   },
-},{
+},
+{
   '$lookup': {
     from: 'classify',
     localField: '_id',
     foreignField: '_id',
     as: 'classify'
   }
-},{
+},
+{
   '$unwind': {
       path: '$classify',
       preserveNullAndEmptyArrays: true
     }
-},{
+},
+{
   '$lookup': {
     from: 'crosslinks',
     localField: '_id',
@@ -103,14 +108,14 @@ module.exports = [{
     as: 'crosslinks'
   }
 },
-// {
-//   '$lookup': {
-//     from: 'tv',
-//     localField:"_id",
-//     foreignField: 'post_id',
-//     as: 'videos'
-//   }
-// },
+{
+  '$lookup': {
+    from: 'tv',
+    localField:"_id",
+    foreignField: 'post_id',
+    as: 'videos'
+  }
+},
 {
   '$lookup': {
     'from': 'faq', 

@@ -77,7 +77,7 @@ async function generateBatch() {
   // console.log('Pipeline:', JSON.stringify(pipeline, null, 2));
   let retult = false
   try {
-    result = await aggregate('Cluster0', 'aws', 'posts', pipeline);
+    result = await aggregate('cluster1', 'aws', 'posts', pipeline);
     // console.log("++++++++++++++++++")
     // console.log('result', result)
     console.log("------------------")

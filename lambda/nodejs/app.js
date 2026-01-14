@@ -22,6 +22,7 @@ const DATAPI_CONFIG = {
  */
 async function callDATAPI(database, collection, pipeline) {
   const data = JSON.stringify({
+    cluster: 'cluster1',
     database,
     collection,
     pipeline

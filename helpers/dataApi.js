@@ -22,7 +22,7 @@ const aggregate = async (cluster, database, collection, pipeline, maxRetries = 3
         collection,
         pipeline
       };
-      console.log(payload)
+      console.log('Data API payload:', JSON.stringify(payload, null, 2))
 
       const response = await axios.post(
         `${API_URL}/aggregate`,
@@ -40,6 +40,12 @@ const aggregate = async (cluster, database, collection, pipeline, maxRetries = 3
       return response.data.result;
       
     } catch (error) {
+      const status = error.response?.status;
+      const responseData = error.response?.data;
+      const responseHeaders = error.response?.headers;
+      console.log('Data API error status:', status);
+      console.log('Data API error headers:', responseHeaders);
+      console.log('Data API error body:', responseData);
       // Handle the case where API returns 404 for no results - this is not an actual error
       if (error.response?.status === 404 && 
           error.response?.data?.message === 'No aggregation results found') {

@@ -16,7 +16,7 @@ async function getCategories() {
     // const database = client.db('aws');
     // const collection = database.collection('categories');
     // return collection.find({}).toArray();
-    return await aggregate('Cluster0', 'aws', 'categories', [{ $match: {} }]);
+    return await aggregate('cluster1', 'aws', 'categories', [{ $match: {} }]);
 }
 
 async function getPostsForCategory(categoryId) {
@@ -63,7 +63,7 @@ async function getPostsForCategory(categoryId) {
     ];
 
     // return collection.aggregate(pipeline).toArray();
-    return await aggregate('Cluster0', 'aws', 'posts', pipeline);
+    return await aggregate('cluster1', 'aws', 'posts', pipeline);
 }
 
 function SaveData(name, arr) {
