@@ -63,7 +63,7 @@
           <span class="flex items-center whitespace-nowrap">
             <span class="text-gray-600 mr-1">By</span>
             <a href="https://allwomenstalk.com/profile/{{ post.author.id }}/" class="text-gray-800 hover:text-pink-600 font-medium">{{ post.author.name }}</a>
-            {% if post.date and (post.date | isWithinLastYear) %}
+            {% if post.date and (post.date ) %}
               <span class="text-gray-600 ml-2">
                 • {{ post.date | formatDate }}
               </span>

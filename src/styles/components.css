@@ -1,6 +1,46 @@
 /* Shared Component Styles - Essential cross-page components */
 @tailwind components;
 
+/* Nav background fade */
+.nav-fade {
+    position: relative;
+    z-index: 0;
+}
+
+.nav-fade::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 220px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 55%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 55%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.nav-fade > * {
+    position: relative;
+    z-index: 1;
+}
+
+.nav-blur-stack {
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 240px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(26px);
+    -webkit-backdrop-filter: blur(26px);
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.55) 55%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.55) 55%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+    z-index: 0;
+}
+
 /* Typography Components */
 .post-number {
     @apply block text-[6em] leading-[1.15em] font-thin text-center font-sans;

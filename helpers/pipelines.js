@@ -104,7 +104,7 @@ pipeline_filter = [
     '$match': {
       // '_id': new ObjectId('52a90013d65908c77cf4366a')
       // '_id': { $in:  ids.map(id=>new ObjectId(id)) },
-      'post_name': 'intermittent-fasting-hacks-women-needs',
+      'post_name': '7-mistakes-professional-makeup-artists-set-workflow-alina',
       
       
       // 'image_url': new RegExp('_400x400.jpg|_400x300.jpg|720x720.jpg')
