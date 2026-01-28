@@ -8,6 +8,8 @@
         <meta property="og:site_name" content="{{ post.site_name | default(metadata.title) }}">
         {% if isArchive and not post %}
             <meta property="og:video" content="https://pub-56c58d9f0cd64f4ea0f67eba69a26e7b.r2.dev/allwomenstalk.mp4">
+            <meta property="og:video:width" content="1280">
+            <meta property="og:video:height" content="720">
         {% endif %}
         <meta name="description" content="{{ post.description | default(metadata.description) }}">
         <link rel="canonical" href="{{ post.url | default(url) }}">

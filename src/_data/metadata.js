@@ -22,6 +22,11 @@ module.exports =
           "url": "https://allwomenstalk.com/ads.html"
       },
       {
+          "name": "Exclusive Media Packages",
+          "url": "https://allwomenstalk.com/packages/"
+      },
+      
+      {
           "name": "Privacy Policy",
           "url": "https://allwomenstalk.com/policy.html"
       },
