@@ -169,11 +169,14 @@
 
             bannerinit () {
                 console.log('banner init');
-                fetch('https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/banner')
+                fetch('https://pub-ff359827c45e40a7b6e9bad1878cd18a.r2.dev/banners.json')
                 .then(response => response.json())
                 .then(data => {
-                    this.banner = data;
-                    this.banner.show = true;
+                    if (Array.isArray(data) && data.length) {
+                        const shuffled = [...data].sort(() => Math.random() - 0.5);
+                        this.banner = shuffled[0];
+                        this.banner.show = true;
+                    }
                 });
             },
 
@@ -992,5 +995,3 @@ https://pub-ff6bb52033e3451e83c2df5c4e8c073f.r2.dev/52a792a8-13a9-4c7f-be2c-9fb7
 {% if post.ampyt %}
 <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 {% endif %}
-
-
