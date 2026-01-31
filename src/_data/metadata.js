@@ -22,8 +22,8 @@ module.exports =
           "url": "https://allwomenstalk.com/ads.html"
       },
       {
-          "name": "Exclusive Media Packages",
-          "url": "https://allwomenstalk.com/packages/"
+          "name": "Exclusive PR Packages",
+          "url": "https://allwomenstalk.com/pr/"
       },
       
       {
