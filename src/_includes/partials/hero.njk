@@ -18,7 +18,7 @@
             {{ post.comment_count }} Comments
           </a>
           {% else %}
-          • <button @click="commentspanel=true;getComments()" type="button" class=" px-2.5 py-1.5 text-sm font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600">
+          • <button @click="getComments(true); $nextTick(() => document.getElementById('comments')?.scrollIntoView({ behavior: 'smooth', block: 'start' }))" type="button" class=" px-2.5 py-1.5 text-sm font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600">
             {{ post.comment_count }} Comments
           </button>
           {% endif %}

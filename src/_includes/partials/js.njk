@@ -1,22 +1,22 @@
 {# delay alpinejs #}
 
 
-{# <script src="https://account.allwomenstalk.com/js/cookiecross.js" defer></script> #}
-{# {{!-- loadJs('https://account.allwomenstalk.com/js/cookiecross.js'); --}}
-{{!-- loadJs('https://account.allwomenstalk.com/js/profile.js'); --}} #}
-
 <script> 
     var converter = null;
+    const SUPABASE_URL = 'https://olgdvvxouytdchveiaad.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9sZ2R2dnhvdXl0ZGNodmVpYWFkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTE5MDA1OTEsImV4cCI6MjA2NzQ3NjU5MX0.Y8QlgS1L8oaxdNuRWtAF2QnCewXUE0dS91MSt_BtU_8';
 
     function data() {
         return {
             title:"Other",
             list:{},
             user: false,
+            supabase: null,
             partials: ["azo","popular","recent"],
             comment: {
                 disable: false,
                 loadall: true,
+                use_profile_identity: false,
             },
             comments: [],
             commentspanel: false,
@@ -55,6 +55,7 @@
                 this.comment.comment_author = window.localStorage.getItem('comment_author') || '';
                 this.comment.comment_author_email = window.localStorage.getItem('comment_author_email') || '';
                 this.authcheck();
+                this.syncCommentIdentityFromProfile();
                 // watch query 
                 {# this.$watch('search.query', () => {
                     console.log('search obj', this.search);
@@ -265,105 +266,153 @@
 
             async authcheck() {
                 console.log('authcheck');
-                const profileCookieValue = getCookieValue('realm:profile');
-                console.log('profileCookieValue', profileCookieValue);
-                if (profileCookieValue) {
-                    getRealmCookies();
-                    this.user = JSON.parse(profileCookieValue);
-                    console.log('user', this.user);
-                    await this.loadRealmSDK();
-                    this.initRealmApp();
-                }
+                await this.loadSupabaseSDK();
+                this.initSupabaseClient();
+                const { data, error } = await this.supabase.auth.getSession();
+                if (error) console.error('supabase getSession error', error);
+                this.user = data?.session?.user || false;
+                this.syncCommentIdentityFromProfile();
+                console.log('supabase user', this.user);
+                this.supabase.auth.onAuthStateChange((_event, session) => {
+                    this.user = session?.user || false;
+                    this.syncCommentIdentityFromProfile();
+                });
             },
 
-            async loadRealmSDK() {
-                // Load the Realm Web SDK dynamically
-                await loadJs('https://unpkg.com/realm-web/dist/bundle.iife.js');
-                // Wait for the Realm object to be available on the global scope
+            getAuthorizedProfile() {
+                if (!this.user) return null;
+                const data = this.user?.user_metadata || this.user?.data || this.user?._profile?.data || {};
+                const email = String(this.user?.email || data.email || '').trim();
+                const metadataName = String(
+                    data.full_name ||
+                    data.name ||
+                    data.display_name ||
+                    data.first_name ||
+                    data.username ||
+                    ''
+                ).trim();
+                const emailName = email.includes('@') ? email.split('@')[0] : '';
+                const fallbackName = emailName || 'Reader';
+                const name = metadataName || fallbackName;
+                return {
+                    name,
+                    email,
+                };
+            },
+
+            syncCommentIdentityFromProfile() {
+                const profile = this.getAuthorizedProfile();
+                this.comment.use_profile_identity = false;
+                if (!profile) return;
+                const profileName = (profile.name || '').trim();
+                const profileEmail = (profile.email || '').trim();
+                if (profileName.length >= 1) {
+                    this.comment.comment_author = profileName;
+                    if (profileEmail) this.comment.comment_author_email = profileEmail;
+                    this.comment.use_profile_identity = true;
+                    return;
+                }
+                if (profileEmail) this.comment.comment_author_email = profileEmail;
+            },
+
+            async loadSupabaseSDK() {
+                await loadJs('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2');
                 await new Promise((resolve) => {
-                    const checkRealm = setInterval(() => {
-                        if (window.Realm) {
-                            clearInterval(checkRealm);
-                            console.log('realm-web loaded');
+                    const checkSupabase = setInterval(() => {
+                        if (window.supabase?.createClient) {
+                            clearInterval(checkSupabase);
+                            console.log('supabase-js loaded');
                             resolve();
                         }
                     }, 100);
                 });
             },
 
-            async initRealmApp() {
-                // Initialize the Realm app and define the bookmark function
-                console.log('initRealmApp');
-                window.app = new Realm.App({ id: 'allwomenstalk-ebogu' });
-                console.log('app', window.app);
+            initSupabaseClient() {
+                if (this.supabase) return;
+                this.supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+                    auth: {
+                        persistSession: true,
+                        autoRefreshToken: true,
+                        detectSessionInUrl: true,
+                    },
+                });
+                console.log('supabase client ready');
             },
 
             bookmark(postId, saved) {
                 console.log('Bookmark function called', postId || 'none');
                 if (!postId) return;
                 if (!this.user) {
-                    window.location.href = 'https://auth.allwomenstalk.com/signin?redirect=' + window.location.href;
+                    window.location.href = 'https://allwomenstalk.com/app/signin?redirect=' + encodeURIComponent(window.location.href);
+                    return;
                 }
-                if (this.bookmarked) window.location.href = 'https://account.allwomenstalk.com/signin/saved/';
-
-                // Bookmark function logic using the Realm app
-                // console.log('user', app);
-                // console.log('currentUser', app.currentUser);
-                const mongo = app.currentUser.mongoClient('mongodb-atlas');
-                bookmarks = mongo.db('aws').collection('bookmarks');
-                // insert id 
-                bookmarks.updateOne(
-                    { post_id: postId, account_id: app.currentUser.id },
-                    { $set: { 
-                        post_id: postId, 
-                        type: 'post',
-                        account_id: app.currentUser.id } },
-                    { upsert: true }
-                );
-                console.log('bookmarked', postId);
-                this.bookmarked = true;
-
+                if (this.bookmarked || saved) {
+                    window.location.href = 'https://allwomenstalk.com/app/saved/';
+                    return;
+                }
+                window.location.href = 'https://allwomenstalk.com/app/saved/';
             }, 
             savepoint(postId, title, index, saved) {
                 console.log('savepoint', postId, title, index, saved);
-                if (!this.user) window.location.href = 'https://auth.allwomenstalk.com/signin?redirect=' + window.location.href;
-                if (saved) window.location.href = 'https://account.allwomenstalk.com/signin/saved/';
-                const mongo = app.currentUser.mongoClient('mongodb-atlas');
-                bookmarks = mongo.db('aws').collection('bookmarks');
-                // insert id 
-                bookmarks.updateOne(
-                    { post_id: postId, account_id: app.currentUser.id, index: index},
-                    { $set: { 
-                        post_id: postId, 
-                        title: title.trim(), 
-                        index: index,
-                        type: 'point',
-                        account_id: app.currentUser.id } },
-                    { upsert: true }
-                );
-                console.log('saved point', title);
+                if (!this.user) {
+                    window.location.href = 'https://allwomenstalk.com/app/signin?redirect=' + encodeURIComponent(window.location.href);
+                    return;
+                }
+                if (saved) {
+                    window.location.href = 'https://allwomenstalk.com/app/saved/';
+                    return;
+                }
+                window.location.href = 'https://allwomenstalk.com/app/saved/';
+            },
+
+            async getAuthHeaders() {
+                let bearer = SUPABASE_ANON_KEY;
+                try {
+                    if (this.supabase) {
+                        const { data } = await this.supabase.auth.getSession();
+                        const accessToken = data?.session?.access_token;
+                        if (accessToken) bearer = accessToken;
+                    }
+                } catch (error) {
+                    console.error('Unable to read auth session for request', error);
+                }
+                return {
+                    'apikey': SUPABASE_ANON_KEY,
+                    'Authorization': `Bearer ${bearer}`,
+                };
             },
 
             async getComments(all){
                 console.log('getComments', this.user);
-                api = `https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/comments?postid={{post.id}}`;
+                const postId = '{{post.id}}';
+                let api = `https://olgdvvxouytdchveiaad.supabase.co/functions/v1/comments?postid=${encodeURIComponent(postId)}`;
                 if (all) {
                     api = api + '&all=true';
                 }
-                fetch(api)
+                const authHeaders = await this.getAuthHeaders();
+                fetch(api, {
+                    headers: authHeaders,
+                })
                 .then(response => response.json())
                 .then(data => {
+                    if (!Array.isArray(data)) {
+                        console.error('Invalid comments response:', data);
+                        return;
+                    }
                     // convert date to timestamp
                     data.forEach((item, i) => {
                         data[i].comment_date = new Date(item.comment_date).getTime();
                     });
-                    this.comments = data.sort((b, a) => b.comment_date - a.comment_date);
+                    this.comments = data.sort((a, b) => a.comment_date - b.comment_date);
                     this.commentstatic = false;
                     (this.comments.length < 100) ? this.comment.loadall = false : this.comment.loadall = true;
                     if (all) this.comment.loadall = false;
-                    setTimeout(() => {
-                        if(!all) this.$refs.commentList.scrollTop = this.$refs.commentList.scrollHeight;
-                    }, 100); // Adjust the delay as necessary.
+                    if (!all) {
+                        setTimeout(() => {
+                            document.getElementById('comments')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }, 100);
+                    }
                                         
                 });
             },
@@ -372,6 +421,7 @@
                     alert('Comment too short');
                     return;
                 }
+                this.syncCommentIdentityFromProfile();
                 this.comment.disable = true;
                 this.comment.postid = '{{post.id}}';
                 console.log('comment', this.comment);
@@ -381,11 +431,13 @@
                     {# const result = await user.callFunction(functionName, ...args);
                     console.log(`Called ${functionName}(${args.join(', ')})`, result); #}
 
-                apiurl = 'https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/comment';
+                apiurl = 'https://olgdvvxouytdchveiaad.supabase.co/functions/v1/comments';
+                const authHeaders = await this.getAuthHeaders();
                 fetch(apiurl, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
+                        ...authHeaders,
                     },
                     body: JSON.stringify(this.comment),
                 })
@@ -393,15 +445,14 @@
                 .then(data => {
                     console.log('Success:', data);
                     if (data.error) {
-                        try {
-                            msg = JSON.parse(data.error)
-                        } catch (e) {
-                            msg = data.error
-                        }
                         this.comment.disable = false;
-                        alert(msg.message || msg )
+                        alert(data.error)
                     } else {
-                        this.comments.push({...this.comment});
+                        this.comments.push({
+                            ...this.comment,
+                            ...data,
+                            comment_date: new Date(data.comment_date || Date.now()).getTime()
+                        });
                         this.comment.comment_content = '';
                         this.comment.disable = false;
                     }
@@ -912,51 +963,6 @@
 
 
 
-
-
-function getRealmCookies () {
-    // Get the values from the cookies
-    var userId = getCookie('realm:userId');
-    var deviceId = getCookie('realm:deviceId');
-    var accessToken = getCookie('realm:accessToken');
-    var profile = getCookie('realm:profile');
-    var providerType = getCookie('realm:providerType');
-    var refreshToken = getCookie('realm:refreshToken');
-    var logout = getCookie('realm:logout');
-    console.log("logout cookie: " + logout)
-    // Set the values in localStorage and return logout status
-    if (userId !== undefined) {
-        var userIds = JSON.stringify([userId]);
-        localStorage.setItem('realm-web:app(allwomenstalk-ebogu):userIds', userIds);
-    } else {
-        return logout? true: false;
-    }
-
-    if (deviceId !== undefined) {
-        localStorage.setItem('realm-web:app(allwomenstalk-ebogu):deviceId', deviceId);
-      }
-      if (accessToken !== undefined) {
-        localStorage.setItem('realm-web:app(allwomenstalk-ebogu):user(' + userId + '):accessToken', accessToken);
-      }
-      if (profile !== undefined) {
-        localStorage.setItem('realm-web:app(allwomenstalk-ebogu):user(' + userId + '):profile', profile);
-      }
-      if (providerType !== undefined) {
-        localStorage.setItem('realm-web:app(allwomenstalk-ebogu):user(' + userId + '):providerType', providerType);
-      }
-      if (refreshToken !== undefined) {
-        localStorage.setItem('realm-web:app(allwomenstalk-ebogu):user(' + userId + '):refreshToken', refreshToken);
-      }
-      
-    // Function to get a cookie by name
-    function getCookie(name) {
-        var value = "; " + document.cookie;
-        var parts = value.split("; " + name + "=");
-        if (parts.length == 2) return parts.pop().split(";").shift();
-    }
-
-   
-}
 
 
 bg =`https://pub-ff6bb52033e3451e83c2df5c4e8c073f.r2.dev/73df9d6f-599e-471a-8fec-271e350ff1d1/0_3.png

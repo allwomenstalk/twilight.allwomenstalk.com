@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Simple 11ty template with tailwind",
   "scripts": {
+    "comments": "node getcomments.js",
     "archives": "node --max-old-space-size=4096 getarchives.js",
     "start": "run-p start:*",
     "start:eleventy": "eleventy --serve",

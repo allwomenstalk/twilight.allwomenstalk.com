@@ -1,134 +1,122 @@
 ---
 layout: layout/default.njk
-url: {{metadata.host}}
+url: /login/
 ---
 
+<main x-data="loginData()" class="mx-auto max-w-xl px-6 py-10">
+  <h1 class="text-2xl font-bold">Supabase Login (Dev)</h1>
+  <p class="mt-2 text-sm text-gray-600">Use email OTP to sign in on localhost.</p>
 
-<main x-data="logindata"> 
-    <h2> Login page </h2>
-    <template x-if="user">
-        <p x-text="user._profile.data.email"></p>
-    </template>
-    <button @click="login()">Login</button>
-    <button @click="logout()">Logout</button>
+  <div class="mt-6 grid gap-3">
+    <input x-model="email" type="email" placeholder="Email" class="block w-full rounded-md border-gray-300 px-3 py-2 text-sm" />
+    <input x-show="codeSent" x-model="otp" type="text" inputmode="numeric" maxlength="6" placeholder="6-digit OTP" class="block w-full rounded-md border-gray-300 px-3 py-2 text-sm" />
+    <div class="flex gap-2">
+      <button
+        x-show="!codeSent"
+        @click="sendOtp"
+        class="rounded-md bg-pink-600 px-3 py-2 text-sm font-semibold text-white"
+      >Send OTP</button>
+      <button
+        x-show="codeSent"
+        @click="verifyOtp"
+        :disabled="otp.trim().length < 6"
+        :class="{ 'opacity-60 cursor-not-allowed': otp.trim().length < 6 }"
+        class="rounded-md bg-pink-600 px-3 py-2 text-sm font-semibold text-white"
+      >Log in</button>
+      <button
+        x-show="codeSent"
+        @click="sendOtp"
+        class="rounded-md bg-pink-100 px-3 py-2 text-sm font-semibold text-pink-700"
+      >Resend code</button>
+      <button @click="logout" class="rounded-md bg-gray-200 px-3 py-2 text-sm font-semibold text-gray-900">Logout</button>
+    </div>
+  </div>
+
+  <template x-if="user">
+    <div class="mt-6 rounded-md border border-green-200 bg-green-50 p-3 text-sm">
+      Logged in as: <strong x-text="user.email"></strong>
+    </div>
+  </template>
+
+  <template x-if="message">
+    <p class="mt-3 text-sm" x-text="message"></p>
+  </template>
 </main>
 
 <script src="//unpkg.com/alpinejs" defer></script>
-<script src="https://unpkg.com/realm-web/dist/bundle.iife.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
-const app = new Realm.App({ id: 'allwomenstalk-ebogu' });
+const SUPABASE_URL = 'https://olgdvvxouytdchveiaad.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9sZ2R2dnhvdXl0ZGNodmVpYWFkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTE5MDA1OTEsImV4cCI6MjA2NzQ3NjU5MX0.Y8QlgS1L8oaxdNuRWtAF2QnCewXUE0dS91MSt_BtU_8';
 
-function logindata() {
-    return {
-        email: 's@kaushan.com',
-        password: 'newPassw0rd',
-        user: null,
+function loginData() {
+  return {
+    email: '',
+    otp: '',
+    codeSent: false,
+    user: null,
+    message: '',
+    supabase: null,
 
-        init() {
-            console.log('login init')
+    async init() {
+      this.supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+        auth: {
+          persistSession: true,
+          autoRefreshToken: true,
+          detectSessionInUrl: true,
         },
+      });
+      const { data } = await this.supabase.auth.getUser();
+      this.user = data?.user || null;
+      this.supabase.auth.onAuthStateChange((_event, session) => {
+        this.user = session?.user || null;
+      });
+    },
 
-        login: async function() {
-            const credentials = Realm.Credentials.emailPassword(this.email, this.password);
-            try {
-                const user = await app.logIn(credentials);
-                console.log(user);
-                this.user = user;
-                console.log(this.user._profile.data.email)
-                setCookies()
-            } catch(err) {
-                console.error("Failed to log in", err);
-            }
-        }, 
-        async logout() {
-            await app.currentUser.logOut();
-            this.user = null;
-            deleteRealmCookies();
-        }
-    }
+    async sendOtp() {
+      this.message = '';
+      const { error } = await this.supabase.auth.signInWithOtp({
+        email: this.email,
+        options: {
+          shouldCreateUser: false,
+        },
+      });
+      if (error) {
+        this.message = error.message;
+        return;
+      }
+      this.codeSent = true;
+      this.message = 'OTP sent. Check your email.';
+    },
+
+    async verifyOtp() {
+      this.message = '';
+      const token = (this.otp || '').trim();
+      if (!this.email || token.length < 6) {
+        this.message = 'Enter email and 6-digit OTP.';
+        return;
+      }
+      const { error } = await this.supabase.auth.verifyOtp({
+        email: this.email,
+        token,
+        type: 'email',
+      });
+      if (error) {
+        this.message = error.message;
+        return;
+      }
+      this.codeSent = false;
+      this.otp = '';
+      this.message = 'Login successful';
+    },
+
+    async logout() {
+      this.message = '';
+      await this.supabase.auth.signOut();
+      this.codeSent = false;
+      this.otp = '';
+      this.message = 'Logged out';
+    },
+  };
 }
-    
-</script>   
-
-
-
-<script> 
-
-function setCookies() {
-    console.log("setCookies")
-    // Get the values from localStorage
-    var userId = localStorage.getItem('realm-web:app(allwomenstalk-ebogu):userIds');
-    userId = JSON.parse(userId)[0];
-    var deviceId = localStorage.getItem('realm-web:app(allwomenstalk-ebogu):deviceId');
-    var accessToken = localStorage.getItem('realm-web:app(allwomenstalk-ebogu):user(' + userId + '):accessToken');
-    var profile = localStorage.getItem('realm-web:app(allwomenstalk-ebogu):user(' + userId + '):profile');
-    var providerType = localStorage.getItem('realm-web:app(allwomenstalk-ebogu):user(' + userId + '):providerType');
-    var refreshToken = localStorage.getItem('realm-web:app(allwomenstalk-ebogu):user(' + userId + '):refreshToken');
-
-    // Set the cookies for all subdomains of allwomenstalk.com
-    {# var cookieOptions = { domain: '.allwomenstalk.com' }; #}
-    var cookieOptions = 'path=/';
-    document.cookie = 'realm:userId=' + userId + '; ' + cookieOptions;
-    document.cookie = 'realm:deviceId=' + deviceId + '; ' + cookieOptions;
-    document.cookie = 'realm:accessToken=' + accessToken + '; ' + cookieOptions;
-    document.cookie = 'realm:profile=' + profile + '; ' + cookieOptions;
-    document.cookie = 'realm:providerType=' + providerType + '; ' + cookieOptions;
-    document.cookie = 'realm:refreshToken=' + refreshToken + '; ' + cookieOptions;
-}
-
-function getCookies () {
-    // Get the values from the cookies
-    var userId = getCookie('realm:userId');
-    var deviceId = getCookie('realm:deviceId');
-    var accessToken = getCookie('realm:accessToken');
-    var profile = getCookie('realm:profile');
-    var providerType = getCookie('realm:providerType');
-    var refreshToken = getCookie('realm:refreshToken');
-
-    console.log(userId, deviceId, accessToken, profile, providerType, refreshToken)
-
-    // Set the values in localStorage
-    if (userId !== undefined) {
-        var userIds = JSON.stringify([userId]);
-        localStorage.setItem('realm-web:app(allwomenstalk-ebogu):userIds', userIds);
-    } else {
-        return false;
-    }
-    if (deviceId !== undefined) {
-        localStorage.setItem('realm-web:app(allwomenstalk-ebogu):deviceId', deviceId);
-      }
-      if (accessToken !== undefined) {
-        localStorage.setItem('realm-web:app(allwomenstalk-ebogu):user(' + userId + '):accessToken', accessToken);
-      }
-      if (profile !== undefined) {
-        localStorage.setItem('realm-web:app(allwomenstalk-ebogu):user(' + userId + '):profile', profile);
-      }
-      if (providerType !== undefined) {
-        localStorage.setItem('realm-web:app(allwomenstalk-ebogu):user(' + userId + '):providerType', providerType);
-      }
-      if (refreshToken !== undefined) {
-        localStorage.setItem('realm-web:app(allwomenstalk-ebogu):user(' + userId + '):refreshToken', refreshToken);
-      }
-      
-    // Function to get a cookie by name
-    function getCookie(name) {
-        var value = "; " + document.cookie;
-        var parts = value.split("; " + name + "=");
-        if (parts.length == 2) return parts.pop().split(";").shift();
-    }
-
-}
-
-function deleteRealmCookies() {
-    // Set the cookies to expire in the past
-    {# var cookieOptions = { domain: '.allwomenstalk.com', expires: new Date(0) }; #}
-    var cookieOptions = 'path=/';
-    document.cookie = 'realm:userId=; ' + cookieOptions;
-    document.cookie = 'realm:deviceId=; ' + cookieOptions;
-    document.cookie = 'realm:accessToken=; ' + cookieOptions;
-    document.cookie = 'realm:profile=; ' + cookieOptions;
-    document.cookie = 'realm:providerType=; ' + cookieOptions;
-    document.cookie = 'realm:refreshToken=; ' + cookieOptions;
-  }
-  
 </script>
