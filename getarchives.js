@@ -101,7 +101,6 @@ async function main() {
         const categories = await getCategories();
         SaveData(categoriespath, categories);
         const groupedPosts = {};
-        const allPosts = []; // Separate array for 'all' category
 
         // adding all category to create homapage list 
         categories.unshift({ _id: "all", name: "All" });
@@ -115,18 +114,11 @@ async function main() {
 
             const transformedPosts = posts.map(post => transformPost(post));
             groupedPosts[category._id] = transformedPosts;
-
-            // Add to allPosts array for 'all' category
-            allPosts.push(...transformedPosts);
-
-            // Force garbage collection hint
-            if (global.gc) {
-                global.gc();
-            }
         }
 
-        // Create 'all' category from collected posts
-        groupedPosts['all'] = allPosts.slice(0, postperpage);
+        // Build the "all" category once instead of accumulating every category in memory.
+        const allPosts = await getPostsForCategory("all");
+        groupedPosts['all'] = allPosts.map(post => transformPost(post));
         SaveData(path, groupedPosts);
 
     } finally {

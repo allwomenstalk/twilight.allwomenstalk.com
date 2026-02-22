@@ -1,18 +1,1 @@
 {% include 'partials/comments.njk' %}
-
-<div class="text-center my-10">
-  <button
-    @click="getComments(true); $nextTick(() => document.getElementById('comments')?.scrollIntoView({ behavior: 'smooth', block: 'start' }))"
-    type="button"
-    class="mx-auto rounded-md bg-pink-600 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-pink-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600">
-    {% if post.comment_count == 1 %}
-      Show {{post.comment_count}} Comment
-    {% elif post.comment_count == 0 %}
-      Show Comments
-    {% elif post.comment_count > 1 %}
-      Show {{post.comment_count}} Comments
-    {% else %}
-      Show Comments
-    {% endif %}
-  </button>
-</div>
