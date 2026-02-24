@@ -10,12 +10,15 @@ const s3hosts = ['allwomenstalk.com',
     "lifestyle.allwomenstalk.com",
 ]
 // combine hosts
-const hosts = [...cfhosts, ...s3hosts.map(el=>{
+const allHosts = [...cfhosts, ...s3hosts.map(el=>{
     return {
         domain: el,
     }
 })];
-// hosts = [ { domain: "love.allwomenstalk.com"} ]
+const requestedDomain = process.argv[2];
+const hosts = requestedDomain
+    ? [{ domain: requestedDomain }]
+    : allHosts;
 
 console.log(hosts)
 // 
