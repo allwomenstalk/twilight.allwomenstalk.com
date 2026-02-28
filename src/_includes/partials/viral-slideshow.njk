@@ -47,7 +47,7 @@
       x-data='viralSlideshow({{ viralItems | json | safe }})'
       x-init="init()"
       class="viral-slide-root relative isolate overflow-hidden rounded-[inherit]">
-    <a id="viral-slide-link" :href="currentUrl" target="_blank" rel="noopener noreferrer" class="absolute inset-0 z-10" aria-label="Open article"></a>
+    <a id="viral-slide-link" :href="currentUrl" target="_blank" rel="noopener noreferrer" class="absolute inset-0 z-40" aria-label="Open article"></a>
     <div class="viral-slide-bg" aria-hidden="true">
       <img id="viral-img-0" class="viral-seq-image viral-bg-img" loading="lazy" :src="currentImages[0] || ''" :alt="titleText + ' image 1'" />
       <img id="viral-img-1" class="viral-seq-image viral-bg-img" loading="lazy" :src="currentImages[1] || currentImages[0] || ''" :alt="titleText + ' image 2'" />
@@ -56,7 +56,7 @@
       <img id="viral-img-4" class="viral-seq-image viral-bg-img" loading="lazy" :src="currentImages[4] || currentImages[0] || ''" :alt="titleText + ' image 5'" />
     </div>
     <div class="viral-slide-overlay" aria-hidden="true"></div>
-    <div id="viral-slide-shell" class="viral-slide-fade-shell relative z-20 mx-auto max-w-7xl px-6 py-10 sm:py-12 lg:px-8">
+    <div id="viral-slide-shell" class="viral-slide-fade-shell relative z-20 pointer-events-none mx-auto max-w-7xl px-6 py-10 sm:py-12 lg:px-8">
       <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
         <div class="relative flex min-h-[20rem] w-full flex-col justify-between lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
           <div>
@@ -64,7 +64,7 @@
             <h2 id="viral-slide-title" x-ref="title" x-text="titleText" class="text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl"></h2>
           </div>
           <p>
-            <span id="viral-slide-cta" x-ref="cta" class="inline-flex items-center rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm">Open article</span>
+            <span id="viral-slide-cta" x-ref="cta" class="inline-flex items-center rounded-md bg-pink-600 px-4 py-2 text-sm font-semibold text-white shadow-sm">Open article</span>
           </p>
         </div>
       </div>
