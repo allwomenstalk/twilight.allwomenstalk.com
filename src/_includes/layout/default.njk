@@ -71,7 +71,9 @@
         {% include 'partials/navigation.njk' %}
         {% include 'partials/search.njk' %}
         {{ content | safe }}
-        {% include "partials/pip-viral.njk" %}
+        {% if not hidePip %}
+          {% include "partials/pip-viral.njk" %}
+        {% endif %}
         {% include "partials/footer.njk" %}
         <!-- js.njk -->
         {% include "partials/js.njk" %}

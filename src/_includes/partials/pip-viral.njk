@@ -127,6 +127,7 @@
     var wordStepMs = 65;
     var durationVisibleMs = 3600;
     var fadeDurationMs = 420;
+    var initialDelayMs = 2000;
     var cycleTimer = null;
     var animTimers = [];
     var currentItem = null;
@@ -292,9 +293,13 @@
     var idx = 0;
     render(order[idx]);
     if (!root.classList.contains("aws-pip-collapsed")) {
-      trackPipEvent("aws_pip_view", { item_index: idx });
-      animateIn();
-      scheduleNext();
+      root.classList.add("aws-pip-hidden");
+      pushTimer(setTimeout(function () {
+        root.classList.remove("aws-pip-hidden");
+        trackPipEvent("aws_pip_view", { item_index: idx });
+        animateIn();
+        scheduleNext();
+      }, initialDelayMs));
     }
 
     link.addEventListener("click", function () {
