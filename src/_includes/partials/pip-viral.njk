@@ -123,6 +123,8 @@
     var closeBtn = document.getElementById("aws-pip-close");
     var expandBtn = document.getElementById("aws-pip-expand");
     var key = "aws-pip-viral-closed";
+    var postIdMeta = document.querySelector('meta[name="postid"]');
+    var postId = postIdMeta ? postIdMeta.getAttribute("content") : "";
     var lastImageByKey = {};
     var wordStepMs = 65;
     var durationVisibleMs = 3600;
@@ -131,6 +133,7 @@
     var cycleTimer = null;
     var animTimers = [];
     var currentItem = null;
+    var lastClickTrackAt = 0;
 
     try {
       if (window.localStorage) {
@@ -153,8 +156,10 @@
     }
 
     function trackPipEvent(eventName, extraProps) {
+      console.log('pip', eventName)
+      var props = Object.assign({}, extraProps || {});
       try {
-        if (!window.posthog || typeof window.posthog.capture !== "function") return;
+        var hasPosthog = window.posthog && typeof window.posthog.capture === "function";
         var baseProps = {
           component: "viral_pip",
           state: root.classList.contains("aws-pip-collapsed") ? "collapsed" : "open"
@@ -164,7 +169,30 @@
           baseProps.item_title = currentItem.title || "";
           baseProps.item_url = currentItem.url || "";
         }
-        window.posthog.capture(eventName, Object.assign(baseProps, extraProps || {}));
+        props = Object.assign(baseProps, props);
+        if (hasPosthog) window.posthog.capture(eventName, props);
+      } catch (e) {}
+
+      try {
+        console.log('pip:',"trying sending pip click", eventName);
+        if (eventName !== "aws_pip_click") return;
+        console.log('pip:',"sending pip click");
+        if (typeof beacontrack !== "function") return;
+        var beaconPayload = {
+          type: "pipviral",
+          action: eventName,
+          post_id: postId || "",
+          item: {
+            label: eventName,
+            page: window.location.href,
+            item_index: props.item_index,
+            state: props.state || (root.classList.contains("aws-pip-collapsed") ? "collapsed" : "open"),
+            item_slug: props.item_slug || (currentItem && currentItem.slug) || "",
+            item_title: props.item_title || (currentItem && currentItem.title) || "",
+            item_url: props.item_url || (currentItem && currentItem.url) || ""
+          }
+        };
+        beacontrack(beaconPayload);
       } catch (e) {}
     }
 
@@ -302,9 +330,16 @@
       }, initialDelayMs));
     }
 
-    link.addEventListener("click", function () {
+    function trackPipClickOnce() {
+      var now = Date.now();
+      if (now - lastClickTrackAt < 500) return;
+      lastClickTrackAt = now;
       trackPipEvent("aws_pip_click", { item_index: idx });
-    });
+    }
+
+    // Use capture + pointerdown so tracking runs before link navigation.
+    link.addEventListener("pointerdown", trackPipClickOnce, true);
+    link.addEventListener("click", trackPipClickOnce, true);
 
     closeBtn.addEventListener("click", function (ev) {
       ev.preventDefault();
