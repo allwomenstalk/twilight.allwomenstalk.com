@@ -42,6 +42,8 @@
   class="fixed bottom-3 right-3 z-50 w-44 overflow-hidden rounded-2xl border bg-slate-900 text-white transition duration-200 ease-out sm:w-56"
   style="position:fixed;right:12px;bottom:12px;z-index:2147483000;width:220px;max-width:42vw;aspect-ratio:16/10;overflow:hidden;border-radius:20px;border:1px solid rgba(255,255,255,.35);background:rgba(15,23,42,.95);color:#fff;box-shadow:0 20px 45px rgba(15,23,42,.35),0 8px 16px rgba(15,23,42,.25);transition:transform .22s ease,opacity .22s ease;"
   data-items='{{ pipItems | json | safe }}'
+  data-cdn-base="{{ pip_viral_cdn_base | default('https://pub-ff359827c45e40a7b6e9bad1878cd18a.r2.dev') }}"
+  data-cdn-paths='{{ pip_viral_cdn_paths | default(["quiz/pip.json", "poll/pip.json", "feed/pip.json"]) | json | safe }}'
   aria-live="polite">
   <a id="aws-pip-link" class="relative block h-full w-full text-white no-underline" href="#" target="_blank" rel="noopener noreferrer" aria-label="Open featured article">
     <img id="aws-pip-image" class="block h-full w-full object-cover object-center" src="" alt="Featured article image" loading="lazy" />
@@ -145,14 +147,61 @@
     } catch (e) {}
 
     var items = [];
+    var order = [];
+    var idx = 0;
     try {
       items = JSON.parse(root.dataset.items || "[]");
     } catch (e) {
       items = [];
     }
-    if (!Array.isArray(items) || !items.length) {
-      root.classList.add("aws-pip-hidden");
-      return;
+    if (!Array.isArray(items)) items = [];
+
+    function normalizeItem(item) {
+      if (!item || typeof item !== "object") return null;
+      var url = item.url || item.link || item.href || "";
+      var title = item.title || item.quiz_title || item.question || item.headline || "";
+      var slug = item.slug || item.id || url || "";
+      var images = [];
+      if (Array.isArray(item.images)) images = item.images.filter(Boolean);
+      if (!images.length && item.image) images = [item.image];
+      if (!images.length && item.image_url) images = [item.image_url];
+      if (!title || !url || !images.length) return null;
+      return {
+        slug: slug,
+        url: url,
+        title: title,
+        images: images
+      };
+    }
+
+    function coerceItems(payload) {
+      var rows = [];
+      if (Array.isArray(payload)) rows = payload;
+      else if (payload && Array.isArray(payload.items)) rows = payload.items;
+      else if (payload && Array.isArray(payload.data)) rows = payload.data;
+      else if (payload && Array.isArray(payload.feed)) rows = payload.feed;
+      else if (payload && Array.isArray(payload.quiz)) rows = payload.quiz;
+      else if (payload && Array.isArray(payload.poll)) rows = payload.poll;
+      return rows.map(normalizeItem).filter(Boolean);
+    }
+
+    function shuffleItems(list) {
+      var out = list.slice();
+      for (var i = out.length - 1; i > 0; i -= 1) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var tmp = out[i];
+        out[i] = out[j];
+        out[j] = tmp;
+      }
+      return out;
+    }
+
+    function bootHiddenIfEmpty() {
+      if (!items.length) {
+        root.classList.add("aws-pip-hidden");
+        return true;
+      }
+      return false;
     }
 
     function trackPipEvent(eventName, extraProps) {
@@ -310,25 +359,78 @@
       scheduleNext();
     }
 
-    var order = items.slice();
-    for (var i = order.length - 1; i > 0; i -= 1) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var tmp = order[i];
-      order[i] = order[j];
-      order[j] = tmp;
+    function applyItems(nextItems) {
+      items = Array.isArray(nextItems) ? nextItems : [];
+      if (bootHiddenIfEmpty()) return;
+      order = shuffleItems(items);
+      idx = 0;
+      clearAnimTimers();
+      clearSeqState();
+      if (cycleTimer) clearTimeout(cycleTimer);
+      cycleTimer = null;
+      render(order[idx]);
+      if (!root.classList.contains("aws-pip-collapsed")) {
+        root.classList.add("aws-pip-hidden");
+        pushTimer(setTimeout(function () {
+          root.classList.remove("aws-pip-hidden");
+          trackPipEvent("aws_pip_view", { item_index: idx });
+          animateIn();
+          scheduleNext();
+        }, initialDelayMs));
+      } else {
+        root.classList.remove("aws-pip-hidden");
+      }
     }
 
-    var idx = 0;
-    render(order[idx]);
-    if (!root.classList.contains("aws-pip-collapsed")) {
-      root.classList.add("aws-pip-hidden");
-      pushTimer(setTimeout(function () {
-        root.classList.remove("aws-pip-hidden");
-        trackPipEvent("aws_pip_view", { item_index: idx });
-        animateIn();
-        scheduleNext();
-      }, initialDelayMs));
+    function parseCdnPaths() {
+      try {
+        var parsed = JSON.parse(root.dataset.cdnPaths || "[]");
+        return Array.isArray(parsed) ? parsed : [];
+      } catch (e) {
+        return [];
+      }
     }
+
+    function normalizeUrl(base, path) {
+      if (!path) return "";
+      if (/^https?:\/\//i.test(path)) return path;
+      if (!base) return path;
+      return base.replace(/\/+$/, "") + "/" + String(path).replace(/^\/+/, "");
+    }
+
+    function tryFetch(url) {
+      return fetch(url, { cache: "no-store" })
+        .then(function (res) {
+          if (!res.ok) throw new Error("bad status " + res.status);
+          return res.json();
+        })
+        .then(function (payload) {
+          return coerceItems(payload);
+        })
+        .catch(function () {
+          return [];
+        });
+    }
+
+    function loadItemsFromCdn() {
+      var base = root.dataset.cdnBase || "";
+      var paths = parseCdnPaths();
+      if (!paths.length) return Promise.resolve([]);
+      var urls = paths.map(function (path) { return normalizeUrl(base, path); }).filter(Boolean);
+      return urls.reduce(function (chain, url) {
+        return chain.then(function (found) {
+          if (Array.isArray(found) && found.length) return found;
+          return tryFetch(url);
+        });
+      }, Promise.resolve([]));
+    }
+
+    applyItems(items.map(normalizeItem).filter(Boolean));
+
+    loadItemsFromCdn().then(function (cdnItems) {
+      if (!cdnItems.length) return;
+      applyItems(cdnItems);
+    });
 
     function trackPipClickOnce() {
       var now = Date.now();
