@@ -52,7 +52,7 @@ module.exports = function (item) {
         name: (item.author?.first_name || '').replace('_', ''),
         id: item.author?._id || null
       };
-      temp.image = item.image_url;
+      temp.image = item.image_url || false;
       temp.video_url = item.video_url;
       temp.comment_count = item.comment_count;
 
@@ -69,26 +69,35 @@ module.exports = function (item) {
           c.slug = collectionslugsarr.slice(0,i+1).join("/")
         })
       }
+      if (item.image_url) {
+        sizearr = GetImageSize(item.image_url)
 
-
-
-      sizearr = GetImageSize(temp.image)
-
-      temp.imagesize = {
-        width:sizearr[0],
-        height:sizearr[1]
-      };
+        temp.imagesize = {
+          width:sizearr[0],
+          height:sizearr[1]
+        };
+      } else {
+        temp.imagesize = false;
+      }
     
       temp.rating = 5-Math.round(Math.random())
       temp.ratingstars = "★".repeat(temp.rating)+"☆".repeat(5-temp.rating)
-      temp.imagesource = item.image_url.replace('.jpg','.json')
-      temp.imageresize = item.image_url.replace('img.allw.mn', 'resize.allw.mn/400x400');
-      temp.imagewebp400  = item.image_url.replace('//img.allw.mn/', '//resize.allw.mn/filters:format(webp)/filters:quality(70)/400x400/');
-      temp.imagewebp800  = item.image_url.replace('//img.allw.mn/', '//resize.allw.mn/filters:format(webp)/filters:quality(70)/800x800/');
-      temp.imagewebp1200 = item.image_url.replace('//img.allw.mn/', '//resize.allw.mn/filters:format(webp)/filters:quality(70)/1200x1200/');
+      if (item.image_url) {
+        temp.imagesource = item.image_url.replace('.jpg','.json')
+        temp.imageresize = item.image_url.replace('img.allw.mn', 'resize.allw.mn/400x400');
+        temp.imagewebp400  = item.image_url.replace('//img.allw.mn/', '//resize.allw.mn/filters:format(webp)/filters:quality(70)/400x400/');
+        temp.imagewebp800  = item.image_url.replace('//img.allw.mn/', '//resize.allw.mn/filters:format(webp)/filters:quality(70)/800x800/');
+        temp.imagewebp1200 = item.image_url.replace('//img.allw.mn/', '//resize.allw.mn/filters:format(webp)/filters:quality(70)/1200x1200/');
+      } else {
+        temp.imagesource = false;
+        temp.imageresize = false;
+        temp.imagewebp400 = false;
+        temp.imagewebp800 = false;
+        temp.imagewebp1200 = false;
+      }
 
       // remove imgage if it's contain {image_url:/_400x400.jpg|_400x300.jpg/}
-      if (item.image_url.match(/_400x400.jpg|_400x300.jpg|720x720.jpg/)) {
+      if (item.image_url && item.image_url.match(/_400x400.jpg|_400x300.jpg|720x720.jpg/)) {
         temp.image = false
         temp.imagewebp400 = false
         temp.imagewebp800 = false
