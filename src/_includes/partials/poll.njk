@@ -1,7 +1,7 @@
 <div x-data="poll" x-ref="pollblock" class="mx-auto max-w-xl py-3 px-4 md:px-0">
   <template x-for="(item,i) in poll">
   <div x-show="index==i" x-transition.300 class="w-full">
-    <div class="py-2">
+    <div class="relative py-2 pb-4">
       <h4 class="text-xs font-semibold uppercase tracking-wide text-pink-600">Reader Poll</h4>
       <question x-html="item.question" class="mt-1 block text-lg font-semibold leading-7 text-gray-900 sm:text-xl"></question>
       <div class="mt-3 flex flex-wrap gap-2">
@@ -16,6 +16,12 @@
         >{{option}}</button>
         </template>
       </div>
+      <p class="absolute bottom-0 right-0 font-mono text-[8px] uppercase text-right leading-tight text-gray-400">
+        <span>Powered by</span>
+        <a href="https://quizrs.com/?reffers=allwomenstalk" target="_blank" rel="noopener noreferrer" class="font-bold text-gray-500 hover:text-gray-700">
+          QUIZRS
+        </a>
+      </p>
     </div>
   </div>
   </template>
@@ -26,8 +32,9 @@
           <p class="block text-2xl sm:text-4xl font-bold tracking-tight ">Thank you for sharing your thoughts!</p>
           <p class="block text-lg tracking-normal">Your voice matters to us. Happy reading!</p>
           <p class="block text-lg tracking-normal">
-            <a href="https://allwomenstalk.com/polls/" 
+            <a href="https://quizrs.com/?reffers=allwomenstalk" 
               target="_blank"
+              rel="noopener noreferrer"
               class="text-sm font-semibold leading-6 text-gray-900">
               Check Polls Results <span aria-hidden="true">→</span>
             </a>
