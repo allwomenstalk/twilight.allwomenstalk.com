@@ -3,10 +3,10 @@
 {% endif %}
 
 <a href="{{post.url}}"  
-  class="text-gray-900 rounded-lg hover:opacity-70 {% if bigcard %}col-span-full md:flex {% endif %} relative" 
+  class="text-gray-900 rounded-2xl hover:opacity-70 {% if bigcard %}col-span-full md:flex {% endif %} relative" 
   title="{{post.keyword or post.title}}">
-      <div class="{% if bigcard %}md:w-1/2 md:h-96 md:rounded-r-none md:rounded-l {% endif %}
-                  text-center overflow-hidden bg-cover bg-center rounded-t">
+      <div class="{% if bigcard %}md:w-1/2 md:h-96 md:rounded-tl-2xl md:rounded-bl-2xl md:rounded-tr-none md:rounded-br-none {% endif %}
+                  text-center overflow-hidden bg-cover bg-center rounded-t-2xl">
         <img class="w-full "
         {% if bigcard %}
           width="800" height="800"
@@ -22,8 +22,8 @@
             loading="lazy" 
             decoding="async"/>
       </div>
-      <div class="{% if bigcard %}md:w-1/2 md:h-96 md:rounded-l-none sm:rounded-r md:border-t md:border-l-0{% endif %}
-                   border-r border-b border-l  border-gray-300 rounded-b  p-4 flex flex-col justify-between leading-normal h-56 cardtitle bg-white dark:bg-gray-900">
+      <div class="{% if bigcard %}md:w-1/2 md:h-96 md:rounded-l-none md:rounded-r-2xl md:border-t md:border-l-0{% endif %}
+                   border-r border-b border-l  border-gray-300 rounded-b-2xl  p-4 flex flex-col justify-between leading-normal h-56 cardtitle bg-white dark:bg-gray-900">
         <div>
           <p class="text-xs text-gray-700 flex items-center uppercase">
               {{ post.tags }} 
@@ -37,29 +37,31 @@
           </h2>
           {# <p class="text-gray-700 text-base">{{ emoji[0] }}</p> #}
         </div>
-        <div class="flex items-center opacity-70">
-          <div class="text-xs">
-            {% if metadata.NODE_ENV != "production" %}
-            <p class="leading-none">{{ post.fulldate }}</p>
-            <p class="leading-none">{{ post.post_date }}</p>
-            <p class="leading-none">{{ post.seo.clicks }} clk</p>
-            <p class="leading-none">{{ post.seo.impressions }} imp</p>
-            <p class="leading-none">{{ post.seo.keywords }} kws</p>
-            <p class="leading-none">{{ post.author.name }}</p>
-            <p class="leading-none">{{ post.parent.title }}</p>
-            {% endif %}
-            {% if post.stats.clicks %}
-            <p class="leading-none">{{ post.stats.clicks }} likes</p>
-            {% else %}
-            <p class="leading-none">{{ post.date }}</p>
-            {% endif %}
-            
-            {# <button class="rounded px-2 py-1 absolute right-3 bottom-4" aria-label="Read more">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <use xlink:href="#moreicon" />
-              </svg>
-            </button> #}
+        {% if bigcard or post.stats.clicks %}
+          <div class="flex items-center opacity-70">
+            <div class="text-xs">
+              {% if metadata.NODE_ENV != "production" %}
+              <p class="leading-none">{{ post.fulldate }}</p>
+              <p class="leading-none">{{ post.post_date }}</p>
+              <p class="leading-none">{{ post.seo.clicks }} clk</p>
+              <p class="leading-none">{{ post.seo.impressions }} imp</p>
+              <p class="leading-none">{{ post.seo.keywords }} kws</p>
+              <p class="leading-none">{{ post.author.name }}</p>
+              <p class="leading-none">{{ post.parent.title }}</p>
+              {% endif %}
+              {% if post.stats.clicks %}
+              <p class="leading-none">{{ post.stats.clicks }} likes</p>
+              {% else %}
+              <p class="leading-none">{{ post.date }}</p>
+              {% endif %}
+              
+              {# <button class="rounded px-2 py-1 absolute right-3 bottom-4" aria-label="Read more">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <use xlink:href="#moreicon" />
+                </svg>
+              </button> #}
+            </div>
           </div>
-        </div>
+        {% endif %}
       </div>
 </a>

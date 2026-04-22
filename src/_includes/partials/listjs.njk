@@ -7,11 +7,11 @@
           :href="post.url ? post.url : null"
           @click="post.url ? null : (select(post), $event.preventDefault())"
           :title="post.title"
-          class="text-gray-900 rounded-lg hover:opacity-70 relative "
+          class="text-gray-900 rounded-2xl hover:opacity-70 relative "
           :class="{'col-span-full sm:grid grid-cols-2 h-88': index % 7 === 6}">
           <div
             class="aspect-w-1 aspect-h-1 w-full aspect-square overflow-hidden bg-cover bg-center relative"
-            :class="{ 'rounded-b' : post.type == 'feed', 'rounded-t sm:rounded-t-none sm:rounded-l h-96': index % 7 === 6, 'rounded-t h-48 ':
+            :class="{ 'rounded-b-2xl' : post.type == 'feed', 'rounded-t-2xl sm:rounded-tl-2xl sm:rounded-bl-2xl sm:rounded-tr-none sm:rounded-br-none h-96': index % 7 === 6, 'rounded-t-2xl h-48 ':
               index % 7 !== 6 }">
             <img
               class="object-cover w-full h-full"
@@ -23,10 +23,10 @@
                 hue-rotate-[180deg] hue-rotate-[240deg] hue-rotate-[270deg] hue-rotate-[300deg] -->
             </div>
             <div
-              class="border border-gray-300 rounded-b p-4 flex flex-col justify-between leading-normal h-56 cardtitle bg-white
+              class="border border-gray-300 rounded-b-2xl p-4 flex flex-col justify-between leading-normal h-56 cardtitle bg-white
                 dark:bg-gray-900"
               :class="{ 'absolute top-0 bg-opacity-0 text-white text-sm sm:text-lg lg:text-base font-bold border-0': post.type ==
-                'feed', 'text-xs': post.type != 'feed', 'md:border-l-0 sm:rounded-r sm:roun-l-none sm:h-full': index % 7 === 6 }">
+                'feed', 'text-xs': post.type != 'feed', 'md:border-l-0 sm:rounded-r-2xl sm:rounded-l-none sm:h-full': index % 7 === 6 }">
               <div>
                 <p
                   class="text-xs opacity-50 flex items-center uppercase" x-text="post.category"><!-- Category will be dynamically filled -->
@@ -37,8 +37,8 @@
                   x-text="post.title"><!-- Title will be dynamically filled by Alpine.js -->
                 </h2>
               </div>
-              <div class="flex items-center opacity-70">
-                <div x-show="post.date" class="text-xs">
+              <div x-show="post.date && index % 7 === 6" class="flex items-center opacity-70">
+                <div class="text-xs">
                   <p class="leading-none" x-text="formattedDate(post.date)"></p>
                 </div>
               </div>
