@@ -142,10 +142,10 @@
       aria-label="Top">
       <!-- Secondary navigation -->
       <div class="">
-        <div class="mx-auto px-4">
+        <div class="mx-auto">
           <div class="">
             <div
-              class="flex h-16 items-center justify-between">
+              class="flex h-16 items-center justify-between ">
               <!-- Mobile menu and search (lg-) -->
               <div class="flex flex-1 items-center ">
                 <!-- Mobile menu toggle, controls the 'mobileMenuOpen' state. -->
@@ -275,7 +275,7 @@
         </div>
       </nav>
       <div class="">
-        <div class="mx-auto px-4">
+        <div class="mx-auto">
           {% set badge_base = "inline-flex items-center rounded-full px-2 py-1 text-xs font-medium ring-1 ring-inset" %}
           {% set badge_colors = [
             "bg-gray-50 text-gray-600 ring-gray-500/10 dark:bg-gray-400/10 dark:text-gray-400 dark:ring-gray-400/20",
@@ -287,7 +287,7 @@
             "bg-purple-50 text-purple-700 ring-purple-700/10 dark:bg-purple-400/10 dark:text-purple-400 dark:ring-purple-400/30",
             "bg-pink-50 text-pink-700 ring-pink-700/10 dark:bg-pink-400/10 dark:text-pink-400 dark:ring-pink-400/20"
           ] %}
-          <div class="flex gap-2 overflow-x-auto py-3 whitespace-nowrap">
+          <div class="flex gap-2 overflow-x-auto py-3 whitespace-nowrap px-4">
             {% for category in categories | shuffle %}
               {% set badge_color = badge_colors[loop.index0 % (badge_colors | length)] %}
               <a

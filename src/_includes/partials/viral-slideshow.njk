@@ -46,6 +46,8 @@
       id="viral-slide"
       x-data='viralSlideshow({{ viralItems | json | safe }})'
       x-init="init()"
+      data-cdn-base="{{ pip_viral_cdn_base | default('https://pub-ff359827c45e40a7b6e9bad1878cd18a.r2.dev') }}"
+      data-cdn-paths='{{ ["feed/pip.json"] | json | safe }}'
       class="viral-slide-root relative isolate overflow-hidden rounded-[inherit]">
     <a id="viral-slide-link" :href="currentUrl" target="_blank" rel="noopener noreferrer" class="absolute inset-0 z-40" aria-label="Open article"></a>
     <div class="viral-slide-bg" aria-hidden="true">
@@ -56,16 +58,24 @@
       <img id="viral-img-4" class="viral-seq-image viral-bg-img" loading="lazy" :src="currentImages[4] || currentImages[0] || ''" :alt="titleText + ' image 5'" />
     </div>
     <div class="viral-slide-overlay" aria-hidden="true"></div>
+    <div class="viral-slide-indicators absolute bottom-6 right-6 z-30 flex items-center gap-2" aria-hidden="true">
+      <template x-for="(_, dotIndex) in items" :key="dotIndex">
+        <span
+          class="viral-slide-indicator block rounded-full"
+          :class="dotIndex === index ? 'viral-slide-indicator-active' : 'viral-slide-indicator-idle'">
+        </span>
+      </template>
+    </div>
+    <p class="absolute bottom-6 left-6 z-30 pointer-events-none">
+      <span id="viral-slide-cta" x-ref="cta" class="inline-flex items-center rounded-full bg-pink-600 px-4 py-2 text-sm font-semibold text-white shadow-sm">Open article</span>
+    </p>
     <div id="viral-slide-shell" class="viral-slide-fade-shell relative z-20 pointer-events-none mx-auto max-w-7xl px-6 py-10 sm:py-12 lg:px-8">
       <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
         <div class="relative flex min-h-[20rem] w-full flex-col justify-between lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
           <div>
             <p class="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-pink-600">Feature</p>
-            <h2 id="viral-slide-title" x-ref="title" x-text="titleText" class="text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl"></h2>
+            <h2 id="viral-slide-title" x-ref="title" x-text="titleText" class="font-display text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl"></h2>
           </div>
-          <p>
-            <span id="viral-slide-cta" x-ref="cta" class="inline-flex items-center rounded-md bg-pink-600 px-4 py-2 text-sm font-semibold text-white shadow-sm">Open article</span>
-          </p>
         </div>
       </div>
     </div>
@@ -168,6 +178,21 @@
   .viral-slide-fade-shell.viral-is-fading {
     opacity: 0;
   }
+
+  .viral-slide-indicator {
+    height: 0.5rem;
+    transition: width 280ms ease, background-color 280ms ease, opacity 280ms ease;
+  }
+
+  .viral-slide-indicator-idle {
+    width: 0.5rem;
+    background: rgba(255, 255, 255, 0.45);
+  }
+
+  .viral-slide-indicator-active {
+    width: 1.75rem;
+    background: rgba(255, 255, 255, 0.85);
+  }
 </style>
 
 <script>
@@ -185,13 +210,94 @@
         wordStepMs: 70,
         cycleTimer: null,
         init() {
+          this.items = this.coerceItems(this.items);
+          if (this.items.length) {
+            this.startSlides();
+          }
+          this.loadItemsFromCdn().then((cdnItems) => {
+            if (!cdnItems.length) return;
+            this.items = cdnItems;
+            this.startSlides();
+          });
+        },
+        startSlides() {
           if (!this.items.length) return;
+          if (this.cycleTimer) clearTimeout(this.cycleTimer);
+          this.clearSeqState();
           this.shuffleFeatureOrder();
           this.applySlide(this.nextFeatureIndex());
           this.$nextTick(() => {
             this.animateIn();
             this.scheduleNext();
           });
+        },
+        normalizeItem(item) {
+          if (!item || typeof item !== "object") return null;
+          const url = item.url || item.link || item.href || "";
+          const title = item.title || item.quiz_title || item.question || item.headline || "";
+          const slug = item.slug || item.id || url || "";
+          let images = [];
+          if (Array.isArray(item.images)) images = item.images.filter(Boolean);
+          if (!images.length && item.image) images = [item.image];
+          if (!images.length && item.image_url) images = [item.image_url];
+          if (!title || !url || !images.length) return null;
+          return { slug, url, title, images };
+        },
+        coerceItems(payload) {
+          let rows = [];
+          if (Array.isArray(payload)) rows = payload;
+          else if (payload && Array.isArray(payload.items)) rows = payload.items;
+          else if (payload && Array.isArray(payload.data)) rows = payload.data;
+          else if (payload && Array.isArray(payload.feed)) rows = payload.feed;
+          else if (payload && Array.isArray(payload.quiz)) rows = payload.quiz;
+          else if (payload && Array.isArray(payload.poll)) rows = payload.poll;
+          const normalized = rows.map((item) => this.normalizeItem(item)).filter(Boolean);
+          return this.pickRandomItems(normalized, 4);
+        },
+        pickRandomItems(list, count) {
+          const out = Array.isArray(list) ? [...list] : [];
+          for (let i = out.length - 1; i > 0; i -= 1) {
+            const j = Math.floor(Math.random() * (i + 1));
+            const tmp = out[i];
+            out[i] = out[j];
+            out[j] = tmp;
+          }
+          return out.slice(0, count);
+        },
+        parseCdnPaths() {
+          try {
+            const parsed = JSON.parse(this.$el.dataset.cdnPaths || "[]");
+            return Array.isArray(parsed) ? parsed : [];
+          } catch (e) {
+            return [];
+          }
+        },
+        normalizeUrl(base, path) {
+          if (!path) return "";
+          if (/^https?:\/\//i.test(path)) return path;
+          if (!base) return path;
+          return base.replace(/\/+$/, "") + "/" + String(path).replace(/^\/+/, "");
+        },
+        async tryFetch(url) {
+          try {
+            const res = await fetch(url, { cache: "no-store" });
+            if (!res.ok) throw new Error(`bad status ${res.status}`);
+            const payload = await res.json();
+            return this.coerceItems(payload);
+          } catch (e) {
+            return [];
+          }
+        },
+        async loadItemsFromCdn() {
+          const base = this.$el.dataset.cdnBase || "";
+          const paths = this.parseCdnPaths();
+          if (!paths.length) return [];
+          const urls = paths.map((path) => this.normalizeUrl(base, path)).filter(Boolean);
+          for (const url of urls) {
+            const found = await this.tryFetch(url);
+            if (found.length) return found;
+          }
+          return [];
         },
         shuffleFeatureOrder() {
           this.featureOrder = this.items.map((_, i) => i);
