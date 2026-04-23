@@ -1,4 +1,12 @@
-[
+[   {
+        "name": "allwomenstalk-gifts",
+        "subdomain": "gifts-allwomenstalk-com.pages.dev",
+        "domains": [
+            "gifts-allwomenstalk-com.pages.dev",
+            "gifts.allwomenstalk.com"
+        ],
+        "domain": "gifts.allwomenstalk.com"
+    },
     {
         "name": "allwomenstalk-baking",
         "subdomain": "allwomenstalk-baking.pages.dev",

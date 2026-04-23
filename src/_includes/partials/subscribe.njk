@@ -29,7 +29,7 @@ function subscriptionComponent() {
     async sub() {
       try {
         console.log(this.choices, this.email);
-        const url = 'https://us-central1.gcp.data.mongodb-api.com/app/allwomenstalk-ebogu/endpoint/newsletter';
+        const url = 'https://olgdvvxouytdchveiaad.supabase.co/functions/v1/subscribe';
         const payload = {
           params: this.choices,
           email: this.email,

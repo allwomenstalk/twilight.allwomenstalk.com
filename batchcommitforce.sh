@@ -34,8 +34,8 @@ else
   git checkout main
 fi
 
-# Stage all changes
-git add .
+# Stage all changes, including deletions, so removed pages do not linger
+git add -A
 
 # Commit the changes if there are any
 if git diff-index --quiet HEAD; then

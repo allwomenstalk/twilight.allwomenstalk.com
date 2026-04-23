@@ -21,7 +21,11 @@ if (!host) {
 
 console.log('Host:', host);
 console.log("Cleaning logs ...");
-exec(`rm -rf ./logs/${host}.txt`); // Clean the logs directory before starting
+// Clean the host log before starting, and await it so prior output cannot leak
+async function cleanupHostArtifacts() {
+  await fs.promises.rm(`./logs/${host}.txt`, { force: true });
+  await fs.promises.rm('./batch', { recursive: true, force: true });
+}
 
 // Check for specific post ID in environment variables
 const specificPostId = process.env.POST_ID;
@@ -37,7 +41,6 @@ const filter = [
 ];
 
 const startTime = new Date();
-exec('rm -rf ./batch/*'); // Clean the batch directory before starting
 console.log('Start Time:', startTime);
 let run = 0;
 
@@ -123,32 +126,33 @@ async function generateBatch() {
 }
 
 async function runEleventyBuild(host) {
+  const buildStartTime = new Date(); // Record the start time of the build
+  console.log('Running Eleventy build...');
+
+  const logDir = path.join(__dirname, 'logs');
+  const logFile = path.join(logDir, `${host}.txt`);
+
+  if (!fs.existsSync(logDir)) {
+    fs.mkdirSync(logDir, { recursive: true });
+  }
+
+  const logStream = fs.createWriteStream(logFile, { flags: 'a' });
+
+  logStream.write(`\n\n===== Build started at ${buildStartTime.toISOString()} =====\n`);
+
+  const buildProcess = spawn('npm', ['run', 'build'], { shell: true });
+
+  if (!buildProcess.stdout || !buildProcess.stderr) {
+    logStream.end();
+    throw new Error('Build process stdout or stderr is undefined.');
+  }
+
+  buildProcess.stdout.pipe(logStream);
+  buildProcess.stderr.pipe(logStream);
+
   try {
-    const buildStartTime = new Date(); // Record the start time of the build
-    console.log('Running Eleventy build...');
-
-    const logDir = path.join(__dirname, 'logs');
-    const logFile = path.join(logDir, `${host}.txt`);
-
-    if (!fs.existsSync(logDir)) {
-      fs.mkdirSync(logDir, { recursive: true });
-    }
-
-    const logStream = fs.createWriteStream(logFile, { flags: 'a' });
-
-    logStream.write(`\n\n===== Build started at ${buildStartTime.toISOString()} =====\n`);
-
-    const buildProcess = spawn('npm', ['run', 'build'], { shell: true });
-
-    if (buildProcess.stdout && buildProcess.stderr) {
-      buildProcess.stdout.pipe(logStream);
-      buildProcess.stderr.pipe(logStream);
-    } else {
-      console.error('Error: stdout or stderr is undefined.');
-      return;
-    }
-
     await new Promise((resolve, reject) => {
+      buildProcess.on('error', reject);
       buildProcess.on('close', (code) => {
         if (code === 0) {
           resolve();
@@ -163,18 +167,18 @@ async function runEleventyBuild(host) {
 
     logStream.write(`\n===== Build completed at ${buildEndTime.toISOString()} =====\n`);
     logStream.write(`Build Time (seconds): ${buildDuration}\n`);
-
     logStream.end();
 
     console.log('Eleventy build completed.');
-    // print out logs 
     console.log('Logs:');
     const logs = fs.readFileSync(logFile, 'utf8');
     console.log(logs);
-
-    console.log('Build Time (seconds):', buildDuration); // Output the build time
+    console.log('Build Time (seconds):', buildDuration);
   } catch (error) {
-    console.error('Error running Eleventy build:', error);
+    logStream.write(`\n===== Build failed at ${new Date().toISOString()} =====\n`);
+    logStream.write(`${error.stack || error.message}\n`);
+    logStream.end();
+    throw error;
   }
 }
 
@@ -194,4 +198,12 @@ if (fs.existsSync('./_marker.json')) {
   fs.unlinkSync('./_marker.json');
 }
 
-generateBatch();
+(async () => {
+  try {
+    await cleanupHostArtifacts();
+    await generateBatch();
+  } catch (error) {
+    console.error(error);
+    process.exitCode = 1;
+  }
+})();
