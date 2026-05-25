@@ -36,16 +36,16 @@ Top Photo Credit: [Ida Sofie//](https://www.flickr.com/photos/25354601@N02/23993
 
 ## Related Posts
 
-- [5 Cool Edward Quotes ...](https://twilight.allwomenstalk.com/5-cool-edward-quotes/)
-- [inspirational personalities](https://celebs.allwomenstalk.com/8-inspirational-personalities-who-have-overcome-the-odds/)
-- [motivational quote when feeling down](https://health.allwomenstalk.com/motivational-quotes-for-when-youre-feeling-down/)
-- [black woman friendship quotes](https://lifestyle.allwomenstalk.com/friendship-quotes/)
 - [relate quotes](https://movies.allwomenstalk.com/amazing-quotes-from-movies-that-i-can-relate-to/)
-- [single as](https://love.allwomenstalk.com/awesome-quotes-about-being-single/)
+- [inspirational personalities](https://celebs.allwomenstalk.com/8-inspirational-personalities-who-have-overcome-the-odds/)
 - [10 Beautiful and Highly Motivational Weight Loss Q...](https://weightloss.allwomenstalk.com/beautiful-and-highly-motivational-weight-loss-quotes/)
-- [quotes exercise health](https://health.allwomenstalk.com/motivational-health-and-exercise-quotes/)
 - [women christian speakers](https://lifestyle.allwomenstalk.com/quotes-to-empower-and-inspire-women/)
+- [single as](https://love.allwomenstalk.com/awesome-quotes-about-being-single/)
 - [what do flowers remind you of](https://gardening.allwomenstalk.com/7-flowers-that-remind-me-that-life-is-good/)
+- [5 Cool Edward Quotes ...](https://twilight.allwomenstalk.com/5-cool-edward-quotes/)
+- [black woman friendship quotes](https://lifestyle.allwomenstalk.com/friendship-quotes/)
+- [quotes exercise health](https://health.allwomenstalk.com/motivational-health-and-exercise-quotes/)
+- [motivational quote when feeling down](https://health.allwomenstalk.com/motivational-quotes-for-when-youre-feeling-down/)
 - [5 Reasons Why I Love Twilight ...](https://twilight.allwomenstalk.com/5-reasons-why-i-love-twilight/)
 - [Top 5 Werewolves in Twilight ...](https://twilight.allwomenstalk.com/top-5-werewolves-in-twilight/)
 

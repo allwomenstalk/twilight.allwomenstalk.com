@@ -34,16 +34,16 @@ Special effects have evolved, but these iconic monsters still hold their own. No
 
 ## Related Posts
 
+- [films about werewolves](https://twilight.allwomenstalk.com/5-werewolf-movies/)
 - [5 More Awesome Vampire Movies ...](https://twilight.allwomenstalk.com/5-more-awesome-vampire-movies/)
+- [miss zombie movie](https://twilight.allwomenstalk.com/5-cool-zombie-movies/)
 - [vampire and werewolf movies on netflix](https://twilight.allwomenstalk.com/5-cool-werewolf-movies/)
+- [5 Scary Movies ...](https://twilight.allwomenstalk.com/5-scary-movies/)
+- [movies like my best friends wedding](https://wedding.allwomenstalk.com/best-and-surprisingly-awesome-wedding-movies/)
 - [5 Must See Scenes from the Movie ...](https://twilight.allwomenstalk.com/5-must-see-scenes-from-the-movie/)
 - [famous vampires in movies](https://twilight.allwomenstalk.com/5-popular-vampires-from-movies/)
-- [films about werewolves](https://twilight.allwomenstalk.com/5-werewolf-movies/)
-- [7 types of vampires](https://twilight.allwomenstalk.com/5-amazing-vampires-from-movies/)
-- [5 Scary Movies ...](https://twilight.allwomenstalk.com/5-scary-movies/)
-- [miss zombie movie](https://twilight.allwomenstalk.com/5-cool-zombie-movies/)
 - [giant spider horror movies](https://twilight.allwomenstalk.com/5-creepy-spider-movies-to-watch/)
-- [movies like my best friends wedding](https://wedding.allwomenstalk.com/best-and-surprisingly-awesome-wedding-movies/)
+- [7 types of vampires](https://twilight.allwomenstalk.com/5-amazing-vampires-from-movies/)
 - [5 Cool Werewolves ...](https://twilight.allwomenstalk.com/5-cool-werewolves/)
 - [5 Scary Video Games ...](https://twilight.allwomenstalk.com/5-scary-video-games/)
 

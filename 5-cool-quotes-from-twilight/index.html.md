@@ -37,15 +37,15 @@ Top Photo Credit: [pieceacakeutah](https://www.flickr.com/photos/46629837@N03/45
 ## Related Posts
 
 - [quotes exercise health](https://health.allwomenstalk.com/motivational-health-and-exercise-quotes/)
-- [black woman friendship quotes](https://lifestyle.allwomenstalk.com/friendship-quotes/)
 - [relate quotes](https://movies.allwomenstalk.com/amazing-quotes-from-movies-that-i-can-relate-to/)
 - [10 Beautiful and Highly Motivational Weight Loss Q...](https://weightloss.allwomenstalk.com/beautiful-and-highly-motivational-weight-loss-quotes/)
-- [single as](https://love.allwomenstalk.com/awesome-quotes-about-being-single/)
+- [inspirational personalities](https://celebs.allwomenstalk.com/8-inspirational-personalities-who-have-overcome-the-odds/)
+- [black woman friendship quotes](https://lifestyle.allwomenstalk.com/friendship-quotes/)
+- [motivational quote when feeling down](https://health.allwomenstalk.com/motivational-quotes-for-when-youre-feeling-down/)
+- [what do flowers remind you of](https://gardening.allwomenstalk.com/7-flowers-that-remind-me-that-life-is-good/)
 - [5 Cool Edward Quotes ...](https://twilight.allwomenstalk.com/5-cool-edward-quotes/)
 - [twiight quotes](https://twilight.allwomenstalk.com/5-of-my-favorite-quotes-from-twilight/)
-- [inspirational personalities](https://celebs.allwomenstalk.com/8-inspirational-personalities-who-have-overcome-the-odds/)
-- [what do flowers remind you of](https://gardening.allwomenstalk.com/7-flowers-that-remind-me-that-life-is-good/)
-- [motivational quote when feeling down](https://health.allwomenstalk.com/motivational-quotes-for-when-youre-feeling-down/)
+- [single as](https://love.allwomenstalk.com/awesome-quotes-about-being-single/)
 - [5 Reasons Why I Love Twilight ...](https://twilight.allwomenstalk.com/5-reasons-why-i-love-twilight/)
 - [Top 5 Werewolves in Twilight ...](https://twilight.allwomenstalk.com/top-5-werewolves-in-twilight/)
 

@@ -36,16 +36,16 @@ Top Photo Credit: [Roshnii](https://www.flickr.com/photos/roshnii/83345802/)
 
 ## Related Posts
 
-- [paris color riche le stylo shadow avant garde](https://lifestyle.allwomenstalk.com/classic-new-years-resolutions-you-should-consider/)
-- [10 Ways to Be Happier in the New Year ...](https://health.allwomenstalk.com/ways-to-be-happier-in-the-new-year/)
-- [site:health.allwomenstalk.com](https://health.allwomenstalk.com/ways-to-be-more-energetic/)
-- [7 Good Habits for New Year ...](https://health.allwomenstalk.com/good-habits-for/)
-- [taking control of your life](https://health.allwomenstalk.com/top-ways-to-take-control-of-your-life/)
-- [7 Shortcuts to Better Health ...](https://health.allwomenstalk.com/7-shortcuts-to-better-health/)
-- [achieve fame](https://celebs.allwomenstalk.com/7-ways-to-achieve-fame/)
 - [how to make yourself a better person](https://lifestyle.allwomenstalk.com/ways-to-make-yourself-a-better-person/)
+- [paris color riche le stylo shadow avant garde](https://lifestyle.allwomenstalk.com/classic-new-years-resolutions-you-should-consider/)
 - [everyday tips](https://lifestyle.allwomenstalk.com/awesome-practical-tips-for-everyday-life/)
+- [achieve fame](https://celebs.allwomenstalk.com/7-ways-to-achieve-fame/)
+- [10 Ways to Be Happier in the New Year ...](https://health.allwomenstalk.com/ways-to-be-happier-in-the-new-year/)
+- [taking control of your life](https://health.allwomenstalk.com/top-ways-to-take-control-of-your-life/)
 - [8 Cleverly Efficient Tips on How to Start Your Day...](https://health.allwomenstalk.com/cleverly-efficient-tips-on-how-to-start-your-day/)
+- [7 Good Habits for New Year ...](https://health.allwomenstalk.com/good-habits-for/)
+- [site:health.allwomenstalk.com](https://health.allwomenstalk.com/ways-to-be-more-energetic/)
+- [7 Shortcuts to Better Health ...](https://health.allwomenstalk.com/7-shortcuts-to-better-health/)
 - [5 Ways to Be the Best Version of Yourself ...](https://allwomenstalk.com/ways-to-be-the-best-version-of-yourself/)
 - [10 Ways to Keep a Positive Attitude ...](https://allwomenstalk.com/10-ways-to-keep-a-positive-attitude/)
 

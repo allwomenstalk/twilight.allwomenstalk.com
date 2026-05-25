@@ -36,16 +36,16 @@ Top Photo Credit: [Mars Observer](https://www.flickr.com/photos/mars_observer/45
 
 ## Related Posts
 
-- [how to deal with rude passengers](https://travel.allwomenstalk.com/ways-to-deal-with-annoying-co-passengers/)
-- [your mother in law](https://wedding.allwomenstalk.com/7-things-that-suggest-youll-get-along-with-your-mother-in-law/)
-- [sibling rivalry solutions](https://parenting.allwomenstalk.com/8-tips-to-settle-sibling-rivalry/)
-- [10 Ways to Deal with a Tantrum ...](https://parenting.allwomenstalk.com/10-ways-to-deal-with-a-tantrum/)
-- [werewolf attack](https://twilight.allwomenstalk.com/5-ways-to-survive-a-werewolf-attack/)
-- [7 Ways to Deal with Laugh Lines ...](https://mindfulness.allwomenstalk.com/ways-to-deal-with-laugh-lines/)
-- [8 Alternatives to Punishment ...](https://parenting.allwomenstalk.com/alternatives-to-punishment/)
 - [how to overcome envy](https://lifestyle.allwomenstalk.com/tips-to-overcome-envy/)
-- [12 Things You Can Say to Someone Suicidal or Depre...](https://health.allwomenstalk.com/12-things-you-can-say-to-someone-suicidal-or-depressed/)
+- [your mother in law](https://wedding.allwomenstalk.com/7-things-that-suggest-youll-get-along-with-your-mother-in-law/)
+- [how to deal with rude passengers](https://travel.allwomenstalk.com/ways-to-deal-with-annoying-co-passengers/)
 - [7 People to Ask for Advice ...](https://lifestyle.allwomenstalk.com/people-to-ask-for-advice/)
+- [10 Ways to Deal with a Tantrum ...](https://parenting.allwomenstalk.com/10-ways-to-deal-with-a-tantrum/)
+- [7 Ways to Deal with Laugh Lines ...](https://mindfulness.allwomenstalk.com/ways-to-deal-with-laugh-lines/)
+- [12 Things You Can Say to Someone Suicidal or Depre...](https://health.allwomenstalk.com/12-things-you-can-say-to-someone-suicidal-or-depressed/)
+- [werewolf attack](https://twilight.allwomenstalk.com/5-ways-to-survive-a-werewolf-attack/)
+- [sibling rivalry solutions](https://parenting.allwomenstalk.com/8-tips-to-settle-sibling-rivalry/)
+- [8 Alternatives to Punishment ...](https://parenting.allwomenstalk.com/alternatives-to-punishment/)
 - [5 Ways to Please a Vampire ...](https://twilight.allwomenstalk.com/5-ways-to-please-a-vampire/)
 - [5 Moves Not to Make around Vampires](https://twilight.allwomenstalk.com/5-moves-not-to-make-around-vampires/)
 

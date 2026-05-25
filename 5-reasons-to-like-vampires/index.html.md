@@ -36,16 +36,16 @@ Top Photo Credit: [\[Ligeia\]](https://www.flickr.com/photos/ligeia_scabbia/2082
 
 ## Related Posts
 
-- [5 Reasons Twilight Does Not Suck ...](https://twilight.allwomenstalk.com/5-reasons-twilight-does-not-suck/)
-- [jacob is cool](https://twilight.allwomenstalk.com/5-cool-things-about-jacob/)
-- [watch twilight 5](https://twilight.allwomenstalk.com/5-reasons-to-watch-new-moon/)
-- [robert pattinson personality type](https://twilight.allwomenstalk.com/5-reasons-girls-love-robert-pattinson/)
-- [5 Reasons I Liked the Host ...](https://twilight.allwomenstalk.com/5-reasons-i-liked-the-host/)
 - [what does a vampire straw look like](https://twilight.allwomenstalk.com/5-things-i-admire-about-a-vampire/)
-- [5 Reasons I like Graveyards ...](https://twilight.allwomenstalk.com/5-reasons-i-like-graveyards/)
+- [5 Reasons a Smart Woman Would Love Twilight ...](https://twilight.allwomenstalk.com/5-reasons-a-smart-woman-would-love-twilight/)
+- [5 Reasons I Liked the Host ...](https://twilight.allwomenstalk.com/5-reasons-i-liked-the-host/)
 - [how long are all 5 of the twilight movies combined](https://twilight.allwomenstalk.com/5-reasons-to-watch-breaking-dawn-in-theatres/)
 - [read twilight books](https://twilight.allwomenstalk.com/5-reasons-to-read-twilight/)
-- [5 Reasons a Smart Woman Would Love Twilight ...](https://twilight.allwomenstalk.com/5-reasons-a-smart-woman-would-love-twilight/)
+- [jacob is cool](https://twilight.allwomenstalk.com/5-cool-things-about-jacob/)
+- [5 Reasons Twilight Does Not Suck ...](https://twilight.allwomenstalk.com/5-reasons-twilight-does-not-suck/)
+- [watch twilight 5](https://twilight.allwomenstalk.com/5-reasons-to-watch-new-moon/)
+- [robert pattinson personality type](https://twilight.allwomenstalk.com/5-reasons-girls-love-robert-pattinson/)
+- [5 Reasons I like Graveyards ...](https://twilight.allwomenstalk.com/5-reasons-i-like-graveyards/)
 - [5 Reasons Why I Love Twilight ...](https://twilight.allwomenstalk.com/5-reasons-why-i-love-twilight/)
 - [5 Reasons Why I Love Werewolves ...](https://twilight.allwomenstalk.com/5-reasons-why-i-love-werewolves/)
 

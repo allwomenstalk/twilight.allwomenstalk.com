@@ -36,16 +36,16 @@ Top Photo Credit: [fesign](https://www.flickr.com/photos/fesign/4475900472/)
 
 ## Related Posts
 
+- [5 Facts on Magical Spells ...](https://twilight.allwomenstalk.com/5-facts-on-magical-spells/)
 - [whats a scene girl](https://twilight.allwomenstalk.com/5-facts-on-scene-kids/)
-- [what is a chupacabra look like](https://twilight.allwomenstalk.com/5-cool-things-about-the-chupacabra/)
 - [5 Facts on Voodoo ...](https://twilight.allwomenstalk.com/5-facts-on-voodoo/)
 - [nostradamus facts](https://twilight.allwomenstalk.com/5-facts-on-nostradamus/)
 - [fun facts about chupacabra](https://twilight.allwomenstalk.com/5-facts-on-the-chupacabra/)
 - [5 Facts on Zombies ...](https://twilight.allwomenstalk.com/5-facts-on-zombies/)
-- [what is an emo personality](https://twilight.allwomenstalk.com/5-facts-on-emo/)
-- [facts about twilight movie](https://twilight.allwomenstalk.com/5-facts-on-bella-swan/)
-- [5 Facts on Magical Spells ...](https://twilight.allwomenstalk.com/5-facts-on-magical-spells/)
 - [5 Facts on Druids ...](https://twilight.allwomenstalk.com/5-facts-on-druids/)
+- [facts about twilight movie](https://twilight.allwomenstalk.com/5-facts-on-bella-swan/)
+- [what is an emo personality](https://twilight.allwomenstalk.com/5-facts-on-emo/)
+- [what is a chupacabra look like](https://twilight.allwomenstalk.com/5-cool-things-about-the-chupacabra/)
 - [5 Facts on Vampires ...](https://twilight.allwomenstalk.com/5-facts-on-vampires/)
 - [5 Ghost Facts ...](https://twilight.allwomenstalk.com/5-ghost-facts/)
 

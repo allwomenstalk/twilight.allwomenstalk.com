@@ -36,16 +36,16 @@ Top Photo Credit: [Cuba Gallery - Now on Twitter!](https://www.flickr.com/photos
 
 ## Related Posts
 
-- [7 Facts on Florida ...](https://travel.allwomenstalk.com/7-facts-on-florida/)
-- [5 Facts on Voodoo ...](https://twilight.allwomenstalk.com/5-facts-on-voodoo/)
-- [twilight movie fun facts](https://twilight.allwomenstalk.com/5-facts-on-robert-pattinson/)
-- [nostradamus facts](https://twilight.allwomenstalk.com/5-facts-on-nostradamus/)
-- [5 Funny Superstitions ...](https://twilight.allwomenstalk.com/5-funny-superstitions/)
-- [twilight superstitions](https://twilight.allwomenstalk.com/5-common-superstitions/)
 - [5 Dragons Facts to Know ...](https://twilight.allwomenstalk.com/5-dragons-facts-to-know/)
-- [5 Facts on DNA ...](https://twilight.allwomenstalk.com/5-facts-on-dna/)
-- [5 Facts on Zombies ...](https://twilight.allwomenstalk.com/5-facts-on-zombies/)
 - [cat facts in islam](https://travel.allwomenstalk.com/7-facts-on-islam/)
+- [twilight superstitions](https://twilight.allwomenstalk.com/5-common-superstitions/)
+- [nostradamus facts](https://twilight.allwomenstalk.com/5-facts-on-nostradamus/)
+- [twilight movie fun facts](https://twilight.allwomenstalk.com/5-facts-on-robert-pattinson/)
+- [5 Facts on Voodoo ...](https://twilight.allwomenstalk.com/5-facts-on-voodoo/)
+- [5 Facts on Zombies ...](https://twilight.allwomenstalk.com/5-facts-on-zombies/)
+- [5 Funny Superstitions ...](https://twilight.allwomenstalk.com/5-funny-superstitions/)
+- [7 Facts on Florida ...](https://travel.allwomenstalk.com/7-facts-on-florida/)
+- [5 Facts on DNA ...](https://twilight.allwomenstalk.com/5-facts-on-dna/)
 - [5 Facts on Salem Witch Trials ...](https://twilight.allwomenstalk.com/5-facts-on-salem-witch-trials/)
 - [5 Facts for Wiccans ...](https://twilight.allwomenstalk.com/5-facts-for-wiccans/)
 

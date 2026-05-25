@@ -36,16 +36,16 @@ Top Photo Credit: [..dca..](https://www.flickr.com/photos/diham/3619625974/)
 
 ## Related Posts
 
-- [celebrity vampires](https://twilight.allwomenstalk.com/5-popular-vampires-from-the-real-world/)
-- [greek god of twilight](https://twilight.allwomenstalk.com/5-greek-gods-that-interest-me/)
-- [8 treks](https://travel.allwomenstalk.com/terrific-treks/)
-- [vampires sexy](https://twilight.allwomenstalk.com/5-sexy-vampires/)
 - [scenes from twilight](https://twilight.allwomenstalk.com/5-mind-grabbing-scenes-from-the-twilight-series/)
-- [5 Signs We Are Living in a Twilight World ...](https://twilight.allwomenstalk.com/5-signs-we-are-living-in-a-twilight-world/)
-- [cool mythical creatures](https://twilight.allwomenstalk.com/5-cool-mythical-creatures/)
+- [vampires sexy](https://twilight.allwomenstalk.com/5-sexy-vampires/)
+- [5 Moves to Make when Being Attacked by a Vampire ....](https://twilight.allwomenstalk.com/5-moves-to-make-when-being-attacked-by-a-vampire/)
+- [8 treks](https://travel.allwomenstalk.com/terrific-treks/)
 - [5 Things Twilight Ruined ...](https://twilight.allwomenstalk.com/5-things-twilight-ruined/)
 - [5 Scary Video Games ...](https://twilight.allwomenstalk.com/5-scary-video-games/)
-- [5 Moves to Make when Being Attacked by a Vampire ....](https://twilight.allwomenstalk.com/5-moves-to-make-when-being-attacked-by-a-vampire/)
+- [cool mythical creatures](https://twilight.allwomenstalk.com/5-cool-mythical-creatures/)
+- [greek god of twilight](https://twilight.allwomenstalk.com/5-greek-gods-that-interest-me/)
+- [5 Signs We Are Living in a Twilight World ...](https://twilight.allwomenstalk.com/5-signs-we-are-living-in-a-twilight-world/)
+- [celebrity vampires](https://twilight.allwomenstalk.com/5-popular-vampires-from-the-real-world/)
 - [Top 5 Werewolves in Twilight ...](https://twilight.allwomenstalk.com/top-5-werewolves-in-twilight/)
 - [5 Reasons Why I Love Werewolves ...](https://twilight.allwomenstalk.com/5-reasons-why-i-love-werewolves/)
 

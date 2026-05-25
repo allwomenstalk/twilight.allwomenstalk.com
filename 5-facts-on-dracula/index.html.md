@@ -36,16 +36,16 @@ Top Photo Credit: [teikjoon](https://www.flickr.com/photos/teikjoon/4453816000/)
 
 ## Related Posts
 
+- [5 Cool Facts on Bats ...](https://twilight.allwomenstalk.com/5-cool-facts-on-bats/)
+- [facts of salem witch trials](https://twilight.allwomenstalk.com/5-facts-on-salem-witch-trials/)
 - [5 facts about spiders](https://twilight.allwomenstalk.com/5-facts-on-spiders/)
 - [vampire mythical creatures](https://twilight.allwomenstalk.com/5-vampire-myths/)
-- [5 Interesting Facts on Snakes ...](https://twilight.allwomenstalk.com/5-interesting-facts-on-snakes/)
-- [what are some facts about vampires](https://twilight.allwomenstalk.com/5-facts-on-vampires/)
 - [author stephanie meyer](https://twilight.allwomenstalk.com/5-things-about-stephanie-meyer-you-should-know/)
-- [dragons triangle](https://twilight.allwomenstalk.com/5-facts-on-the-dragons-triangle/)
-- [facts of salem witch trials](https://twilight.allwomenstalk.com/5-facts-on-salem-witch-trials/)
-- [5 Cool Facts on Spiders ...](https://twilight.allwomenstalk.com/5-cool-facts-on-spiders/)
-- [5 Cool Facts on Bats ...](https://twilight.allwomenstalk.com/5-cool-facts-on-bats/)
 - [facts about chupacabras](https://twilight.allwomenstalk.com/5-facts-on-the-goat-sucker/)
+- [what are some facts about vampires](https://twilight.allwomenstalk.com/5-facts-on-vampires/)
+- [5 Cool Facts on Spiders ...](https://twilight.allwomenstalk.com/5-cool-facts-on-spiders/)
+- [5 Interesting Facts on Snakes ...](https://twilight.allwomenstalk.com/5-interesting-facts-on-snakes/)
+- [dragons triangle](https://twilight.allwomenstalk.com/5-facts-on-the-dragons-triangle/)
 - [5 Facts on Twilight ...](https://twilight.allwomenstalk.com/5-facts-on-twilight/)
 - [5 Reasons to like Vampires ...](https://twilight.allwomenstalk.com/5-reasons-to-like-vampires/)
 

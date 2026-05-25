@@ -36,16 +36,16 @@ Top Photo Credit: [Amadika](https://www.flickr.com/photos/amadika/3300786612/)
 
 ## Related Posts
 
-- [do vampires wear hats](https://twilight.allwomenstalk.com/5-things-to-avoid-that-would-attract-a-vampire/)
-- [5 Things Not to do when You Meet Edward ...](https://twilight.allwomenstalk.com/5-things-not-to-do-when-you-meet-edward/)
-- [what can vampires not do](https://twilight.allwomenstalk.com/5-things-vampires-cannot-do-in-the-human-world/)
-- [5 Things NOT to do in a Garden ...](https://gardening.allwomenstalk.com/5-things-not-to-do-in-a-garden/)
-- [7 Things You Dont Need to Pack in Your Suitcase .....](https://travel.allwomenstalk.com/things-you-dont-need-to-pack-in-your-suitcase/)
 - [what should you not include in a resume](https://money.allwomenstalk.com/things-to-not-include-in-a-resume/)
+- [5 Things Not to do when You Meet Edward ...](https://twilight.allwomenstalk.com/5-things-not-to-do-when-you-meet-edward/)
+- [5 Things Not to do in the Garden ...](https://gardening.allwomenstalk.com/5-things-not-to-do-in-the-garden/)
+- [7 Things You Dont Need to Pack in Your Suitcase .....](https://travel.allwomenstalk.com/things-you-dont-need-to-pack-in-your-suitcase/)
+- [5 Things NOT to do in a Garden ...](https://gardening.allwomenstalk.com/5-things-not-to-do-in-a-garden/)
+- [5 Evil Monsters to Avoid ...](https://twilight.allwomenstalk.com/5-evil-monsters-to-avoid/)
 - [7 Things You Should Definitely Not Buy for Kids .....](https://parenting.allwomenstalk.com/7-things-you-should-definitely-not-buy-for-kids/)
 - [10 Things to Absolutely and Definitely Not Buy dur...](https://money.allwomenstalk.com/things-to-absolutely-and-definitely-not-buy-during-the-holidays/)
-- [5 Things Not to do in the Garden ...](https://gardening.allwomenstalk.com/5-things-not-to-do-in-the-garden/)
-- [5 Evil Monsters to Avoid ...](https://twilight.allwomenstalk.com/5-evil-monsters-to-avoid/)
+- [what can vampires not do](https://twilight.allwomenstalk.com/5-things-vampires-cannot-do-in-the-human-world/)
+- [do vampires wear hats](https://twilight.allwomenstalk.com/5-things-to-avoid-that-would-attract-a-vampire/)
 - [5 Reasons Why I Love Werewolves ...](https://twilight.allwomenstalk.com/5-reasons-why-i-love-werewolves/)
 - [5 Reasons Why I Love Vampires ...](https://twilight.allwomenstalk.com/5-reasons-why-i-love-vampires/)
 

@@ -36,16 +36,16 @@ Top Photo Credit: [pieceacakeutah](https://www.flickr.com/photos/46629837@N03/45
 
 ## Related Posts
 
+- [fun facts about tai chi](https://twilight.allwomenstalk.com/5-facts-on-chi/)
 - [ghost facts](https://twilight.allwomenstalk.com/5-ghost-facts/)
-- [dragons triangle](https://twilight.allwomenstalk.com/5-facts-on-the-dragons-triangle/)
-- [how old is scooby doo in human years](https://twilight.allwomenstalk.com/5-facts-on-scooby-doo/)
-- [color le shadow violet amour](https://twilight.allwomenstalk.com/5-cool-paranormal-facts/)
-- [vampire mythical creatures](https://twilight.allwomenstalk.com/5-vampire-myths/)
 - [baby bat facts](https://twilight.allwomenstalk.com/5-facts-on-bats/)
 - [the true facts](https://twilight.allwomenstalk.com/5-facts-about-trolls/)
-- [facts about wicca](https://twilight.allwomenstalk.com/5-facts-for-wiccans/)
+- [dragons triangle](https://twilight.allwomenstalk.com/5-facts-on-the-dragons-triangle/)
 - [what are some facts about vampires](https://twilight.allwomenstalk.com/5-facts-on-vampires/)
-- [fun facts about tai chi](https://twilight.allwomenstalk.com/5-facts-on-chi/)
+- [vampire mythical creatures](https://twilight.allwomenstalk.com/5-vampire-myths/)
+- [how old is scooby doo in human years](https://twilight.allwomenstalk.com/5-facts-on-scooby-doo/)
+- [facts about wicca](https://twilight.allwomenstalk.com/5-facts-for-wiccans/)
+- [color le shadow violet amour](https://twilight.allwomenstalk.com/5-cool-paranormal-facts/)
 - [5 Reasons to Read Twilight ...](https://twilight.allwomenstalk.com/5-reasons-to-read-twilight/)
 - [5 Things I Liked in Breaking Dawn ...](https://twilight.allwomenstalk.com/5-things-i-liked-in-breaking-dawn/)
 

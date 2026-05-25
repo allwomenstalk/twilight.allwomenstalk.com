@@ -36,16 +36,16 @@ Top Photo Credit: [the dreaming press](https://www.flickr.com/photos/blue_indigo
 
 ## Related Posts
 
-- [inspirational personalities](https://celebs.allwomenstalk.com/8-inspirational-personalities-who-have-overcome-the-odds/)
-- [single as](https://love.allwomenstalk.com/awesome-quotes-about-being-single/)
-- [what do flowers remind you of](https://gardening.allwomenstalk.com/7-flowers-that-remind-me-that-life-is-good/)
-- [quotes exercise health](https://health.allwomenstalk.com/motivational-health-and-exercise-quotes/)
-- [relate quotes](https://movies.allwomenstalk.com/amazing-quotes-from-movies-that-i-can-relate-to/)
-- [motivational quote when feeling down](https://health.allwomenstalk.com/motivational-quotes-for-when-youre-feeling-down/)
 - [10 Beautiful and Highly Motivational Weight Loss Q...](https://weightloss.allwomenstalk.com/beautiful-and-highly-motivational-weight-loss-quotes/)
 - [black woman friendship quotes](https://lifestyle.allwomenstalk.com/friendship-quotes/)
-- [women christian speakers](https://lifestyle.allwomenstalk.com/quotes-to-empower-and-inspire-women/)
+- [quotes exercise health](https://health.allwomenstalk.com/motivational-health-and-exercise-quotes/)
+- [relate quotes](https://movies.allwomenstalk.com/amazing-quotes-from-movies-that-i-can-relate-to/)
+- [single as](https://love.allwomenstalk.com/awesome-quotes-about-being-single/)
+- [what do flowers remind you of](https://gardening.allwomenstalk.com/7-flowers-that-remind-me-that-life-is-good/)
 - [Words of Wisdom from Natalie Wood ...](https://allwomenstalk.com/words-of-wisdom-from-natalie-wood/)
+- [inspirational personalities](https://celebs.allwomenstalk.com/8-inspirational-personalities-who-have-overcome-the-odds/)
+- [women christian speakers](https://lifestyle.allwomenstalk.com/quotes-to-empower-and-inspire-women/)
+- [motivational quote when feeling down](https://health.allwomenstalk.com/motivational-quotes-for-when-youre-feeling-down/)
 - [5 Reasons to Love Edward ...](https://twilight.allwomenstalk.com/5-reasons-to-love-edward/)
 - [5 Cool Quotes from Twilight ...](https://twilight.allwomenstalk.com/5-cool-quotes-from-twilight/)
 

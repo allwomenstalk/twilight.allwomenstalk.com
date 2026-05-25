@@ -36,16 +36,16 @@ Top Photo Credit: [Nikki Pugh](https://www.flickr.com/photos/nikki_pugh/49483546
 
 ## Related Posts
 
-- [7 Facts about Cats ...](https://paranormal.allwomenstalk.com/7-facts-about-cats/)
 - [anole marriage](https://gardening.allwomenstalk.com/5-cool-facts-on-anoles/)
-- [interesting facts about christmas trees](https://gardening.allwomenstalk.com/5-facts-on-the-christmas-tree/)
-- [10 Interesting Fruit Facts to Know ...](https://diet.allwomenstalk.com/interesting-fruit-facts-to-know/)
-- [7 Facts about the Unborn ...](https://parenting.allwomenstalk.com/facts-about-the-unborn/)
-- [is salvia the same as sage](https://gardening.allwomenstalk.com/5-facts-on-salvia/)
-- [midwife facts](https://parenting.allwomenstalk.com/facts-about-midwifery/)
-- [theories about ghosts](https://paranormal.allwomenstalk.com/8-interesting-theories-about-ghosts/)
-- [7 Weird Pregnancy Facts ...](https://parenting.allwomenstalk.com/7-weird-pregnancy-facts/)
 - [5 Paranormal Definitions You Should Know](https://paranormal.allwomenstalk.com/5-paranormal-definitions-you-should-know/)
+- [interesting facts about christmas trees](https://gardening.allwomenstalk.com/5-facts-on-the-christmas-tree/)
+- [7 Facts about Cats ...](https://paranormal.allwomenstalk.com/7-facts-about-cats/)
+- [midwife facts](https://parenting.allwomenstalk.com/facts-about-midwifery/)
+- [7 Weird Pregnancy Facts ...](https://parenting.allwomenstalk.com/7-weird-pregnancy-facts/)
+- [10 Interesting Fruit Facts to Know ...](https://diet.allwomenstalk.com/interesting-fruit-facts-to-know/)
+- [theories about ghosts](https://paranormal.allwomenstalk.com/8-interesting-theories-about-ghosts/)
+- [is salvia the same as sage](https://gardening.allwomenstalk.com/5-facts-on-salvia/)
+- [7 Facts about the Unborn ...](https://parenting.allwomenstalk.com/facts-about-the-unborn/)
 - [5 Ghost Facts ...](https://twilight.allwomenstalk.com/5-ghost-facts/)
 - [5 Facts on DNA ...](https://twilight.allwomenstalk.com/5-facts-on-dna/)
 

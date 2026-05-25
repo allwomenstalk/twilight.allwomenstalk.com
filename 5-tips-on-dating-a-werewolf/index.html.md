@@ -36,16 +36,16 @@ Top Photo Credit: [loveamgirl](https://www.flickr.com/photos/loveamgirl/31153599
 
 ## Related Posts
 
-- [vampire date](https://twilight.allwomenstalk.com/5-tips-on-dating-a-vampire/)
-- [how to be hard to get](https://love.allwomenstalk.com/7-tips-on-playing-hard-to-get/)
-- [how to meet guy](https://love.allwomenstalk.com/tips-on-how-to-meet-a-guy/)
-- [acts of service for boyfriend](https://love.allwomenstalk.com/relationship-advice-random-acts-of-kindness-you-can-do-for-your-man/)
-- [flirten online](https://love.allwomenstalk.com/positively-useful-tips-on-how-to-flirt-online/)
+- [i keep blowing up his phone](https://love.allwomenstalk.com/tips-to-get-a-guy-to-text-you-back/)
+- [princess running away](https://love.allwomenstalk.com/interesting-dating-strategies-to-borrow-from-disney-princesses/)
 - [10 Wonderfully Unconventional but Impressively Eff...](https://love.allwomenstalk.com/wonderfully-unconventional-but-impressively-effective-online-dating-tips/)
 - [flirty hidden talents](https://love.allwomenstalk.com/bewitchingly-sexy-tips-on-how-to-impress-a-guy/)
-- [princess running away](https://love.allwomenstalk.com/interesting-dating-strategies-to-borrow-from-disney-princesses/)
-- [i keep blowing up his phone](https://love.allwomenstalk.com/tips-to-get-a-guy-to-text-you-back/)
+- [how to be hard to get](https://love.allwomenstalk.com/7-tips-on-playing-hard-to-get/)
+- [flirten online](https://love.allwomenstalk.com/positively-useful-tips-on-how-to-flirt-online/)
+- [how to meet guy](https://love.allwomenstalk.com/tips-on-how-to-meet-a-guy/)
 - [french kissing](https://lifestyle.allwomenstalk.com/steps-to-better-french-kissing/)
+- [vampire date](https://twilight.allwomenstalk.com/5-tips-on-dating-a-vampire/)
+- [acts of service for boyfriend](https://love.allwomenstalk.com/relationship-advice-random-acts-of-kindness-you-can-do-for-your-man/)
 - [5 Tips for the Desperate Vampire Seeking Girl ...](https://twilight.allwomenstalk.com/5-tips-for-the-desperate-vampire-seeking-girl/)
 - [5 Ways to Please a Vampire ...](https://twilight.allwomenstalk.com/5-ways-to-please-a-vampire/)
 

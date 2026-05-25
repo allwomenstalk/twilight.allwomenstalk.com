@@ -36,16 +36,16 @@ Top Photo Credit: [pantalonesnegro](https://www.flickr.com/photos/58695937@N00/3
 
 ## Related Posts
 
+- [5 facts about owls](https://twilight.allwomenstalk.com/5-facts-on-owls/)
 - [facts on werewolves](https://twilight.allwomenstalk.com/5-facts-on-werewolves/)
-- [5 Facts on Twilight ...](https://twilight.allwomenstalk.com/5-facts-on-twilight/)
 - [5 facts about ghosts](https://twilight.allwomenstalk.com/5-facts-on-ghosts/)
 - [5 Facts on EMF Detectors ...](https://twilight.allwomenstalk.com/5-facts-on-emf-detectors/)
-- [characteristics of blizzards](https://travel.allwomenstalk.com/7-facts-on-blizzards/)
-- [5 Facts on Aliens ...](https://twilight.allwomenstalk.com/5-facts-on-aliens/)
-- [5 facts about owls](https://twilight.allwomenstalk.com/5-facts-on-owls/)
-- [5 Ghostly Facts ...](https://twilight.allwomenstalk.com/5-ghostly-facts/)
 - [bad girl photo](https://twilight.allwomenstalk.com/5-facts-on-love-spells/)
+- [5 Facts on Twilight ...](https://twilight.allwomenstalk.com/5-facts-on-twilight/)
+- [5 Facts on Aliens ...](https://twilight.allwomenstalk.com/5-facts-on-aliens/)
+- [5 Ghostly Facts ...](https://twilight.allwomenstalk.com/5-ghostly-facts/)
 - [mayan sparkler cookies](https://twilight.allwomenstalk.com/facts-on/)
+- [characteristics of blizzards](https://travel.allwomenstalk.com/7-facts-on-blizzards/)
 - [5 Ghost Facts ...](https://twilight.allwomenstalk.com/5-ghost-facts/)
 - [5 Things You Should Know about Vampires ...](https://twilight.allwomenstalk.com/5-things-you-should-know-about-vampires/)
 

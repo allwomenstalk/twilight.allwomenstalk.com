@@ -36,16 +36,16 @@ Top Photo Credit: [- Lauren Sarah](https://web.archive.org/web/https://www.flick
 
 ## Related Posts
 
-- [what do vampires smell like](https://twilight.allwomenstalk.com/5-reasons-vampires-are-cool/)
-- [my werewolf boyfriend](https://twilight.allwomenstalk.com/5-reasons-to-love-your-werewolf-boyfriend/)
-- [5 Reasons to Love Edward ...](https://twilight.allwomenstalk.com/5-reasons-to-love-edward/)
-- [5 Awesome Things about Edward ...](https://twilight.allwomenstalk.com/5-awesome-things-about-edward/)
-- [5 Reasons I Liked the Host ...](https://twilight.allwomenstalk.com/5-reasons-i-liked-the-host/)
-- [5 Reasons I like Graveyards ...](https://twilight.allwomenstalk.com/5-reasons-i-like-graveyards/)
+- [5 Reasons to like Vampires ...](https://twilight.allwomenstalk.com/5-reasons-to-like-vampires/)
 - [jacob is cool](https://twilight.allwomenstalk.com/5-cool-things-about-jacob/)
 - [le smoky hollywood](https://twilight.allwomenstalk.com/5-things-about-aliens-i-like/)
-- [5 Reasons to like Vampires ...](https://twilight.allwomenstalk.com/5-reasons-to-like-vampires/)
 - [5 Reasons I like Older Horror Film ...](https://twilight.allwomenstalk.com/5-reasons-i-like-older-horror-film/)
+- [my werewolf boyfriend](https://twilight.allwomenstalk.com/5-reasons-to-love-your-werewolf-boyfriend/)
+- [what do vampires smell like](https://twilight.allwomenstalk.com/5-reasons-vampires-are-cool/)
+- [5 Reasons to Love Edward ...](https://twilight.allwomenstalk.com/5-reasons-to-love-edward/)
+- [5 Reasons I like Graveyards ...](https://twilight.allwomenstalk.com/5-reasons-i-like-graveyards/)
+- [5 Reasons I Liked the Host ...](https://twilight.allwomenstalk.com/5-reasons-i-liked-the-host/)
+- [5 Awesome Things about Edward ...](https://twilight.allwomenstalk.com/5-awesome-things-about-edward/)
 - [5 Things I like about Alice ...](https://twilight.allwomenstalk.com/5-things-i-like-about-alice/)
 - [5 Things I like about Bellas Dad ...](https://twilight.allwomenstalk.com/5-things-i-like-about-bellas-dad/)
 

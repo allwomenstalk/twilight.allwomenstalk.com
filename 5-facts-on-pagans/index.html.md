@@ -38,14 +38,14 @@ Top Photo Credit: [whl.travel](https://www.flickr.com/photos/whltravel/414727431
 
 - [author stephanie meyer](https://twilight.allwomenstalk.com/5-things-about-stephanie-meyer-you-should-know/)
 - [5 facts about witchcraft](https://twilight.allwomenstalk.com/5-facts-on-witchcraft/)
-- [5 Cool Facts on Bats ...](https://twilight.allwomenstalk.com/5-cool-facts-on-bats/)
+- [5 Cool Facts on Spiders ...](https://twilight.allwomenstalk.com/5-cool-facts-on-spiders/)
 - [vampire mythical creatures](https://twilight.allwomenstalk.com/5-vampire-myths/)
-- [5 Interesting Facts on Snakes ...](https://twilight.allwomenstalk.com/5-interesting-facts-on-snakes/)
+- [facts about chupacabras](https://twilight.allwomenstalk.com/5-facts-on-the-goat-sucker/)
 - [5 Facts on Dracula ...](https://twilight.allwomenstalk.com/5-facts-on-dracula/)
 - [facts of salem witch trials](https://twilight.allwomenstalk.com/5-facts-on-salem-witch-trials/)
-- [5 Cool Facts on Spiders ...](https://twilight.allwomenstalk.com/5-cool-facts-on-spiders/)
 - [5 facts about spiders](https://twilight.allwomenstalk.com/5-facts-on-spiders/)
-- [facts about chupacabras](https://twilight.allwomenstalk.com/5-facts-on-the-goat-sucker/)
+- [5 Cool Facts on Bats ...](https://twilight.allwomenstalk.com/5-cool-facts-on-bats/)
+- [5 Interesting Facts on Snakes ...](https://twilight.allwomenstalk.com/5-interesting-facts-on-snakes/)
 - [7 Facts on Islam ...](https://travel.allwomenstalk.com/7-facts-on-islam/)
 - [5 Facts for Wiccans ...](https://twilight.allwomenstalk.com/5-facts-for-wiccans/)
 

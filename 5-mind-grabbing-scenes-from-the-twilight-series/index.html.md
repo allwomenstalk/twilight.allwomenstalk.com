@@ -36,16 +36,16 @@ Top Photo Credit: [pikkopots](https://www.flickr.com/photos/pikkopots/4485678423
 
 ## Related Posts
 
-- [vampires sexy](https://twilight.allwomenstalk.com/5-sexy-vampires/)
 - [5 Signs We Are Living in a Twilight World ...](https://twilight.allwomenstalk.com/5-signs-we-are-living-in-a-twilight-world/)
-- [8 treks](https://travel.allwomenstalk.com/terrific-treks/)
-- [5 Scary Video Games ...](https://twilight.allwomenstalk.com/5-scary-video-games/)
-- [celebrity vampires](https://twilight.allwomenstalk.com/5-popular-vampires-from-the-real-world/)
-- [5 Moves to Make when Being Attacked by a Vampire ....](https://twilight.allwomenstalk.com/5-moves-to-make-when-being-attacked-by-a-vampire/)
-- [cool mythical creatures](https://twilight.allwomenstalk.com/5-cool-mythical-creatures/)
 - [greek god of twilight](https://twilight.allwomenstalk.com/5-greek-gods-that-interest-me/)
-- [5 Things Twilight Ruined ...](https://twilight.allwomenstalk.com/5-things-twilight-ruined/)
+- [celebrity vampires](https://twilight.allwomenstalk.com/5-popular-vampires-from-the-real-world/)
 - [vampires in video games](https://twilight.allwomenstalk.com/5-vampire-video-games/)
+- [vampires sexy](https://twilight.allwomenstalk.com/5-sexy-vampires/)
+- [5 Scary Video Games ...](https://twilight.allwomenstalk.com/5-scary-video-games/)
+- [5 Things Twilight Ruined ...](https://twilight.allwomenstalk.com/5-things-twilight-ruined/)
+- [cool mythical creatures](https://twilight.allwomenstalk.com/5-cool-mythical-creatures/)
+- [8 treks](https://travel.allwomenstalk.com/terrific-treks/)
+- [5 Moves to Make when Being Attacked by a Vampire ....](https://twilight.allwomenstalk.com/5-moves-to-make-when-being-attacked-by-a-vampire/)
 - [My 5 Favorite Eclipse Scenes and Why ...](https://twilight.allwomenstalk.com/my-5-favorite-eclipse-scenes-and-why/)
 - [Top 5 Werewolves in Twilight ...](https://twilight.allwomenstalk.com/top-5-werewolves-in-twilight/)
 

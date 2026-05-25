@@ -26,16 +26,16 @@ Top Photo Credit: [{Emily}](https://www.flickr.com/photos/i_love_photography/334
 
 ## Related Posts
 
-- [r patz](https://celebs.allwomenstalk.com/kristen-sucks-the-blood-out-of-r-patz/)
-- [1923 kevin spacey](https://celebs.allwomenstalk.com/kevin-spacey-its-gossip-bottom-line/)
+- [George Michael Ready to Start Again ...](https://celebs.allwomenstalk.com/george-michael-ready-to-start-again/)
+- [beau ex on the beach](https://celebs.allwomenstalk.com/halles-weekend-with-ex-beau-and-mom/)
+- [Kyle Richards Not Sure about Being a Housewife](https://celebs.allwomenstalk.com/kyle-richards-not-sure-about-being-a-housewife/)
 - [taylor momsen 2005](https://celebs.allwomenstalk.com/taylor-momsen-on-an-indefinite-break/)
 - [camille grammer daughter](https://celebs.allwomenstalk.com/kelsey-grammers-daughter-wont-be-part-of-the-nuptials/)
-- [claire miley](https://celebs.allwomenstalk.com/miley-sorry-for-not-being-a-better-role-model/)
-- [beau ex on the beach](https://celebs.allwomenstalk.com/halles-weekend-with-ex-beau-and-mom/)
-- [daughter wedgie](https://celebs.allwomenstalk.com/mark-wahlberg-to-give-bieber-a-wedgie/)
-- [George Michael Ready to Start Again ...](https://celebs.allwomenstalk.com/george-michael-ready-to-start-again/)
+- [r patz](https://celebs.allwomenstalk.com/kristen-sucks-the-blood-out-of-r-patz/)
+- [1923 kevin spacey](https://celebs.allwomenstalk.com/kevin-spacey-its-gossip-bottom-line/)
 - [Courteney Proud of David for Checking into Rehab.....](https://celebs.allwomenstalk.com/courteney-proud-of-david-for-checking-into-rehab/)
-- [Kyle Richards Not Sure about Being a Housewife](https://celebs.allwomenstalk.com/kyle-richards-not-sure-about-being-a-housewife/)
+- [claire miley](https://celebs.allwomenstalk.com/miley-sorry-for-not-being-a-better-role-model/)
+- [daughter wedgie](https://celebs.allwomenstalk.com/mark-wahlberg-to-give-bieber-a-wedgie/)
 - [A Biography on Robert Pattinson ...](https://twilight.allwomenstalk.com/a-biography-on-robert-pattinson/)
 - [A-Rod  Camerons Romantic Weekend ...](https://celebs.allwomenstalk.com/a-rod-camerons-romantic-weekend/)
 

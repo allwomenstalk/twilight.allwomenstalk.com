@@ -36,16 +36,16 @@ Top Photo Credit: [Apollos96](https://www.flickr.com/photos/apollos96/5414230892
 
 ## Related Posts
 
-- [wedding yard sale](https://money.allwomenstalk.com/things-you-should-buy-at-garage-yard-sales/)
-- [8 Childhood Products We Love ...](https://parenting.allwomenstalk.com/8-childhood-products-we-love/)
-- [Shopping Tips: 8 Adorably Charming Things You Can ...](https://money.allwomenstalk.com/shopping-tips-adorably-charming-things-you-can-buy-used/)
-- [Shopping Tips: 8 Lovely and Indispensable Things Y...](https://money.allwomenstalk.com/shopping-tips-lovely-and-indispensable-things-you-should-always-buy-new/)
+- [what i bought today](https://lifestyle.allwomenstalk.com/things-i-bought-today/)
 - [7 Great 2 in 1 Products to Try ...](https://beauty.allwomenstalk.com/great-in-1-products-to-try/)
 - [refillable powder compact with mirror](https://makeup.allwomenstalk.com/stylish-compacts/)
-- [what i bought today](https://lifestyle.allwomenstalk.com/things-i-bought-today/)
-- [babies r us costumes](https://parenting.allwomenstalk.com/great-items-from-babiesrus/)
-- [coolest cars under 18000](https://money.allwomenstalk.com/great-cars-under-18000/)
 - [marc jacobs laptop sleeve](https://lifestyle.allwomenstalk.com/nifty-neoprene-laptop-cases/)
+- [coolest cars under 18000](https://money.allwomenstalk.com/great-cars-under-18000/)
+- [Shopping Tips: 8 Lovely and Indispensable Things Y...](https://money.allwomenstalk.com/shopping-tips-lovely-and-indispensable-things-you-should-always-buy-new/)
+- [babies r us costumes](https://parenting.allwomenstalk.com/great-items-from-babiesrus/)
+- [Shopping Tips: 8 Adorably Charming Things You Can ...](https://money.allwomenstalk.com/shopping-tips-adorably-charming-things-you-can-buy-used/)
+- [8 Childhood Products We Love ...](https://parenting.allwomenstalk.com/8-childhood-products-we-love/)
+- [wedding yard sale](https://money.allwomenstalk.com/things-you-should-buy-at-garage-yard-sales/)
 - [Top 5 Vampire Games ...](https://twilight.allwomenstalk.com/top-5-vampire-games/)
 - [5 Scary Video Games ...](https://twilight.allwomenstalk.com/5-scary-video-games/)
 

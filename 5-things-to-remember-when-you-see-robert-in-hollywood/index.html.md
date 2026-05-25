@@ -36,16 +36,16 @@ Top Photo Credit: [denmarkgirl](https://www.flickr.com/photos/42156430@N02/38879
 
 ## Related Posts
 
-- [tony romo](https://wedding.allwomenstalk.com/5-celebrity-couples-who-recently-said-yes/)
-- [celebrity marriage proposals](https://wedding.allwomenstalk.com/8-most-adorable-celebrity-proposal-stories/)
-- [overated actors](https://movies.allwomenstalk.com/7-actors-who-are-overrated/)
 - [you are mine actors](https://movies.allwomenstalk.com/7-iconic-movies-roles-that-were-almost-played-by-other-actors/)
-- [shaya charvet football](https://parenting.allwomenstalk.com/things-celebrity-parents-tweet-about/)
-- [Top 7 Actors That Should Get More Work ...](https://movies.allwomenstalk.com/top-7-actors-that-should-get-more-work/)
-- [humphrey bogart mustache](https://movies.allwomenstalk.com/the-top-leading-men-of-all-time/)
-- [list of actors playing james bond](https://movies.allwomenstalk.com/7-best-james-bond-actors/)
+- [celebrity marriage proposals](https://wedding.allwomenstalk.com/8-most-adorable-celebrity-proposal-stories/)
 - [british movie star](https://movies.allwomenstalk.com/amazing-british-movie-stars/)
+- [shaya charvet football](https://parenting.allwomenstalk.com/things-celebrity-parents-tweet-about/)
+- [humphrey bogart mustache](https://movies.allwomenstalk.com/the-top-leading-men-of-all-time/)
+- [overated actors](https://movies.allwomenstalk.com/7-actors-who-are-overrated/)
 - [hottest heroes](https://movies.allwomenstalk.com/7-hottest-on-screen-heroes-of-all-times/)
+- [tony romo](https://wedding.allwomenstalk.com/5-celebrity-couples-who-recently-said-yes/)
+- [Top 7 Actors That Should Get More Work ...](https://movies.allwomenstalk.com/top-7-actors-that-should-get-more-work/)
+- [list of actors playing james bond](https://movies.allwomenstalk.com/7-best-james-bond-actors/)
 - [7 Tips to Finding the Right Guy ...](https://love.allwomenstalk.com/tips-to-finding-the-right-guy/)
 - [7 Must-Know Tips for Going on a Blind Date ...](https://love.allwomenstalk.com/must-know-tips-for-going-on-a-blind-date/)
 

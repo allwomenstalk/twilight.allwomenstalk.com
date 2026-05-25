@@ -36,16 +36,16 @@ Top Photo Credit: [stvan4245](https://www.flickr.com/photos/stvan4245/165289846/
 
 ## Related Posts
 
+- [5 More Awesome Vampire Movies ...](https://twilight.allwomenstalk.com/5-more-awesome-vampire-movies/)
+- [miss horror](https://twilight.allwomenstalk.com/5-horrible-horror-movies-to-miss/)
+- [5 Scary Movies ...](https://twilight.allwomenstalk.com/5-scary-movies/)
 - [alien documentaries](https://paranormal.allwomenstalk.com/must-see-alien-documentaries/)
 - [films about werewolves](https://twilight.allwomenstalk.com/5-werewolf-movies/)
-- [5 More Awesome Vampire Movies ...](https://twilight.allwomenstalk.com/5-more-awesome-vampire-movies/)
-- [5 Scary Movies ...](https://twilight.allwomenstalk.com/5-scary-movies/)
+- [movies like my best friends wedding](https://wedding.allwomenstalk.com/best-and-surprisingly-awesome-wedding-movies/)
 - [5 Must See Scenes from the Movie ...](https://twilight.allwomenstalk.com/5-must-see-scenes-from-the-movie/)
-- [miss horror](https://twilight.allwomenstalk.com/5-horrible-horror-movies-to-miss/)
+- [7 types of vampires](https://twilight.allwomenstalk.com/5-amazing-vampires-from-movies/)
 - [miss zombie movie](https://twilight.allwomenstalk.com/5-cool-zombie-movies/)
 - [weird horror movies](https://twilight.allwomenstalk.com/5-weird-horror-movies-to-watch/)
-- [7 types of vampires](https://twilight.allwomenstalk.com/5-amazing-vampires-from-movies/)
-- [movies like my best friends wedding](https://wedding.allwomenstalk.com/best-and-surprisingly-awesome-wedding-movies/)
 - [Top 5 Werewolves in Twilight ...](https://twilight.allwomenstalk.com/top-5-werewolves-in-twilight/)
 - [5 Cool Twilight Posters ...](https://twilight.allwomenstalk.com/5-cool-twilight-posters/)
 

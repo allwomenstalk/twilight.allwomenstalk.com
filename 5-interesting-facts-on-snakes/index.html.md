@@ -34,16 +34,16 @@ Top Photo Credit: [Victor and Patricia Ocampo](https://www.flickr.com/photos/vro
 
 ## Related Posts
 
-- [vampire mythical creatures](https://twilight.allwomenstalk.com/5-vampire-myths/)
-- [dragons triangle](https://twilight.allwomenstalk.com/5-facts-on-the-dragons-triangle/)
-- [baby bat facts](https://twilight.allwomenstalk.com/5-facts-on-bats/)
-- [facts of salem witch trials](https://twilight.allwomenstalk.com/5-facts-on-salem-witch-trials/)
 - [fun facts about tai chi](https://twilight.allwomenstalk.com/5-facts-on-chi/)
-- [what are some facts about vampires](https://twilight.allwomenstalk.com/5-facts-on-vampires/)
+- [facts of salem witch trials](https://twilight.allwomenstalk.com/5-facts-on-salem-witch-trials/)
 - [facts about chupacabras](https://twilight.allwomenstalk.com/5-facts-on-the-goat-sucker/)
-- [author stephanie meyer](https://twilight.allwomenstalk.com/5-things-about-stephanie-meyer-you-should-know/)
-- [5 Cool Facts on Bats ...](https://twilight.allwomenstalk.com/5-cool-facts-on-bats/)
 - [5 Cool Facts on Spiders ...](https://twilight.allwomenstalk.com/5-cool-facts-on-spiders/)
+- [baby bat facts](https://twilight.allwomenstalk.com/5-facts-on-bats/)
+- [5 Cool Facts on Bats ...](https://twilight.allwomenstalk.com/5-cool-facts-on-bats/)
+- [dragons triangle](https://twilight.allwomenstalk.com/5-facts-on-the-dragons-triangle/)
+- [what are some facts about vampires](https://twilight.allwomenstalk.com/5-facts-on-vampires/)
+- [author stephanie meyer](https://twilight.allwomenstalk.com/5-things-about-stephanie-meyer-you-should-know/)
+- [vampire mythical creatures](https://twilight.allwomenstalk.com/5-vampire-myths/)
 - [5 Ghost Facts ...](https://twilight.allwomenstalk.com/5-ghost-facts/)
 - [5 Cool Paranormal Facts ...](https://twilight.allwomenstalk.com/5-cool-paranormal-facts/)
 

@@ -36,16 +36,16 @@ Top Photo Credit: [Blewyn](https://www.flickr.com/photos/blewyn/509916632/)
 
 ## Related Posts
 
-- [dragons triangle](https://twilight.allwomenstalk.com/5-facts-on-the-dragons-triangle/)
-- [facts about chupacabras](https://twilight.allwomenstalk.com/5-facts-on-the-goat-sucker/)
-- [author stephanie meyer](https://twilight.allwomenstalk.com/5-things-about-stephanie-meyer-you-should-know/)
-- [baby bat facts](https://twilight.allwomenstalk.com/5-facts-on-bats/)
 - [what are some facts about vampires](https://twilight.allwomenstalk.com/5-facts-on-vampires/)
-- [5 Cool Facts on Bats ...](https://twilight.allwomenstalk.com/5-cool-facts-on-bats/)
-- [facts of salem witch trials](https://twilight.allwomenstalk.com/5-facts-on-salem-witch-trials/)
 - [vampire mythical creatures](https://twilight.allwomenstalk.com/5-vampire-myths/)
+- [facts about chupacabras](https://twilight.allwomenstalk.com/5-facts-on-the-goat-sucker/)
+- [baby bat facts](https://twilight.allwomenstalk.com/5-facts-on-bats/)
+- [5 Cool Facts on Bats ...](https://twilight.allwomenstalk.com/5-cool-facts-on-bats/)
+- [author stephanie meyer](https://twilight.allwomenstalk.com/5-things-about-stephanie-meyer-you-should-know/)
 - [5 Cool Facts on Spiders ...](https://twilight.allwomenstalk.com/5-cool-facts-on-spiders/)
 - [5 Interesting Facts on Snakes ...](https://twilight.allwomenstalk.com/5-interesting-facts-on-snakes/)
+- [dragons triangle](https://twilight.allwomenstalk.com/5-facts-on-the-dragons-triangle/)
+- [facts of salem witch trials](https://twilight.allwomenstalk.com/5-facts-on-salem-witch-trials/)
 - [5 Facts on the Chupacabra ...](https://twilight.allwomenstalk.com/5-facts-on-the-chupacabra/)
 - [5 Facts on Aliens ...](https://twilight.allwomenstalk.com/5-facts-on-aliens/)
 
