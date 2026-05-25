@@ -3,7 +3,7 @@ title: "5 Cool Zombie Movies ..."
 description: "28 Days Later; Resident Evil; Boy Eats Girl; Plague Town; Mortuary; More ..."
 url: "https://twilight.allwomenstalk.com/5-cool-zombie-movies/"
 category: "twilight"
-last_updated: "2026-05-22"
+last_updated: "2026-05-25"
 ---
 
 # 5 Cool Zombie Movies ...
@@ -36,16 +36,16 @@ Top image source: [kinopoisk.ru](http://www.kinopoisk.ru/showcaptcha?cc=1&retpat
 
 ## Related Posts
 
-- [john williams movie soundtracks](https://movies.allwomenstalk.com/unforgettable-john-williams-soundtracks/)
-- [Top 8 Worst Movies Ever Made ...](https://movies.allwomenstalk.com/top-worst-movies-ever-made/)
-- [films to watch when sad](https://movies.allwomenstalk.com/8-movies-to-watch-when-you-are-sad/)
 - [alien documentaries](https://paranormal.allwomenstalk.com/must-see-alien-documentaries/)
 - [New Movie Website and Blog Explore the Deeper Side...](https://movies.allwomenstalk.com/new-movie-website-and-blog-explore-the-deeper-side-of-films/)
-- [miss horror](https://twilight.allwomenstalk.com/5-horrible-horror-movies-to-miss/)
-- [weird horror movies](https://twilight.allwomenstalk.com/5-weird-horror-movies-to-watch/)
-- [les choristes where to watch](https://movies.allwomenstalk.com/fabulous-french-films/)
-- [The 7 Best Sequels of All Times ...](https://movies.allwomenstalk.com/the-best-sequels-of-all-times/)
 - [9 Very Brainy Movie Stars ...](https://movies.allwomenstalk.com/very-brainy-movie-stars/)
+- [weird horror movies](https://twilight.allwomenstalk.com/5-weird-horror-movies-to-watch/)
+- [The 7 Best Sequels of All Times ...](https://movies.allwomenstalk.com/the-best-sequels-of-all-times/)
+- [films to watch when sad](https://movies.allwomenstalk.com/8-movies-to-watch-when-you-are-sad/)
+- [miss horror](https://twilight.allwomenstalk.com/5-horrible-horror-movies-to-miss/)
+- [les choristes where to watch](https://movies.allwomenstalk.com/fabulous-french-films/)
+- [Top 8 Worst Movies Ever Made ...](https://movies.allwomenstalk.com/top-worst-movies-ever-made/)
+- [john williams movie soundtracks](https://movies.allwomenstalk.com/unforgettable-john-williams-soundtracks/)
 - [5 Cool Vampire Books ...](https://twilight.allwomenstalk.com/5-cool-vampire-books/)
 - [5 Popular Vampires from Movies ...](https://twilight.allwomenstalk.com/5-popular-vampires-from-movies/)
 

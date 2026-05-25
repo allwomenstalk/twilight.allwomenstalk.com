@@ -3,7 +3,7 @@ title: "5 Undead Video Games to Play ..."
 description: "Splatterhouse (X Box 360); Resident Evil 5; Dead Space; Soul Reaver; House of the Dead; More ..."
 url: "https://twilight.allwomenstalk.com/5-undead-video-games-to-play/"
 category: "twilight"
-last_updated: "2026-05-22"
+last_updated: "2026-05-25"
 ---
 
 # 5 Undead Video Games to Play ...
@@ -36,16 +36,16 @@ Top Photo Credit: [Stormtrooper Effect](https://www.flickr.com/photos/32050175@N
 
 ## Related Posts
 
-- [5 Good Magic Users to Be ...](https://twilight.allwomenstalk.com/5-good-magic-users-to-be/)
-- [harry potter puppets youtube](https://movies.allwomenstalk.com/hilarious-harry-potter-parody-videos/)
-- [fun board games for family](https://parenting.allwomenstalk.com/7-most-interesting-family-board-games/)
-- [7 Top Action Heros ...](https://movies.allwomenstalk.com/7-top-action-heros/)
-- [8 People I Want to Meet in the Afterlife ...](https://paranormal.allwomenstalk.com/8-people-i-want-to-meet-in-the-afterlife/)
-- [secret identities](https://movies.allwomenstalk.com/8-best-secret-identities/)
-- [mages in video games](https://twilight.allwomenstalk.com/5-magic-users-in-video-games/)
-- [7 of the Top Picked Baby Names Throughout the Year...](https://parenting.allwomenstalk.com/of-the-top-picked-baby-names-throughout-the-years/)
-- [7 Shocking Moments on This Seasons Biggest Loser ....](https://weightloss.allwomenstalk.com/shocking-moments-on-this-seasons-biggest-loser/)
 - [Top 8 Batman Villains ...](https://movies.allwomenstalk.com/top-8-batman-villains/)
+- [5 Good Magic Users to Be ...](https://twilight.allwomenstalk.com/5-good-magic-users-to-be/)
+- [secret identities](https://movies.allwomenstalk.com/8-best-secret-identities/)
+- [7 Top Action Heros ...](https://movies.allwomenstalk.com/7-top-action-heros/)
+- [mages in video games](https://twilight.allwomenstalk.com/5-magic-users-in-video-games/)
+- [fun board games for family](https://parenting.allwomenstalk.com/7-most-interesting-family-board-games/)
+- [7 Shocking Moments on This Seasons Biggest Loser ....](https://weightloss.allwomenstalk.com/shocking-moments-on-this-seasons-biggest-loser/)
+- [harry potter puppets youtube](https://movies.allwomenstalk.com/hilarious-harry-potter-parody-videos/)
+- [7 of the Top Picked Baby Names Throughout the Year...](https://parenting.allwomenstalk.com/of-the-top-picked-baby-names-throughout-the-years/)
+- [8 People I Want to Meet in the Afterlife ...](https://paranormal.allwomenstalk.com/8-people-i-want-to-meet-in-the-afterlife/)
 - [5 Cool Vampire Books ...](https://twilight.allwomenstalk.com/5-cool-vampire-books/)
 - [5 Cool Werewolves ...](https://twilight.allwomenstalk.com/5-cool-werewolves/)
 
