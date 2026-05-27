@@ -3,7 +3,7 @@ title: "5 Cool Songs by Korn for a Vampire ..."
 description: "Freak on a Leash; One; Evolution; Word up; All in the Family; More ..."
 url: "https://twilight.allwomenstalk.com/5-cool-songs-by-korn-for-a-vampire/"
 category: "twilight"
-last_updated: "2026-05-25"
+last_updated: "2026-05-27"
 ---
 
 # 5 Cool Songs by Korn for a Vampire ...
@@ -36,13 +36,13 @@ Top Photo Credit: [bizarre ink](https://www.flickr.com/photos/23825109@N03/22749
 
 ## Related Posts
 
+- [katy perry tracklist](https://lifestyle.allwomenstalk.com/katy-perry-songs-i-love/)
+- [songs to blast](https://lifestyle.allwomenstalk.com/songs-to-blast-while-in-the-car/)
 - [happy songs to start the day](https://lifestyle.allwomenstalk.com/best-songs-to-make-your-day-better/)
+- [Exercise Music: 9 New Workout Songs to Boost Your ...](https://health.allwomenstalk.com/exercise-music-new-workout-songs-to-boost-your-energy/)
 - [music plants like](https://gardening.allwomenstalk.com/5-songs-your-plants-will-like/)
 - [i like some of the gaga songs](https://celebs.allwomenstalk.com/favourite-lady-gaga-songs/)
 - [the best movie songs](https://movies.allwomenstalk.com/incredibly-moving-movie-theme-songs/)
-- [katy perry tracklist](https://lifestyle.allwomenstalk.com/katy-perry-songs-i-love/)
-- [songs to blast](https://lifestyle.allwomenstalk.com/songs-to-blast-while-in-the-car/)
-- [Exercise Music: 9 New Workout Songs to Boost Your ...](https://health.allwomenstalk.com/exercise-music-new-workout-songs-to-boost-your-energy/)
 - [9 Musicals I Never Tire of ...](https://movies.allwomenstalk.com/musicals-i-never-tire-of/)
 - [upbeat work music](https://weightloss.allwomenstalk.com/upbeat-songs-to-work-out-to/)
 - [popular songs 2011](https://wedding.allwomenstalk.com/fabulous-inspiring-wedding-songs-of/)

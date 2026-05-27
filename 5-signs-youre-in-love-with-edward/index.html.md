@@ -3,7 +3,7 @@ title: "5 Signs You’re Still Head-Over-Heels for Edward Cullen"
 description: "You Wish Your Partner Had Edward's Charm; You Can’t Get Enough of His Story; You Sometimes Wish Edward Were Real; You've Dedicated Space to Him; You Still Rep Team Edward; More ..."
 url: "https://twilight.allwomenstalk.com/5-signs-youre-in-love-with-edward/"
 category: "twilight"
-last_updated: "2026-05-25"
+last_updated: "2026-05-27"
 ---
 
 # 5 Signs You’re Still Head\-Over\-Heels for Edward Cullen
@@ -37,14 +37,14 @@ Top Photo Credit: [Twilgнt ♥](https://www.flickr.com/photos/twilightbite/2715
 ## Related Posts
 
 - [8 Relationship Red Flags to Watch out for ...](https://love.allwomenstalk.com/relationship-red-flags-to-watch-out-for/)
+- [why does bella love edward](https://twilight.allwomenstalk.com/5-signs-bellas-love-for-edward-is-true-love/)
 - [my guy friend is in love with me](https://love.allwomenstalk.com/signs-your-guy-best-friend-is-into-you/)
+- [signs movie characters](https://movies.allwomenstalk.com/signs-of-a-romantic-movie/)
+- [old people nicknames](https://love.allwomenstalk.com/sure-signs-that-he-is-into-you/)
+- [how to know if your ex is seeing someone else](https://love.allwomenstalk.com/signs-your-ex-is-dating-someone-else/)
 - [7 signs shes not into you](https://love.allwomenstalk.com/7-signs-shes-a-man-stealer/)
 - [signs good relationship](https://love.allwomenstalk.com/excitingly-obvious-signs-its-a-good-relationship/)
-- [why does bella love edward](https://twilight.allwomenstalk.com/5-signs-bellas-love-for-edward-is-true-love/)
-- [old people nicknames](https://love.allwomenstalk.com/sure-signs-that-he-is-into-you/)
 - [how do i know if im ready to date](https://love.allwomenstalk.com/signs-youre-ready-to-date/)
-- [signs movie characters](https://movies.allwomenstalk.com/signs-of-a-romantic-movie/)
-- [how to know if your ex is seeing someone else](https://love.allwomenstalk.com/signs-your-ex-is-dating-someone-else/)
 - [is my friend weird quiz](https://lifestyle.allwomenstalk.com/sure-signs-of-an-idiot-friend/)
 - [5 Reasons to Love Edward ...](https://twilight.allwomenstalk.com/5-reasons-to-love-edward/)
 - [5 Signs You Are Obsessed with Twilight ...](https://twilight.allwomenstalk.com/5-signs-you-are-obsessed-with-twilight/)
