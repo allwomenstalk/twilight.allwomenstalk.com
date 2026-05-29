@@ -3,7 +3,7 @@ title: "5 Moves to Make when Being Attacked by a Vampire ..."
 description: "Go for a Sharp Object; Run; Shoot Them with the Paintball Gun; Hold up a Cross; Break out with the Garlic; More ..."
 url: "https://twilight.allwomenstalk.com/5-moves-to-make-when-being-attacked-by-a-vampire/"
 category: "twilight"
-last_updated: "2026-05-27"
+last_updated: "2026-05-29"
 ---
 
 # 5 Moves to Make when Being Attacked by a Vampire ...
@@ -36,14 +36,14 @@ Top Photo Credit: [CDWashDC](https://www.flickr.com/photos/cdwashdc/24923667/)
 
 ## Related Posts
 
+- [insane video game characters](https://twilight.allwomenstalk.com/5-insane-villains-on-video-games/)
+- [5 Comic Book Creatures ...](https://twilight.allwomenstalk.com/5-comic-book-creatures/)
+- [paris color riche le stylo shadow always pink](https://twilight.allwomenstalk.com/5-paranormal-definitions/)
+- [creepy castles](https://travel.allwomenstalk.com/creepy-castles/)
 - [greek god of twilight](https://twilight.allwomenstalk.com/5-greek-gods-that-interest-me/)
 - [8 treks](https://travel.allwomenstalk.com/terrific-treks/)
-- [creepy castles](https://travel.allwomenstalk.com/creepy-castles/)
 - [vampires in video games](https://twilight.allwomenstalk.com/5-vampire-video-games/)
-- [paris color riche le stylo shadow always pink](https://twilight.allwomenstalk.com/5-paranormal-definitions/)
-- [5 Comic Book Creatures ...](https://twilight.allwomenstalk.com/5-comic-book-creatures/)
 - [creatures of the night examples](https://twilight.allwomenstalk.com/5-creatures-of-the-night/)
-- [insane video game characters](https://twilight.allwomenstalk.com/5-insane-villains-on-video-games/)
 - [5 Horror Stories ...](https://twilight.allwomenstalk.com/5-horror-stories/)
 - [5 Cool Paranormal Definitions ...](https://twilight.allwomenstalk.com/5-cool-paranormal-definitions/)
 - [5 Secrets to Overcome Fear ...](https://twilight.allwomenstalk.com/5-secrets-to-overcome-fear/)
