@@ -3,7 +3,7 @@ title: "5 More Awesome Vampire Movies ..."
 description: "From Dusk Till Dawn (1996); Underworld (2003); Blade (1998); Van Helsing (2004); Dracula (1931); More ..."
 url: "https://twilight.allwomenstalk.com/5-more-awesome-vampire-movies/"
 category: "twilight"
-last_updated: "2026-05-29"
+last_updated: "2026-05-30"
 ---
 
 # 5 More Awesome Vampire Movies ...
@@ -36,16 +36,16 @@ Top Photo Credit: [`Vorfas](https://www.flickr.com/photos/vorfas/919035701/)
 
 ## Related Posts
 
-- [5 Scary Movies ...](https://twilight.allwomenstalk.com/5-scary-movies/)
 - [alien documentaries](https://paranormal.allwomenstalk.com/must-see-alien-documentaries/)
 - [miss horror](https://twilight.allwomenstalk.com/5-horrible-horror-movies-to-miss/)
-- [weird horror movies](https://twilight.allwomenstalk.com/5-weird-horror-movies-to-watch/)
-- [5 Must See Scenes from the Movie ...](https://twilight.allwomenstalk.com/5-must-see-scenes-from-the-movie/)
-- [New Movie Website and Blog Explore the Deeper Side...](https://movies.allwomenstalk.com/new-movie-website-and-blog-explore-the-deeper-side-of-films/)
-- [7 types of vampires](https://twilight.allwomenstalk.com/5-amazing-vampires-from-movies/)
 - [movies like my best friends wedding](https://wedding.allwomenstalk.com/best-and-surprisingly-awesome-wedding-movies/)
-- [miss zombie movie](https://twilight.allwomenstalk.com/5-cool-zombie-movies/)
+- [7 types of vampires](https://twilight.allwomenstalk.com/5-amazing-vampires-from-movies/)
+- [New Movie Website and Blog Explore the Deeper Side...](https://movies.allwomenstalk.com/new-movie-website-and-blog-explore-the-deeper-side-of-films/)
+- [5 Scary Movies ...](https://twilight.allwomenstalk.com/5-scary-movies/)
 - [films about werewolves](https://twilight.allwomenstalk.com/5-werewolf-movies/)
+- [5 Must See Scenes from the Movie ...](https://twilight.allwomenstalk.com/5-must-see-scenes-from-the-movie/)
+- [weird horror movies](https://twilight.allwomenstalk.com/5-weird-horror-movies-to-watch/)
+- [miss zombie movie](https://twilight.allwomenstalk.com/5-cool-zombie-movies/)
 - [Top 5 Werewolves in Twilight ...](https://twilight.allwomenstalk.com/top-5-werewolves-in-twilight/)
 - [5 Popular Vampires from Movies ...](https://twilight.allwomenstalk.com/5-popular-vampires-from-movies/)
 

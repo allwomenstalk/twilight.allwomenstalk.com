@@ -3,7 +3,7 @@ title: "5 Top Monster Video Games ..."
 description: "Resident Evil 5 Xbox 360 and PS3; Dead Space; Silent Hill; Bio Shock 2; Splatterhouse!; More ..."
 url: "https://twilight.allwomenstalk.com/5-top-monster-video-games/"
 category: "twilight"
-last_updated: "2026-05-29"
+last_updated: "2026-05-30"
 ---
 
 # 5 Top Monster Video Games ...
@@ -36,16 +36,16 @@ Top Photo Credit: [PlayStation.Blog](https://www.flickr.com/photos/playstationbl
 
 ## Related Posts
 
-- [villains in twilight](https://twilight.allwomenstalk.com/5-villains-from-twilight/)
-- [vampire confessions](https://twilight.allwomenstalk.com/5-confessions-of-a-vampire/)
-- [amazing mazes](https://travel.allwomenstalk.com/amazing-mazes/)
 - [bridezillas where are they now karen](https://wedding.allwomenstalk.com/7-of-my-favorite-bridezillas-from-tv/)
-- [Breaking Dawn Will Officially Be in 2 Parts ...](https://twilight.allwomenstalk.com/breaking-dawn-will-officially-be-in-2-parts/)
 - [5 Things That Could Happen on 2012 ...](https://twilight.allwomenstalk.com/things-that-could-happen-on/)
 - [food shows on travel channel](https://travel.allwomenstalk.com/7-travel-channel-shows-i-inexplicably-love/)
+- [villains in twilight](https://twilight.allwomenstalk.com/5-villains-from-twilight/)
+- [Breaking Dawn Will Officially Be in 2 Parts ...](https://twilight.allwomenstalk.com/breaking-dawn-will-officially-be-in-2-parts/)
 - [5 Monsters of the Deep ...](https://twilight.allwomenstalk.com/5-monsters-of-the-deep/)
+- [amazing mazes](https://travel.allwomenstalk.com/amazing-mazes/)
 - [hot vampire series](https://twilight.allwomenstalk.com/5-hot-vampire-guys-from-the-twilight-series/)
 - [evil magic users](https://twilight.allwomenstalk.com/5-evil-magic-users-to-be/)
+- [vampire confessions](https://twilight.allwomenstalk.com/5-confessions-of-a-vampire/)
 - [5 Cool Werewolves ...](https://twilight.allwomenstalk.com/5-cool-werewolves/)
 - [Top 5 Vampire Games ...](https://twilight.allwomenstalk.com/top-5-vampire-games/)
 
