@@ -3,7 +3,7 @@ title: "5 Weird Horror Movies to Watch ..."
 description: "Slither; Silent Hill; The Wicker Man; Love Object; Zombieland; More ..."
 url: "https://twilight.allwomenstalk.com/5-weird-horror-movies-to-watch/"
 category: "twilight"
-last_updated: "2026-05-30"
+last_updated: "2026-06-02"
 ---
 
 # 5 Weird Horror Movies to Watch ...
@@ -36,16 +36,16 @@ Top Photo Credit: [Zombie37](https://www.flickr.com/photos/zombie37/178098303/)
 
 ## Related Posts
 
-- [films to watch when sad](https://movies.allwomenstalk.com/8-movies-to-watch-when-you-are-sad/)
-- [les choristes where to watch](https://movies.allwomenstalk.com/fabulous-french-films/)
-- [9 Very Brainy Movie Stars ...](https://movies.allwomenstalk.com/very-brainy-movie-stars/)
-- [The 7 Best Sequels of All Times ...](https://movies.allwomenstalk.com/the-best-sequels-of-all-times/)
-- [New Movie Website and Blog Explore the Deeper Side...](https://movies.allwomenstalk.com/new-movie-website-and-blog-explore-the-deeper-side-of-films/)
 - [alien documentaries](https://paranormal.allwomenstalk.com/must-see-alien-documentaries/)
-- [good war movies](https://movies.allwomenstalk.com/war-movies-that-you-cant-miss/)
-- [john williams movie soundtracks](https://movies.allwomenstalk.com/unforgettable-john-williams-soundtracks/)
-- [Top 8 Worst Movies Ever Made ...](https://movies.allwomenstalk.com/top-worst-movies-ever-made/)
+- [films to watch when sad](https://movies.allwomenstalk.com/8-movies-to-watch-when-you-are-sad/)
 - [what to watch with friends](https://movies.allwomenstalk.com/good-comedies-to-watch-with-friends/)
+- [New Movie Website and Blog Explore the Deeper Side...](https://movies.allwomenstalk.com/new-movie-website-and-blog-explore-the-deeper-side-of-films/)
+- [9 Very Brainy Movie Stars ...](https://movies.allwomenstalk.com/very-brainy-movie-stars/)
+- [john williams movie soundtracks](https://movies.allwomenstalk.com/unforgettable-john-williams-soundtracks/)
+- [The 7 Best Sequels of All Times ...](https://movies.allwomenstalk.com/the-best-sequels-of-all-times/)
+- [good war movies](https://movies.allwomenstalk.com/war-movies-that-you-cant-miss/)
+- [les choristes where to watch](https://movies.allwomenstalk.com/fabulous-french-films/)
+- [Top 8 Worst Movies Ever Made ...](https://movies.allwomenstalk.com/top-worst-movies-ever-made/)
 - [5 More Awesome Vampire Movies ...](https://twilight.allwomenstalk.com/5-more-awesome-vampire-movies/)
 - [5 Scary Movies ...](https://twilight.allwomenstalk.com/5-scary-movies/)
 
