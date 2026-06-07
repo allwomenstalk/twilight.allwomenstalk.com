@@ -3,7 +3,7 @@ title: "5 Spooky Pumpkin Designs ..."
 description: "Vampire Carved; Classic Black Cat; Frankenstein; An Owl; Haunted House; More ..."
 url: "https://twilight.allwomenstalk.com/5-spooky-pumpkin-designs/"
 category: "twilight"
-last_updated: "2026-06-02"
+last_updated: "2026-06-07"
 ---
 
 # 5 Spooky Pumpkin Designs ...

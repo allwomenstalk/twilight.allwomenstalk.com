@@ -3,7 +3,7 @@ title: "5 Awesome Spooky Party Themes ..."
 description: "Vampire Theme; Evil Clown Theme; Zombie Theme; Witch Theme; Ghost Theme; More ..."
 url: "https://twilight.allwomenstalk.com/5-awesome-spooky-party-themes/"
 category: "twilight"
-last_updated: "2026-06-02"
+last_updated: "2026-06-07"
 ---
 
 # 5 Awesome Spooky Party Themes ...
@@ -43,7 +43,7 @@ Top Photo Credit: [Russ Weakley](https://www.flickr.com/photos/russweakley/29913
 - [8 Fun Halloween Themes ...](https://allwomenstalk.com/8-fun-halloween-themes/)
 - [10 Best Birthday Party Themes ...](https://allwomenstalk.com/10-best-birthday-party-themes/)
 - [7 Fun Themes for Your Wedding ...](https://allwomenstalk.com/7-fun-themes-for-your-wedding/)
-- [7 Fun Themes for Your Childs Birthday Party ...](https://allwomenstalk.com/7-fun-themes-for-your-childs-birthday-party/)
+- [7 Fun Themes for Your Child's Birthday Party ...](https://allwomenstalk.com/7-fun-themes-for-your-childs-birthday-party/)
 - [8 Ideas for a Holiday Party ...](https://allwomenstalk.com/8-ideas-for-a-holiday-party/)
 - [7 Fun Ideas for a Themed Party ...](https://allwomenstalk.com/fun-ideas-for-a-themed-party/)
 - [8 Memorable Fun Halloween Activities ...](https://lifestyle.allwomenstalk.com/memorable-fun-halloween-activities/)
