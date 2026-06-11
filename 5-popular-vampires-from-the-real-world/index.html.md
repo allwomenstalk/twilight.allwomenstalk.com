@@ -3,7 +3,7 @@ title: "5 Popular Vampires from the Real World ..."
 description: "Nosferatu; Lilith; Lestat De Lioncourt; Edward Cullen; Count Dracula; More ..."
 url: "https://twilight.allwomenstalk.com/5-popular-vampires-from-the-real-world/"
 category: "twilight"
-last_updated: "2026-06-07"
+last_updated: "2026-06-11"
 ---
 
 # 5 Popular Vampires from the Real World ...
@@ -36,16 +36,16 @@ Top Photo Credit: [angelahtokyo](https://www.flickr.com/photos/angelahtokyo/2921
 
 ## Related Posts
 
-- [insane video game characters](https://twilight.allwomenstalk.com/5-insane-villains-on-video-games/)
-- [5 Comic Book Creatures ...](https://twilight.allwomenstalk.com/5-comic-book-creatures/)
 - [5 Things Twilight Ruined ...](https://twilight.allwomenstalk.com/5-things-twilight-ruined/)
-- [5 Moves to Make when Being Attacked by a Vampire ....](https://twilight.allwomenstalk.com/5-moves-to-make-when-being-attacked-by-a-vampire/)
 - [creepy castles](https://travel.allwomenstalk.com/creepy-castles/)
-- [greek god of twilight](https://twilight.allwomenstalk.com/5-greek-gods-that-interest-me/)
 - [5 Horror Stories ...](https://twilight.allwomenstalk.com/5-horror-stories/)
-- [8 treks](https://travel.allwomenstalk.com/terrific-treks/)
-- [vampires in video games](https://twilight.allwomenstalk.com/5-vampire-video-games/)
+- [5 Comic Book Creatures ...](https://twilight.allwomenstalk.com/5-comic-book-creatures/)
+- [5 Moves to Make when Being Attacked by a Vampire ....](https://twilight.allwomenstalk.com/5-moves-to-make-when-being-attacked-by-a-vampire/)
 - [5 Cool Paranormal Definitions ...](https://twilight.allwomenstalk.com/5-cool-paranormal-definitions/)
+- [greek god of twilight](https://twilight.allwomenstalk.com/5-greek-gods-that-interest-me/)
+- [8 treks](https://travel.allwomenstalk.com/terrific-treks/)
+- [insane video game characters](https://twilight.allwomenstalk.com/5-insane-villains-on-video-games/)
+- [vampires in video games](https://twilight.allwomenstalk.com/5-vampire-video-games/)
 - [Top 5 Werewolves in Twilight ...](https://twilight.allwomenstalk.com/top-5-werewolves-in-twilight/)
 - [5 Very Top Villains from Twilight ...](https://twilight.allwomenstalk.com/5-villains-from-twilight/)
 

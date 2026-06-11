@@ -3,7 +3,7 @@ title: "5 More Awesome Vampire Movies ..."
 description: "From Dusk Till Dawn (1996); Underworld (2003); Blade (1998); Van Helsing (2004); Dracula (1931); More ..."
 url: "https://twilight.allwomenstalk.com/5-more-awesome-vampire-movies/"
 category: "twilight"
-last_updated: "2026-06-07"
+last_updated: "2026-06-11"
 ---
 
 # 5 More Awesome Vampire Movies ...
@@ -37,15 +37,15 @@ Top Photo Credit: [`Vorfas](https://www.flickr.com/photos/vorfas/919035701/)
 ## Related Posts
 
 - [7 types of vampires](https://twilight.allwomenstalk.com/5-amazing-vampires-from-movies/)
-- [5 Scary Movies ...](https://twilight.allwomenstalk.com/5-scary-movies/)
-- [miss zombie movie](https://twilight.allwomenstalk.com/5-cool-zombie-movies/)
-- [films about werewolves](https://twilight.allwomenstalk.com/5-werewolf-movies/)
-- [movies like my best friends wedding](https://wedding.allwomenstalk.com/best-and-surprisingly-awesome-wedding-movies/)
-- [5 Must See Scenes from the Movie ...](https://twilight.allwomenstalk.com/5-must-see-scenes-from-the-movie/)
 - [miss horror](https://twilight.allwomenstalk.com/5-horrible-horror-movies-to-miss/)
+- [movies like my best friends wedding](https://wedding.allwomenstalk.com/best-and-surprisingly-awesome-wedding-movies/)
+- [miss zombie movie](https://twilight.allwomenstalk.com/5-cool-zombie-movies/)
 - [weird horror movies](https://twilight.allwomenstalk.com/5-weird-horror-movies-to-watch/)
-- [New Movie Website and Blog Explore the Deeper Side...](https://movies.allwomenstalk.com/new-movie-website-and-blog-explore-the-deeper-side-of-films/)
+- [5 Must See Scenes from the Movie ...](https://twilight.allwomenstalk.com/5-must-see-scenes-from-the-movie/)
+- [5 Scary Movies ...](https://twilight.allwomenstalk.com/5-scary-movies/)
+- [films about werewolves](https://twilight.allwomenstalk.com/5-werewolf-movies/)
 - [alien documentaries](https://paranormal.allwomenstalk.com/must-see-alien-documentaries/)
+- [New Movie Website and Blog Explore the Deeper Side...](https://movies.allwomenstalk.com/new-movie-website-and-blog-explore-the-deeper-side-of-films/)
 - [Top 5 Werewolves in Twilight ...](https://twilight.allwomenstalk.com/top-5-werewolves-in-twilight/)
 - [5 Popular Vampires from Movies ...](https://twilight.allwomenstalk.com/5-popular-vampires-from-movies/)
 
