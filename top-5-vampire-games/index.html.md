@@ -3,7 +3,7 @@ title: "Top 5 Vampire Games ..."
 description: "Legacy of Kain Defiance; Buffy the Vampire Slayer Chaos Breeds; Bloodrayne; Castlevania Lament of Innocence; Vampire: the Masquerade; More ..."
 url: "https://twilight.allwomenstalk.com/top-5-vampire-games/"
 category: "twilight"
-last_updated: "2026-06-13"
+last_updated: "2026-06-16"
 ---
 
 # Top 5 Vampire Games ...
@@ -36,16 +36,16 @@ Top Photo Credit: [Joseph Schreiber](https://www.flickr.com/photos/joseph_22/497
 
 ## Related Posts
 
-- [5 Paranormal Definitions Defined ...](https://twilight.allwomenstalk.com/5-paranormal-definitions-defined/)
-- [7 Shocking Moments on This Season's "Biggest Loser...](https://weightloss.allwomenstalk.com/shocking-moments-on-this-seasons-biggest-loser/)
-- [5 Moves Not to Make around Vampires …](https://twilight.allwomenstalk.com/5-moves-not-to-make-around-vampires/)
-- [Top 8 Batman Villains ...](https://movies.allwomenstalk.com/top-8-batman-villains/)
-- [games to play with the undead](https://twilight.allwomenstalk.com/5-undead-video-games-to-play/)
-- [5 Good Magic Users to Be ...](https://twilight.allwomenstalk.com/5-good-magic-users-to-be/)
-- [julia styles feet](https://twilight.allwomenstalk.com/5-annoying-things-about-bella/)
-- [mages in video games](https://twilight.allwomenstalk.com/5-magic-users-in-video-games/)
 - [scary creatures in the woods](https://twilight.allwomenstalk.com/top-5-scary-creatures/)
 - [misunderstood monsters app download](https://twilight.allwomenstalk.com/5-monsters-that-could-be-good/)
+- [5 Good Magic Users to Be ...](https://twilight.allwomenstalk.com/5-good-magic-users-to-be/)
+- [7 Shocking Moments on This Season's "Biggest Loser...](https://weightloss.allwomenstalk.com/shocking-moments-on-this-seasons-biggest-loser/)
+- [mages in video games](https://twilight.allwomenstalk.com/5-magic-users-in-video-games/)
+- [5 Moves Not to Make around Vampires …](https://twilight.allwomenstalk.com/5-moves-not-to-make-around-vampires/)
+- [Top 8 Batman Villains ...](https://movies.allwomenstalk.com/top-8-batman-villains/)
+- [julia styles feet](https://twilight.allwomenstalk.com/5-annoying-things-about-bella/)
+- [5 Paranormal Definitions Defined ...](https://twilight.allwomenstalk.com/5-paranormal-definitions-defined/)
+- [games to play with the undead](https://twilight.allwomenstalk.com/5-undead-video-games-to-play/)
 - [Top 5 Werewolves in Twilight ...](https://twilight.allwomenstalk.com/top-5-werewolves-in-twilight/)
 - [5 Very Top Villains from Twilight ...](https://twilight.allwomenstalk.com/5-villains-from-twilight/)
 

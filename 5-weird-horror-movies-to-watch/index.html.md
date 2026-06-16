@@ -3,7 +3,7 @@ title: "5 Weird Horror Movies to Watch ..."
 description: "Slither; Silent Hill; The Wicker Man; Love Object; Zombieland; More ..."
 url: "https://twilight.allwomenstalk.com/5-weird-horror-movies-to-watch/"
 category: "twilight"
-last_updated: "2026-06-13"
+last_updated: "2026-06-16"
 ---
 
 # 5 Weird Horror Movies to Watch ...
@@ -36,16 +36,16 @@ Top Photo Credit: [Zombie37](https://www.flickr.com/photos/zombie37/178098303/)
 
 ## Related Posts
 
-- [john williams movie soundtracks](https://movies.allwomenstalk.com/unforgettable-john-williams-soundtracks/)
-- [New Movie Website and Blog Explore the Deeper Side...](https://movies.allwomenstalk.com/new-movie-website-and-blog-explore-the-deeper-side-of-films/)
 - [films to watch when sad](https://movies.allwomenstalk.com/8-movies-to-watch-when-you-are-sad/)
-- [what to watch with friends](https://movies.allwomenstalk.com/good-comedies-to-watch-with-friends/)
 - [good war movies](https://movies.allwomenstalk.com/war-movies-that-you-cant-miss/)
-- [les choristes where to watch](https://movies.allwomenstalk.com/fabulous-french-films/)
 - [The 7 Best Sequels of All Times ...](https://movies.allwomenstalk.com/the-best-sequels-of-all-times/)
+- [john williams movie soundtracks](https://movies.allwomenstalk.com/unforgettable-john-williams-soundtracks/)
 - [Top 8 Worst Movies Ever Made ...](https://movies.allwomenstalk.com/top-worst-movies-ever-made/)
-- [alien documentaries](https://paranormal.allwomenstalk.com/must-see-alien-documentaries/)
+- [les choristes where to watch](https://movies.allwomenstalk.com/fabulous-french-films/)
+- [what to watch with friends](https://movies.allwomenstalk.com/good-comedies-to-watch-with-friends/)
 - [9 Very Brainy Movie Stars ...](https://movies.allwomenstalk.com/very-brainy-movie-stars/)
+- [New Movie Website and Blog Explore the Deeper Side...](https://movies.allwomenstalk.com/new-movie-website-and-blog-explore-the-deeper-side-of-films/)
+- [alien documentaries](https://paranormal.allwomenstalk.com/must-see-alien-documentaries/)
 - [5 More Awesome Vampire Movies ...](https://twilight.allwomenstalk.com/5-more-awesome-vampire-movies/)
 - [5 Scary Movies ...](https://twilight.allwomenstalk.com/5-scary-movies/)
 
