@@ -3,7 +3,7 @@ title: "5 Movies on Aliens ..."
 description: "Cocoon; Coneheads; ET; District 9; AVP; More ..."
 url: "https://twilight.allwomenstalk.com/5-movies-on-aliens/"
 category: "twilight"
-last_updated: "2026-06-16"
+last_updated: "2026-06-17"
 ---
 
 # 5 Movies on Aliens ...
@@ -36,16 +36,16 @@ Top Photo Credit: [khalifa_ (away)](https://www.flickr.com/photos/khalifa_/18729
 
 ## Related Posts
 
-- [movies that robert pattinson played in](https://twilight.allwomenstalk.com/5-other-movies-robert-pattinson-is-in/)
-- [famous vampires in movies](https://twilight.allwomenstalk.com/5-popular-vampires-from-movies/)
-- [giant spider horror movies](https://twilight.allwomenstalk.com/5-creepy-spider-movies-to-watch/)
-- [vampire and werewolf movies on netflix](https://twilight.allwomenstalk.com/5-cool-werewolf-movies/)
-- [5 More Awesome Vampire Movies ...](https://twilight.allwomenstalk.com/5-more-awesome-vampire-movies/)
 - [scary monsters movies](https://twilight.allwomenstalk.com/5-scary-monsters-from-movies/)
-- [5 Scary Movies ...](https://twilight.allwomenstalk.com/5-scary-movies/)
-- [marriage romance movies](https://wedding.allwomenstalk.com/movies-about-love-weddings-marriage-i-cant-wait-to-see/)
 - [movies with aliens](https://twilight.allwomenstalk.com/5-top-alien-movies/)
+- [vampire and werewolf movies on netflix](https://twilight.allwomenstalk.com/5-cool-werewolf-movies/)
+- [famous vampires in movies](https://twilight.allwomenstalk.com/5-popular-vampires-from-movies/)
+- [marriage romance movies](https://wedding.allwomenstalk.com/movies-about-love-weddings-marriage-i-cant-wait-to-see/)
+- [movies that robert pattinson played in](https://twilight.allwomenstalk.com/5-other-movies-robert-pattinson-is-in/)
+- [5 More Awesome Vampire Movies ...](https://twilight.allwomenstalk.com/5-more-awesome-vampire-movies/)
 - [5 Must See Scenes from the Movie ...](https://twilight.allwomenstalk.com/5-must-see-scenes-from-the-movie/)
+- [5 Scary Movies ...](https://twilight.allwomenstalk.com/5-scary-movies/)
+- [giant spider horror movies](https://twilight.allwomenstalk.com/5-creepy-spider-movies-to-watch/)
 - [5 Movies on Aliens ...](https://twilight.allwomenstalk.com/5-movies-on-aliens/)
 - [7 Awesome Alien Invasion Movies ...](https://movies.allwomenstalk.com/awesome-alien-invasion-movies/)
 

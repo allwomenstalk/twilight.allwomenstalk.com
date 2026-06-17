@@ -3,7 +3,7 @@ title: "5 Scary Video Games ..."
 description: "Silent Hill; Resident Evil 5; Saw; Bioshock 1 and 2; Dead Space; More ..."
 url: "https://twilight.allwomenstalk.com/5-scary-video-games/"
 category: "twilight"
-last_updated: "2026-06-16"
+last_updated: "2026-06-17"
 ---
 
 # 5 Scary Video Games ...
@@ -36,16 +36,16 @@ Top Photo Credit: [aenemboy](https://www.flickr.com/photos/aenemboy/2081359998/)
 
 ## Related Posts
 
-- [5 Things Twilight Ruined ...](https://twilight.allwomenstalk.com/5-things-twilight-ruined/)
-- [8 treks](https://travel.allwomenstalk.com/terrific-treks/)
-- [cool mythical creatures](https://twilight.allwomenstalk.com/5-cool-mythical-creatures/)
-- [greek god of twilight](https://twilight.allwomenstalk.com/5-greek-gods-that-interest-me/)
+- [5 Cool Paranormal Definitions ...](https://twilight.allwomenstalk.com/5-cool-paranormal-definitions/)
 - [vampires in video games](https://twilight.allwomenstalk.com/5-vampire-video-games/)
-- [5 Horror Stories ...](https://twilight.allwomenstalk.com/5-horror-stories/)
+- [cool mythical creatures](https://twilight.allwomenstalk.com/5-cool-mythical-creatures/)
 - [5 Signs We Are Living in a Twilight World ...](https://twilight.allwomenstalk.com/5-signs-we-are-living-in-a-twilight-world/)
+- [greek god of twilight](https://twilight.allwomenstalk.com/5-greek-gods-that-interest-me/)
+- [5 Horror Stories ...](https://twilight.allwomenstalk.com/5-horror-stories/)
 - [5 Moves to Make when Being Attacked by a Vampire ....](https://twilight.allwomenstalk.com/5-moves-to-make-when-being-attacked-by-a-vampire/)
 - [celebrity vampires](https://twilight.allwomenstalk.com/5-popular-vampires-from-the-real-world/)
-- [5 Cool Paranormal Definitions ...](https://twilight.allwomenstalk.com/5-cool-paranormal-definitions/)
+- [8 treks](https://travel.allwomenstalk.com/terrific-treks/)
+- [5 Things Twilight Ruined ...](https://twilight.allwomenstalk.com/5-things-twilight-ruined/)
 - [Top 5 Vampire Games ...](https://twilight.allwomenstalk.com/top-5-vampire-games/)
 - [5 Spooky Icons ...](https://twilight.allwomenstalk.com/5-spooky-icons/)
 
