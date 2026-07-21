@@ -3,7 +3,7 @@ title: "5 Cool Songs by Korn for a Vampire ..."
 description: "Freak on a Leash; One; Evolution; Word up; All in the Family; More ..."
 url: "https://twilight.allwomenstalk.com/5-cool-songs-by-korn-for-a-vampire/"
 category: "twilight"
-last_updated: "2026-07-02"
+last_updated: "2026-07-21"
 ---
 
 # 5 Cool Songs by Korn for a Vampire ...
@@ -36,16 +36,16 @@ Top Photo Credit: [bizarre ink](https://www.flickr.com/photos/23825109@N03/22749
 
 ## Related Posts
 
-- [i like some of the gaga songs](https://celebs.allwomenstalk.com/favourite-lady-gaga-songs/)
-- [the best movie songs](https://movies.allwomenstalk.com/incredibly-moving-movie-theme-songs/)
-- [9 Musicals I Never Tire of ...](https://movies.allwomenstalk.com/musicals-i-never-tire-of/)
-- [music plants like](https://gardening.allwomenstalk.com/5-songs-your-plants-will-like/)
-- [katy perry tracklist](https://lifestyle.allwomenstalk.com/katy-perry-songs-i-love/)
-- [happy songs to start the day](https://lifestyle.allwomenstalk.com/best-songs-to-make-your-day-better/)
-- [upbeat work music](https://weightloss.allwomenstalk.com/upbeat-songs-to-work-out-to/)
-- [popular songs 2011](https://wedding.allwomenstalk.com/fabulous-inspiring-wedding-songs-of/)
-- [Exercise Music: 9 New Workout Songs to Boost Your ...](https://health.allwomenstalk.com/exercise-music-new-workout-songs-to-boost-your-energy/)
 - [songs to blast](https://lifestyle.allwomenstalk.com/songs-to-blast-while-in-the-car/)
+- [i like some of the gaga songs](https://celebs.allwomenstalk.com/favourite-lady-gaga-songs/)
+- [popular songs 2011](https://wedding.allwomenstalk.com/fabulous-inspiring-wedding-songs-of/)
+- [music plants like](https://gardening.allwomenstalk.com/5-songs-your-plants-will-like/)
+- [Exercise Music: 9 New Workout Songs to Boost Your ...](https://health.allwomenstalk.com/exercise-music-new-workout-songs-to-boost-your-energy/)
+- [upbeat work music](https://weightloss.allwomenstalk.com/upbeat-songs-to-work-out-to/)
+- [the best movie songs](https://movies.allwomenstalk.com/incredibly-moving-movie-theme-songs/)
+- [happy songs to start the day](https://lifestyle.allwomenstalk.com/best-songs-to-make-your-day-better/)
+- [9 Musicals I Never Tire of ...](https://movies.allwomenstalk.com/musicals-i-never-tire-of/)
+- [katy perry tracklist](https://lifestyle.allwomenstalk.com/katy-perry-songs-i-love/)
 - [Top 5 Werewolves in Twilight ...](https://twilight.allwomenstalk.com/top-5-werewolves-in-twilight/)
 - [5 Very Top Villains from Twilight ...](https://twilight.allwomenstalk.com/5-villains-from-twilight/)
 
