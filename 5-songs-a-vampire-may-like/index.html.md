@@ -3,7 +3,7 @@ title: "5 Moody Songs Every Modern Vampire Would Have on Their Playlist"
 description: "Korn – Alone I Break; Korn – All in the Family; Creed – My Own Prison; Adrienne Frantz – Getaway; Eminem – Not Afraid; More ..."
 url: "https://twilight.allwomenstalk.com/5-songs-a-vampire-may-like/"
 category: "twilight"
-last_updated: "2026-09-02"
+last_updated: "2026-10-22"
 ---
 
 # 5 Moody Songs Every Modern Vampire Would Have on Their Playlist
@@ -46,16 +46,16 @@ There you have 5 songs a vampire might like. Of course, I left out the classical
 
 ## Related Posts
 
-- [loreal paris color le garnet](https://twilight.allwomenstalk.com/5-good-vampire-songs/)
-- [popular songs 2011](https://wedding.allwomenstalk.com/fabulous-inspiring-wedding-songs-of/)
-- [the best movie songs](https://movies.allwomenstalk.com/incredibly-moving-movie-theme-songs/)
-- [upbeat work music](https://weightloss.allwomenstalk.com/upbeat-songs-to-work-out-to/)
-- [i like some of the gaga songs](https://celebs.allwomenstalk.com/favourite-lady-gaga-songs/)
-- [5 Cool Songs on YouTube Showing Twilight ...](https://twilight.allwomenstalk.com/5-cool-songs-on-youtube-showing-twilight/)
-- [wedding songs for walking down the aisle](https://wedding.allwomenstalk.com/fun-songs-to-walk-down-the-aisle-to/)
-- [9 Musicals I Never Tire of ...](https://movies.allwomenstalk.com/musicals-i-never-tire-of/)
 - [10 Fantastic Driving Songs ...](https://travel.allwomenstalk.com/10-fantastic-driving-songs/)
+- [loreal paris color le garnet](https://twilight.allwomenstalk.com/5-good-vampire-songs/)
+- [upbeat work music](https://weightloss.allwomenstalk.com/upbeat-songs-to-work-out-to/)
 - [most famous korn song](https://twilight.allwomenstalk.com/5-cool-songs-by-korn-for-a-vampire/)
+- [5 Cool Songs on YouTube Showing Twilight ...](https://twilight.allwomenstalk.com/5-cool-songs-on-youtube-showing-twilight/)
+- [i like some of the gaga songs](https://celebs.allwomenstalk.com/favourite-lady-gaga-songs/)
+- [the best movie songs](https://movies.allwomenstalk.com/incredibly-moving-movie-theme-songs/)
+- [9 Musicals I Never Tire of ...](https://movies.allwomenstalk.com/musicals-i-never-tire-of/)
+- [popular songs 2011](https://wedding.allwomenstalk.com/fabulous-inspiring-wedding-songs-of/)
+- [wedding songs for walking down the aisle](https://wedding.allwomenstalk.com/fun-songs-to-walk-down-the-aisle-to/)
 - [5 Things Vampires May like ...](https://twilight.allwomenstalk.com/5-things-vampires-may-like/)
 - [5 Things Vampires May Not like ...](https://twilight.allwomenstalk.com/5-things-vampires-may-not-like/)
 

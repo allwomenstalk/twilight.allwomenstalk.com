@@ -3,7 +3,7 @@ title: "5 Cool Vampire Books ..."
 description: "Sisters of the Moon Series; Vampire Diaries; Morganville Vampire Series; Vampire Academy; Twilight Series; More ..."
 url: "https://twilight.allwomenstalk.com/5-cool-vampire-books/"
 category: "twilight"
-last_updated: "2026-09-02"
+last_updated: "2026-10-22"
 ---
 
 # 5 Cool Vampire Books ...
@@ -37,14 +37,14 @@ Top Photo Credit: [Amadika](https://www.flickr.com/photos/amadika/3300786612/)
 ## Related Posts
 
 - [Which Twilight Book Was My Favorite and Why ...](https://twilight.allwomenstalk.com/which-twilight-book-was-my-favorite-and-why/)
-- [7 Books for Your Child's Collection ...](https://parenting.allwomenstalk.com/books-for-your-childs-collection/)
-- [poorly written books](https://celebs.allwomenstalk.com/8-worst-books-written-by-celebs/)
 - [when was the first twilight book released](https://twilight.allwomenstalk.com/a-new-twilight-book-released-new-novella/)
+- [scintillatingly](https://travel.allwomenstalk.com/scintillatingly-interesting-and-useful-travel-books-everyone-should-own/)
+- [8 Cookbooks for You and the Kids ...](https://cooking.allwomenstalk.com/cookbooks-for-you-and-the-kids/)
+- [how many books are in the twilight saga](https://twilight.allwomenstalk.com/a-list-of-the-books-in-the-twilight-series/)
 - [9 Books That Did Not Make Great Movies ...](https://movies.allwomenstalk.com/9-books-that-did-not-make-great-movies/)
 - [7 Children’s Books Every Adult Should Read …](https://parenting.allwomenstalk.com/7-childrens-books-every-adult-should-read/)
-- [scintillatingly](https://travel.allwomenstalk.com/scintillatingly-interesting-and-useful-travel-books-everyone-should-own/)
-- [how many books are in the twilight saga](https://twilight.allwomenstalk.com/a-list-of-the-books-in-the-twilight-series/)
-- [8 Cookbooks for You and the Kids ...](https://cooking.allwomenstalk.com/cookbooks-for-you-and-the-kids/)
+- [poorly written books](https://celebs.allwomenstalk.com/8-worst-books-written-by-celebs/)
+- [7 Books for Your Child's Collection ...](https://parenting.allwomenstalk.com/books-for-your-childs-collection/)
 - [robert mccammon movies](https://movies.allwomenstalk.com/8-books-that-might-make-great-movies/)
 - [5 Cool Vampire Books ...](https://twilight.allwomenstalk.com/5-cool-vampire-books/)
 - [7 Awesome Books to Read if You Love Vampires ...](https://books.allwomenstalk.com/awesome-books-to-read-if-you-love-vampires/)

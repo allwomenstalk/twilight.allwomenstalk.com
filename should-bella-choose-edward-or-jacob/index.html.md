@@ -3,7 +3,7 @@ title: "Should Bella Choose Edward or Jacob?"
 description: "Stay ahead, stay chic. Trusted guides on beauty, wellness, fashion, and everything that defines today's empowered woman."
 url: "https://twilight.allwomenstalk.com/should-bella-choose-edward-or-jacob/"
 category: "twilight"
-last_updated: "2026-09-02"
+last_updated: "2026-10-22"
 ---
 
 # Should Bella Choose Edward or Jacob?
@@ -17,20 +17,18 @@ Why do I think she should of not chosen Jacob? For one, he “imprinted” on he
 
 I believe she led Jacob on and that, in my book, is wrong. However, it all went pretty good with the story and we all liked watching Jacob and Edward making smart comments to each other in Eclipse. So, who do you think she should have chosen? Again, I think she did the right thing.
 
-Top Photo Credit: [musicgrl87](https://www.flickr.com/photos/27639623@N08/3364059648/)
-
 ## Related Posts
 
 - [Please Help!! Im Confused?!?](https://weightloss.allwomenstalk.com/please-help-im-confused/)
 - [Would You Buy a Pen That Eva Green Was Promoting?](https://celebs.allwomenstalk.com/eva-promotes-a-pen/)
-- [Boyfriend for 15 Minutes?](https://allwomenstalk.com/boyfriend-for-15-minutes/)
 - [christmas at the jersey shore](https://celebs.allwomenstalk.com/jersey-shore-christmas-ornaments-yes-or-no-way/)
-- [What Did I do?](https://allwomenstalk.com/what-did-i-do/)
-- [Hand Care: do Your Hands Make You Look Older?](https://allwomenstalk.com/hand-care-do-your-hands-make-you-look-older/)
-- [Candy?](https://allwomenstalk.com/candy/)
 - [Where Have I Been?](https://allwomenstalk.com/where-have-i-been/)
-- [How is This Socially Acceptable?](https://allwomenstalk.com/how-is-this-socially-acceptable/)
+- [Boyfriend for 15 Minutes?](https://allwomenstalk.com/boyfriend-for-15-minutes/)
+- [Candy?](https://allwomenstalk.com/candy/)
+- [Hand Care: do Your Hands Make You Look Older?](https://allwomenstalk.com/hand-care-do-your-hands-make-you-look-older/)
 - [Good Story or Pain Release?](https://allwomenstalk.com/good-story-or-pain-release/)
+- [What Did I do?](https://allwomenstalk.com/what-did-i-do/)
+- [How is This Socially Acceptable?](https://allwomenstalk.com/how-is-this-socially-acceptable/)
 - [5 Reasons Girls Love Robert Pattinson ...](https://twilight.allwomenstalk.com/5-reasons-girls-love-robert-pattinson/)
 - [5 Reasons Girls Love Edward ...](https://twilight.allwomenstalk.com/5-reasons-girls-love-edward/)
 
