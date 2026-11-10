@@ -1,9 +1,9 @@
 ---
 title: "5 Spooky Icons ..."
-description: "Spiders; Bats; Cobras; Goat Sucker; Vampire; More ..."
+description: "Spiders; Bats; Cobras; Goat Sucker; Vampire"
 url: "https://twilight.allwomenstalk.com/5-spooky-icons/"
 category: "twilight"
-last_updated: "2026-10-22"
+last_updated: "2026-11-10"
 ---
 
 # 5 Spooky Icons ...

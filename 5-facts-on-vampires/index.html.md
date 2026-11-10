@@ -1,9 +1,9 @@
 ---
 title: "5 Facts on Vampires ..."
-description: "Turning into a Bat is an Option; Holy Water Burns; Reflections Cannot Be Seen in Mirrors; Garlic Repels; Sunlight Kills; More ..."
+description: "Turning into a Bat is an Option; Holy Water Burns; Reflections Cannot Be Seen in Mirrors; Garlic Repels; Sunlight Kills"
 url: "https://twilight.allwomenstalk.com/5-facts-on-vampires/"
 category: "twilight"
-last_updated: "2026-10-22"
+last_updated: "2026-11-10"
 ---
 
 # 5 Facts on Vampires ...
@@ -36,16 +36,16 @@ Top Photo Credit: [dracorubio](https://www.flickr.com/photos/dracorubio/36471889
 
 ## Related Posts
 
-- [color le shadow violet amour](https://twilight.allwomenstalk.com/5-cool-paranormal-facts/)
-- [dragons triangle](https://twilight.allwomenstalk.com/5-facts-on-the-dragons-triangle/)
-- [what's a scene girl](https://twilight.allwomenstalk.com/5-facts-on-scene-kids/)
 - [baby bat facts](https://twilight.allwomenstalk.com/5-facts-on-bats/)
-- [fun facts about tai chi](https://twilight.allwomenstalk.com/5-facts-on-chi/)
-- [facts about wicca](https://twilight.allwomenstalk.com/5-facts-for-wiccans/)
+- [dragons triangle](https://twilight.allwomenstalk.com/5-facts-on-the-dragons-triangle/)
 - [the true facts](https://twilight.allwomenstalk.com/5-facts-about-trolls/)
-- [how old is scooby doo in human years](https://twilight.allwomenstalk.com/5-facts-on-scooby-doo/)
-- [ghost facts](https://twilight.allwomenstalk.com/5-ghost-facts/)
+- [what's a scene girl](https://twilight.allwomenstalk.com/5-facts-on-scene-kids/)
 - [demons facts](https://twilight.allwomenstalk.com/5-facts-about-demons/)
+- [facts about wicca](https://twilight.allwomenstalk.com/5-facts-for-wiccans/)
+- [color le shadow violet amour](https://twilight.allwomenstalk.com/5-cool-paranormal-facts/)
+- [fun facts about tai chi](https://twilight.allwomenstalk.com/5-facts-on-chi/)
+- [ghost facts](https://twilight.allwomenstalk.com/5-ghost-facts/)
+- [how old is scooby doo in human years](https://twilight.allwomenstalk.com/5-facts-on-scooby-doo/)
 - [5 Vampire Myths ...](https://twilight.allwomenstalk.com/5-vampire-myths/)
 - [5 Things about True Blood ...](https://twilight.allwomenstalk.com/5-things-about-true-blood/)
 

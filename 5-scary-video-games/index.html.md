@@ -1,9 +1,9 @@
 ---
 title: "5 Scary Video Games ..."
-description: "Silent Hill; Resident Evil 5; Saw; Bioshock 1 and 2; Dead Space; More ..."
+description: "Silent Hill; Resident Evil 5; Saw; Bioshock 1 and 2; Dead Space"
 url: "https://twilight.allwomenstalk.com/5-scary-video-games/"
 category: "twilight"
-last_updated: "2026-10-22"
+last_updated: "2026-11-10"
 ---
 
 # 5 Scary Video Games ...
@@ -36,15 +36,15 @@ Top Photo Credit: [aenemboy](https://www.flickr.com/photos/aenemboy/2081359998/)
 
 ## Related Posts
 
-- [celebrity vampires](https://twilight.allwomenstalk.com/5-popular-vampires-from-the-real-world/)
-- [5 Moves to Make when Being Attacked by a Vampire ....](https://twilight.allwomenstalk.com/5-moves-to-make-when-being-attacked-by-a-vampire/)
-- [5 Cool Paranormal Definitions ...](https://twilight.allwomenstalk.com/5-cool-paranormal-definitions/)
-- [greek god of twilight](https://twilight.allwomenstalk.com/5-greek-gods-that-interest-me/)
-- [5 Signs We Are Living in a Twilight World ...](https://twilight.allwomenstalk.com/5-signs-we-are-living-in-a-twilight-world/)
-- [cool mythical creatures](https://twilight.allwomenstalk.com/5-cool-mythical-creatures/)
-- [vampires in video games](https://twilight.allwomenstalk.com/5-vampire-video-games/)
 - [5 Horror Stories ...](https://twilight.allwomenstalk.com/5-horror-stories/)
+- [celebrity vampires](https://twilight.allwomenstalk.com/5-popular-vampires-from-the-real-world/)
+- [vampires in video games](https://twilight.allwomenstalk.com/5-vampire-video-games/)
+- [5 Cool Paranormal Definitions ...](https://twilight.allwomenstalk.com/5-cool-paranormal-definitions/)
+- [5 Signs We Are Living in a Twilight World ...](https://twilight.allwomenstalk.com/5-signs-we-are-living-in-a-twilight-world/)
 - [8 treks](https://travel.allwomenstalk.com/terrific-treks/)
+- [greek god of twilight](https://twilight.allwomenstalk.com/5-greek-gods-that-interest-me/)
+- [5 Moves to Make when Being Attacked by a Vampire ....](https://twilight.allwomenstalk.com/5-moves-to-make-when-being-attacked-by-a-vampire/)
+- [cool mythical creatures](https://twilight.allwomenstalk.com/5-cool-mythical-creatures/)
 - [5 Things Twilight Ruined ...](https://twilight.allwomenstalk.com/5-things-twilight-ruined/)
 - [Top 5 Vampire Games ...](https://twilight.allwomenstalk.com/top-5-vampire-games/)
 - [5 Spooky Icons ...](https://twilight.allwomenstalk.com/5-spooky-icons/)

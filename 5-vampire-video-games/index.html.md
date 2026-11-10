@@ -1,9 +1,9 @@
 ---
 title: "5 Vampire Video Games ..."
-description: "Vampire: the Masquerade; Legacy of Kain; Bloodrayne; Buffy the Vampire Slayer; Castlevania; More ..."
+description: "Vampire: the Masquerade; Legacy of Kain; Bloodrayne; Buffy the Vampire Slayer; Castlevania"
 url: "https://twilight.allwomenstalk.com/5-vampire-video-games/"
 category: "twilight"
-last_updated: "2026-10-22"
+last_updated: "2026-11-10"
 ---
 
 # 5 Vampire Video Games ...
@@ -36,16 +36,16 @@ Top Photo Credit: [Stormtrooper Effect](https://www.flickr.com/photos/32050175@N
 
 ## Related Posts
 
-- [insane video game characters](https://twilight.allwomenstalk.com/5-insane-villains-on-video-games/)
-- [5 Top Monster Video Games ...](https://twilight.allwomenstalk.com/5-top-monster-video-games/)
-- [creepy castles](https://travel.allwomenstalk.com/creepy-castles/)
-- [5 Cool Paranormal Definitions ...](https://twilight.allwomenstalk.com/5-cool-paranormal-definitions/)
-- [bridezillas where are they now karen](https://wedding.allwomenstalk.com/7-of-my-favorite-bridezillas-from-tv/)
-- [5 Horror Stories ...](https://twilight.allwomenstalk.com/5-horror-stories/)
-- [creatures of the night examples](https://twilight.allwomenstalk.com/5-creatures-of-the-night/)
 - [paris color riche le stylo shadow always pink](https://twilight.allwomenstalk.com/5-paranormal-definitions/)
+- [5 Horror Stories ...](https://twilight.allwomenstalk.com/5-horror-stories/)
+- [5 Cool Paranormal Definitions ...](https://twilight.allwomenstalk.com/5-cool-paranormal-definitions/)
 - [amazing mazes](https://travel.allwomenstalk.com/amazing-mazes/)
+- [creepy castles](https://travel.allwomenstalk.com/creepy-castles/)
+- [5 Top Monster Video Games ...](https://twilight.allwomenstalk.com/5-top-monster-video-games/)
 - [5 Comic Book Creatures ...](https://twilight.allwomenstalk.com/5-comic-book-creatures/)
+- [bridezillas where are they now karen](https://wedding.allwomenstalk.com/7-of-my-favorite-bridezillas-from-tv/)
+- [insane video game characters](https://twilight.allwomenstalk.com/5-insane-villains-on-video-games/)
+- [creatures of the night examples](https://twilight.allwomenstalk.com/5-creatures-of-the-night/)
 - [5 Cool Vampire Books ...](https://twilight.allwomenstalk.com/5-cool-vampire-books/)
 - [5 Popular Vampires from Movies ...](https://twilight.allwomenstalk.com/5-popular-vampires-from-movies/)
 

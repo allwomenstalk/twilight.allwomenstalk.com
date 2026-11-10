@@ -1,9 +1,9 @@
 ---
 title: "5 Awesome Spooky Party Themes ..."
-description: "Vampire Theme; Evil Clown Theme; Zombie Theme; Witch Theme; Ghost Theme; More ..."
+description: "Vampire Theme; Evil Clown Theme; Zombie Theme; Witch Theme; Ghost Theme"
 url: "https://twilight.allwomenstalk.com/5-awesome-spooky-party-themes/"
 category: "twilight"
-last_updated: "2026-10-22"
+last_updated: "2026-11-10"
 ---
 
 # 5 Awesome Spooky Party Themes ...
